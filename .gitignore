@@ -1,0 +1,108 @@
+# ============================
+# Unreal Engine Build / Cache Directories
+# ============================
+# Project-level generated data
+DerivedDataCache/*
+Intermediate/*
+LocalBuilds/*
+Saved/*
+Platforms/*
+
+# Build/*
+# Build/Android/*
+# Build/Windows/*
+# Build/Mac/*
+# Build/Android_ASTC/*
+
+# Binaries/*
+# Binaries/Win64/*
+# Binaries/Win64/D3D12/*
+# Binaries/Win64/DML/*
+# Binaries/Mac/*
+# Binaries/Android/*
+
+# FMOD plugin caches
+FMOD/.cache/...
+FMOD/__MACOSX/Assets/...
+
+# Engine-level generated data
+Engine/Intermediate/*
+Engine/Programs/UnrealBuildTool/*
+Engine/DerivedDataCache/*
+Engine/Build/Receipts/*
+
+# Samples, docs, extras
+Samples/*
+FeaturePacks/*
+Engine/Documentation/*
+
+# ============================
+# Version Control
+# ============================
+p4config.txt
+
+# ============================
+# Build System Files
+# ============================
+./Makefile
+./CMakeLists.txt
+
+# ============================
+# Project & IDE Files
+# ============================
+# Xcode / Visual Studio / CLion project files
+*.xcodeproj
+*.xcworkspace
+*.vcxproj
+*.vcxproj.filters
+
+# IDE folders
+.vscode/
+.idea/
+
+# Visual Studio user/state files
+*.sln
+*.opensdf
+*.sdf
+*.suo
+*.vs
+*.user
+
+# ============================
+# Logs & Runtime Junk
+# ============================
+*.log
+*_BuiltData.uasset
+crashinfo--*
+*.DS_Store
+*.tmp
+
+# ============================
+# Debug / Symbol / Profile
+# ============================
+*.pdb
+*.debug
+*.sym
+*.dSYM
+*.dSYM.zip
+*.hmap
+
+# ============================
+# Binary Artifacts
+# ============================
+# *.exe
+# *.exe.config
+# *.exe.manifest
+# *.exp
+# *.so
+# *.ipa
+
+# ============================
+# Build/Compiler Leftovers
+# ============================
+*.mdb
+*.modules
+*.target
+*.target.xml
+*.pro
+*.csprojAssemblyReference.cache
