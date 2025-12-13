@@ -1,0 +1,18 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.BlueprintAssist.gen.cpp.obj": [
+			"BAAssetEditorHandlerObject.gen.cpp.obj",
+			"BABlueprintHandlerObject.gen.cpp.obj",
+			"BARootObject.gen.cpp.obj",
+			"BlueprintAssist.init.gen.cpp.obj",
+			"BlueprintAssistCache.gen.cpp.obj",
+			"BlueprintAssistEditorFeatures.gen.cpp.obj",
+			"BlueprintAssistSettings.gen.cpp.obj",
+			"BlueprintAssistSettings_Advanced.gen.cpp.obj",
+			"BlueprintAssistSettings_EditorFeatures.gen.cpp.obj",
+			"BlueprintAssistTypes.gen.cpp.obj",
+			"BlueprintAssistUtils.gen.cpp.obj"
+		]
+	}
+}

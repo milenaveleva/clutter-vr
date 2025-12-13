@@ -1,0 +1,24 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistactions\\blueprintassisttoolkitactions.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistactions\\blueprintassisttoolkitactions.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistactions\\blueprintassistactionsbase.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistcommands.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistglobals.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\editorstyle\\public\\editorstyleset.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\sourcecodenavigation.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistutils\\bamiscutils.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassisttabhandler.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistobjects\\baasseteditorhandlerobject.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\baasseteditorhandlerobject.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\editorframework\\public\\toolkits\\toolkitmanager.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

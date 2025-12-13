@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-MRUtilityKit.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/git/ClutterVR/Intermediate/Build/Win64/x64/ClutterVREditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/Module.MRUtilityKit.1.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/Module.MRUtilityKit.2.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/Module.MRUtilityKit.3.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/Module.MRUtilityKit.4.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/Module.MRUtilityKit.5.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/MRUtilityKitShared.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/Default.rc2.res"
+/OUT:"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/MRUtilityKit/UnrealEditor-MRUtilityKit.lib"

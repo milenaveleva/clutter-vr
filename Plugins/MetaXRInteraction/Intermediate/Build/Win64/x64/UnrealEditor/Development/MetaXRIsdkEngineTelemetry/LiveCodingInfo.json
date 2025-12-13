@@ -1,0 +1,9 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.MetaXRIsdkEngineTelemetry.cpp.obj": [
+			"PerModuleInline.gen.cpp.obj",
+			"MetaXRIsdkEngineTelemetry.cpp.obj"
+		]
+	}
+}

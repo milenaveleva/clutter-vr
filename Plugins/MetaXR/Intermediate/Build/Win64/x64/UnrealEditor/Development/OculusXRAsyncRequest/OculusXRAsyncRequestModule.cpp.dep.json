@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestmodule.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrasyncrequest\\definitions.oculusxrasyncrequest.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\private\\oculusxrasyncrequestmodule.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\ioculusxrasyncrequestmodule.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

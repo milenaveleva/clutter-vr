@@ -1,0 +1,40 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.OculusInteractionEditor.cpp.obj": [
+			"IsdkHandPoseDataFactory.gen.cpp.obj",
+			"IsdkHandPoseDetectionProfileFactory.gen.cpp.obj",
+			"IsdkTelemetryPrivacySettings.gen.cpp.obj",
+			"IsdkTestConditionalComponentIsActive.gen.cpp.obj",
+			"IsdkTestDataSources.gen.cpp.obj",
+			"IsdkTestFakes.gen.cpp.obj",
+			"IsdkTestGrabInteraction.gen.cpp.obj",
+			"IsdkTestHandPoseDetection.gen.cpp.obj",
+			"IsdkTestPokeInteraction.gen.cpp.obj",
+			"IsdkTestRayInteraction.gen.cpp.obj",
+			"IsdkTestRigComponents.gen.cpp.obj",
+			"OculusInteractionEditor.init.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"IsdkEditorTelemetry.cpp.obj",
+			"IsdkEditorTelemetryNotifications.cpp.obj",
+			"IsdkHandPoseDataActions.cpp.obj",
+			"IsdkHandPoseDataFactory.cpp.obj",
+			"IsdkHandPoseDetectionProfileActions.cpp.obj",
+			"IsdkHandPoseDetectionProfileFactory.cpp.obj",
+			"IsdkHandPoseVisualizer.cpp.obj",
+			"OculusInteractionEditor.cpp.obj",
+			"IsdkEditorStyle.cpp.obj",
+			"IsdkSettingsToggle.cpp.obj",
+			"IsdkCommonTestCommands.cpp.obj",
+			"IsdkTestConditionalComponentIsActive.cpp.obj",
+			"IsdkTestDataSources.cpp.obj",
+			"IsdkTestFakes.cpp.obj",
+			"IsdkTestGrabInteraction.cpp.obj",
+			"IsdkTestHandPoseDetection.cpp.obj",
+			"IsdkTestPokeInteraction.cpp.obj",
+			"IsdkTestRayInteraction.cpp.obj",
+			"IsdkTestRigComponents.cpp.obj",
+			"IsdkTelemetryPrivacySettings.cpp.obj"
+		]
+	}
+}

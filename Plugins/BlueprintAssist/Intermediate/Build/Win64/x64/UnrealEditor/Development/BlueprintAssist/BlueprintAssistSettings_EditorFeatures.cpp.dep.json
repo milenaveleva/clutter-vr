@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\private\\blueprintassistsettings_editorfeatures.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistsettings_editorfeatures.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassistsettings_editorfeatures.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassistsettings_advanced.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\perforce\\milena.veleva_arcanaeum\\intermediate\\build\\win64\\x64\\vrframeworkeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistsettings_advanced.h",
+            "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassistsettings_advanced.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

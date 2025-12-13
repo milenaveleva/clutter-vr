@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\private\\blueprintassistnodesizechangedata.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistnodesizechangedata.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistutils.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\blueprintgraph\\classes\\k2node_createdelegate.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\kismetcompiler\\public\\kismetcompilermisc.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\kismetcompiler\\public\\bpterminal.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\kismetcompiler\\public\\blueprintcompiledstatement.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintgraph\\uht\\k2node_createdelegate.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

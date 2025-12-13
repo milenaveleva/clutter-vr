@@ -1,0 +1,34 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteractionprebuilts\\private\\audio\\isdkpointereventaudioplayer.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_6.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusinteractionprebuilts\\definitions.oculusinteractionprebuilts.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteractionprebuilts\\public\\audio\\isdkpointereventaudioplayer.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\public\\interaction\\pointable\\isdkipointable.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\public\\interaction\\pointable\\isdkinteractionpointerevent.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\public\\structtypes.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\public\\structtypesnongenerated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusinteraction\\uht\\structtypesnongenerated.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusinteraction\\uht\\structtypes.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusinteraction\\uht\\isdkinteractionpointerevent.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusinteraction\\uht\\isdkipointable.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusinteractionprebuilts\\uht\\isdkpointereventaudioplayer.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\components\\audiocomponent.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\public\\audio\\soundparametercontrollerinterface.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\soundparametercontrollerinterface.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\audioextensions\\public\\iaudioparametertransmitter.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\audiomixer\\public\\quartz\\audiomixerquantizedcommands.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\audiomixer\\public\\quartz\\audiomixerclock.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\audiomixer\\public\\quartz\\quartzmetronome.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\sound\\quartzsubscription.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\sound\\quartzsubscriptiontoken.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\sound\\quartzinterfaces.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\audiocomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,12 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-OculusXRScene.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:/git/ClutterVR/Intermediate/Build/Win64/x64/ClutterVREditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRScene/Module.OculusXRScene.cpp.obj"
+"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRScene/Default.rc2.res"
+/OUT:"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRScene/UnrealEditor-OculusXRScene.lib"

@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\private\\blueprintassistgraphpanelnodefactory.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistgraphpanelnodefactory.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\edgraphutilities.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistsettings.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\propertyeditor\\public\\idetailcustomization.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassistsettings.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\blueprintgraph\\classes\\k2node_knot.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintgraph\\uht\\k2node_knot.generated.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistwidgets\\blueprintassistknotnode.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\grapheditor\\public\\sgraphnodeknot.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\grapheditor\\public\\sgraphnodedefault.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\grapheditor\\public\\sgraphnode.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\grapheditor\\public\\snodepanel.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\public\\diffresults.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\grapheditor\\public\\marqueeoperation.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\grapheditor\\uht\\snodepanel.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\grapheditor\\public\\sgraphpin.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\slate\\public\\widgets\\layout\\swrapbox.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

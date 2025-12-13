@@ -1,0 +1,394 @@
+{
+    "version": "2.1.0",
+    "$schema": "https://schemastore.azurewebsites.net/schemas/json/sarif-2.1.0-rtm.5.json",
+    "runs": [
+        {
+            "results": [
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRHIThread': Do not use this function. Use EnqueueLambda() on an RHI command list, following by an RHI flush. This can be done with the immediate RHI command list: FRHICommandListImmediate& RHICmdList = FRHICommandListImmediate::Get(); RHICmdList.EnqueueLambda(...); RHICmdList.ImmediateFlush(EImmediateFlushType::FlushRHIThread); Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 1249,
+                                    "startColumn": 4,
+                                    "snippet": {
+                                        "text": "\t\t\tExecuteOnRHIThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly, followed by FlushRenderingCommands() if you need to wait for the function to execute. Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 1248,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly, followed by FlushRenderingCommands() if you need to wait for the function to execute. Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 2076,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread([&]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRHIThread_DoNotWait': Do not use this function. Use EnqueueLambda() on an RHI command list. If you're on the rendering thread, this can be done with the immediate RHI command list: FRHICommandListImmediate::Get().EnqueueLambda(...) - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 2192,
+                                    "startColumn": 6,
+                                    "snippet": {
+                                        "text": "\t\t\t\t\tExecuteOnRHIThread_DoNotWait([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRHIThread': Do not use this function. Use EnqueueLambda() on an RHI command list, following by an RHI flush. This can be done with the immediate RHI command list: FRHICommandListImmediate& RHICmdList = FRHICommandListImmediate::Get(); RHICmdList.EnqueueLambda(...); RHICmdList.ImmediateFlush(EImmediateFlushType::FlushRHIThread); Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3106,
+                                    "startColumn": 4,
+                                    "snippet": {
+                                        "text": "\t\t\tExecuteOnRHIThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly, followed by FlushRenderingCommands() if you need to wait for the function to execute. Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3105,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRHIThread': Do not use this function. Use EnqueueLambda() on an RHI command list, following by an RHI flush. This can be done with the immediate RHI command list: FRHICommandListImmediate& RHICmdList = FRHICommandListImmediate::Get(); RHICmdList.EnqueueLambda(...); RHICmdList.ImmediateFlush(EImmediateFlushType::FlushRHIThread); Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3259,
+                                    "startColumn": 4,
+                                    "snippet": {
+                                        "text": "\t\t\tExecuteOnRHIThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly, followed by FlushRenderingCommands() if you need to wait for the function to execute. Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3258,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRHIThread': Do not use this function. Use EnqueueLambda() on an RHI command list, following by an RHI flush. This can be done with the immediate RHI command list: FRHICommandListImmediate& RHICmdList = FRHICommandListImmediate::Get(); RHICmdList.EnqueueLambda(...); RHICmdList.ImmediateFlush(EImmediateFlushType::FlushRHIThread); Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3273,
+                                    "startColumn": 4,
+                                    "snippet": {
+                                        "text": "\t\t\tExecuteOnRHIThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly, followed by FlushRenderingCommands() if you need to wait for the function to execute. Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3272,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly, followed by FlushRenderingCommands() if you need to wait for the function to execute. Ideally systems would be refactored to avoid having to flush though. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 3347,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread([this, bEnablePassthrough](FRHICommandListImmediate& RHICmdList) {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread_DoNotWait': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 4363,
+                                    "startColumn": 3,
+                                    "snippet": {
+                                        "text": "\t\tExecuteOnRenderThread_DoNotWait([this]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'FThreadIdleStats': Use UE::Stats::FThreadIdleStats instead. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 4823,
+                                    "startColumn": 6,
+                                    "snippet": {
+                                        "text": "\t\t\t\t\tFThreadIdleStats::FScopeIdle Scope;"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRenderThread_DoNotWait': Do not use this function. Use ENQUEUE_RENDER_COMMAND directly. - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 4894,
+                                    "startColumn": 4,
+                                    "snippet": {
+                                        "text": "\t\t\tExecuteOnRenderThread_DoNotWait([this, XSettings, XFrame, XLayers](FRHICommandListImmediate& RHICmdList) {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                },
+                {
+                    "ruleId": "C4996",
+                    "message": {
+                        "text": "'ExecuteOnRHIThread_DoNotWait': Do not use this function. Use EnqueueLambda() on an RHI command list. If you're on the rendering thread, this can be done with the immediate RHI command list: FRHICommandListImmediate::Get().EnqueueLambda(...) - Please update your code to the new API before upgrading to the next release, otherwise your project will no longer compile."
+                    },
+                    "analysisTarget": {
+                        "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRHMD/Module.OculusXRHMD.2.cpp"
+                    },
+                    "locations": [
+                        {
+                            "physicalLocation": {
+                                "artifactLocation": {
+                                    "uri": "file:///D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD.cpp"
+                                },
+                                "region": {
+                                    "startLine": 5001,
+                                    "startColumn": 4,
+                                    "snippet": {
+                                        "text": "\t\t\tExecuteOnRHIThread_DoNotWait([this, XSettings, XFrame, XLayers]() {"
+                                    }
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "tool": {
+                "driver": {
+                    "name": "MSVC",
+                    "shortDescription": {
+                        "text": "Microsoft Visual C++ Compiler Warnings/Errors"
+                    },
+                    "informationUri": "https://docs.microsoft.com/cpp/error-messages/compiler-errors-1/c-cpp-build-errors"
+                }
+            }
+        }
+    ]
+}

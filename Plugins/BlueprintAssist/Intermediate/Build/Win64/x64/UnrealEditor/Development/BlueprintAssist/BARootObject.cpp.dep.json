@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistobjects\\barootobject.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistobjects\\barootobject.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\blueprintassistobjects\\baasseteditorhandlerobject.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\baasseteditorhandlerobject.generated.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\source\\blueprintassist\\private\\blueprintassisteditorfeatures.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassisteditorfeatures.generated.h",
+            "d:\\git\\cluttervr\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\barootobject.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\private\\tests\\isdkprefixtest.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_6.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusinteraction\\definitions.oculusinteraction.h",
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\public\\oculusinteractionlog.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

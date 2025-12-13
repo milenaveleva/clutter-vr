@@ -1,0 +1,35 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxreyetracker\\private\\oculusxreyetracker.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxreyetracker\\definitions.oculusxreyetracker.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\eyetracker\\public\\ieyetrackermodule.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\eyetracker\\public\\eyetrackertypes.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\eyetracker\\uht\\eyetrackertypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\eyetracker\\public\\ieyetracker.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\headmounteddisplay\\public\\ixrtrackingsystem.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\headmounteddisplay\\public\\headmounteddisplaytypes.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\headmounteddisplay\\public\\imotioncontroller.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\imotioncontroller.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\headmounteddisplaytypes.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\headmounteddisplay\\public\\iidentifiablexrdevice.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\headmounteddisplay\\uht\\iidentifiablexrdevice.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrhmd\\public\\ioculusxrhmdmodule.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\headmounteddisplay\\public\\iheadmounteddisplaymodule.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrmovement\\public\\oculusxrmovement.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrmovement\\public\\oculusxrmovementtypes.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrmovement\\uht\\oculusxrmovementtypes.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrmovement\\public\\oculusxrmovementfunctions.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxreyetracker\\private\\oculusxrtelemetryeyetrackerevents.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetrymarker.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetryshared.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrqpl.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetry.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

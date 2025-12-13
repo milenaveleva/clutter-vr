@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxranchors\\private\\oculusxrspatialanchorcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxranchors\\definitions.oculusxranchors.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxrspatialanchorcomponent.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorcomponent.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchortypes.h",
+            "c:\\program files (x86)\\microsoft visual studio\\2022\\buildtools\\vc\\tools\\msvc\\14.44.35207\\include\\memory",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchortypes.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxranchorcomponent.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchors.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxranchors\\public\\oculusxranchorsrequests.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\oculusxrasyncrequestsystem.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\oculusxrasyncrequestbase.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\oculusxrasyncrequest.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrasyncrequest\\public\\ioculusxrasyncrequestmodule.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxranchors\\uht\\oculusxrspatialanchorcomponent.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

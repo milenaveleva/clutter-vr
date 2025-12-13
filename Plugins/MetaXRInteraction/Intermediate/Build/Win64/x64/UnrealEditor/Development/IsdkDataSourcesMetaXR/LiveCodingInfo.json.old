@@ -1,0 +1,20 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.IsdkDataSourcesMetaXR.cpp.obj": [
+			"IsdkDataSourcesMetaXR.init.gen.cpp.obj",
+			"IsdkDataSourcesMetaXRSubsystem.gen.cpp.obj",
+			"IsdkFromMetaXRControllerDataSource.gen.cpp.obj",
+			"IsdkFromMetaXRHandDataSource.gen.cpp.obj",
+			"IsdkFromMetaXRHmdDataSource.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"IsdkFromMetaXRControllerDataSource.cpp.obj",
+			"IsdkFromMetaXRHandDataSource.cpp.obj",
+			"IsdkFromMetaXRHmdDataSource.cpp.obj",
+			"IsdkDataSourcesMetaXR.cpp.obj",
+			"IsdkDataSourcesMetaXRSubsystem.cpp.obj",
+			"IsdkOculusXRHelper.cpp.obj",
+			"IsdkOculusXRModuleInstance.cpp.obj"
+		]
+	}
+}

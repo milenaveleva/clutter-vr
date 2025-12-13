@@ -1,0 +1,19 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.IsdkDataSourcesOpenXR.cpp.obj": [
+			"IsdkDataSourcesOpenXR.init.gen.cpp.obj",
+			"IsdkDataSourcesOpenXRSubsystem.gen.cpp.obj",
+			"IsdkFromOpenXRControllerDataSource.gen.cpp.obj",
+			"IsdkFromOpenXRHandDataSource.gen.cpp.obj",
+			"IsdkFromOpenXRHmdDataSource.gen.cpp.obj",
+			"PerModuleInline.gen.cpp.obj",
+			"IsdkFromOpenXRControllerDataSource.cpp.obj",
+			"IsdkFromOpenXRHandDataSource.cpp.obj",
+			"IsdkFromOpenXRHmdDataSource.cpp.obj",
+			"IsdkOpenXRHelper.cpp.obj",
+			"IsdkDataSourcesOpenXR.cpp.obj",
+			"IsdkDataSourcesOpenXRSubsystem.cpp.obj"
+		]
+	}
+}

@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykitpcaeditor\\private\\mrukpassthroughcameraaccessactions.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mrutilitykitpcaeditor\\definitions.mrutilitykitpcaeditor.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykitpcaeditor\\public\\mrukpassthroughcameraaccessactions.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettypeactions_base.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\iassettools.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettypecategories.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\iassettypeactions.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\developer\\merge\\public\\merge.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailmanager.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\classes\\thumbnailrendering\\thumbnailrenderer.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailrenderer.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\thumbnailmanager.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\automatedassetimportdata.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\automatedassetimportdata.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\assettools\\uht\\iassettools.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\developer\\assettools\\public\\assettoolsmodule.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\toolkits\\simpleasseteditor.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykit\\public\\mrukpassthroughcameraaccess.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\mrutilitykit\\uht\\mrukpassthroughcameraaccess.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\private\\oculusxrsetuprule.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\oculusxrprojectsetuptool\\definitions.oculusxrprojectsetuptool.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\public\\oculusxrsetuprule.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrprojectsetuptool\\uht\\oculusxrsetuprule.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\private\\oculusxrpstevents.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetrymarker.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetryshared.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrqpl.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetry.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\public\\oculusxrpstsettings.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusxrprojectsetuptool\\uht\\oculusxrpstsettings.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\private\\oculusxrpstutils.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\private\\oculusxrprojectsetuptoolmodule.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrprojectsetuptool\\public\\ioculusxrprojectsetupmodule.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

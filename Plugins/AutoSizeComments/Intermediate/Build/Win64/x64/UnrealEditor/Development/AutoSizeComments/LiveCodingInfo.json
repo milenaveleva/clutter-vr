@@ -1,0 +1,10 @@
+{
+	"RemapUnityFiles": 
+	{
+		"Module.AutoSizeComments.gen.cpp.obj": [
+			"AutoSizeComments.init.gen.cpp.obj",
+			"AutoSizeCommentsCacheFile.gen.cpp.obj",
+			"AutoSizeCommentsSettings.gen.cpp.obj"
+		]
+	}
+}

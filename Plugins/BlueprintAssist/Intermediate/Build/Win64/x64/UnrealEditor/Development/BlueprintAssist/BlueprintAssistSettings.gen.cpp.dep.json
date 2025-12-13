@@ -1,0 +1,16 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassistsettings.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\perforce\\milena.veleva_arcanaeum\\intermediate\\build\\win64\\x64\\vrframeworkeditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\blueprintassist\\definitions.blueprintassist.h",
+            "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\source\\blueprintassist\\public\\blueprintassistsettings.h",
+            "c:\\program files\\epic games\\ue_5.5\\engine\\source\\editor\\propertyeditor\\public\\idetailcustomization.h",
+            "d:\\perforce\\milena.veleva_arcanaeum\\plugins\\blueprintassist\\intermediate\\build\\win64\\unrealeditor\\inc\\blueprintassist\\uht\\blueprintassistsettings.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

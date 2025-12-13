@@ -1,0 +1,26 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykit\\private\\mrutilitykitblobshadowcomponent.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\cluttervr\\intermediate\\build\\win64\\x64\\cluttervreditor\\development\\unrealed\\sharedpch.unrealed.project.valapi.valexpapi.cpp20.inclorderunreal5_4.h.pch",
+        "Includes": [
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\mrutilitykit\\definitions.mrutilitykit.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykit\\public\\mrutilitykitblobshadowcomponent.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\mrutilitykit\\uht\\mrutilitykitblobshadowcomponent.generated.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykit\\public\\mrutilitykittelemetry.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetrymarker.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetryshared.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrqpl.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrtelemetry\\public\\oculusxrtelemetry.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\mrutilitykit\\public\\mrutilitykit.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\intermediate\\build\\win64\\unrealeditor\\inc\\mrutilitykit\\uht\\mrutilitykit.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\classes\\kismet\\kismetsystemlibrary.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\coreuobject\\public\\uobject\\propertyaccessutil.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\coreuobject\\uht\\propertyaccessutil.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\kismetsystemlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
