@@ -100,9 +100,9 @@ crashinfo--*
 # ============================
 # Build/Compiler Leftovers
 # ============================
-*.mdb
-*.modules
-*.target
-*.target.xml
-*.pro
-*.csprojAssemblyReference.cache
+# *.mdb
+# *.modules
+# *.target
+# *.target.xml
+# *.pro
+# *.csprojAssemblyReference.cache
