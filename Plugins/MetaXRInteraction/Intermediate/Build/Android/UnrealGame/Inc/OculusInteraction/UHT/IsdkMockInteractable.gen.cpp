@@ -8,7 +8,7 @@
 #include "Tests/IsdkMockInteractable.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkMockInteractable() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkMockInteractable ****************************************************
-void UIsdkMockInteractable::StaticRegisterNativesUIsdkMockInteractable()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkMockInteractable;
 UClass* UIsdkMockInteractable::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkMockInteractable::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkMockInteractable.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkMockInteractable"),
 			Z_Registration_Info_UClass_UIsdkMockInteractable.InnerSingleton,
 			StaticRegisterNativesUIsdkMockInteractable,
@@ -55,18 +52,23 @@ struct Z_Construct_UClass_UIsdkMockInteractable_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\n */" },
+#endif
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Tests/IsdkMockInteractable.h" },
 		{ "ModuleRelativePath", "Private/Tests/IsdkMockInteractable.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkMockInteractable constinit property declarations ********************
+// ********** End Class UIsdkMockInteractable constinit property declarations **********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkMockInteractable>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkMockInteractable_Statics
 UObject* (*const Z_Construct_UClass_UIsdkMockInteractable_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkInteractableComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -87,6 +89,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkMockInteractable_S
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkMockInteractable_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkMockInteractable_Statics::Class_MetaDataParams)
 };
+void UIsdkMockInteractable::StaticRegisterNativesUIsdkMockInteractable()
+{
+}
 UClass* Z_Construct_UClass_UIsdkMockInteractable()
 {
 	if (!Z_Registration_Info_UClass_UIsdkMockInteractable.OuterSingleton)
@@ -96,21 +101,23 @@ UClass* Z_Construct_UClass_UIsdkMockInteractable()
 	return Z_Registration_Info_UClass_UIsdkMockInteractable.OuterSingleton;
 }
 UIsdkMockInteractable::UIsdkMockInteractable() {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkMockInteractable);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkMockInteractable);
 UIsdkMockInteractable::~UIsdkMockInteractable() {}
 // ********** End Class UIsdkMockInteractable ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkMockInteractable, UIsdkMockInteractable::StaticClass, TEXT("UIsdkMockInteractable"), &Z_Registration_Info_UClass_UIsdkMockInteractable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkMockInteractable), 326919672U) },
+		{ Z_Construct_UClass_UIsdkMockInteractable, UIsdkMockInteractable::StaticClass, TEXT("UIsdkMockInteractable"), &Z_Registration_Info_UClass_UIsdkMockInteractable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkMockInteractable), 2495222318U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_885798576(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_2079449035{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkMockInteractable_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

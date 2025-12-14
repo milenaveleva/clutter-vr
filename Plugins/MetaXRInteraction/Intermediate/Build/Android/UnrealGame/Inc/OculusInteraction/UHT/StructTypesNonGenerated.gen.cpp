@@ -8,7 +8,7 @@
 #include "StructTypesNonGenerated.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeStructTypesNonGenerated() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -47,7 +47,7 @@ static UEnum* EIsdkLerpState_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkLerpState.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkLerpState>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkLerpState>()
 {
 	return EIsdkLerpState_StaticEnum();
 }
@@ -70,7 +70,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkLerpState_Statics
 		{ "EIsdkLerpState::RestingAtDestination", (int64)EIsdkLerpState::RestingAtDestination },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkLerpState_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkLerpState_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -103,7 +103,7 @@ static UEnum* EIsdkHandGrabPoseMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkHandGrabPoseMode.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseMode>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandGrabPoseMode>()
 {
 	return EIsdkHandGrabPoseMode_StaticEnum();
 }
@@ -126,7 +126,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMode_Statics
 		{ "EIsdkHandGrabPoseMode::MirrorReference", (int64)EIsdkHandGrabPoseMode::MirrorReference },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -159,7 +159,7 @@ static UEnum* EIsdkHandGrabPoseMirror_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkHandGrabPoseMirror.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseMirror>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandGrabPoseMirror>()
 {
 	return EIsdkHandGrabPoseMirror_StaticEnum();
 }
@@ -169,11 +169,15 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "Automatic.Name", "EIsdkHandGrabPoseMirror::Automatic" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n*  @nolint\n * EIsdkHandGrabPoseMirror the different modes a hand grab pose will utilize pose & transform\n * mirroring\n   None - This pose will utilize no mirroring and only activate for the hand it is set to\n * Automatic - The plugin will automatically create a mirrored version of this hand pose, using\n * relevant properties\n   Manual - The plugin will pair this pose with another placed as a child of\n * this one, and set to the \"MirrorReference\" mode\n */" },
+#endif
 		{ "Manual.Name", "EIsdkHandGrabPoseMirror::Manual" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "None.Name", "EIsdkHandGrabPoseMirror::None" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@nolint\nEIsdkHandGrabPoseMirror the different modes a hand grab pose will utilize pose & transform\nmirroring\n  None - This pose will utilize no mirroring and only activate for the hand it is set to\nAutomatic - The plugin will automatically create a mirrored version of this hand pose, using\nrelevant properties\n  Manual - The plugin will pair this pose with another placed as a child of\nthis one, and set to the \"MirrorReference\" mode" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -182,7 +186,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror_Statics
 		{ "EIsdkHandGrabPoseMirror::Manual", (int64)EIsdkHandGrabPoseMirror::Manual },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -206,17 +210,10 @@ UEnum* Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror()
 // ********** End Enum EIsdkHandGrabPoseMirror *****************************************************
 
 // ********** Begin ScriptStruct FIsdkPosef ********************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPosef;
-class UScriptStruct* FIsdkPosef::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPosef.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPosef.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPosef, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPosef"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPosef.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPosef_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPosef); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPosef); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -231,15 +228,29 @@ struct Z_Construct_UScriptStruct_FIsdkPosef_Statics
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPosef constinit property declarations ************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Orientation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Position;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPosef constinit property declarations **************************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPosef>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPosef_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPosef;
+class UScriptStruct* FIsdkPosef::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPosef.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPosef.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPosef, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPosef"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPosef.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPosef Property Definitions ***********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPosef_Statics::NewProp_Orientation = { "Orientation", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPosef, Orientation), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Orientation_MetaData), NewProp_Orientation_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPosef_Statics::NewProp_Position = { "Position", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPosef, Position), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Position_MetaData), NewProp_Position_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkPosef_Statics::PropPointers[] = {
@@ -247,6 +258,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPosef_Statics::NewProp_Position,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPosef_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPosef Property Definitions *************************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPosef_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -266,22 +278,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPosef()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPosef.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPosef_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPosef.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPosef.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPosef **********************************************************
 
 // ********** Begin ScriptStruct FIsdkInteractionRelationshipCounts ********************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts;
-class UScriptStruct* FIsdkInteractionRelationshipCounts::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkInteractionRelationshipCounts"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkInteractionRelationshipCounts); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkInteractionRelationshipCounts); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -297,15 +302,29 @@ struct Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkInteractionRelationshipCounts constinit property declarations 
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumHover;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_NumSelect;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkInteractionRelationshipCounts constinit property declarations **
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkInteractionRelationshipCounts>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts;
+class UScriptStruct* FIsdkInteractionRelationshipCounts::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkInteractionRelationshipCounts"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkInteractionRelationshipCounts Property Definitions ***********
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::NewProp_NumHover = { "NumHover", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractionRelationshipCounts, NumHover), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumHover_MetaData), NewProp_NumHover_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::NewProp_NumSelect = { "NumSelect", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractionRelationshipCounts, NumSelect), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NumSelect_MetaData), NewProp_NumSelect_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::PropPointers[] = {
@@ -313,6 +332,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::NewProp_NumSelect,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkInteractionRelationshipCounts Property Definitions *************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -332,14 +352,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.InnerSingleton, Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkInteractionRelationshipCounts **********************************
 
 // ********** Begin Interface UIsdkIPayload ********************************************************
-void UIsdkIPayload::StaticRegisterNativesUIsdkIPayload()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIPayload;
 UClass* UIsdkIPayload::GetPrivateStaticClass()
 {
@@ -347,7 +364,7 @@ UClass* UIsdkIPayload::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIPayload.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIPayload"),
 			Z_Registration_Info_UClass_UIsdkIPayload.InnerSingleton,
 			StaticRegisterNativesUIsdkIPayload,
@@ -377,12 +394,15 @@ struct Z_Construct_UClass_UIsdkIPayload_Statics
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIPayload constinit property declarations ************************
+// ********** End Interface UIsdkIPayload constinit property declarations **************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIPayload>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIPayload_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIPayload_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -403,6 +423,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIPayload_Statics::
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIPayload_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIPayload_Statics::Class_MetaDataParams)
 };
+void UIsdkIPayload::StaticRegisterNativesUIsdkIPayload()
+{
+}
 UClass* Z_Construct_UClass_UIsdkIPayload()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIPayload.OuterSingleton)
@@ -412,7 +435,7 @@ UClass* Z_Construct_UClass_UIsdkIPayload()
 	return Z_Registration_Info_UClass_UIsdkIPayload.OuterSingleton;
 }
 UIsdkIPayload::UIsdkIPayload(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIPayload);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIPayload);
 // ********** End Interface UIsdkIPayload **********************************************************
 
 // ********** Begin Enum EIsdkXRControllerDrivenHandPoseType ***************************************
@@ -425,7 +448,7 @@ static UEnum* EIsdkXRControllerDrivenHandPoseType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkXRControllerDrivenHandPoseType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkXRControllerDrivenHandPoseType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkXRControllerDrivenHandPoseType>()
 {
 	return EIsdkXRControllerDrivenHandPoseType_StaticEnum();
 }
@@ -433,7 +456,9 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerDrivenHandPoseType_S
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * EIsdkControllerDrivenHandPoseType is the ISDK analogue to Meta XR's\n * EOculusXRControllerDrivenHandPoseTypes, and is intended only internal use, for cross-plugin\n * communication between ISDK and Meta XR.\n */" },
+#endif
 		{ "Controller.Comment", "// Controller button inputs will be used to generate a normal hand pose.\n" },
 		{ "Controller.Name", "EIsdkXRControllerDrivenHandPoseType::Controller" },
 		{ "Controller.ToolTip", "Controller button inputs will be used to generate a normal hand pose." },
@@ -442,7 +467,9 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerDrivenHandPoseType_S
 		{ "Natural.Name", "EIsdkXRControllerDrivenHandPoseType::Natural" },
 		{ "Natural.ToolTip", "Controllers do not generate any hand poses." },
 		{ "None.Name", "EIsdkXRControllerDrivenHandPoseType::None" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "EIsdkControllerDrivenHandPoseType is the ISDK analogue to Meta XR's\nEOculusXRControllerDrivenHandPoseTypes, and is intended only internal use, for cross-plugin\ncommunication between ISDK and Meta XR." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -451,7 +478,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerDrivenHandPoseType_S
 		{ "EIsdkXRControllerDrivenHandPoseType::Controller", (int64)EIsdkXRControllerDrivenHandPoseType::Controller },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerDrivenHandPoseType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerDrivenHandPoseType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -484,7 +511,7 @@ static UEnum* EIsdkXRControllerType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkXRControllerType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkXRControllerType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkXRControllerType>()
 {
 	return EIsdkXRControllerType_StaticEnum();
 }
@@ -492,13 +519,17 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerType_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * EIsdkXRControllerType is the ISDK analogue to Meta XR's EOculusXRControllerType,\n * and is intended only internal use, for cross-plugin communication between ISDK and Meta XR.\n */" },
+#endif
 		{ "MetaQuestTouch.Name", "EIsdkXRControllerType::MetaQuestTouch" },
 		{ "MetaQuestTouchPlus.Name", "EIsdkXRControllerType::MetaQuestTouchPlus" },
 		{ "MetaQuestTouchPro.Name", "EIsdkXRControllerType::MetaQuestTouchPro" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "None.Name", "EIsdkXRControllerType::None" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "EIsdkXRControllerType is the ISDK analogue to Meta XR's EOculusXRControllerType,\nand is intended only internal use, for cross-plugin communication between ISDK and Meta XR." },
+#endif
 		{ "Unknown.Name", "EIsdkXRControllerType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -510,7 +541,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerType_Statics
 		{ "EIsdkXRControllerType::Unknown", (int64)EIsdkXRControllerType::Unknown },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkXRControllerType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -543,7 +574,7 @@ static UEnum* EControllerHandBehavior_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EControllerHandBehavior.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EControllerHandBehavior>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EControllerHandBehavior>()
 {
 	return EControllerHandBehavior_StaticEnum();
 }
@@ -556,7 +587,9 @@ struct Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior_Statics
 		{ "BothAnimated.Name", "EControllerHandBehavior::BothAnimated" },
 		{ "BothProcedural.DisplayName", "Controller and Hands (Procedural, Quest Only)" },
 		{ "BothProcedural.Name", "EControllerHandBehavior::BothProcedural" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * EControllerHandBehavior drives how we should present the user's hands when they are holding a\n * controller.\n */" },
+#endif
 		{ "ControllerOnly.DisplayName", "Controller Only" },
 		{ "ControllerOnly.Name", "EControllerHandBehavior::ControllerOnly" },
 		{ "HandsOnlyAnimated.DisplayName", "Hands Only (Animated)" },
@@ -564,7 +597,9 @@ struct Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior_Statics
 		{ "HandsOnlyProcedural.DisplayName", "Hands Only (Procedural, Quest Only)" },
 		{ "HandsOnlyProcedural.Name", "EControllerHandBehavior::HandsOnlyProcedural" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "EControllerHandBehavior drives how we should present the user's hands when they are holding a\ncontroller." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -575,7 +610,7 @@ struct Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior_Statics
 		{ "EControllerHandBehavior::HandsOnlyAnimated", (int64)EControllerHandBehavior::HandsOnlyAnimated },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -608,7 +643,7 @@ static UEnum* EIsdkHandGrabPoseOrientation_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkHandGrabPoseOrientation.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseOrientation>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandGrabPoseOrientation>()
 {
 	return EIsdkHandGrabPoseOrientation_StaticEnum();
 }
@@ -617,9 +652,13 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseOrientation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief EIsdkHandGrabPoseMirror the different orientations of a hand grab pose, used for mirroring\n * purposes\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief EIsdkHandGrabPoseMirror the different orientations of a hand grab pose, used for mirroring\npurposes" },
+#endif
 		{ "Unknown.Name", "EIsdkHandGrabPoseOrientation::Unknown" },
 		{ "WristFacingDown.Name", "EIsdkHandGrabPoseOrientation::WristFacingDown" },
 		{ "WristFacingIn.Name", "EIsdkHandGrabPoseOrientation::WristFacingIn" },
@@ -633,7 +672,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseOrientation_Statics
 		{ "EIsdkHandGrabPoseOrientation::WristFacingUp", (int64)EIsdkHandGrabPoseOrientation::WristFacingUp },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseOrientation_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseOrientation_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -666,7 +705,7 @@ static UEnum* EIsdkDigitType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDigitType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDigitType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDigitType>()
 {
 	return EIsdkDigitType_StaticEnum();
 }
@@ -675,7 +714,9 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDigitType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * \n */" },
+#endif
 		{ "Index.Comment", "/**\n * \n */" },
 		{ "Index.Name", "EIsdkDigitType::Index" },
 		{ "Middle.Comment", "/**\n * \n */" },
@@ -700,7 +741,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDigitType_Statics
 		{ "EIsdkDigitType::Thumb", (int64)EIsdkDigitType::Thumb },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDigitType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDigitType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -724,17 +765,10 @@ UEnum* Z_Construct_UEnum_OculusInteraction_EIsdkDigitType()
 // ********** End Enum EIsdkDigitType **************************************************************
 
 // ********** Begin ScriptStruct FIsdkHandGrabPoseProperties ***************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties;
-class UScriptStruct* FIsdkHandGrabPoseProperties::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkHandGrabPoseProperties"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkHandGrabPoseProperties); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkHandGrabPoseProperties); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -742,41 +776,63 @@ struct Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PoseMode_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * The different modes hand grab poses operate when applying a pose.\n   * None - Apply no pose when grabbing\n   * SnapPoseToObject - The hand will snap to the object in the given pose, regardless of it's\n   * tracked position.\n   * SnapObjectToPose - The object will instantly snap to the hand to match the set\n   * pose.\n   * MoveObjectToPose - The object will move (lerp) to the hand in a given position to match the set\n   * pose\n   * MirrorReference - Set only when this hand grab pose is intended to be targeted for a\n   * manual pose mirror arrangement\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The different modes hand grab poses operate when applying a pose.\nNone - Apply no pose when grabbing\nSnapPoseToObject - The hand will snap to the object in the given pose, regardless of it's\ntracked position.\nSnapObjectToPose - The object will instantly snap to the hand to match the set\npose.\nMoveObjectToPose - The object will move (lerp) to the hand in a given position to match the set\npose\nMirrorReference - Set only when this hand grab pose is intended to be targeted for a\nmanual pose mirror arrangement" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SnapMoveDuration_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* How long (in seconds) it will take the pose/object to move to its final snap position. If zero,\n   * this will snap instantly. Otherwise it will lerp over time. */" },
+#endif
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How long (in seconds) it will take the pose/object to move to its final snap position. If zero,\n  * this will snap instantly. Otherwise it will lerp over time." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MirroringMode_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Whether or not this pose can be mirrored to the other hand for which it was not authored */" },
+#endif
 		{ "EditCondition", "PoseMode != EIsdkHandGrabPoseMode::MirrorReference" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not this pose can be mirrored to the other hand for which it was not authored" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bMirrorLocationAndRotation_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* If true, will automatically derive an appropriate mirrored location across an assigned plane. Otherwise the mirrored version will have the same position/rotation as the original.*/" },
+#endif
 		{ "EditCondition", "MirroringMode == EIsdkHandGrabPoseMirror::Automatic" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If true, will automatically derive an appropriate mirrored location across an assigned plane. Otherwise the mirrored version will have the same position/rotation as the original." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MirrorAxis_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The axis about which to mirror the hand pose.  Note, this corresponds to the axis of the hand\n   * pose's attach parent (the component directly above the hand pose in the scene component\n   * hierarchy, not the axis of the hand pose itself. */" },
+#endif
 		{ "EditCondition", "(MirroringMode == EIsdkHandGrabPoseMirror::Automatic) && (bMirrorLocationAndRotation == true)" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The axis about which to mirror the hand pose.  Note, this corresponds to the axis of the hand\n  * pose's attach parent (the component directly above the hand pose in the scene component\n  * hierarchy, not the axis of the hand pose itself." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkHandGrabPoseProperties constinit property declarations *******
 	static const UECodeGen_Private::FBytePropertyParams NewProp_PoseMode_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_PoseMode;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_SnapMoveDuration;
@@ -786,23 +842,35 @@ struct Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bMirrorLocationAndRotation;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_MirrorAxis;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkHandGrabPoseProperties constinit property declarations *********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkHandGrabPoseProperties>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties;
+class UScriptStruct* FIsdkHandGrabPoseProperties::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkHandGrabPoseProperties"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkHandGrabPoseProperties Property Definitions ******************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_PoseMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_PoseMode = { "PoseMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, PoseMode), Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PoseMode_MetaData), NewProp_PoseMode_MetaData) }; // 3280990935
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_PoseMode = { "PoseMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, PoseMode), Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PoseMode_MetaData), NewProp_PoseMode_MetaData) }; // 1180068106
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_SnapMoveDuration = { "SnapMoveDuration", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, SnapMoveDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SnapMoveDuration_MetaData), NewProp_SnapMoveDuration_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_MirroringMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_MirroringMode = { "MirroringMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, MirroringMode), Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MirroringMode_MetaData), NewProp_MirroringMode_MetaData) }; // 586860997
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_MirroringMode = { "MirroringMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, MirroringMode), Z_Construct_UEnum_OculusInteraction_EIsdkHandGrabPoseMirror, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MirroringMode_MetaData), NewProp_MirroringMode_MetaData) }; // 2398460423
 void Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_bMirrorLocationAndRotation_SetBit(void* Obj)
 {
 	((FIsdkHandGrabPoseProperties*)Obj)->bMirrorLocationAndRotation = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_bMirrorLocationAndRotation = { "bMirrorLocationAndRotation", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FIsdkHandGrabPoseProperties), &Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_bMirrorLocationAndRotation_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bMirrorLocationAndRotation_MetaData), NewProp_bMirrorLocationAndRotation_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_MirrorAxis = { "MirrorAxis", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, MirrorAxis), Z_Construct_UEnum_CoreUObject_EAxis, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MirrorAxis_MetaData), NewProp_MirrorAxis_MetaData) }; // 342925220
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_MirrorAxis = { "MirrorAxis", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkHandGrabPoseProperties, MirrorAxis), Z_Construct_UEnum_CoreUObject_EAxis, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MirrorAxis_MetaData), NewProp_MirrorAxis_MetaData) }; // 2447774434
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_PoseMode_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_PoseMode,
@@ -813,6 +881,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewProp_MirrorAxis,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkHandGrabPoseProperties Property Definitions ********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -832,7 +901,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.InnerSingleton, Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkHandGrabPoseProperties *****************************************
 
@@ -846,7 +915,7 @@ static UEnum* EIsdkGrabDetectorType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkGrabDetectorType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkGrabDetectorType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkGrabDetectorType>()
 {
 	return EIsdkGrabDetectorType_StaticEnum();
 }
@@ -855,14 +924,18 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkGrabDetectorType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "Bitflags", "" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief EIsdkGrabDetectorType represents a method of detection for grabs.\n */" },
+#endif
 		{ "DistanceGrab.Name", "EIsdkGrabDetectorType::DistanceGrab" },
 		{ "HandGrab.Name", "EIsdkGrabDetectorType::HandGrab" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "None.Hidden", "" },
 		{ "None.Name", "EIsdkGrabDetectorType::None" },
 		{ "RayGrab.Name", "EIsdkGrabDetectorType::RayGrab" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief EIsdkGrabDetectorType represents a method of detection for grabs." },
+#endif
 		{ "UseEnumValuesAsMaskValuesInEditor", "true" },
 	};
 #endif // WITH_METADATA
@@ -873,7 +946,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkGrabDetectorType_Statics
 		{ "EIsdkGrabDetectorType::RayGrab", (int64)EIsdkGrabDetectorType::RayGrab },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkGrabDetectorType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkGrabDetectorType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -906,7 +979,7 @@ static UEnum* EIsdkMultiGrabBehavior_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkMultiGrabBehavior.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkMultiGrabBehavior>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkMultiGrabBehavior>()
 {
 	return EIsdkMultiGrabBehavior_StaticEnum();
 }
@@ -915,12 +988,16 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkMultiGrabBehavior_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * EIsdkMultiGrabBehavior represents what happens when multiple grabbers grab a single grabbable.\n * SingleGrabFirstRetained - Only the first grabber is allowed to grab\n * SingleGrabTransferToSecond - The first grabber stops grabbing, the second grabber starts\n * MultiGrab - All grabbers can grab at the same time\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "MultiGrab.Name", "EIsdkMultiGrabBehavior::MultiGrab" },
 		{ "SingleGrabFirstRetained.Name", "EIsdkMultiGrabBehavior::SingleGrabFirstRetained" },
 		{ "SingleGrabTransferToSecond.Name", "EIsdkMultiGrabBehavior::SingleGrabTransferToSecond" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "EIsdkMultiGrabBehavior represents what happens when multiple grabbers grab a single grabbable.\nSingleGrabFirstRetained - Only the first grabber is allowed to grab\nSingleGrabTransferToSecond - The first grabber stops grabbing, the second grabber starts\nMultiGrab - All grabbers can grab at the same time" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -929,7 +1006,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkMultiGrabBehavior_Statics
 		{ "EIsdkMultiGrabBehavior::MultiGrab", (int64)EIsdkMultiGrabBehavior::MultiGrab },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkMultiGrabBehavior_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkMultiGrabBehavior_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -962,7 +1039,7 @@ static UEnum* EIsdkGrabInputMethod_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkGrabInputMethod.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkGrabInputMethod>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkGrabInputMethod>()
 {
 	return EIsdkGrabInputMethod_StaticEnum();
 }
@@ -972,13 +1049,17 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkGrabInputMethod_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "Bitflags", "" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief EIsdkGrabInputMethod represents a method of input that can trigger a grab.\n */" },
+#endif
 		{ "Custom.Hidden", "" },
 		{ "Custom.Name", "EIsdkGrabInputMethod::Custom" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "Palm.Name", "EIsdkGrabInputMethod::Palm" },
 		{ "Pinch.Name", "EIsdkGrabInputMethod::Pinch" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief EIsdkGrabInputMethod represents a method of input that can trigger a grab." },
+#endif
 		{ "Unknown.DisplayName", "None" },
 		{ "Unknown.Name", "EIsdkGrabInputMethod::Unknown" },
 	};
@@ -990,7 +1071,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkGrabInputMethod_Statics
 		{ "EIsdkGrabInputMethod::Custom", (int64)EIsdkGrabInputMethod::Custom },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkGrabInputMethod_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkGrabInputMethod_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1023,7 +1104,7 @@ static UEnum* EIsdkInteractionType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkInteractionType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkInteractionType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkInteractionType>()
 {
 	return EIsdkInteractionType_StaticEnum();
 }
@@ -1032,13 +1113,17 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractionType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief EIsdkInteractionType represents the different modalities of interaction supported by interactor/interactable relationships\n  */" },
+#endif
 		{ "DistanceGrab.Name", "EIsdkInteractionType::DistanceGrab" },
 		{ "Grab.Name", "EIsdkInteractionType::Grab" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "Poke.Name", "EIsdkInteractionType::Poke" },
 		{ "Ray.Name", "EIsdkInteractionType::Ray" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief EIsdkInteractionType represents the different modalities of interaction supported by interactor/interactable relationships" },
+#endif
 		{ "Unknown.Name", "EIsdkInteractionType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1050,7 +1135,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractionType_Statics
 		{ "EIsdkInteractionType::DistanceGrab", (int64)EIsdkInteractionType::DistanceGrab },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractionType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkInteractionType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1083,7 +1168,7 @@ static UEnum* EIsdkDeviceType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDeviceType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDeviceType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDeviceType>()
 {
 	return EIsdkDeviceType_StaticEnum();
 }
@@ -1091,12 +1176,16 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDeviceType_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief EIsdkDeviceType represents the type of device being used in an interaction\n */" },
+#endif
 		{ "Controller.Name", "EIsdkDeviceType::Controller" },
 		{ "Hand.Name", "EIsdkDeviceType::Hand" },
 		{ "ModuleRelativePath", "Public/StructTypesNonGenerated.h" },
 		{ "Peripheral.Name", "EIsdkDeviceType::Peripheral" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief EIsdkDeviceType represents the type of device being used in an interaction" },
+#endif
 		{ "Unknown.Name", "EIsdkDeviceType::Unknown" },
 	};
 #endif // WITH_METADATA
@@ -1107,7 +1196,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDeviceType_Statics
 		{ "EIsdkDeviceType::Peripheral", (int64)EIsdkDeviceType::Peripheral },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDeviceType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDeviceType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1131,36 +1220,38 @@ UEnum* Z_Construct_UEnum_OculusInteraction_EIsdkDeviceType()
 // ********** End Enum EIsdkDeviceType *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkLerpState_StaticEnum, TEXT("EIsdkLerpState"), &Z_Registration_Info_UEnum_EIsdkLerpState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4228291879U) },
-		{ EIsdkHandGrabPoseMode_StaticEnum, TEXT("EIsdkHandGrabPoseMode"), &Z_Registration_Info_UEnum_EIsdkHandGrabPoseMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3280990935U) },
-		{ EIsdkHandGrabPoseMirror_StaticEnum, TEXT("EIsdkHandGrabPoseMirror"), &Z_Registration_Info_UEnum_EIsdkHandGrabPoseMirror, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 586860997U) },
-		{ EIsdkXRControllerDrivenHandPoseType_StaticEnum, TEXT("EIsdkXRControllerDrivenHandPoseType"), &Z_Registration_Info_UEnum_EIsdkXRControllerDrivenHandPoseType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3820086471U) },
-		{ EIsdkXRControllerType_StaticEnum, TEXT("EIsdkXRControllerType"), &Z_Registration_Info_UEnum_EIsdkXRControllerType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1960092091U) },
-		{ EControllerHandBehavior_StaticEnum, TEXT("EControllerHandBehavior"), &Z_Registration_Info_UEnum_EControllerHandBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 802605893U) },
-		{ EIsdkHandGrabPoseOrientation_StaticEnum, TEXT("EIsdkHandGrabPoseOrientation"), &Z_Registration_Info_UEnum_EIsdkHandGrabPoseOrientation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1381089648U) },
-		{ EIsdkDigitType_StaticEnum, TEXT("EIsdkDigitType"), &Z_Registration_Info_UEnum_EIsdkDigitType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1156377507U) },
-		{ EIsdkGrabDetectorType_StaticEnum, TEXT("EIsdkGrabDetectorType"), &Z_Registration_Info_UEnum_EIsdkGrabDetectorType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3921439500U) },
-		{ EIsdkMultiGrabBehavior_StaticEnum, TEXT("EIsdkMultiGrabBehavior"), &Z_Registration_Info_UEnum_EIsdkMultiGrabBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1505835281U) },
-		{ EIsdkGrabInputMethod_StaticEnum, TEXT("EIsdkGrabInputMethod"), &Z_Registration_Info_UEnum_EIsdkGrabInputMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1072373591U) },
-		{ EIsdkInteractionType_StaticEnum, TEXT("EIsdkInteractionType"), &Z_Registration_Info_UEnum_EIsdkInteractionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3722605938U) },
-		{ EIsdkDeviceType_StaticEnum, TEXT("EIsdkDeviceType"), &Z_Registration_Info_UEnum_EIsdkDeviceType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3336251855U) },
+		{ EIsdkLerpState_StaticEnum, TEXT("EIsdkLerpState"), &Z_Registration_Info_UEnum_EIsdkLerpState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 322049481U) },
+		{ EIsdkHandGrabPoseMode_StaticEnum, TEXT("EIsdkHandGrabPoseMode"), &Z_Registration_Info_UEnum_EIsdkHandGrabPoseMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1180068106U) },
+		{ EIsdkHandGrabPoseMirror_StaticEnum, TEXT("EIsdkHandGrabPoseMirror"), &Z_Registration_Info_UEnum_EIsdkHandGrabPoseMirror, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2398460423U) },
+		{ EIsdkXRControllerDrivenHandPoseType_StaticEnum, TEXT("EIsdkXRControllerDrivenHandPoseType"), &Z_Registration_Info_UEnum_EIsdkXRControllerDrivenHandPoseType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 255024943U) },
+		{ EIsdkXRControllerType_StaticEnum, TEXT("EIsdkXRControllerType"), &Z_Registration_Info_UEnum_EIsdkXRControllerType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 392362500U) },
+		{ EControllerHandBehavior_StaticEnum, TEXT("EControllerHandBehavior"), &Z_Registration_Info_UEnum_EControllerHandBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1789409571U) },
+		{ EIsdkHandGrabPoseOrientation_StaticEnum, TEXT("EIsdkHandGrabPoseOrientation"), &Z_Registration_Info_UEnum_EIsdkHandGrabPoseOrientation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2365873067U) },
+		{ EIsdkDigitType_StaticEnum, TEXT("EIsdkDigitType"), &Z_Registration_Info_UEnum_EIsdkDigitType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3468685479U) },
+		{ EIsdkGrabDetectorType_StaticEnum, TEXT("EIsdkGrabDetectorType"), &Z_Registration_Info_UEnum_EIsdkGrabDetectorType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4211588302U) },
+		{ EIsdkMultiGrabBehavior_StaticEnum, TEXT("EIsdkMultiGrabBehavior"), &Z_Registration_Info_UEnum_EIsdkMultiGrabBehavior, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4049449250U) },
+		{ EIsdkGrabInputMethod_StaticEnum, TEXT("EIsdkGrabInputMethod"), &Z_Registration_Info_UEnum_EIsdkGrabInputMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1250502478U) },
+		{ EIsdkInteractionType_StaticEnum, TEXT("EIsdkInteractionType"), &Z_Registration_Info_UEnum_EIsdkInteractionType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3776920557U) },
+		{ EIsdkDeviceType_StaticEnum, TEXT("EIsdkDeviceType"), &Z_Registration_Info_UEnum_EIsdkDeviceType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 489934173U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkPosef::StaticStruct, Z_Construct_UScriptStruct_FIsdkPosef_Statics::NewStructOps, TEXT("IsdkPosef"), &Z_Registration_Info_UScriptStruct_FIsdkPosef, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPosef), 3274912445U) },
-		{ FIsdkInteractionRelationshipCounts::StaticStruct, Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::NewStructOps, TEXT("IsdkInteractionRelationshipCounts"), &Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInteractionRelationshipCounts), 1357903711U) },
-		{ FIsdkHandGrabPoseProperties::StaticStruct, Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewStructOps, TEXT("IsdkHandGrabPoseProperties"), &Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkHandGrabPoseProperties), 927962901U) },
+		{ FIsdkPosef::StaticStruct, Z_Construct_UScriptStruct_FIsdkPosef_Statics::NewStructOps, TEXT("IsdkPosef"),&Z_Registration_Info_UScriptStruct_FIsdkPosef, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPosef), 3444616462U) },
+		{ FIsdkInteractionRelationshipCounts::StaticStruct, Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics::NewStructOps, TEXT("IsdkInteractionRelationshipCounts"),&Z_Registration_Info_UScriptStruct_FIsdkInteractionRelationshipCounts, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInteractionRelationshipCounts), 4276155136U) },
+		{ FIsdkHandGrabPoseProperties::StaticStruct, Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics::NewStructOps, TEXT("IsdkHandGrabPoseProperties"),&Z_Registration_Info_UScriptStruct_FIsdkHandGrabPoseProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkHandGrabPoseProperties), 2151453187U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIPayload, UIsdkIPayload::StaticClass, TEXT("UIsdkIPayload"), &Z_Registration_Info_UClass_UIsdkIPayload, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIPayload), 600311947U) },
+		{ Z_Construct_UClass_UIsdkIPayload, UIsdkIPayload::StaticClass, TEXT("UIsdkIPayload"), &Z_Registration_Info_UClass_UIsdkIPayload, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIPayload), 343023048U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_3505222590{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_1015922312(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h__Script_OculusInteraction_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

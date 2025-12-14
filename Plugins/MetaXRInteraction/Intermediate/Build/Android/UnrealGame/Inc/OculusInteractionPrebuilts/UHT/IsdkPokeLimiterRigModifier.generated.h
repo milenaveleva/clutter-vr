@@ -15,29 +15,29 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 struct FIsdkInteractionPointerEvent;
 
 // ********** Begin Class UIsdkPokeLimiterRigModifier **********************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execApplyRootPokeLimiting); \
 	DECLARE_FUNCTION(execHandleRelayedPointerEvent);
 
 
+struct Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkPokeLimiterRigModifier_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkPokeLimiterRigModifier(); \
-	friend struct Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkPokeLimiterRigModifier_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkPokeLimiterRigModifier_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkPokeLimiterRigModifier, UIsdkRigModifier, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkPokeLimiterRigModifier_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkPokeLimiterRigModifier)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkPokeLimiterRigModifier(UIsdkPokeLimiterRigModifier&&) = delete; \
 	UIsdkPokeLimiterRigModifier(const UIsdkPokeLimiterRigModifier&) = delete; \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~UIsdkPokeLimiterRigModifier();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_42_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_42_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h_45_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +63,6 @@ class UIsdkPokeLimiterRigModifier;
 // ********** End Class UIsdkPokeLimiterRigModifier ************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

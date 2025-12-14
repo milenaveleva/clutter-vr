@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AMRUKAnchor;
 class UMRUKLoadFromDevice;
 class UMRUKLoadFromJson;
@@ -29,8 +28,9 @@ struct FLinearColor;
 struct FOculusXRUInt64;
 
 // ********** Begin ScriptStruct FMRUKMeshSegment **************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_14_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKMeshSegment_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKMeshSegment_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_14_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKMeshSegment_Statics; \
 	MRUTILITYKIT_API static class UScriptStruct* StaticStruct();
 
 
@@ -38,32 +38,33 @@ struct FMRUKMeshSegment;
 // ********** End ScriptStruct FMRUKMeshSegment ****************************************************
 
 // ********** Begin Delegate FMRUKLoaded ***********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_28_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_28_DELEGATE \
 static void FMRUKLoaded_DelegateWrapper(const FMulticastScriptDelegate& MRUKLoaded);
 
 
 // ********** End Delegate FMRUKLoaded *************************************************************
 
 // ********** Begin Class UMRUKLoadFromDevice ******************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnSceneLoaded); \
 	DECLARE_FUNCTION(execLoadSceneFromDeviceAsync);
 
 
+struct Z_Construct_UClass_UMRUKLoadFromDevice_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKLoadFromDevice_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKLoadFromDevice(); \
-	friend struct Z_Construct_UClass_UMRUKLoadFromDevice_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKLoadFromDevice_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKLoadFromDevice_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKLoadFromDevice_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKLoadFromDevice, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKLoadFromDevice_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKLoadFromDevice)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMRUKLoadFromDevice(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -75,13 +76,13 @@ public: \
 	NO_API virtual ~UMRUKLoadFromDevice();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_23_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_23_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_26_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -91,32 +92,33 @@ class UMRUKLoadFromDevice;
 // ********** End Class UMRUKLoadFromDevice ********************************************************
 
 // ********** Begin Delegate FMRUKLoaded ***********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_57_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_57_DELEGATE \
 static void FMRUKLoaded_DelegateWrapper(const FMulticastScriptDelegate& MRUKLoaded);
 
 
 // ********** End Delegate FMRUKLoaded *************************************************************
 
 // ********** Begin Class UMRUKLoadFromJson ********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnSceneLoaded); \
 	DECLARE_FUNCTION(execLoadSceneFromJsonAsync);
 
 
+struct Z_Construct_UClass_UMRUKLoadFromJson_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKLoadFromJson_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKLoadFromJson(); \
-	friend struct Z_Construct_UClass_UMRUKLoadFromJson_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKLoadFromJson_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKLoadFromJson_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKLoadFromJson_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKLoadFromJson, UBlueprintAsyncActionBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKLoadFromJson_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKLoadFromJson)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMRUKLoadFromJson(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -128,13 +130,13 @@ public: \
 	NO_API virtual ~UMRUKLoadFromJson();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_52_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_52_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_55_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -144,7 +146,7 @@ class UMRUKLoadFromJson;
 // ********** End Class UMRUKLoadFromJson **********************************************************
 
 // ********** Begin Class UMRUKBPLibrary ***********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetMatrixColumn); \
 	DECLARE_FUNCTION(execConstructTexture2D); \
 	DECLARE_FUNCTION(execComputeDirectionAwayFromClosestWall); \
@@ -155,20 +157,21 @@ class UMRUKLoadFromJson;
 	DECLARE_FUNCTION(execLoadGlobalMeshFromDevice);
 
 
+struct Z_Construct_UClass_UMRUKBPLibrary_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKBPLibrary_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKBPLibrary(); \
-	friend struct Z_Construct_UClass_UMRUKBPLibrary_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKBPLibrary_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKBPLibrary_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKBPLibrary_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKBPLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKBPLibrary_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKBPLibrary)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMRUKBPLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -180,13 +183,13 @@ public: \
 	NO_API virtual ~UMRUKBPLibrary();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_84_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_84_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h_87_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -196,6 +199,6 @@ class UMRUKBPLibrary;
 // ********** End Class UMRUKBPLibrary *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBPLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -8,7 +8,7 @@
 #include "OculusXRMR_PlaneMeshComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRMR_PlaneMeshComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -22,17 +22,10 @@ UPackage* Z_Construct_UPackage__Script_OculusXRMR();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FOculusXRMR_PlaneMeshTriangle *************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle;
-class UScriptStruct* FOculusXRMR_PlaneMeshTriangle::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, (UObject*)Z_Construct_UPackage__Script_OculusXRMR(), TEXT("OculusXRMR_PlaneMeshTriangle"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRMR_PlaneMeshTriangle); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRMR_PlaneMeshTriangle); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -57,6 +50,8 @@ struct Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics
 		{ "ModuleRelativePath", "Private/OculusXRMR_PlaneMeshComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRMR_PlaneMeshTriangle constinit property declarations *****
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Vertex0;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UV0;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Vertex1;
@@ -64,12 +59,24 @@ struct Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Vertex2;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UV2;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRMR_PlaneMeshTriangle constinit property declarations *******
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRMR_PlaneMeshTriangle>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle;
+class UScriptStruct* FOculusXRMR_PlaneMeshTriangle::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, (UObject*)Z_Construct_UPackage__Script_OculusXRMR(), TEXT("OculusXRMR_PlaneMeshTriangle"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRMR_PlaneMeshTriangle Property Definitions ****************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::NewProp_Vertex0 = { "Vertex0", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRMR_PlaneMeshTriangle, Vertex0), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Vertex0_MetaData), NewProp_Vertex0_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::NewProp_UV0 = { "UV0", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRMR_PlaneMeshTriangle, UV0), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UV0_MetaData), NewProp_UV0_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::NewProp_Vertex1 = { "Vertex1", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRMR_PlaneMeshTriangle, Vertex1), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Vertex1_MetaData), NewProp_Vertex1_MetaData) };
@@ -85,6 +92,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::NewProp_UV2,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRMR_PlaneMeshTriangle Property Definitions ******************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMR,
 	nullptr,
@@ -104,7 +112,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRMR_PlaneMeshTriangle ***************************************
 
@@ -118,27 +126,40 @@ struct Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangl
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Components|CustomMesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Add to the geometry to use on this triangle mesh.  This may cause an allocation.  Use SetCustomMeshTriangles() instead when possible to reduce allocations. */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_PlaneMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add to the geometry to use on this triangle mesh.  This may cause an allocation.  Use SetCustomMeshTriangles() instead when possible to reduce allocations." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Triangles_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AddCustomMeshTriangles constinit property declarations ****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Triangles_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Triangles;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AddCustomMeshTriangles constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::NewProp_Triangles_Inner = { "Triangles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, METADATA_PARAMS(0, nullptr) }; // 1730306387
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::NewProp_Triangles = { "Triangles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMR_PlaneMeshComponent_eventAddCustomMeshTriangles_Parms, Triangles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Triangles_MetaData), NewProp_Triangles_MetaData) }; // 1730306387
+
+// ********** Begin Function AddCustomMeshTriangles Property Definitions ***************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::NewProp_Triangles_Inner = { "Triangles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, METADATA_PARAMS(0, nullptr) }; // 2216337744
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::NewProp_Triangles = { "Triangles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMR_PlaneMeshComponent_eventAddCustomMeshTriangles_Parms, Triangles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Triangles_MetaData), NewProp_Triangles_MetaData) }; // 2216337744
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::NewProp_Triangles_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::NewProp_Triangles,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, nullptr, "AddCustomMeshTriangles", Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::OculusXRMR_PlaneMeshComponent_eventAddCustomMeshTriangles_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::Function_MetaDataParams)},  };
+// ********** End Function AddCustomMeshTriangles Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, nullptr, "AddCustomMeshTriangles", 	Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::OculusXRMR_PlaneMeshComponent_eventAddCustomMeshTriangles_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles_Statics::OculusXRMR_PlaneMeshComponent_eventAddCustomMeshTriangles_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles()
 {
@@ -165,14 +186,24 @@ struct Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTrian
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Components|CustomMesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Removes all geometry from this triangle mesh.  Does not deallocate memory, allowing new geometry to reuse the existing allocation. */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_PlaneMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Removes all geometry from this triangle mesh.  Does not deallocate memory, allowing new geometry to reuse the existing allocation." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ClearCustomMeshTriangles constinit property declarations **************
+// ********** End Function ClearCustomMeshTriangles constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, nullptr, "ClearCustomMeshTriangles", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, nullptr, "ClearCustomMeshTriangles", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -202,23 +233,32 @@ struct Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangl
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Components|CustomMesh" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Set the geometry to use on this triangle mesh */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_PlaneMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the geometry to use on this triangle mesh" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Triangles_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCustomMeshTriangles constinit property declarations ****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Triangles_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Triangles;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCustomMeshTriangles constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::NewProp_Triangles_Inner = { "Triangles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, METADATA_PARAMS(0, nullptr) }; // 1730306387
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::NewProp_Triangles = { "Triangles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMR_PlaneMeshComponent_eventSetCustomMeshTriangles_Parms, Triangles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Triangles_MetaData), NewProp_Triangles_MetaData) }; // 1730306387
+
+// ********** Begin Function SetCustomMeshTriangles Property Definitions ***************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::NewProp_Triangles_Inner = { "Triangles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, METADATA_PARAMS(0, nullptr) }; // 2216337744
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::NewProp_Triangles = { "Triangles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMR_PlaneMeshComponent_eventSetCustomMeshTriangles_Parms, Triangles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Triangles_MetaData), NewProp_Triangles_MetaData) }; // 2216337744
 void Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMR_PlaneMeshComponent_eventSetCustomMeshTriangles_Parms*)Obj)->ReturnValue = 1;
@@ -230,7 +270,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, nullptr, "SetCustomMeshTriangles", Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::OculusXRMR_PlaneMeshComponent_eventSetCustomMeshTriangles_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCustomMeshTriangles Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, nullptr, "SetCustomMeshTriangles", 	Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::OculusXRMR_PlaneMeshComponent_eventSetCustomMeshTriangles_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles_Statics::OculusXRMR_PlaneMeshComponent_eventSetCustomMeshTriangles_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles()
 {
@@ -252,16 +296,6 @@ DEFINE_FUNCTION(UOculusXRMR_PlaneMeshComponent::execSetCustomMeshTriangles)
 // ********** End Class UOculusXRMR_PlaneMeshComponent Function SetCustomMeshTriangles *************
 
 // ********** Begin Class UOculusXRMR_PlaneMeshComponent *******************************************
-void UOculusXRMR_PlaneMeshComponent::StaticRegisterNativesUOculusXRMR_PlaneMeshComponent()
-{
-	UClass* Class = UOculusXRMR_PlaneMeshComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "AddCustomMeshTriangles", &UOculusXRMR_PlaneMeshComponent::execAddCustomMeshTriangles },
-		{ "ClearCustomMeshTriangles", &UOculusXRMR_PlaneMeshComponent::execClearCustomMeshTriangles },
-		{ "SetCustomMeshTriangles", &UOculusXRMR_PlaneMeshComponent::execSetCustomMeshTriangles },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent;
 UClass* UOculusXRMR_PlaneMeshComponent::GetPrivateStaticClass()
 {
@@ -269,7 +303,7 @@ UClass* UOculusXRMR_PlaneMeshComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRMR_PlaneMeshComponent"),
 			Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRMR_PlaneMeshComponent,
@@ -296,26 +330,38 @@ struct Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "Rendering" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Component that allows you to specify custom triangle mesh geometry */" },
+#endif
 		{ "HideCategories", "Object LOD Physics Collision Mobility Trigger" },
 		{ "IncludePath", "OculusXRMR_PlaneMeshComponent.h" },
 		{ "IsBlueprintBase", "false" },
 		{ "ModuleRelativePath", "Private/OculusXRMR_PlaneMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Component that allows you to specify custom triangle mesh geometry" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRMR_PlaneMeshComponent constinit property declarations ***********
+// ********** End Class UOculusXRMR_PlaneMeshComponent constinit property declarations *************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("AddCustomMeshTriangles"), .Pointer = &UOculusXRMR_PlaneMeshComponent::execAddCustomMeshTriangles },
+		{ .NameUTF8 = UTF8TEXT("ClearCustomMeshTriangles"), .Pointer = &UOculusXRMR_PlaneMeshComponent::execClearCustomMeshTriangles },
+		{ .NameUTF8 = UTF8TEXT("SetCustomMeshTriangles"), .Pointer = &UOculusXRMR_PlaneMeshComponent::execSetCustomMeshTriangles },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles, "AddCustomMeshTriangles" }, // 341673037
-		{ &Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles, "ClearCustomMeshTriangles" }, // 3613794570
-		{ &Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles, "SetCustomMeshTriangles" }, // 2846231783
+		{ &Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_AddCustomMeshTriangles, "AddCustomMeshTriangles" }, // 1611589989
+		{ &Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_ClearCustomMeshTriangles, "ClearCustomMeshTriangles" }, // 654403242
+		{ &Z_Construct_UFunction_UOculusXRMR_PlaneMeshComponent_SetCustomMeshTriangles, "SetCustomMeshTriangles" }, // 787369058
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRMR_PlaneMeshComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UMeshComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMR,
@@ -336,6 +382,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRMR_PlaneMeshCo
 	0x00A012A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRMR_PlaneMeshComponent::StaticRegisterNativesUOculusXRMR_PlaneMeshComponent()
+{
+	UClass* Class = UOculusXRMR_PlaneMeshComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent.OuterSingleton)
@@ -344,24 +395,26 @@ UClass* Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRMR_PlaneMeshComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRMR_PlaneMeshComponent);
 UOculusXRMR_PlaneMeshComponent::~UOculusXRMR_PlaneMeshComponent() {}
 // ********** End Class UOculusXRMR_PlaneMeshComponent *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FOculusXRMR_PlaneMeshTriangle::StaticStruct, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::NewStructOps, TEXT("OculusXRMR_PlaneMeshTriangle"), &Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRMR_PlaneMeshTriangle), 1730306387U) },
+		{ FOculusXRMR_PlaneMeshTriangle::StaticStruct, Z_Construct_UScriptStruct_FOculusXRMR_PlaneMeshTriangle_Statics::NewStructOps, TEXT("OculusXRMR_PlaneMeshTriangle"),&Z_Registration_Info_UScriptStruct_FOculusXRMR_PlaneMeshTriangle, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRMR_PlaneMeshTriangle), 2216337744U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, UOculusXRMR_PlaneMeshComponent::StaticClass, TEXT("UOculusXRMR_PlaneMeshComponent"), &Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMR_PlaneMeshComponent), 3409419595U) },
+		{ Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent, UOculusXRMR_PlaneMeshComponent::StaticClass, TEXT("UOculusXRMR_PlaneMeshComponent"), &Z_Registration_Info_UClass_UOculusXRMR_PlaneMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMR_PlaneMeshComponent), 895621758U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_1828364502{
+	TEXT("/Script/OculusXRMR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_2046012173(TEXT("/Script/OculusXRMR"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_PlaneMeshComponent_h__Script_OculusXRMR_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

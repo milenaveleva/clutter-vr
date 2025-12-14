@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AStaticMeshActor;
 class UCurveLinearColor;
 class UMeshComponent;
@@ -25,7 +24,7 @@ class UStaticMeshComponent;
 struct FLinearColor;
 
 // ********** Begin Class UOculusXRPassthroughLayerBase ********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execRemoveColorLut); \
 	DECLARE_FUNCTION(execSetColorLUTWeight); \
 	DECLARE_FUNCTION(execSetColorLUTTarget); \
@@ -45,20 +44,21 @@ struct FLinearColor;
 	DECLARE_FUNCTION(execSetTextureOpacity);
 
 
+struct Z_Construct_UClass_UOculusXRPassthroughLayerBase_Statics;
 OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPassthroughLayerBase_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRPassthroughLayerBase(); \
-	friend struct Z_Construct_UClass_UOculusXRPassthroughLayerBase_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRPassthroughLayerBase_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPassthroughLayerBase_NoRegister(); \
+	friend OCULUSXRPASSTHROUGH_API UClass* ::Z_Construct_UClass_UOculusXRPassthroughLayerBase_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRPassthroughLayerBase, UStereoLayerShape, COMPILED_IN_FLAGS(CLASS_Abstract), CASTCLASS_None, TEXT("/Script/OculusXRPassthrough"), Z_Construct_UClass_UOculusXRPassthroughLayerBase_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRPassthroughLayerBase)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRPassthroughLayerBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -70,13 +70,13 @@ public: \
 	NO_API virtual ~UOculusXRPassthroughLayerBase();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_30_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_30_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_33_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -86,20 +86,21 @@ class UOculusXRPassthroughLayerBase;
 // ********** End Class UOculusXRPassthroughLayerBase **********************************************
 
 // ********** Begin Class UOculusXRStereoLayerShapeReconstructed ***********************************
+struct Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_Statics;
 OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRStereoLayerShapeReconstructed(); \
-	friend struct Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_NoRegister(); \
+	friend OCULUSXRPASSTHROUGH_API UClass* ::Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRStereoLayerShapeReconstructed, UOculusXRPassthroughLayerBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRPassthrough"), Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRStereoLayerShapeReconstructed)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRStereoLayerShapeReconstructed(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -111,12 +112,12 @@ public: \
 	NO_API virtual ~UOculusXRStereoLayerShapeReconstructed();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_274_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_274_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_277_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -126,20 +127,21 @@ class UOculusXRStereoLayerShapeReconstructed;
 // ********** End Class UOculusXRStereoLayerShapeReconstructed *************************************
 
 // ********** Begin Class UOculusXRStereoLayerShapeUserDefined *************************************
+struct Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_Statics;
 OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRStereoLayerShapeUserDefined(); \
-	friend struct Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_NoRegister(); \
+	friend OCULUSXRPASSTHROUGH_API UClass* ::Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRStereoLayerShapeUserDefined, UOculusXRPassthroughLayerBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRPassthrough"), Z_Construct_UClass_UOculusXRStereoLayerShapeUserDefined_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRStereoLayerShapeUserDefined)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRStereoLayerShapeUserDefined(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -151,12 +153,12 @@ public: \
 	NO_API virtual ~UOculusXRStereoLayerShapeUserDefined();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_295_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_295_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_298_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -166,7 +168,7 @@ class UOculusXRStereoLayerShapeUserDefined;
 // ********** End Class UOculusXRStereoLayerShapeUserDefined ***************************************
 
 // ********** Begin Class UOculusXRPassthroughLayerComponent ***************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_RPC_WRAPPERS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execOnAnyLayerResumedEvent); \
 	DECLARE_FUNCTION(execMarkPassthroughStyleForUpdate); \
 	DECLARE_FUNCTION(execIsSurfaceGeometryComponent); \
@@ -179,20 +181,21 @@ class UOculusXRStereoLayerShapeUserDefined;
 	DECLARE_FUNCTION(execAddSurfaceGeometry);
 
 
+struct Z_Construct_UClass_UOculusXRPassthroughLayerComponent_Statics;
 OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPassthroughLayerComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRPassthroughLayerComponent(); \
-	friend struct Z_Construct_UClass_UOculusXRPassthroughLayerComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRPassthroughLayerComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPassthroughLayerComponent_NoRegister(); \
+	friend OCULUSXRPASSTHROUGH_API UClass* ::Z_Construct_UClass_UOculusXRPassthroughLayerComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRPassthroughLayerComponent, UStereoLayerComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRPassthrough"), Z_Construct_UClass_UOculusXRPassthroughLayerComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRPassthroughLayerComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRPassthroughLayerComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRPassthroughLayerComponent) \
@@ -204,13 +207,13 @@ public: \
 	NO_API virtual ~UOculusXRPassthroughLayerComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_341_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_341_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_RPC_WRAPPERS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_RPC_WRAPPERS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h_344_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -220,6 +223,6 @@ class UOculusXRPassthroughLayerComponent;
 // ********** End Class UOculusXRPassthroughLayerComponent *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughLayerComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

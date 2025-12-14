@@ -8,18 +8,18 @@ LocalBuilds/*
 Saved/*
 Platforms/*
 
-# Build/*
-# Build/Android/*
-# Build/Windows/*
-# Build/Mac/*
-# Build/Android_ASTC/*
+Build/*
+Build/Android/*
+Build/Windows/*
+Build/Mac/*
+Build/Android_ASTC/*
 
 # Binaries/*
 # Binaries/Win64/*
 # Binaries/Win64/D3D12/*
 # Binaries/Win64/DML/*
 # Binaries/Mac/*
-# Binaries/Android/*
+Binaries/Android/*
 
 # FMOD plugin caches
 FMOD/.cache/...

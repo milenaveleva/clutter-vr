@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FOneGrabRotationConstraint ****************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_38_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOneGrabRotationConstraint_Statics; \
+struct Z_Construct_UScriptStruct_FOneGrabRotationConstraint_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_38_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOneGrabRotationConstraint_Statics; \
 	OCULUSINTERACTION_API static class UScriptStruct* StaticStruct();
 
 
@@ -26,20 +27,21 @@ struct FOneGrabRotationConstraint;
 // ********** End ScriptStruct FOneGrabRotationConstraint ******************************************
 
 // ********** Begin Class UIsdkOneGrabRotateTransformer ********************************************
+struct Z_Construct_UClass_UIsdkOneGrabRotateTransformer_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkOneGrabRotateTransformer_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkOneGrabRotateTransformer(); \
-	friend struct Z_Construct_UClass_UIsdkOneGrabRotateTransformer_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkOneGrabRotateTransformer_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkOneGrabRotateTransformer_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkOneGrabRotateTransformer_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkOneGrabRotateTransformer, UIsdkTransformer, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkOneGrabRotateTransformer_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkOneGrabRotateTransformer)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkOneGrabRotateTransformer(UIsdkOneGrabRotateTransformer&&) = delete; \
 	UIsdkOneGrabRotateTransformer(const UIsdkOneGrabRotateTransformer&) = delete; \
@@ -49,12 +51,12 @@ public: \
 	NO_API virtual ~UIsdkOneGrabRotateTransformer();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_104_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_104_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h_107_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +66,6 @@ class UIsdkOneGrabRotateTransformer;
 // ********** End Class UIsdkOneGrabRotateTransformer **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkOneGrabRotateTransformer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

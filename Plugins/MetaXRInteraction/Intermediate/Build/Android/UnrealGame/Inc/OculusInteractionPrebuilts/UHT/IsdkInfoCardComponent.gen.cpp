@@ -8,7 +8,7 @@
 #include "InfoCard/IsdkInfoCardComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInfoCardComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -28,9 +28,15 @@ struct Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties
 		{ "ModuleRelativePath", "Public/InfoCard/IsdkInfoCardComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedMaterialProperties constinit property declarations **********
+// ********** End Function SetRoundedMaterialProperties constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInfoCardComponent, nullptr, "SetRoundedMaterialProperties", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInfoCardComponent, nullptr, "SetRoundedMaterialProperties", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -50,14 +56,6 @@ DEFINE_FUNCTION(UIsdkInfoCardComponent::execSetRoundedMaterialProperties)
 // ********** End Class UIsdkInfoCardComponent Function SetRoundedMaterialProperties ***************
 
 // ********** Begin Class UIsdkInfoCardComponent ***************************************************
-void UIsdkInfoCardComponent::StaticRegisterNativesUIsdkInfoCardComponent()
-{
-	UClass* Class = UIsdkInfoCardComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "SetRoundedMaterialProperties", &UIsdkInfoCardComponent::execSetRoundedMaterialProperties },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkInfoCardComponent;
 UClass* UIsdkInfoCardComponent::GetPrivateStaticClass()
 {
@@ -65,7 +63,7 @@ UClass* UIsdkInfoCardComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkInfoCardComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInfoCardComponent"),
 			Z_Registration_Info_UClass_UIsdkInfoCardComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkInfoCardComponent,
@@ -109,20 +107,28 @@ struct Z_Construct_UClass_UIsdkInfoCardComponent_Statics
 		{ "ModuleRelativePath", "Public/InfoCard/IsdkInfoCardComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkInfoCardComponent constinit property declarations *******************
 	static const UECodeGen_Private::FTextPropertyParams NewProp_LabelText;
 	static const UECodeGen_Private::FTextPropertyParams NewProp_BodyText;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedBoxMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkInfoCardComponent constinit property declarations *********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("SetRoundedMaterialProperties"), .Pointer = &UIsdkInfoCardComponent::execSetRoundedMaterialProperties },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties, "SetRoundedMaterialProperties" }, // 4265094022
+		{ &Z_Construct_UFunction_UIsdkInfoCardComponent_SetRoundedMaterialProperties, "SetRoundedMaterialProperties" }, // 3660837594
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkInfoCardComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkInfoCardComponent_Statics
+
+// ********** Begin Class UIsdkInfoCardComponent Property Definitions ******************************
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UIsdkInfoCardComponent_Statics::NewProp_LabelText = { "LabelText", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInfoCardComponent, LabelText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelText_MetaData), NewProp_LabelText_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UIsdkInfoCardComponent_Statics::NewProp_BodyText = { "BodyText", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInfoCardComponent, BodyText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BodyText_MetaData), NewProp_BodyText_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInfoCardComponent_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0124080000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInfoCardComponent, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoundedBoxMaterial_MetaData), NewProp_RoundedBoxMaterial_MetaData) };
@@ -132,6 +138,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInfo
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInfoCardComponent_Statics::NewProp_RoundedBoxMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInfoCardComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkInfoCardComponent Property Definitions ********************************
 UObject* (*const Z_Construct_UClass_UIsdkInfoCardComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UWidgetComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -152,6 +159,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkInfoCardComponent_
 	0x00B010A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInfoCardComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkInfoCardComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkInfoCardComponent::StaticRegisterNativesUIsdkInfoCardComponent()
+{
+	UClass* Class = UIsdkInfoCardComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkInfoCardComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkInfoCardComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkInfoCardComponent.OuterSingleton)
@@ -160,21 +172,23 @@ UClass* Z_Construct_UClass_UIsdkInfoCardComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkInfoCardComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkInfoCardComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkInfoCardComponent);
 UIsdkInfoCardComponent::~UIsdkInfoCardComponent() {}
 // ********** End Class UIsdkInfoCardComponent *****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkInfoCardComponent, UIsdkInfoCardComponent::StaticClass, TEXT("UIsdkInfoCardComponent"), &Z_Registration_Info_UClass_UIsdkInfoCardComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInfoCardComponent), 3040135252U) },
+		{ Z_Construct_UClass_UIsdkInfoCardComponent, UIsdkInfoCardComponent::StaticClass, TEXT("UIsdkInfoCardComponent"), &Z_Registration_Info_UClass_UIsdkInfoCardComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInfoCardComponent), 1011525067U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_1619508249(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_3112470134{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

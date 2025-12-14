@@ -8,7 +8,7 @@
 #include "OculusXRAnimCurveMapping.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRAnimCurveMapping() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -17,6 +17,38 @@ UPackage* Z_Construct_UPackage__Script_OculusXRMovement();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FOculusXRAnimCurveMapping *****************************************
+struct Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRAnimCurveMapping); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRAnimCurveMapping); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/OculusXRAnimCurveMapping.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurveNames_MetaData[] = {
+		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n\x09 * Skeleton's animation curve names\n\x09 */" },
+#endif
+		{ "ModuleRelativePath", "Public/OculusXRAnimCurveMapping.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Skeleton's animation curve names" },
+#endif
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRAnimCurveMapping constinit property declarations *********
+	static const UECodeGen_Private::FNamePropertyParams NewProp_CurveNames_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_CurveNames;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRAnimCurveMapping constinit property declarations ***********
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRAnimCurveMapping>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping;
 class UScriptStruct* FOculusXRAnimCurveMapping::StaticStruct()
 {
@@ -25,30 +57,9 @@ class UScriptStruct* FOculusXRAnimCurveMapping::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping, (UObject*)Z_Construct_UPackage__Script_OculusXRMovement(), TEXT("OculusXRAnimCurveMapping"));
 	}
 	return Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/OculusXRAnimCurveMapping.h" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurveNames_MetaData[] = {
-		{ "Category", "OculusXR|Movement" },
-		{ "Comment", "/**\n\x09 * Skeleton's animation curve names\n\x09 */" },
-		{ "ModuleRelativePath", "Public/OculusXRAnimCurveMapping.h" },
-		{ "ToolTip", "Skeleton's animation curve names" },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FNamePropertyParams NewProp_CurveNames_Inner;
-	static const UECodeGen_Private::FArrayPropertyParams NewProp_CurveNames;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRAnimCurveMapping>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
+
+// ********** Begin ScriptStruct FOculusXRAnimCurveMapping Property Definitions ********************
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::NewProp_CurveNames_Inner = { "CurveNames", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::NewProp_CurveNames = { "CurveNames", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnimCurveMapping, CurveNames), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurveNames_MetaData), NewProp_CurveNames_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::PropPointers[] = {
@@ -56,6 +67,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::NewProp_CurveNames,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRAnimCurveMapping Property Definitions **********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMovement,
 	nullptr,
@@ -75,21 +87,23 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRAnimCurveMapping *******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FOculusXRAnimCurveMapping::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::NewStructOps, TEXT("OculusXRAnimCurveMapping"), &Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnimCurveMapping), 3588232980U) },
+		{ FOculusXRAnimCurveMapping::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnimCurveMapping_Statics::NewStructOps, TEXT("OculusXRAnimCurveMapping"),&Z_Registration_Info_UScriptStruct_FOculusXRAnimCurveMapping, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnimCurveMapping), 178586842U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_4054683206(TEXT("/Script/OculusXRMovement"),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_1367925528{
+	TEXT("/Script/OculusXRMovement"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics::ScriptStructInfo),
-	nullptr, 0);
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRAnimCurveMapping_h__Script_OculusXRMovement_Statics::ScriptStructInfo),
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

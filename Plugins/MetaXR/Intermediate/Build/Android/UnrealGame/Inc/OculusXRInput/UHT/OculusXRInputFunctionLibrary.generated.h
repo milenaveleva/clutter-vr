@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UHapticFeedbackEffect_Buffer;
 class UHapticFeedbackEffect_Curve;
 class UHapticFeedbackEffect_SoundWave;
@@ -31,8 +30,9 @@ enum class EOculusXRTrackingConfidence : uint8;
 struct FOculusXRCapsuleCollider;
 
 // ********** Begin ScriptStruct FOculusXRCapsuleCollider ******************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_138_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRCapsuleCollider_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRCapsuleCollider_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_138_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRCapsuleCollider_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -40,7 +40,7 @@ struct FOculusXRCapsuleCollider;
 // ********** End ScriptStruct FOculusXRCapsuleCollider ********************************************
 
 // ********** Begin Class UOculusXRInputFunctionLibrary ********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_RPC_WRAPPERS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execGetLegacyOculusPoseTransform); \
 	DECLARE_FUNCTION(execGetControllerDrivenHandPoses); \
 	DECLARE_FUNCTION(execSetControllerDrivenHandPoses); \
@@ -70,20 +70,21 @@ struct FOculusXRCapsuleCollider;
 	DECLARE_FUNCTION(execConvertBoneToFinger);
 
 
+struct Z_Construct_UClass_UOculusXRInputFunctionLibrary_Statics;
 OCULUSXRINPUT_API UClass* Z_Construct_UClass_UOculusXRInputFunctionLibrary_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRInputFunctionLibrary(); \
-	friend struct Z_Construct_UClass_UOculusXRInputFunctionLibrary_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRInputFunctionLibrary_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRINPUT_API UClass* Z_Construct_UClass_UOculusXRInputFunctionLibrary_NoRegister(); \
+	friend OCULUSXRINPUT_API UClass* ::Z_Construct_UClass_UOculusXRInputFunctionLibrary_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRInputFunctionLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRInput"), Z_Construct_UClass_UOculusXRInputFunctionLibrary_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRInputFunctionLibrary)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRInputFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRInputFunctionLibrary) \
@@ -95,13 +96,13 @@ public: \
 	NO_API virtual ~UOculusXRInputFunctionLibrary();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_148_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_148_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_RPC_WRAPPERS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_RPC_WRAPPERS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h_151_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -111,7 +112,7 @@ class UOculusXRInputFunctionLibrary;
 // ********** End Class UOculusXRInputFunctionLibrary **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRInputFunctionLibrary_h
 
 // ********** Begin Enum EOculusXRHandType *********************************************************
 #define FOREACH_ENUM_EOCULUSXRHANDTYPE(op) \
@@ -121,7 +122,7 @@ class UOculusXRInputFunctionLibrary;
 
 enum class EOculusXRHandType : uint8;
 template<> struct TIsUEnumClass<EOculusXRHandType> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRHandType>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHandType>();
 // ********** End Enum EOculusXRHandType ***********************************************************
 
 // ********** Begin Enum EOculusXRSide *************************************************************
@@ -132,7 +133,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRHandType>();
 
 enum class EOculusXRSide : uint8;
 template<> struct TIsUEnumClass<EOculusXRSide> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRSide>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSide>();
 // ********** End Enum EOculusXRSide ***************************************************************
 
 // ********** Begin Enum EOculusXRTrackingConfidence ***********************************************
@@ -142,7 +143,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRSide>();
 
 enum class EOculusXRTrackingConfidence : uint8;
 template<> struct TIsUEnumClass<EOculusXRTrackingConfidence> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRTrackingConfidence>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRTrackingConfidence>();
 // ********** End Enum EOculusXRTrackingConfidence *************************************************
 
 // ********** Begin Enum EOculusXRFinger ***********************************************************
@@ -156,7 +157,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRTrackingConfidence>();
 
 enum class EOculusXRFinger : uint8;
 template<> struct TIsUEnumClass<EOculusXRFinger> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRFinger>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRFinger>();
 // ********** End Enum EOculusXRFinger *************************************************************
 
 // ********** Begin Enum EOculusXRBone *************************************************************
@@ -193,7 +194,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRFinger>();
 
 enum class EOculusXRBone : uint8;
 template<> struct TIsUEnumClass<EOculusXRBone> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRBone>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBone>();
 // ********** End Enum EOculusXRBone ***************************************************************
 
 // ********** Begin Enum EOculusXRHandHapticsLocation **********************************************
@@ -205,7 +206,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRBone>();
 
 enum class EOculusXRHandHapticsLocation : uint8;
 template<> struct TIsUEnumClass<EOculusXRHandHapticsLocation> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRHandHapticsLocation>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHandHapticsLocation>();
 // ********** End Enum EOculusXRHandHapticsLocation ************************************************
 
 // ********** Begin Enum EOculusXRControllerDrivenHandPoseTypes ************************************
@@ -216,7 +217,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRHandHapticsLocation>();
 
 enum class EOculusXRControllerDrivenHandPoseTypes : uint8;
 template<> struct TIsUEnumClass<EOculusXRControllerDrivenHandPoseTypes> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRControllerDrivenHandPoseTypes>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRControllerDrivenHandPoseTypes>();
 // ********** End Enum EOculusXRControllerDrivenHandPoseTypes **************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

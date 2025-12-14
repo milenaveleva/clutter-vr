@@ -9,7 +9,7 @@
 #include "Camera/CameraTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeMRUtilityKitDistanceMapGenerator() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -42,7 +42,7 @@ static UEnum* EMRUKDistanceMapGenerationMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EMRUKDistanceMapGenerationMode.OuterSingleton;
 }
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKDistanceMapGenerationMode>()
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKDistanceMapGenerationMode>()
 {
 	return EMRUKDistanceMapGenerationMode_StaticEnum();
 }
@@ -73,7 +73,7 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKDistanceMapGenerationMode_Statics
 		{ "EMRUKDistanceMapGenerationMode::AllSpace", (int64)EMRUKDistanceMapGenerationMode::AllSpace },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_MRUtilityKit_EMRUKDistanceMapGenerationMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_MRUtilityKit_EMRUKDistanceMapGenerationMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -104,9 +104,15 @@ struct Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__Delegate
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOnReady constinit property declarations ******************************
+// ********** End Delegate FOnReady constinit property declarations ********************************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "OnReady__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "OnReady__DelegateSignature", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -132,21 +138,34 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Capture the distance map.\n\x09 * @return The captured distance map.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Capture the distance map.\n@return The captured distance map." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function CaptureDistanceMap constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function CaptureDistanceMap constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function CaptureDistanceMap Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventCaptureDistanceMap_Parms, ReturnValue), Z_Construct_UClass_UTexture_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "CaptureDistanceMap", Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::MRUKDistanceMapGenerator_eventCaptureDistanceMap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::Function_MetaDataParams)},  };
+// ********** End Function CaptureDistanceMap Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "CaptureDistanceMap", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::MRUKDistanceMapGenerator_eventCaptureDistanceMap_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap_Statics::MRUKDistanceMapGenerator_eventCaptureDistanceMap_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap()
 {
@@ -176,21 +195,34 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Create mask meshes for the given room.\n\x09 * These mask meshes are needed for the distance map to be rendered. It should only be called once before\n\x09 * CaptureDistanceMap in case the SpawnMode has been set to None.\n\x09 * The operation that this function executes is expensive. It only needs to be called after the room has been\n\x09 * created or updated.\n\x09 * @param Room The room for which the masked meshes should be created.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create mask meshes for the given room.\nThese mask meshes are needed for the distance map to be rendered. It should only be called once before\nCaptureDistanceMap in case the SpawnMode has been set to None.\nThe operation that this function executes is expensive. It only needs to be called after the room has been\ncreated or updated.\n@param Room The room for which the masked meshes should be created." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function CreateMaskMeshesForRoom constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function CreateMaskMeshesForRoom constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function CreateMaskMeshesForRoom Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventCreateMaskMeshesForRoom_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "CreateMaskMeshesForRoom", Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::MRUKDistanceMapGenerator_eventCreateMaskMeshesForRoom_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::Function_MetaDataParams)},  };
+// ********** End Function CreateMaskMeshesForRoom Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "CreateMaskMeshesForRoom", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::MRUKDistanceMapGenerator_eventCreateMaskMeshesForRoom_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom_Statics::MRUKDistanceMapGenerator_eventCreateMaskMeshesForRoom_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom()
 {
@@ -224,11 +256,16 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_St
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function CreateMaskMeshOfAnchor constinit property declarations ****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function CreateMaskMeshOfAnchor constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function CreateMaskMeshOfAnchor Property Definitions ***************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventCreateMaskMeshOfAnchor_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventCreateMaskMeshOfAnchor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::PropPointers[] = {
@@ -236,7 +273,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKD
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "CreateMaskMeshOfAnchor", Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::MRUKDistanceMapGenerator_eventCreateMaskMeshOfAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function CreateMaskMeshOfAnchor Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "CreateMaskMeshOfAnchor", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::MRUKDistanceMapGenerator_eventCreateMaskMeshOfAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor_Statics::MRUKDistanceMapGenerator_eventCreateMaskMeshOfAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor()
 {
@@ -267,21 +308,34 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Return the captured distance map. Be sure to call CaptureDistanceMap() before\n\x09 * @return The captured distance map.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the captured distance map. Be sure to call CaptureDistanceMap() before\n@return The captured distance map." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDistanceMap constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDistanceMap constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetDistanceMap Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventGetDistanceMap_Parms, ReturnValue), Z_Construct_UClass_UTexture_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "GetDistanceMap", Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::MRUKDistanceMapGenerator_eventGetDistanceMap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDistanceMap Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "GetDistanceMap", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::MRUKDistanceMapGenerator_eventGetDistanceMap_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap_Statics::MRUKDistanceMapGenerator_eventGetDistanceMap_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap()
 {
@@ -314,16 +368,25 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarge
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDistanceMapRenderTarget constinit property declarations ************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDistanceMapRenderTarget constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetDistanceMapRenderTarget Property Definitions ***********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventGetDistanceMapRenderTarget_Parms, ReturnValue), Z_Construct_UClass_UCanvasRenderTarget2D_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "GetDistanceMapRenderTarget", Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::MRUKDistanceMapGenerator_eventGetDistanceMapRenderTarget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDistanceMapRenderTarget Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "GetDistanceMapRenderTarget", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::MRUKDistanceMapGenerator_eventGetDistanceMapRenderTarget_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget_Statics::MRUKDistanceMapGenerator_eventGetDistanceMapRenderTarget_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget()
 {
@@ -353,21 +416,34 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Retrieve the view info from the scene capture. This is useful for re projection of\n\x09 * the distance map in a material.\n\x09 * @return The view info.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Retrieve the view info from the scene capture. This is useful for re projection of\nthe distance map in a material.\n@return The view info." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSceneCaptureView constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSceneCaptureView constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventGetSceneCaptureView_Parms, ReturnValue), Z_Construct_UScriptStruct_FMinimalViewInfo, METADATA_PARAMS(0, nullptr) }; // 3935905241
+
+// ********** Begin Function GetSceneCaptureView Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventGetSceneCaptureView_Parms, ReturnValue), Z_Construct_UScriptStruct_FMinimalViewInfo, METADATA_PARAMS(0, nullptr) }; // 1419404522
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "GetSceneCaptureView", Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::MRUKDistanceMapGenerator_eventGetSceneCaptureView_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSceneCaptureView Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "GetSceneCaptureView", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::MRUKDistanceMapGenerator_eventGetSceneCaptureView_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView_Statics::MRUKDistanceMapGenerator_eventGetSceneCaptureView_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView()
 {
@@ -399,16 +475,25 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnRoomCreated constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnRoomCreated constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnRoomCreated Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventOnRoomCreated_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "OnRoomCreated", Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::MRUKDistanceMapGenerator_eventOnRoomCreated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnRoomCreated Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "OnRoomCreated", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::MRUKDistanceMapGenerator_eventOnRoomCreated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated_Statics::MRUKDistanceMapGenerator_eventOnRoomCreated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated()
 {
@@ -441,16 +526,25 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnRoomUpdated constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnRoomUpdated constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnRoomUpdated Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventOnRoomUpdated_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "OnRoomUpdated", Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::MRUKDistanceMapGenerator_eventOnRoomUpdated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnRoomUpdated Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "OnRoomUpdated", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::MRUKDistanceMapGenerator_eventOnRoomUpdated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated_Statics::MRUKDistanceMapGenerator_eventOnRoomUpdated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated()
 {
@@ -481,21 +575,34 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Remove mask meshes for the given room.\n\x09 * This function should only be executed when SpawnMode is set to None.\n\x09 * It only needs to be called after a room has been removed.\n\x09 * @param Room The room for which the masked meshes should be removed.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Remove mask meshes for the given room.\nThis function should only be executed when SpawnMode is set to None.\nIt only needs to be called after a room has been removed.\n@param Room The room for which the masked meshes should be removed." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function RemoveMaskMeshesFromRoom constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function RemoveMaskMeshesFromRoom constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function RemoveMaskMeshesFromRoom Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventRemoveMaskMeshesFromRoom_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "RemoveMaskMeshesFromRoom", Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::MRUKDistanceMapGenerator_eventRemoveMaskMeshesFromRoom_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::Function_MetaDataParams)},  };
+// ********** End Function RemoveMaskMeshesFromRoom Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "RemoveMaskMeshesFromRoom", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::MRUKDistanceMapGenerator_eventRemoveMaskMeshesFromRoom_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom_Statics::MRUKDistanceMapGenerator_eventRemoveMaskMeshesFromRoom_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom()
 {
@@ -529,11 +636,16 @@ struct Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_St
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function UpdateMaskMeshOfAnchor constinit property declarations ****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function UpdateMaskMeshOfAnchor constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function UpdateMaskMeshOfAnchor Property Definitions ***************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventUpdateMaskMeshOfAnchor_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKDistanceMapGenerator_eventUpdateMaskMeshOfAnchor_Parms, ReturnValue), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::PropPointers[] = {
@@ -541,7 +653,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKD
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "UpdateMaskMeshOfAnchor", Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::MRUKDistanceMapGenerator_eventUpdateMaskMeshOfAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function UpdateMaskMeshOfAnchor Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKDistanceMapGenerator, nullptr, "UpdateMaskMeshOfAnchor", 	Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::MRUKDistanceMapGenerator_eventUpdateMaskMeshOfAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor_Statics::MRUKDistanceMapGenerator_eventUpdateMaskMeshOfAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor()
 {
@@ -563,23 +679,6 @@ DEFINE_FUNCTION(AMRUKDistanceMapGenerator::execUpdateMaskMeshOfAnchor)
 // ********** End Class AMRUKDistanceMapGenerator Function UpdateMaskMeshOfAnchor ******************
 
 // ********** Begin Class AMRUKDistanceMapGenerator ************************************************
-void AMRUKDistanceMapGenerator::StaticRegisterNativesAMRUKDistanceMapGenerator()
-{
-	UClass* Class = AMRUKDistanceMapGenerator::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "CaptureDistanceMap", &AMRUKDistanceMapGenerator::execCaptureDistanceMap },
-		{ "CreateMaskMeshesForRoom", &AMRUKDistanceMapGenerator::execCreateMaskMeshesForRoom },
-		{ "CreateMaskMeshOfAnchor", &AMRUKDistanceMapGenerator::execCreateMaskMeshOfAnchor },
-		{ "GetDistanceMap", &AMRUKDistanceMapGenerator::execGetDistanceMap },
-		{ "GetDistanceMapRenderTarget", &AMRUKDistanceMapGenerator::execGetDistanceMapRenderTarget },
-		{ "GetSceneCaptureView", &AMRUKDistanceMapGenerator::execGetSceneCaptureView },
-		{ "OnRoomCreated", &AMRUKDistanceMapGenerator::execOnRoomCreated },
-		{ "OnRoomUpdated", &AMRUKDistanceMapGenerator::execOnRoomUpdated },
-		{ "RemoveMaskMeshesFromRoom", &AMRUKDistanceMapGenerator::execRemoveMaskMeshesFromRoom },
-		{ "UpdateMaskMeshOfAnchor", &AMRUKDistanceMapGenerator::execUpdateMaskMeshOfAnchor },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AMRUKDistanceMapGenerator;
 UClass* AMRUKDistanceMapGenerator::GetPrivateStaticClass()
 {
@@ -587,7 +686,7 @@ UClass* AMRUKDistanceMapGenerator::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AMRUKDistanceMapGenerator.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKDistanceMapGenerator"),
 			Z_Registration_Info_UClass_AMRUKDistanceMapGenerator.InnerSingleton,
 			StaticRegisterNativesAMRUKDistanceMapGenerator,
@@ -614,11 +713,15 @@ struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "MRUtilityKit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Generates a distance map that can be used in materials to calculate the distance to various objects.\n * This can enable interesting effects. With the distance map you can get the distance from scene objects\n * or walls in a material shader.\n *\n * The Jump Flood Algorithm is used to generate the distance map. This is fast enough to regenerate\n * every tick.\n *\n * To capture a distance map after a room has been loaded call CaptureDistanceMap().\n * It will return a captured distance map. In case you already called CaptureDistanceMap()\n * you can receive the last captured distance map with GetDistanceMap(). No other setup is required.\n *\n * This class will create procedural meshes for every anchor to create a mask. These meshes have their\n * visibility set to scene capture only. That however means that if you place a scene capture component yourself\n * that the meshes will show up in your scene capture component. The actors that have the procedural meshes\n * attached are tagged with GMRUK_DISTANCE_MAP_ACTOR_TAG. In case you don't want them to show up in your\n * scene capture you can hide them by receiving all these actors with the tag GMRUK_DISTANCE_MAP_ACTOR_TAG\n * and add these to the scene captures hidden actors.\n */" },
+#endif
 		{ "DisplayName", "MR Utility Kit Distance Map Generator" },
 		{ "IncludePath", "MRUtilityKitDistanceMapGenerator.h" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generates a distance map that can be used in materials to calculate the distance to various objects.\nThis can enable interesting effects. With the distance map you can get the distance from scene objects\nor walls in a material shader.\n\nThe Jump Flood Algorithm is used to generate the distance map. This is fast enough to regenerate\nevery tick.\n\nTo capture a distance map after a room has been loaded call CaptureDistanceMap().\nIt will return a captured distance map. In case you already called CaptureDistanceMap()\nyou can receive the last captured distance map with GetDistanceMap(). No other setup is required.\n\nThis class will create procedural meshes for every anchor to create a mask. These meshes have their\nvisibility set to scene capture only. That however means that if you place a scene capture component yourself\nthat the meshes will show up in your scene capture component. The actors that have the procedural meshes\nattached are tagged with GMRUK_DISTANCE_MAP_ACTOR_TAG. In case you don't want them to show up in your\nscene capture you can hide them by receiving all these actors with the tag GMRUK_DISTANCE_MAP_ACTOR_TAG\nand add these to the scene captures hidden actors." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnReady_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
@@ -626,9 +729,13 @@ struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DistanceMapGenerationMode_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The mode in which the final distance map should be generated.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The mode in which the final distance map should be generated." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
@@ -646,39 +753,63 @@ struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RenderTarget1_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * First render target for jump flood algorithm.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "First render target for jump flood algorithm." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RenderTarget2_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Second render target for jump flood algorithm.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Second render target for jump flood algorithm." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DistanceMapRenderTarget_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Render target for the final distance map\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Render target for the final distance map" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaskMaterial_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Material to render a mask that gets used to calculate the distance map.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Material to render a mask that gets used to calculate the distance map." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JFPassMaterial_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Material that executes a pass of the jump flood algorithm.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Material that executes a pass of the jump flood algorithm." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DistanceMapFreeSpaceMaterial_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Material to render final distance map\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Material to render final distance map" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DistanceMapOccupiedSpaceMaterial_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
@@ -707,6 +838,8 @@ struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitDistanceMapGenerator.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AMRUKDistanceMapGenerator constinit property declarations ****************
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnReady;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DistanceMapGenerationMode_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_DistanceMapGenerationMode;
@@ -729,33 +862,48 @@ struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SceneObjectMaskMaterial;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_FloorMaskMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AMRUKDistanceMapGenerator constinit property declarations ******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("CaptureDistanceMap"), .Pointer = &AMRUKDistanceMapGenerator::execCaptureDistanceMap },
+		{ .NameUTF8 = UTF8TEXT("CreateMaskMeshesForRoom"), .Pointer = &AMRUKDistanceMapGenerator::execCreateMaskMeshesForRoom },
+		{ .NameUTF8 = UTF8TEXT("CreateMaskMeshOfAnchor"), .Pointer = &AMRUKDistanceMapGenerator::execCreateMaskMeshOfAnchor },
+		{ .NameUTF8 = UTF8TEXT("GetDistanceMap"), .Pointer = &AMRUKDistanceMapGenerator::execGetDistanceMap },
+		{ .NameUTF8 = UTF8TEXT("GetDistanceMapRenderTarget"), .Pointer = &AMRUKDistanceMapGenerator::execGetDistanceMapRenderTarget },
+		{ .NameUTF8 = UTF8TEXT("GetSceneCaptureView"), .Pointer = &AMRUKDistanceMapGenerator::execGetSceneCaptureView },
+		{ .NameUTF8 = UTF8TEXT("OnRoomCreated"), .Pointer = &AMRUKDistanceMapGenerator::execOnRoomCreated },
+		{ .NameUTF8 = UTF8TEXT("OnRoomUpdated"), .Pointer = &AMRUKDistanceMapGenerator::execOnRoomUpdated },
+		{ .NameUTF8 = UTF8TEXT("RemoveMaskMeshesFromRoom"), .Pointer = &AMRUKDistanceMapGenerator::execRemoveMaskMeshesFromRoom },
+		{ .NameUTF8 = UTF8TEXT("UpdateMaskMeshOfAnchor"), .Pointer = &AMRUKDistanceMapGenerator::execUpdateMaskMeshOfAnchor },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap, "CaptureDistanceMap" }, // 3791301624
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom, "CreateMaskMeshesForRoom" }, // 1364318356
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor, "CreateMaskMeshOfAnchor" }, // 1709180279
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap, "GetDistanceMap" }, // 3232563311
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget, "GetDistanceMapRenderTarget" }, // 3296984445
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView, "GetSceneCaptureView" }, // 1795504896
-		{ &Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature, "OnReady__DelegateSignature" }, // 2141941330
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated, "OnRoomCreated" }, // 4247616647
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated, "OnRoomUpdated" }, // 2288029716
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom, "RemoveMaskMeshesFromRoom" }, // 393501320
-		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor, "UpdateMaskMeshOfAnchor" }, // 414069465
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_CaptureDistanceMap, "CaptureDistanceMap" }, // 3426450730
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshesForRoom, "CreateMaskMeshesForRoom" }, // 2941124902
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_CreateMaskMeshOfAnchor, "CreateMaskMeshOfAnchor" }, // 1693094298
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMap, "GetDistanceMap" }, // 4082505382
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetDistanceMapRenderTarget, "GetDistanceMapRenderTarget" }, // 4144810186
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_GetSceneCaptureView, "GetSceneCaptureView" }, // 247343679
+		{ &Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature, "OnReady__DelegateSignature" }, // 1192399372
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomCreated, "OnRoomCreated" }, // 3311056170
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_OnRoomUpdated, "OnRoomUpdated" }, // 319900625
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_RemoveMaskMeshesFromRoom, "RemoveMaskMeshesFromRoom" }, // 830179481
+		{ &Z_Construct_UFunction_AMRUKDistanceMapGenerator_UpdateMaskMeshOfAnchor, "UpdateMaskMeshOfAnchor" }, // 160227322
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMRUKDistanceMapGenerator>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_OnReady = { "OnReady", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, OnReady), Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnReady_MetaData), NewProp_OnReady_MetaData) }; // 2141941330
+}; // struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics
+
+// ********** Begin Class AMRUKDistanceMapGenerator Property Definitions ***************************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_OnReady = { "OnReady", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, OnReady), Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnReady_MetaData), NewProp_OnReady_MetaData) }; // 1192399372
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_DistanceMapGenerationMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_DistanceMapGenerationMode = { "DistanceMapGenerationMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, DistanceMapGenerationMode), Z_Construct_UEnum_MRUtilityKit_EMRUKDistanceMapGenerationMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DistanceMapGenerationMode_MetaData), NewProp_DistanceMapGenerationMode_MetaData) }; // 1178102912
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_DistanceMapGenerationMode = { "DistanceMapGenerationMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, DistanceMapGenerationMode), Z_Construct_UEnum_MRUtilityKit_EMRUKDistanceMapGenerationMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DistanceMapGenerationMode_MetaData), NewProp_DistanceMapGenerationMode_MetaData) }; // 350055663
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_Root = { "Root", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Root_MetaData), NewProp_Root_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_SceneCapture2D = { "SceneCapture2D", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, SceneCapture2D), Z_Construct_UClass_USceneCaptureComponent2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SceneCapture2D_MetaData), NewProp_SceneCapture2D_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_SpawnMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_SpawnMode = { "SpawnMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, SpawnMode), Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnMode_MetaData), NewProp_SpawnMode_MetaData) }; // 4112763619
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_SpawnMode = { "SpawnMode", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, SpawnMode), Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnMode_MetaData), NewProp_SpawnMode_MetaData) }; // 2136770717
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_RenderTarget1 = { "RenderTarget1", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, RenderTarget1), Z_Construct_UClass_UCanvasRenderTarget2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RenderTarget1_MetaData), NewProp_RenderTarget1_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_RenderTarget2 = { "RenderTarget2", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, RenderTarget2), Z_Construct_UClass_UCanvasRenderTarget2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RenderTarget2_MetaData), NewProp_RenderTarget2_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_DistanceMapRenderTarget = { "DistanceMapRenderTarget", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKDistanceMapGenerator, DistanceMapRenderTarget), Z_Construct_UClass_UCanvasRenderTarget2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DistanceMapRenderTarget_MetaData), NewProp_DistanceMapRenderTarget_MetaData) };
@@ -794,6 +942,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMRUKDist
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::NewProp_FloorMaskMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::PropPointers) < 2048);
+// ********** End Class AMRUKDistanceMapGenerator Property Definitions *****************************
 UObject* (*const Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -811,9 +960,14 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMRUKDistanceMapGenerat
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::Class_MetaDataParams), Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::Class_MetaDataParams)
 };
+void AMRUKDistanceMapGenerator::StaticRegisterNativesAMRUKDistanceMapGenerator()
+{
+	UClass* Class = AMRUKDistanceMapGenerator::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_AMRUKDistanceMapGenerator()
 {
 	if (!Z_Registration_Info_UClass_AMRUKDistanceMapGenerator.OuterSingleton)
@@ -822,24 +976,26 @@ UClass* Z_Construct_UClass_AMRUKDistanceMapGenerator()
 	}
 	return Z_Registration_Info_UClass_AMRUKDistanceMapGenerator.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AMRUKDistanceMapGenerator);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AMRUKDistanceMapGenerator);
 AMRUKDistanceMapGenerator::~AMRUKDistanceMapGenerator() {}
 // ********** End Class AMRUKDistanceMapGenerator **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EMRUKDistanceMapGenerationMode_StaticEnum, TEXT("EMRUKDistanceMapGenerationMode"), &Z_Registration_Info_UEnum_EMRUKDistanceMapGenerationMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1178102912U) },
+		{ EMRUKDistanceMapGenerationMode_StaticEnum, TEXT("EMRUKDistanceMapGenerationMode"), &Z_Registration_Info_UEnum_EMRUKDistanceMapGenerationMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 350055663U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMRUKDistanceMapGenerator, AMRUKDistanceMapGenerator::StaticClass, TEXT("AMRUKDistanceMapGenerator"), &Z_Registration_Info_UClass_AMRUKDistanceMapGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKDistanceMapGenerator), 1711847619U) },
+		{ Z_Construct_UClass_AMRUKDistanceMapGenerator, AMRUKDistanceMapGenerator::StaticClass, TEXT("AMRUKDistanceMapGenerator"), &Z_Registration_Info_UClass_AMRUKDistanceMapGenerator, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKDistanceMapGenerator), 3969070720U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_2938957010(TEXT("/Script/MRUtilityKit"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_4076215373{
+	TEXT("/Script/MRUtilityKit"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h__Script_MRUtilityKit_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

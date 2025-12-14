@@ -9,7 +9,7 @@
 #include "Interaction/Pointable/IsdkInteractionPointerEvent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkPointableWidget() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -38,16 +38,25 @@ struct Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleInteractionPointerEvent constinit property declarations *********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointerEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleInteractionPointerEvent constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::NewProp_PointerEvent = { "PointerEvent", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointableWidget_eventHandleInteractionPointerEvent_Parms, PointerEvent), Z_Construct_UScriptStruct_FIsdkInteractionPointerEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerEvent_MetaData), NewProp_PointerEvent_MetaData) }; // 384809535
+
+// ********** Begin Function HandleInteractionPointerEvent Property Definitions ********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::NewProp_PointerEvent = { "PointerEvent", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointableWidget_eventHandleInteractionPointerEvent_Parms, PointerEvent), Z_Construct_UScriptStruct_FIsdkInteractionPointerEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerEvent_MetaData), NewProp_PointerEvent_MetaData) }; // 2900802931
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::NewProp_PointerEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointableWidget, nullptr, "HandleInteractionPointerEvent", Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::IsdkPointableWidget_eventHandleInteractionPointerEvent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleInteractionPointerEvent Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointableWidget, nullptr, "HandleInteractionPointerEvent", 	Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::IsdkPointableWidget_eventHandleInteractionPointerEvent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent_Statics::IsdkPointableWidget_eventHandleInteractionPointerEvent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent()
 {
@@ -85,11 +94,16 @@ struct Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Setup constinit property declarations *********************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Widget;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_IPointable;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function Setup constinit property declarations ***********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function Setup Property Definitions ********************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::NewProp_Widget = { "Widget", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointableWidget_eventSetup_Parms, Widget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Widget_MetaData), NewProp_Widget_MetaData) };
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::NewProp_IPointable = { "IPointable", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointableWidget_eventSetup_Parms, IPointable), Z_Construct_UClass_UIsdkIPointable_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::PropPointers[] = {
@@ -97,7 +111,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::NewProp_IPointable,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointableWidget, nullptr, "Setup", Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::IsdkPointableWidget_eventSetup_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::Function_MetaDataParams)},  };
+// ********** End Function Setup Property Definitions **********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointableWidget, nullptr, "Setup", 	Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::IsdkPointableWidget_eventSetup_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointableWidget_Setup_Statics::IsdkPointableWidget_eventSetup_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointableWidget_Setup()
 {
@@ -120,15 +138,6 @@ DEFINE_FUNCTION(UIsdkPointableWidget::execSetup)
 // ********** End Class UIsdkPointableWidget Function Setup ****************************************
 
 // ********** Begin Class UIsdkPointableWidget *****************************************************
-void UIsdkPointableWidget::StaticRegisterNativesUIsdkPointableWidget()
-{
-	UClass* Class = UIsdkPointableWidget::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "HandleInteractionPointerEvent", &UIsdkPointableWidget::execHandleInteractionPointerEvent },
-		{ "Setup", &UIsdkPointableWidget::execSetup },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkPointableWidget;
 UClass* UIsdkPointableWidget::GetPrivateStaticClass()
 {
@@ -136,7 +145,7 @@ UClass* UIsdkPointableWidget::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkPointableWidget.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkPointableWidget"),
 			Z_Registration_Info_UClass_UIsdkPointableWidget.InnerSingleton,
 			StaticRegisterNativesUIsdkPointableWidget,
@@ -175,9 +184,13 @@ struct Z_Construct_UClass_UIsdkPointableWidget_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetEventDelegate_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Event Delegates\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Widget/IsdkPointableWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Event Delegates" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MinMoveTravelDistance_MetaData[] = {
 		{ "Category", "InteractionSDK" },
@@ -188,25 +201,34 @@ struct Z_Construct_UClass_UIsdkPointableWidget_Statics
 		{ "ModuleRelativePath", "Public/Widget/IsdkPointableWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkPointableWidget constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttachedWidget;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_WidgetEventDelegate;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinMoveTravelDistance;
 	static void NewProp_bStopBroadcastOnDrag_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bStopBroadcastOnDrag;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkPointableWidget constinit property declarations ***********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("HandleInteractionPointerEvent"), .Pointer = &UIsdkPointableWidget::execHandleInteractionPointerEvent },
+		{ .NameUTF8 = UTF8TEXT("Setup"), .Pointer = &UIsdkPointableWidget::execSetup },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent, "HandleInteractionPointerEvent" }, // 771991510
-		{ &Z_Construct_UFunction_UIsdkPointableWidget_Setup, "Setup" }, // 1696137865
+		{ &Z_Construct_UFunction_UIsdkPointableWidget_HandleInteractionPointerEvent, "HandleInteractionPointerEvent" }, // 648466784
+		{ &Z_Construct_UFunction_UIsdkPointableWidget_Setup, "Setup" }, // 1909995666
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkPointableWidget>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkPointableWidget_Statics
+
+// ********** Begin Class UIsdkPointableWidget Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkPointableWidget_Statics::NewProp_AttachedWidget = { "AttachedWidget", nullptr, (EPropertyFlags)0x011400000008200c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointableWidget, AttachedWidget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttachedWidget_MetaData), NewProp_AttachedWidget_MetaData) };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkPointableWidget_Statics::NewProp_WidgetEventDelegate = { "WidgetEventDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointableWidget, WidgetEventDelegate), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetEventDelegate_MetaData), NewProp_WidgetEventDelegate_MetaData) }; // 1374277086
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkPointableWidget_Statics::NewProp_WidgetEventDelegate = { "WidgetEventDelegate", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointableWidget, WidgetEventDelegate), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetEventDelegate_MetaData), NewProp_WidgetEventDelegate_MetaData) }; // 3839760974
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UIsdkPointableWidget_Statics::NewProp_MinMoveTravelDistance = { "MinMoveTravelDistance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointableWidget, MinMoveTravelDistance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinMoveTravelDistance_MetaData), NewProp_MinMoveTravelDistance_MetaData) };
 void Z_Construct_UClass_UIsdkPointableWidget_Statics::NewProp_bStopBroadcastOnDrag_SetBit(void* Obj)
 {
@@ -220,6 +242,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkPoin
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkPointableWidget_Statics::NewProp_bStopBroadcastOnDrag,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPointableWidget_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkPointableWidget Property Definitions **********************************
 UObject* (*const Z_Construct_UClass_UIsdkPointableWidget_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -240,6 +263,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkPointableWidget_St
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPointableWidget_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkPointableWidget_Statics::Class_MetaDataParams)
 };
+void UIsdkPointableWidget::StaticRegisterNativesUIsdkPointableWidget()
+{
+	UClass* Class = UIsdkPointableWidget::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkPointableWidget_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkPointableWidget()
 {
 	if (!Z_Registration_Info_UClass_UIsdkPointableWidget.OuterSingleton)
@@ -248,21 +276,23 @@ UClass* Z_Construct_UClass_UIsdkPointableWidget()
 	}
 	return Z_Registration_Info_UClass_UIsdkPointableWidget.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkPointableWidget);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkPointableWidget);
 UIsdkPointableWidget::~UIsdkPointableWidget() {}
 // ********** End Class UIsdkPointableWidget *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkPointableWidget, UIsdkPointableWidget::StaticClass, TEXT("UIsdkPointableWidget"), &Z_Registration_Info_UClass_UIsdkPointableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPointableWidget), 3423563215U) },
+		{ Z_Construct_UClass_UIsdkPointableWidget, UIsdkPointableWidget::StaticClass, TEXT("UIsdkPointableWidget"), &Z_Registration_Info_UClass_UIsdkPointableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPointableWidget), 3138230093U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_3187887905(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_1131041188{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkPointableWidget_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FIsdkThrowableSettings ********************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_50_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_50_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,25 +27,26 @@ struct FIsdkThrowableSettings;
 // ********** End ScriptStruct FIsdkThrowableSettings **********************************************
 
 // ********** Begin Class UIsdkThrowable ***********************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetAngularVelocity); \
 	DECLARE_FUNCTION(execGetVelocity);
 
 
+struct Z_Construct_UClass_UIsdkThrowable_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkThrowable_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkThrowable(); \
-	friend struct Z_Construct_UClass_UIsdkThrowable_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkThrowable_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkThrowable_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkThrowable_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkThrowable, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkThrowable_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkThrowable)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkThrowable(UIsdkThrowable&&) = delete; \
 	UIsdkThrowable(const UIsdkThrowable&) = delete; \
@@ -54,13 +56,13 @@ public: \
 	NO_API virtual ~UIsdkThrowable();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_97_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_97_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h_100_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -70,7 +72,7 @@ class UIsdkThrowable;
 // ********** End Class UIsdkThrowable *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h
 
 // ********** Begin Enum EIsdkVelocityEstimationMethod *********************************************
 #define FOREACH_ENUM_EISDKVELOCITYESTIMATIONMETHOD(op) \
@@ -80,7 +82,7 @@ class UIsdkThrowable;
 
 enum class EIsdkVelocityEstimationMethod : uint8;
 template<> struct TIsUEnumClass<EIsdkVelocityEstimationMethod> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkVelocityEstimationMethod>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkVelocityEstimationMethod>();
 // ********** End Enum EIsdkVelocityEstimationMethod ***********************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

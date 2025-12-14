@@ -8,7 +8,7 @@
 #include "DataSources/IsdkIRootPose.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIRootPose() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -56,16 +56,25 @@ struct Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPose.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootPose constinit property declarations ***************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootPose constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootPose Property Definitions **************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPose_eventGetRootPose_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "GetRootPose", Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::PropPointers), sizeof(IsdkIRootPose_eventGetRootPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootPose Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "GetRootPose", 	Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::PropPointers), 
+sizeof(IsdkIRootPose_eventGetRootPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_GetRootPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPose_eventGetRootPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPose_GetRootPose()
 {
@@ -124,21 +133,34 @@ struct Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns conditional of the state of whether or not the device associated with this root\n   * pose is enabled in the system, and enumerated in the list of connected devices.\n   * @return UIsdkConditional* The conditional representing the boolean state of the root pose.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns conditional of the state of whether or not the device associated with this root\npose is enabled in the system, and enumerated in the list of connected devices.\n@return UIsdkConditional* The conditional representing the boolean state of the root pose." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootPoseConnectedConditional constinit property declarations *******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootPoseConnectedConditional constinit property declarations *********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootPoseConnectedConditional Property Definitions ******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPose_eventGetRootPoseConnectedConditional_Parms, ReturnValue), Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "GetRootPoseConnectedConditional", Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::PropPointers), sizeof(IsdkIRootPose_eventGetRootPoseConnectedConditional_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootPoseConnectedConditional Property Definitions ********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "GetRootPoseConnectedConditional", 	Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::PropPointers), 
+sizeof(IsdkIRootPose_eventGetRootPoseConnectedConditional_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPose_eventGetRootPoseConnectedConditional_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional()
 {
@@ -197,21 +219,34 @@ struct Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns conditional of the state of if the device associated with this root pose is\n   * connected, the root pose is valid and was set from tracking data is marked as high confidence.\n   * If the conditional is true, then it implies that IsRootPoseConnected and IsRootPoseValid are\n   * also true, so they don't need to be checked in addition to this.\n   * @return UIsdkConditional* Conditional is false if IsRootPoseConnected or IsRootPoseValid is\n   * false.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns conditional of the state of if the device associated with this root pose is\nconnected, the root pose is valid and was set from tracking data is marked as high confidence.\nIf the conditional is true, then it implies that IsRootPoseConnected and IsRootPoseValid are\nalso true, so they don't need to be checked in addition to this.\n@return UIsdkConditional* Conditional is false if IsRootPoseConnected or IsRootPoseValid is\nfalse." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootPoseHighConfidenceConditional constinit property declarations **
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootPoseHighConfidenceConditional constinit property declarations ****
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootPoseHighConfidenceConditional Property Definitions *************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPose_eventGetRootPoseHighConfidenceConditional_Parms, ReturnValue), Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "GetRootPoseHighConfidenceConditional", Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::PropPointers), sizeof(IsdkIRootPose_eventGetRootPoseHighConfidenceConditional_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootPoseHighConfidenceConditional Property Definitions ***************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "GetRootPoseHighConfidenceConditional", 	Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::PropPointers), 
+sizeof(IsdkIRootPose_eventGetRootPoseHighConfidenceConditional_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPose_eventGetRootPoseHighConfidenceConditional_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional()
 {
@@ -270,16 +305,25 @@ struct Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Whether or not the root pose of this implementing class is valid\n   * @return bool True if the transform returned from FTransform was set from tracked data. Returns\n   * False if the Transform contains undefined data.  Returns False if IsRootPoseConnected is false.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Whether or not the root pose of this implementing class is valid\n@return bool True if the transform returned from FTransform was set from tracked data. Returns\nFalse if the Transform contains undefined data.  Returns False if IsRootPoseConnected is false." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsRootPoseValid constinit property declarations ***********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsRootPoseValid constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsRootPoseValid Property Definitions **********************************
 void Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkIRootPose_eventIsRootPoseValid_Parms*)Obj)->ReturnValue = 1;
@@ -289,7 +333,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "IsRootPoseValid", Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::PropPointers), sizeof(IsdkIRootPose_eventIsRootPoseValid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsRootPoseValid Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPose, nullptr, "IsRootPoseValid", 	Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::PropPointers), 
+sizeof(IsdkIRootPose_eventIsRootPoseValid_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPose_eventIsRootPoseValid_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid()
 {
@@ -310,17 +358,6 @@ DEFINE_FUNCTION(IIsdkIRootPose::execIsRootPoseValid)
 // ********** End Interface UIsdkIRootPose Function IsRootPoseValid ********************************
 
 // ********** Begin Interface UIsdkIRootPose *******************************************************
-void UIsdkIRootPose::StaticRegisterNativesUIsdkIRootPose()
-{
-	UClass* Class = UIsdkIRootPose::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetRootPose", &IIsdkIRootPose::execGetRootPose },
-		{ "GetRootPoseConnectedConditional", &IIsdkIRootPose::execGetRootPoseConnectedConditional },
-		{ "GetRootPoseHighConfidenceConditional", &IIsdkIRootPose::execGetRootPoseHighConfidenceConditional },
-		{ "IsRootPoseValid", &IIsdkIRootPose::execIsRootPoseValid },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIRootPose;
 UClass* UIsdkIRootPose::GetPrivateStaticClass()
 {
@@ -328,7 +365,7 @@ UClass* UIsdkIRootPose::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIRootPose.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIRootPose"),
 			Z_Registration_Info_UClass_UIsdkIRootPose.InnerSingleton,
 			StaticRegisterNativesUIsdkIRootPose,
@@ -360,19 +397,28 @@ struct Z_Construct_UClass_UIsdkIRootPose_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPose.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIRootPose constinit property declarations ***********************
+// ********** End Interface UIsdkIRootPose constinit property declarations *************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetRootPose"), .Pointer = &IIsdkIRootPose::execGetRootPose },
+		{ .NameUTF8 = UTF8TEXT("GetRootPoseConnectedConditional"), .Pointer = &IIsdkIRootPose::execGetRootPoseConnectedConditional },
+		{ .NameUTF8 = UTF8TEXT("GetRootPoseHighConfidenceConditional"), .Pointer = &IIsdkIRootPose::execGetRootPoseHighConfidenceConditional },
+		{ .NameUTF8 = UTF8TEXT("IsRootPoseValid"), .Pointer = &IIsdkIRootPose::execIsRootPoseValid },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIRootPose_GetRootPose, "GetRootPose" }, // 3184573861
-		{ &Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional, "GetRootPoseConnectedConditional" }, // 3514519309
-		{ &Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional, "GetRootPoseHighConfidenceConditional" }, // 3404314185
-		{ &Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid, "IsRootPoseValid" }, // 1667195208
+		{ &Z_Construct_UFunction_UIsdkIRootPose_GetRootPose, "GetRootPose" }, // 1786699392
+		{ &Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseConnectedConditional, "GetRootPoseConnectedConditional" }, // 1989458456
+		{ &Z_Construct_UFunction_UIsdkIRootPose_GetRootPoseHighConfidenceConditional, "GetRootPoseHighConfidenceConditional" }, // 4063474661
+		{ &Z_Construct_UFunction_UIsdkIRootPose_IsRootPoseValid, "IsRootPoseValid" }, // 1930092738
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIRootPose>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIRootPose_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIRootPose_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -393,6 +439,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIRootPose_Statics:
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIRootPose_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIRootPose_Statics::Class_MetaDataParams)
 };
+void UIsdkIRootPose::StaticRegisterNativesUIsdkIRootPose()
+{
+	UClass* Class = UIsdkIRootPose::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIRootPose_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIRootPose()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIRootPose.OuterSingleton)
@@ -402,20 +453,22 @@ UClass* Z_Construct_UClass_UIsdkIRootPose()
 	return Z_Registration_Info_UClass_UIsdkIRootPose.OuterSingleton;
 }
 UIsdkIRootPose::UIsdkIRootPose(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIRootPose);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIRootPose);
 // ********** End Interface UIsdkIRootPose *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIRootPose, UIsdkIRootPose::StaticClass, TEXT("UIsdkIRootPose"), &Z_Registration_Info_UClass_UIsdkIRootPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIRootPose), 2159373520U) },
+		{ Z_Construct_UClass_UIsdkIRootPose, UIsdkIRootPose::StaticClass, TEXT("UIsdkIRootPose"), &Z_Registration_Info_UClass_UIsdkIRootPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIRootPose), 1451802214U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_2740642717(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_2506596834{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPose_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

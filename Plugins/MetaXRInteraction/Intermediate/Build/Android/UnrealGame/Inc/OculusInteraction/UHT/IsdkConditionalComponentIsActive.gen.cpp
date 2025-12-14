@@ -8,7 +8,7 @@
 #include "Core/IsdkConditionalComponentIsActive.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkConditionalComponentIsActive() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -29,24 +29,37 @@ struct Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns the Actor Component the active state of which this conditional is watching\n   * @return UActorComponent* A pointer to the UActorComponent that was set to this conditional.\n   * This pointer is not validated.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalComponentIsActive.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns the Actor Component the active state of which this conditional is watching\n@return UActorComponent* A pointer to the UActorComponent that was set to this conditional.\nThis pointer is not validated." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetComponent constinit property declarations **************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetComponent constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetComponent Property Definitions *************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalComponentIsActive_eventGetComponent_Parms, ReturnValue), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "GetComponent", Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::IsdkConditionalComponentIsActive_eventGetComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetComponent Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "GetComponent", 	Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::IsdkConditionalComponentIsActive_eventGetComponent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent_Statics::IsdkConditionalComponentIsActive_eventGetComponent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent()
 {
@@ -82,12 +95,17 @@ struct Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentAc
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleComponentActivated constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static void NewProp_bReset_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bReset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleComponentActivated constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HandleComponentActivated Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalComponentIsActive_eventHandleComponentActivated_Parms, Component), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Component_MetaData), NewProp_Component_MetaData) };
 void Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::NewProp_bReset_SetBit(void* Obj)
 {
@@ -99,7 +117,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::NewProp_bReset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "HandleComponentActivated", Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::IsdkConditionalComponentIsActive_eventHandleComponentActivated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleComponentActivated Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "HandleComponentActivated", 	Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::IsdkConditionalComponentIsActive_eventHandleComponentActivated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated_Statics::IsdkConditionalComponentIsActive_eventHandleComponentActivated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated()
 {
@@ -136,16 +158,25 @@ struct Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDe
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleComponentDeactivated constinit property declarations ************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleComponentDeactivated constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HandleComponentDeactivated Property Definitions ***********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalComponentIsActive_eventHandleComponentDeactivated_Parms, Component), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Component_MetaData), NewProp_Component_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::NewProp_Component,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "HandleComponentDeactivated", Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::IsdkConditionalComponentIsActive_eventHandleComponentDeactivated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleComponentDeactivated Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "HandleComponentDeactivated", 	Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::IsdkConditionalComponentIsActive_eventHandleComponentDeactivated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated_Statics::IsdkConditionalComponentIsActive_eventHandleComponentDeactivated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated()
 {
@@ -176,24 +207,37 @@ struct Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the Actor Component the active state of which this conditional should watch\n   * @param InActorComponent The new UActorComponent to watch for activation/deactivation events\n   *\n   * This method will remove any previous delegate hooks set on the previous ActorComponent (if\n   * present) before adding hooks for the new one. Delegate is hooked onto\n   * ActorComponent->OnComponentActivated and ActorComponent->OnComponentDeactivated, which will\n   * call HandleComponentActivated and HandleComponentDeactivated respectively.\n   *\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalComponentIsActive.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the Actor Component the active state of which this conditional should watch\n@param InActorComponent The new UActorComponent to watch for activation/deactivation events\n\nThis method will remove any previous delegate hooks set on the previous ActorComponent (if\npresent) before adding hooks for the new one. Delegate is hooked onto\nActorComponent->OnComponentActivated and ActorComponent->OnComponentDeactivated, which will\ncall HandleComponentActivated and HandleComponentDeactivated respectively." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InActorComponent_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetComponent constinit property declarations **************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InActorComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetComponent constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetComponent Property Definitions *************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::NewProp_InActorComponent = { "InActorComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalComponentIsActive_eventSetComponent_Parms, InActorComponent), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InActorComponent_MetaData), NewProp_InActorComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::NewProp_InActorComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "SetComponent", Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::IsdkConditionalComponentIsActive_eventSetComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetComponent Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalComponentIsActive, nullptr, "SetComponent", 	Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::IsdkConditionalComponentIsActive_eventSetComponent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent_Statics::IsdkConditionalComponentIsActive_eventSetComponent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent()
 {
@@ -215,17 +259,6 @@ DEFINE_FUNCTION(UIsdkConditionalComponentIsActive::execSetComponent)
 // ********** End Class UIsdkConditionalComponentIsActive Function SetComponent ********************
 
 // ********** Begin Class UIsdkConditionalComponentIsActive ****************************************
-void UIsdkConditionalComponentIsActive::StaticRegisterNativesUIsdkConditionalComponentIsActive()
-{
-	UClass* Class = UIsdkConditionalComponentIsActive::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetComponent", &UIsdkConditionalComponentIsActive::execGetComponent },
-		{ "HandleComponentActivated", &UIsdkConditionalComponentIsActive::execHandleComponentActivated },
-		{ "HandleComponentDeactivated", &UIsdkConditionalComponentIsActive::execHandleComponentDeactivated },
-		{ "SetComponent", &UIsdkConditionalComponentIsActive::execSetComponent },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive;
 UClass* UIsdkConditionalComponentIsActive::GetPrivateStaticClass()
 {
@@ -233,7 +266,7 @@ UClass* UIsdkConditionalComponentIsActive::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkConditionalComponentIsActive"),
 			Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive.InnerSingleton,
 			StaticRegisterNativesUIsdkConditionalComponentIsActive,
@@ -261,11 +294,15 @@ struct Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkConditionalComponentIsActive\n * @brief Watches an ActorComponents IsActive() flag, setting the state of this conditional to the\n * value of that flag.\n *\n * After an ActorComponent is set on this Conditional, it will change the resolved value of its\n * stored conditional to whether or not that component is active, keyed from the events generated\n * when the component is activated/deactivated\n *\n * @see UIsdkConditional\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "Core/IsdkConditionalComponentIsActive.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalComponentIsActive.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkConditionalComponentIsActive\n@brief Watches an ActorComponents IsActive() flag, setting the state of this conditional to the\nvalue of that flag.\n\nAfter an ActorComponent is set on this Conditional, it will change the resolved value of its\nstored conditional to whether or not that component is active, keyed from the events generated\nwhen the component is activated/deactivated\n\n@see UIsdkConditional\n@addtogroup InteractionSDK" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActorComponent_MetaData[] = {
 		{ "BlueprintGetter", "GetComponent" },
@@ -275,26 +312,38 @@ struct Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalComponentIsActive.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkConditionalComponentIsActive constinit property declarations ********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActorComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkConditionalComponentIsActive constinit property declarations **********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetComponent"), .Pointer = &UIsdkConditionalComponentIsActive::execGetComponent },
+		{ .NameUTF8 = UTF8TEXT("HandleComponentActivated"), .Pointer = &UIsdkConditionalComponentIsActive::execHandleComponentActivated },
+		{ .NameUTF8 = UTF8TEXT("HandleComponentDeactivated"), .Pointer = &UIsdkConditionalComponentIsActive::execHandleComponentDeactivated },
+		{ .NameUTF8 = UTF8TEXT("SetComponent"), .Pointer = &UIsdkConditionalComponentIsActive::execSetComponent },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent, "GetComponent" }, // 4257686787
-		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated, "HandleComponentActivated" }, // 2177262200
-		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated, "HandleComponentDeactivated" }, // 678088760
-		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent, "SetComponent" }, // 4014537890
+		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_GetComponent, "GetComponent" }, // 568033885
+		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentActivated, "HandleComponentActivated" }, // 300084732
+		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_HandleComponentDeactivated, "HandleComponentDeactivated" }, // 1269008155
+		{ &Z_Construct_UFunction_UIsdkConditionalComponentIsActive_SetComponent, "SetComponent" }, // 1659493110
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkConditionalComponentIsActive>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics
+
+// ********** Begin Class UIsdkConditionalComponentIsActive Property Definitions *******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::NewProp_ActorComponent = { "ActorComponent", nullptr, (EPropertyFlags)0x004000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkConditionalComponentIsActive, ActorComponent), Z_Construct_UClass_UActorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActorComponent_MetaData), NewProp_ActorComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::NewProp_ActorComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkConditionalComponentIsActive Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkConditional,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -315,6 +364,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkConditionalCompone
 	0x00B000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::Class_MetaDataParams)
 };
+void UIsdkConditionalComponentIsActive::StaticRegisterNativesUIsdkConditionalComponentIsActive()
+{
+	UClass* Class = UIsdkConditionalComponentIsActive::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkConditionalComponentIsActive_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkConditionalComponentIsActive()
 {
 	if (!Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive.OuterSingleton)
@@ -323,21 +377,23 @@ UClass* Z_Construct_UClass_UIsdkConditionalComponentIsActive()
 	}
 	return Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkConditionalComponentIsActive);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkConditionalComponentIsActive);
 UIsdkConditionalComponentIsActive::~UIsdkConditionalComponentIsActive() {}
 // ********** End Class UIsdkConditionalComponentIsActive ******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkConditionalComponentIsActive, UIsdkConditionalComponentIsActive::StaticClass, TEXT("UIsdkConditionalComponentIsActive"), &Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalComponentIsActive), 3507339955U) },
+		{ Z_Construct_UClass_UIsdkConditionalComponentIsActive, UIsdkConditionalComponentIsActive::StaticClass, TEXT("UIsdkConditionalComponentIsActive"), &Z_Registration_Info_UClass_UIsdkConditionalComponentIsActive, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalComponentIsActive), 3427217054U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_3174823846(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_588002468{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalComponentIsActive_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

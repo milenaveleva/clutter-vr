@@ -11,10 +11,10 @@
 			"IsdkFromMetaXRControllerDataSource.cpp.obj",
 			"IsdkFromMetaXRHandDataSource.cpp.obj",
 			"IsdkFromMetaXRHmdDataSource.cpp.obj",
+			"IsdkDataSourcesMetaXR.cpp.obj",
 			"IsdkDataSourcesMetaXRSubsystem.cpp.obj",
 			"IsdkOculusXRHelper.cpp.obj",
-			"IsdkOculusXRModuleInstance.cpp.obj",
-			"IsdkDataSourcesMetaXR.cpp.obj"
+			"IsdkOculusXRModuleInstance.cpp.obj"
 		]
 	}
 }

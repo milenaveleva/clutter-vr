@@ -17,14 +17,14 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Delegate FOculusXRPassthrough_LayerResumed *************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h_11_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h_11_DELEGATE \
 OCULUSXRHMD_API void FOculusXRPassthrough_LayerResumed_DelegateWrapper(const FMulticastScriptDelegate& OculusXRPassthrough_LayerResumed);
 
 
 // ********** End Delegate FOculusXRPassthrough_LayerResumed ***************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h
 
 // ********** Begin Enum EOculusXRColorMapType *****************************************************
 #define FOREACH_ENUM_EOCULUSXRCOLORMAPTYPE(op) \

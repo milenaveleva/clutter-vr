@@ -15,13 +15,13 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AActor;
 struct FOculusXRRoomLayout;
 
 // ********** Begin ScriptStruct FOculusXRSpawnedSceneAnchorProperties *****************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_36_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRSpawnedSceneAnchorProperties_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRSpawnedSceneAnchorProperties_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_36_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRSpawnedSceneAnchorProperties_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -29,7 +29,7 @@ struct FOculusXRSpawnedSceneAnchorProperties;
 // ********** End ScriptStruct FOculusXRSpawnedSceneAnchorProperties *******************************
 
 // ********** Begin Class AOculusXRSceneActor ******************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetRoomLayouts); \
 	DECLARE_FUNCTION(execGetActorsBySemanticLabel); \
 	DECLARE_FUNCTION(execSetVisibilityToSceneAnchorsBySemanticLabel); \
@@ -41,20 +41,21 @@ struct FOculusXRSpawnedSceneAnchorProperties;
 	DECLARE_FUNCTION(execLaunchCaptureFlow);
 
 
+struct Z_Construct_UClass_AOculusXRSceneActor_Statics;
 OCULUSXRSCENE_API UClass* Z_Construct_UClass_AOculusXRSceneActor_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAOculusXRSceneActor(); \
-	friend struct Z_Construct_UClass_AOculusXRSceneActor_Statics; \
+	friend struct ::Z_Construct_UClass_AOculusXRSceneActor_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRSCENE_API UClass* Z_Construct_UClass_AOculusXRSceneActor_NoRegister(); \
+	friend OCULUSXRSCENE_API UClass* ::Z_Construct_UClass_AOculusXRSceneActor_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AOculusXRSceneActor, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRScene"), Z_Construct_UClass_AOculusXRSceneActor_NoRegister) \
 	DECLARE_SERIALIZER(AOculusXRSceneActor)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AOculusXRSceneActor(AOculusXRSceneActor&&) = delete; \
 	AOculusXRSceneActor(const AOculusXRSceneActor&) = delete; \
@@ -64,13 +65,13 @@ public: \
 	NO_API virtual ~AOculusXRSceneActor();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_70_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_70_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h_73_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -80,7 +81,7 @@ class AOculusXRSceneActor;
 // ********** End Class AOculusXRSceneActor ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneActor_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneActor_h
 
 // ********** Begin Enum EOculusXRLaunchCaptureFlowWhenMissingScene ********************************
 #define FOREACH_ENUM_EOCULUSXRLAUNCHCAPTUREFLOWWHENMISSINGSCENE(op) \

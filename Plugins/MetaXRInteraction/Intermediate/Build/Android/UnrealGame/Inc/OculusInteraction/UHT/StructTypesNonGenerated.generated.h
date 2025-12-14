@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FIsdkPosef ********************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_71_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkPosef_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkPosef_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_71_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkPosef_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FIsdkPosef;
 // ********** End ScriptStruct FIsdkPosef **********************************************************
 
 // ********** Begin ScriptStruct FIsdkInteractionRelationshipCounts ********************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_94_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_94_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkInteractionRelationshipCounts_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -35,9 +37,10 @@ struct FIsdkInteractionRelationshipCounts;
 // ********** End ScriptStruct FIsdkInteractionRelationshipCounts **********************************
 
 // ********** Begin Interface UIsdkIPayload ********************************************************
+struct Z_Construct_UClass_UIsdkIPayload_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkIPayload_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UIsdkIPayload(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -49,26 +52,26 @@ OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkIPayload_NoRegister();
 	virtual ~UIsdkIPayload() = default;
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_GENERATED_UINTERFACE_BODY() \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_GENERATED_UINTERFACE_BODY() \
 private: \
 	static void StaticRegisterNativesUIsdkIPayload(); \
-	friend struct Z_Construct_UClass_UIsdkIPayload_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkIPayload_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkIPayload_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkIPayload_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkIPayload, UInterface, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Interface), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkIPayload_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkIPayload)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_GENERATED_BODY \
 	PRAGMA_DISABLE_DEPRECATION_WARNINGS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_GENERATED_UINTERFACE_BODY() \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_GENERATED_UINTERFACE_BODY() \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_ENHANCED_CONSTRUCTORS \
 private: \
 	PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_INCLASS_IINTERFACE_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_INCLASS_IINTERFACE_NO_PURE_DECLS \
 protected: \
 	virtual ~IIsdkIPayload() {} \
 public: \
@@ -77,11 +80,11 @@ public: \
 	virtual UObject* _getUObject() const { return nullptr; }
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_110_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_117_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_110_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_117_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_INCLASS_IINTERFACE_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_113_INCLASS_IINTERFACE_NO_PURE_DECLS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -91,8 +94,9 @@ class UIsdkIPayload;
 // ********** End Interface UIsdkIPayload **********************************************************
 
 // ********** Begin ScriptStruct FIsdkHandGrabPoseProperties ***************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_191_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h_191_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties_Statics; \
 	OCULUSINTERACTION_API static class UScriptStruct* StaticStruct();
 
 
@@ -100,7 +104,7 @@ struct FIsdkHandGrabPoseProperties;
 // ********** End ScriptStruct FIsdkHandGrabPoseProperties *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypesNonGenerated_h
 
 // ********** Begin Enum EIsdkLerpState ************************************************************
 #define FOREACH_ENUM_EISDKLERPSTATE(op) \
@@ -111,7 +115,7 @@ struct FIsdkHandGrabPoseProperties;
 
 enum class EIsdkLerpState : uint8;
 template<> struct TIsUEnumClass<EIsdkLerpState> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkLerpState>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkLerpState>();
 // ********** End Enum EIsdkLerpState **************************************************************
 
 // ********** Begin Enum EIsdkHandGrabPoseMode *****************************************************
@@ -123,7 +127,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkLerpState>();
 
 enum class EIsdkHandGrabPoseMode : uint8;
 template<> struct TIsUEnumClass<EIsdkHandGrabPoseMode> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseMode>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandGrabPoseMode>();
 // ********** End Enum EIsdkHandGrabPoseMode *******************************************************
 
 // ********** Begin Enum EIsdkHandGrabPoseMirror ***************************************************
@@ -134,7 +138,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseMode>();
 
 enum class EIsdkHandGrabPoseMirror : uint8;
 template<> struct TIsUEnumClass<EIsdkHandGrabPoseMirror> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseMirror>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandGrabPoseMirror>();
 // ********** End Enum EIsdkHandGrabPoseMirror *****************************************************
 
 // ********** Begin Enum EIsdkXRControllerDrivenHandPoseType ***************************************
@@ -145,7 +149,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseMirror>();
 
 enum class EIsdkXRControllerDrivenHandPoseType : uint8;
 template<> struct TIsUEnumClass<EIsdkXRControllerDrivenHandPoseType> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkXRControllerDrivenHandPoseType>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkXRControllerDrivenHandPoseType>();
 // ********** End Enum EIsdkXRControllerDrivenHandPoseType *****************************************
 
 // ********** Begin Enum EIsdkXRControllerType *****************************************************
@@ -158,7 +162,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkXRControllerDrivenHandPo
 
 enum class EIsdkXRControllerType : uint8;
 template<> struct TIsUEnumClass<EIsdkXRControllerType> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkXRControllerType>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkXRControllerType>();
 // ********** End Enum EIsdkXRControllerType *******************************************************
 
 // ********** Begin Enum EControllerHandBehavior ***************************************************
@@ -171,7 +175,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkXRControllerType>();
 
 enum class EControllerHandBehavior : uint8;
 template<> struct TIsUEnumClass<EControllerHandBehavior> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EControllerHandBehavior>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EControllerHandBehavior>();
 // ********** End Enum EControllerHandBehavior *****************************************************
 
 // ********** Begin Enum EIsdkHandGrabPoseOrientation **********************************************
@@ -183,7 +187,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EControllerHandBehavior>();
 
 enum class EIsdkHandGrabPoseOrientation : uint8;
 template<> struct TIsUEnumClass<EIsdkHandGrabPoseOrientation> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseOrientation>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandGrabPoseOrientation>();
 // ********** End Enum EIsdkHandGrabPoseOrientation ************************************************
 
 // ********** Begin Enum EIsdkDigitType ************************************************************
@@ -197,7 +201,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandGrabPoseOrientation>
 
 enum class EIsdkDigitType : uint8;
 template<> struct TIsUEnumClass<EIsdkDigitType> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDigitType>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDigitType>();
 // ********** End Enum EIsdkDigitType **************************************************************
 
 // ********** Begin Enum EIsdkGrabDetectorType *****************************************************
@@ -209,7 +213,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDigitType>();
 
 enum class EIsdkGrabDetectorType : uint32;
 template<> struct TIsUEnumClass<EIsdkGrabDetectorType> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkGrabDetectorType>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkGrabDetectorType>();
 // ********** End Enum EIsdkGrabDetectorType *******************************************************
 
 // ********** Begin Enum EIsdkMultiGrabBehavior ****************************************************
@@ -220,7 +224,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkGrabDetectorType>();
 
 enum class EIsdkMultiGrabBehavior : uint8;
 template<> struct TIsUEnumClass<EIsdkMultiGrabBehavior> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkMultiGrabBehavior>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkMultiGrabBehavior>();
 // ********** End Enum EIsdkMultiGrabBehavior ******************************************************
 
 // ********** Begin Enum EIsdkGrabInputMethod ******************************************************
@@ -232,7 +236,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkMultiGrabBehavior>();
 
 enum class EIsdkGrabInputMethod : uint8;
 template<> struct TIsUEnumClass<EIsdkGrabInputMethod> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkGrabInputMethod>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkGrabInputMethod>();
 // ********** End Enum EIsdkGrabInputMethod ********************************************************
 
 // ********** Begin Enum EIsdkInteractionType ******************************************************
@@ -245,7 +249,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkGrabInputMethod>();
 
 enum class EIsdkInteractionType : uint8;
 template<> struct TIsUEnumClass<EIsdkInteractionType> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkInteractionType>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkInteractionType>();
 // ********** End Enum EIsdkInteractionType ********************************************************
 
 // ********** Begin Enum EIsdkDeviceType ***********************************************************
@@ -257,7 +261,7 @@ template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkInteractionType>();
 
 enum class EIsdkDeviceType : uint8;
 template<> struct TIsUEnumClass<EIsdkDeviceType> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDeviceType>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDeviceType>();
 // ********** End Enum EIsdkDeviceType *************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

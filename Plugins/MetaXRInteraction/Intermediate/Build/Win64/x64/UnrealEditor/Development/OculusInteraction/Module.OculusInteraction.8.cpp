@@ -61,4 +61,3 @@
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteraction/Private/Internal/BlankComponent/IsdkBlankComponent.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteraction/Private/IsdkControllerMeshComponent.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteraction/Private/IsdkFunctionLibrary.cpp"
-#include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteraction/Private/IsdkHandData.cpp"

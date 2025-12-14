@@ -8,7 +8,7 @@
 #include "DataSources/IsdkExternalHandDataModifier.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkExternalHandDataModifier() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -30,24 +30,37 @@ struct Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataMod
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Delegate broadcast during Tick, if all data sources are valid */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate broadcast during Tick, if all data sources are valid" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandData_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOnHandDataModified constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOnHandDataModified constinit property declarations *********************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOnHandDataModified Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::NewProp_HandData = { "HandData", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkExternalHandDataModifier_eventOnHandDataModified_Parms, HandData), Z_Construct_UClass_UIsdkHandDataSource_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandData_MetaData), NewProp_HandData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::NewProp_HandData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "OnHandDataModified__DelegateSignature", Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::IsdkExternalHandDataModifier_eventOnHandDataModified_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOnHandDataModified Property Definitions ********************************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "OnHandDataModified__DelegateSignature", 	Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::IsdkExternalHandDataModifier_eventOnHandDataModified_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature_Statics::IsdkExternalHandDataModifier_eventOnHandDataModified_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature()
 {
@@ -82,24 +95,37 @@ struct Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_St
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Get the Hand Data Source this Modifier should be taking in as input\n   * @return UIsdkHandDataSource The Hand Data source object used as input for this modifier\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Get the Hand Data Source this Modifier should be taking in as input\n@return UIsdkHandDataSource The Hand Data source object used as input for this modifier" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetInputDataSource constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetInputDataSource constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetInputDataSource Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkExternalHandDataModifier_eventGetInputDataSource_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandDataSource_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "GetInputDataSource", Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::IsdkExternalHandDataModifier_eventGetInputDataSource_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetInputDataSource Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "GetInputDataSource", 	Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::IsdkExternalHandDataModifier_eventGetInputDataSource_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource_Statics::IsdkExternalHandDataModifier_eventGetInputDataSource_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource()
 {
@@ -144,24 +170,37 @@ struct Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Called when this ticks if all data sources are valid, broadcasts a OnHandDataModified\n   * delegate\n   * @param InputHandData The Hand Data being modified\n   * Blueprint native event, called by TickComponent if the data source and hand data are valid.\n   * This gives developers a hook to add additional logic in Blueprint after hand data has been set\n   * per tick.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Called when this ticks if all data sources are valid, broadcasts a OnHandDataModified\ndelegate\n@param InputHandData The Hand Data being modified\nBlueprint native event, called by TickComponent if the data source and hand data are valid.\nThis gives developers a hook to add additional logic in Blueprint after hand data has been set\nper tick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InputHandData_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnModify constinit property declarations ******************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputHandData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnModify constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnModify Property Definitions *****************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::NewProp_InputHandData = { "InputHandData", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkExternalHandDataModifier_eventOnModify_Parms, InputHandData), Z_Construct_UClass_UIsdkHandData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputHandData_MetaData), NewProp_InputHandData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::NewProp_InputHandData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "OnModify", Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::PropPointers), sizeof(IsdkExternalHandDataModifier_eventOnModify_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnModify Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "OnModify", 	Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::PropPointers), 
+sizeof(IsdkExternalHandDataModifier_eventOnModify_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkExternalHandDataModifier_eventOnModify_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify()
 {
@@ -194,24 +233,37 @@ struct Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_St
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the hand data source this modifier should use as input\n   * @param InInputDataSource The new data source to use for this modifier\n   *\n   * Validates the new data source, removes tick prerequisites on the old one (if present) and adds\n   * tick prerequisites to the new data source\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the hand data source this modifier should use as input\n@param InInputDataSource The new data source to use for this modifier\n\nValidates the new data source, removes tick prerequisites on the old one (if present) and adds\ntick prerequisites to the new data source" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InInputDataSource_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetInputDataSource constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InInputDataSource;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetInputDataSource constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetInputDataSource Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::NewProp_InInputDataSource = { "InInputDataSource", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkExternalHandDataModifier_eventSetInputDataSource_Parms, InInputDataSource), Z_Construct_UClass_UIsdkHandDataSource_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InInputDataSource_MetaData), NewProp_InInputDataSource_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::NewProp_InInputDataSource,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "SetInputDataSource", Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::IsdkExternalHandDataModifier_eventSetInputDataSource_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetInputDataSource Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkExternalHandDataModifier, nullptr, "SetInputDataSource", 	Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::IsdkExternalHandDataModifier_eventSetInputDataSource_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource_Statics::IsdkExternalHandDataModifier_eventSetInputDataSource_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource()
 {
@@ -233,16 +285,6 @@ DEFINE_FUNCTION(UIsdkExternalHandDataModifier::execSetInputDataSource)
 // ********** End Class UIsdkExternalHandDataModifier Function SetInputDataSource ******************
 
 // ********** Begin Class UIsdkExternalHandDataModifier ********************************************
-void UIsdkExternalHandDataModifier::StaticRegisterNativesUIsdkExternalHandDataModifier()
-{
-	UClass* Class = UIsdkExternalHandDataModifier::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetInputDataSource", &UIsdkExternalHandDataModifier::execGetInputDataSource },
-		{ "OnModify", &UIsdkExternalHandDataModifier::execOnModify },
-		{ "SetInputDataSource", &UIsdkExternalHandDataModifier::execSetInputDataSource },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkExternalHandDataModifier;
 UClass* UIsdkExternalHandDataModifier::GetPrivateStaticClass()
 {
@@ -250,7 +292,7 @@ UClass* UIsdkExternalHandDataModifier::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkExternalHandDataModifier.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkExternalHandDataModifier"),
 			Z_Registration_Info_UClass_UIsdkExternalHandDataModifier.InnerSingleton,
 			StaticRegisterNativesUIsdkExternalHandDataModifier,
@@ -279,12 +321,16 @@ struct Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkExternalHandDataModifier\n * @brief Hand Data Source intended to take and modify an existing HandData Source\n *\n * External Hand Data modifiers are intended to be implemented downstream of an existing Hand Data\n * source, modifying it in some way and then passing the data further downstream\n *\n * @see UIsdkExternalHandDataSource\n * @see UIsdkHandDataSource\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "DisplayName", "ISDK External Hand Data Modifier" },
 		{ "IncludePath", "DataSources/IsdkExternalHandDataModifier.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkExternalHandDataModifier\n@brief Hand Data Source intended to take and modify an existing HandData Source\n\nExternal Hand Data modifiers are intended to be implemented downstream of an existing Hand Data\nsource, modifying it in some way and then passing the data further downstream\n\n@see UIsdkExternalHandDataSource\n@see UIsdkHandDataSource\n@addtogroup InteractionSDK" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnHandDataModified_MetaData[] = {
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
@@ -293,35 +339,50 @@ struct Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics
 		{ "BlueprintGetter", "GetInputDataSource" },
 		{ "BlueprintSetter", "SetInputDataSource" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Hand Data Source used as input for this modifier */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkExternalHandDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Hand Data Source used as input for this modifier" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkExternalHandDataModifier constinit property declarations ************
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnHandDataModified;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InputDataSource;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkExternalHandDataModifier constinit property declarations **************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetInputDataSource"), .Pointer = &UIsdkExternalHandDataModifier::execGetInputDataSource },
+		{ .NameUTF8 = UTF8TEXT("OnModify"), .Pointer = &UIsdkExternalHandDataModifier::execOnModify },
+		{ .NameUTF8 = UTF8TEXT("SetInputDataSource"), .Pointer = &UIsdkExternalHandDataModifier::execSetInputDataSource },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource, "GetInputDataSource" }, // 3714082081
-		{ &Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature, "OnHandDataModified__DelegateSignature" }, // 2840462927
-		{ &Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify, "OnModify" }, // 2030415432
-		{ &Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource, "SetInputDataSource" }, // 1673467749
+		{ &Z_Construct_UFunction_UIsdkExternalHandDataModifier_GetInputDataSource, "GetInputDataSource" }, // 1426109740
+		{ &Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature, "OnHandDataModified__DelegateSignature" }, // 856312416
+		{ &Z_Construct_UFunction_UIsdkExternalHandDataModifier_OnModify, "OnModify" }, // 4094936505
+		{ &Z_Construct_UFunction_UIsdkExternalHandDataModifier_SetInputDataSource, "SetInputDataSource" }, // 1044114683
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkExternalHandDataModifier>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::NewProp_OnHandDataModified = { "OnHandDataModified", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkExternalHandDataModifier, OnHandDataModified), Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnHandDataModified_MetaData), NewProp_OnHandDataModified_MetaData) }; // 2840462927
+}; // struct Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics
+
+// ********** Begin Class UIsdkExternalHandDataModifier Property Definitions ***********************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::NewProp_OnHandDataModified = { "OnHandDataModified", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkExternalHandDataModifier, OnHandDataModified), Z_Construct_UDelegateFunction_UIsdkExternalHandDataModifier_OnHandDataModified__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnHandDataModified_MetaData), NewProp_OnHandDataModified_MetaData) }; // 856312416
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::NewProp_InputDataSource = { "InputDataSource", nullptr, (EPropertyFlags)0x001000000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkExternalHandDataModifier, InputDataSource), Z_Construct_UClass_UIsdkHandDataSource_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InputDataSource_MetaData), NewProp_InputDataSource_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::NewProp_OnHandDataModified,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::NewProp_InputDataSource,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkExternalHandDataModifier Property Definitions *************************
 UObject* (*const Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkExternalHandDataSource,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -342,6 +403,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkExternalHandDataMo
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::Class_MetaDataParams)
 };
+void UIsdkExternalHandDataModifier::StaticRegisterNativesUIsdkExternalHandDataModifier()
+{
+	UClass* Class = UIsdkExternalHandDataModifier::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkExternalHandDataModifier_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkExternalHandDataModifier()
 {
 	if (!Z_Registration_Info_UClass_UIsdkExternalHandDataModifier.OuterSingleton)
@@ -351,21 +417,23 @@ UClass* Z_Construct_UClass_UIsdkExternalHandDataModifier()
 	return Z_Registration_Info_UClass_UIsdkExternalHandDataModifier.OuterSingleton;
 }
 UIsdkExternalHandDataModifier::UIsdkExternalHandDataModifier() {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkExternalHandDataModifier);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkExternalHandDataModifier);
 UIsdkExternalHandDataModifier::~UIsdkExternalHandDataModifier() {}
 // ********** End Class UIsdkExternalHandDataModifier **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkExternalHandDataModifier, UIsdkExternalHandDataModifier::StaticClass, TEXT("UIsdkExternalHandDataModifier"), &Z_Registration_Info_UClass_UIsdkExternalHandDataModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkExternalHandDataModifier), 1785398504U) },
+		{ Z_Construct_UClass_UIsdkExternalHandDataModifier, UIsdkExternalHandDataModifier::StaticClass, TEXT("UIsdkExternalHandDataModifier"), &Z_Registration_Info_UClass_UIsdkExternalHandDataModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkExternalHandDataModifier), 3759795729U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_2208437284(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_1926999269{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkExternalHandDataModifier_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,7 +9,7 @@
 #include "OculusXRMovementTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRFaceTrackingComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -28,14 +28,24 @@ struct Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValue
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Components|OculusXRFaceTracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Clears all face expression values.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Clears all face expression values." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ClearExpressionValues constinit property declarations *****************
+// ********** End Function ClearExpressionValues constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFaceTrackingComponent, nullptr, "ClearExpressionValues", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFaceTrackingComponent, nullptr, "ClearExpressionValues", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -65,19 +75,28 @@ struct Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Components|OculusXRFaceTracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get a face expression value given an expression key.\n\x09 *\n\x09 * @param Expression : The expression key that will be queried.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get a face expression value given an expression key.\n\n@param Expression : The expression key that will be queried." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetExpressionValue constinit property declarations ********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Expression_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Expression;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetExpressionValue constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetExpressionValue Property Definitions *******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::NewProp_Expression_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::NewProp_Expression = { "Expression", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFaceTrackingComponent_eventGetExpressionValue_Parms, Expression), Z_Construct_UEnum_OculusXRMovement_EOculusXRFaceExpression, METADATA_PARAMS(0, nullptr) }; // 44156253
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::NewProp_Expression = { "Expression", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFaceTrackingComponent_eventGetExpressionValue_Parms, Expression), Z_Construct_UEnum_OculusXRMovement_EOculusXRFaceExpression, METADATA_PARAMS(0, nullptr) }; // 1841499584
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFaceTrackingComponent_eventGetExpressionValue_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::NewProp_Expression_Underlying,
@@ -85,7 +104,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFaceTrackingComponent, nullptr, "GetExpressionValue", Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::OculusXRFaceTrackingComponent_eventGetExpressionValue_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetExpressionValue Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFaceTrackingComponent, nullptr, "GetExpressionValue", 	Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::OculusXRFaceTrackingComponent_eventGetExpressionValue_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue_Statics::OculusXRFaceTrackingComponent_eventGetExpressionValue_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue()
 {
@@ -117,20 +140,29 @@ struct Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Components|OculusXRFaceTracking" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set face expression value with expression key and value(0-1).\n\x09 *\n\x09 * @param Expression : The expression key that will be modified.\n\x09 * @param Value : The new value to assign to the expression, 0 will remove all changes.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set face expression value with expression key and value(0-1).\n\n@param Expression : The expression key that will be modified.\n@param Value : The new value to assign to the expression, 0 will remove all changes." },
+#endif
 		{ "UnsafeDuringActorConstruction", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetExpressionValue constinit property declarations ********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Expression_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Expression;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetExpressionValue constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetExpressionValue Property Definitions *******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::NewProp_Expression_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::NewProp_Expression = { "Expression", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFaceTrackingComponent_eventSetExpressionValue_Parms, Expression), Z_Construct_UEnum_OculusXRMovement_EOculusXRFaceExpression, METADATA_PARAMS(0, nullptr) }; // 44156253
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::NewProp_Expression = { "Expression", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFaceTrackingComponent_eventSetExpressionValue_Parms, Expression), Z_Construct_UEnum_OculusXRMovement_EOculusXRFaceExpression, METADATA_PARAMS(0, nullptr) }; // 1841499584
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFaceTrackingComponent_eventSetExpressionValue_Parms, Value), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::NewProp_Expression_Underlying,
@@ -138,7 +170,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFaceTrackingComponent, nullptr, "SetExpressionValue", Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::OculusXRFaceTrackingComponent_eventSetExpressionValue_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetExpressionValue Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFaceTrackingComponent, nullptr, "SetExpressionValue", 	Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::OculusXRFaceTrackingComponent_eventSetExpressionValue_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue_Statics::OculusXRFaceTrackingComponent_eventSetExpressionValue_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue()
 {
@@ -161,16 +197,6 @@ DEFINE_FUNCTION(UOculusXRFaceTrackingComponent::execSetExpressionValue)
 // ********** End Class UOculusXRFaceTrackingComponent Function SetExpressionValue *****************
 
 // ********** Begin Class UOculusXRFaceTrackingComponent *******************************************
-void UOculusXRFaceTrackingComponent::StaticRegisterNativesUOculusXRFaceTrackingComponent()
-{
-	UClass* Class = UOculusXRFaceTrackingComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "ClearExpressionValues", &UOculusXRFaceTrackingComponent::execClearExpressionValues },
-		{ "GetExpressionValue", &UOculusXRFaceTrackingComponent::execGetExpressionValue },
-		{ "SetExpressionValue", &UOculusXRFaceTrackingComponent::execSetExpressionValue },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent;
 UClass* UOculusXRFaceTrackingComponent::GetPrivateStaticClass()
 {
@@ -178,7 +204,7 @@ UClass* UOculusXRFaceTrackingComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRFaceTrackingComponent"),
 			Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRFaceTrackingComponent,
@@ -214,47 +240,77 @@ struct Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetMeshComponentName_MetaData[] = {
 		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The name of the skinned mesh component that this component targets for facial expression.\n\x09 * This must be the name of a component on this actor.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The name of the skinned mesh component that this component targets for facial expression.\nThis must be the name of a component on this actor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InvalidFaceDataResetTime_MetaData[] = {
 		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * If the face data is invalid for at least this or longer than this time then all face blendshapes/morph targets are reset to zero.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If the face data is invalid for at least this or longer than this time then all face blendshapes/morph targets are reset to zero." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ExpressionNames_MetaData[] = {
 		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The list of expressions that this component supports.\n\x09 * Names are validated on startup so only valid morph targets on the skeletal mesh will be targeted.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The list of expressions that this component supports.\nNames are validated on startup so only valid morph targets on the skeletal mesh will be targeted." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ExpressionModifiers_MetaData[] = {
 		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * An array of optional expression modifiers that can be applied.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An array of optional expression modifiers that can be applied." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUpdateFace_MetaData[] = {
 		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * This flag determines if the face should be updated or not during the components tick.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This flag determines if the face should be updated or not during the components tick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUseModifiers_MetaData[] = {
 		{ "Category", "OculusXR|Movement" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * This flag determines if the face should be modified with Expression Modifiers or not during the components tick.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This flag determines if the face should be modified with Expression Modifiers or not during the components tick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetMeshComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The mesh component targeted for expressions\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/OculusXRFaceTrackingComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The mesh component targeted for expressions" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRFaceTrackingComponent constinit property declarations ***********
 	static const UECodeGen_Private::FNamePropertyParams NewProp_TargetMeshComponentName;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_InvalidFaceDataResetTime;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ExpressionNames_ValueProp;
@@ -269,26 +325,34 @@ struct Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bUseModifiers;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetMeshComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRFaceTrackingComponent constinit property declarations *************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("ClearExpressionValues"), .Pointer = &UOculusXRFaceTrackingComponent::execClearExpressionValues },
+		{ .NameUTF8 = UTF8TEXT("GetExpressionValue"), .Pointer = &UOculusXRFaceTrackingComponent::execGetExpressionValue },
+		{ .NameUTF8 = UTF8TEXT("SetExpressionValue"), .Pointer = &UOculusXRFaceTrackingComponent::execSetExpressionValue },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues, "ClearExpressionValues" }, // 1401384998
-		{ &Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue, "GetExpressionValue" }, // 287900889
-		{ &Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue, "SetExpressionValue" }, // 2119088792
+		{ &Z_Construct_UFunction_UOculusXRFaceTrackingComponent_ClearExpressionValues, "ClearExpressionValues" }, // 23701454
+		{ &Z_Construct_UFunction_UOculusXRFaceTrackingComponent_GetExpressionValue, "GetExpressionValue" }, // 2325586432
+		{ &Z_Construct_UFunction_UOculusXRFaceTrackingComponent_SetExpressionValue, "SetExpressionValue" }, // 4043181216
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRFaceTrackingComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics
+
+// ********** Begin Class UOculusXRFaceTrackingComponent Property Definitions **********************
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_TargetMeshComponentName = { "TargetMeshComponentName", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRFaceTrackingComponent, TargetMeshComponentName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetMeshComponentName_MetaData), NewProp_TargetMeshComponentName_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_InvalidFaceDataResetTime = { "InvalidFaceDataResetTime", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRFaceTrackingComponent, InvalidFaceDataResetTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InvalidFaceDataResetTime_MetaData), NewProp_InvalidFaceDataResetTime_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionNames_ValueProp = { "ExpressionNames", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionNames_Key_KeyProp_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionNames_Key_KeyProp = { "ExpressionNames_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_OculusXRMovement_EOculusXRFaceExpression, METADATA_PARAMS(0, nullptr) }; // 44156253
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionNames = { "ExpressionNames", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRFaceTrackingComponent, ExpressionNames), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExpressionNames_MetaData), NewProp_ExpressionNames_MetaData) }; // 44156253
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionModifiers_Inner = { "ExpressionModifiers", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRFaceExpressionModifier, METADATA_PARAMS(0, nullptr) }; // 259080224
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionModifiers = { "ExpressionModifiers", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRFaceTrackingComponent, ExpressionModifiers), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExpressionModifiers_MetaData), NewProp_ExpressionModifiers_MetaData) }; // 259080224
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionNames_Key_KeyProp = { "ExpressionNames_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_OculusXRMovement_EOculusXRFaceExpression, METADATA_PARAMS(0, nullptr) }; // 1841499584
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionNames = { "ExpressionNames", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRFaceTrackingComponent, ExpressionNames), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExpressionNames_MetaData), NewProp_ExpressionNames_MetaData) }; // 1841499584
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionModifiers_Inner = { "ExpressionModifiers", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRFaceExpressionModifier, METADATA_PARAMS(0, nullptr) }; // 3730206780
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_ExpressionModifiers = { "ExpressionModifiers", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRFaceTrackingComponent, ExpressionModifiers), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExpressionModifiers_MetaData), NewProp_ExpressionModifiers_MetaData) }; // 3730206780
 void Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_bUpdateFace_SetBit(void* Obj)
 {
 	((UOculusXRFaceTrackingComponent*)Obj)->bUpdateFace = 1;
@@ -314,6 +378,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::NewProp_TargetMeshComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRFaceTrackingComponent Property Definitions ************************
 UObject* (*const Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMovement,
@@ -334,6 +399,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRFaceTrackingCo
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRFaceTrackingComponent::StaticRegisterNativesUOculusXRFaceTrackingComponent()
+{
+	UClass* Class = UOculusXRFaceTrackingComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRFaceTrackingComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent.OuterSingleton)
@@ -342,21 +412,23 @@ UClass* Z_Construct_UClass_UOculusXRFaceTrackingComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRFaceTrackingComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRFaceTrackingComponent);
 UOculusXRFaceTrackingComponent::~UOculusXRFaceTrackingComponent() {}
 // ********** End Class UOculusXRFaceTrackingComponent *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRFaceTrackingComponent, UOculusXRFaceTrackingComponent::StaticClass, TEXT("UOculusXRFaceTrackingComponent"), &Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRFaceTrackingComponent), 1669358838U) },
+		{ Z_Construct_UClass_UOculusXRFaceTrackingComponent, UOculusXRFaceTrackingComponent::StaticClass, TEXT("UOculusXRFaceTrackingComponent"), &Z_Registration_Info_UClass_UOculusXRFaceTrackingComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRFaceTrackingComponent), 3490932278U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_2592196246(TEXT("/Script/OculusXRMovement"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_2580874572{
+	TEXT("/Script/OculusXRMovement"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h__Script_OculusXRMovement_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

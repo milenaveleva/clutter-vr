@@ -14,7 +14,6 @@
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusInteractionEditor/PerModuleInline.gen.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteractionEditor/Private/EditorTelemetry/IsdkEditorTelemetry.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteractionEditor/Private/EditorTelemetry/IsdkEditorTelemetryNotifications.cpp"
-#include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteractionEditor/Private/EditorTelemetry/IsdkTelemetryPrivacySettings.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteractionEditor/Private/IsdkHandPoseDataActions.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteractionEditor/Private/IsdkHandPoseDataFactory.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/OculusInteractionEditor/Private/IsdkHandPoseDetectionProfileActions.cpp"

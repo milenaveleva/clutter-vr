@@ -8,7 +8,7 @@
 #include "DataSources/IsdkSyntheticHand.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkSyntheticHand() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkSyntheticHand *******************************************************
-void UIsdkSyntheticHand::StaticRegisterNativesUIsdkSyntheticHand()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkSyntheticHand;
 UClass* UIsdkSyntheticHand::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkSyntheticHand::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkSyntheticHand.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkSyntheticHand"),
 			Z_Registration_Info_UClass_UIsdkSyntheticHand.InnerSingleton,
 			StaticRegisterNativesUIsdkSyntheticHand,
@@ -58,27 +55,34 @@ struct Z_Construct_UClass_UIsdkSyntheticHand_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Hand Data Modifier that returns a HandDataSource driven by the API's Synthetic Hand */" },
+#endif
 		{ "DisplayName", "ISDK Synthetic Hand" },
 		{ "IncludePath", "DataSources/IsdkSyntheticHand.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkSyntheticHand.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Hand Data Modifier that returns a HandDataSource driven by the API's Synthetic Hand" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkSyntheticHand constinit property declarations ***********************
+// ********** End Class UIsdkSyntheticHand constinit property declarations *************************
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkSyntheticHand>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkSyntheticHand_Statics
 UObject* (*const Z_Construct_UClass_UIsdkSyntheticHand_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkHandDataModifier,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkSyntheticHand_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkSyntheticHand_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIRootPoseLocker_NoRegister, (int32)VTABLE_OFFSET(UIsdkSyntheticHand, IIsdkIRootPoseLocker), false },  // 2107323169
+	{ Z_Construct_UClass_UIsdkIRootPoseLocker_NoRegister, (int32)VTABLE_OFFSET(UIsdkSyntheticHand, IIsdkIRootPoseLocker), false },  // 3482934928
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkSyntheticHand_Statics::ClassParams = {
 	&UIsdkSyntheticHand::StaticClass,
@@ -95,6 +99,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkSyntheticHand_Stat
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkSyntheticHand_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkSyntheticHand_Statics::Class_MetaDataParams)
 };
+void UIsdkSyntheticHand::StaticRegisterNativesUIsdkSyntheticHand()
+{
+}
 UClass* Z_Construct_UClass_UIsdkSyntheticHand()
 {
 	if (!Z_Registration_Info_UClass_UIsdkSyntheticHand.OuterSingleton)
@@ -103,21 +110,23 @@ UClass* Z_Construct_UClass_UIsdkSyntheticHand()
 	}
 	return Z_Registration_Info_UClass_UIsdkSyntheticHand.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkSyntheticHand);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkSyntheticHand);
 UIsdkSyntheticHand::~UIsdkSyntheticHand() {}
 // ********** End Class UIsdkSyntheticHand *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkSyntheticHand, UIsdkSyntheticHand::StaticClass, TEXT("UIsdkSyntheticHand"), &Z_Registration_Info_UClass_UIsdkSyntheticHand, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkSyntheticHand), 4208883712U) },
+		{ Z_Construct_UClass_UIsdkSyntheticHand, UIsdkSyntheticHand::StaticClass, TEXT("UIsdkSyntheticHand"), &Z_Registration_Info_UClass_UIsdkSyntheticHand, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkSyntheticHand), 2193381466U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_1230202453(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_1274311090{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkSyntheticHand_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

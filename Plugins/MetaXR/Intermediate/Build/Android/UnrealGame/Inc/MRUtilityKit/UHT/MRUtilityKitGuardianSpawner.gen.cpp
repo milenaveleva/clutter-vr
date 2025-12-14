@@ -8,7 +8,7 @@
 #include "MRUtilityKitGuardianSpawner.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeMRUtilityKitGuardianSpawner() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -34,16 +34,25 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function DestroyGuardians constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function DestroyGuardians constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function DestroyGuardians Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventDestroyGuardians_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "DestroyGuardians", Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::MRUKGuardianSpawner_eventDestroyGuardians_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::Function_MetaDataParams)},  };
+// ********** End Function DestroyGuardians Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "DestroyGuardians", 	Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::MRUKGuardianSpawner_eventDestroyGuardians_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians_Statics::MRUKGuardianSpawner_eventDestroyGuardians_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians()
 {
@@ -76,16 +85,25 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnRoomCreated constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnRoomCreated constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnRoomCreated Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventOnRoomCreated_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "OnRoomCreated", Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::MRUKGuardianSpawner_eventOnRoomCreated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnRoomCreated Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "OnRoomCreated", 	Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::MRUKGuardianSpawner_eventOnRoomCreated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated_Statics::MRUKGuardianSpawner_eventOnRoomCreated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated()
 {
@@ -118,16 +136,25 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnRoomRemoved constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnRoomRemoved constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnRoomRemoved Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventOnRoomRemoved_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "OnRoomRemoved", Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::MRUKGuardianSpawner_eventOnRoomRemoved_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnRoomRemoved Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "OnRoomRemoved", 	Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::MRUKGuardianSpawner_eventOnRoomRemoved_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved_Statics::MRUKGuardianSpawner_eventOnRoomRemoved_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved()
 {
@@ -160,16 +187,25 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnRoomUpdated constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnRoomUpdated constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnRoomUpdated Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventOnRoomUpdated_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "OnRoomUpdated", Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::MRUKGuardianSpawner_eventOnRoomUpdated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnRoomUpdated Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "OnRoomUpdated", 	Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::MRUKGuardianSpawner_eventOnRoomUpdated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated_Statics::MRUKGuardianSpawner_eventOnRoomUpdated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated()
 {
@@ -201,21 +237,34 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the density of the grid.\n\x09 * @param Density The grid density.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the density of the grid.\n@param Density The grid density." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetGridDensity constinit property declarations ************************
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_Density;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetGridDensity constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetGridDensity Property Definitions ***********************************
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::NewProp_Density = { "Density", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventSetGridDensity_Parms, Density), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::NewProp_Density,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "SetGridDensity", Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::MRUKGuardianSpawner_eventSetGridDensity_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetGridDensity Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "SetGridDensity", 	Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::MRUKGuardianSpawner_eventSetGridDensity_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity_Statics::MRUKGuardianSpawner_eventSetGridDensity_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity()
 {
@@ -247,21 +296,34 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the guardian material to a different one.\n\x09 * @param Material The guardian material.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the guardian material to a different one.\n@param Material The guardian material." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetGuardianMaterial constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetGuardianMaterial constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetGuardianMaterial Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventSetGuardianMaterial_Parms, Material), Z_Construct_UClass_UMaterialInstance_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::NewProp_Material,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "SetGuardianMaterial", Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::MRUKGuardianSpawner_eventSetGuardianMaterial_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetGuardianMaterial Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "SetGuardianMaterial", 	Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::MRUKGuardianSpawner_eventSetGuardianMaterial_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial_Statics::MRUKGuardianSpawner_eventSetGuardianMaterial_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial()
 {
@@ -292,21 +354,34 @@ struct Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Spawn the guardian. This will get called automatically after the mixed reality utility kit has\n\x09 * been initialized if SpawnMode is set to something other than None.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Spawn the guardian. This will get called automatically after the mixed reality utility kit has\nbeen initialized if SpawnMode is set to something other than None." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SpawnGuardians constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Room;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SpawnGuardians constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SpawnGuardians Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::NewProp_Room = { "Room", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKGuardianSpawner_eventSpawnGuardians_Parms, Room), Z_Construct_UClass_AMRUKRoom_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::NewProp_Room,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "SpawnGuardians", Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::MRUKGuardianSpawner_eventSpawnGuardians_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::Function_MetaDataParams)},  };
+// ********** End Function SpawnGuardians Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKGuardianSpawner, nullptr, "SpawnGuardians", 	Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::MRUKGuardianSpawner_eventSpawnGuardians_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians_Statics::MRUKGuardianSpawner_eventSpawnGuardians_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians()
 {
@@ -328,20 +403,6 @@ DEFINE_FUNCTION(AMRUKGuardianSpawner::execSpawnGuardians)
 // ********** End Class AMRUKGuardianSpawner Function SpawnGuardians *******************************
 
 // ********** Begin Class AMRUKGuardianSpawner *****************************************************
-void AMRUKGuardianSpawner::StaticRegisterNativesAMRUKGuardianSpawner()
-{
-	UClass* Class = AMRUKGuardianSpawner::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "DestroyGuardians", &AMRUKGuardianSpawner::execDestroyGuardians },
-		{ "OnRoomCreated", &AMRUKGuardianSpawner::execOnRoomCreated },
-		{ "OnRoomRemoved", &AMRUKGuardianSpawner::execOnRoomRemoved },
-		{ "OnRoomUpdated", &AMRUKGuardianSpawner::execOnRoomUpdated },
-		{ "SetGridDensity", &AMRUKGuardianSpawner::execSetGridDensity },
-		{ "SetGuardianMaterial", &AMRUKGuardianSpawner::execSetGuardianMaterial },
-		{ "SpawnGuardians", &AMRUKGuardianSpawner::execSpawnGuardians },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AMRUKGuardianSpawner;
 UClass* AMRUKGuardianSpawner::GetPrivateStaticClass()
 {
@@ -349,7 +410,7 @@ UClass* AMRUKGuardianSpawner::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AMRUKGuardianSpawner.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKGuardianSpawner"),
 			Z_Registration_Info_UClass_AMRUKGuardianSpawner.InnerSingleton,
 			StaticRegisterNativesAMRUKGuardianSpawner,
@@ -376,48 +437,74 @@ struct Z_Construct_UClass_AMRUKGuardianSpawner_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "MRUtilityKit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * This class helps with spawning a guardian if the player gets close to any furniture or walls. This is useful if your application has a full VR mode.\n * It can spawn a guardian for each room in the scene. It can also spawn a guardian for the current room only.\n * For details about the guardian see the AMRUKGuardian class.\n */" },
+#endif
 		{ "DisplayName", "MR Utility Kit Guardian" },
 		{ "IncludePath", "MRUtilityKitGuardianSpawner.h" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This class helps with spawning a guardian if the player gets close to any furniture or walls. This is useful if your application has a full VR mode.\nIt can spawn a guardian for each room in the scene. It can also spawn a guardian for the current room only.\nFor details about the guardian see the AMRUKGuardian class." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnMode_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Whether SpawnGuardian() should be called automatically after the mixed reality utility kit\n\x09 * has been initialized.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether SpawnGuardian() should be called automatically after the mixed reality utility kit\nhas been initialized." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GuardianDistance_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * How close the camera needs to come to a surface before the guardian appears.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How close the camera needs to come to a surface before the guardian appears." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_EnableFade_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Whether the fading value should be calculated for the shader or not.\n\x09 If fading is not needed this can save performance.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether the fading value should be calculated for the shader or not.\n        If fading is not needed this can save performance." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GuardianMaterial_MetaData[] = {
 		{ "BlueprintSetter", "SetGuardianMaterial" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The material to use for the guardian. It needs to have a scalar parameter Fade\n\x09 * and a vector parameter WallScale. If this material is not set a default one\n\x09 * will be used.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The material to use for the guardian. It needs to have a scalar parameter Fade\nand a vector parameter WallScale. If this material is not set a default one\nwill be used." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GridDensity_MetaData[] = {
 		{ "BlueprintSetter", "SetGridDensity" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * How dense the grid should be.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How dense the grid should be." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DynamicGuardianMaterial_MetaData[] = {
 		{ "ModuleRelativePath", "Public/MRUtilityKitGuardianSpawner.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AMRUKGuardianSpawner constinit property declarations *********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_SpawnMode_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_SpawnMode;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_GuardianDistance;
@@ -427,24 +514,36 @@ struct Z_Construct_UClass_AMRUKGuardianSpawner_Statics
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_GridDensity;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DynamicGuardianMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AMRUKGuardianSpawner constinit property declarations ***********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("DestroyGuardians"), .Pointer = &AMRUKGuardianSpawner::execDestroyGuardians },
+		{ .NameUTF8 = UTF8TEXT("OnRoomCreated"), .Pointer = &AMRUKGuardianSpawner::execOnRoomCreated },
+		{ .NameUTF8 = UTF8TEXT("OnRoomRemoved"), .Pointer = &AMRUKGuardianSpawner::execOnRoomRemoved },
+		{ .NameUTF8 = UTF8TEXT("OnRoomUpdated"), .Pointer = &AMRUKGuardianSpawner::execOnRoomUpdated },
+		{ .NameUTF8 = UTF8TEXT("SetGridDensity"), .Pointer = &AMRUKGuardianSpawner::execSetGridDensity },
+		{ .NameUTF8 = UTF8TEXT("SetGuardianMaterial"), .Pointer = &AMRUKGuardianSpawner::execSetGuardianMaterial },
+		{ .NameUTF8 = UTF8TEXT("SpawnGuardians"), .Pointer = &AMRUKGuardianSpawner::execSpawnGuardians },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians, "DestroyGuardians" }, // 81578120
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated, "OnRoomCreated" }, // 2826398570
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved, "OnRoomRemoved" }, // 781553555
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated, "OnRoomUpdated" }, // 2122756930
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity, "SetGridDensity" }, // 2852224851
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial, "SetGuardianMaterial" }, // 2908160648
-		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians, "SpawnGuardians" }, // 1337211072
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_DestroyGuardians, "DestroyGuardians" }, // 1370294656
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomCreated, "OnRoomCreated" }, // 1462180832
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomRemoved, "OnRoomRemoved" }, // 1544032258
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_OnRoomUpdated, "OnRoomUpdated" }, // 2184134137
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_SetGridDensity, "SetGridDensity" }, // 1418054240
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_SetGuardianMaterial, "SetGuardianMaterial" }, // 2319279708
+		{ &Z_Construct_UFunction_AMRUKGuardianSpawner_SpawnGuardians, "SpawnGuardians" }, // 2559356359
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMRUKGuardianSpawner>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AMRUKGuardianSpawner_Statics
+
+// ********** Begin Class AMRUKGuardianSpawner Property Definitions ********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMRUKGuardianSpawner_Statics::NewProp_SpawnMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKGuardianSpawner_Statics::NewProp_SpawnMode = { "SpawnMode", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKGuardianSpawner, SpawnMode), Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnMode_MetaData), NewProp_SpawnMode_MetaData) }; // 4112763619
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKGuardianSpawner_Statics::NewProp_SpawnMode = { "SpawnMode", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKGuardianSpawner, SpawnMode), Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnMode_MetaData), NewProp_SpawnMode_MetaData) }; // 2136770717
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_AMRUKGuardianSpawner_Statics::NewProp_GuardianDistance = { "GuardianDistance", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKGuardianSpawner, GuardianDistance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GuardianDistance_MetaData), NewProp_GuardianDistance_MetaData) };
 void Z_Construct_UClass_AMRUKGuardianSpawner_Statics::NewProp_EnableFade_SetBit(void* Obj)
 {
@@ -464,6 +563,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMRUKGuar
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMRUKGuardianSpawner_Statics::NewProp_DynamicGuardianMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKGuardianSpawner_Statics::PropPointers) < 2048);
+// ********** End Class AMRUKGuardianSpawner Property Definitions **********************************
 UObject* (*const Z_Construct_UClass_AMRUKGuardianSpawner_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -481,9 +581,14 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMRUKGuardianSpawner_St
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKGuardianSpawner_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKGuardianSpawner_Statics::Class_MetaDataParams), Z_Construct_UClass_AMRUKGuardianSpawner_Statics::Class_MetaDataParams)
 };
+void AMRUKGuardianSpawner::StaticRegisterNativesAMRUKGuardianSpawner()
+{
+	UClass* Class = AMRUKGuardianSpawner::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_AMRUKGuardianSpawner_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_AMRUKGuardianSpawner()
 {
 	if (!Z_Registration_Info_UClass_AMRUKGuardianSpawner.OuterSingleton)
@@ -492,21 +597,23 @@ UClass* Z_Construct_UClass_AMRUKGuardianSpawner()
 	}
 	return Z_Registration_Info_UClass_AMRUKGuardianSpawner.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AMRUKGuardianSpawner);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AMRUKGuardianSpawner);
 AMRUKGuardianSpawner::~AMRUKGuardianSpawner() {}
 // ********** End Class AMRUKGuardianSpawner *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMRUKGuardianSpawner, AMRUKGuardianSpawner::StaticClass, TEXT("AMRUKGuardianSpawner"), &Z_Registration_Info_UClass_AMRUKGuardianSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKGuardianSpawner), 602657830U) },
+		{ Z_Construct_UClass_AMRUKGuardianSpawner, AMRUKGuardianSpawner::StaticClass, TEXT("AMRUKGuardianSpawner"), &Z_Registration_Info_UClass_AMRUKGuardianSpawner, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKGuardianSpawner), 1900057596U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_4223370050(TEXT("/Script/MRUtilityKit"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_840993968{
+	TEXT("/Script/MRUtilityKit"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGuardianSpawner_h__Script_MRUtilityKit_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

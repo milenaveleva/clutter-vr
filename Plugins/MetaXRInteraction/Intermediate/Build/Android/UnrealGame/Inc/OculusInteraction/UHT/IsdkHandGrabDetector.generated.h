@@ -15,13 +15,12 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AActor;
 class UPrimitiveComponent;
 struct FHitResult;
 
 // ********** Begin Class UIsdkHandGrabDetector ****************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleEndOverlap); \
 	DECLARE_FUNCTION(execHandleBeginOverlap); \
 	DECLARE_FUNCTION(execGetGrabbingComponent); \
@@ -29,20 +28,21 @@ struct FHitResult;
 	DECLARE_FUNCTION(execAttachAndReplacePinchCollider);
 
 
+struct Z_Construct_UClass_UIsdkHandGrabDetector_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandGrabDetector_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkHandGrabDetector(); \
-	friend struct Z_Construct_UClass_UIsdkHandGrabDetector_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkHandGrabDetector_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandGrabDetector_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkHandGrabDetector_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkHandGrabDetector, UIsdkGrabDetector, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkHandGrabDetector_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkHandGrabDetector)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UIsdkHandGrabDetector(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -54,13 +54,13 @@ public: \
 	NO_API virtual ~UIsdkHandGrabDetector();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_40_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_40_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h_43_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -70,6 +70,6 @@ class UIsdkHandGrabDetector;
 // ********** End Class UIsdkHandGrabDetector ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

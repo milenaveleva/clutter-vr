@@ -10,7 +10,7 @@
 #include "Kismet2/BlueprintEditorUtils.h"
 
 
-void FENAnimGraphConnectionDrawingPolicy::ApplyHoverDeemphasis(UEdGraphPin* OutputPin, 
+/*void FENAnimGraphConnectionDrawingPolicy::ApplyHoverDeemphasis(UEdGraphPin* OutputPin, 
 	UEdGraphPin* InputPin, float& Thickness, FLinearColor& WireColor)
 {
 	FAnimGraphConnectionDrawingPolicy::ApplyHoverDeemphasis(OutputPin, InputPin, Thickness, WireColor);
@@ -37,7 +37,7 @@ bool FENAnimGraphConnectionDrawingPolicy::TreatWireAsExecutionPin(UEdGraphPin* I
 	UEdGraphPin* OutputPin) const
 {
 	return FAnimGraphConnectionDrawingPolicy::TreatWireAsExecutionPin(InputPin, OutputPin);
-}
+}*/
 
 /*void FENAnimGraphConnectionDrawingPolicy::DrawConnection(int32 LayerId, const FVector2f& Start, const FVector2f& End, const FConnectionParams& Params)
 {

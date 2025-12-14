@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRLiveLinkRetargetFaceVisemesAsset ********************************
+struct Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_Statics;
 OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRLiveLinkRetargetFaceVisemesAsset(); \
-	friend struct Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_NoRegister(); \
+	friend OCULUSXRMOVEMENT_API UClass* ::Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRLiveLinkRetargetFaceVisemesAsset, ULiveLinkRetargetAsset, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRMovement"), Z_Construct_UClass_UOculusXRLiveLinkRetargetFaceVisemesAsset_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRLiveLinkRetargetFaceVisemesAsset)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRLiveLinkRetargetFaceVisemesAsset(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRLiveLinkRetargetFaceVisemesAsset) \
@@ -42,12 +43,12 @@ public: \
 	NO_API virtual ~UOculusXRLiveLinkRetargetFaceVisemesAsset();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_15_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_15_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h_18_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +58,6 @@ class UOculusXRLiveLinkRetargetFaceVisemesAsset;
 // ********** End Class UOculusXRLiveLinkRetargetFaceVisemesAsset **********************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetFaceVisemesAsset_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

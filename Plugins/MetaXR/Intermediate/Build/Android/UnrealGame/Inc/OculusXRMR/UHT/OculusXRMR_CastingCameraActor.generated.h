@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class AOculusXRMR_CastingCameraActor *******************************************
+struct Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics;
 OCULUSXRMR_API UClass* Z_Construct_UClass_AOculusXRMR_CastingCameraActor_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAOculusXRMR_CastingCameraActor(); \
-	friend struct Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics; \
+	friend struct ::Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRMR_API UClass* Z_Construct_UClass_AOculusXRMR_CastingCameraActor_NoRegister(); \
+	friend OCULUSXRMR_API UClass* ::Z_Construct_UClass_AOculusXRMR_CastingCameraActor_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AOculusXRMR_CastingCameraActor, ASceneCapture2D, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRMR"), Z_Construct_UClass_AOculusXRMR_CastingCameraActor_NoRegister) \
 	DECLARE_SERIALIZER(AOculusXRMR_CastingCameraActor)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AOculusXRMR_CastingCameraActor(AOculusXRMR_CastingCameraActor&&) = delete; \
 	AOculusXRMR_CastingCameraActor(const AOculusXRMR_CastingCameraActor&) = delete; \
@@ -40,12 +41,12 @@ public: \
 	NO_API virtual ~AOculusXRMR_CastingCameraActor();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_28_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_28_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +56,6 @@ class AOculusXRMR_CastingCameraActor;
 // ********** End Class AOculusXRMR_CastingCameraActor *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

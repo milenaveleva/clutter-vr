@@ -8,7 +8,7 @@
 #include "OculusXRMRFunctionLibrary.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRMRFunctionLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -30,22 +30,35 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Get the scaling factor for the MRC configuration. Returns 0 if not available.\n" },
+#endif
 		{ "DisplayName", "Get MRC Scaling Factor" },
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the scaling factor for the MRC configuration. Returns 0 if not available." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetMrcScalingFactor constinit property declarations *******************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetMrcScalingFactor constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetMrcScalingFactor Property Definitions ******************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMRFunctionLibrary_eventGetMrcScalingFactor_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "GetMrcScalingFactor", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::OculusXRMRFunctionLibrary_eventGetMrcScalingFactor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetMrcScalingFactor Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "GetMrcScalingFactor", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::OculusXRMRFunctionLibrary_eventGetMrcScalingFactor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor_Statics::OculusXRMRFunctionLibrary_eventGetMrcScalingFactor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor()
 {
@@ -75,22 +88,35 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Get the OculusXRMR settings object\n" },
+#endif
 		{ "DisplayName", "Get Oculus MR Settings" },
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the OculusXRMR settings object" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetOculusXRMRSettings constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetOculusXRMRSettings constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetOculusXRMRSettings Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMRFunctionLibrary_eventGetOculusXRMRSettings_Parms, ReturnValue), Z_Construct_UClass_UOculusXRMR_Settings_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "GetOculusXRMRSettings", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::OculusXRMRFunctionLibrary_eventGetOculusXRMRSettings_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetOculusXRMRSettings Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "GetOculusXRMRSettings", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::OculusXRMRFunctionLibrary_eventGetOculusXRMRSettings_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings_Statics::OculusXRMRFunctionLibrary_eventGetOculusXRMRSettings_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings()
 {
@@ -120,24 +146,37 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComp
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Get the component that the OculusXRMR camera is tracking. When this is null, the camera will track the player pawn.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the component that the OculusXRMR camera is tracking. When this is null, the camera will track the player pawn." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetTrackingReferenceComponent constinit property declarations *********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetTrackingReferenceComponent constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetTrackingReferenceComponent Property Definitions ********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMRFunctionLibrary_eventGetTrackingReferenceComponent_Parms, ReturnValue), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "GetTrackingReferenceComponent", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::OculusXRMRFunctionLibrary_eventGetTrackingReferenceComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetTrackingReferenceComponent Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "GetTrackingReferenceComponent", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::OculusXRMRFunctionLibrary_eventGetTrackingReferenceComponent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent_Statics::OculusXRMRFunctionLibrary_eventGetTrackingReferenceComponent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent()
 {
@@ -167,16 +206,25 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Check if MRC is enabled and actively capturing\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if MRC is enabled and actively capturing" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsMrcActive constinit property declarations ***************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsMrcActive constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsMrcActive Property Definitions **************************************
 void Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMRFunctionLibrary_eventIsMrcActive_Parms*)Obj)->ReturnValue = 1;
@@ -186,7 +234,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "IsMrcActive", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::OculusXRMRFunctionLibrary_eventIsMrcActive_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsMrcActive Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "IsMrcActive", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::OculusXRMRFunctionLibrary_eventIsMrcActive_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive_Statics::OculusXRMRFunctionLibrary_eventIsMrcActive_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive()
 {
@@ -216,16 +268,25 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Check if MRC is enabled\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if MRC is enabled" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsMrcEnabled constinit property declarations **************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsMrcEnabled constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsMrcEnabled Property Definitions *************************************
 void Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMRFunctionLibrary_eventIsMrcEnabled_Parms*)Obj)->ReturnValue = 1;
@@ -235,7 +296,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "IsMrcEnabled", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::OculusXRMRFunctionLibrary_eventIsMrcEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsMrcEnabled Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "IsMrcEnabled", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::OculusXRMRFunctionLibrary_eventIsMrcEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled_Statics::OculusXRMRFunctionLibrary_eventIsMrcEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled()
 {
@@ -266,19 +331,28 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Set the scaling factor for the MRC configuration. This should be a positive value set to the same scaling as the VR player pawn so that the game capture and camera video are aligned.\n" },
+#endif
 		{ "CPP_Default_ScalingFactor", "1.000000" },
 		{ "DisplayName", "Set MRC Scaling Factor" },
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the scaling factor for the MRC configuration. This should be a positive value set to the same scaling as the VR player pawn so that the game capture and camera video are aligned." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetMrcScalingFactor constinit property declarations *******************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ScalingFactor;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetMrcScalingFactor constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetMrcScalingFactor Property Definitions ******************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::NewProp_ScalingFactor = { "ScalingFactor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMRFunctionLibrary_eventSetMrcScalingFactor_Parms, ScalingFactor), METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -290,7 +364,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "SetMrcScalingFactor", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::OculusXRMRFunctionLibrary_eventSetMrcScalingFactor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetMrcScalingFactor Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "SetMrcScalingFactor", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::OculusXRMRFunctionLibrary_eventSetMrcScalingFactor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor_Statics::OculusXRMRFunctionLibrary_eventSetMrcScalingFactor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor()
 {
@@ -322,20 +400,29 @@ struct Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComp
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|MR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Set the component for the OculusXRMR camera to track. If this is set to null, the camera will track the player pawn.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the component for the OculusXRMR camera to track. If this is set to null, the camera will track the player pawn." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Component_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetTrackingReferenceComponent constinit property declarations *********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetTrackingReferenceComponent constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetTrackingReferenceComponent Property Definitions ********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMRFunctionLibrary_eventSetTrackingReferenceComponent_Parms, Component), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Component_MetaData), NewProp_Component_MetaData) };
 void Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -347,7 +434,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "SetTrackingReferenceComponent", Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::OculusXRMRFunctionLibrary_eventSetTrackingReferenceComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetTrackingReferenceComponent Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMRFunctionLibrary, nullptr, "SetTrackingReferenceComponent", 	Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::OculusXRMRFunctionLibrary_eventSetTrackingReferenceComponent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent_Statics::OculusXRMRFunctionLibrary_eventSetTrackingReferenceComponent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent()
 {
@@ -369,20 +460,6 @@ DEFINE_FUNCTION(UOculusXRMRFunctionLibrary::execSetTrackingReferenceComponent)
 // ********** End Class UOculusXRMRFunctionLibrary Function SetTrackingReferenceComponent **********
 
 // ********** Begin Class UOculusXRMRFunctionLibrary ***********************************************
-void UOculusXRMRFunctionLibrary::StaticRegisterNativesUOculusXRMRFunctionLibrary()
-{
-	UClass* Class = UOculusXRMRFunctionLibrary::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetMrcScalingFactor", &UOculusXRMRFunctionLibrary::execGetMrcScalingFactor },
-		{ "GetOculusXRMRSettings", &UOculusXRMRFunctionLibrary::execGetOculusXRMRSettings },
-		{ "GetTrackingReferenceComponent", &UOculusXRMRFunctionLibrary::execGetTrackingReferenceComponent },
-		{ "IsMrcActive", &UOculusXRMRFunctionLibrary::execIsMrcActive },
-		{ "IsMrcEnabled", &UOculusXRMRFunctionLibrary::execIsMrcEnabled },
-		{ "SetMrcScalingFactor", &UOculusXRMRFunctionLibrary::execSetMrcScalingFactor },
-		{ "SetTrackingReferenceComponent", &UOculusXRMRFunctionLibrary::execSetTrackingReferenceComponent },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary;
 UClass* UOculusXRMRFunctionLibrary::GetPrivateStaticClass()
 {
@@ -390,7 +467,7 @@ UClass* UOculusXRMRFunctionLibrary::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRMRFunctionLibrary"),
 			Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary.InnerSingleton,
 			StaticRegisterNativesUOculusXRMRFunctionLibrary,
@@ -420,22 +497,34 @@ struct Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics
 		{ "ModuleRelativePath", "Public/OculusXRMRFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRMRFunctionLibrary constinit property declarations ***************
+// ********** End Class UOculusXRMRFunctionLibrary constinit property declarations *****************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetMrcScalingFactor"), .Pointer = &UOculusXRMRFunctionLibrary::execGetMrcScalingFactor },
+		{ .NameUTF8 = UTF8TEXT("GetOculusXRMRSettings"), .Pointer = &UOculusXRMRFunctionLibrary::execGetOculusXRMRSettings },
+		{ .NameUTF8 = UTF8TEXT("GetTrackingReferenceComponent"), .Pointer = &UOculusXRMRFunctionLibrary::execGetTrackingReferenceComponent },
+		{ .NameUTF8 = UTF8TEXT("IsMrcActive"), .Pointer = &UOculusXRMRFunctionLibrary::execIsMrcActive },
+		{ .NameUTF8 = UTF8TEXT("IsMrcEnabled"), .Pointer = &UOculusXRMRFunctionLibrary::execIsMrcEnabled },
+		{ .NameUTF8 = UTF8TEXT("SetMrcScalingFactor"), .Pointer = &UOculusXRMRFunctionLibrary::execSetMrcScalingFactor },
+		{ .NameUTF8 = UTF8TEXT("SetTrackingReferenceComponent"), .Pointer = &UOculusXRMRFunctionLibrary::execSetTrackingReferenceComponent },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor, "GetMrcScalingFactor" }, // 2897392863
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings, "GetOculusXRMRSettings" }, // 3615552506
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent, "GetTrackingReferenceComponent" }, // 2989113364
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive, "IsMrcActive" }, // 4025168996
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled, "IsMrcEnabled" }, // 1688143533
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor, "SetMrcScalingFactor" }, // 2609786230
-		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent, "SetTrackingReferenceComponent" }, // 4243265611
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetMrcScalingFactor, "GetMrcScalingFactor" }, // 3130943431
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetOculusXRMRSettings, "GetOculusXRMRSettings" }, // 2997351376
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_GetTrackingReferenceComponent, "GetTrackingReferenceComponent" }, // 2939237107
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcActive, "IsMrcActive" }, // 2221353408
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_IsMrcEnabled, "IsMrcEnabled" }, // 438890753
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetMrcScalingFactor, "SetMrcScalingFactor" }, // 4068167285
+		{ &Z_Construct_UFunction_UOculusXRMRFunctionLibrary_SetTrackingReferenceComponent, "SetTrackingReferenceComponent" }, // 1798148992
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRMRFunctionLibrary>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMR,
@@ -456,6 +545,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRMRFunctionLibr
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics::Class_MetaDataParams)
 };
+void UOculusXRMRFunctionLibrary::StaticRegisterNativesUOculusXRMRFunctionLibrary()
+{
+	UClass* Class = UOculusXRMRFunctionLibrary::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRMRFunctionLibrary()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary.OuterSingleton)
@@ -464,21 +558,23 @@ UClass* Z_Construct_UClass_UOculusXRMRFunctionLibrary()
 	}
 	return Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRMRFunctionLibrary);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRMRFunctionLibrary);
 UOculusXRMRFunctionLibrary::~UOculusXRMRFunctionLibrary() {}
 // ********** End Class UOculusXRMRFunctionLibrary *************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRMRFunctionLibrary, UOculusXRMRFunctionLibrary::StaticClass, TEXT("UOculusXRMRFunctionLibrary"), &Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMRFunctionLibrary), 1396867718U) },
+		{ Z_Construct_UClass_UOculusXRMRFunctionLibrary, UOculusXRMRFunctionLibrary::StaticClass, TEXT("UOculusXRMRFunctionLibrary"), &Z_Registration_Info_UClass_UOculusXRMRFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMRFunctionLibrary), 3691226809U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_2947130288(TEXT("/Script/OculusXRMR"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_2576433155{
+	TEXT("/Script/OculusXRMR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h__Script_OculusXRMR_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

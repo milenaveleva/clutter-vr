@@ -8,7 +8,7 @@
 #include "IsdkInteractableWidget.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInteractableWidget() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class AIsdkInteractableWidget **************************************************
-void AIsdkInteractableWidget::StaticRegisterNativesAIsdkInteractableWidget()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AIsdkInteractableWidget;
 UClass* AIsdkInteractableWidget::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* AIsdkInteractableWidget::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AIsdkInteractableWidget.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInteractableWidget"),
 			Z_Registration_Info_UClass_AIsdkInteractableWidget.InnerSingleton,
 			StaticRegisterNativesAIsdkInteractableWidget,
@@ -67,19 +64,25 @@ struct Z_Construct_UClass_AIsdkInteractableWidget_Statics
 		{ "ModuleRelativePath", "Public/IsdkInteractableWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AIsdkInteractableWidget constinit property declarations ******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InteractableWidgetComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AIsdkInteractableWidget constinit property declarations ********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AIsdkInteractableWidget>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AIsdkInteractableWidget_Statics
+
+// ********** Begin Class AIsdkInteractableWidget Property Definitions *****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIsdkInteractableWidget_Statics::NewProp_InteractableWidgetComponent = { "InteractableWidgetComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AIsdkInteractableWidget, InteractableWidgetComponent), Z_Construct_UClass_UIsdkInteractableWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractableWidgetComponent_MetaData), NewProp_InteractableWidgetComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AIsdkInteractableWidget_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIsdkInteractableWidget_Statics::NewProp_InteractableWidgetComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkInteractableWidget_Statics::PropPointers) < 2048);
+// ********** End Class AIsdkInteractableWidget Property Definitions *******************************
 UObject* (*const Z_Construct_UClass_AIsdkInteractableWidget_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -97,9 +100,12 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AIsdkInteractableWidget
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkInteractableWidget_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkInteractableWidget_Statics::Class_MetaDataParams), Z_Construct_UClass_AIsdkInteractableWidget_Statics::Class_MetaDataParams)
 };
+void AIsdkInteractableWidget::StaticRegisterNativesAIsdkInteractableWidget()
+{
+}
 UClass* Z_Construct_UClass_AIsdkInteractableWidget()
 {
 	if (!Z_Registration_Info_UClass_AIsdkInteractableWidget.OuterSingleton)
@@ -108,21 +114,23 @@ UClass* Z_Construct_UClass_AIsdkInteractableWidget()
 	}
 	return Z_Registration_Info_UClass_AIsdkInteractableWidget.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AIsdkInteractableWidget);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AIsdkInteractableWidget);
 AIsdkInteractableWidget::~AIsdkInteractableWidget() {}
 // ********** End Class AIsdkInteractableWidget ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AIsdkInteractableWidget, AIsdkInteractableWidget::StaticClass, TEXT("AIsdkInteractableWidget"), &Z_Registration_Info_UClass_AIsdkInteractableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AIsdkInteractableWidget), 3589847708U) },
+		{ Z_Construct_UClass_AIsdkInteractableWidget, AIsdkInteractableWidget::StaticClass, TEXT("AIsdkInteractableWidget"), &Z_Registration_Info_UClass_AIsdkInteractableWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AIsdkInteractableWidget), 2744654007U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_3019824881(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_260832167{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

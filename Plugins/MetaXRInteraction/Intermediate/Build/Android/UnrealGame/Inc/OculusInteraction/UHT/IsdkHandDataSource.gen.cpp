@@ -8,7 +8,7 @@
 #include "DataSources/IsdkHandDataSource.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandDataSource() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -31,11 +31,17 @@ struct Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Return the Inbound and Outbound bone maps currently set in this data source\n   * @param OutboundMapOut The map of integers representing the outbound bone mapping\n   * @param InboundMapOut The map of integers representing the inbound bone mapping\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Return the Inbound and Outbound bone maps currently set in this data source\n@param OutboundMapOut The map of integers representing the outbound bone mapping\n@param InboundMapOut The map of integers representing the inbound bone mapping" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetBoneMaps constinit property declarations ***************************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_OutboundMapOut_ValueProp;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_OutboundMapOut_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_OutboundMapOut;
@@ -43,8 +49,11 @@ struct Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InboundMapOut_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_InboundMapOut;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetBoneMaps constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetBoneMaps Property Definitions **************************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::NewProp_OutboundMapOut_ValueProp = { "OutboundMapOut", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::NewProp_OutboundMapOut_Key_KeyProp = { "OutboundMapOut_Key", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::NewProp_OutboundMapOut = { "OutboundMapOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandDataSource_eventGetBoneMaps_Parms, OutboundMapOut), EMapPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
@@ -60,7 +69,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::NewProp_InboundMapOut,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDataSource, nullptr, "GetBoneMaps", Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::IsdkHandDataSource_eventGetBoneMaps_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetBoneMaps Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDataSource, nullptr, "GetBoneMaps", 	Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::IsdkHandDataSource_eventGetBoneMaps_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps_Statics::IsdkHandDataSource_eventGetBoneMaps_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps()
 {
@@ -94,24 +107,37 @@ struct Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Stat
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns the HandData from this data source\n   * @return UIsdkHandData* Reference to the active hand data object associated with this data\n   * source. Implemented from IIsdkIHandJoints.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns the HandData from this data source\n@return UIsdkHandData* Reference to the active hand data object associated with this data\nsource. Implemented from IIsdkIHandJoints." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHandData_Implementation constinit property declarations ************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHandData_Implementation constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHandData_Implementation Property Definitions ***********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandDataSource_eventGetHandData_Implementation_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDataSource, nullptr, "GetHandData_Implementation", Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::IsdkHandDataSource_eventGetHandData_Implementation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHandData_Implementation Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDataSource, nullptr, "GetHandData_Implementation", 	Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::IsdkHandDataSource_eventGetHandData_Implementation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation_Statics::IsdkHandDataSource_eventGetHandData_Implementation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation()
 {
@@ -132,15 +158,6 @@ DEFINE_FUNCTION(UIsdkHandDataSource::execGetHandData_Implementation)
 // ********** End Class UIsdkHandDataSource Function GetHandData_Implementation ********************
 
 // ********** Begin Class UIsdkHandDataSource ******************************************************
-void UIsdkHandDataSource::StaticRegisterNativesUIsdkHandDataSource()
-{
-	UClass* Class = UIsdkHandDataSource::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetBoneMaps", &UIsdkHandDataSource::execGetBoneMaps },
-		{ "GetHandData_Implementation", &UIsdkHandDataSource::execGetHandData_Implementation },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandDataSource;
 UClass* UIsdkHandDataSource::GetPrivateStaticClass()
 {
@@ -148,7 +165,7 @@ UClass* UIsdkHandDataSource::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandDataSource.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandDataSource"),
 			Z_Registration_Info_UClass_UIsdkHandDataSource.InnerSingleton,
 			StaticRegisterNativesUIsdkHandDataSource,
@@ -174,30 +191,46 @@ struct Z_Construct_UClass_UIsdkHandDataSource_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkHandDataSource\n * @brief Abstract class, ActorComponent representing a Hand Data Source, acts as a container for\n * hand data, joint mappings, and other related data for a source\n *\n * @see IIsdkIHandJoints\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "DataSources/IsdkHandDataSource.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkHandDataSource\n@brief Abstract class, ActorComponent representing a Hand Data Source, acts as a container for\nhand data, joint mappings, and other related data for a source\n\n@see IIsdkIHandJoints\n@addtogroup InteractionSDK" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUpdateInTick_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Whether or not this data source should be updated during tick. Can be disabled if\n   * per-frame bone updates are undesirable.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Whether or not this data source should be updated during tick. Can be disabled if\nper-frame bone updates are undesirable." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandData_MetaData[] = {
 		{ "BlueprintGetter", "GetHandData_Implementation" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Active Hand Data pointer used in this data source for bone/joint information and mapping\n   */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Active Hand Data pointer used in this data source for bone/joint information and mapping" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandDataInbound_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Hand data being set by something upstream of this data source, cached here instead of\n   * directly overwriting the primary member variable\n   */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Hand data being set by something upstream of this data source, cached here instead of\ndirectly overwriting the primary member variable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InboundBoneMap_MetaData[] = {
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
@@ -206,6 +239,8 @@ struct Z_Construct_UClass_UIsdkHandDataSource_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkHandDataSource.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandDataSource constinit property declarations **********************
 	static void NewProp_bUpdateInTick_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bUpdateInTick;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandData;
@@ -217,10 +252,15 @@ struct Z_Construct_UClass_UIsdkHandDataSource_Statics
 	static const UECodeGen_Private::FIntPropertyParams NewProp_OutboundBoneMap_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_OutboundBoneMap;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandDataSource constinit property declarations ************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetBoneMaps"), .Pointer = &UIsdkHandDataSource::execGetBoneMaps },
+		{ .NameUTF8 = UTF8TEXT("GetHandData_Implementation"), .Pointer = &UIsdkHandDataSource::execGetHandData_Implementation },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps, "GetBoneMaps" }, // 1872860043
-		{ &Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation, "GetHandData_Implementation" }, // 3137143346
+		{ &Z_Construct_UFunction_UIsdkHandDataSource_GetBoneMaps, "GetBoneMaps" }, // 1225253268
+		{ &Z_Construct_UFunction_UIsdkHandDataSource_GetHandData_Implementation, "GetHandData_Implementation" }, // 3279921357
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -228,7 +268,9 @@ struct Z_Construct_UClass_UIsdkHandDataSource_Statics
 		TCppClassTypeTraits<UIsdkHandDataSource>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandDataSource_Statics
+
+// ********** Begin Class UIsdkHandDataSource Property Definitions *********************************
 void Z_Construct_UClass_UIsdkHandDataSource_Statics::NewProp_bUpdateInTick_SetBit(void* Obj)
 {
 	((UIsdkHandDataSource*)Obj)->bUpdateInTick = 1;
@@ -254,13 +296,14 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHand
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandDataSource_Statics::NewProp_OutboundBoneMap,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandDataSource_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandDataSource Property Definitions ***********************************
 UObject* (*const Z_Construct_UClass_UIsdkHandDataSource_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandDataSource_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkHandDataSource_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIHandJoints_NoRegister, (int32)VTABLE_OFFSET(UIsdkHandDataSource, IIsdkIHandJoints), false },  // 1228590249
+	{ Z_Construct_UClass_UIsdkIHandJoints_NoRegister, (int32)VTABLE_OFFSET(UIsdkHandDataSource, IIsdkIHandJoints), false },  // 2109163287
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandDataSource_Statics::ClassParams = {
 	&UIsdkHandDataSource::StaticClass,
@@ -277,6 +320,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandDataSource_Sta
 	0x00B000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandDataSource_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandDataSource_Statics::Class_MetaDataParams)
 };
+void UIsdkHandDataSource::StaticRegisterNativesUIsdkHandDataSource()
+{
+	UClass* Class = UIsdkHandDataSource::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandDataSource_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandDataSource()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandDataSource.OuterSingleton)
@@ -285,21 +333,23 @@ UClass* Z_Construct_UClass_UIsdkHandDataSource()
 	}
 	return Z_Registration_Info_UClass_UIsdkHandDataSource.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandDataSource);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandDataSource);
 UIsdkHandDataSource::~UIsdkHandDataSource() {}
 // ********** End Class UIsdkHandDataSource ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandDataSource, UIsdkHandDataSource::StaticClass, TEXT("UIsdkHandDataSource"), &Z_Registration_Info_UClass_UIsdkHandDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandDataSource), 4056478505U) },
+		{ Z_Construct_UClass_UIsdkHandDataSource, UIsdkHandDataSource::StaticClass, TEXT("UIsdkHandDataSource"), &Z_Registration_Info_UClass_UIsdkHandDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandDataSource), 2034482561U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_4225355069(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_2716418925{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkHandDataSource_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

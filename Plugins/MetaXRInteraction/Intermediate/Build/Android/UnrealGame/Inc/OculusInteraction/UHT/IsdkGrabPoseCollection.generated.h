@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FIsdkGrabPoseCollection *******************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkGrabPoseCollection_h_36_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkGrabPoseCollection_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkGrabPoseCollection_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkGrabPoseCollection_h_36_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkGrabPoseCollection_Statics; \
 	OCULUSINTERACTION_API static class UScriptStruct* StaticStruct();
 
 
@@ -26,6 +27,6 @@ struct FIsdkGrabPoseCollection;
 // ********** End ScriptStruct FIsdkGrabPoseCollection *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkGrabPoseCollection_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkGrabPoseCollection_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

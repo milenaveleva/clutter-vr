@@ -17,24 +17,25 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UMRUKBlobShadowComponent *************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execUpdatePlaneSizeAndPosition);
 
 
+struct Z_Construct_UClass_UMRUKBlobShadowComponent_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKBlobShadowComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKBlobShadowComponent(); \
-	friend struct Z_Construct_UClass_UMRUKBlobShadowComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKBlobShadowComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKBlobShadowComponent_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKBlobShadowComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKBlobShadowComponent, UStaticMeshComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKBlobShadowComponent_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKBlobShadowComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMRUKBlobShadowComponent(UMRUKBlobShadowComponent&&) = delete; \
 	UMRUKBlobShadowComponent(const UMRUKBlobShadowComponent&) = delete; \
@@ -44,13 +45,13 @@ public: \
 	NO_API virtual ~UMRUKBlobShadowComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_13_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_13_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,6 +61,6 @@ class UMRUKBlobShadowComponent;
 // ********** End Class UMRUKBlobShadowComponent ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitBlobShadowComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -17,24 +17,25 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UMRUKGridSliceResizerComponent *******************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSliceMesh);
 
 
+struct Z_Construct_UClass_UMRUKGridSliceResizerComponent_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKGridSliceResizerComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKGridSliceResizerComponent(); \
-	friend struct Z_Construct_UClass_UMRUKGridSliceResizerComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKGridSliceResizerComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKGridSliceResizerComponent_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKGridSliceResizerComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKGridSliceResizerComponent, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKGridSliceResizerComponent_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKGridSliceResizerComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMRUKGridSliceResizerComponent(UMRUKGridSliceResizerComponent&&) = delete; \
 	UMRUKGridSliceResizerComponent(const UMRUKGridSliceResizerComponent&) = delete; \
@@ -44,13 +45,13 @@ public: \
 	NO_API virtual ~UMRUKGridSliceResizerComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_63_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_63_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h_66_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,7 +61,7 @@ class UMRUKGridSliceResizerComponent;
 // ********** End Class UMRUKGridSliceResizerComponent *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitGridSliceResizer_h
 
 // ********** Begin Enum EMRUKScaleCenterMode ******************************************************
 #define FOREACH_ENUM_EMRUKSCALECENTERMODE(op) \
@@ -71,7 +72,7 @@ class UMRUKGridSliceResizerComponent;
 
 enum class EMRUKScaleCenterMode : uint8;
 template<> struct TIsUEnumClass<EMRUKScaleCenterMode> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKScaleCenterMode>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKScaleCenterMode>();
 // ********** End Enum EMRUKScaleCenterMode ********************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

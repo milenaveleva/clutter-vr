@@ -9,7 +9,7 @@
 #include "Engine/GameInstance.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRSceneSubsystem() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -30,24 +30,37 @@ struct Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusXR|Scene" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// FTickableGameObject implementation End\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRSceneSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "FTickableGameObject implementation End" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetBoundaryVisibility constinit property declarations *****************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetBoundaryVisibility constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetBoundaryVisibility Property Definitions ****************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRSceneSubsystem_eventGetBoundaryVisibility_Parms, ReturnValue), Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility, METADATA_PARAMS(0, nullptr) }; // 1439512401
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRSceneSubsystem_eventGetBoundaryVisibility_Parms, ReturnValue), Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility, METADATA_PARAMS(0, nullptr) }; // 1017915458
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRSceneSubsystem, nullptr, "GetBoundaryVisibility", Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventGetBoundaryVisibility_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetBoundaryVisibility Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRSceneSubsystem, nullptr, "GetBoundaryVisibility", 	Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventGetBoundaryVisibility_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventGetBoundaryVisibility_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility()
 {
@@ -80,19 +93,28 @@ struct Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibil
 		{ "ModuleRelativePath", "Public/OculusXRSceneSubsystem.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRequestedBoundaryVisibility constinit property declarations ********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRequestedBoundaryVisibility constinit property declarations **********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRequestedBoundaryVisibility Property Definitions *******************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRSceneSubsystem_eventGetRequestedBoundaryVisibility_Parms, ReturnValue), Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility, METADATA_PARAMS(0, nullptr) }; // 1439512401
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRSceneSubsystem_eventGetRequestedBoundaryVisibility_Parms, ReturnValue), Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility, METADATA_PARAMS(0, nullptr) }; // 1017915458
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRSceneSubsystem, nullptr, "GetRequestedBoundaryVisibility", Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventGetRequestedBoundaryVisibility_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRequestedBoundaryVisibility Property Definitions *********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRSceneSubsystem, nullptr, "GetRequestedBoundaryVisibility", 	Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventGetRequestedBoundaryVisibility_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventGetRequestedBoundaryVisibility_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility()
 {
@@ -125,19 +147,28 @@ struct Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibil
 		{ "ModuleRelativePath", "Public/OculusXRSceneSubsystem.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRequestedBoundaryVisibility constinit property declarations ********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Visibility_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Visibility;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRequestedBoundaryVisibility constinit property declarations **********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRequestedBoundaryVisibility Property Definitions *******************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::NewProp_Visibility_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::NewProp_Visibility = { "Visibility", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRSceneSubsystem_eventSetRequestedBoundaryVisibility_Parms, Visibility), Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility, METADATA_PARAMS(0, nullptr) }; // 1439512401
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::NewProp_Visibility = { "Visibility", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRSceneSubsystem_eventSetRequestedBoundaryVisibility_Parms, Visibility), Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility, METADATA_PARAMS(0, nullptr) }; // 1017915458
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::NewProp_Visibility_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::NewProp_Visibility,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRSceneSubsystem, nullptr, "SetRequestedBoundaryVisibility", Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventSetRequestedBoundaryVisibility_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRequestedBoundaryVisibility Property Definitions *********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRSceneSubsystem, nullptr, "SetRequestedBoundaryVisibility", 	Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventSetRequestedBoundaryVisibility_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility_Statics::OculusXRSceneSubsystem_eventSetRequestedBoundaryVisibility_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility()
 {
@@ -159,16 +190,6 @@ DEFINE_FUNCTION(UOculusXRSceneSubsystem::execSetRequestedBoundaryVisibility)
 // ********** End Class UOculusXRSceneSubsystem Function SetRequestedBoundaryVisibility ************
 
 // ********** Begin Class UOculusXRSceneSubsystem **************************************************
-void UOculusXRSceneSubsystem::StaticRegisterNativesUOculusXRSceneSubsystem()
-{
-	UClass* Class = UOculusXRSceneSubsystem::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetBoundaryVisibility", &UOculusXRSceneSubsystem::execGetBoundaryVisibility },
-		{ "GetRequestedBoundaryVisibility", &UOculusXRSceneSubsystem::execGetRequestedBoundaryVisibility },
-		{ "SetRequestedBoundaryVisibility", &UOculusXRSceneSubsystem::execSetRequestedBoundaryVisibility },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSceneSubsystem;
 UClass* UOculusXRSceneSubsystem::GetPrivateStaticClass()
 {
@@ -176,7 +197,7 @@ UClass* UOculusXRSceneSubsystem::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSceneSubsystem.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSceneSubsystem"),
 			Z_Registration_Info_UClass_UOculusXRSceneSubsystem.InnerSingleton,
 			StaticRegisterNativesUOculusXRSceneSubsystem,
@@ -206,18 +227,26 @@ struct Z_Construct_UClass_UOculusXRSceneSubsystem_Statics
 		{ "ModuleRelativePath", "Public/OculusXRSceneSubsystem.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSceneSubsystem constinit property declarations ******************
+// ********** End Class UOculusXRSceneSubsystem constinit property declarations ********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetBoundaryVisibility"), .Pointer = &UOculusXRSceneSubsystem::execGetBoundaryVisibility },
+		{ .NameUTF8 = UTF8TEXT("GetRequestedBoundaryVisibility"), .Pointer = &UOculusXRSceneSubsystem::execGetRequestedBoundaryVisibility },
+		{ .NameUTF8 = UTF8TEXT("SetRequestedBoundaryVisibility"), .Pointer = &UOculusXRSceneSubsystem::execSetRequestedBoundaryVisibility },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility, "GetBoundaryVisibility" }, // 3954427022
-		{ &Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility, "GetRequestedBoundaryVisibility" }, // 2717420677
-		{ &Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility, "SetRequestedBoundaryVisibility" }, // 947758718
+		{ &Z_Construct_UFunction_UOculusXRSceneSubsystem_GetBoundaryVisibility, "GetBoundaryVisibility" }, // 1398697944
+		{ &Z_Construct_UFunction_UOculusXRSceneSubsystem_GetRequestedBoundaryVisibility, "GetRequestedBoundaryVisibility" }, // 525019082
+		{ &Z_Construct_UFunction_UOculusXRSceneSubsystem_SetRequestedBoundaryVisibility, "SetRequestedBoundaryVisibility" }, // 1422760395
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSceneSubsystem>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRSceneSubsystem_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRSceneSubsystem_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UGameInstanceSubsystem,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRScene,
@@ -238,6 +267,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSceneSubsystem
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSceneSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSceneSubsystem_Statics::Class_MetaDataParams)
 };
+void UOculusXRSceneSubsystem::StaticRegisterNativesUOculusXRSceneSubsystem()
+{
+	UClass* Class = UOculusXRSceneSubsystem::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRSceneSubsystem_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRSceneSubsystem()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSceneSubsystem.OuterSingleton)
@@ -246,21 +280,23 @@ UClass* Z_Construct_UClass_UOculusXRSceneSubsystem()
 	}
 	return Z_Registration_Info_UClass_UOculusXRSceneSubsystem.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSceneSubsystem);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSceneSubsystem);
 UOculusXRSceneSubsystem::~UOculusXRSceneSubsystem() {}
 // ********** End Class UOculusXRSceneSubsystem ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRSceneSubsystem, UOculusXRSceneSubsystem::StaticClass, TEXT("UOculusXRSceneSubsystem"), &Z_Registration_Info_UClass_UOculusXRSceneSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSceneSubsystem), 1092818259U) },
+		{ Z_Construct_UClass_UOculusXRSceneSubsystem, UOculusXRSceneSubsystem::StaticClass, TEXT("UOculusXRSceneSubsystem"), &Z_Registration_Info_UClass_UOculusXRSceneSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSceneSubsystem), 2297757256U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_1508899622(TEXT("/Script/OculusXRScene"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_1988250946{
+	TEXT("/Script/OculusXRScene"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h__Script_OculusXRScene_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

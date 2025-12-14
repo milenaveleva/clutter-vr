@@ -15,30 +15,30 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 enum class EOculusXRBoundaryVisibility : uint8;
 
 // ********** Begin Class UOculusXRSceneSubsystem **************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetRequestedBoundaryVisibility); \
 	DECLARE_FUNCTION(execGetRequestedBoundaryVisibility); \
 	DECLARE_FUNCTION(execGetBoundaryVisibility);
 
 
+struct Z_Construct_UClass_UOculusXRSceneSubsystem_Statics;
 OCULUSXRSCENE_API UClass* Z_Construct_UClass_UOculusXRSceneSubsystem_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRSceneSubsystem(); \
-	friend struct Z_Construct_UClass_UOculusXRSceneSubsystem_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRSceneSubsystem_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRSCENE_API UClass* Z_Construct_UClass_UOculusXRSceneSubsystem_NoRegister(); \
+	friend OCULUSXRSCENE_API UClass* ::Z_Construct_UClass_UOculusXRSceneSubsystem_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRSceneSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRScene"), Z_Construct_UClass_UOculusXRSceneSubsystem_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRSceneSubsystem)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRSceneSubsystem(UOculusXRSceneSubsystem&&) = delete; \
 	UOculusXRSceneSubsystem(const UOculusXRSceneSubsystem&) = delete; \
@@ -48,13 +48,13 @@ public: \
 	NO_API virtual ~UOculusXRSceneSubsystem();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_11_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_11_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class UOculusXRSceneSubsystem;
 // ********** End Class UOculusXRSceneSubsystem ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

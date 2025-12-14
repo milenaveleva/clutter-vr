@@ -9,7 +9,7 @@
 #include "Interaction/IsdkIInteractableState.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInteractableColorVisual() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -28,17 +28,10 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FIsdkColorState ***************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkColorState;
-class UScriptStruct* FIsdkColorState::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkColorState.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkColorState.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkColorState, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkColorState"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkColorState.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkColorState_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkColorState); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkColorState); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -57,16 +50,30 @@ struct Z_Construct_UScriptStruct_FIsdkColorState_Statics
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkColorState constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Color;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TransitionCurve;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TransitionDuration;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkColorState constinit property declarations *********************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkColorState>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkColorState_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkColorState;
+class UScriptStruct* FIsdkColorState::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkColorState.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkColorState.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkColorState, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkColorState"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkColorState.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkColorState Property Definitions ******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkColorState_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkColorState, Color), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Color_MetaData), NewProp_Color_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FIsdkColorState_Statics::NewProp_TransitionCurve = { "TransitionCurve", nullptr, (EPropertyFlags)0x0114000000000005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkColorState, TransitionCurve), Z_Construct_UClass_UCurveFloat_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TransitionCurve_MetaData), NewProp_TransitionCurve_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkColorState_Statics::NewProp_TransitionDuration = { "TransitionDuration", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkColorState, TransitionDuration), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TransitionDuration_MetaData), NewProp_TransitionDuration_MetaData) };
@@ -76,6 +83,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkColorState_Statics::NewProp_TransitionDuration,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkColorState_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkColorState Property Definitions ********************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkColorState_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
 	nullptr,
@@ -95,11 +103,30 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkColorState()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkColorState.InnerSingleton, Z_Construct_UScriptStruct_FIsdkColorState_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkColorState.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkColorState.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkColorState *****************************************************
 
 // ********** Begin ScriptStruct FIsdkColorTransition **********************************************
+struct Z_Construct_UScriptStruct_FIsdkColorTransition_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkColorTransition); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkColorTransition); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkColorTransition constinit property declarations **************
+// ********** End ScriptStruct FIsdkColorTransition constinit property declarations ****************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkColorTransition>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FIsdkColorTransition_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkColorTransition;
 class UScriptStruct* FIsdkColorTransition::StaticStruct()
 {
@@ -108,21 +135,7 @@ class UScriptStruct* FIsdkColorTransition::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FIsdkColorTransition.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkColorTransition, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkColorTransition"));
 	}
 	return Z_Registration_Info_UScriptStruct_FIsdkColorTransition.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FIsdkColorTransition_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkColorTransition>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkColorTransition_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
 	nullptr,
@@ -142,7 +155,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkColorTransition()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkColorTransition.InnerSingleton, Z_Construct_UScriptStruct_FIsdkColorTransition_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkColorTransition.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkColorTransition.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkColorTransition ************************************************
 
@@ -160,22 +173,31 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetColorState constinit property declarations *************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_State;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetColorState constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetColorState Property Definitions ************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetColorState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 932219690
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetColorState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 894680486
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_State_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_State,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::IsdkInteractableColorVisual_eventGetColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetColorState Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::IsdkInteractableColorVisual_eventGetColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState_Statics::IsdkInteractableColorVisual_eventGetColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState()
 {
@@ -210,16 +232,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDisabledColorState constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDisabledColorState constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetDisabledColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+
+// ********** Begin Function GetDisabledColorState Property Definitions ****************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetDisabledColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetDisabledColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::IsdkInteractableColorVisual_eventGetDisabledColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDisabledColorState Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetDisabledColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::IsdkInteractableColorVisual_eventGetDisabledColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState_Statics::IsdkInteractableColorVisual_eventGetDisabledColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState()
 {
@@ -253,16 +284,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Sta
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHoverColorState constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHoverColorState constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetHoverColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+
+// ********** Begin Function GetHoverColorState Property Definitions *******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetHoverColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetHoverColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::IsdkInteractableColorVisual_eventGetHoverColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHoverColorState Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetHoverColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::IsdkInteractableColorVisual_eventGetHoverColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState_Statics::IsdkInteractableColorVisual_eventGetHoverColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState()
 {
@@ -297,16 +337,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Static
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetInteractable constinit property declarations ***********************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetInteractable constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetInteractable Property Definitions **********************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetInteractable_Parms, ReturnValue), Z_Construct_UClass_UIsdkIInteractableState_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetInteractable", Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::IsdkInteractableColorVisual_eventGetInteractable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetInteractable Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetInteractable", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::IsdkInteractableColorVisual_eventGetInteractable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable_Statics::IsdkInteractableColorVisual_eventGetInteractable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable()
 {
@@ -340,16 +389,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_St
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetNormalColorState constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetNormalColorState constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetNormalColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+
+// ********** Begin Function GetNormalColorState Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetNormalColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetNormalColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::IsdkInteractableColorVisual_eventGetNormalColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetNormalColorState Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetNormalColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::IsdkInteractableColorVisual_eventGetNormalColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState_Statics::IsdkInteractableColorVisual_eventGetNormalColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState()
 {
@@ -383,16 +441,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_St
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSelectColorState constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSelectColorState constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetSelectColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+
+// ********** Begin Function GetSelectColorState Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventGetSelectColorState_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetSelectColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::IsdkInteractableColorVisual_eventGetSelectColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSelectColorState Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "GetSelectColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::IsdkInteractableColorVisual_eventGetSelectColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState_Statics::IsdkInteractableColorVisual_eventGetSelectColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState()
 {
@@ -427,16 +494,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Stat
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleStateChange constinit property declarations *********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Event;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleStateChange constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::NewProp_Event = { "Event", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventHandleStateChange_Parms, Event), Z_Construct_UScriptStruct_FIsdkInteractableStateEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Event_MetaData), NewProp_Event_MetaData) }; // 138227056
+
+// ********** Begin Function HandleStateChange Property Definitions ********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::NewProp_Event = { "Event", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventHandleStateChange_Parms, Event), Z_Construct_UScriptStruct_FIsdkInteractableStateEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Event_MetaData), NewProp_Event_MetaData) }; // 1229914507
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::NewProp_Event,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "HandleStateChange", Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::IsdkInteractableColorVisual_eventHandleStateChange_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleStateChange Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "HandleStateChange", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::IsdkInteractableColorVisual_eventHandleStateChange_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange_Statics::IsdkInteractableColorVisual_eventHandleStateChange_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange()
 {
@@ -471,22 +547,31 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetColorState constinit property declarations *************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_State;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetColorState constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetColorState Property Definitions ************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 932219690
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 894680486
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_State_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_State,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::NewProp_ColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::IsdkInteractableColorVisual_eventSetColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetColorState Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::IsdkInteractableColorVisual_eventSetColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState_Statics::IsdkInteractableColorVisual_eventSetColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState()
 {
@@ -524,17 +609,22 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetColorStates constinit property declarations ************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InNormalColorState;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InHoverColorState;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InSelectColorState;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InDisabledColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetColorStates constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InNormalColorState = { "InNormalColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InNormalColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InHoverColorState = { "InHoverColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InHoverColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InSelectColorState = { "InSelectColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InSelectColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InDisabledColorState = { "InDisabledColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InDisabledColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 3958540073
+
+// ********** Begin Function SetColorStates Property Definitions ***********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InNormalColorState = { "InNormalColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InNormalColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InHoverColorState = { "InHoverColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InHoverColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InSelectColorState = { "InSelectColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InSelectColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InDisabledColorState = { "InDisabledColorState", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetColorStates_Parms, InDisabledColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(0, nullptr) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InNormalColorState,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InHoverColorState,
@@ -542,7 +632,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::NewProp_InDisabledColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetColorStates", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::IsdkInteractableColorVisual_eventSetColorStates_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetColorStates Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetColorStates", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::IsdkInteractableColorVisual_eventSetColorStates_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates_Statics::IsdkInteractableColorVisual_eventSetColorStates_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates()
 {
@@ -583,16 +677,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetDisabledColorState constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetDisabledColorState constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetDisabledColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 3958540073
+
+// ********** Begin Function SetDisabledColorState Property Definitions ****************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetDisabledColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::NewProp_ColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetDisabledColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::IsdkInteractableColorVisual_eventSetDisabledColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetDisabledColorState Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetDisabledColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::IsdkInteractableColorVisual_eventSetDisabledColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState_Statics::IsdkInteractableColorVisual_eventSetDisabledColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState()
 {
@@ -630,16 +733,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Sta
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetHoverColorState constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetHoverColorState constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetHoverColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 3958540073
+
+// ********** Begin Function SetHoverColorState Property Definitions *******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetHoverColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::NewProp_ColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetHoverColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::IsdkInteractableColorVisual_eventSetHoverColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetHoverColorState Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetHoverColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::IsdkInteractableColorVisual_eventSetHoverColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState_Statics::IsdkInteractableColorVisual_eventSetHoverColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState()
 {
@@ -673,19 +785,28 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransition
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetImmediateTransitionToState constinit property declarations *********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_State;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetImmediateTransitionToState constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetImmediateTransitionToState Property Definitions ********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetImmediateTransitionToState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 932219690
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetImmediateTransitionToState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 894680486
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::NewProp_State_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::NewProp_State,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetImmediateTransitionToState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::IsdkInteractableColorVisual_eventSetImmediateTransitionToState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetImmediateTransitionToState Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetImmediateTransitionToState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::IsdkInteractableColorVisual_eventSetImmediateTransitionToState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState_Statics::IsdkInteractableColorVisual_eventSetImmediateTransitionToState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState()
 {
@@ -720,16 +841,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Static
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetInteractable constinit property declarations ***********************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_InInteractable;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetInteractable constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetInteractable Property Definitions **********************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::NewProp_InInteractable = { "InInteractable", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetInteractable_Parms, InInteractable), Z_Construct_UClass_UIsdkIInteractableState_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::NewProp_InInteractable,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetInteractable", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::IsdkInteractableColorVisual_eventSetInteractable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetInteractable Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetInteractable", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::IsdkInteractableColorVisual_eventSetInteractable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable_Statics::IsdkInteractableColorVisual_eventSetInteractable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable()
 {
@@ -767,16 +897,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_St
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetNormalColorState constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetNormalColorState constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetNormalColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 3958540073
+
+// ********** Begin Function SetNormalColorState Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetNormalColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::NewProp_ColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetNormalColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::IsdkInteractableColorVisual_eventSetNormalColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetNormalColorState Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetNormalColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::IsdkInteractableColorVisual_eventSetNormalColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState_Statics::IsdkInteractableColorVisual_eventSetNormalColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState()
 {
@@ -814,16 +953,25 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_St
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetSelectColorState constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetSelectColorState constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetSelectColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 3958540073
+
+// ********** Begin Function SetSelectColorState Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::NewProp_ColorState = { "ColorState", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetSelectColorState_Parms, ColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorState_MetaData), NewProp_ColorState_MetaData) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::NewProp_ColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetSelectColorState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::IsdkInteractableColorVisual_eventSetSelectColorState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetSelectColorState Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetSelectColorState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::IsdkInteractableColorVisual_eventSetSelectColorState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState_Statics::IsdkInteractableColorVisual_eventSetSelectColorState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState()
 {
@@ -857,19 +1005,28 @@ struct Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_S
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetTransitionToState constinit property declarations ******************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_State_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_State;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetTransitionToState constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetTransitionToState Property Definitions *****************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::NewProp_State_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetTransitionToState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 932219690
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::NewProp_State = { "State", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableColorVisual_eventSetTransitionToState_Parms, State), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(0, nullptr) }; // 894680486
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::NewProp_State_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::NewProp_State,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetTransitionToState", Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::IsdkInteractableColorVisual_eventSetTransitionToState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetTransitionToState Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableColorVisual, nullptr, "SetTransitionToState", 	Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::IsdkInteractableColorVisual_eventSetTransitionToState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState_Statics::IsdkInteractableColorVisual_eventSetTransitionToState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState()
 {
@@ -891,29 +1048,6 @@ DEFINE_FUNCTION(UIsdkInteractableColorVisual::execSetTransitionToState)
 // ********** End Class UIsdkInteractableColorVisual Function SetTransitionToState *****************
 
 // ********** Begin Class UIsdkInteractableColorVisual *********************************************
-void UIsdkInteractableColorVisual::StaticRegisterNativesUIsdkInteractableColorVisual()
-{
-	UClass* Class = UIsdkInteractableColorVisual::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetColorState", &UIsdkInteractableColorVisual::execGetColorState },
-		{ "GetDisabledColorState", &UIsdkInteractableColorVisual::execGetDisabledColorState },
-		{ "GetHoverColorState", &UIsdkInteractableColorVisual::execGetHoverColorState },
-		{ "GetInteractable", &UIsdkInteractableColorVisual::execGetInteractable },
-		{ "GetNormalColorState", &UIsdkInteractableColorVisual::execGetNormalColorState },
-		{ "GetSelectColorState", &UIsdkInteractableColorVisual::execGetSelectColorState },
-		{ "HandleStateChange", &UIsdkInteractableColorVisual::execHandleStateChange },
-		{ "SetColorState", &UIsdkInteractableColorVisual::execSetColorState },
-		{ "SetColorStates", &UIsdkInteractableColorVisual::execSetColorStates },
-		{ "SetDisabledColorState", &UIsdkInteractableColorVisual::execSetDisabledColorState },
-		{ "SetHoverColorState", &UIsdkInteractableColorVisual::execSetHoverColorState },
-		{ "SetImmediateTransitionToState", &UIsdkInteractableColorVisual::execSetImmediateTransitionToState },
-		{ "SetInteractable", &UIsdkInteractableColorVisual::execSetInteractable },
-		{ "SetNormalColorState", &UIsdkInteractableColorVisual::execSetNormalColorState },
-		{ "SetSelectColorState", &UIsdkInteractableColorVisual::execSetSelectColorState },
-		{ "SetTransitionToState", &UIsdkInteractableColorVisual::execSetTransitionToState },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkInteractableColorVisual;
 UClass* UIsdkInteractableColorVisual::GetPrivateStaticClass()
 {
@@ -921,7 +1055,7 @@ UClass* UIsdkInteractableColorVisual::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkInteractableColorVisual.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInteractableColorVisual"),
 			Z_Registration_Info_UClass_UIsdkInteractableColorVisual.InnerSingleton,
 			StaticRegisterNativesUIsdkInteractableColorVisual,
@@ -994,6 +1128,8 @@ struct Z_Construct_UClass_UIsdkInteractableColorVisual_Statics
 		{ "ModuleRelativePath", "Public/InteractableVisuals/IsdkInteractableColorVisual.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkInteractableColorVisual constinit property declarations *************
 	static const UECodeGen_Private::FNamePropertyParams NewProp_ParameterName;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_DynamicMaterial;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_Interactable;
@@ -1002,38 +1138,59 @@ struct Z_Construct_UClass_UIsdkInteractableColorVisual_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SelectColorState;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DisabledColorState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkInteractableColorVisual constinit property declarations ***************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetColorState"), .Pointer = &UIsdkInteractableColorVisual::execGetColorState },
+		{ .NameUTF8 = UTF8TEXT("GetDisabledColorState"), .Pointer = &UIsdkInteractableColorVisual::execGetDisabledColorState },
+		{ .NameUTF8 = UTF8TEXT("GetHoverColorState"), .Pointer = &UIsdkInteractableColorVisual::execGetHoverColorState },
+		{ .NameUTF8 = UTF8TEXT("GetInteractable"), .Pointer = &UIsdkInteractableColorVisual::execGetInteractable },
+		{ .NameUTF8 = UTF8TEXT("GetNormalColorState"), .Pointer = &UIsdkInteractableColorVisual::execGetNormalColorState },
+		{ .NameUTF8 = UTF8TEXT("GetSelectColorState"), .Pointer = &UIsdkInteractableColorVisual::execGetSelectColorState },
+		{ .NameUTF8 = UTF8TEXT("HandleStateChange"), .Pointer = &UIsdkInteractableColorVisual::execHandleStateChange },
+		{ .NameUTF8 = UTF8TEXT("SetColorState"), .Pointer = &UIsdkInteractableColorVisual::execSetColorState },
+		{ .NameUTF8 = UTF8TEXT("SetColorStates"), .Pointer = &UIsdkInteractableColorVisual::execSetColorStates },
+		{ .NameUTF8 = UTF8TEXT("SetDisabledColorState"), .Pointer = &UIsdkInteractableColorVisual::execSetDisabledColorState },
+		{ .NameUTF8 = UTF8TEXT("SetHoverColorState"), .Pointer = &UIsdkInteractableColorVisual::execSetHoverColorState },
+		{ .NameUTF8 = UTF8TEXT("SetImmediateTransitionToState"), .Pointer = &UIsdkInteractableColorVisual::execSetImmediateTransitionToState },
+		{ .NameUTF8 = UTF8TEXT("SetInteractable"), .Pointer = &UIsdkInteractableColorVisual::execSetInteractable },
+		{ .NameUTF8 = UTF8TEXT("SetNormalColorState"), .Pointer = &UIsdkInteractableColorVisual::execSetNormalColorState },
+		{ .NameUTF8 = UTF8TEXT("SetSelectColorState"), .Pointer = &UIsdkInteractableColorVisual::execSetSelectColorState },
+		{ .NameUTF8 = UTF8TEXT("SetTransitionToState"), .Pointer = &UIsdkInteractableColorVisual::execSetTransitionToState },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState, "GetColorState" }, // 2663734719
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState, "GetDisabledColorState" }, // 3305101734
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState, "GetHoverColorState" }, // 3238816040
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable, "GetInteractable" }, // 1204480294
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState, "GetNormalColorState" }, // 3388885953
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState, "GetSelectColorState" }, // 2569530262
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange, "HandleStateChange" }, // 1627773439
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState, "SetColorState" }, // 3762906355
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates, "SetColorStates" }, // 1391923232
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState, "SetDisabledColorState" }, // 1203181656
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState, "SetHoverColorState" }, // 2958393917
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState, "SetImmediateTransitionToState" }, // 2291029253
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable, "SetInteractable" }, // 3321254777
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState, "SetNormalColorState" }, // 4178873005
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState, "SetSelectColorState" }, // 1778581434
-		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState, "SetTransitionToState" }, // 3303604238
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetColorState, "GetColorState" }, // 2614549666
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetDisabledColorState, "GetDisabledColorState" }, // 1967655004
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetHoverColorState, "GetHoverColorState" }, // 2554358728
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetInteractable, "GetInteractable" }, // 2821904699
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetNormalColorState, "GetNormalColorState" }, // 1182061392
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_GetSelectColorState, "GetSelectColorState" }, // 2157916492
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_HandleStateChange, "HandleStateChange" }, // 2403041933
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorState, "SetColorState" }, // 2256455921
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetColorStates, "SetColorStates" }, // 807559739
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetDisabledColorState, "SetDisabledColorState" }, // 3932647139
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetHoverColorState, "SetHoverColorState" }, // 3726864613
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetImmediateTransitionToState, "SetImmediateTransitionToState" }, // 3892861754
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetInteractable, "SetInteractable" }, // 2415993285
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetNormalColorState, "SetNormalColorState" }, // 92446891
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetSelectColorState, "SetSelectColorState" }, // 1839583566
+		{ &Z_Construct_UFunction_UIsdkInteractableColorVisual_SetTransitionToState, "SetTransitionToState" }, // 1876098630
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkInteractableColorVisual>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkInteractableColorVisual_Statics
+
+// ********** Begin Class UIsdkInteractableColorVisual Property Definitions ************************
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_ParameterName = { "ParameterName", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, ParameterName), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ParameterName_MetaData), NewProp_ParameterName_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_DynamicMaterial = { "DynamicMaterial", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, DynamicMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DynamicMaterial_MetaData), NewProp_DynamicMaterial_MetaData) };
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_Interactable = { "Interactable", nullptr, (EPropertyFlags)0x0044000000000004, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, Interactable), Z_Construct_UClass_UIsdkIInteractableState_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Interactable_MetaData), NewProp_Interactable_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_NormalColorState = { "NormalColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, NormalColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NormalColorState_MetaData), NewProp_NormalColorState_MetaData) }; // 3958540073
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_HoverColorState = { "HoverColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, HoverColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HoverColorState_MetaData), NewProp_HoverColorState_MetaData) }; // 3958540073
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_SelectColorState = { "SelectColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, SelectColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectColorState_MetaData), NewProp_SelectColorState_MetaData) }; // 3958540073
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_DisabledColorState = { "DisabledColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, DisabledColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DisabledColorState_MetaData), NewProp_DisabledColorState_MetaData) }; // 3958540073
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_NormalColorState = { "NormalColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, NormalColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NormalColorState_MetaData), NewProp_NormalColorState_MetaData) }; // 2479436567
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_HoverColorState = { "HoverColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, HoverColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HoverColorState_MetaData), NewProp_HoverColorState_MetaData) }; // 2479436567
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_SelectColorState = { "SelectColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, SelectColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectColorState_MetaData), NewProp_SelectColorState_MetaData) }; // 2479436567
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_DisabledColorState = { "DisabledColorState", nullptr, (EPropertyFlags)0x0040000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableColorVisual, DisabledColorState), Z_Construct_UScriptStruct_FIsdkColorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DisabledColorState_MetaData), NewProp_DisabledColorState_MetaData) }; // 2479436567
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_ParameterName,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_DynamicMaterial,
@@ -1044,6 +1201,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInte
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::NewProp_DisabledColorState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkInteractableColorVisual Property Definitions **************************
 UObject* (*const Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -1064,6 +1222,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkInteractableColorV
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::Class_MetaDataParams)
 };
+void UIsdkInteractableColorVisual::StaticRegisterNativesUIsdkInteractableColorVisual()
+{
+	UClass* Class = UIsdkInteractableColorVisual::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkInteractableColorVisual_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkInteractableColorVisual()
 {
 	if (!Z_Registration_Info_UClass_UIsdkInteractableColorVisual.OuterSingleton)
@@ -1072,25 +1235,27 @@ UClass* Z_Construct_UClass_UIsdkInteractableColorVisual()
 	}
 	return Z_Registration_Info_UClass_UIsdkInteractableColorVisual.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkInteractableColorVisual);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkInteractableColorVisual);
 UIsdkInteractableColorVisual::~UIsdkInteractableColorVisual() {}
 // ********** End Class UIsdkInteractableColorVisual ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkColorState::StaticStruct, Z_Construct_UScriptStruct_FIsdkColorState_Statics::NewStructOps, TEXT("IsdkColorState"), &Z_Registration_Info_UScriptStruct_FIsdkColorState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkColorState), 3958540073U) },
-		{ FIsdkColorTransition::StaticStruct, Z_Construct_UScriptStruct_FIsdkColorTransition_Statics::NewStructOps, TEXT("IsdkColorTransition"), &Z_Registration_Info_UScriptStruct_FIsdkColorTransition, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkColorTransition), 1093089846U) },
+		{ FIsdkColorState::StaticStruct, Z_Construct_UScriptStruct_FIsdkColorState_Statics::NewStructOps, TEXT("IsdkColorState"),&Z_Registration_Info_UScriptStruct_FIsdkColorState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkColorState), 2479436567U) },
+		{ FIsdkColorTransition::StaticStruct, Z_Construct_UScriptStruct_FIsdkColorTransition_Statics::NewStructOps, TEXT("IsdkColorTransition"),&Z_Registration_Info_UScriptStruct_FIsdkColorTransition, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkColorTransition), 318975245U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkInteractableColorVisual, UIsdkInteractableColorVisual::StaticClass, TEXT("UIsdkInteractableColorVisual"), &Z_Registration_Info_UClass_UIsdkInteractableColorVisual, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInteractableColorVisual), 3599710987U) },
+		{ Z_Construct_UClass_UIsdkInteractableColorVisual, UIsdkInteractableColorVisual::StaticClass, TEXT("UIsdkInteractableColorVisual"), &Z_Registration_Info_UClass_UIsdkInteractableColorVisual, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInteractableColorVisual), 1839936757U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_683433465{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_3167565955(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractableVisuals_IsdkInteractableColorVisual_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

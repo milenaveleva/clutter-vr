@@ -8,7 +8,7 @@
 #include "Utilities/IsdkMathUtils.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkMathUtils() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -35,14 +35,19 @@ struct Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics
 		{ "ModuleRelativePath", "Public/Utilities/IsdkMathUtils.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ChangeValueAtRate constinit property declarations *********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_From;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_To;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaPerSecond;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Dt;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ChangeValueAtRate constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function ChangeValueAtRate Property Definitions ********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::NewProp_From = { "From", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkMathUtilsWrapper_eventChangeValueAtRate_Parms, From), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::NewProp_To = { "To", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkMathUtilsWrapper_eventChangeValueAtRate_Parms, To), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::NewProp_DeltaPerSecond = { "DeltaPerSecond", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkMathUtilsWrapper_eventChangeValueAtRate_Parms, DeltaPerSecond), METADATA_PARAMS(0, nullptr) };
@@ -56,7 +61,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkM
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkMathUtilsWrapper, nullptr, "ChangeValueAtRate", Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::IsdkMathUtilsWrapper_eventChangeValueAtRate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::Function_MetaDataParams)},  };
+// ********** End Function ChangeValueAtRate Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkMathUtilsWrapper, nullptr, "ChangeValueAtRate", 	Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::IsdkMathUtilsWrapper_eventChangeValueAtRate_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate_Statics::IsdkMathUtilsWrapper_eventChangeValueAtRate_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate()
 {
@@ -81,14 +90,6 @@ DEFINE_FUNCTION(UIsdkMathUtilsWrapper::execChangeValueAtRate)
 // ********** End Class UIsdkMathUtilsWrapper Function ChangeValueAtRate ***************************
 
 // ********** Begin Class UIsdkMathUtilsWrapper ****************************************************
-void UIsdkMathUtilsWrapper::StaticRegisterNativesUIsdkMathUtilsWrapper()
-{
-	UClass* Class = UIsdkMathUtilsWrapper::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "ChangeValueAtRate", &UIsdkMathUtilsWrapper::execChangeValueAtRate },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkMathUtilsWrapper;
 UClass* UIsdkMathUtilsWrapper::GetPrivateStaticClass()
 {
@@ -96,7 +97,7 @@ UClass* UIsdkMathUtilsWrapper::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkMathUtilsWrapper.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkMathUtilsWrapper"),
 			Z_Registration_Info_UClass_UIsdkMathUtilsWrapper.InnerSingleton,
 			StaticRegisterNativesUIsdkMathUtilsWrapper,
@@ -128,16 +129,22 @@ struct Z_Construct_UClass_UIsdkMathUtilsWrapper_Statics
 		{ "ModuleRelativePath", "Public/Utilities/IsdkMathUtils.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkMathUtilsWrapper constinit property declarations ********************
+// ********** End Class UIsdkMathUtilsWrapper constinit property declarations **********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("ChangeValueAtRate"), .Pointer = &UIsdkMathUtilsWrapper::execChangeValueAtRate },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate, "ChangeValueAtRate" }, // 3282934534
+		{ &Z_Construct_UFunction_UIsdkMathUtilsWrapper_ChangeValueAtRate, "ChangeValueAtRate" }, // 198306126
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkMathUtilsWrapper>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkMathUtilsWrapper_Statics
 UObject* (*const Z_Construct_UClass_UIsdkMathUtilsWrapper_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -158,6 +165,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkMathUtilsWrapper_S
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkMathUtilsWrapper_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkMathUtilsWrapper_Statics::Class_MetaDataParams)
 };
+void UIsdkMathUtilsWrapper::StaticRegisterNativesUIsdkMathUtilsWrapper()
+{
+	UClass* Class = UIsdkMathUtilsWrapper::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkMathUtilsWrapper_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkMathUtilsWrapper()
 {
 	if (!Z_Registration_Info_UClass_UIsdkMathUtilsWrapper.OuterSingleton)
@@ -167,21 +179,23 @@ UClass* Z_Construct_UClass_UIsdkMathUtilsWrapper()
 	return Z_Registration_Info_UClass_UIsdkMathUtilsWrapper.OuterSingleton;
 }
 UIsdkMathUtilsWrapper::UIsdkMathUtilsWrapper(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkMathUtilsWrapper);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkMathUtilsWrapper);
 UIsdkMathUtilsWrapper::~UIsdkMathUtilsWrapper() {}
 // ********** End Class UIsdkMathUtilsWrapper ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkMathUtilsWrapper, UIsdkMathUtilsWrapper::StaticClass, TEXT("UIsdkMathUtilsWrapper"), &Z_Registration_Info_UClass_UIsdkMathUtilsWrapper, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkMathUtilsWrapper), 2203516472U) },
+		{ Z_Construct_UClass_UIsdkMathUtilsWrapper, UIsdkMathUtilsWrapper::StaticClass, TEXT("UIsdkMathUtilsWrapper"), &Z_Registration_Info_UClass_UIsdkMathUtilsWrapper, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkMathUtilsWrapper), 2916582052U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_3558523321(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_65726028{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Utilities_IsdkMathUtils_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

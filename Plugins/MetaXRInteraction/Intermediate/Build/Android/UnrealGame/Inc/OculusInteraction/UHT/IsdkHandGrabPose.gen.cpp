@@ -9,7 +9,7 @@
 #include "StructTypesNonGenerated.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandGrabPose() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -29,14 +29,24 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Destroys the generated debug visual, if instantiated */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Destroys the generated debug visual, if instantiated" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function DestroyDebugVisual constinit property declarations ********************
+// ********** End Function DestroyDebugVisual constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "DestroyDebugVisual", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "DestroyDebugVisual", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -65,24 +75,37 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionISDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns reference to Debug Hand Visual */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns reference to Debug Hand Visual" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDebugVisual constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDebugVisual constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetDebugVisual Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabPose_eventGetDebugVisual_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "GetDebugVisual", Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::IsdkHandGrabPose_eventGetDebugVisual_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDebugVisual Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "GetDebugVisual", 	Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::IsdkHandGrabPose_eventGetDebugVisual_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual_Statics::IsdkHandGrabPose_eventGetDebugVisual_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual()
 {
@@ -112,24 +135,37 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionISDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the hand grab pose automatically generated as a mirror for this hand grab pose*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the hand grab pose automatically generated as a mirror for this hand grab pose" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetMirrorHandGrabPose constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetMirrorHandGrabPose constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetMirrorHandGrabPose Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabPose_eventGetMirrorHandGrabPose_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandGrabPose_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "GetMirrorHandGrabPose", Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::IsdkHandGrabPose_eventGetMirrorHandGrabPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetMirrorHandGrabPose Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "GetMirrorHandGrabPose", 	Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::IsdkHandGrabPose_eventGetMirrorHandGrabPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose_Statics::IsdkHandGrabPose_eventGetMirrorHandGrabPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose()
 {
@@ -159,21 +195,34 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionISDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the hand pose data automatically generated as a mirror for this hand grab pose */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the hand pose data automatically generated as a mirror for this hand grab pose" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetMirrorHandPoseData constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetMirrorHandPoseData constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetMirrorHandPoseData Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabPose_eventGetMirrorHandPoseData_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandPoseData_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "GetMirrorHandPoseData", Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::IsdkHandGrabPose_eventGetMirrorHandPoseData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetMirrorHandPoseData Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "GetMirrorHandPoseData", 	Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::IsdkHandGrabPose_eventGetMirrorHandPoseData_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData_Statics::IsdkHandGrabPose_eventGetMirrorHandPoseData_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData()
 {
@@ -203,16 +252,25 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Generates a new debug hand visual (UIsdkHandMeshComponent), utilizing the set hand grab data.\n   * Destroys the previous visual if it exists */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generates a new debug hand visual (UIsdkHandMeshComponent), utilizing the set hand grab data.\n  * Destroys the previous visual if it exists" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function InitializeDebugVisual constinit property declarations *****************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function InitializeDebugVisual constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function InitializeDebugVisual Property Definitions ****************************
 void Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkHandGrabPose_eventInitializeDebugVisual_Parms*)Obj)->ReturnValue = 1;
@@ -222,7 +280,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "InitializeDebugVisual", Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::IsdkHandGrabPose_eventInitializeDebugVisual_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::Function_MetaDataParams)},  };
+// ********** End Function InitializeDebugVisual Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "InitializeDebugVisual", 	Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::IsdkHandGrabPose_eventInitializeDebugVisual_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual_Statics::IsdkHandGrabPose_eventInitializeDebugVisual_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual()
 {
@@ -252,16 +314,25 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionISDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns true if the Debug Visual HandMeshComponent is spawned and valid*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns true if the Debug Visual HandMeshComponent is spawned and valid" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsDebugVisualActive constinit property declarations *******************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsDebugVisualActive constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsDebugVisualActive Property Definitions ******************************
 void Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkHandGrabPose_eventIsDebugVisualActive_Parms*)Obj)->ReturnValue = 1;
@@ -271,7 +342,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "IsDebugVisualActive", Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::IsdkHandGrabPose_eventIsDebugVisualActive_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsDebugVisualActive Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "IsDebugVisualActive", 	Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::IsdkHandGrabPose_eventIsDebugVisualActive_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive_Statics::IsdkHandGrabPose_eventIsDebugVisualActive_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive()
 {
@@ -298,14 +373,24 @@ struct Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Toggles ability to edit this hand grab pose in the view port. It is recommended to only have\n   * one hand grab pose set to be edited at a time.*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Toggles ability to edit this hand grab pose in the view port. It is recommended to only have\n  * one hand grab pose set to be edited at a time." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ToggleHandPoseEditing constinit property declarations *****************
+// ********** End Function ToggleHandPoseEditing constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "ToggleHandPoseEditing", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabPose, nullptr, "ToggleHandPoseEditing", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -325,20 +410,6 @@ DEFINE_FUNCTION(UIsdkHandGrabPose::execToggleHandPoseEditing)
 // ********** End Class UIsdkHandGrabPose Function ToggleHandPoseEditing ***************************
 
 // ********** Begin Class UIsdkHandGrabPose ********************************************************
-void UIsdkHandGrabPose::StaticRegisterNativesUIsdkHandGrabPose()
-{
-	UClass* Class = UIsdkHandGrabPose::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "DestroyDebugVisual", &UIsdkHandGrabPose::execDestroyDebugVisual },
-		{ "GetDebugVisual", &UIsdkHandGrabPose::execGetDebugVisual },
-		{ "GetMirrorHandGrabPose", &UIsdkHandGrabPose::execGetMirrorHandGrabPose },
-		{ "GetMirrorHandPoseData", &UIsdkHandGrabPose::execGetMirrorHandPoseData },
-		{ "InitializeDebugVisual", &UIsdkHandGrabPose::execInitializeDebugVisual },
-		{ "IsDebugVisualActive", &UIsdkHandGrabPose::execIsDebugVisualActive },
-		{ "ToggleHandPoseEditing", &UIsdkHandGrabPose::execToggleHandPoseEditing },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandGrabPose;
 UClass* UIsdkHandGrabPose::GetPrivateStaticClass()
 {
@@ -346,7 +417,7 @@ UClass* UIsdkHandGrabPose::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandGrabPose.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandGrabPose"),
 			Z_Registration_Info_UClass_UIsdkHandGrabPose.InnerSingleton,
 			StaticRegisterNativesUIsdkHandGrabPose,
@@ -375,47 +446,71 @@ struct Z_Construct_UClass_UIsdkHandGrabPose_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* SceneComponent indicating where and with what pose a hand grab could snap to */" },
+#endif
 		{ "DevelopmentStatus", "Experimental" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Interaction/Grabbable/IsdkHandGrabPose.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "SceneComponent indicating where and with what pose a hand grab could snap to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bHandPoseEditingEnabled_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandGrabPoseProperties_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Primary properties that dictate the behavior of the Hand Grab Pose */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
 		{ "ShowOnlyInnerProperties", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Primary properties that dictate the behavior of the Hand Grab Pose" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bShowDebugVisualInEditor_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Whether or not to show the visualized hand pose data in Editor */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not to show the visualized hand pose data in Editor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRemoveDebugVisualOnPlay_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Whether or not to destroy this visualized hand pose when BeginPlay happens */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not to destroy this visualized hand pose when BeginPlay happens" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bPoseDisabled_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Disable this Pose from Being Selected*/" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Disable this Pose from Being Selected" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandPoseData_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Hand Pose Data asset to use for this Grab Pose */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Hand Pose Data asset to use for this Grab Pose" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DebugHandVisual_MetaData[] = {
 		{ "EditInline", "true" },
@@ -432,6 +527,8 @@ struct Z_Construct_UClass_UIsdkHandGrabPose_Statics
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkHandGrabPose.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandGrabPose constinit property declarations ************************
 	static void NewProp_bHandPoseEditingEnabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bHandPoseEditingEnabled;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HandGrabPoseProperties;
@@ -448,28 +545,40 @@ struct Z_Construct_UClass_UIsdkHandGrabPose_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MirrorHandPoseData;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ManualMirroredGrabPose;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandGrabPose constinit property declarations **************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("DestroyDebugVisual"), .Pointer = &UIsdkHandGrabPose::execDestroyDebugVisual },
+		{ .NameUTF8 = UTF8TEXT("GetDebugVisual"), .Pointer = &UIsdkHandGrabPose::execGetDebugVisual },
+		{ .NameUTF8 = UTF8TEXT("GetMirrorHandGrabPose"), .Pointer = &UIsdkHandGrabPose::execGetMirrorHandGrabPose },
+		{ .NameUTF8 = UTF8TEXT("GetMirrorHandPoseData"), .Pointer = &UIsdkHandGrabPose::execGetMirrorHandPoseData },
+		{ .NameUTF8 = UTF8TEXT("InitializeDebugVisual"), .Pointer = &UIsdkHandGrabPose::execInitializeDebugVisual },
+		{ .NameUTF8 = UTF8TEXT("IsDebugVisualActive"), .Pointer = &UIsdkHandGrabPose::execIsDebugVisualActive },
+		{ .NameUTF8 = UTF8TEXT("ToggleHandPoseEditing"), .Pointer = &UIsdkHandGrabPose::execToggleHandPoseEditing },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual, "DestroyDebugVisual" }, // 3991032194
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual, "GetDebugVisual" }, // 1989782960
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose, "GetMirrorHandGrabPose" }, // 1098103351
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData, "GetMirrorHandPoseData" }, // 1870673335
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual, "InitializeDebugVisual" }, // 3529074263
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive, "IsDebugVisualActive" }, // 1923140471
-		{ &Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing, "ToggleHandPoseEditing" }, // 1638384934
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_DestroyDebugVisual, "DestroyDebugVisual" }, // 3395731664
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_GetDebugVisual, "GetDebugVisual" }, // 1094145728
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandGrabPose, "GetMirrorHandGrabPose" }, // 2090477791
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_GetMirrorHandPoseData, "GetMirrorHandPoseData" }, // 826409883
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_InitializeDebugVisual, "InitializeDebugVisual" }, // 2516812925
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_IsDebugVisualActive, "IsDebugVisualActive" }, // 1775522393
+		{ &Z_Construct_UFunction_UIsdkHandGrabPose_ToggleHandPoseEditing, "ToggleHandPoseEditing" }, // 2106553097
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkHandGrabPose>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandGrabPose_Statics
+
+// ********** Begin Class UIsdkHandGrabPose Property Definitions ***********************************
 void Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_bHandPoseEditingEnabled_SetBit(void* Obj)
 {
 	((UIsdkHandGrabPose*)Obj)->bHandPoseEditingEnabled = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_bHandPoseEditingEnabled = { "bHandPoseEditingEnabled", nullptr, (EPropertyFlags)0x0090000000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UIsdkHandGrabPose), &Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_bHandPoseEditingEnabled_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bHandPoseEditingEnabled_MetaData), NewProp_bHandPoseEditingEnabled_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_HandGrabPoseProperties = { "HandGrabPoseProperties", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, HandGrabPoseProperties), Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandGrabPoseProperties_MetaData), NewProp_HandGrabPoseProperties_MetaData) }; // 927962901
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_HandGrabPoseProperties = { "HandGrabPoseProperties", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, HandGrabPoseProperties), Z_Construct_UScriptStruct_FIsdkHandGrabPoseProperties, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandGrabPoseProperties_MetaData), NewProp_HandGrabPoseProperties_MetaData) }; // 2151453187
 void Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_bShowDebugVisualInEditor_SetBit(void* Obj)
 {
 	((UIsdkHandGrabPose*)Obj)->bShowDebugVisualInEditor = 1;
@@ -488,7 +597,7 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UIsdkHandGrabPos
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_HandPoseData = { "HandPoseData", nullptr, (EPropertyFlags)0x0114000000000005, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, HandPoseData), Z_Construct_UClass_UIsdkHandPoseData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandPoseData_MetaData), NewProp_HandPoseData_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_DebugHandVisual = { "DebugHandVisual", nullptr, (EPropertyFlags)0x0144000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, DebugHandVisual), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DebugHandVisual_MetaData), NewProp_DebugHandVisual_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_Handedness_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 49432891
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 2143392285
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_MirrorHandPoseData = { "MirrorHandPoseData", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, MirrorHandPoseData), Z_Construct_UClass_UIsdkHandPoseData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MirrorHandPoseData_MetaData), NewProp_MirrorHandPoseData_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_ManualMirroredGrabPose = { "ManualMirroredGrabPose", nullptr, (EPropertyFlags)0x0144000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabPose, ManualMirroredGrabPose), Z_Construct_UClass_UIsdkHandGrabPose_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ManualMirroredGrabPose_MetaData), NewProp_ManualMirroredGrabPose_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHandGrabPose_Statics::PropPointers[] = {
@@ -505,6 +614,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHand
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandGrabPose_Statics::NewProp_ManualMirroredGrabPose,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandGrabPose_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandGrabPose Property Definitions *************************************
 UObject* (*const Z_Construct_UClass_UIsdkHandGrabPose_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -525,6 +635,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandGrabPose_Stati
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandGrabPose_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandGrabPose_Statics::Class_MetaDataParams)
 };
+void UIsdkHandGrabPose::StaticRegisterNativesUIsdkHandGrabPose()
+{
+	UClass* Class = UIsdkHandGrabPose::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandGrabPose_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandGrabPose()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandGrabPose.OuterSingleton)
@@ -533,21 +648,23 @@ UClass* Z_Construct_UClass_UIsdkHandGrabPose()
 	}
 	return Z_Registration_Info_UClass_UIsdkHandGrabPose.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandGrabPose);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandGrabPose);
 UIsdkHandGrabPose::~UIsdkHandGrabPose() {}
 // ********** End Class UIsdkHandGrabPose **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandGrabPose, UIsdkHandGrabPose::StaticClass, TEXT("UIsdkHandGrabPose"), &Z_Registration_Info_UClass_UIsdkHandGrabPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandGrabPose), 380428657U) },
+		{ Z_Construct_UClass_UIsdkHandGrabPose, UIsdkHandGrabPose::StaticClass, TEXT("UIsdkHandGrabPose"), &Z_Registration_Info_UClass_UIsdkHandGrabPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandGrabPose), 426777887U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_593766403(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_1658211212{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

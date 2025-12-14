@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UIsdkDistanceGrabDetector;
 class UIsdkGrabbableComponent;
 class UIsdkGrabTransformerComponent;
@@ -25,7 +24,7 @@ enum class EIsdkGrabDetectorType : uint32;
 enum class EIsdkGrabInputMethod : uint8;
 
 // ********** Begin Class UIsdkGrabberComponent ****************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleGrabbableCancelEvent); \
 	DECLARE_FUNCTION(execSetGrabDetectionTypeAllowed); \
 	DECLARE_FUNCTION(execIsGrabDetectionTypeAllowed); \
@@ -38,20 +37,21 @@ enum class EIsdkGrabInputMethod : uint8;
 	DECLARE_FUNCTION(execIsGrabbing);
 
 
+struct Z_Construct_UClass_UIsdkGrabberComponent_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkGrabberComponent_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkGrabberComponent(); \
-	friend struct Z_Construct_UClass_UIsdkGrabberComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkGrabberComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkGrabberComponent_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkGrabberComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkGrabberComponent, UIsdkSceneInteractorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkGrabberComponent_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkGrabberComponent)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkGrabberComponent(UIsdkGrabberComponent&&) = delete; \
 	UIsdkGrabberComponent(const UIsdkGrabberComponent&) = delete; \
@@ -61,13 +61,13 @@ public: \
 	NO_API virtual ~UIsdkGrabberComponent();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_50_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_50_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -77,6 +77,6 @@ class UIsdkGrabberComponent;
 // ********** End Class UIsdkGrabberComponent ******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkGrabberComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

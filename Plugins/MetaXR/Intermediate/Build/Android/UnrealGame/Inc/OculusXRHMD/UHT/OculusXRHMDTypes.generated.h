@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FOculusXRHmdUserProfileField **************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_33_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRHmdUserProfileField_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRHmdUserProfileField_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_33_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRHmdUserProfileField_Statics; \
 	OCULUSXRHMD_API static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FOculusXRHmdUserProfileField;
 // ********** End ScriptStruct FOculusXRHmdUserProfileField ****************************************
 
 // ********** Begin ScriptStruct FOculusXRHmdUserProfile *******************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_49_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRHmdUserProfile_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRHmdUserProfile_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_49_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRHmdUserProfile_Statics; \
 	OCULUSXRHMD_API static class UScriptStruct* StaticStruct();
 
 
@@ -35,8 +37,9 @@ struct FOculusXRHmdUserProfile;
 // ********** End ScriptStruct FOculusXRHmdUserProfile *********************************************
 
 // ********** Begin ScriptStruct FOculusXRGuardianTestResult ***************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_218_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRGuardianTestResult_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRGuardianTestResult_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_218_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRGuardianTestResult_Statics; \
 	OCULUSXRHMD_API static class UScriptStruct* StaticStruct();
 
 
@@ -44,8 +47,9 @@ struct FOculusXRGuardianTestResult;
 // ********** End ScriptStruct FOculusXRGuardianTestResult *****************************************
 
 // ********** Begin ScriptStruct FOculusXRSplashDesc ***********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_254_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRSplashDesc_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRSplashDesc_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_254_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRSplashDesc_Statics; \
 	OCULUSXRHMD_API static class UScriptStruct* StaticStruct();
 
 
@@ -53,8 +57,9 @@ struct FOculusXRSplashDesc;
 // ********** End ScriptStruct FOculusXRSplashDesc *************************************************
 
 // ********** Begin ScriptStruct FOculusXRPerformanceMetrics ***************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_377_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRPerformanceMetrics_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRPerformanceMetrics_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h_377_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRPerformanceMetrics_Statics; \
 	OCULUSXRHMD_API static class UScriptStruct* StaticStruct();
 
 
@@ -62,7 +67,7 @@ struct FOculusXRPerformanceMetrics;
 // ********** End ScriptStruct FOculusXRPerformanceMetrics *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDTypes_h
 
 // ********** Begin Enum EOculusXRTrackedDeviceType ************************************************
 #define FOREACH_ENUM_EOCULUSXRTRACKEDDEVICETYPE(op) \
@@ -76,7 +81,7 @@ struct FOculusXRPerformanceMetrics;
 
 enum class EOculusXRTrackedDeviceType : uint8;
 template<> struct TIsUEnumClass<EOculusXRTrackedDeviceType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRTrackedDeviceType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRTrackedDeviceType>();
 // ********** End Enum EOculusXRTrackedDeviceType **************************************************
 
 // ********** Begin Enum EOculusXRFoveatedRenderingMethod ******************************************
@@ -86,7 +91,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRTrackedDeviceType>();
 
 enum class EOculusXRFoveatedRenderingMethod : uint8;
 template<> struct TIsUEnumClass<EOculusXRFoveatedRenderingMethod> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRFoveatedRenderingMethod>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRFoveatedRenderingMethod>();
 // ********** End Enum EOculusXRFoveatedRenderingMethod ********************************************
 
 // ********** Begin Enum EOculusXRFoveatedRenderingLevel *******************************************
@@ -99,7 +104,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRFoveatedRenderingMethod>()
 
 enum class EOculusXRFoveatedRenderingLevel : uint8;
 template<> struct TIsUEnumClass<EOculusXRFoveatedRenderingLevel> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRFoveatedRenderingLevel>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRFoveatedRenderingLevel>();
 // ********** End Enum EOculusXRFoveatedRenderingLevel *********************************************
 
 // ********** Begin Enum EOculusXRBoundaryType *****************************************************
@@ -109,7 +114,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRFoveatedRenderingLevel>();
 
 enum class EOculusXRBoundaryType : uint8;
 template<> struct TIsUEnumClass<EOculusXRBoundaryType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRBoundaryType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBoundaryType>();
 // ********** End Enum EOculusXRBoundaryType *******************************************************
 
 // ********** Begin Enum EOculusXRColorSpace *******************************************************
@@ -126,7 +131,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRBoundaryType>();
 
 enum class EOculusXRColorSpace : uint8;
 template<> struct TIsUEnumClass<EOculusXRColorSpace> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRColorSpace>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRColorSpace>();
 // ********** End Enum EOculusXRColorSpace *********************************************************
 
 // ********** Begin Enum EOculusXRHandTrackingSupport **********************************************
@@ -137,7 +142,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRColorSpace>();
 
 enum class EOculusXRHandTrackingSupport : uint8;
 template<> struct TIsUEnumClass<EOculusXRHandTrackingSupport> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHandTrackingSupport>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHandTrackingSupport>();
 // ********** End Enum EOculusXRHandTrackingSupport ************************************************
 
 // ********** Begin Enum EOculusXRHandTrackingFrequency ********************************************
@@ -147,7 +152,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHandTrackingSupport>();
 
 enum class EOculusXRHandTrackingFrequency : uint8;
 template<> struct TIsUEnumClass<EOculusXRHandTrackingFrequency> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHandTrackingFrequency>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHandTrackingFrequency>();
 // ********** End Enum EOculusXRHandTrackingFrequency **********************************************
 
 // ********** Begin Enum EOculusXRHandTrackingVersion **********************************************
@@ -158,7 +163,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHandTrackingFrequency>();
 
 enum class EOculusXRHandTrackingVersion : uint8;
 template<> struct TIsUEnumClass<EOculusXRHandTrackingVersion> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHandTrackingVersion>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHandTrackingVersion>();
 // ********** End Enum EOculusXRHandTrackingVersion ************************************************
 
 // ********** Begin Enum EOculusXRProcessorPerformanceLevel ****************************************
@@ -170,7 +175,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHandTrackingVersion>();
 
 enum class EOculusXRProcessorPerformanceLevel : uint8;
 template<> struct TIsUEnumClass<EOculusXRProcessorPerformanceLevel> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRProcessorPerformanceLevel>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRProcessorPerformanceLevel>();
 // ********** End Enum EOculusXRProcessorPerformanceLevel ******************************************
 
 // ********** Begin Enum EOculusXRDeviceType *******************************************************
@@ -192,7 +197,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRProcessorPerformanceLevel>
 
 enum class EOculusXRDeviceType : uint8;
 template<> struct TIsUEnumClass<EOculusXRDeviceType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRDeviceType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRDeviceType>();
 // ********** End Enum EOculusXRDeviceType *********************************************************
 
 // ********** Begin Enum EOculusXRControllerType ***************************************************
@@ -205,7 +210,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRDeviceType>();
 
 enum class EOculusXRControllerType : uint8;
 template<> struct TIsUEnumClass<EOculusXRControllerType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRControllerType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRControllerType>();
 // ********** End Enum EOculusXRControllerType *****************************************************
 
 // ********** Begin Enum EOculusXRXrApi ************************************************************
@@ -215,7 +220,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRControllerType>();
 
 enum class EOculusXRXrApi : uint8;
 template<> struct TIsUEnumClass<EOculusXRXrApi> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRXrApi>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRXrApi>();
 // ********** End Enum EOculusXRXrApi **************************************************************
 
 // ********** Begin Enum EOculusXRControllerPoseAlignment ******************************************
@@ -226,7 +231,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRXrApi>();
 
 enum class EOculusXRControllerPoseAlignment : uint8;
 template<> struct TIsUEnumClass<EOculusXRControllerPoseAlignment> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRControllerPoseAlignment>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRControllerPoseAlignment>();
 // ********** End Enum EOculusXRControllerPoseAlignment ********************************************
 
 // ********** Begin Enum EOculusXROcclusionsMode ***************************************************
@@ -237,7 +242,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRControllerPoseAlignment>()
 
 enum class EOculusXROcclusionsMode : uint8;
 template<> struct TIsUEnumClass<EOculusXROcclusionsMode> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXROcclusionsMode>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXROcclusionsMode>();
 // ********** End Enum EOculusXROcclusionsMode *****************************************************
 
 // ********** Begin Enum EOculusXREyeBufferSharpenType *********************************************
@@ -249,7 +254,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXROcclusionsMode>();
 
 enum class EOculusXREyeBufferSharpenType : uint8;
 template<> struct TIsUEnumClass<EOculusXREyeBufferSharpenType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXREyeBufferSharpenType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXREyeBufferSharpenType>();
 // ********** End Enum EOculusXREyeBufferSharpenType ***********************************************
 
 // ********** Begin Enum EProcessorFavor ***********************************************************
@@ -260,7 +265,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXREyeBufferSharpenType>();
 
 enum class EProcessorFavor : int8;
 template<> struct TIsUEnumClass<EProcessorFavor> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EProcessorFavor>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EProcessorFavor>();
 // ********** End Enum EProcessorFavor *************************************************************
 
 // ********** Begin Enum EOculusXRHMDBodyTrackingFidelity ******************************************
@@ -271,7 +276,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EProcessorFavor>();
 
 enum class EOculusXRHMDBodyTrackingFidelity : uint8;
 template<> struct TIsUEnumClass<EOculusXRHMDBodyTrackingFidelity> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHMDBodyTrackingFidelity>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHMDBodyTrackingFidelity>();
 // ********** End Enum EOculusXRHMDBodyTrackingFidelity ********************************************
 
 // ********** Begin Enum EOculusXRHMDBodyJointSet **************************************************
@@ -281,7 +286,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHMDBodyTrackingFidelity>()
 
 enum class EOculusXRHMDBodyJointSet : uint8;
 template<> struct TIsUEnumClass<EOculusXRHMDBodyJointSet> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHMDBodyJointSet>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRHMDBodyJointSet>();
 // ********** End Enum EOculusXRHMDBodyJointSet ****************************************************
 
 // ********** Begin Enum EFaceTrackingDataSourceConfig *********************************************
@@ -291,7 +296,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRHMDBodyJointSet>();
 
 enum class EFaceTrackingDataSourceConfig : int8;
 template<> struct TIsUEnumClass<EFaceTrackingDataSourceConfig> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EFaceTrackingDataSourceConfig>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EFaceTrackingDataSourceConfig>();
 // ********** End Enum EFaceTrackingDataSourceConfig ***********************************************
 
 // ********** Begin Enum ESystemSplashBackgroundType ***********************************************
@@ -301,7 +306,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<EFaceTrackingDataSourceConfig>();
 
 enum class ESystemSplashBackgroundType : int8;
 template<> struct TIsUEnumClass<ESystemSplashBackgroundType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<ESystemSplashBackgroundType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<ESystemSplashBackgroundType>();
 // ********** End Enum ESystemSplashBackgroundType *************************************************
 
 // ********** Begin Enum EOculusXRMPPoseRestoreType ************************************************
@@ -312,7 +317,7 @@ template<> OCULUSXRHMD_API UEnum* StaticEnum<ESystemSplashBackgroundType>();
 
 enum class EOculusXRMPPoseRestoreType : uint8;
 template<> struct TIsUEnumClass<EOculusXRMPPoseRestoreType> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRMPPoseRestoreType>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRMPPoseRestoreType>();
 // ********** End Enum EOculusXRMPPoseRestoreType **************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

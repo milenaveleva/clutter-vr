@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FSceneTypesPlaceholder ********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h_10_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics; \
+struct Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h_10_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,7 +27,7 @@ struct FSceneTypesPlaceholder;
 // ********** End ScriptStruct FSceneTypesPlaceholder **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h
 
 // ********** Begin Enum EOculusXRBoundaryVisibility ***********************************************
 #define FOREACH_ENUM_EOCULUSXRBOUNDARYVISIBILITY(op) \
@@ -36,7 +37,7 @@ struct FSceneTypesPlaceholder;
 
 enum class EOculusXRBoundaryVisibility : uint8;
 template<> struct TIsUEnumClass<EOculusXRBoundaryVisibility> { enum { Value = true }; };
-template<> OCULUSXRSCENE_API UEnum* StaticEnum<EOculusXRBoundaryVisibility>();
+template<> OCULUSXRSCENE_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBoundaryVisibility>();
 // ********** End Enum EOculusXRBoundaryVisibility *************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

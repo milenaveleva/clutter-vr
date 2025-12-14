@@ -15,30 +15,30 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 enum class EOculusXRFaceExpression : uint8;
 
 // ********** Begin Class UOculusXRFaceTrackingComponent *******************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execClearExpressionValues); \
 	DECLARE_FUNCTION(execGetExpressionValue); \
 	DECLARE_FUNCTION(execSetExpressionValue);
 
 
+struct Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics;
 OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXRFaceTrackingComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRFaceTrackingComponent(); \
-	friend struct Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRFaceTrackingComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXRFaceTrackingComponent_NoRegister(); \
+	friend OCULUSXRMOVEMENT_API UClass* ::Z_Construct_UClass_UOculusXRFaceTrackingComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRFaceTrackingComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRMovement"), Z_Construct_UClass_UOculusXRFaceTrackingComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRFaceTrackingComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRFaceTrackingComponent(UOculusXRFaceTrackingComponent&&) = delete; \
 	UOculusXRFaceTrackingComponent(const UOculusXRFaceTrackingComponent&) = delete; \
@@ -48,13 +48,13 @@ public: \
 	NO_API virtual ~UOculusXRFaceTrackingComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_12_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_12_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -64,6 +64,6 @@ class UOculusXRFaceTrackingComponent;
 // ********** End Class UOculusXRFaceTrackingComponent *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRFaceTrackingComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

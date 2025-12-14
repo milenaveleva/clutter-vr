@@ -15,8 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
- struct FMRUKSpawnGroup;
 class AActor;
 class AMRUKAnchor;
 class AMRUKRoom;
@@ -27,46 +25,47 @@ enum class EMRUKSceneModel : uint8;
 struct FMRUKEnvironmentRaycastHit;
 struct FMRUKHit;
 struct FMRUKLabelFilter;
+struct FMRUKSpawnGroup;
 struct FOculusXRUInt64;
 struct FRandomStream;
 
 // ********** Begin Delegate FOnLoaded *************************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_43_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_43_DELEGATE \
 static void FOnLoaded_DelegateWrapper(const FMulticastScriptDelegate& OnLoaded, bool Success);
 
 
 // ********** End Delegate FOnLoaded ***************************************************************
 
 // ********** Begin Delegate FOnCaptureComplete ****************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_44_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_44_DELEGATE \
 static void FOnCaptureComplete_DelegateWrapper(const FMulticastScriptDelegate& OnCaptureComplete, bool Success);
 
 
 // ********** End Delegate FOnCaptureComplete ******************************************************
 
 // ********** Begin Delegate FOnRoomCreated ********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_45_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_45_DELEGATE \
 static void FOnRoomCreated_DelegateWrapper(const FMulticastScriptDelegate& OnRoomCreated, AMRUKRoom* Room);
 
 
 // ********** End Delegate FOnRoomCreated **********************************************************
 
 // ********** Begin Delegate FOnRoomUpdated ********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_46_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_46_DELEGATE \
 static void FOnRoomUpdated_DelegateWrapper(const FMulticastScriptDelegate& OnRoomUpdated, AMRUKRoom* Room);
 
 
 // ********** End Delegate FOnRoomUpdated **********************************************************
 
 // ********** Begin Delegate FOnRoomRemoved ********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_47_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_47_DELEGATE \
 static void FOnRoomRemoved_DelegateWrapper(const FMulticastScriptDelegate& OnRoomRemoved, AMRUKRoom* Room);
 
 
 // ********** End Delegate FOnRoomRemoved **********************************************************
 
 // ********** Begin Class UMRUKSubsystem ***********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSceneCaptureComplete); \
 	DECLARE_FUNCTION(execRaycastEnvironment); \
 	DECLARE_FUNCTION(execEnvironmentRaycasterStatus); \
@@ -90,20 +89,21 @@ static void FOnRoomRemoved_DelegateWrapper(const FMulticastScriptDelegate& OnRoo
 	DECLARE_FUNCTION(execRaycast);
 
 
+struct Z_Construct_UClass_UMRUKSubsystem_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKSubsystem_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKSubsystem(); \
-	friend struct Z_Construct_UClass_UMRUKSubsystem_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKSubsystem_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKSubsystem_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKSubsystem_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKSubsystem_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKSubsystem)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMRUKSubsystem(); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -115,13 +115,13 @@ public: \
 	NO_API virtual ~UMRUKSubsystem();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_37_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_37_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h_40_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -131,6 +131,6 @@ class UMRUKSubsystem;
 // ********** End Class UMRUKSubsystem *************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

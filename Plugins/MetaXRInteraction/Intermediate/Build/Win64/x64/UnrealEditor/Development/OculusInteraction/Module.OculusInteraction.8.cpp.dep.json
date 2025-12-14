@@ -364,8 +364,7 @@
             "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\private\\isdkcontrollermeshcomponent.cpp",
             "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\public\\isdkcontrollermeshcomponent.h",
             "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\intermediate\\build\\win64\\unrealeditor\\inc\\oculusinteraction\\uht\\isdkcontrollermeshcomponent.generated.h",
-            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\private\\isdkfunctionlibrary.cpp",
-            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\private\\isdkhanddata.cpp"
+            "d:\\git\\cluttervr\\plugins\\metaxrinteraction\\source\\oculusinteraction\\private\\isdkfunctionlibrary.cpp"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

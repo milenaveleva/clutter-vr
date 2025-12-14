@@ -9,7 +9,7 @@
 #include "OculusXRHMDTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRFunctionLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -57,16 +57,22 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Adds loading splash screen with parameters\n\x09 *\n\x09 * @param Texture\x09\x09\x09(in) A texture asset to be used for the splash.\n\x09 * @param TranslationInMeters (in) Initial translation of the center of the splash screen (in meters).\n\x09 * @param Rotation\x09\x09\x09(in) Initial rotation of the splash screen, with the origin at the center of the splash screen.\n\x09 * @param SizeInMeters\x09\x09(in) Size, in meters, of the quad with the splash screen.\n\x09 * @param DeltaRotation\x09\x09(in) Incremental rotation, that is added each 2nd frame to the quad transform. The quad is rotated around the center of the quad.\n\x09 * @param bClearBeforeAdd\x09(in) If true, clears splashes before adding a new one.\n\x09 */" },
+#endif
 		{ "CPP_Default_bClearBeforeAdd", "false" },
 		{ "CPP_Default_DeltaRotation", "" },
 		{ "CPP_Default_SizeInMeters", "(X=1.000,Y=1.000)" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use Add Loading Screen Splash from the Head Mounted Display Loading Screen functions instead." },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Adds loading splash screen with parameters\n\n@param Texture                       (in) A texture asset to be used for the splash.\n@param TranslationInMeters (in) Initial translation of the center of the splash screen (in meters).\n@param Rotation                      (in) Initial rotation of the splash screen, with the origin at the center of the splash screen.\n@param SizeInMeters          (in) Size, in meters, of the quad with the splash screen.\n@param DeltaRotation         (in) Incremental rotation, that is added each 2nd frame to the quad transform. The quad is rotated around the center of the quad.\n@param bClearBeforeAdd       (in) If true, clears splashes before adding a new one." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AddLoadingSplashScreen constinit property declarations ****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Texture;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TranslationInMeters;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Rotation;
@@ -75,8 +81,11 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Sta
 	static void NewProp_bClearBeforeAdd_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bClearBeforeAdd;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AddLoadingSplashScreen constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function AddLoadingSplashScreen Property Definitions ***************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::NewProp_Texture = { "Texture", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventAddLoadingSplashScreen_Parms, Texture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::NewProp_TranslationInMeters = { "TranslationInMeters", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventAddLoadingSplashScreen_Parms, TranslationInMeters), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::NewProp_Rotation = { "Rotation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventAddLoadingSplashScreen_Parms, Rotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
@@ -96,7 +105,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::NewProp_bClearBeforeAdd,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "AddLoadingSplashScreen", Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::OculusXRFunctionLibrary_eventAddLoadingSplashScreen_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::Function_MetaDataParams)},  };
+// ********** End Function AddLoadingSplashScreen Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "AddLoadingSplashScreen", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::OculusXRFunctionLibrary_eventAddLoadingSplashScreen_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen_Statics::OculusXRFunctionLibrary_eventAddLoadingSplashScreen_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen()
 {
@@ -128,16 +141,26 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Removes all the splash screens.\n\x09 */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use Clear Loading Screen Splashes from the Head Mounted Display Loading Screen functions instead." },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Removes all the splash screens." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ClearLoadingSplashScreens constinit property declarations *************
+// ********** End Function ClearLoadingSplashScreens constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "ClearLoadingSplashScreens", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "ClearLoadingSplashScreens", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -166,16 +189,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Enables/disables orientation tracking on devices that support it.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enables/disables orientation tracking on devices that support it." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function EnableOrientationTracking constinit property declarations *************
 	static void NewProp_bOrientationTracking_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bOrientationTracking;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function EnableOrientationTracking constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function EnableOrientationTracking Property Definitions ************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::NewProp_bOrientationTracking_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventEnableOrientationTracking_Parms*)Obj)->bOrientationTracking = 1;
@@ -185,7 +217,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::NewProp_bOrientationTracking,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "EnableOrientationTracking", Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::OculusXRFunctionLibrary_eventEnableOrientationTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function EnableOrientationTracking Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "EnableOrientationTracking", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::OculusXRFunctionLibrary_eventEnableOrientationTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking_Statics::OculusXRFunctionLibrary_eventEnableOrientationTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking()
 {
@@ -216,16 +252,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Enables/disables positional tracking on devices that support it.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Enables/disables positional tracking on devices that support it." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function EnablePositionTracking constinit property declarations ****************
 	static void NewProp_bPositionTracking_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bPositionTracking;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function EnablePositionTracking constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function EnablePositionTracking Property Definitions ***************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::NewProp_bPositionTracking_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventEnablePositionTracking_Parms*)Obj)->bPositionTracking = 1;
@@ -235,7 +280,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::NewProp_bPositionTracking,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "EnablePositionTracking", Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::OculusXRFunctionLibrary_eventEnablePositionTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function EnablePositionTracking Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "EnablePositionTracking", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::OculusXRFunctionLibrary_eventEnablePositionTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking_Statics::OculusXRFunctionLibrary_eventEnablePositionTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking()
 {
@@ -266,16 +315,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequen
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the current available frequencies\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the current available frequencies" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetAvailableDisplayFrequencies constinit property declarations ********
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetAvailableDisplayFrequencies constinit property declarations **********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetAvailableDisplayFrequencies Property Definitions *******************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetAvailableDisplayFrequencies_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::PropPointers[] = {
@@ -283,7 +341,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetAvailableDisplayFrequencies", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::OculusXRFunctionLibrary_eventGetAvailableDisplayFrequencies_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetAvailableDisplayFrequencies Property Definitions *********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetAvailableDisplayFrequencies", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::OculusXRFunctionLibrary_eventGetAvailableDisplayFrequencies_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies_Statics::OculusXRFunctionLibrary_eventGetAvailableDisplayFrequencies_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies()
 {
@@ -314,16 +376,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffs
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns current base rotation and base offset.\n\x09 * The base offset is currently used base position offset, previously set by the\n\x09 * ResetPosition or SetBasePositionOffset calls. It represents a vector that translates the HMD's position\n\x09 * into (0,0,0) point, in meters.\n\x09 * The axis of the vector are the same as in Unreal: X - forward, Y - right, Z - up.\n\x09 *\n\x09 * @param OutRotation\x09\x09\x09(out) Rotator object with base rotation\n\x09 * @param OutBaseOffsetInMeters\x09(out) base position offset, vector, in meters.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns current base rotation and base offset.\nThe base offset is currently used base position offset, previously set by the\nResetPosition or SetBasePositionOffset calls. It represents a vector that translates the HMD's position\ninto (0,0,0) point, in meters.\nThe axis of the vector are the same as in Unreal: X - forward, Y - right, Z - up.\n\n@param OutRotation                   (out) Rotator object with base rotation\n@param OutBaseOffsetInMeters (out) base position offset, vector, in meters." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetBaseRotationAndBaseOffsetInMeters constinit property declarations **
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutRotation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutBaseOffsetInMeters;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetBaseRotationAndBaseOffsetInMeters constinit property declarations ****
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetBaseRotationAndBaseOffsetInMeters Property Definitions *************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_OutRotation = { "OutRotation", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetBaseRotationAndBaseOffsetInMeters_Parms, OutRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_OutBaseOffsetInMeters = { "OutBaseOffsetInMeters", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetBaseRotationAndBaseOffsetInMeters_Parms, OutBaseOffsetInMeters), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers[] = {
@@ -331,7 +402,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_OutBaseOffsetInMeters,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetBaseRotationAndBaseOffsetInMeters", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::OculusXRFunctionLibrary_eventGetBaseRotationAndBaseOffsetInMeters_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetBaseRotationAndBaseOffsetInMeters Property Definitions ***************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetBaseRotationAndBaseOffsetInMeters", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::OculusXRFunctionLibrary_eventGetBaseRotationAndBaseOffsetInMeters_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters_Statics::OculusXRFunctionLibrary_eventGetBaseRotationAndBaseOffsetInMeters_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters()
 {
@@ -364,18 +439,27 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPosition
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns current base rotation and position offset.\n\x09 *\n\x09 * @param OutRot\x09\x09\x09(out) Rotator object with base rotation\n\x09 * @param OutPosOffset\x09\x09(out) the vector with previously set position offset.\n\x09 */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "A hack, proper camera positioning should be used" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns current base rotation and position offset.\n\n@param OutRot                        (out) Rotator object with base rotation\n@param OutPosOffset          (out) the vector with previously set position offset." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetBaseRotationAndPositionOffset constinit property declarations ******
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutRot;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosOffset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetBaseRotationAndPositionOffset constinit property declarations ********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetBaseRotationAndPositionOffset Property Definitions *****************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::NewProp_OutRot = { "OutRot", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetBaseRotationAndPositionOffset_Parms, OutRot), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::NewProp_OutPosOffset = { "OutPosOffset", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetBaseRotationAndPositionOffset_Parms, OutPosOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::PropPointers[] = {
@@ -383,7 +467,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::NewProp_OutPosOffset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetBaseRotationAndPositionOffset", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::OculusXRFunctionLibrary_eventGetBaseRotationAndPositionOffset_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetBaseRotationAndPositionOffset Property Definitions *******************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetBaseRotationAndPositionOffset", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::OculusXRFunctionLibrary_eventGetBaseRotationAndPositionOffset_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset_Statics::OculusXRFunctionLibrary_eventGetBaseRotationAndPositionOffset_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset()
 {
@@ -416,22 +504,31 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the current controller's type\n\x09 * @param deviceHand\x09\x09\x09\x09(in) The hand to get the position from\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the current controller's type\n@param deviceHand                            (in) The hand to get the position from" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetControllerType constinit property declarations *********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_deviceHand_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_deviceHand;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetControllerType constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetControllerType Property Definitions ********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_deviceHand_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_deviceHand = { "deviceHand", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetControllerType_Parms, deviceHand), Z_Construct_UEnum_InputCore_EControllerHand, METADATA_PARAMS(0, nullptr) }; // 775183092
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_deviceHand = { "deviceHand", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetControllerType_Parms, deviceHand), Z_Construct_UEnum_InputCore_EControllerHand, METADATA_PARAMS(0, nullptr) }; // 2622541921
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetControllerType_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRControllerType, METADATA_PARAMS(0, nullptr) }; // 3572997132
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetControllerType_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRControllerType, METADATA_PARAMS(0, nullptr) }; // 3250958783
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_deviceHand_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_deviceHand,
@@ -439,7 +536,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetControllerType", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::OculusXRFunctionLibrary_eventGetControllerType_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetControllerType Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetControllerType", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::OculusXRFunctionLibrary_eventGetControllerType_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType_Statics::OculusXRFunctionLibrary_eventGetControllerType_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType()
 {
@@ -470,21 +571,34 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the current display frequency\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the current display frequency" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCurrentDisplayFrequency constinit property declarations ************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCurrentDisplayFrequency constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCurrentDisplayFrequency Property Definitions ***********************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetCurrentDisplayFrequency_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetCurrentDisplayFrequency", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::OculusXRFunctionLibrary_eventGetCurrentDisplayFrequency_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCurrentDisplayFrequency Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetCurrentDisplayFrequency", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::OculusXRFunctionLibrary_eventGetCurrentDisplayFrequency_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency_Statics::OculusXRFunctionLibrary_eventGetCurrentDisplayFrequency_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency()
 {
@@ -519,16 +633,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDeviceName constinit property declarations *************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDeviceName constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetDeviceName Property Definitions ************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetDeviceName_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetDeviceName", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::OculusXRFunctionLibrary_eventGetDeviceName_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDeviceName Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetDeviceName", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::OculusXRFunctionLibrary_eventGetDeviceName_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName_Statics::OculusXRFunctionLibrary_eventGetDeviceName_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName()
 {
@@ -561,19 +684,28 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDeviceType constinit property declarations *************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDeviceType constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetDeviceType Property Definitions ************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetDeviceType_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRDeviceType, METADATA_PARAMS(0, nullptr) }; // 821049312
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetDeviceType_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRDeviceType, METADATA_PARAMS(0, nullptr) }; // 651279978
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetDeviceType", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::OculusXRFunctionLibrary_eventGetDeviceType_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDeviceType Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetDeviceType", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::OculusXRFunctionLibrary_eventGetDeviceType_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType_Statics::OculusXRFunctionLibrary_eventGetDeviceType_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType()
 {
@@ -603,16 +735,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRende
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns whether eye-tracked foveated rendering is supported or not\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns whether eye-tracked foveated rendering is supported or not" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetEyeTrackedFoveatedRenderingSupported constinit property declarations 
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetEyeTrackedFoveatedRenderingSupported constinit property declarations *
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetEyeTrackedFoveatedRenderingSupported Property Definitions **********
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventGetEyeTrackedFoveatedRenderingSupported_Parms*)Obj)->ReturnValue = 1;
@@ -622,7 +763,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetEyeTrackedFoveatedRenderingSupported", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::OculusXRFunctionLibrary_eventGetEyeTrackedFoveatedRenderingSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetEyeTrackedFoveatedRenderingSupported Property Definitions ************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetEyeTrackedFoveatedRenderingSupported", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::OculusXRFunctionLibrary_eventGetEyeTrackedFoveatedRenderingSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported_Statics::OculusXRFunctionLibrary_eventGetEyeTrackedFoveatedRenderingSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported()
 {
@@ -652,24 +797,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the current multiresolution level\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the current multiresolution level" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetFoveatedRenderingLevel constinit property declarations *************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetFoveatedRenderingLevel constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetFoveatedRenderingLevel Property Definitions ************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetFoveatedRenderingLevel_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingLevel, METADATA_PARAMS(0, nullptr) }; // 2300058379
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetFoveatedRenderingLevel_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingLevel, METADATA_PARAMS(0, nullptr) }; // 4276299897
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetFoveatedRenderingLevel", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::OculusXRFunctionLibrary_eventGetFoveatedRenderingLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetFoveatedRenderingLevel Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetFoveatedRenderingLevel", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::OculusXRFunctionLibrary_eventGetFoveatedRenderingLevel_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel_Statics::OculusXRFunctionLibrary_eventGetFoveatedRenderingLevel_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel()
 {
@@ -699,24 +857,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the foveated rendering method currently being used.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the foveated rendering method currently being used." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetFoveatedRenderingMethod constinit property declarations ************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetFoveatedRenderingMethod constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetFoveatedRenderingMethod Property Definitions ***********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetFoveatedRenderingMethod_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingMethod, METADATA_PARAMS(0, nullptr) }; // 1262503363
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetFoveatedRenderingMethod_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingMethod, METADATA_PARAMS(0, nullptr) }; // 2006257204
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetFoveatedRenderingMethod", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::OculusXRFunctionLibrary_eventGetFoveatedRenderingMethod_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetFoveatedRenderingMethod Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetFoveatedRenderingMethod", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::OculusXRFunctionLibrary_eventGetFoveatedRenderingMethod_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod_Statics::OculusXRFunctionLibrary_eventGetFoveatedRenderingMethod_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod()
 {
@@ -746,21 +917,34 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the GPU frame time on supported mobile platforms (Go for now)\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the GPU frame time on supported mobile platforms (Go for now)" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetGPUFrameTime constinit property declarations ***********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetGPUFrameTime constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetGPUFrameTime Property Definitions **********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetGPUFrameTime_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGPUFrameTime", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::OculusXRFunctionLibrary_eventGetGPUFrameTime_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetGPUFrameTime Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGPUFrameTime", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::OculusXRFunctionLibrary_eventGetGPUFrameTime_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime_Statics::OculusXRFunctionLibrary_eventGetGPUFrameTime_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime()
 {
@@ -791,17 +975,26 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the GPU utilization availability and value\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the GPU utilization availability and value" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetGPUUtilization constinit property declarations *********************
 	static void NewProp_IsGPUAvailable_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsGPUAvailable;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_GPUUtilization;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetGPUUtilization constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetGPUUtilization Property Definitions ********************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::NewProp_IsGPUAvailable_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventGetGPUUtilization_Parms*)Obj)->IsGPUAvailable = 1;
@@ -813,7 +1006,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::NewProp_GPUUtilization,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGPUUtilization", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::OculusXRFunctionLibrary_eventGetGPUUtilization_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetGPUUtilization Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGPUUtilization", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::OculusXRFunctionLibrary_eventGetGPUUtilization_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization_Statics::OculusXRFunctionLibrary_eventGetGPUUtilization_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization()
 {
@@ -846,19 +1043,28 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|Guardian" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the dimensions in UE world space of the requested Boundary Type\n\x09 * @param BoundaryType\x09\x09\x09(in) An enum representing the boundary type requested, either Outer Boundary (exact guardian bounds) or PlayArea (rectangle inside the Outer Boundary)\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the dimensions in UE world space of the requested Boundary Type\n@param BoundaryType                  (in) An enum representing the boundary type requested, either Outer Boundary (exact guardian bounds) or PlayArea (rectangle inside the Outer Boundary)" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetGuardianDimensions constinit property declarations *****************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_BoundaryType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_BoundaryType;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetGuardianDimensions constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetGuardianDimensions Property Definitions ****************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::NewProp_BoundaryType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetGuardianDimensions_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 555376468
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetGuardianDimensions_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 2196551619
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetGuardianDimensions_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::NewProp_BoundaryType_Underlying,
@@ -866,7 +1072,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGuardianDimensions", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::OculusXRFunctionLibrary_eventGetGuardianDimensions_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetGuardianDimensions Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGuardianDimensions", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::OculusXRFunctionLibrary_eventGetGuardianDimensions_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions_Statics::OculusXRFunctionLibrary_eventGetGuardianDimensions_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions()
 {
@@ -899,12 +1109,18 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|Guardian" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the list of points in UE world space of the requested Boundary Type\n\x09 * @param BoundaryType\x09\x09\x09(in) An enum representing the boundary type requested, either Outer Boundary (exact guardian bounds) or PlayArea (rectangle inside the Outer Boundary)\n\x09 * @param UsePawnSpace\x09\x09\x09(in) Boolean indicating to return the points in world space or pawn space\n\x09 */" },
+#endif
 		{ "CPP_Default_UsePawnSpace", "false" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the list of points in UE world space of the requested Boundary Type\n@param BoundaryType                  (in) An enum representing the boundary type requested, either Outer Boundary (exact guardian bounds) or PlayArea (rectangle inside the Outer Boundary)\n@param UsePawnSpace                  (in) Boolean indicating to return the points in world space or pawn space" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetGuardianPoints constinit property declarations *********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_BoundaryType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_BoundaryType;
 	static void NewProp_UsePawnSpace_SetBit(void* Obj);
@@ -912,10 +1128,13 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetGuardianPoints constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetGuardianPoints Property Definitions ********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::NewProp_BoundaryType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetGuardianPoints_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 555376468
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetGuardianPoints_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 2196551619
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::NewProp_UsePawnSpace_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventGetGuardianPoints_Parms*)Obj)->UsePawnSpace = 1;
@@ -931,7 +1150,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGuardianPoints", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::OculusXRFunctionLibrary_eventGetGuardianPoints_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetGuardianPoints Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetGuardianPoints", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::OculusXRFunctionLibrary_eventGetGuardianPoints_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints_Statics::OculusXRFunctionLibrary_eventGetGuardianPoints_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints()
 {
@@ -963,24 +1186,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the color space of the target HMD\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the color space of the target HMD" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHmdColorDesc constinit property declarations ***********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHmdColorDesc constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHmdColorDesc Property Definitions **********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetHmdColorDesc_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRColorSpace, METADATA_PARAMS(0, nullptr) }; // 2401649762
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetHmdColorDesc_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRColorSpace, METADATA_PARAMS(0, nullptr) }; // 1573344748
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetHmdColorDesc", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::OculusXRFunctionLibrary_eventGetHmdColorDesc_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHmdColorDesc Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetHmdColorDesc", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::OculusXRFunctionLibrary_eventGetHmdColorDesc_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc_Statics::OculusXRFunctionLibrary_eventGetHmdColorDesc_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc()
 {
@@ -1015,19 +1251,24 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersectio
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetNodeGuardianIntersection constinit property declarations ***********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DeviceType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_DeviceType;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_BoundaryType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_BoundaryType;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetNodeGuardianIntersection constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetNodeGuardianIntersection Property Definitions **********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_DeviceType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms, DeviceType), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(0, nullptr) }; // 3212330336
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms, DeviceType), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(0, nullptr) }; // 3067353067
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_BoundaryType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 555376468
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRGuardianTestResult, METADATA_PARAMS(0, nullptr) }; // 749733336
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 2196551619
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRGuardianTestResult, METADATA_PARAMS(0, nullptr) }; // 4266384685
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_DeviceType_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_DeviceType,
@@ -1036,7 +1277,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetNodeGuardianIntersection", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetNodeGuardianIntersection Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetNodeGuardianIntersection", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection_Statics::OculusXRFunctionLibrary_eventGetNodeGuardianIntersection_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection()
 {
@@ -1068,21 +1313,34 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the performance metrics\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the performance metrics" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPerformanceMetrics constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PerformanceMetrics;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPerformanceMetrics constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::NewProp_PerformanceMetrics = { "PerformanceMetrics", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPerformanceMetrics_Parms, PerformanceMetrics), Z_Construct_UScriptStruct_FOculusXRPerformanceMetrics, METADATA_PARAMS(0, nullptr) }; // 1243206202
+
+// ********** Begin Function GetPerformanceMetrics Property Definitions ****************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::NewProp_PerformanceMetrics = { "PerformanceMetrics", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPerformanceMetrics_Parms, PerformanceMetrics), Z_Construct_UScriptStruct_FOculusXRPerformanceMetrics, METADATA_PARAMS(0, nullptr) }; // 3112007864
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::NewProp_PerformanceMetrics,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPerformanceMetrics", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::OculusXRFunctionLibrary_eventGetPerformanceMetrics_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPerformanceMetrics Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPerformanceMetrics", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::OculusXRFunctionLibrary_eventGetPerformanceMetrics_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics_Statics::OculusXRFunctionLibrary_eventGetPerformanceMetrics_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics()
 {
@@ -1113,21 +1371,34 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|Guardian" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns the transform of the play area rectangle, defining its position, rotation and scale to apply to a unit cube to match it with the play area.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the transform of the play area rectangle, defining its position, rotation and scale to apply to a unit cube to match it with the play area." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPlayAreaTransform constinit property declarations ******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPlayAreaTransform constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPlayAreaTransform Property Definitions *****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPlayAreaTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPlayAreaTransform", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::OculusXRFunctionLibrary_eventGetPlayAreaTransform_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPlayAreaTransform Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPlayAreaTransform", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::OculusXRFunctionLibrary_eventGetPlayAreaTransform_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform_Statics::OculusXRFunctionLibrary_eventGetPlayAreaTransform_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform()
 {
@@ -1165,17 +1436,22 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersecti
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPointGuardianIntersection constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Point;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_BoundaryType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_BoundaryType;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPointGuardianIntersection constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPointGuardianIntersection Property Definitions *********************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_Point = { "Point", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms, Point), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Point_MetaData), NewProp_Point_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_BoundaryType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 555376468
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRGuardianTestResult, METADATA_PARAMS(0, nullptr) }; // 749733336
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_BoundaryType = { "BoundaryType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms, BoundaryType), Z_Construct_UEnum_OculusXRHMD_EOculusXRBoundaryType, METADATA_PARAMS(0, nullptr) }; // 2196551619
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRGuardianTestResult, METADATA_PARAMS(0, nullptr) }; // 4266384685
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_Point,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_BoundaryType_Underlying,
@@ -1183,7 +1459,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPointGuardianIntersection", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPointGuardianIntersection Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPointGuardianIntersection", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection_Statics::OculusXRFunctionLibrary_eventGetPointGuardianIntersection_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection()
 {
@@ -1220,17 +1500,23 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Grabs the current orientation and position for the HMD.  If positional tracking is not available, DevicePosition will be a zero vector\n\x09 *\n\x09 * @param DeviceRotation\x09(out) The device's current rotation\n\x09 * @param DevicePosition\x09(out) The device's current position, in its own tracking space\n\x09 * @param NeckPosition\x09\x09(out) The estimated neck position, calculated using NeckToEye vector from User Profile. Same coordinate space as DevicePosition.\n\x09 * @param bUseOrienationForPlayerCamera\x09(in) Should be set to 'true' if the orientation is going to be used to update orientation of the camera manually.\n\x09 * @param bUsePositionForPlayerCamera\x09(in) Should be set to 'true' if the position is going to be used to update position of the camera manually.\n\x09 * @param PositionScale\x09\x09(in) The 3D scale that will be applied to position.\n\x09 */" },
+#endif
 		{ "CPP_Default_bUseOrienationForPlayerCamera", "false" },
 		{ "CPP_Default_bUsePositionForPlayerCamera", "false" },
 		{ "CPP_Default_PositionScale", "" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Grabs the current orientation and position for the HMD.  If positional tracking is not available, DevicePosition will be a zero vector\n\n@param DeviceRotation        (out) The device's current rotation\n@param DevicePosition        (out) The device's current position, in its own tracking space\n@param NeckPosition          (out) The estimated neck position, calculated using NeckToEye vector from User Profile. Same coordinate space as DevicePosition.\n@param bUseOrienationForPlayerCamera (in) Should be set to 'true' if the orientation is going to be used to update orientation of the camera manually.\n@param bUsePositionForPlayerCamera   (in) Should be set to 'true' if the position is going to be used to update position of the camera manually.\n@param PositionScale         (in) The 3D scale that will be applied to position." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PositionScale_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPose constinit property declarations *******************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DeviceRotation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DevicePosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_NeckPosition;
@@ -1240,8 +1526,11 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bUsePositionForPlayerCamera;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PositionScale;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPose constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPose Property Definitions ******************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::NewProp_DeviceRotation = { "DeviceRotation", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPose_Parms, DeviceRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::NewProp_DevicePosition = { "DevicePosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPose_Parms, DevicePosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::NewProp_NeckPosition = { "NeckPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetPose_Parms, NeckPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
@@ -1265,7 +1554,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::NewProp_PositionScale,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPose", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::OculusXRFunctionLibrary_eventGetPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPose Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetPose", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::OculusXRFunctionLibrary_eventGetPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose_Statics::OculusXRFunctionLibrary_eventGetPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose()
 {
@@ -1306,12 +1599,18 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Reports raw sensor data. If HMD doesn't support any of the parameters then it will be set to zero.\n\x09 *\n\x09 * @param AngularAcceleration\x09[Deprecated] (out) Angular acceleration in radians per second per second.\n\x09 * @param LinearAcceleration\x09\x09[Deprecated] (out) Acceleration in meters per second per second.\n\x09 * @param AngularVelocity\x09\x09(out) Angular velocity in radians per second.\n\x09 * @param LinearVelocity\x09\x09\x09(out) Velocity in meters per second.\n\x09 * @param TimeInSeconds\x09\x09\x09(out) Time when the reported IMU reading took place, in seconds.\n\x09 */" },
+#endif
 		{ "CPP_Default_DeviceType", "HMD" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Reports raw sensor data. If HMD doesn't support any of the parameters then it will be set to zero.\n\n@param AngularAcceleration   [Deprecated] (out) Angular acceleration in radians per second per second.\n@param LinearAcceleration            [Deprecated] (out) Acceleration in meters per second per second.\n@param AngularVelocity               (out) Angular velocity in radians per second.\n@param LinearVelocity                        (out) Velocity in meters per second.\n@param TimeInSeconds                 (out) Time when the reported IMU reading took place, in seconds." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRawSensorData constinit property declarations **********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AngularAcceleration;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_LinearAcceleration;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AngularVelocity;
@@ -1320,15 +1619,18 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DeviceType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_DeviceType;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRawSensorData constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRawSensorData Property Definitions *********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_AngularAcceleration = { "AngularAcceleration", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, AngularAcceleration), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_LinearAcceleration = { "LinearAcceleration", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, LinearAcceleration), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_AngularVelocity = { "AngularVelocity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, AngularVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_LinearVelocity = { "LinearVelocity", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, LinearVelocity), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_TimeInSeconds = { "TimeInSeconds", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, TimeInSeconds), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_DeviceType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, DeviceType), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(0, nullptr) }; // 3212330336
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetRawSensorData_Parms, DeviceType), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(0, nullptr) }; // 3067353067
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_AngularAcceleration,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_LinearAcceleration,
@@ -1339,7 +1641,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::NewProp_DeviceType,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetRawSensorData", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::OculusXRFunctionLibrary_eventGetRawSensorData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRawSensorData Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetRawSensorData", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::OculusXRFunctionLibrary_eventGetRawSensorData_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData_Statics::OculusXRFunctionLibrary_eventGetRawSensorData_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData()
 {
@@ -1376,22 +1682,31 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerfo
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get the suggested CPU and GPU levels to the Oculus device.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the suggested CPU and GPU levels to the Oculus device." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSuggestedCpuAndGpuPerformanceLevels constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CpuPerfLevel_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CpuPerfLevel;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_GpuPerfLevel_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_GpuPerfLevel;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSuggestedCpuAndGpuPerformanceLevels constinit property declarations **
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSuggestedCpuAndGpuPerformanceLevels Property Definitions ***********
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel = { "CpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms, CpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 1326426722
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel = { "CpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms, CpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 2669467903
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel = { "GpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms, GpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 1326426722
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel = { "GpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms, GpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 2669467903
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel,
@@ -1399,7 +1714,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetSuggestedCpuAndGpuPerformanceLevels", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSuggestedCpuAndGpuPerformanceLevels Property Definitions *************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetSuggestedCpuAndGpuPerformanceLevels", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels_Statics::OculusXRFunctionLibrary_eventGetSuggestedCpuAndGpuPerformanceLevels_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels()
 {
@@ -1431,16 +1750,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnable
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns true if system headset is in 3dof mode\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns true if system headset is in 3dof mode" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSystemHmd3DofModeEnabled constinit property declarations ***********
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSystemHmd3DofModeEnabled constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSystemHmd3DofModeEnabled Property Definitions **********************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventGetSystemHmd3DofModeEnabled_Parms*)Obj)->ReturnValue = 1;
@@ -1450,7 +1778,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetSystemHmd3DofModeEnabled", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::OculusXRFunctionLibrary_eventGetSystemHmd3DofModeEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSystemHmd3DofModeEnabled Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetSystemHmd3DofModeEnabled", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::OculusXRFunctionLibrary_eventGetSystemHmd3DofModeEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled_Statics::OculusXRFunctionLibrary_eventGetSystemHmd3DofModeEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled()
 {
@@ -1481,18 +1813,27 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns current user profile.\n\x09 *\n\x09 * @param Profile\x09\x09(out) Structure to hold current user profile.\n\x09 * @return (boolean)\x09True, if user profile was acquired.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns current user profile.\n\n@param Profile               (out) Structure to hold current user profile.\n@return (boolean)    True, if user profile was acquired." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetUserProfile constinit property declarations ************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Profile;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetUserProfile constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::NewProp_Profile = { "Profile", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetUserProfile_Parms, Profile), Z_Construct_UScriptStruct_FOculusXRHmdUserProfile, METADATA_PARAMS(0, nullptr) }; // 3558017850
+
+// ********** Begin Function GetUserProfile Property Definitions ***********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::NewProp_Profile = { "Profile", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetUserProfile_Parms, Profile), Z_Construct_UScriptStruct_FOculusXRHmdUserProfile, METADATA_PARAMS(0, nullptr) }; // 3162619073
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventGetUserProfile_Parms*)Obj)->ReturnValue = 1;
@@ -1503,7 +1844,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetUserProfile", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::OculusXRFunctionLibrary_eventGetUserProfile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetUserProfile Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetUserProfile", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::OculusXRFunctionLibrary_eventGetUserProfile_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile_Statics::OculusXRFunctionLibrary_eventGetUserProfile_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile()
 {
@@ -1534,24 +1879,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns currently selected MetaXR XrApi backend\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns currently selected MetaXR XrApi backend" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetXrApi constinit property declarations ******************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetXrApi constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetXrApi Property Definitions *****************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetXrApi_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRXrApi, METADATA_PARAMS(0, nullptr) }; // 1207513983
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventGetXrApi_Parms, ReturnValue), Z_Construct_UEnum_OculusXRHMD_EOculusXRXrApi, METADATA_PARAMS(0, nullptr) }; // 2693423584
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetXrApi", Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::OculusXRFunctionLibrary_eventGetXrApi_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetXrApi Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "GetXrApi", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::OculusXRFunctionLibrary_eventGetXrApi_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi_Statics::OculusXRFunctionLibrary_eventGetXrApi_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi()
 {
@@ -1581,16 +1939,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns true, if the app has input focus.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns true, if the app has input focus." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HasInputFocus constinit property declarations *************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HasInputFocus constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HasInputFocus Property Definitions ************************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventHasInputFocus_Parms*)Obj)->ReturnValue = 1;
@@ -1600,7 +1967,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "HasInputFocus", Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::OculusXRFunctionLibrary_eventHasInputFocus_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::Function_MetaDataParams)},  };
+// ********** End Function HasInputFocus Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "HasInputFocus", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::OculusXRFunctionLibrary_eventHasInputFocus_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus_Statics::OculusXRFunctionLibrary_eventHasInputFocus_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus()
 {
@@ -1630,16 +2001,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns true, if the system overlay is present.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns true, if the system overlay is present." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HasSystemOverlayPresent constinit property declarations ***************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HasSystemOverlayPresent constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HasSystemOverlayPresent Property Definitions **************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventHasSystemOverlayPresent_Parms*)Obj)->ReturnValue = 1;
@@ -1649,7 +2029,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "HasSystemOverlayPresent", Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::OculusXRFunctionLibrary_eventHasSystemOverlayPresent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::Function_MetaDataParams)},  };
+// ********** End Function HasSystemOverlayPresent Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "HasSystemOverlayPresent", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::OculusXRFunctionLibrary_eventHasSystemOverlayPresent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent_Statics::OculusXRFunctionLibrary_eventHasSystemOverlayPresent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent()
 {
@@ -1679,16 +2063,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupporte
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Checks if color passthrough is supported\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks if color passthrough is supported" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsColorPassthroughSupported constinit property declarations ***********
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsColorPassthroughSupported constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsColorPassthroughSupported Property Definitions **********************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsColorPassthroughSupported_Parms*)Obj)->ReturnValue = 1;
@@ -1698,7 +2091,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsColorPassthroughSupported", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::OculusXRFunctionLibrary_eventIsColorPassthroughSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsColorPassthroughSupported Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsColorPassthroughSupported", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::OculusXRFunctionLibrary_eventIsColorPassthroughSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported_Statics::OculusXRFunctionLibrary_eventIsColorPassthroughSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported()
 {
@@ -1729,20 +2126,29 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns if the device is currently tracked by the runtime or not.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns if the device is currently tracked by the runtime or not." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsDeviceTracked constinit property declarations ***********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_DeviceType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_DeviceType;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsDeviceTracked constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsDeviceTracked Property Definitions **********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::NewProp_DeviceType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventIsDeviceTracked_Parms, DeviceType), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(0, nullptr) }; // 3212330336
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::NewProp_DeviceType = { "DeviceType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventIsDeviceTracked_Parms, DeviceType), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(0, nullptr) }; // 3067353067
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsDeviceTracked_Parms*)Obj)->ReturnValue = 1;
@@ -1754,7 +2160,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsDeviceTracked", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::OculusXRFunctionLibrary_eventIsDeviceTracked_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsDeviceTracked Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsDeviceTracked", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::OculusXRFunctionLibrary_eventIsDeviceTracked_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked_Statics::OculusXRFunctionLibrary_eventIsDeviceTracked_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked()
 {
@@ -1785,16 +2195,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns true if StartEnvironmentDepth() has been called and is currently running.\n\x09 * If called right after calling StartEnvironmentDepth() it'll return false as it needs some time for EnvironmentDepth to start\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns true if StartEnvironmentDepth() has been called and is currently running.\nIf called right after calling StartEnvironmentDepth() it'll return false as it needs some time for EnvironmentDepth to start" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsEnvironmentDepthStarted constinit property declarations *************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsEnvironmentDepthStarted constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsEnvironmentDepthStarted Property Definitions ************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsEnvironmentDepthStarted_Parms*)Obj)->ReturnValue = 1;
@@ -1804,7 +2223,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsEnvironmentDepthStarted", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::OculusXRFunctionLibrary_eventIsEnvironmentDepthStarted_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsEnvironmentDepthStarted Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsEnvironmentDepthStarted", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::OculusXRFunctionLibrary_eventIsEnvironmentDepthStarted_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted_Statics::OculusXRFunctionLibrary_eventIsEnvironmentDepthStarted_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted()
 {
@@ -1834,16 +2257,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary|Guardian" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Returns true if the Guardian has been set up by the user, false if the user is in \"seated\" mode and has not set up a play space.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns true if the Guardian has been set up by the user, false if the user is in \"seated\" mode and has not set up a play space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsGuardianConfigured constinit property declarations ******************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsGuardianConfigured constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsGuardianConfigured Property Definitions *****************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsGuardianConfigured_Parms*)Obj)->ReturnValue = 1;
@@ -1853,7 +2285,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsGuardianConfigured", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::OculusXRFunctionLibrary_eventIsGuardianConfigured_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsGuardianConfigured Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsGuardianConfigured", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::OculusXRFunctionLibrary_eventIsGuardianConfigured_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured_Statics::OculusXRFunctionLibrary_eventIsGuardianConfigured_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured()
 {
@@ -1886,11 +2322,16 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Static
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsGuardianDisplayed constinit property declarations *******************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsGuardianDisplayed constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsGuardianDisplayed Property Definitions ******************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsGuardianDisplayed_Parms*)Obj)->ReturnValue = 1;
@@ -1900,7 +2341,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsGuardianDisplayed", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::OculusXRFunctionLibrary_eventIsGuardianDisplayed_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsGuardianDisplayed Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsGuardianDisplayed", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::OculusXRFunctionLibrary_eventIsGuardianDisplayed_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed_Statics::OculusXRFunctionLibrary_eventIsGuardianDisplayed_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed()
 {
@@ -1930,16 +2375,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get a system recommendation on whether Passthrough should be active.\n\x09 * When set, it is recommended for apps which optionally support an MR experience\n\x09 * with Passthrough to default to that mode.\n\x09 * Currently, this is determined based on whether the user has Passthrough active in the home environment.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get a system recommendation on whether Passthrough should be active.\nWhen set, it is recommended for apps which optionally support an MR experience\nwith Passthrough to default to that mode.\nCurrently, this is determined based on whether the user has Passthrough active in the home environment." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsPassthroughRecommended constinit property declarations **************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsPassthroughRecommended constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsPassthroughRecommended Property Definitions *************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsPassthroughRecommended_Parms*)Obj)->ReturnValue = 1;
@@ -1949,7 +2403,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsPassthroughRecommended", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::OculusXRFunctionLibrary_eventIsPassthroughRecommended_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsPassthroughRecommended Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsPassthroughRecommended", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::OculusXRFunctionLibrary_eventIsPassthroughRecommended_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended_Statics::OculusXRFunctionLibrary_eventIsPassthroughRecommended_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended()
 {
@@ -1979,16 +2437,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Checks if passthrough is supported\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks if passthrough is supported" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsPassthroughSupported constinit property declarations ****************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsPassthroughSupported constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsPassthroughSupported Property Definitions ***************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventIsPassthroughSupported_Parms*)Obj)->ReturnValue = 1;
@@ -1998,7 +2465,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsPassthroughSupported", Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::OculusXRFunctionLibrary_eventIsPassthroughSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsPassthroughSupported Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "IsPassthroughSupported", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::OculusXRFunctionLibrary_eventIsPassthroughSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported_Statics::OculusXRFunctionLibrary_eventIsPassthroughSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported()
 {
@@ -2030,27 +2501,40 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffs
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets 'base rotation' - the rotation that will be subtracted from\n\x09 * the actual HMD orientation.\n\x09 * Sets base position offset (in meters). The base position offset is the distance from the physical (0, 0, 0) position\n\x09 * to current HMD position (bringing the (0, 0, 0) point to the current HMD position)\n\x09 * Note, this vector is set by ResetPosition call; use this method with care.\n\x09 * The axis of the vector are the same as in Unreal: X - forward, Y - right, Z - up.\n\x09 *\n\x09 * @param Rotation\x09\x09\x09(in) Rotator object with base rotation\n\x09 * @param BaseOffsetInMeters (in) the vector to be set as base offset, in meters.\n\x09 * @param Options\x09\x09\x09(in) specifies either position, orientation or both should be set.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets 'base rotation' - the rotation that will be subtracted from\nthe actual HMD orientation.\nSets base position offset (in meters). The base position offset is the distance from the physical (0, 0, 0) position\nto current HMD position (bringing the (0, 0, 0) point to the current HMD position)\nNote, this vector is set by ResetPosition call; use this method with care.\nThe axis of the vector are the same as in Unreal: X - forward, Y - right, Z - up.\n\n@param Rotation                      (in) Rotator object with base rotation\n@param BaseOffsetInMeters (in) the vector to be set as base offset, in meters.\n@param Options                       (in) specifies either position, orientation or both should be set." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetBaseRotationAndBaseOffsetInMeters constinit property declarations **
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Rotation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_BaseOffsetInMeters;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Options;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetBaseRotationAndBaseOffsetInMeters constinit property declarations ****
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetBaseRotationAndBaseOffsetInMeters Property Definitions *************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_Rotation = { "Rotation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms, Rotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_BaseOffsetInMeters = { "BaseOffsetInMeters", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms, BaseOffsetInMeters), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_Options = { "Options", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms, Options), Z_Construct_UEnum_HeadMountedDisplay_EOrientPositionSelector, METADATA_PARAMS(0, nullptr) }; // 3091753543
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_Options = { "Options", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms, Options), Z_Construct_UEnum_HeadMountedDisplay_EOrientPositionSelector, METADATA_PARAMS(0, nullptr) }; // 802634478
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_Rotation,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_BaseOffsetInMeters,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::NewProp_Options,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetBaseRotationAndBaseOffsetInMeters", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetBaseRotationAndBaseOffsetInMeters Property Definitions ***************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetBaseRotationAndBaseOffsetInMeters", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters_Statics::OculusXRFunctionLibrary_eventSetBaseRotationAndBaseOffsetInMeters_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters()
 {
@@ -2085,29 +2569,42 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPosition
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets 'base rotation' - the rotation that will be subtracted from\n\x09 * the actual HMD orientation.\n\x09 * The position offset might be added to current HMD position,\n\x09 * effectively moving the virtual camera by the specified offset. The addition\n\x09 * occurs after the HMD orientation and position are applied.\n\x09 *\n\x09 * @param BaseRot\x09\x09\x09(in) Rotator object with base rotation\n\x09 * @param PosOffset\x09\x09\x09(in) the vector to be added to HMD position.\n\x09 * @param Options\x09\x09\x09(in) specifies either position, orientation or both should be set.\n\x09 */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "A hack, proper camera positioning should be used" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets 'base rotation' - the rotation that will be subtracted from\nthe actual HMD orientation.\nThe position offset might be added to current HMD position,\neffectively moving the virtual camera by the specified offset. The addition\noccurs after the HMD orientation and position are applied.\n\n@param BaseRot                       (in) Rotator object with base rotation\n@param PosOffset                     (in) the vector to be added to HMD position.\n@param Options                       (in) specifies either position, orientation or both should be set." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetBaseRotationAndPositionOffset constinit property declarations ******
 	static const UECodeGen_Private::FStructPropertyParams NewProp_BaseRot;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PosOffset;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Options;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetBaseRotationAndPositionOffset constinit property declarations ********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetBaseRotationAndPositionOffset Property Definitions *****************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_BaseRot = { "BaseRot", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms, BaseRot), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_PosOffset = { "PosOffset", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms, PosOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_Options = { "Options", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms, Options), Z_Construct_UEnum_HeadMountedDisplay_EOrientPositionSelector, METADATA_PARAMS(0, nullptr) }; // 3091753543
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_Options = { "Options", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms, Options), Z_Construct_UEnum_HeadMountedDisplay_EOrientPositionSelector, METADATA_PARAMS(0, nullptr) }; // 802634478
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_BaseRot,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_PosOffset,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::NewProp_Options,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetBaseRotationAndPositionOffset", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetBaseRotationAndPositionOffset Property Definitions *******************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetBaseRotationAndPositionOffset", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset_Statics::OculusXRFunctionLibrary_eventSetBaseRotationAndPositionOffset_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset()
 {
@@ -2140,24 +2637,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets the target HMD to do color space correction to a specific color space\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the target HMD to do color space correction to a specific color space" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetClientColorDesc constinit property declarations ********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ColorSpace_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ColorSpace;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetClientColorDesc constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetClientColorDesc Property Definitions *******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::NewProp_ColorSpace_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::NewProp_ColorSpace = { "ColorSpace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetClientColorDesc_Parms, ColorSpace), Z_Construct_UEnum_OculusXRHMD_EOculusXRColorSpace, METADATA_PARAMS(0, nullptr) }; // 2401649762
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::NewProp_ColorSpace = { "ColorSpace", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetClientColorDesc_Parms, ColorSpace), Z_Construct_UEnum_OculusXRHMD_EOculusXRColorSpace, METADATA_PARAMS(0, nullptr) }; // 1573344748
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::NewProp_ColorSpace_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::NewProp_ColorSpace,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetClientColorDesc", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::OculusXRFunctionLibrary_eventSetClientColorDesc_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetClientColorDesc Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetClientColorDesc", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::OculusXRFunctionLibrary_eventSetClientColorDesc_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc_Statics::OculusXRFunctionLibrary_eventSetClientColorDesc_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc()
 {
@@ -2190,19 +2700,28 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the Color Scale/Offset\n\x09 */" },
+#endif
 		{ "CPP_Default_bApplyToAllLayers", "false" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the Color Scale/Offset" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetColorScaleAndOffset constinit property declarations ****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorScale;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ColorOffset;
 	static void NewProp_bApplyToAllLayers_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bApplyToAllLayers;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetColorScaleAndOffset constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetColorScaleAndOffset Property Definitions ***************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::NewProp_ColorScale = { "ColorScale", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetColorScaleAndOffset_Parms, ColorScale), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::NewProp_ColorOffset = { "ColorOffset", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetColorScaleAndOffset_Parms, ColorOffset), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::NewProp_bApplyToAllLayers_SetBit(void* Obj)
@@ -2216,7 +2735,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::NewProp_bApplyToAllLayers,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetColorScaleAndOffset", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::OculusXRFunctionLibrary_eventSetColorScaleAndOffset_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetColorScaleAndOffset Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetColorScaleAndOffset", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::OculusXRFunctionLibrary_eventSetColorScaleAndOffset_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset_Statics::OculusXRFunctionLibrary_eventSetColorScaleAndOffset_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset()
 {
@@ -2250,18 +2773,27 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the CPU and GPU levels as hints to the Oculus device (Deprecated).\n\x09 */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecatedMessage", "Deprecated. Please use Get/SetSuggestedCpuAndGpuPerformanceLevels instead" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the CPU and GPU levels as hints to the Oculus device (Deprecated)." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCPUAndGPULevels constinit property declarations ********************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_CPULevel;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_GPULevel;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCPUAndGPULevels constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCPUAndGPULevels Property Definitions *******************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::NewProp_CPULevel = { "CPULevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetCPUAndGPULevels_Parms, CPULevel), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::NewProp_GPULevel = { "GPULevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetCPUAndGPULevels_Parms, GPULevel), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::PropPointers[] = {
@@ -2269,7 +2801,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::NewProp_GPULevel,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetCPUAndGPULevels", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::OculusXRFunctionLibrary_eventSetCPUAndGPULevels_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCPUAndGPULevels Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetCPUAndGPULevels", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::OculusXRFunctionLibrary_eventSetCPUAndGPULevels_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels_Statics::OculusXRFunctionLibrary_eventSetCPUAndGPULevels_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels()
 {
@@ -2301,21 +2837,34 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets the requested display frequency\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the requested display frequency" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetDisplayFrequency constinit property declarations *******************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_RequestedFrequency;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetDisplayFrequency constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetDisplayFrequency Property Definitions ******************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::NewProp_RequestedFrequency = { "RequestedFrequency", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetDisplayFrequency_Parms, RequestedFrequency), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::NewProp_RequestedFrequency,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetDisplayFrequency", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::OculusXRFunctionLibrary_eventSetDisplayFrequency_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetDisplayFrequency Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetDisplayFrequency", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::OculusXRFunctionLibrary_eventSetDisplayFrequency_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency_Statics::OculusXRFunctionLibrary_eventSetDisplayFrequency_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency()
 {
@@ -2346,16 +2895,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRem
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * When hands removal is enabled and hand tracking is active, the region\n\x09 * of the depth texture which contains the hands will be replaced with\n\x09 * the best estimate for depth behind the hands.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When hands removal is enabled and hand tracking is active, the region\nof the depth texture which contains the hands will be replaced with\nthe best estimate for depth behind the hands." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetEnvironmentDepthHandRemoval constinit property declarations ********
 	static void NewProp_RemoveHands_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_RemoveHands;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetEnvironmentDepthHandRemoval constinit property declarations **********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetEnvironmentDepthHandRemoval Property Definitions *******************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::NewProp_RemoveHands_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventSetEnvironmentDepthHandRemoval_Parms*)Obj)->RemoveHands = 1;
@@ -2365,7 +2923,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::NewProp_RemoveHands,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetEnvironmentDepthHandRemoval", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::OculusXRFunctionLibrary_eventSetEnvironmentDepthHandRemoval_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetEnvironmentDepthHandRemoval Property Definitions *********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetEnvironmentDepthHandRemoval", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::OculusXRFunctionLibrary_eventSetEnvironmentDepthHandRemoval_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval_Statics::OculusXRFunctionLibrary_eventSetEnvironmentDepthHandRemoval_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval()
 {
@@ -2396,24 +2958,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets the eyebuffer sharpen type. This amplifies contrast and fine details.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the eyebuffer sharpen type. This amplifies contrast and fine details." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetEyeBufferSharpenType constinit property declarations ***************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_EyeBufferSharpenType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_EyeBufferSharpenType;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetEyeBufferSharpenType constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetEyeBufferSharpenType Property Definitions **************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::NewProp_EyeBufferSharpenType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::NewProp_EyeBufferSharpenType = { "EyeBufferSharpenType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetEyeBufferSharpenType_Parms, EyeBufferSharpenType), Z_Construct_UEnum_OculusXRHMD_EOculusXREyeBufferSharpenType, METADATA_PARAMS(0, nullptr) }; // 2052807746
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::NewProp_EyeBufferSharpenType = { "EyeBufferSharpenType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetEyeBufferSharpenType_Parms, EyeBufferSharpenType), Z_Construct_UEnum_OculusXRHMD_EOculusXREyeBufferSharpenType, METADATA_PARAMS(0, nullptr) }; // 1342346285
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::NewProp_EyeBufferSharpenType_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::NewProp_EyeBufferSharpenType,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetEyeBufferSharpenType", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::OculusXRFunctionLibrary_eventSetEyeBufferSharpenType_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetEyeBufferSharpenType Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetEyeBufferSharpenType", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::OculusXRFunctionLibrary_eventSetEyeBufferSharpenType_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType_Statics::OculusXRFunctionLibrary_eventSetEyeBufferSharpenType_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType()
 {
@@ -2445,20 +3020,29 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the requested foveated rendering level for the next frame, and whether FFR's level is now dynamic or not. Changes to foveated rendering persist across map changes.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the requested foveated rendering level for the next frame, and whether FFR's level is now dynamic or not. Changes to foveated rendering persist across map changes." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetFoveatedRenderingLevel constinit property declarations *************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_level_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_level;
 	static void NewProp_isDynamic_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_isDynamic;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetFoveatedRenderingLevel constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetFoveatedRenderingLevel Property Definitions ************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::NewProp_level_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::NewProp_level = { "level", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetFoveatedRenderingLevel_Parms, level), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingLevel, METADATA_PARAMS(0, nullptr) }; // 2300058379
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::NewProp_level = { "level", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetFoveatedRenderingLevel_Parms, level), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingLevel, METADATA_PARAMS(0, nullptr) }; // 4276299897
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::NewProp_isDynamic_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventSetFoveatedRenderingLevel_Parms*)Obj)->isDynamic = 1;
@@ -2470,7 +3054,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::NewProp_isDynamic,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetFoveatedRenderingLevel", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::OculusXRFunctionLibrary_eventSetFoveatedRenderingLevel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetFoveatedRenderingLevel Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetFoveatedRenderingLevel", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::OculusXRFunctionLibrary_eventSetFoveatedRenderingLevel_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel_Statics::OculusXRFunctionLibrary_eventSetFoveatedRenderingLevel_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel()
 {
@@ -2502,24 +3090,37 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the requested foveated rendering method. Changes to foveated rendering persist across map changes.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the requested foveated rendering method. Changes to foveated rendering persist across map changes." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetFoveatedRenderingMethod constinit property declarations ************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Method_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Method;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetFoveatedRenderingMethod constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetFoveatedRenderingMethod Property Definitions ***********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::NewProp_Method_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::NewProp_Method = { "Method", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetFoveatedRenderingMethod_Parms, Method), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingMethod, METADATA_PARAMS(0, nullptr) }; // 1262503363
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::NewProp_Method = { "Method", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetFoveatedRenderingMethod_Parms, Method), Z_Construct_UEnum_OculusXRHMD_EOculusXRFoveatedRenderingMethod, METADATA_PARAMS(0, nullptr) }; // 2006257204
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::NewProp_Method_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::NewProp_Method,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetFoveatedRenderingMethod", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::OculusXRFunctionLibrary_eventSetFoveatedRenderingMethod_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetFoveatedRenderingMethod Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetFoveatedRenderingMethod", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::OculusXRFunctionLibrary_eventSetFoveatedRenderingMethod_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod_Statics::OculusXRFunctionLibrary_eventSetFoveatedRenderingMethod_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod()
 {
@@ -2553,11 +3154,16 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Stat
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetGuardianVisibility constinit property declarations *****************
 	static void NewProp_GuardianVisible_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_GuardianVisible;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetGuardianVisibility constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetGuardianVisibility Property Definitions ****************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::NewProp_GuardianVisible_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventSetGuardianVisibility_Parms*)Obj)->GuardianVisible = 1;
@@ -2567,7 +3173,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::NewProp_GuardianVisible,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetGuardianVisibility", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::OculusXRFunctionLibrary_eventSetGuardianVisibility_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetGuardianVisibility Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetGuardianVisibility", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::OculusXRFunctionLibrary_eventSetGuardianVisibility_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility_Statics::OculusXRFunctionLibrary_eventSetGuardianVisibility_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility()
 {
@@ -2598,16 +3208,25 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Turns on or off local dimming\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Turns on or off local dimming" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetLocalDimmingOn constinit property declarations *********************
 	static void NewProp_LocalDimmingOn_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_LocalDimmingOn;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetLocalDimmingOn constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetLocalDimmingOn Property Definitions ********************************
 void Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::NewProp_LocalDimmingOn_SetBit(void* Obj)
 {
 	((OculusXRFunctionLibrary_eventSetLocalDimmingOn_Parms*)Obj)->LocalDimmingOn = 1;
@@ -2617,7 +3236,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::NewProp_LocalDimmingOn,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetLocalDimmingOn", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::OculusXRFunctionLibrary_eventSetLocalDimmingOn_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetLocalDimmingOn Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetLocalDimmingOn", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::OculusXRFunctionLibrary_eventSetLocalDimmingOn_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn_Statics::OculusXRFunctionLibrary_eventSetLocalDimmingOn_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn()
 {
@@ -2648,23 +3271,36 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Scales the HMD position that gets added to the virtual camera position.\n\x09 *\n\x09 * @param PosScale3D\x09(in) the scale to apply to the HMD position.\n\x09 */" },
+#endif
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "This feature is no longer supported." },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Scales the HMD position that gets added to the virtual camera position.\n\n@param PosScale3D    (in) the scale to apply to the HMD position." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetPositionScale3D constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PosScale3D;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetPositionScale3D constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetPositionScale3D Property Definitions *******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::NewProp_PosScale3D = { "PosScale3D", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetPositionScale3D_Parms, PosScale3D), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::NewProp_PosScale3D,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetPositionScale3D", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::OculusXRFunctionLibrary_eventSetPositionScale3D_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetPositionScale3D Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetPositionScale3D", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::OculusXRFunctionLibrary_eventSetPositionScale3D_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D_Statics::OculusXRFunctionLibrary_eventSetPositionScale3D_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D()
 {
@@ -2696,22 +3332,31 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerfo
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Set the suggested CPU and GPU levels to the Oculus device.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the suggested CPU and GPU levels to the Oculus device." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetSuggestedCpuAndGpuPerformanceLevels constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CpuPerfLevel_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CpuPerfLevel;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_GpuPerfLevel_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_GpuPerfLevel;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetSuggestedCpuAndGpuPerformanceLevels constinit property declarations **
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetSuggestedCpuAndGpuPerformanceLevels Property Definitions ***********
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel = { "CpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms, CpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 1326426722
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel = { "CpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms, CpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 2669467903
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel = { "GpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms, GpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 1326426722
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel = { "GpuPerfLevel", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms, GpuPerfLevel), Z_Construct_UEnum_OculusXRHMD_EOculusXRProcessorPerformanceLevel, METADATA_PARAMS(0, nullptr) }; // 2669467903
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_CpuPerfLevel,
@@ -2719,7 +3364,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::NewProp_GpuPerfLevel,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetSuggestedCpuAndGpuPerformanceLevels", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetSuggestedCpuAndGpuPerformanceLevels Property Definitions *************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetSuggestedCpuAndGpuPerformanceLevels", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels_Statics::OculusXRFunctionLibrary_eventSetSuggestedCpuAndGpuPerformanceLevels_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels()
 {
@@ -2752,28 +3401,41 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Sets the occlusions mode using environment depth. When occlusions are enabled\n\x09 * virtual objects that are behind physical objects will be occluded so that\n\x09 * the sense of immersion is preserved.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the occlusions mode using environment depth. When occlusions are enabled\nvirtual objects that are behind physical objects will be occluded so that\nthe sense of immersion is preserved." },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetXROcclusionsMode constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Mode_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Mode;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetXROcclusionsMode constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetXROcclusionsMode Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetXROcclusionsMode_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_Mode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_Mode = { "Mode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetXROcclusionsMode_Parms, Mode), Z_Construct_UEnum_OculusXRHMD_EOculusXROcclusionsMode, METADATA_PARAMS(0, nullptr) }; // 3725487939
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_Mode = { "Mode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRFunctionLibrary_eventSetXROcclusionsMode_Parms, Mode), Z_Construct_UEnum_OculusXRHMD_EOculusXROcclusionsMode, METADATA_PARAMS(0, nullptr) }; // 3248947106
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_WorldContextObject,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_Mode_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::NewProp_Mode,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetXROcclusionsMode", Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::OculusXRFunctionLibrary_eventSetXROcclusionsMode_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetXROcclusionsMode Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "SetXROcclusionsMode", 	Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::OculusXRFunctionLibrary_eventSetXROcclusionsMode_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode_Statics::OculusXRFunctionLibrary_eventSetXROcclusionsMode_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode()
 {
@@ -2801,14 +3463,24 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Create the environment depth texture swap chain and start receiving\n\x09 * depth texture every frame until stopped.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create the environment depth texture swap chain and start receiving\ndepth texture every frame until stopped." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StartEnvironmentDepth constinit property declarations *****************
+// ********** End Function StartEnvironmentDepth constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "StartEnvironmentDepth", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "StartEnvironmentDepth", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -2833,14 +3505,24 @@ struct Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "OculusLibrary" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Destroy the environment depth texture swap chain and stop receiving\n\x09 * new depth textures every frame. Call this when environment depth is\n\x09 * no longer needed to free up resources.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Destroy the environment depth texture swap chain and stop receiving\nnew depth textures every frame. Call this when environment depth is\nno longer needed to free up resources." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StopEnvironmentDepth constinit property declarations ******************
+// ********** End Function StopEnvironmentDepth constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "StopEnvironmentDepth", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRFunctionLibrary, nullptr, "StopEnvironmentDepth", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -2860,68 +3542,6 @@ DEFINE_FUNCTION(UOculusXRFunctionLibrary::execStopEnvironmentDepth)
 // ********** End Class UOculusXRFunctionLibrary Function StopEnvironmentDepth *********************
 
 // ********** Begin Class UOculusXRFunctionLibrary *************************************************
-void UOculusXRFunctionLibrary::StaticRegisterNativesUOculusXRFunctionLibrary()
-{
-	UClass* Class = UOculusXRFunctionLibrary::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "AddLoadingSplashScreen", &UOculusXRFunctionLibrary::execAddLoadingSplashScreen },
-		{ "ClearLoadingSplashScreens", &UOculusXRFunctionLibrary::execClearLoadingSplashScreens },
-		{ "EnableOrientationTracking", &UOculusXRFunctionLibrary::execEnableOrientationTracking },
-		{ "EnablePositionTracking", &UOculusXRFunctionLibrary::execEnablePositionTracking },
-		{ "GetAvailableDisplayFrequencies", &UOculusXRFunctionLibrary::execGetAvailableDisplayFrequencies },
-		{ "GetBaseRotationAndBaseOffsetInMeters", &UOculusXRFunctionLibrary::execGetBaseRotationAndBaseOffsetInMeters },
-		{ "GetBaseRotationAndPositionOffset", &UOculusXRFunctionLibrary::execGetBaseRotationAndPositionOffset },
-		{ "GetControllerType", &UOculusXRFunctionLibrary::execGetControllerType },
-		{ "GetCurrentDisplayFrequency", &UOculusXRFunctionLibrary::execGetCurrentDisplayFrequency },
-		{ "GetDeviceName", &UOculusXRFunctionLibrary::execGetDeviceName },
-		{ "GetDeviceType", &UOculusXRFunctionLibrary::execGetDeviceType },
-		{ "GetEyeTrackedFoveatedRenderingSupported", &UOculusXRFunctionLibrary::execGetEyeTrackedFoveatedRenderingSupported },
-		{ "GetFoveatedRenderingLevel", &UOculusXRFunctionLibrary::execGetFoveatedRenderingLevel },
-		{ "GetFoveatedRenderingMethod", &UOculusXRFunctionLibrary::execGetFoveatedRenderingMethod },
-		{ "GetGPUFrameTime", &UOculusXRFunctionLibrary::execGetGPUFrameTime },
-		{ "GetGPUUtilization", &UOculusXRFunctionLibrary::execGetGPUUtilization },
-		{ "GetGuardianDimensions", &UOculusXRFunctionLibrary::execGetGuardianDimensions },
-		{ "GetGuardianPoints", &UOculusXRFunctionLibrary::execGetGuardianPoints },
-		{ "GetHmdColorDesc", &UOculusXRFunctionLibrary::execGetHmdColorDesc },
-		{ "GetNodeGuardianIntersection", &UOculusXRFunctionLibrary::execGetNodeGuardianIntersection },
-		{ "GetPerformanceMetrics", &UOculusXRFunctionLibrary::execGetPerformanceMetrics },
-		{ "GetPlayAreaTransform", &UOculusXRFunctionLibrary::execGetPlayAreaTransform },
-		{ "GetPointGuardianIntersection", &UOculusXRFunctionLibrary::execGetPointGuardianIntersection },
-		{ "GetPose", &UOculusXRFunctionLibrary::execGetPose },
-		{ "GetRawSensorData", &UOculusXRFunctionLibrary::execGetRawSensorData },
-		{ "GetSuggestedCpuAndGpuPerformanceLevels", &UOculusXRFunctionLibrary::execGetSuggestedCpuAndGpuPerformanceLevels },
-		{ "GetSystemHmd3DofModeEnabled", &UOculusXRFunctionLibrary::execGetSystemHmd3DofModeEnabled },
-		{ "GetUserProfile", &UOculusXRFunctionLibrary::execGetUserProfile },
-		{ "GetXrApi", &UOculusXRFunctionLibrary::execGetXrApi },
-		{ "HasInputFocus", &UOculusXRFunctionLibrary::execHasInputFocus },
-		{ "HasSystemOverlayPresent", &UOculusXRFunctionLibrary::execHasSystemOverlayPresent },
-		{ "IsColorPassthroughSupported", &UOculusXRFunctionLibrary::execIsColorPassthroughSupported },
-		{ "IsDeviceTracked", &UOculusXRFunctionLibrary::execIsDeviceTracked },
-		{ "IsEnvironmentDepthStarted", &UOculusXRFunctionLibrary::execIsEnvironmentDepthStarted },
-		{ "IsGuardianConfigured", &UOculusXRFunctionLibrary::execIsGuardianConfigured },
-		{ "IsGuardianDisplayed", &UOculusXRFunctionLibrary::execIsGuardianDisplayed },
-		{ "IsPassthroughRecommended", &UOculusXRFunctionLibrary::execIsPassthroughRecommended },
-		{ "IsPassthroughSupported", &UOculusXRFunctionLibrary::execIsPassthroughSupported },
-		{ "SetBaseRotationAndBaseOffsetInMeters", &UOculusXRFunctionLibrary::execSetBaseRotationAndBaseOffsetInMeters },
-		{ "SetBaseRotationAndPositionOffset", &UOculusXRFunctionLibrary::execSetBaseRotationAndPositionOffset },
-		{ "SetClientColorDesc", &UOculusXRFunctionLibrary::execSetClientColorDesc },
-		{ "SetColorScaleAndOffset", &UOculusXRFunctionLibrary::execSetColorScaleAndOffset },
-		{ "SetCPUAndGPULevels", &UOculusXRFunctionLibrary::execSetCPUAndGPULevels },
-		{ "SetDisplayFrequency", &UOculusXRFunctionLibrary::execSetDisplayFrequency },
-		{ "SetEnvironmentDepthHandRemoval", &UOculusXRFunctionLibrary::execSetEnvironmentDepthHandRemoval },
-		{ "SetEyeBufferSharpenType", &UOculusXRFunctionLibrary::execSetEyeBufferSharpenType },
-		{ "SetFoveatedRenderingLevel", &UOculusXRFunctionLibrary::execSetFoveatedRenderingLevel },
-		{ "SetFoveatedRenderingMethod", &UOculusXRFunctionLibrary::execSetFoveatedRenderingMethod },
-		{ "SetGuardianVisibility", &UOculusXRFunctionLibrary::execSetGuardianVisibility },
-		{ "SetLocalDimmingOn", &UOculusXRFunctionLibrary::execSetLocalDimmingOn },
-		{ "SetPositionScale3D", &UOculusXRFunctionLibrary::execSetPositionScale3D },
-		{ "SetSuggestedCpuAndGpuPerformanceLevels", &UOculusXRFunctionLibrary::execSetSuggestedCpuAndGpuPerformanceLevels },
-		{ "SetXROcclusionsMode", &UOculusXRFunctionLibrary::execSetXROcclusionsMode },
-		{ "StartEnvironmentDepth", &UOculusXRFunctionLibrary::execStartEnvironmentDepth },
-		{ "StopEnvironmentDepth", &UOculusXRFunctionLibrary::execStopEnvironmentDepth },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRFunctionLibrary;
 UClass* UOculusXRFunctionLibrary::GetPrivateStaticClass()
 {
@@ -2929,7 +3549,7 @@ UClass* UOculusXRFunctionLibrary::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRFunctionLibrary.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRFunctionLibrary"),
 			Z_Registration_Info_UClass_UOculusXRFunctionLibrary.InnerSingleton,
 			StaticRegisterNativesUOculusXRFunctionLibrary,
@@ -2955,76 +3575,140 @@ struct Z_Construct_UClass_UOculusXRFunctionLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// namespace OculusXRHMD\n" },
+#endif
 		{ "IncludePath", "OculusXRFunctionLibrary.h" },
 		{ "ModuleRelativePath", "Public/OculusXRFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "namespace OculusXRHMD" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRFunctionLibrary constinit property declarations *****************
+// ********** End Class UOculusXRFunctionLibrary constinit property declarations *******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("AddLoadingSplashScreen"), .Pointer = &UOculusXRFunctionLibrary::execAddLoadingSplashScreen },
+		{ .NameUTF8 = UTF8TEXT("ClearLoadingSplashScreens"), .Pointer = &UOculusXRFunctionLibrary::execClearLoadingSplashScreens },
+		{ .NameUTF8 = UTF8TEXT("EnableOrientationTracking"), .Pointer = &UOculusXRFunctionLibrary::execEnableOrientationTracking },
+		{ .NameUTF8 = UTF8TEXT("EnablePositionTracking"), .Pointer = &UOculusXRFunctionLibrary::execEnablePositionTracking },
+		{ .NameUTF8 = UTF8TEXT("GetAvailableDisplayFrequencies"), .Pointer = &UOculusXRFunctionLibrary::execGetAvailableDisplayFrequencies },
+		{ .NameUTF8 = UTF8TEXT("GetBaseRotationAndBaseOffsetInMeters"), .Pointer = &UOculusXRFunctionLibrary::execGetBaseRotationAndBaseOffsetInMeters },
+		{ .NameUTF8 = UTF8TEXT("GetBaseRotationAndPositionOffset"), .Pointer = &UOculusXRFunctionLibrary::execGetBaseRotationAndPositionOffset },
+		{ .NameUTF8 = UTF8TEXT("GetControllerType"), .Pointer = &UOculusXRFunctionLibrary::execGetControllerType },
+		{ .NameUTF8 = UTF8TEXT("GetCurrentDisplayFrequency"), .Pointer = &UOculusXRFunctionLibrary::execGetCurrentDisplayFrequency },
+		{ .NameUTF8 = UTF8TEXT("GetDeviceName"), .Pointer = &UOculusXRFunctionLibrary::execGetDeviceName },
+		{ .NameUTF8 = UTF8TEXT("GetDeviceType"), .Pointer = &UOculusXRFunctionLibrary::execGetDeviceType },
+		{ .NameUTF8 = UTF8TEXT("GetEyeTrackedFoveatedRenderingSupported"), .Pointer = &UOculusXRFunctionLibrary::execGetEyeTrackedFoveatedRenderingSupported },
+		{ .NameUTF8 = UTF8TEXT("GetFoveatedRenderingLevel"), .Pointer = &UOculusXRFunctionLibrary::execGetFoveatedRenderingLevel },
+		{ .NameUTF8 = UTF8TEXT("GetFoveatedRenderingMethod"), .Pointer = &UOculusXRFunctionLibrary::execGetFoveatedRenderingMethod },
+		{ .NameUTF8 = UTF8TEXT("GetGPUFrameTime"), .Pointer = &UOculusXRFunctionLibrary::execGetGPUFrameTime },
+		{ .NameUTF8 = UTF8TEXT("GetGPUUtilization"), .Pointer = &UOculusXRFunctionLibrary::execGetGPUUtilization },
+		{ .NameUTF8 = UTF8TEXT("GetGuardianDimensions"), .Pointer = &UOculusXRFunctionLibrary::execGetGuardianDimensions },
+		{ .NameUTF8 = UTF8TEXT("GetGuardianPoints"), .Pointer = &UOculusXRFunctionLibrary::execGetGuardianPoints },
+		{ .NameUTF8 = UTF8TEXT("GetHmdColorDesc"), .Pointer = &UOculusXRFunctionLibrary::execGetHmdColorDesc },
+		{ .NameUTF8 = UTF8TEXT("GetNodeGuardianIntersection"), .Pointer = &UOculusXRFunctionLibrary::execGetNodeGuardianIntersection },
+		{ .NameUTF8 = UTF8TEXT("GetPerformanceMetrics"), .Pointer = &UOculusXRFunctionLibrary::execGetPerformanceMetrics },
+		{ .NameUTF8 = UTF8TEXT("GetPlayAreaTransform"), .Pointer = &UOculusXRFunctionLibrary::execGetPlayAreaTransform },
+		{ .NameUTF8 = UTF8TEXT("GetPointGuardianIntersection"), .Pointer = &UOculusXRFunctionLibrary::execGetPointGuardianIntersection },
+		{ .NameUTF8 = UTF8TEXT("GetPose"), .Pointer = &UOculusXRFunctionLibrary::execGetPose },
+		{ .NameUTF8 = UTF8TEXT("GetRawSensorData"), .Pointer = &UOculusXRFunctionLibrary::execGetRawSensorData },
+		{ .NameUTF8 = UTF8TEXT("GetSuggestedCpuAndGpuPerformanceLevels"), .Pointer = &UOculusXRFunctionLibrary::execGetSuggestedCpuAndGpuPerformanceLevels },
+		{ .NameUTF8 = UTF8TEXT("GetSystemHmd3DofModeEnabled"), .Pointer = &UOculusXRFunctionLibrary::execGetSystemHmd3DofModeEnabled },
+		{ .NameUTF8 = UTF8TEXT("GetUserProfile"), .Pointer = &UOculusXRFunctionLibrary::execGetUserProfile },
+		{ .NameUTF8 = UTF8TEXT("GetXrApi"), .Pointer = &UOculusXRFunctionLibrary::execGetXrApi },
+		{ .NameUTF8 = UTF8TEXT("HasInputFocus"), .Pointer = &UOculusXRFunctionLibrary::execHasInputFocus },
+		{ .NameUTF8 = UTF8TEXT("HasSystemOverlayPresent"), .Pointer = &UOculusXRFunctionLibrary::execHasSystemOverlayPresent },
+		{ .NameUTF8 = UTF8TEXT("IsColorPassthroughSupported"), .Pointer = &UOculusXRFunctionLibrary::execIsColorPassthroughSupported },
+		{ .NameUTF8 = UTF8TEXT("IsDeviceTracked"), .Pointer = &UOculusXRFunctionLibrary::execIsDeviceTracked },
+		{ .NameUTF8 = UTF8TEXT("IsEnvironmentDepthStarted"), .Pointer = &UOculusXRFunctionLibrary::execIsEnvironmentDepthStarted },
+		{ .NameUTF8 = UTF8TEXT("IsGuardianConfigured"), .Pointer = &UOculusXRFunctionLibrary::execIsGuardianConfigured },
+		{ .NameUTF8 = UTF8TEXT("IsGuardianDisplayed"), .Pointer = &UOculusXRFunctionLibrary::execIsGuardianDisplayed },
+		{ .NameUTF8 = UTF8TEXT("IsPassthroughRecommended"), .Pointer = &UOculusXRFunctionLibrary::execIsPassthroughRecommended },
+		{ .NameUTF8 = UTF8TEXT("IsPassthroughSupported"), .Pointer = &UOculusXRFunctionLibrary::execIsPassthroughSupported },
+		{ .NameUTF8 = UTF8TEXT("SetBaseRotationAndBaseOffsetInMeters"), .Pointer = &UOculusXRFunctionLibrary::execSetBaseRotationAndBaseOffsetInMeters },
+		{ .NameUTF8 = UTF8TEXT("SetBaseRotationAndPositionOffset"), .Pointer = &UOculusXRFunctionLibrary::execSetBaseRotationAndPositionOffset },
+		{ .NameUTF8 = UTF8TEXT("SetClientColorDesc"), .Pointer = &UOculusXRFunctionLibrary::execSetClientColorDesc },
+		{ .NameUTF8 = UTF8TEXT("SetColorScaleAndOffset"), .Pointer = &UOculusXRFunctionLibrary::execSetColorScaleAndOffset },
+		{ .NameUTF8 = UTF8TEXT("SetCPUAndGPULevels"), .Pointer = &UOculusXRFunctionLibrary::execSetCPUAndGPULevels },
+		{ .NameUTF8 = UTF8TEXT("SetDisplayFrequency"), .Pointer = &UOculusXRFunctionLibrary::execSetDisplayFrequency },
+		{ .NameUTF8 = UTF8TEXT("SetEnvironmentDepthHandRemoval"), .Pointer = &UOculusXRFunctionLibrary::execSetEnvironmentDepthHandRemoval },
+		{ .NameUTF8 = UTF8TEXT("SetEyeBufferSharpenType"), .Pointer = &UOculusXRFunctionLibrary::execSetEyeBufferSharpenType },
+		{ .NameUTF8 = UTF8TEXT("SetFoveatedRenderingLevel"), .Pointer = &UOculusXRFunctionLibrary::execSetFoveatedRenderingLevel },
+		{ .NameUTF8 = UTF8TEXT("SetFoveatedRenderingMethod"), .Pointer = &UOculusXRFunctionLibrary::execSetFoveatedRenderingMethod },
+		{ .NameUTF8 = UTF8TEXT("SetGuardianVisibility"), .Pointer = &UOculusXRFunctionLibrary::execSetGuardianVisibility },
+		{ .NameUTF8 = UTF8TEXT("SetLocalDimmingOn"), .Pointer = &UOculusXRFunctionLibrary::execSetLocalDimmingOn },
+		{ .NameUTF8 = UTF8TEXT("SetPositionScale3D"), .Pointer = &UOculusXRFunctionLibrary::execSetPositionScale3D },
+		{ .NameUTF8 = UTF8TEXT("SetSuggestedCpuAndGpuPerformanceLevels"), .Pointer = &UOculusXRFunctionLibrary::execSetSuggestedCpuAndGpuPerformanceLevels },
+		{ .NameUTF8 = UTF8TEXT("SetXROcclusionsMode"), .Pointer = &UOculusXRFunctionLibrary::execSetXROcclusionsMode },
+		{ .NameUTF8 = UTF8TEXT("StartEnvironmentDepth"), .Pointer = &UOculusXRFunctionLibrary::execStartEnvironmentDepth },
+		{ .NameUTF8 = UTF8TEXT("StopEnvironmentDepth"), .Pointer = &UOculusXRFunctionLibrary::execStopEnvironmentDepth },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen, "AddLoadingSplashScreen" }, // 367754583
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens, "ClearLoadingSplashScreens" }, // 3184468401
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking, "EnableOrientationTracking" }, // 901725024
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking, "EnablePositionTracking" }, // 3800791726
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies, "GetAvailableDisplayFrequencies" }, // 1539977722
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters, "GetBaseRotationAndBaseOffsetInMeters" }, // 2007876281
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset, "GetBaseRotationAndPositionOffset" }, // 187960904
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType, "GetControllerType" }, // 3775138751
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency, "GetCurrentDisplayFrequency" }, // 4224485819
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName, "GetDeviceName" }, // 141109655
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType, "GetDeviceType" }, // 1870107081
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported, "GetEyeTrackedFoveatedRenderingSupported" }, // 1812686195
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel, "GetFoveatedRenderingLevel" }, // 4207008078
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod, "GetFoveatedRenderingMethod" }, // 500753538
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime, "GetGPUFrameTime" }, // 1638339862
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization, "GetGPUUtilization" }, // 2577308496
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions, "GetGuardianDimensions" }, // 2738404835
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints, "GetGuardianPoints" }, // 1705384608
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc, "GetHmdColorDesc" }, // 1493411732
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection, "GetNodeGuardianIntersection" }, // 3950470975
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics, "GetPerformanceMetrics" }, // 4015130527
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform, "GetPlayAreaTransform" }, // 2582661247
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection, "GetPointGuardianIntersection" }, // 3249365298
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose, "GetPose" }, // 136207017
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData, "GetRawSensorData" }, // 2501442474
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels, "GetSuggestedCpuAndGpuPerformanceLevels" }, // 971381540
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled, "GetSystemHmd3DofModeEnabled" }, // 2078935349
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile, "GetUserProfile" }, // 882161593
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi, "GetXrApi" }, // 957178790
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus, "HasInputFocus" }, // 4076033931
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent, "HasSystemOverlayPresent" }, // 3853388420
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported, "IsColorPassthroughSupported" }, // 3039281803
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked, "IsDeviceTracked" }, // 3754780807
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted, "IsEnvironmentDepthStarted" }, // 3338863223
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured, "IsGuardianConfigured" }, // 2375126726
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed, "IsGuardianDisplayed" }, // 1722994330
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended, "IsPassthroughRecommended" }, // 3007604033
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported, "IsPassthroughSupported" }, // 4211797159
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters, "SetBaseRotationAndBaseOffsetInMeters" }, // 790924351
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset, "SetBaseRotationAndPositionOffset" }, // 1689850822
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc, "SetClientColorDesc" }, // 960473134
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset, "SetColorScaleAndOffset" }, // 3462630457
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels, "SetCPUAndGPULevels" }, // 1978564509
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency, "SetDisplayFrequency" }, // 2263811459
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval, "SetEnvironmentDepthHandRemoval" }, // 1390061497
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType, "SetEyeBufferSharpenType" }, // 2108511463
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel, "SetFoveatedRenderingLevel" }, // 2034544203
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod, "SetFoveatedRenderingMethod" }, // 1065292953
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility, "SetGuardianVisibility" }, // 1500143189
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn, "SetLocalDimmingOn" }, // 4049182372
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D, "SetPositionScale3D" }, // 3204918087
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels, "SetSuggestedCpuAndGpuPerformanceLevels" }, // 2696985979
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode, "SetXROcclusionsMode" }, // 221432530
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth, "StartEnvironmentDepth" }, // 3602856304
-		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth, "StopEnvironmentDepth" }, // 1567599699
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_AddLoadingSplashScreen, "AddLoadingSplashScreen" }, // 3037854418
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_ClearLoadingSplashScreens, "ClearLoadingSplashScreens" }, // 2651822965
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_EnableOrientationTracking, "EnableOrientationTracking" }, // 272444333
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_EnablePositionTracking, "EnablePositionTracking" }, // 3625712243
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetAvailableDisplayFrequencies, "GetAvailableDisplayFrequencies" }, // 3071553651
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndBaseOffsetInMeters, "GetBaseRotationAndBaseOffsetInMeters" }, // 1595438585
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetBaseRotationAndPositionOffset, "GetBaseRotationAndPositionOffset" }, // 141666549
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetControllerType, "GetControllerType" }, // 2901099913
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetCurrentDisplayFrequency, "GetCurrentDisplayFrequency" }, // 1348849330
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceName, "GetDeviceName" }, // 3876512805
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetDeviceType, "GetDeviceType" }, // 2241076099
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetEyeTrackedFoveatedRenderingSupported, "GetEyeTrackedFoveatedRenderingSupported" }, // 3921981786
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingLevel, "GetFoveatedRenderingLevel" }, // 860242360
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetFoveatedRenderingMethod, "GetFoveatedRenderingMethod" }, // 226507917
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUFrameTime, "GetGPUFrameTime" }, // 2030072952
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGPUUtilization, "GetGPUUtilization" }, // 1036782124
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianDimensions, "GetGuardianDimensions" }, // 1720217237
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetGuardianPoints, "GetGuardianPoints" }, // 3017673815
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetHmdColorDesc, "GetHmdColorDesc" }, // 3081660906
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetNodeGuardianIntersection, "GetNodeGuardianIntersection" }, // 2314648939
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPerformanceMetrics, "GetPerformanceMetrics" }, // 232407918
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPlayAreaTransform, "GetPlayAreaTransform" }, // 237823385
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPointGuardianIntersection, "GetPointGuardianIntersection" }, // 2236722349
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetPose, "GetPose" }, // 4883188
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetRawSensorData, "GetRawSensorData" }, // 2326901411
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSuggestedCpuAndGpuPerformanceLevels, "GetSuggestedCpuAndGpuPerformanceLevels" }, // 4264552297
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetSystemHmd3DofModeEnabled, "GetSystemHmd3DofModeEnabled" }, // 382447914
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetUserProfile, "GetUserProfile" }, // 3781009232
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_GetXrApi, "GetXrApi" }, // 2779573694
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_HasInputFocus, "HasInputFocus" }, // 3137805763
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_HasSystemOverlayPresent, "HasSystemOverlayPresent" }, // 1882286736
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsColorPassthroughSupported, "IsColorPassthroughSupported" }, // 475569167
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsDeviceTracked, "IsDeviceTracked" }, // 2112124750
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsEnvironmentDepthStarted, "IsEnvironmentDepthStarted" }, // 4273810038
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianConfigured, "IsGuardianConfigured" }, // 2401110550
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsGuardianDisplayed, "IsGuardianDisplayed" }, // 3109704616
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughRecommended, "IsPassthroughRecommended" }, // 4041511567
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_IsPassthroughSupported, "IsPassthroughSupported" }, // 1294099497
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndBaseOffsetInMeters, "SetBaseRotationAndBaseOffsetInMeters" }, // 182229118
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetBaseRotationAndPositionOffset, "SetBaseRotationAndPositionOffset" }, // 776805664
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetClientColorDesc, "SetClientColorDesc" }, // 1336402186
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetColorScaleAndOffset, "SetColorScaleAndOffset" }, // 4047330112
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetCPUAndGPULevels, "SetCPUAndGPULevels" }, // 739917044
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetDisplayFrequency, "SetDisplayFrequency" }, // 3375376586
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEnvironmentDepthHandRemoval, "SetEnvironmentDepthHandRemoval" }, // 326752420
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetEyeBufferSharpenType, "SetEyeBufferSharpenType" }, // 3174154625
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingLevel, "SetFoveatedRenderingLevel" }, // 2868469316
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetFoveatedRenderingMethod, "SetFoveatedRenderingMethod" }, // 1463241344
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetGuardianVisibility, "SetGuardianVisibility" }, // 448330193
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetLocalDimmingOn, "SetLocalDimmingOn" }, // 2861105154
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetPositionScale3D, "SetPositionScale3D" }, // 3467469357
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetSuggestedCpuAndGpuPerformanceLevels, "SetSuggestedCpuAndGpuPerformanceLevels" }, // 430068467
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_SetXROcclusionsMode, "SetXROcclusionsMode" }, // 569789084
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_StartEnvironmentDepth, "StartEnvironmentDepth" }, // 1805177427
+		{ &Z_Construct_UFunction_UOculusXRFunctionLibrary_StopEnvironmentDepth, "StopEnvironmentDepth" }, // 128427509
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRFunctionLibrary>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRFunctionLibrary_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRFunctionLibrary_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRHMD,
@@ -3045,6 +3729,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRFunctionLibrar
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRFunctionLibrary_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRFunctionLibrary_Statics::Class_MetaDataParams)
 };
+void UOculusXRFunctionLibrary::StaticRegisterNativesUOculusXRFunctionLibrary()
+{
+	UClass* Class = UOculusXRFunctionLibrary::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRFunctionLibrary_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRFunctionLibrary()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRFunctionLibrary.OuterSingleton)
@@ -3053,21 +3742,23 @@ UClass* Z_Construct_UClass_UOculusXRFunctionLibrary()
 	}
 	return Z_Registration_Info_UClass_UOculusXRFunctionLibrary.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRFunctionLibrary);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRFunctionLibrary);
 UOculusXRFunctionLibrary::~UOculusXRFunctionLibrary() {}
 // ********** End Class UOculusXRFunctionLibrary ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRFunctionLibrary, UOculusXRFunctionLibrary::StaticClass, TEXT("UOculusXRFunctionLibrary"), &Z_Registration_Info_UClass_UOculusXRFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRFunctionLibrary), 3112308352U) },
+		{ Z_Construct_UClass_UOculusXRFunctionLibrary, UOculusXRFunctionLibrary::StaticClass, TEXT("UOculusXRFunctionLibrary"), &Z_Registration_Info_UClass_UOculusXRFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRFunctionLibrary), 1928817121U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_971820263(TEXT("/Script/OculusXRHMD"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_873656774{
+	TEXT("/Script/OculusXRHMD"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h__Script_OculusXRHMD_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

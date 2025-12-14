@@ -9,11 +9,11 @@
 #include "Interaction/IsdkPokeInteractable.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInteractableWidgetComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass_NoRegister();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FLinearColor();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector2D();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector4();
@@ -46,7 +46,7 @@ static UEnum* EIsdkWidgetBlendMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkWidgetBlendMode.OuterSingleton;
 }
-template<> OCULUSINTERACTIONPREBUILTS_API UEnum* StaticEnum<EIsdkWidgetBlendMode>()
+template<> OCULUSINTERACTIONPREBUILTS_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkWidgetBlendMode>()
 {
 	return EIsdkWidgetBlendMode_StaticEnum();
 }
@@ -65,7 +65,7 @@ struct Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkWidgetBlendMode_Statics
 		{ "EIsdkWidgetBlendMode::Transparent", (int64)EIsdkWidgetBlendMode::Transparent },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkWidgetBlendMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkWidgetBlendMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
 	nullptr,
@@ -105,16 +105,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPointableWidget constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPointableWidget constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPointableWidget Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetPointableWidget_Parms, ReturnValue), Z_Construct_UClass_UIsdkPointableWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetPointableWidget", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::IsdkInteractableWidgetComponent_eventGetPointableWidget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPointableWidget Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetPointableWidget", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::IsdkInteractableWidgetComponent_eventGetPointableWidget_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget_Statics::IsdkInteractableWidgetComponent_eventGetPointableWidget_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget()
 {
@@ -151,16 +160,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractabl
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPokeInteractable constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPokeInteractable constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPokeInteractable Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetPokeInteractable_Parms, ReturnValue), Z_Construct_UClass_UIsdkPokeInteractable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetPokeInteractable", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::IsdkInteractableWidgetComponent_eventGetPokeInteractable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPokeInteractable Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetPokeInteractable", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::IsdkInteractableWidgetComponent_eventGetPokeInteractable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable_Statics::IsdkInteractableWidgetComponent_eventGetPokeInteractable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable()
 {
@@ -197,16 +215,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRayInteractable constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRayInteractable constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRayInteractable Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetRayInteractable_Parms, ReturnValue), Z_Construct_UClass_UIsdkRayInteractable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetRayInteractable", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::IsdkInteractableWidgetComponent_eventGetRayInteractable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRayInteractable Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetRayInteractable", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::IsdkInteractableWidgetComponent_eventGetRayInteractable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable_Statics::IsdkInteractableWidgetComponent_eventGetRayInteractable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable()
 {
@@ -243,16 +270,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAu
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSelectedEmptyAudio constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSelectedEmptyAudio constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSelectedEmptyAudio Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetSelectedEmptyAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetSelectedEmptyAudio", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::IsdkInteractableWidgetComponent_eventGetSelectedEmptyAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSelectedEmptyAudio Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetSelectedEmptyAudio", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::IsdkInteractableWidgetComponent_eventGetSelectedEmptyAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio_Statics::IsdkInteractableWidgetComponent_eventGetSelectedEmptyAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio()
 {
@@ -289,16 +325,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHovered
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSelectedHoveredAudio constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSelectedHoveredAudio constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSelectedHoveredAudio Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetSelectedHoveredAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetSelectedHoveredAudio", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::IsdkInteractableWidgetComponent_eventGetSelectedHoveredAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSelectedHoveredAudio Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetSelectedHoveredAudio", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::IsdkInteractableWidgetComponent_eventGetSelectedHoveredAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio_Statics::IsdkInteractableWidgetComponent_eventGetSelectedHoveredAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio()
 {
@@ -335,16 +380,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetWidget constinit property declarations *****************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetWidget constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetWidget Property Definitions ****************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetWidget_Parms, ReturnValue), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetWidget", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::IsdkInteractableWidgetComponent_eventGetWidget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetWidget Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetWidget", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::IsdkInteractableWidgetComponent_eventGetWidget_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget_Statics::IsdkInteractableWidgetComponent_eventGetWidget_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget()
 {
@@ -381,16 +435,25 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudi
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetWidgetEventAudioPlayer constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetWidgetEventAudioPlayer constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetWidgetEventAudioPlayer Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkInteractableWidgetComponent_eventGetWidgetEventAudioPlayer_Parms, ReturnValue), Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetWidgetEventAudioPlayer", Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::IsdkInteractableWidgetComponent_eventGetWidgetEventAudioPlayer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetWidgetEventAudioPlayer Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "GetWidgetEventAudioPlayer", 	Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::IsdkInteractableWidgetComponent_eventGetWidgetEventAudioPlayer_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer_Statics::IsdkInteractableWidgetComponent_eventGetWidgetEventAudioPlayer_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer()
 {
@@ -419,9 +482,15 @@ struct Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterial
 		{ "ModuleRelativePath", "Public/IsdkInteractableWidgetComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedMaterialProperties constinit property declarations **********
+// ********** End Function SetRoundedMaterialProperties constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "SetRoundedMaterialProperties", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkInteractableWidgetComponent, nullptr, "SetRoundedMaterialProperties", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -441,21 +510,6 @@ DEFINE_FUNCTION(UIsdkInteractableWidgetComponent::execSetRoundedMaterialProperti
 // ********** End Class UIsdkInteractableWidgetComponent Function SetRoundedMaterialProperties *****
 
 // ********** Begin Class UIsdkInteractableWidgetComponent *****************************************
-void UIsdkInteractableWidgetComponent::StaticRegisterNativesUIsdkInteractableWidgetComponent()
-{
-	UClass* Class = UIsdkInteractableWidgetComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetPointableWidget", &UIsdkInteractableWidgetComponent::execGetPointableWidget },
-		{ "GetPokeInteractable", &UIsdkInteractableWidgetComponent::execGetPokeInteractable },
-		{ "GetRayInteractable", &UIsdkInteractableWidgetComponent::execGetRayInteractable },
-		{ "GetSelectedEmptyAudio", &UIsdkInteractableWidgetComponent::execGetSelectedEmptyAudio },
-		{ "GetSelectedHoveredAudio", &UIsdkInteractableWidgetComponent::execGetSelectedHoveredAudio },
-		{ "GetWidget", &UIsdkInteractableWidgetComponent::execGetWidget },
-		{ "GetWidgetEventAudioPlayer", &UIsdkInteractableWidgetComponent::execGetWidgetEventAudioPlayer },
-		{ "SetRoundedMaterialProperties", &UIsdkInteractableWidgetComponent::execSetRoundedMaterialProperties },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent;
 UClass* UIsdkInteractableWidgetComponent::GetPrivateStaticClass()
 {
@@ -463,7 +517,7 @@ UClass* UIsdkInteractableWidgetComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInteractableWidgetComponent"),
 			Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkInteractableWidgetComponent,
@@ -499,10 +553,14 @@ struct Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Widget_MetaData[] = {
 		{ "BlueprintGetter", "GetWidget" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Instanced (created in constructor)\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/IsdkInteractableWidgetComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Instanced (created in constructor)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WidgetInstance_MetaData[] = {
 		{ "EditInline", "true" },
@@ -638,6 +696,8 @@ struct Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics
 		{ "ModuleRelativePath", "Public/IsdkInteractableWidgetComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkInteractableWidgetComponent constinit property declarations *********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Widget;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WidgetInstance;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectedHoveredAudio;
@@ -673,23 +733,36 @@ struct Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics
 	static const UECodeGen_Private::FClassPropertyParams NewProp_WidgetClass;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Pivot;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkInteractableWidgetComponent constinit property declarations ***********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetPointableWidget"), .Pointer = &UIsdkInteractableWidgetComponent::execGetPointableWidget },
+		{ .NameUTF8 = UTF8TEXT("GetPokeInteractable"), .Pointer = &UIsdkInteractableWidgetComponent::execGetPokeInteractable },
+		{ .NameUTF8 = UTF8TEXT("GetRayInteractable"), .Pointer = &UIsdkInteractableWidgetComponent::execGetRayInteractable },
+		{ .NameUTF8 = UTF8TEXT("GetSelectedEmptyAudio"), .Pointer = &UIsdkInteractableWidgetComponent::execGetSelectedEmptyAudio },
+		{ .NameUTF8 = UTF8TEXT("GetSelectedHoveredAudio"), .Pointer = &UIsdkInteractableWidgetComponent::execGetSelectedHoveredAudio },
+		{ .NameUTF8 = UTF8TEXT("GetWidget"), .Pointer = &UIsdkInteractableWidgetComponent::execGetWidget },
+		{ .NameUTF8 = UTF8TEXT("GetWidgetEventAudioPlayer"), .Pointer = &UIsdkInteractableWidgetComponent::execGetWidgetEventAudioPlayer },
+		{ .NameUTF8 = UTF8TEXT("SetRoundedMaterialProperties"), .Pointer = &UIsdkInteractableWidgetComponent::execSetRoundedMaterialProperties },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget, "GetPointableWidget" }, // 3348527231
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable, "GetPokeInteractable" }, // 3642943225
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable, "GetRayInteractable" }, // 310360408
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio, "GetSelectedEmptyAudio" }, // 3569110738
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio, "GetSelectedHoveredAudio" }, // 2319007787
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget, "GetWidget" }, // 1215336775
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer, "GetWidgetEventAudioPlayer" }, // 4082810168
-		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties, "SetRoundedMaterialProperties" }, // 2011438262
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPointableWidget, "GetPointableWidget" }, // 2496879361
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetPokeInteractable, "GetPokeInteractable" }, // 3727566521
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetRayInteractable, "GetRayInteractable" }, // 1601322703
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedEmptyAudio, "GetSelectedEmptyAudio" }, // 2453009338
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetSelectedHoveredAudio, "GetSelectedHoveredAudio" }, // 3612468092
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidget, "GetWidget" }, // 2264324077
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_GetWidgetEventAudioPlayer, "GetWidgetEventAudioPlayer" }, // 66850929
+		{ &Z_Construct_UFunction_UIsdkInteractableWidgetComponent_SetRoundedMaterialProperties, "SetRoundedMaterialProperties" }, // 2327722030
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkInteractableWidgetComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics
+
+// ********** Begin Class UIsdkInteractableWidgetComponent Property Definitions ********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_Widget = { "Widget", nullptr, (EPropertyFlags)0x014400000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, Widget), Z_Construct_UClass_UWidgetComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Widget_MetaData), NewProp_Widget_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_WidgetInstance = { "WidgetInstance", nullptr, (EPropertyFlags)0x0144000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, WidgetInstance), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetInstance_MetaData), NewProp_WidgetInstance_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_SelectedHoveredAudio = { "SelectedHoveredAudio", nullptr, (EPropertyFlags)0x014400000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, SelectedHoveredAudio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectedHoveredAudio_MetaData), NewProp_SelectedHoveredAudio_MetaData) };
@@ -714,7 +787,7 @@ const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UIsdkInteractabl
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_CornerRadius = { "CornerRadius", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, CornerRadius), Z_Construct_UScriptStruct_FVector4, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CornerRadius_MetaData), NewProp_CornerRadius_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_BackgroundColor = { "BackgroundColor", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, BackgroundColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BackgroundColor_MetaData), NewProp_BackgroundColor_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_BlendMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_BlendMode = { "BlendMode", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, BlendMode), Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkWidgetBlendMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BlendMode_MetaData), NewProp_BlendMode_MetaData) }; // 3944940555
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_BlendMode = { "BlendMode", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, BlendMode), Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkWidgetBlendMode, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BlendMode_MetaData), NewProp_BlendMode_MetaData) }; // 4203346565
 void Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bTwoSided_SetBit(void* Obj)
 {
 	((UIsdkInteractableWidgetComponent*)Obj)->bTwoSided = 1;
@@ -726,7 +799,7 @@ void Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreat
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreatePokeInteractable = { "bCreatePokeInteractable", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UIsdkInteractableWidgetComponent), &Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreatePokeInteractable_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bCreatePokeInteractable_MetaData), NewProp_bCreatePokeInteractable_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_DefaultPokeInteractableConfigAsset = { "DefaultPokeInteractableConfigAsset", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, DefaultPokeInteractableConfigAsset), Z_Construct_UClass_UIsdkPokeInteractableConfigDataAsset_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultPokeInteractableConfigAsset_MetaData), NewProp_DefaultPokeInteractableConfigAsset_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_DefaultPokeInteractableConfigOffsets = { "DefaultPokeInteractableConfigOffsets", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, DefaultPokeInteractableConfigOffsets), Z_Construct_UScriptStruct_FIsdkPokeInteractableConfigOffsets, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultPokeInteractableConfigOffsets_MetaData), NewProp_DefaultPokeInteractableConfigOffsets_MetaData) }; // 978703178
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_DefaultPokeInteractableConfigOffsets = { "DefaultPokeInteractableConfigOffsets", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, DefaultPokeInteractableConfigOffsets), Z_Construct_UScriptStruct_FIsdkPokeInteractableConfigOffsets, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DefaultPokeInteractableConfigOffsets_MetaData), NewProp_DefaultPokeInteractableConfigOffsets_MetaData) }; // 3797938061
 void Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreateRayInteractable_SetBit(void* Obj)
 {
 	((UIsdkInteractableWidgetComponent*)Obj)->bCreateRayInteractable = 1;
@@ -734,7 +807,7 @@ void Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreat
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreateRayInteractable = { "bCreateRayInteractable", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UIsdkInteractableWidgetComponent), &Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_bCreateRayInteractable_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bCreateRayInteractable_MetaData), NewProp_bCreateRayInteractable_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_DrawSize = { "DrawSize", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, DrawSize), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DrawSize_MetaData), NewProp_DrawSize_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_WidgetScale = { "WidgetScale", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, WidgetScale), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetScale_MetaData), NewProp_WidgetScale_MetaData) };
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_WidgetClass = { "WidgetClass", nullptr, (EPropertyFlags)0x0015000000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, WidgetClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetClass_MetaData), NewProp_WidgetClass_MetaData) };
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_WidgetClass = { "WidgetClass", nullptr, (EPropertyFlags)0x0015000000000015, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, WidgetClass), Z_Construct_UClass_UClass_NoRegister, Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WidgetClass_MetaData), NewProp_WidgetClass_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_Pivot = { "Pivot", nullptr, (EPropertyFlags)0x0011000000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInteractableWidgetComponent, Pivot), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pivot_MetaData), NewProp_Pivot_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_Widget,
@@ -769,6 +842,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInte
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::NewProp_Pivot,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkInteractableWidgetComponent Property Definitions **********************
 UObject* (*const Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -789,6 +863,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkInteractableWidget
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkInteractableWidgetComponent::StaticRegisterNativesUIsdkInteractableWidgetComponent()
+{
+	UClass* Class = UIsdkInteractableWidgetComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkInteractableWidgetComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkInteractableWidgetComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent.OuterSingleton)
@@ -797,24 +876,26 @@ UClass* Z_Construct_UClass_UIsdkInteractableWidgetComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkInteractableWidgetComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkInteractableWidgetComponent);
 UIsdkInteractableWidgetComponent::~UIsdkInteractableWidgetComponent() {}
 // ********** End Class UIsdkInteractableWidgetComponent *******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkWidgetBlendMode_StaticEnum, TEXT("EIsdkWidgetBlendMode"), &Z_Registration_Info_UEnum_EIsdkWidgetBlendMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3944940555U) },
+		{ EIsdkWidgetBlendMode_StaticEnum, TEXT("EIsdkWidgetBlendMode"), &Z_Registration_Info_UEnum_EIsdkWidgetBlendMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4203346565U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkInteractableWidgetComponent, UIsdkInteractableWidgetComponent::StaticClass, TEXT("UIsdkInteractableWidgetComponent"), &Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInteractableWidgetComponent), 4138055391U) },
+		{ Z_Construct_UClass_UIsdkInteractableWidgetComponent, UIsdkInteractableWidgetComponent::StaticClass, TEXT("UIsdkInteractableWidgetComponent"), &Z_Registration_Info_UClass_UIsdkInteractableWidgetComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInteractableWidgetComponent), 21613935U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_1188617518(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_3549046798{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkInteractableWidgetComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

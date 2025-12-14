@@ -8,7 +8,7 @@
 #include "Core/IsdkConditionalGroup.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkConditionalGroup() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -29,21 +29,34 @@ struct Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Add a conditional to be resolved in this group\n   * @param InConditional Pointer to the UIsdkConditional intended to be added\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Add a conditional to be resolved in this group\n@param InConditional Pointer to the UIsdkConditional intended to be added" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AddConditional constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InConditional;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AddConditional constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function AddConditional Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::NewProp_InConditional = { "InConditional", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalGroup_eventAddConditional_Parms, InConditional), Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::NewProp_InConditional,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "AddConditional", Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::IsdkConditionalGroup_eventAddConditional_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::Function_MetaDataParams)},  };
+// ********** End Function AddConditional Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "AddConditional", 	Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::IsdkConditionalGroup_eventAddConditional_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional_Statics::IsdkConditionalGroup_eventAddConditional_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional()
 {
@@ -74,16 +87,25 @@ struct Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns the conditionals collectively resolved in this group\n   * @param Conditionals Reference to the TArray of UIsdkConditionals retrieved\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns the conditionals collectively resolved in this group\n@param Conditionals Reference to the TArray of UIsdkConditionals retrieved" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetConditionals constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Conditionals_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Conditionals;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetConditionals constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetConditionals Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::NewProp_Conditionals_Inner = { "Conditionals", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::NewProp_Conditionals = { "Conditionals", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalGroup_eventGetConditionals_Parms, Conditionals), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::PropPointers[] = {
@@ -91,7 +113,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::NewProp_Conditionals,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "GetConditionals", Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::IsdkConditionalGroup_eventGetConditionals_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetConditionals Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "GetConditionals", 	Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::IsdkConditionalGroup_eventGetConditionals_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals_Statics::IsdkConditionalGroup_eventGetConditionals_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals()
 {
@@ -122,16 +148,25 @@ struct Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Function to retrieve whether or not the TMap of conditionals is empty\n   * @return bool Returns true if there are no UIsdkConditionals present in this object\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Function to retrieve whether or not the TMap of conditionals is empty\n@return bool Returns true if there are no UIsdkConditionals present in this object" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsEmpty constinit property declarations *******************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsEmpty constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsEmpty Property Definitions ******************************************
 void Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkConditionalGroup_eventIsEmpty_Parms*)Obj)->ReturnValue = 1;
@@ -141,7 +176,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "IsEmpty", Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::IsdkConditionalGroup_eventIsEmpty_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsEmpty Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "IsEmpty", 	Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::IsdkConditionalGroup_eventIsEmpty_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty_Statics::IsdkConditionalGroup_eventIsEmpty_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty()
 {
@@ -171,21 +210,34 @@ struct Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Removes a conditional from being resolved in this group\n   * @param InConditional Pointer to the UIsdkConditional intended to be removed\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Removes a conditional from being resolved in this group\n@param InConditional Pointer to the UIsdkConditional intended to be removed" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function RemoveConditional constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InConditional;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function RemoveConditional constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function RemoveConditional Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::NewProp_InConditional = { "InConditional", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalGroup_eventRemoveConditional_Parms, InConditional), Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::NewProp_InConditional,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "RemoveConditional", Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::IsdkConditionalGroup_eventRemoveConditional_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::Function_MetaDataParams)},  };
+// ********** End Function RemoveConditional Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalGroup, nullptr, "RemoveConditional", 	Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::IsdkConditionalGroup_eventRemoveConditional_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional_Statics::IsdkConditionalGroup_eventRemoveConditional_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional()
 {
@@ -207,17 +259,6 @@ DEFINE_FUNCTION(UIsdkConditionalGroup::execRemoveConditional)
 // ********** End Class UIsdkConditionalGroup Function RemoveConditional ***************************
 
 // ********** Begin Class UIsdkConditionalGroup ****************************************************
-void UIsdkConditionalGroup::StaticRegisterNativesUIsdkConditionalGroup()
-{
-	UClass* Class = UIsdkConditionalGroup::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "AddConditional", &UIsdkConditionalGroup::execAddConditional },
-		{ "GetConditionals", &UIsdkConditionalGroup::execGetConditionals },
-		{ "IsEmpty", &UIsdkConditionalGroup::execIsEmpty },
-		{ "RemoveConditional", &UIsdkConditionalGroup::execRemoveConditional },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkConditionalGroup;
 UClass* UIsdkConditionalGroup::GetPrivateStaticClass()
 {
@@ -225,7 +266,7 @@ UClass* UIsdkConditionalGroup::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkConditionalGroup.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkConditionalGroup"),
 			Z_Registration_Info_UClass_UIsdkConditionalGroup.InnerSingleton,
 			StaticRegisterNativesUIsdkConditionalGroup,
@@ -252,26 +293,39 @@ struct Z_Construct_UClass_UIsdkConditionalGroup_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkConditionalGroup\n * @brief Collection of IsdkConditionals that are resolved as a group (abstract base class)\n * bool.\n *\n * Stores IsdkConditionals as a TMap of Conditionals and delegates, provides multiple methods for\n * querying and updating the state of conditionals\n *\n * @see UIsdkConditional\n * @see UIsdkConditionalGroupAll\n * @see UIsdkConditionalGroupAny\n * @see UIsdkConditionalGroupNone\n * @see UIsdkConditionalGroupSingle\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "Core/IsdkConditionalGroup.h" },
 		{ "IsBlueprintBase", "false" },
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalGroup.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkConditionalGroup\n@brief Collection of IsdkConditionals that are resolved as a group (abstract base class)\nbool.\n\nStores IsdkConditionals as a TMap of Conditionals and delegates, provides multiple methods for\nquerying and updating the state of conditionals\n\n@see UIsdkConditional\n@see UIsdkConditionalGroupAll\n@see UIsdkConditionalGroupAny\n@see UIsdkConditionalGroupNone\n@see UIsdkConditionalGroupSingle\n@addtogroup InteractionSDK" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkConditionalGroup constinit property declarations ********************
+// ********** End Class UIsdkConditionalGroup constinit property declarations **********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("AddConditional"), .Pointer = &UIsdkConditionalGroup::execAddConditional },
+		{ .NameUTF8 = UTF8TEXT("GetConditionals"), .Pointer = &UIsdkConditionalGroup::execGetConditionals },
+		{ .NameUTF8 = UTF8TEXT("IsEmpty"), .Pointer = &UIsdkConditionalGroup::execIsEmpty },
+		{ .NameUTF8 = UTF8TEXT("RemoveConditional"), .Pointer = &UIsdkConditionalGroup::execRemoveConditional },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional, "AddConditional" }, // 3732149531
-		{ &Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals, "GetConditionals" }, // 403679540
-		{ &Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty, "IsEmpty" }, // 3227085640
-		{ &Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional, "RemoveConditional" }, // 2690646651
+		{ &Z_Construct_UFunction_UIsdkConditionalGroup_AddConditional, "AddConditional" }, // 3807959639
+		{ &Z_Construct_UFunction_UIsdkConditionalGroup_GetConditionals, "GetConditionals" }, // 1068784456
+		{ &Z_Construct_UFunction_UIsdkConditionalGroup_IsEmpty, "IsEmpty" }, // 1336523373
+		{ &Z_Construct_UFunction_UIsdkConditionalGroup_RemoveConditional, "RemoveConditional" }, // 353346100
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkConditionalGroup>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkConditionalGroup_Statics
 UObject* (*const Z_Construct_UClass_UIsdkConditionalGroup_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkConditional,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -292,6 +346,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkConditionalGroup_S
 	0x009000A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkConditionalGroup_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkConditionalGroup_Statics::Class_MetaDataParams)
 };
+void UIsdkConditionalGroup::StaticRegisterNativesUIsdkConditionalGroup()
+{
+	UClass* Class = UIsdkConditionalGroup::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkConditionalGroup_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkConditionalGroup()
 {
 	if (!Z_Registration_Info_UClass_UIsdkConditionalGroup.OuterSingleton)
@@ -300,21 +359,23 @@ UClass* Z_Construct_UClass_UIsdkConditionalGroup()
 	}
 	return Z_Registration_Info_UClass_UIsdkConditionalGroup.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkConditionalGroup);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkConditionalGroup);
 UIsdkConditionalGroup::~UIsdkConditionalGroup() {}
 // ********** End Class UIsdkConditionalGroup ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkConditionalGroup, UIsdkConditionalGroup::StaticClass, TEXT("UIsdkConditionalGroup"), &Z_Registration_Info_UClass_UIsdkConditionalGroup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalGroup), 4176211476U) },
+		{ Z_Construct_UClass_UIsdkConditionalGroup, UIsdkConditionalGroup::StaticClass, TEXT("UIsdkConditionalGroup"), &Z_Registration_Info_UClass_UIsdkConditionalGroup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalGroup), 3277106683U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_1208840737(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_2461533199{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroup_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

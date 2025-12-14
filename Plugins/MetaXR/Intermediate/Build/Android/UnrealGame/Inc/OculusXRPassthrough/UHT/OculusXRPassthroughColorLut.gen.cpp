@@ -8,7 +8,7 @@
 #include "OculusXRPassthroughColorLut.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRPassthroughColorLut() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -23,17 +23,10 @@ UPackage* Z_Construct_UPackage__Script_OculusXRPassthrough();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FLutTextureData ***************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FLutTextureData;
-class UScriptStruct* FLutTextureData::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FLutTextureData.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FLutTextureData.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FLutTextureData, (UObject*)Z_Construct_UPackage__Script_OculusXRPassthrough(), TEXT("LutTextureData"));
-	}
-	return Z_Registration_Info_UScriptStruct_FLutTextureData.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FLutTextureData_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FLutTextureData); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FLutTextureData); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
@@ -45,16 +38,30 @@ struct Z_Construct_UScriptStruct_FLutTextureData_Statics
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FLutTextureData constinit property declarations *******************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Data_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Data;
 	static const UECodeGen_Private::FUInt32PropertyParams NewProp_Resolution;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FLutTextureData constinit property declarations *********************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FLutTextureData>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FLutTextureData_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FLutTextureData;
+class UScriptStruct* FLutTextureData::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FLutTextureData.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FLutTextureData.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FLutTextureData, (UObject*)Z_Construct_UPackage__Script_OculusXRPassthrough(), TEXT("LutTextureData"));
+	}
+	return Z_Registration_Info_UScriptStruct_FLutTextureData.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FLutTextureData Property Definitions ******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FLutTextureData_Statics::NewProp_Data_Inner = { "Data", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FLutTextureData_Statics::NewProp_Data = { "Data", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLutTextureData, Data), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Data_MetaData), NewProp_Data_MetaData) };
 const UECodeGen_Private::FUInt32PropertyParams Z_Construct_UScriptStruct_FLutTextureData_Statics::NewProp_Resolution = { "Resolution", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::UInt32, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FLutTextureData, Resolution), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Resolution_MetaData), NewProp_Resolution_MetaData) };
@@ -64,6 +71,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FL
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FLutTextureData_Statics::NewProp_Resolution,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FLutTextureData_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FLutTextureData Property Definitions ********************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FLutTextureData_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRPassthrough,
 	nullptr,
@@ -83,7 +91,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FLutTextureData()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FLutTextureData.InnerSingleton, Z_Construct_UScriptStruct_FLutTextureData_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FLutTextureData.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FLutTextureData.InnerSingleton);
 }
 // ********** End ScriptStruct FLutTextureData *****************************************************
 
@@ -97,7 +105,7 @@ static UEnum* EColorLutType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EColorLutType.OuterSingleton;
 }
-template<> OCULUSXRPASSTHROUGH_API UEnum* StaticEnum<EColorLutType>()
+template<> OCULUSXRPASSTHROUGH_NON_ATTRIBUTED_API UEnum* StaticEnum<EColorLutType>()
 {
 	return EColorLutType_StaticEnum();
 }
@@ -121,7 +129,7 @@ struct Z_Construct_UEnum_OculusXRPassthrough_EColorLutType_Statics
 		{ "EColorLutType::Array", (int64)EColorLutType::Array },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRPassthrough_EColorLutType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRPassthrough_EColorLutType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRPassthrough,
 	nullptr,
@@ -155,21 +163,30 @@ struct Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "Passthrough Color LUT" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Generate color LUT from array. Array should have format of exploded cube. Its size should be power of 2. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generate color LUT from array. Array should have format of exploded cube. Its size should be power of 2." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InColorArray_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetLutFromArray constinit property declarations ***********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InColorArray_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_InColorArray;
 	static void NewProp_InIgnoreAlphaChannel_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_InIgnoreAlphaChannel;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetLutFromArray constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetLutFromArray Property Definitions **********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::NewProp_InColorArray_Inner = { "InColorArray", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::NewProp_InColorArray = { "InColorArray", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRPassthroughColorLut_eventSetLutFromArray_Parms, InColorArray), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InColorArray_MetaData), NewProp_InColorArray_MetaData) };
 void Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::NewProp_InIgnoreAlphaChannel_SetBit(void* Obj)
@@ -183,7 +200,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::NewProp_InIgnoreAlphaChannel,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPassthroughColorLut, nullptr, "SetLutFromArray", Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::OculusXRPassthroughColorLut_eventSetLutFromArray_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetLutFromArray Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPassthroughColorLut, nullptr, "SetLutFromArray", 	Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::OculusXRPassthroughColorLut_eventSetLutFromArray_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray_Statics::OculusXRPassthroughColorLut_eventSetLutFromArray_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray()
 {
@@ -206,14 +227,6 @@ DEFINE_FUNCTION(UOculusXRPassthroughColorLut::execSetLutFromArray)
 // ********** End Class UOculusXRPassthroughColorLut Function SetLutFromArray **********************
 
 // ********** Begin Class UOculusXRPassthroughColorLut *********************************************
-void UOculusXRPassthroughColorLut::StaticRegisterNativesUOculusXRPassthroughColorLut()
-{
-	UClass* Class = UOculusXRPassthroughColorLut::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "SetLutFromArray", &UOculusXRPassthroughColorLut::execSetLutFromArray },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRPassthroughColorLut;
 UClass* UOculusXRPassthroughColorLut::GetPrivateStaticClass()
 {
@@ -221,7 +234,7 @@ UClass* UOculusXRPassthroughColorLut::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRPassthroughColorLut.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRPassthroughColorLut"),
 			Z_Registration_Info_UClass_UOculusXRPassthroughColorLut.InnerSingleton,
 			StaticRegisterNativesUOculusXRPassthroughColorLut,
@@ -248,40 +261,58 @@ struct Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief This class represents a color look-up table (LUT) that can be applied to an \\ref UOculusXRPassthroughLayerBase\n * in order to change the color reproduction of that passthrough layer.\n *\n * Color LUTs map each RGB input color to a new RGB(A) color. It unlocks a number of effects:\n * - Color grading and color correction\n * - Stylizations, such as posterization or hue rotation\n * - Color filtering and chroma keying.\n *\n * To apply a color LUT to a Passthrough layer, create a new instance of `UOculusXRPassthroughLayerComponent`\n * and call \\ref UOculusXRPassthroughLayerBase::SetColorLUTSource()\"/>.\n *\n * @see https://developers.meta.com/horizon/documentation/unreal/unreal-customize-passthrough-color-mapping/ to learn more about passthrough and color LUTs.\n */" },
+#endif
 		{ "DisplayName", "Passthrough Color LUT" },
 		{ "IncludePath", "OculusXRPassthroughColorLut.h" },
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief This class represents a color look-up table (LUT) that can be applied to an \\ref UOculusXRPassthroughLayerBase\nin order to change the color reproduction of that passthrough layer.\n\nColor LUTs map each RGB input color to a new RGB(A) color. It unlocks a number of effects:\n- Color grading and color correction\n- Stylizations, such as posterization or hue rotation\n- Color filtering and chroma keying.\n\nTo apply a color LUT to a Passthrough layer, create a new instance of `UOculusXRPassthroughLayerComponent`\nand call \\ref UOculusXRPassthroughLayerBase::SetColorLUTSource()\"/>.\n\n@see https://developers.meta.com/horizon/documentation/unreal/unreal-customize-passthrough-color-mapping/ to learn more about passthrough and color LUTs." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ColorLutType_MetaData[] = {
 		{ "Category", "Passthrough Color LUT" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Keeps the information of the source of the current LUT instance. The source can be an array, another LUT texture, or None. */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Keeps the information of the source of the current LUT instance. The source can be an array, another LUT texture, or None." },
+#endif
 	};
 #if WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LutTexture_MetaData[] = {
 		{ "Category", "Passthrough Color LUT" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Color LUT texture. */" },
+#endif
 		{ "EditCondition", "ColorLutType == EColorLutType::TextureLUT" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Color LUT texture." },
+#endif
 	};
 #endif // WITH_EDITORONLY_DATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_IgnoreAlphaChannel_MetaData[] = {
 		{ "Category", "Passthrough Color LUT" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Informs if the alpha channel of LUT should be ignored. */" },
+#endif
 		{ "EditCondition", "ColorLutType == EColorLutType::TextureLUT" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Informs if the alpha channel of LUT should be ignored." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StoredTextureData_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughColorLut.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRPassthroughColorLut constinit property declarations *************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ColorLutType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ColorLutType;
 #if WITH_EDITORONLY_DATA
@@ -291,18 +322,24 @@ struct Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IgnoreAlphaChannel;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_StoredTextureData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRPassthroughColorLut constinit property declarations ***************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("SetLutFromArray"), .Pointer = &UOculusXRPassthroughColorLut::execSetLutFromArray },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray, "SetLutFromArray" }, // 3242186273
+		{ &Z_Construct_UFunction_UOculusXRPassthroughColorLut_SetLutFromArray, "SetLutFromArray" }, // 3043037033
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRPassthroughColorLut>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics
+
+// ********** Begin Class UOculusXRPassthroughColorLut Property Definitions ************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_ColorLutType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_ColorLutType = { "ColorLutType", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPassthroughColorLut, ColorLutType), Z_Construct_UEnum_OculusXRPassthrough_EColorLutType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorLutType_MetaData), NewProp_ColorLutType_MetaData) }; // 3684992881
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_ColorLutType = { "ColorLutType", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPassthroughColorLut, ColorLutType), Z_Construct_UEnum_OculusXRPassthrough_EColorLutType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ColorLutType_MetaData), NewProp_ColorLutType_MetaData) }; // 779118401
 #if WITH_EDITORONLY_DATA
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_LutTexture = { "LutTexture", nullptr, (EPropertyFlags)0x0010000800000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPassthroughColorLut, LutTexture), Z_Construct_UClass_UTexture2D_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LutTexture_MetaData), NewProp_LutTexture_MetaData) };
 #endif // WITH_EDITORONLY_DATA
@@ -311,7 +348,7 @@ void Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_IgnoreAlph
 	((UOculusXRPassthroughColorLut*)Obj)->IgnoreAlphaChannel = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_IgnoreAlphaChannel = { "IgnoreAlphaChannel", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UOculusXRPassthroughColorLut), &Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_IgnoreAlphaChannel_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IgnoreAlphaChannel_MetaData), NewProp_IgnoreAlphaChannel_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_StoredTextureData = { "StoredTextureData", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPassthroughColorLut, StoredTextureData), Z_Construct_UScriptStruct_FLutTextureData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StoredTextureData_MetaData), NewProp_StoredTextureData_MetaData) }; // 587433977
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_StoredTextureData = { "StoredTextureData", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPassthroughColorLut, StoredTextureData), Z_Construct_UScriptStruct_FLutTextureData, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StoredTextureData_MetaData), NewProp_StoredTextureData_MetaData) }; // 900897148
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_ColorLutType_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_ColorLutType,
@@ -322,6 +359,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::NewProp_StoredTextureData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRPassthroughColorLut Property Definitions **************************
 UObject* (*const Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRPassthrough,
@@ -342,6 +380,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRPassthroughCol
 	0x001020A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::Class_MetaDataParams)
 };
+void UOculusXRPassthroughColorLut::StaticRegisterNativesUOculusXRPassthroughColorLut()
+{
+	UClass* Class = UOculusXRPassthroughColorLut::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRPassthroughColorLut()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRPassthroughColorLut.OuterSingleton)
@@ -351,27 +394,29 @@ UClass* Z_Construct_UClass_UOculusXRPassthroughColorLut()
 	return Z_Registration_Info_UClass_UOculusXRPassthroughColorLut.OuterSingleton;
 }
 UOculusXRPassthroughColorLut::UOculusXRPassthroughColorLut(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRPassthroughColorLut);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRPassthroughColorLut);
 UOculusXRPassthroughColorLut::~UOculusXRPassthroughColorLut() {}
 // ********** End Class UOculusXRPassthroughColorLut ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EColorLutType_StaticEnum, TEXT("EColorLutType"), &Z_Registration_Info_UEnum_EColorLutType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3684992881U) },
+		{ EColorLutType_StaticEnum, TEXT("EColorLutType"), &Z_Registration_Info_UEnum_EColorLutType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 779118401U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FLutTextureData::StaticStruct, Z_Construct_UScriptStruct_FLutTextureData_Statics::NewStructOps, TEXT("LutTextureData"), &Z_Registration_Info_UScriptStruct_FLutTextureData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLutTextureData), 587433977U) },
+		{ FLutTextureData::StaticStruct, Z_Construct_UScriptStruct_FLutTextureData_Statics::NewStructOps, TEXT("LutTextureData"),&Z_Registration_Info_UScriptStruct_FLutTextureData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FLutTextureData), 900897148U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRPassthroughColorLut, UOculusXRPassthroughColorLut::StaticClass, TEXT("UOculusXRPassthroughColorLut"), &Z_Registration_Info_UClass_UOculusXRPassthroughColorLut, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRPassthroughColorLut), 2450517034U) },
+		{ Z_Construct_UClass_UOculusXRPassthroughColorLut, UOculusXRPassthroughColorLut::StaticClass, TEXT("UOculusXRPassthroughColorLut"), &Z_Registration_Info_UClass_UOculusXRPassthroughColorLut, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRPassthroughColorLut), 1307629791U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_2637009406{
+	TEXT("/Script/OculusXRPassthrough"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_1597597655(TEXT("/Script/OculusXRPassthrough"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h__Script_OculusXRPassthrough_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

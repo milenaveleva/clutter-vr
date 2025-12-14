@@ -14,7 +14,6 @@
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD_Layer.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD_Settings.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD_SpectatorScreenController.cpp"
-#include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD_Splash.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD_StressTester.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRHMD_VulkanExtensions.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRHMD/Private/OculusXRMultiPlayerTestingSubsystem.cpp"

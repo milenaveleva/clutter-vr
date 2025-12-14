@@ -7,23 +7,23 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOculusXRTelemetry_init() {}
-	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OculusXRTelemetry;
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OculusXRTelemetry;
 	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_OculusXRTelemetry()
 	{
 		if (!Z_Registration_Info_UPackage__Script_OculusXRTelemetry.OuterSingleton)
 		{
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/OculusXRTelemetry",
-				nullptr,
-				0,
-				PKG_CompiledIn | 0x00000000,
-				0xA9FF5A61,
-				0x70F047DF,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRTelemetry.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_OculusXRTelemetry.OuterSingleton;
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/OculusXRTelemetry",
+			nullptr,
+			0,
+			PKG_CompiledIn | 0x00000000,
+			0xCE04801E,
+			0x70F047DF,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRTelemetry.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRTelemetry(Z_Construct_UPackage__Script_OculusXRTelemetry, TEXT("/Script/OculusXRTelemetry"), Z_Registration_Info_UPackage__Script_OculusXRTelemetry, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xA9FF5A61, 0x70F047DF));
+	return Z_Registration_Info_UPackage__Script_OculusXRTelemetry.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRTelemetry(Z_Construct_UPackage__Script_OculusXRTelemetry, TEXT("/Script/OculusXRTelemetry"), Z_Registration_Info_UPackage__Script_OculusXRTelemetry, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xCE04801E, 0x70F047DF));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

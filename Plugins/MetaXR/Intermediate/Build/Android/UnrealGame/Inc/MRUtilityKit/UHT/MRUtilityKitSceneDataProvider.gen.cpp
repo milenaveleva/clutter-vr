@@ -8,7 +8,7 @@
 #include "MRUtilityKitSceneDataProvider.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeMRUtilityKitSceneDataProvider() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,16 +32,25 @@ struct Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 * Gets you a room from the list of rooms, if bUseRandomRoom is true, a random room will be returned.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* Gets you a room from the list of rooms, if bUseRandomRoom is true, a random room will be returned." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRoom constinit property declarations *******************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_RoomJSON;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_RoomName;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRoom constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRoom Property Definitions ******************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::NewProp_RoomJSON = { "RoomJSON", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKSceneDataProvider_eventGetRoom_Parms, RoomJSON), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::NewProp_RoomName = { "RoomName", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKSceneDataProvider_eventGetRoom_Parms, RoomName), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::PropPointers[] = {
@@ -49,7 +58,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKS
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::NewProp_RoomName,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKSceneDataProvider, nullptr, "GetRoom", Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::MRUKSceneDataProvider_eventGetRoom_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRoom Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKSceneDataProvider, nullptr, "GetRoom", 	Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::MRUKSceneDataProvider_eventGetRoom_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom_Statics::MRUKSceneDataProvider_eventGetRoom_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom()
 {
@@ -72,14 +85,6 @@ DEFINE_FUNCTION(AMRUKSceneDataProvider::execGetRoom)
 // ********** End Class AMRUKSceneDataProvider Function GetRoom ************************************
 
 // ********** Begin Class AMRUKSceneDataProvider ***************************************************
-void AMRUKSceneDataProvider::StaticRegisterNativesAMRUKSceneDataProvider()
-{
-	UClass* Class = AMRUKSceneDataProvider::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetRoom", &AMRUKSceneDataProvider::execGetRoom },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AMRUKSceneDataProvider;
 UClass* AMRUKSceneDataProvider::GetPrivateStaticClass()
 {
@@ -87,7 +92,7 @@ UClass* AMRUKSceneDataProvider::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AMRUKSceneDataProvider.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKSceneDataProvider"),
 			Z_Registration_Info_UClass_AMRUKSceneDataProvider.InnerSingleton,
 			StaticRegisterNativesAMRUKSceneDataProvider,
@@ -120,41 +125,63 @@ struct Z_Construct_UClass_AMRUKSceneDataProvider_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Rooms_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 * This list holds the rooms that can be loaded, the key is the room type and the value is a data table that contains multiple rooms.\n\x09 * Roomtypes such as Bedrooms, Livingrooms, etc.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* This list holds the rooms that can be loaded, the key is the room type and the value is a data table that contains multiple rooms.\n* Roomtypes such as Bedrooms, Livingrooms, etc." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUseRandomRoom_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 * When this is true, a random room will be loaded from the list of rooms.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* When this is true, a random room will be loaded from the list of rooms." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bUseRandomRoomFromClass_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 * When this is true, a random room will be loaded a specific room class, defined in Rooms (Bedrooms, Offices, ..).\n\x09 */" },
+#endif
 		{ "EditCondition", "!bUseRandomRoom" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* When this is true, a random room will be loaded a specific room class, defined in Rooms (Bedrooms, Offices, ..)." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpecificRoomClass_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 * Use this property to define a specific room class to load, only visible when bUseRandomRoomFromClass is true.\n\x09 * This can be a room class such as Bedrooms, Offices, ..\n\x09 */" },
+#endif
 		{ "EditCondition", "bUseRandomRoomFromClass && !bUseRandomRoom" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* Use this property to define a specific room class to load, only visible when bUseRandomRoomFromClass is true.\n* This can be a room class such as Bedrooms, Offices, .." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpecificRoomName_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n\x09 * Define a specific room to load, only visible when bUseRandomRoom is false.\n\x09 */" },
+#endif
 		{ "EditCondition", "!bUseRandomRoom && !bUseRandomRoomFromClass" },
 		{ "EditConditionHides", "" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* Define a specific room to load, only visible when bUseRandomRoom is false." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AMRUKSceneDataProvider constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Rooms_ValueProp;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Rooms_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_Rooms;
@@ -165,16 +192,22 @@ struct Z_Construct_UClass_AMRUKSceneDataProvider_Statics
 	static const UECodeGen_Private::FStrPropertyParams NewProp_SpecificRoomClass;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_SpecificRoomName;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AMRUKSceneDataProvider constinit property declarations *********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetRoom"), .Pointer = &AMRUKSceneDataProvider::execGetRoom },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom, "GetRoom" }, // 2000207909
+		{ &Z_Construct_UFunction_AMRUKSceneDataProvider_GetRoom, "GetRoom" }, // 392251289
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMRUKSceneDataProvider>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AMRUKSceneDataProvider_Statics
+
+// ********** Begin Class AMRUKSceneDataProvider Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKSceneDataProvider_Statics::NewProp_Rooms_ValueProp = { "Rooms", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UClass_UDataTable_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_AMRUKSceneDataProvider_Statics::NewProp_Rooms_Key_KeyProp = { "Rooms_Key", nullptr, (EPropertyFlags)0x0000000000000001, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_AMRUKSceneDataProvider_Statics::NewProp_Rooms = { "Rooms", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKSceneDataProvider, Rooms), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Rooms_MetaData), NewProp_Rooms_MetaData) };
@@ -200,6 +233,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMRUKScen
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMRUKSceneDataProvider_Statics::NewProp_SpecificRoomName,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKSceneDataProvider_Statics::PropPointers) < 2048);
+// ********** End Class AMRUKSceneDataProvider Property Definitions ********************************
 UObject* (*const Z_Construct_UClass_AMRUKSceneDataProvider_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -217,9 +251,14 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMRUKSceneDataProvider_
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKSceneDataProvider_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKSceneDataProvider_Statics::Class_MetaDataParams), Z_Construct_UClass_AMRUKSceneDataProvider_Statics::Class_MetaDataParams)
 };
+void AMRUKSceneDataProvider::StaticRegisterNativesAMRUKSceneDataProvider()
+{
+	UClass* Class = AMRUKSceneDataProvider::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_AMRUKSceneDataProvider_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_AMRUKSceneDataProvider()
 {
 	if (!Z_Registration_Info_UClass_AMRUKSceneDataProvider.OuterSingleton)
@@ -229,23 +268,15 @@ UClass* Z_Construct_UClass_AMRUKSceneDataProvider()
 	return Z_Registration_Info_UClass_AMRUKSceneDataProvider.OuterSingleton;
 }
 AMRUKSceneDataProvider::AMRUKSceneDataProvider(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(AMRUKSceneDataProvider);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AMRUKSceneDataProvider);
 AMRUKSceneDataProvider::~AMRUKSceneDataProvider() {}
 // ********** End Class AMRUKSceneDataProvider *****************************************************
 
 // ********** Begin ScriptStruct FJSONData *********************************************************
-static_assert(std::is_polymorphic<FJSONData>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FJSONData cannot be polymorphic unless super FTableRowBase is polymorphic");
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FJSONData;
-class UScriptStruct* FJSONData::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FJSONData.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FJSONData.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FJSONData, (UObject*)Z_Construct_UPackage__Script_MRUtilityKit(), TEXT("JSONData"));
-	}
-	return Z_Registration_Info_UScriptStruct_FJSONData.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FJSONData_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FJSONData); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FJSONData); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -257,19 +288,35 @@ struct Z_Construct_UScriptStruct_FJSONData_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitSceneDataProvider.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FJSONData constinit property declarations *************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_JSON;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FJSONData constinit property declarations ***************************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FJSONData>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FJSONData_Statics
+static_assert(std::is_polymorphic<FJSONData>() == std::is_polymorphic<FTableRowBase>(), "USTRUCT FJSONData cannot be polymorphic unless super FTableRowBase is polymorphic");
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FJSONData;
+class UScriptStruct* FJSONData::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FJSONData.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FJSONData.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FJSONData, (UObject*)Z_Construct_UPackage__Script_MRUtilityKit(), TEXT("JSONData"));
+	}
+	return Z_Registration_Info_UScriptStruct_FJSONData.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FJSONData Property Definitions ************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FJSONData_Statics::NewProp_JSON = { "JSON", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FJSONData, JSON), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JSON_MetaData), NewProp_JSON_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FJSONData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FJSONData_Statics::NewProp_JSON,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FJSONData_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FJSONData Property Definitions **************************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FJSONData_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	Z_Construct_UScriptStruct_FTableRowBase,
@@ -289,24 +336,26 @@ UScriptStruct* Z_Construct_UScriptStruct_FJSONData()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FJSONData.InnerSingleton, Z_Construct_UScriptStruct_FJSONData_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FJSONData.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FJSONData.InnerSingleton);
 }
 // ********** End ScriptStruct FJSONData ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FJSONData::StaticStruct, Z_Construct_UScriptStruct_FJSONData_Statics::NewStructOps, TEXT("JSONData"), &Z_Registration_Info_UScriptStruct_FJSONData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSONData), 2098918323U) },
+		{ FJSONData::StaticStruct, Z_Construct_UScriptStruct_FJSONData_Statics::NewStructOps, TEXT("JSONData"),&Z_Registration_Info_UScriptStruct_FJSONData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FJSONData), 765074657U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMRUKSceneDataProvider, AMRUKSceneDataProvider::StaticClass, TEXT("AMRUKSceneDataProvider"), &Z_Registration_Info_UClass_AMRUKSceneDataProvider, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKSceneDataProvider), 2971196459U) },
+		{ Z_Construct_UClass_AMRUKSceneDataProvider, AMRUKSceneDataProvider::StaticClass, TEXT("AMRUKSceneDataProvider"), &Z_Registration_Info_UClass_AMRUKSceneDataProvider, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKSceneDataProvider), 2172651389U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_1407170878{
+	TEXT("/Script/MRUtilityKit"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_3835729411(TEXT("/Script/MRUtilityKit"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitSceneDataProvider_h__Script_MRUtilityKit_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

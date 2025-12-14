@@ -8,7 +8,7 @@
 #include "Input/IsdkIPose.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIPose() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Interface UIsdkIPose ***********************************************************
-void UIsdkIPose::StaticRegisterNativesUIsdkIPose()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIPose;
 UClass* UIsdkIPose::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkIPose::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIPose.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIPose"),
 			Z_Registration_Info_UClass_UIsdkIPose.InnerSingleton,
 			StaticRegisterNativesUIsdkIPose,
@@ -61,12 +58,15 @@ struct Z_Construct_UClass_UIsdkIPose_Statics
 		{ "ModuleRelativePath", "Public/Input/IsdkIPose.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIPose constinit property declarations ***************************
+// ********** End Interface UIsdkIPose constinit property declarations *****************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIPose>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIPose_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIPose_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -87,6 +87,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIPose_Statics::Cla
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIPose_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIPose_Statics::Class_MetaDataParams)
 };
+void UIsdkIPose::StaticRegisterNativesUIsdkIPose()
+{
+}
 UClass* Z_Construct_UClass_UIsdkIPose()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIPose.OuterSingleton)
@@ -96,20 +99,22 @@ UClass* Z_Construct_UClass_UIsdkIPose()
 	return Z_Registration_Info_UClass_UIsdkIPose.OuterSingleton;
 }
 UIsdkIPose::UIsdkIPose(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIPose);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIPose);
 // ********** End Interface UIsdkIPose *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIPose, UIsdkIPose::StaticClass, TEXT("UIsdkIPose"), &Z_Registration_Info_UClass_UIsdkIPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIPose), 1721230349U) },
+		{ Z_Construct_UClass_UIsdkIPose, UIsdkIPose::StaticClass, TEXT("UIsdkIPose"), &Z_Registration_Info_UClass_UIsdkIPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIPose), 2989574844U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_1230782186(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_145250669{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Input_IsdkIPose_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

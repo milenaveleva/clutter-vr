@@ -7,23 +7,23 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOculusXRMovement_init() {}
-	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OculusXRMovement;
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OculusXRMovement;
 	FORCENOINLINE UPackage* Z_Construct_UPackage__Script_OculusXRMovement()
 	{
 		if (!Z_Registration_Info_UPackage__Script_OculusXRMovement.OuterSingleton)
 		{
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/OculusXRMovement",
-				nullptr,
-				0,
-				PKG_CompiledIn | 0x00000000,
-				0xBB5EAC43,
-				0x9CC5A6DF,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRMovement.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_OculusXRMovement.OuterSingleton;
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/OculusXRMovement",
+			nullptr,
+			0,
+			PKG_CompiledIn | 0x00000000,
+			0x03A7414F,
+			0x9CC5A6DF,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRMovement.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRMovement(Z_Construct_UPackage__Script_OculusXRMovement, TEXT("/Script/OculusXRMovement"), Z_Registration_Info_UPackage__Script_OculusXRMovement, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xBB5EAC43, 0x9CC5A6DF));
+	return Z_Registration_Info_UPackage__Script_OculusXRMovement.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRMovement(Z_Construct_UPackage__Script_OculusXRMovement, TEXT("/Script/OculusXRMovement"), Z_Registration_Info_UPackage__Script_OculusXRMovement, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x03A7414F, 0x9CC5A6DF));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

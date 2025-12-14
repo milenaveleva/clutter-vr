@@ -10,7 +10,7 @@
 #include "OculusXRAnchorTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeMRUtilityKitRoom() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -56,7 +56,7 @@ static UEnum* EMRUKSpawnLocation_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EMRUKSpawnLocation.OuterSingleton;
 }
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnLocation>()
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKSpawnLocation>()
 {
 	return EMRUKSpawnLocation_StaticEnum();
 }
@@ -94,7 +94,7 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnLocation_Statics
 		{ "EMRUKSpawnLocation::HangingDown", (int64)EMRUKSpawnLocation::HangingDown },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnLocation_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnLocation_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -127,7 +127,7 @@ static UEnum* EMRUKRoomFilter_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EMRUKRoomFilter.OuterSingleton;
 }
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKRoomFilter>()
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKRoomFilter>()
 {
 	return EMRUKRoomFilter_StaticEnum();
 }
@@ -148,7 +148,7 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKRoomFilter_Statics
 		{ "EMRUKRoomFilter::AllRooms", (int64)EMRUKRoomFilter::AllRooms },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_MRUtilityKit_EMRUKRoomFilter_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_MRUtilityKit_EMRUKRoomFilter_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -181,7 +181,7 @@ static UEnum* EMRUKPositioningMethod_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EMRUKPositioningMethod.OuterSingleton;
 }
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKPositioningMethod>()
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKPositioningMethod>()
 {
 	return EMRUKPositioningMethod_StaticEnum();
 }
@@ -193,7 +193,9 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod_Statics
 		{ "Center.Comment", "/**\n\x09 * Center the object on the surface.\n\x09 */" },
 		{ "Center.Name", "EMRUKPositioningMethod::Center" },
 		{ "Center.ToolTip", "Center the object on the surface." },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Method to use when determining the position and rotation for the best pose.\n */" },
+#endif
 		{ "Default.Comment", "/**\n\x09 * Use the location where the ray hit the object as the location.\n\x09 * The rotation is dependent on the objects shape. For example for walls\n\x09 * the hit normal from the raycast will be used. For floors the rotation\n\x09 * will be towards the user and for volumes that got hit on the top the\n\x09 * rotation will be towards the longest edge that is nearest to the player.\n\x09 */" },
 		{ "Default.Name", "EMRUKPositioningMethod::Default" },
 		{ "Default.ToolTip", "Use the location where the ray hit the object as the location.\nThe rotation is dependent on the objects shape. For example for walls\nthe hit normal from the raycast will be used. For floors the rotation\nwill be towards the user and for volumes that got hit on the top the\nrotation will be towards the longest edge that is nearest to the player." },
@@ -201,7 +203,9 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod_Statics
 		{ "Edge.Name", "EMRUKPositioningMethod::Edge" },
 		{ "Edge.ToolTip", "Snap the object to edge which is closest to the user." },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Method to use when determining the position and rotation for the best pose." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -210,7 +214,7 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod_Statics
 		{ "EMRUKPositioningMethod::Default", (int64)EMRUKPositioningMethod::Default },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -234,6 +238,55 @@ UEnum* Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod()
 // ********** End Enum EMRUKPositioningMethod ******************************************************
 
 // ********** Begin ScriptStruct FMRUKAnchorWithPlaneUVs *******************************************
+struct Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FMRUKAnchorWithPlaneUVs); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FMRUKAnchorWithPlaneUVs); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * Represents an anchor with its corresponding plane UVs in the Mixed Reality Utility Kit.\n */" },
+#endif
+		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Represents an anchor with its corresponding plane UVs in the Mixed Reality Utility Kit." },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Anchor_MetaData[] = {
+		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n\x09 * A readonly reference to the anchor.\n\x09 */" },
+#endif
+		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "A readonly reference to the anchor." },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlaneUVs_MetaData[] = {
+		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n\x09 * An array of plane UVs that correspond to the anchor.\n\x09 */" },
+#endif
+		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "An array of plane UVs that correspond to the anchor." },
+#endif
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FMRUKAnchorWithPlaneUVs constinit property declarations ***********
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_PlaneUVs_Inner;
+	static const UECodeGen_Private::FArrayPropertyParams NewProp_PlaneUVs;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FMRUKAnchorWithPlaneUVs constinit property declarations *************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMRUKAnchorWithPlaneUVs>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs;
 class UScriptStruct* FMRUKAnchorWithPlaneUVs::StaticStruct()
 {
@@ -242,48 +295,19 @@ class UScriptStruct* FMRUKAnchorWithPlaneUVs::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs, (UObject*)Z_Construct_UPackage__Script_MRUtilityKit(), TEXT("MRUKAnchorWithPlaneUVs"));
 	}
 	return Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Comment", "/**\n * Represents an anchor with its corresponding plane UVs in the Mixed Reality Utility Kit.\n */" },
-		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
-		{ "ToolTip", "Represents an anchor with its corresponding plane UVs in the Mixed Reality Utility Kit." },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Anchor_MetaData[] = {
-		{ "Category", "MR Utility Kit" },
-		{ "Comment", "/**\n\x09 * A readonly reference to the anchor.\n\x09 */" },
-		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
-		{ "ToolTip", "A readonly reference to the anchor." },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PlaneUVs_MetaData[] = {
-		{ "Category", "MR Utility Kit" },
-		{ "Comment", "/**\n\x09 * An array of plane UVs that correspond to the anchor.\n\x09 */" },
-		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
-		{ "ToolTip", "An array of plane UVs that correspond to the anchor." },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
-	static const UECodeGen_Private::FStructPropertyParams NewProp_PlaneUVs_Inner;
-	static const UECodeGen_Private::FArrayPropertyParams NewProp_PlaneUVs;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMRUKAnchorWithPlaneUVs>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
+
+// ********** Begin ScriptStruct FMRUKAnchorWithPlaneUVs Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0114000000000014, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMRUKAnchorWithPlaneUVs, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchor_MetaData), NewProp_Anchor_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_PlaneUVs_Inner = { "PlaneUVs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKPlaneUV, METADATA_PARAMS(0, nullptr) }; // 988117358
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_PlaneUVs = { "PlaneUVs", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMRUKAnchorWithPlaneUVs, PlaneUVs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlaneUVs_MetaData), NewProp_PlaneUVs_MetaData) }; // 988117358
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_PlaneUVs_Inner = { "PlaneUVs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKPlaneUV, METADATA_PARAMS(0, nullptr) }; // 3201565099
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_PlaneUVs = { "PlaneUVs", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FMRUKAnchorWithPlaneUVs, PlaneUVs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlaneUVs_MetaData), NewProp_PlaneUVs_MetaData) }; // 3201565099
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_Anchor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_PlaneUVs_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewProp_PlaneUVs,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FMRUKAnchorWithPlaneUVs Property Definitions ************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -303,11 +327,36 @@ UScriptStruct* Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs.InnerSingleton, Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs.InnerSingleton);
 }
 // ********** End ScriptStruct FMRUKAnchorWithPlaneUVs *********************************************
 
 // ********** Begin ScriptStruct FMRUKRoomFace *****************************************************
+struct Z_Construct_UScriptStruct_FMRUKRoomFace_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FMRUKRoomFace); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FMRUKRoomFace); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * Represents a face in the room mesh, containing information about its geometry and semantic classification.\n */" },
+#endif
+		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Represents a face in the room mesh, containing information about its geometry and semantic classification." },
+#endif
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FMRUKRoomFace constinit property declarations *********************
+// ********** End ScriptStruct FMRUKRoomFace constinit property declarations ***********************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMRUKRoomFace>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FMRUKRoomFace_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FMRUKRoomFace;
 class UScriptStruct* FMRUKRoomFace::StaticStruct()
 {
@@ -316,23 +365,7 @@ class UScriptStruct* FMRUKRoomFace::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FMRUKRoomFace.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FMRUKRoomFace, (UObject*)Z_Construct_UPackage__Script_MRUtilityKit(), TEXT("MRUKRoomFace"));
 	}
 	return Z_Registration_Info_UScriptStruct_FMRUKRoomFace.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FMRUKRoomFace_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Comment", "/**\n * Represents a face in the room mesh, containing information about its geometry and semantic classification.\n */" },
-		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
-		{ "ToolTip", "Represents a face in the room mesh, containing information about its geometry and semantic classification." },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMRUKRoomFace>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMRUKRoomFace_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -352,14 +385,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FMRUKRoomFace()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FMRUKRoomFace.InnerSingleton, Z_Construct_UScriptStruct_FMRUKRoomFace_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FMRUKRoomFace.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FMRUKRoomFace.InnerSingleton);
 }
 // ********** End ScriptStruct FMRUKRoomFace *******************************************************
 
 // ********** Begin Class UMRUKRoomMesh ************************************************************
-void UMRUKRoomMesh::StaticRegisterNativesUMRUKRoomMesh()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UMRUKRoomMesh;
 UClass* UMRUKRoomMesh::GetPrivateStaticClass()
 {
@@ -367,7 +397,7 @@ UClass* UMRUKRoomMesh::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UMRUKRoomMesh.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKRoomMesh"),
 			Z_Registration_Info_UClass_UMRUKRoomMesh.InnerSingleton,
 			StaticRegisterNativesUMRUKRoomMesh,
@@ -394,39 +424,56 @@ struct Z_Construct_UClass_UMRUKRoomMesh_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "MRUtilityKit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents the complete mesh data for a room, including vertices and faces.\n */" },
+#endif
 		{ "IncludePath", "MRUtilityKitRoom.h" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents the complete mesh data for a room, including vertices and faces." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Vertices_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * List of all vertices that make up the room mesh.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "List of all vertices that make up the room mesh." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Faces_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * List of all faces that make up the room mesh, each containing indices into the Vertices list.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "List of all faces that make up the room mesh, each containing indices into the Vertices list." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UMRUKRoomMesh constinit property declarations ****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Vertices_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Vertices;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Faces_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Faces;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UMRUKRoomMesh constinit property declarations ******************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMRUKRoomMesh>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UMRUKRoomMesh_Statics
+
+// ********** Begin Class UMRUKRoomMesh Property Definitions ***************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Vertices_Inner = { "Vertices", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Vertices = { "Vertices", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKRoomMesh, Vertices), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Vertices_MetaData), NewProp_Vertices_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Faces_Inner = { "Faces", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKRoomFace, METADATA_PARAMS(0, nullptr) }; // 2716392789
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Faces = { "Faces", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKRoomMesh, Faces), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Faces_MetaData), NewProp_Faces_MetaData) }; // 2716392789
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Faces_Inner = { "Faces", nullptr, (EPropertyFlags)0x0000000000020000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKRoomFace, METADATA_PARAMS(0, nullptr) }; // 1562270846
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Faces = { "Faces", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKRoomMesh, Faces), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Faces_MetaData), NewProp_Faces_MetaData) }; // 1562270846
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMRUKRoomMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Vertices_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Vertices,
@@ -434,6 +481,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMRUKRoom
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMRUKRoomMesh_Statics::NewProp_Faces,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKRoomMesh_Statics::PropPointers) < 2048);
+// ********** End Class UMRUKRoomMesh Property Definitions *****************************************
 UObject* (*const Z_Construct_UClass_UMRUKRoomMesh_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -454,6 +502,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UMRUKRoomMesh_Statics::
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKRoomMesh_Statics::Class_MetaDataParams), Z_Construct_UClass_UMRUKRoomMesh_Statics::Class_MetaDataParams)
 };
+void UMRUKRoomMesh::StaticRegisterNativesUMRUKRoomMesh()
+{
+}
 UClass* Z_Construct_UClass_UMRUKRoomMesh()
 {
 	if (!Z_Registration_Info_UClass_UMRUKRoomMesh.OuterSingleton)
@@ -463,7 +514,7 @@ UClass* Z_Construct_UClass_UMRUKRoomMesh()
 	return Z_Registration_Info_UClass_UMRUKRoomMesh.OuterSingleton;
 }
 UMRUKRoomMesh::UMRUKRoomMesh(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UMRUKRoomMesh);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UMRUKRoomMesh);
 UMRUKRoomMesh::~UMRUKRoomMesh() {}
 // ********** End Class UMRUKRoomMesh **************************************************************
 
@@ -479,16 +530,25 @@ struct Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignatur
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOnAnchorUpdated constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOnAnchorUpdated constinit property declarations ************************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOnAnchorUpdated Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventOnAnchorUpdated_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::NewProp_Anchor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "OnAnchorUpdated__DelegateSignature", Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::MRUKRoom_eventOnAnchorUpdated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOnAnchorUpdated Property Definitions ***********************************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "OnAnchorUpdated__DelegateSignature", 	Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::MRUKRoom_eventOnAnchorUpdated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature_Statics::MRUKRoom_eventOnAnchorUpdated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature()
 {
@@ -523,16 +583,25 @@ struct Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignatur
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOnAnchorCreated constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOnAnchorCreated constinit property declarations ************************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOnAnchorCreated Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventOnAnchorCreated_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::NewProp_Anchor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "OnAnchorCreated__DelegateSignature", Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::MRUKRoom_eventOnAnchorCreated_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOnAnchorCreated Property Definitions ***********************************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "OnAnchorCreated__DelegateSignature", 	Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::MRUKRoom_eventOnAnchorCreated_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature_Statics::MRUKRoom_eventOnAnchorCreated_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature()
 {
@@ -567,16 +636,25 @@ struct Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignatur
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOnAnchorRemoved constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOnAnchorRemoved constinit property declarations ************************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOnAnchorRemoved Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventOnAnchorRemoved_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::NewProp_Anchor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "OnAnchorRemoved__DelegateSignature", Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::MRUKRoom_eventOnAnchorRemoved_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOnAnchorRemoved Property Definitions ***********************************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "OnAnchorRemoved__DelegateSignature", 	Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::MRUKRoom_eventOnAnchorRemoved_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature_Statics::MRUKRoom_eventOnAnchorRemoved_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature()
 {
@@ -612,16 +690,25 @@ struct Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AddAnchorToRoom constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AddAnchorToRoom constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function AddAnchorToRoom Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventAddAnchorToRoom_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::NewProp_Anchor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "AddAnchorToRoom", Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::MRUKRoom_eventAddAnchorToRoom_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::Function_MetaDataParams)},  };
+// ********** End Function AddAnchorToRoom Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "AddAnchorToRoom", 	Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::MRUKRoom_eventAddAnchorToRoom_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom_Statics::MRUKRoom_eventAddAnchorToRoom_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom()
 {
@@ -655,12 +742,16 @@ struct Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "WallTextureCoordinateModes" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Attach a procedural mesh to the walls. This is done at the room level to ensure the UV coordinates\n\x09 * can be done in a seamless way if desired.\n\x09 * @param WallTextureCoordinateModes\x09Mode of the wall texture coordinates.\n\x09 * @param CutHoleLabels                 Labels for which holes should be cut into the plane meshes\n\x09 * @param ProceduralMaterial\x09\x09\x09Material to apply on top of the procedural mesh.\n\x09 */" },
+#endif
 		{ "CPP_Default_ProceduralMaterial", "None" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use AMRUKAnchorActorSpawner instead." },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attach a procedural mesh to the walls. This is done at the room level to ensure the UV coordinates\ncan be done in a seamless way if desired.\n@param WallTextureCoordinateModes    Mode of the wall texture coordinates.\n@param CutHoleLabels                 Labels for which holes should be cut into the plane meshes\n@param ProceduralMaterial                    Material to apply on top of the procedural mesh." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WallTextureCoordinateModes_MetaData[] = {
 		{ "NativeConst", "" },
@@ -669,16 +760,21 @@ struct Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AttachProceduralMeshToWalls constinit property declarations ***********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WallTextureCoordinateModes_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_WallTextureCoordinateModes;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_CutHoleLabels_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_CutHoleLabels;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ProceduralMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AttachProceduralMeshToWalls constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_WallTextureCoordinateModes_Inner = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKTexCoordModes, METADATA_PARAMS(0, nullptr) }; // 679207600
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_WallTextureCoordinateModes = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventAttachProceduralMeshToWalls_Parms, WallTextureCoordinateModes), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallTextureCoordinateModes_MetaData), NewProp_WallTextureCoordinateModes_MetaData) }; // 679207600
+
+// ********** Begin Function AttachProceduralMeshToWalls Property Definitions **********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_WallTextureCoordinateModes_Inner = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKTexCoordModes, METADATA_PARAMS(0, nullptr) }; // 2775761864
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_WallTextureCoordinateModes = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventAttachProceduralMeshToWalls_Parms, WallTextureCoordinateModes), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallTextureCoordinateModes_MetaData), NewProp_WallTextureCoordinateModes_MetaData) }; // 2775761864
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_CutHoleLabels_Inner = { "CutHoleLabels", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_CutHoleLabels = { "CutHoleLabels", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventAttachProceduralMeshToWalls_Parms, CutHoleLabels), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CutHoleLabels_MetaData), NewProp_CutHoleLabels_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_ProceduralMaterial = { "ProceduralMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventAttachProceduralMeshToWalls_Parms, ProceduralMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -690,7 +786,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::NewProp_ProceduralMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "AttachProceduralMeshToWalls", Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::MRUKRoom_eventAttachProceduralMeshToWalls_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::Function_MetaDataParams)},  };
+// ********** End Function AttachProceduralMeshToWalls Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "AttachProceduralMeshToWalls", 	Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::MRUKRoom_eventAttachProceduralMeshToWalls_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls_Statics::MRUKRoom_eventAttachProceduralMeshToWalls_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls()
 {
@@ -719,14 +819,24 @@ struct Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Clear all anchors from the room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Clear all anchors from the room." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ClearRoom constinit property declarations *****************************
+// ********** End Function ClearRoom constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "ClearRoom", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "ClearRoom", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_ClearRoom_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMRUKRoom_ClearRoom()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -756,17 +866,26 @@ struct Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Compute the centroid of the room by taking the points of the floor boundary.\n\x09 * The centroid may be outside of the room for non convex rooms.\n\x09 * The Z value determines the height of the resulting vectors and ranges from\n\x09 * 0 to 1. A Z value of 1 corresponds to the ceiling positions Z, while a Z value\n\x09 * of 0 corresponds to the floor positions Z. Any value between 0 and 1 will\n\x09 * interpolate between the two values.\n\x09 * In case the floor and ceiling anchors haven't been loaded yet a zero vector\n\x09 * will be returned.\n\x09 * @param  Z Value used for interpolation of Z.\n\x09 * @return The centroid.\n\x09 */" },
+#endif
 		{ "CPP_Default_Z", "0.500000" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Compute the centroid of the room by taking the points of the floor boundary.\nThe centroid may be outside of the room for non convex rooms.\nThe Z value determines the height of the resulting vectors and ranges from\n0 to 1. A Z value of 1 corresponds to the ceiling positions Z, while a Z value\nof 0 corresponds to the floor positions Z. Any value between 0 and 1 will\ninterpolate between the two values.\nIn case the floor and ceiling anchors haven't been loaded yet a zero vector\nwill be returned.\n@param  Z Value used for interpolation of Z.\n@return The centroid." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ComputeCentroid constinit property declarations ***********************
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_Z;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ComputeCentroid constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function ComputeCentroid Property Definitions **********************************
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::NewProp_Z = { "Z", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventComputeCentroid_Parms, Z), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventComputeCentroid_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::PropPointers[] = {
@@ -774,7 +893,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "ComputeCentroid", Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::MRUKRoom_eventComputeCentroid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::Function_MetaDataParams)},  };
+// ********** End Function ComputeCentroid Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "ComputeCentroid", 	Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::MRUKRoom_eventComputeCentroid_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_ComputeCentroid_Statics::MRUKRoom_eventComputeCentroid_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_ComputeCentroid()
 {
@@ -806,25 +929,34 @@ struct Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Compute the wall mesh texture coordinate adjustments that are needed to generate proper texture coordinates for the walls.\n\x09 * @param WallTextureCoordinateModes The texture coordinate mode to use for the walls.\n\x09 * @param OutAnchorsWithPlaneUVs     The computed texture coordinate adjustment with the wall anchor.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Compute the wall mesh texture coordinate adjustments that are needed to generate proper texture coordinates for the walls.\n@param WallTextureCoordinateModes The texture coordinate mode to use for the walls.\n@param OutAnchorsWithPlaneUVs     The computed texture coordinate adjustment with the wall anchor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WallTextureCoordinateModes_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ComputeWallMeshUVAdjustments constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WallTextureCoordinateModes_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_WallTextureCoordinateModes;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutAnchorsWithPlaneUVs_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_OutAnchorsWithPlaneUVs;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ComputeWallMeshUVAdjustments constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_WallTextureCoordinateModes_Inner = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKTexCoordModes, METADATA_PARAMS(0, nullptr) }; // 679207600
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_WallTextureCoordinateModes = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventComputeWallMeshUVAdjustments_Parms, WallTextureCoordinateModes), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallTextureCoordinateModes_MetaData), NewProp_WallTextureCoordinateModes_MetaData) }; // 679207600
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_OutAnchorsWithPlaneUVs_Inner = { "OutAnchorsWithPlaneUVs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs, METADATA_PARAMS(0, nullptr) }; // 3149888397
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_OutAnchorsWithPlaneUVs = { "OutAnchorsWithPlaneUVs", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventComputeWallMeshUVAdjustments_Parms, OutAnchorsWithPlaneUVs), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 3149888397
+
+// ********** Begin Function ComputeWallMeshUVAdjustments Property Definitions *********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_WallTextureCoordinateModes_Inner = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKTexCoordModes, METADATA_PARAMS(0, nullptr) }; // 2775761864
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_WallTextureCoordinateModes = { "WallTextureCoordinateModes", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventComputeWallMeshUVAdjustments_Parms, WallTextureCoordinateModes), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallTextureCoordinateModes_MetaData), NewProp_WallTextureCoordinateModes_MetaData) }; // 2775761864
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_OutAnchorsWithPlaneUVs_Inner = { "OutAnchorsWithPlaneUVs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs, METADATA_PARAMS(0, nullptr) }; // 3083808258
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_OutAnchorsWithPlaneUVs = { "OutAnchorsWithPlaneUVs", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventComputeWallMeshUVAdjustments_Parms, OutAnchorsWithPlaneUVs), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 3083808258
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_WallTextureCoordinateModes_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_WallTextureCoordinateModes,
@@ -832,7 +964,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::NewProp_OutAnchorsWithPlaneUVs,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "ComputeWallMeshUVAdjustments", Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::MRUKRoom_eventComputeWallMeshUVAdjustments_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::Function_MetaDataParams)},  };
+// ********** End Function ComputeWallMeshUVAdjustments Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "ComputeWallMeshUVAdjustments", 	Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::MRUKRoom_eventComputeWallMeshUVAdjustments_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments_Statics::MRUKRoom_eventComputeWallMeshUVAdjustments_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments()
 {
@@ -865,21 +1001,30 @@ struct Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Check if the room does have any of the labels.\n\x09 * @param Labels\x09The labels to check.\n\x09 * @return\x09\x09\x09Whether the label was found in the room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if the room does have any of the labels.\n@param Labels        The labels to check.\n@return                      Whether the label was found in the room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Labels_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function DoesRoomHave constinit property declarations **************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Labels_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Labels;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function DoesRoomHave constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function DoesRoomHave Property Definitions *************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::NewProp_Labels_Inner = { "Labels", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::NewProp_Labels = { "Labels", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventDoesRoomHave_Parms, Labels), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Labels_MetaData), NewProp_Labels_MetaData) };
 void Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -893,7 +1038,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "DoesRoomHave", Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::MRUKRoom_eventDoesRoomHave_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::Function_MetaDataParams)},  };
+// ********** End Function DoesRoomHave Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "DoesRoomHave", 	Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::MRUKRoom_eventDoesRoomHave_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_DoesRoomHave_Statics::MRUKRoom_eventDoesRoomHave_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_DoesRoomHave()
 {
@@ -925,17 +1074,26 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Generate the triangle mesh of the scene mesh anchor. For the generation successful the room needs\n\x09 * to have an anchor that is labeled with GLOBAL_MESH.\n\x09 * @param Material   Material to apply on the generated triangle mesh.\n\x09 * @return           On Success true, otherwise false.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generate the triangle mesh of the scene mesh anchor. For the generation successful the room needs\nto have an anchor that is labeled with GLOBAL_MESH.\n@param Material   Material to apply on the generated triangle mesh.\n@return           On Success true, otherwise false." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GenerateProceduralSceneMesh constinit property declarations ***********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GenerateProceduralSceneMesh constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GenerateProceduralSceneMesh Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateProceduralSceneMesh_Parms, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -947,7 +1105,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateProceduralSceneMesh", Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::MRUKRoom_eventGenerateProceduralSceneMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function GenerateProceduralSceneMesh Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateProceduralSceneMesh", 	Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::MRUKRoom_eventGenerateProceduralSceneMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh_Statics::MRUKRoom_eventGenerateProceduralSceneMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh()
 {
@@ -981,13 +1143,19 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Generate a uniform random position within the room.\n\x09 * @param OutPosition\x09\x09\x09""Contains the randomly generated position.\n\x09 * @param MinDistanceToSurface\x09The minimum distance between the generated position and the closest surface/volume.\n\x09 * @param AvoidVolumes\x09\x09\x09If true then the position will not be inside a volume and min distance away from it.\n\x09 * @return\x09\x09\x09\x09\x09\x09Return true if success otherwise false. If this fails it can be because the min distance to surface is too large.\n\x09 */" },
+#endif
 		{ "CPP_Default_AvoidVolumes", "false" },
 		{ "CPP_Default_MinDistanceToSurface", "0.000000" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generate a uniform random position within the room.\n@param OutPosition                   Contains the randomly generated position.\n@param MinDistanceToSurface  The minimum distance between the generated position and the closest surface/volume.\n@param AvoidVolumes                  If true then the position will not be inside a volume and min distance away from it.\n@return                                              Return true if success otherwise false. If this fails it can be because the min distance to surface is too large." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GenerateRandomPositionInRoom constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosition;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinDistanceToSurface;
 	static void NewProp_AvoidVolumes_SetBit(void* Obj);
@@ -995,8 +1163,11 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GenerateRandomPositionInRoom constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GenerateRandomPositionInRoom Property Definitions *********************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionInRoom_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::NewProp_MinDistanceToSurface = { "MinDistanceToSurface", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionInRoom_Parms, MinDistanceToSurface), METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::NewProp_AvoidVolumes_SetBit(void* Obj)
@@ -1016,7 +1187,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateRandomPositionInRoom", Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::MRUKRoom_eventGenerateRandomPositionInRoom_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::Function_MetaDataParams)},  };
+// ********** End Function GenerateRandomPositionInRoom Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateRandomPositionInRoom", 	Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::MRUKRoom_eventGenerateRandomPositionInRoom_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom_Statics::MRUKRoom_eventGenerateRandomPositionInRoom_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom()
 {
@@ -1053,16 +1228,22 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Generate a uniform random position within the room from a random stream.\n\x09 * @param OutPosition\x09\x09\x09""Contains the randomly generated position.\n\x09 * @param RandomStream\x09\x09\x09""A random generator used to generate the position on the plane.\n\x09 * @param MinDistanceToSurface\x09The minimum distance between the generated position and the closest surface/volume.\n\x09 * @param AvoidVolumes\x09\x09\x09If true then the position will not be inside a volume and min distance away from it.\n\x09 * @return\x09\x09\x09\x09\x09\x09Return true if success otherwise false. If this fails it can be because the min distance to surface is too large.\n\x09 */" },
+#endif
 		{ "CPP_Default_AvoidVolumes", "false" },
 		{ "CPP_Default_MinDistanceToSurface", "0.000000" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generate a uniform random position within the room from a random stream.\n@param OutPosition                   Contains the randomly generated position.\n@param RandomStream                  A random generator used to generate the position on the plane.\n@param MinDistanceToSurface  The minimum distance between the generated position and the closest surface/volume.\n@param AvoidVolumes                  If true then the position will not be inside a volume and min distance away from it.\n@return                                              Return true if success otherwise false. If this fails it can be because the min distance to surface is too large." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RandomStream_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GenerateRandomPositionInRoomFromStream constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RandomStream;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinDistanceToSurface;
@@ -1071,8 +1252,11 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_St
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GenerateRandomPositionInRoomFromStream constinit property declarations **
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GenerateRandomPositionInRoomFromStream Property Definitions ***********
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionInRoomFromStream_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::NewProp_RandomStream = { "RandomStream", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionInRoomFromStream_Parms, RandomStream), Z_Construct_UScriptStruct_FRandomStream, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RandomStream_MetaData), NewProp_RandomStream_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::NewProp_MinDistanceToSurface = { "MinDistanceToSurface", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionInRoomFromStream_Parms, MinDistanceToSurface), METADATA_PARAMS(0, nullptr) };
@@ -1094,7 +1278,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateRandomPositionInRoomFromStream", Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::MRUKRoom_eventGenerateRandomPositionInRoomFromStream_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::Function_MetaDataParams)},  };
+// ********** End Function GenerateRandomPositionInRoomFromStream Property Definitions *************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateRandomPositionInRoomFromStream", 	Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::MRUKRoom_eventGenerateRandomPositionInRoomFromStream_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream_Statics::MRUKRoom_eventGenerateRandomPositionInRoomFromStream_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream()
 {
@@ -1133,11 +1321,17 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Generates a random position on the surface of a given spawn location, while ensuring that the generated position is at least `MinDistanceToEdge` away from any edges. The `LabelFilter` parameter allows you to specify which types of surfaces should be considered for generating the random position.\n\x09 *\n\x09 * @param SpawnLocation\x09\x09\x09The location where the random position should be generated.\n\x09 * @param MinDistanceToEdge\x09\x09The minimum distance from the edge that the generated position must have.\n\x09 * @param LabelFilter\x09\x09\x09""A filter that specifies which types of surfaces should be considered for generating the random position.\n\x09 * @param OutPosition\x09\x09\x09The generated position.\n\x09 * @param OutNormal\x09\x09\x09\x09The normal vector of the generated position.\n\x09 * @return\x09\x09\x09\x09\x09\x09""A boolean value indicating whether a valid position was found. If no valid position could be found, both `OutPosition` and `OutNormal` will be set to zero vectors.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Generates a random position on the surface of a given spawn location, while ensuring that the generated position is at least `MinDistanceToEdge` away from any edges. The `LabelFilter` parameter allows you to specify which types of surfaces should be considered for generating the random position.\n\n@param SpawnLocation                 The location where the random position should be generated.\n@param MinDistanceToEdge             The minimum distance from the edge that the generated position must have.\n@param LabelFilter                   A filter that specifies which types of surfaces should be considered for generating the random position.\n@param OutPosition                   The generated position.\n@param OutNormal                             The normal vector of the generated position.\n@return                                              A boolean value indicating whether a valid position was found. If no valid position could be found, both `OutPosition` and `OutNormal` will be set to zero vectors." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GenerateRandomPositionOnSurface constinit property declarations *******
 	static const UECodeGen_Private::FBytePropertyParams NewProp_SpawnLocation_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_SpawnLocation;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinDistanceToEdge;
@@ -1147,12 +1341,15 @@ struct Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GenerateRandomPositionOnSurface constinit property declarations *********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GenerateRandomPositionOnSurface Property Definitions ******************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_SpawnLocation_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_SpawnLocation = { "SpawnLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, SpawnLocation), Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnLocation, METADATA_PARAMS(0, nullptr) }; // 1396309959
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_SpawnLocation = { "SpawnLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, SpawnLocation), Z_Construct_UEnum_MRUtilityKit_EMRUKSpawnLocation, METADATA_PARAMS(0, nullptr) }; // 1966095933
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_MinDistanceToEdge = { "MinDistanceToEdge", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, MinDistanceToEdge), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(0, nullptr) }; // 258085908
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(0, nullptr) }; // 1358229126
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_OutNormal = { "OutNormal", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGenerateRandomPositionOnSurface_Parms, OutNormal), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -1170,7 +1367,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateRandomPositionOnSurface", Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::MRUKRoom_eventGenerateRandomPositionOnSurface_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::Function_MetaDataParams)},  };
+// ********** End Function GenerateRandomPositionOnSurface Property Definitions ********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GenerateRandomPositionOnSurface", 	Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::MRUKRoom_eventGenerateRandomPositionOnSurface_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface_Statics::MRUKRoom_eventGenerateRandomPositionOnSurface_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface()
 {
@@ -1206,20 +1407,29 @@ struct Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Finds all anchors in this room that have the given label attached.\n\x09 * @param Label The label to search for.\n\x09 * @return      An array off anchors with the given label.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Finds all anchors in this room that have the given label attached.\n@param Label The label to search for.\n@return      An array off anchors with the given label." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Label_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetAnchorsByLabel constinit property declarations *********************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Label;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetAnchorsByLabel constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetAnchorsByLabel Property Definitions ********************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::NewProp_Label = { "Label", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetAnchorsByLabel_Parms, Label), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Label_MetaData), NewProp_Label_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetAnchorsByLabel_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
@@ -1229,7 +1439,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetAnchorsByLabel", Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::MRUKRoom_eventGetAnchorsByLabel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetAnchorsByLabel Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetAnchorsByLabel", 	Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::MRUKRoom_eventGetAnchorsByLabel_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel_Statics::MRUKRoom_eventGetAnchorsByLabel_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel()
 {
@@ -1267,10 +1481,14 @@ struct Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "LabelFilter" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get a suggested pose (position & rotation) from a raycast to place objects on surfaces in the scene.\n\x09 * There are different positioning modes available. Default just uses the position where the raycast\n\x09 * hit the object. Edge snaps the position to the edge that is nearest to the user and Center simply\n\x09 * centers the position on top of the surface.\n\x09 * @param RayOrigin         The origin of the ray.\n\x09 * @param RayDirection      The direction of the ray.\n\x09 * @param MaxDist           The maximum distance the ray should travel.\n\x09 * @param LabelFilter       The label filter can be used to include/exclude certain labels from the search.\n\x09 * @param OutPose           The calculated pose.\n\x09 * @param PositioningMethod The method that should be used for determining the position on the surface.\n\x09 * @return                  The anchor that was hit by the ray if any. Otherwise a null pointer.\n\x09 */" },
+#endif
 		{ "CPP_Default_PositioningMethod", "Default" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get a suggested pose (position & rotation) from a raycast to place objects on surfaces in the scene.\nThere are different positioning modes available. Default just uses the position where the raycast\nhit the object. Edge snaps the position to the edge that is nearest to the user and Center simply\ncenters the position on top of the surface.\n@param RayOrigin         The origin of the ray.\n@param RayDirection      The direction of the ray.\n@param MaxDist           The maximum distance the ray should travel.\n@param LabelFilter       The label filter can be used to include/exclude certain labels from the search.\n@param OutPose           The calculated pose.\n@param PositioningMethod The method that should be used for determining the position on the surface.\n@return                  The anchor that was hit by the ray if any. Otherwise a null pointer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RayOrigin_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1282,6 +1500,8 @@ struct Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetBestPoseFromRaycast constinit property declarations ****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RayOrigin;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RayDirection;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_MaxDist;
@@ -1291,15 +1511,18 @@ struct Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_PositioningMethod;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetBestPoseFromRaycast constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetBestPoseFromRaycast Property Definitions ***************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_RayOrigin = { "RayOrigin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, RayOrigin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RayOrigin_MetaData), NewProp_RayOrigin_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_RayDirection = { "RayDirection", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, RayDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RayDirection_MetaData), NewProp_RayDirection_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_MaxDist = { "MaxDist", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, MaxDist), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 258085908
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 1358229126
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_OutPose = { "OutPose", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, OutPose), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_PositioningMethod_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_PositioningMethod = { "PositioningMethod", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, PositioningMethod), Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod, METADATA_PARAMS(0, nullptr) }; // 3582575800
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_PositioningMethod = { "PositioningMethod", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, PositioningMethod), Z_Construct_UEnum_MRUtilityKit_EMRUKPositioningMethod, METADATA_PARAMS(0, nullptr) }; // 789641404
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetBestPoseFromRaycast_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_RayOrigin,
@@ -1312,7 +1535,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetBestPoseFromRaycast", Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::MRUKRoom_eventGetBestPoseFromRaycast_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetBestPoseFromRaycast Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetBestPoseFromRaycast", 	Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::MRUKRoom_eventGetBestPoseFromRaycast_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast_Statics::MRUKRoom_eventGetBestPoseFromRaycast_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast()
 {
@@ -1351,16 +1578,25 @@ struct Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCeilingAnchor constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCeilingAnchor constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCeilingAnchor Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetCeilingAnchor_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetCeilingAnchor", Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::MRUKRoom_eventGetCeilingAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCeilingAnchor Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetCeilingAnchor", 	Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::MRUKRoom_eventGetCeilingAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor_Statics::MRUKRoom_eventGetCeilingAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor()
 {
@@ -1391,19 +1627,28 @@ struct Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Finds the first anchor in this room that has the given label attached.\n\x09 * @param Label The label to search for.\n\x09 * @return      If found, the Anchor that has the label attached. Otherwise a null pointer.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Finds the first anchor in this room that has the given label attached.\n@param Label The label to search for.\n@return      If found, the Anchor that has the label attached. Otherwise a null pointer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Label_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetFirstAnchorByLabel constinit property declarations *****************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Label;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetFirstAnchorByLabel constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetFirstAnchorByLabel Property Definitions ****************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::NewProp_Label = { "Label", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetFirstAnchorByLabel_Parms, Label), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Label_MetaData), NewProp_Label_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetFirstAnchorByLabel_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::PropPointers[] = {
@@ -1411,7 +1656,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetFirstAnchorByLabel", Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::MRUKRoom_eventGetFirstAnchorByLabel_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetFirstAnchorByLabel Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetFirstAnchorByLabel", 	Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::MRUKRoom_eventGetFirstAnchorByLabel_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel_Statics::MRUKRoom_eventGetFirstAnchorByLabel_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel()
 {
@@ -1445,16 +1694,25 @@ struct Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetFloorAnchor constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetFloorAnchor constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetFloorAnchor Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetFloorAnchor_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetFloorAnchor", Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::MRUKRoom_eventGetFloorAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetFloorAnchor Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetFloorAnchor", 	Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::MRUKRoom_eventGetFloorAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor_Statics::MRUKRoom_eventGetFloorAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor()
 {
@@ -1485,17 +1743,26 @@ struct Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Return the longest wall in the room that has no other walls behind it.\n\x09 * @param Tolerance The tolerance to use when determining wall that are behind.\n\x09 * @return          The wall anchor that is the key wall in the room.\n\x09 */" },
+#endif
 		{ "CPP_Default_Tolerance", "0.100000" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the longest wall in the room that has no other walls behind it.\n@param Tolerance The tolerance to use when determining wall that are behind.\n@return          The wall anchor that is the key wall in the room." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetKeyWall constinit property declarations ****************************
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_Tolerance;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetKeyWall constinit property declarations ******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetKeyWall Property Definitions ***************************************
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::NewProp_Tolerance = { "Tolerance", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetKeyWall_Parms, Tolerance), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetKeyWall_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::PropPointers[] = {
@@ -1503,7 +1770,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetKeyWall", Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::MRUKRoom_eventGetKeyWall_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetKeyWall Property Definitions *****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetKeyWall", 	Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::MRUKRoom_eventGetKeyWall_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetKeyWall_Statics::MRUKRoom_eventGetKeyWall_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetKeyWall()
 {
@@ -1535,19 +1806,28 @@ struct Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Return the largest surface for a given label.\n\x09 * @param Label The label of the surfaces to search in.\n\x09 * @return      The anchor that has the largest surface if any. Otherwise, a null pointer.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Return the largest surface for a given label.\n@param Label The label of the surfaces to search in.\n@return      The anchor that has the largest surface if any. Otherwise, a null pointer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Label_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetLargestSurface constinit property declarations *********************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Label;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetLargestSurface constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetLargestSurface Property Definitions ********************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::NewProp_Label = { "Label", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetLargestSurface_Parms, Label), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Label_MetaData), NewProp_Label_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetLargestSurface_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::PropPointers[] = {
@@ -1555,7 +1835,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetLargestSurface", Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::MRUKRoom_eventGetLargestSurface_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetLargestSurface Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetLargestSurface", 	Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::MRUKRoom_eventGetLargestSurface_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetLargestSurface_Statics::MRUKRoom_eventGetLargestSurface_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetLargestSurface()
 {
@@ -1589,11 +1873,16 @@ struct Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRoomEdges constinit property declarations **************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRoomEdges constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRoomEdges Property Definitions *************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventGetRoomEdges_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::PropPointers[] = {
@@ -1601,7 +1890,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetRoomEdges", Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::MRUKRoom_eventGetRoomEdges_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRoomEdges Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "GetRoomEdges", 	Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::MRUKRoom_eventGetRoomEdges_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_GetRoomEdges_Statics::MRUKRoom_eventGetRoomEdges_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_GetRoomEdges()
 {
@@ -1633,23 +1926,32 @@ struct Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Check whether the position is inside the room or not.\n\x09 * @param Position           The position in world space to check.\n\x09 * @param TestVerticalBounds Whether the room should be constrained by vertical bounds or not in the check.\n\x09 * @return                   Whether the position is inside the room or not.\n\x09 */" },
+#endif
 		{ "CPP_Default_TestVerticalBounds", "true" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check whether the position is inside the room or not.\n@param Position           The position in world space to check.\n@param TestVerticalBounds Whether the room should be constrained by vertical bounds or not in the check.\n@return                   Whether the position is inside the room or not." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Position_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsPositionInRoom constinit property declarations **********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Position;
 	static void NewProp_TestVerticalBounds_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_TestVerticalBounds;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsPositionInRoom constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsPositionInRoom Property Definitions *********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::NewProp_Position = { "Position", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventIsPositionInRoom_Parms, Position), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Position_MetaData), NewProp_Position_MetaData) };
 void Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::NewProp_TestVerticalBounds_SetBit(void* Obj)
 {
@@ -1667,7 +1969,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "IsPositionInRoom", Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::MRUKRoom_eventIsPositionInRoom_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsPositionInRoom Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "IsPositionInRoom", 	Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::MRUKRoom_eventIsPositionInRoom_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom_Statics::MRUKRoom_eventIsPositionInRoom_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom()
 {
@@ -1702,24 +2008,33 @@ struct Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Checks if the given position is on or inside of any scene volume in the room.\n\x09 * Floor, ceiling and wall anchors will be excluded from the search.\n\x09 * @param WorldPosition      The position in world space to check\n\x09 * @param TestVerticalBounds Whether the vertical bounds should be checked or not\n\x09 * @param Tolerance          Tolerance\n\x09 * @return\x09\x09\x09\x09\x09 The anchor the WorldPosition is in. A null pointer otherwise.\n\x09 */" },
+#endif
 		{ "CPP_Default_TestVerticalBounds", "true" },
 		{ "CPP_Default_Tolerance", "0.000000" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Checks if the given position is on or inside of any scene volume in the room.\nFloor, ceiling and wall anchors will be excluded from the search.\n@param WorldPosition      The position in world space to check\n@param TestVerticalBounds Whether the vertical bounds should be checked or not\n@param Tolerance          Tolerance\n@return                                       The anchor the WorldPosition is in. A null pointer otherwise." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldPosition_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsPositionInSceneVolume constinit property declarations ***************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WorldPosition;
 	static void NewProp_TestVerticalBounds_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_TestVerticalBounds;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_Tolerance;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsPositionInSceneVolume constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsPositionInSceneVolume Property Definitions **************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::NewProp_WorldPosition = { "WorldPosition", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventIsPositionInSceneVolume_Parms, WorldPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldPosition_MetaData), NewProp_WorldPosition_MetaData) };
 void Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::NewProp_TestVerticalBounds_SetBit(void* Obj)
 {
@@ -1735,7 +2050,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "IsPositionInSceneVolume", Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::MRUKRoom_eventIsPositionInSceneVolume_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsPositionInSceneVolume Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "IsPositionInSceneVolume", 	Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::MRUKRoom_eventIsPositionInSceneVolume_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume_Statics::MRUKRoom_eventIsPositionInSceneVolume_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume()
 {
@@ -1769,17 +2088,26 @@ struct Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Check if the given anchor is a wall anchor.\n\x09 * @param Anchor The anchor to check.\n\x09 * @return       Whether the anchor is a wall anchor or not.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if the given anchor is a wall anchor.\n@param Anchor The anchor to check.\n@return       Whether the anchor is a wall anchor or not." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsWallAnchor constinit property declarations **************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsWallAnchor constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsWallAnchor Property Definitions *************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventIsWallAnchor_Parms, Anchor), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -1791,7 +2119,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "IsWallAnchor", Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::MRUKRoom_eventIsWallAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsWallAnchor Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "IsWallAnchor", 	Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::MRUKRoom_eventIsWallAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_IsWallAnchor_Statics::MRUKRoom_eventIsWallAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_IsWallAnchor()
 {
@@ -1823,20 +2155,29 @@ struct Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Deprecated, use GenerateProceduralSceneMesh instead.\n\x09 * Load the triangle mesh of the global mesh anchor if it's available.\n\x09 * @param Material The Material to show if the global mesh is visible.\n\x09 * @return         On success true, otherwise false.\n\x09 */" },
+#endif
 		{ "CPP_Default_Material", "None" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GenerateProceduralSceneMesh instead." },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Deprecated, use GenerateProceduralSceneMesh instead.\nLoad the triangle mesh of the global mesh anchor if it's available.\n@param Material The Material to show if the global mesh is visible.\n@return         On success true, otherwise false." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function LoadGlobalMeshFromDevice constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function LoadGlobalMeshFromDevice constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function LoadGlobalMeshFromDevice Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventLoadGlobalMeshFromDevice_Parms, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -1848,7 +2189,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "LoadGlobalMeshFromDevice", Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::MRUKRoom_eventLoadGlobalMeshFromDevice_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::Function_MetaDataParams)},  };
+// ********** End Function LoadGlobalMeshFromDevice Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "LoadGlobalMeshFromDevice", 	Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::MRUKRoom_eventLoadGlobalMeshFromDevice_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice_Statics::MRUKRoom_eventLoadGlobalMeshFromDevice_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice()
 {
@@ -1881,24 +2226,33 @@ struct Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Deprecated, use GenerateProceduralSceneMesh instead.\n\x09 * Load the triangle mesh of the global mesh anchor. For this function to succeed you need to make\n\x09 * sure to have a global mesh specified in the JSON file. Not every JSON file has a global mesh in it.\n\x09 * @param JsonString The string with the JSON data.\n\x09 * @param Material   Material to apply on the global mesh.\n\x09 * @return           On Success true, otherwise false.\n\x09 */" },
+#endif
 		{ "CPP_Default_Material", "None" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use GenerateProceduralSceneMesh instead." },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Deprecated, use GenerateProceduralSceneMesh instead.\nLoad the triangle mesh of the global mesh anchor. For this function to succeed you need to make\nsure to have a global mesh specified in the JSON file. Not every JSON file has a global mesh in it.\n@param JsonString The string with the JSON data.\n@param Material   Material to apply on the global mesh.\n@return           On Success true, otherwise false." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JsonString_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function LoadGlobalMeshFromJsonString constinit property declarations **********
 	static const UECodeGen_Private::FStrPropertyParams NewProp_JsonString;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function LoadGlobalMeshFromJsonString constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function LoadGlobalMeshFromJsonString Property Definitions *********************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::NewProp_JsonString = { "JsonString", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventLoadGlobalMeshFromJsonString_Parms, JsonString), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JsonString_MetaData), NewProp_JsonString_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::NewProp_Material = { "Material", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventLoadGlobalMeshFromJsonString_Parms, Material), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -1912,7 +2266,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "LoadGlobalMeshFromJsonString", Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::MRUKRoom_eventLoadGlobalMeshFromJsonString_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::Function_MetaDataParams)},  };
+// ********** End Function LoadGlobalMeshFromJsonString Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "LoadGlobalMeshFromJsonString", 	Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::MRUKRoom_eventLoadGlobalMeshFromJsonString_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString_Statics::MRUKRoom_eventLoadGlobalMeshFromJsonString_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString()
 {
@@ -1950,9 +2308,13 @@ struct Z_Construct_UFunction_AMRUKRoom_Raycast_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "LabelFilter" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Cast a ray and return the closest hit anchor\n\x09 * @param Origin      Origin The origin of the ray.\n\x09 * @param Direction   Direction The direction of the ray.\n\x09 * @param MaxDist     The maximum distance the ray should travel.\n\x09 * @param LabelFilter The label filter can be used to include/exclude certain labels from the search.\n\x09 * @param OutHit      The closest hit.\n\x09 * @return            The anchor that the ray hit.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Cast a ray and return the closest hit anchor\n@param Origin      Origin The origin of the ray.\n@param Direction   Direction The direction of the ray.\n@param MaxDist     The maximum distance the ray should travel.\n@param LabelFilter The label filter can be used to include/exclude certain labels from the search.\n@param OutHit      The closest hit.\n@return            The anchor that the ray hit." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Origin_MetaData[] = {
 		{ "NativeConst", "" },
@@ -1964,6 +2326,8 @@ struct Z_Construct_UFunction_AMRUKRoom_Raycast_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Raycast constinit property declarations *******************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Origin;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Direction;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxDist;
@@ -1971,13 +2335,16 @@ struct Z_Construct_UFunction_AMRUKRoom_Raycast_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutHit;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function Raycast constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function Raycast Property Definitions ******************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, Origin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Origin_MetaData), NewProp_Origin_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_Direction = { "Direction", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, Direction), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Direction_MetaData), NewProp_Direction_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_MaxDist = { "MaxDist", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, MaxDist), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 258085908
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_OutHit = { "OutHit", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, OutHit), Z_Construct_UScriptStruct_FMRUKHit, METADATA_PARAMS(0, nullptr) }; // 67978120
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 1358229126
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_OutHit = { "OutHit", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, OutHit), Z_Construct_UScriptStruct_FMRUKHit, METADATA_PARAMS(0, nullptr) }; // 1345334732
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycast_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_Origin,
@@ -1988,7 +2355,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "Raycast", Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::MRUKRoom_eventRaycast_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::Function_MetaDataParams)},  };
+// ********** End Function Raycast Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "Raycast", 	Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::MRUKRoom_eventRaycast_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_Raycast_Statics::MRUKRoom_eventRaycast_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_Raycast()
 {
@@ -2030,9 +2401,13 @@ struct Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "LabelFilter" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Cast a ray and collect hits against the volume and plane bounds in this room. The order of the hits in the array is not specified.\n\x09 * @param Origin      Origin The origin of the ray.\n\x09 * @param Direction   Direction The direction of the ray.\n\x09 * @param MaxDist     The maximum distance the ray should travel.\n\x09 * @param OutHits     The hits the ray collected.\n\x09 * @param LabelFilter The label filter can be used to include/exclude certain labels from the search.\n\x09 * @param OutAnchors  The anchors that were hit. Each anchor in this array corresponds to a entry at the same position in OutHits.\n\x09 * @return            Whether the ray hit anything\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Cast a ray and collect hits against the volume and plane bounds in this room. The order of the hits in the array is not specified.\n@param Origin      Origin The origin of the ray.\n@param Direction   Direction The direction of the ray.\n@param MaxDist     The maximum distance the ray should travel.\n@param OutHits     The hits the ray collected.\n@param LabelFilter The label filter can be used to include/exclude certain labels from the search.\n@param OutAnchors  The anchors that were hit. Each anchor in this array corresponds to a entry at the same position in OutHits.\n@return            Whether the ray hit anything" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Origin_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2044,6 +2419,8 @@ struct Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function RaycastAll constinit property declarations ****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Origin;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Direction;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxDist;
@@ -2055,14 +2432,17 @@ struct Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function RaycastAll constinit property declarations ******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function RaycastAll Property Definitions ***************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, Origin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Origin_MetaData), NewProp_Origin_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_Direction = { "Direction", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, Direction), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Direction_MetaData), NewProp_Direction_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_MaxDist = { "MaxDist", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, MaxDist), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 258085908
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_OutHits_Inner = { "OutHits", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKHit, METADATA_PARAMS(0, nullptr) }; // 67978120
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_OutHits = { "OutHits", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, OutHits), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 67978120
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 1358229126
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_OutHits_Inner = { "OutHits", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FMRUKHit, METADATA_PARAMS(0, nullptr) }; // 1345334732
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_OutHits = { "OutHits", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, OutHits), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 1345334732
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_OutAnchors_Inner = { "OutAnchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_OutAnchors = { "OutAnchors", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventRaycastAll_Parms, OutAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -2082,7 +2462,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "RaycastAll", Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::MRUKRoom_eventRaycastAll_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::Function_MetaDataParams)},  };
+// ********** End Function RaycastAll Property Definitions *****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "RaycastAll", 	Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::MRUKRoom_eventRaycastAll_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_RaycastAll_Statics::MRUKRoom_eventRaycastAll_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_RaycastAll()
 {
@@ -2122,13 +2506,17 @@ struct Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Spawn meshes on the position of the anchors of the room.\n\x09 * The actors should have Z as up Y as right and X as forward.\n\x09 * The pivot point should be in the bottom center.\n\x09 * @param SpawnGroups                A map which tells to spawn which actor to a given label.\n\x09 * @param CutHoleLabels\x09\x09         Labels for which the generated mesh should have holes. Only works with planes.\n\x09 * @param ProceduralMaterial         Material to apply on top of the procedural mesh if any.\n\x09 * @param ShouldFallbackToProcedural Whether or not it should by default fallback to generating a procedural mesh if no actor class has been specified for a label.\n\x09 * @return                           All spawned interior actors.\n\x09 */" },
+#endif
 		{ "CPP_Default_ProceduralMaterial", "None" },
 		{ "CPP_Default_ShouldFallbackToProcedural", "true" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use AMRUKAnchorActorSpawner instead." },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Spawn meshes on the position of the anchors of the room.\nThe actors should have Z as up Y as right and X as forward.\nThe pivot point should be in the bottom center.\n@param SpawnGroups                A map which tells to spawn which actor to a given label.\n@param CutHoleLabels                  Labels for which the generated mesh should have holes. Only works with planes.\n@param ProceduralMaterial         Material to apply on top of the procedural mesh if any.\n@param ShouldFallbackToProcedural Whether or not it should by default fallback to generating a procedural mesh if no actor class has been specified for a label.\n@return                           All spawned interior actors." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnGroups_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2137,6 +2525,8 @@ struct Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SpawnInterior constinit property declarations *************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SpawnGroups_ValueProp;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_SpawnGroups_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_SpawnGroups;
@@ -2148,11 +2538,14 @@ struct Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SpawnInterior constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_SpawnGroups_ValueProp = { "SpawnGroups", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FMRUKSpawnGroup, METADATA_PARAMS(0, nullptr) }; // 3798688843
+
+// ********** Begin Function SpawnInterior Property Definitions ************************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_SpawnGroups_ValueProp = { "SpawnGroups", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FMRUKSpawnGroup, METADATA_PARAMS(0, nullptr) }; // 1335247542
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_SpawnGroups_Key_KeyProp = { "SpawnGroups_Key", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_SpawnGroups = { "SpawnGroups", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInterior_Parms, SpawnGroups), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnGroups_MetaData), NewProp_SpawnGroups_MetaData) }; // 3798688843
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_SpawnGroups = { "SpawnGroups", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInterior_Parms, SpawnGroups), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnGroups_MetaData), NewProp_SpawnGroups_MetaData) }; // 1335247542
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_CutHoleLabels_Inner = { "CutHoleLabels", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_CutHoleLabels = { "CutHoleLabels", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInterior_Parms, CutHoleLabels), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CutHoleLabels_MetaData), NewProp_CutHoleLabels_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_ProceduralMaterial = { "ProceduralMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInterior_Parms, ProceduralMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -2175,7 +2568,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "SpawnInterior", Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::MRUKRoom_eventSpawnInterior_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::Function_MetaDataParams)},  };
+// ********** End Function SpawnInterior Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "SpawnInterior", 	Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::MRUKRoom_eventSpawnInterior_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_SpawnInterior_Statics::MRUKRoom_eventSpawnInterior_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_SpawnInterior()
 {
@@ -2214,13 +2611,17 @@ struct Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Spawn meshes on the position of the anchors of the room from a random stream.\n\x09 * The actors should have Z as up Y as right and X as forward.\n\x09 * The pivot point should be in the bottom center.\n\x09 * @param SpawnGroups                A map wich tells to spawn which actor to a given label.\n\x09 * @param CutHoleLabels\x09\x09         Labels for which the generated mesh should have holes. Only works with planes.\n\x09 * @param RandomStream               A random generator to choose randomly between actor classes if there a multiple for one label.\n\x09 * @param ProceduralMaterial         Material to apply on top of the procedural mesh if any.\n\x09 * @param ShouldFallbackToProcedural Whether or not it should by default fallback to generating a procedural mesh if no actor class has been specified for a label.\n\x09 * @return                           All spawned interior actors.\n\x09 */" },
+#endif
 		{ "CPP_Default_ProceduralMaterial", "None" },
 		{ "CPP_Default_ShouldFallbackToProcedural", "true" },
 		{ "DeprecatedFunction", "" },
 		{ "DeprecationMessage", "Use AMRUKAnchorActorSpawner instead." },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Spawn meshes on the position of the anchors of the room from a random stream.\nThe actors should have Z as up Y as right and X as forward.\nThe pivot point should be in the bottom center.\n@param SpawnGroups                A map wich tells to spawn which actor to a given label.\n@param CutHoleLabels                  Labels for which the generated mesh should have holes. Only works with planes.\n@param RandomStream               A random generator to choose randomly between actor classes if there a multiple for one label.\n@param ProceduralMaterial         Material to apply on top of the procedural mesh if any.\n@param ShouldFallbackToProcedural Whether or not it should by default fallback to generating a procedural mesh if no actor class has been specified for a label.\n@return                           All spawned interior actors." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpawnGroups_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2232,6 +2633,8 @@ struct Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SpawnInteriorFromStream constinit property declarations ***************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SpawnGroups_ValueProp;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_SpawnGroups_Key_KeyProp;
 	static const UECodeGen_Private::FMapPropertyParams NewProp_SpawnGroups;
@@ -2244,11 +2647,14 @@ struct Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SpawnInteriorFromStream constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_SpawnGroups_ValueProp = { "SpawnGroups", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FMRUKSpawnGroup, METADATA_PARAMS(0, nullptr) }; // 3798688843
+
+// ********** Begin Function SpawnInteriorFromStream Property Definitions **************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_SpawnGroups_ValueProp = { "SpawnGroups", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FMRUKSpawnGroup, METADATA_PARAMS(0, nullptr) }; // 1335247542
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_SpawnGroups_Key_KeyProp = { "SpawnGroups_Key", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FMapPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_SpawnGroups = { "SpawnGroups", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInteriorFromStream_Parms, SpawnGroups), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnGroups_MetaData), NewProp_SpawnGroups_MetaData) }; // 3798688843
+const UECodeGen_Private::FMapPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_SpawnGroups = { "SpawnGroups", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInteriorFromStream_Parms, SpawnGroups), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpawnGroups_MetaData), NewProp_SpawnGroups_MetaData) }; // 1335247542
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_RandomStream = { "RandomStream", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInteriorFromStream_Parms, RandomStream), Z_Construct_UScriptStruct_FRandomStream, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RandomStream_MetaData), NewProp_RandomStream_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_CutHoleLabels_Inner = { "CutHoleLabels", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_CutHoleLabels = { "CutHoleLabels", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventSpawnInteriorFromStream_Parms, CutHoleLabels), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CutHoleLabels_MetaData), NewProp_CutHoleLabels_MetaData) };
@@ -2273,7 +2679,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "SpawnInteriorFromStream", Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::MRUKRoom_eventSpawnInteriorFromStream_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::Function_MetaDataParams)},  };
+// ********** End Function SpawnInteriorFromStream Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "SpawnInteriorFromStream", 	Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::MRUKRoom_eventSpawnInteriorFromStream_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream_Statics::MRUKRoom_eventSpawnInteriorFromStream_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream()
 {
@@ -2311,9 +2721,13 @@ struct Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Finds the closest seat given a ray.\n\x09 * @param RayOrigin\x09\x09\x09\x09The origin of the ray.\n\x09 * @param RayDirection\x09\x09\x09The direction of the ray.\n\x09 * @param OutSeatTransform\x09\x09The seat pose.\n\x09 * @return\x09\x09\x09\x09\x09\x09If any seat was found the Anchor that has seats available will be returned. Otherwise a null pointer.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Finds the closest seat given a ray.\n@param RayOrigin                             The origin of the ray.\n@param RayDirection                  The direction of the ray.\n@param OutSeatTransform              The seat pose.\n@return                                              If any seat was found the Anchor that has seats available will be returned. Otherwise a null pointer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RayOrigin_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2322,13 +2736,18 @@ struct Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function TryGetClosestSeatPose constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RayOrigin;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RayDirection;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutSeatTransform;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function TryGetClosestSeatPose constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function TryGetClosestSeatPose Property Definitions ****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::NewProp_RayOrigin = { "RayOrigin", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSeatPose_Parms, RayOrigin), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RayOrigin_MetaData), NewProp_RayOrigin_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::NewProp_RayDirection = { "RayDirection", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSeatPose_Parms, RayDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RayDirection_MetaData), NewProp_RayDirection_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::NewProp_OutSeatTransform = { "OutSeatTransform", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSeatPose_Parms, OutSeatTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
@@ -2340,7 +2759,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "TryGetClosestSeatPose", Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::MRUKRoom_eventTryGetClosestSeatPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function TryGetClosestSeatPose Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "TryGetClosestSeatPose", 	Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::MRUKRoom_eventTryGetClosestSeatPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose_Statics::MRUKRoom_eventTryGetClosestSeatPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose()
 {
@@ -2379,10 +2802,14 @@ struct Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "AutoCreateRefTerm", "LabelFilter" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 *  Get the position on the surface that is closest to the given position with respect to the distance.\n\x09 *  @param WorldPosition      The position in world space from which the closest surface point should be found.\n\x09 *  @param OutSurfacePosition The closest position on the closest surface if any. Otherwise zero.\n\x09 *  @param OutSurfaceDistance The distance between WorldPosition and OutSurfacePosition.\n\x09 *  @param LabelFilter        The label filter can be used to include/exclude certain labels from the search.\n\x09 *  @param MaxDistance        The distance to which a closest surface position should be searched. Everything below or equal to zero will be treated as infinity.\n\x09 *  @return                   The Anchor on which the closest surface position was found or a null pointer otherwise.\n\x09 */" },
+#endif
 		{ "CPP_Default_MaxDistance", "0.000000" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the position on the surface that is closest to the given position with respect to the distance.\n@param WorldPosition      The position in world space from which the closest surface point should be found.\n@param OutSurfacePosition The closest position on the closest surface if any. Otherwise zero.\n@param OutSurfaceDistance The distance between WorldPosition and OutSurfacePosition.\n@param LabelFilter        The label filter can be used to include/exclude certain labels from the search.\n@param MaxDistance        The distance to which a closest surface position should be searched. Everything below or equal to zero will be treated as infinity.\n@return                   The Anchor on which the closest surface position was found or a null pointer otherwise." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldPosition_MetaData[] = {
 		{ "NativeConst", "" },
@@ -2391,6 +2818,8 @@ struct Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function TryGetClosestSurfacePosition constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WorldPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutSurfacePosition;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_OutSurfaceDistance;
@@ -2398,12 +2827,15 @@ struct Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_MaxDistance;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function TryGetClosestSurfacePosition constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function TryGetClosestSurfacePosition Property Definitions *********************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_WorldPosition = { "WorldPosition", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, WorldPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldPosition_MetaData), NewProp_WorldPosition_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_OutSurfacePosition = { "OutSurfacePosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, OutSurfacePosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_OutSurfaceDistance = { "OutSurfaceDistance", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, OutSurfaceDistance), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 258085908
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_LabelFilter = { "LabelFilter", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, LabelFilter), Z_Construct_UScriptStruct_FMRUKLabelFilter, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelFilter_MetaData), NewProp_LabelFilter_MetaData) }; // 1358229126
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_MaxDistance = { "MaxDistance", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, MaxDistance), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKRoom_eventTryGetClosestSurfacePosition_Parms, ReturnValue), Z_Construct_UClass_AMRUKAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::PropPointers[] = {
@@ -2415,7 +2847,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "TryGetClosestSurfacePosition", Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::MRUKRoom_eventTryGetClosestSurfacePosition_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::Function_MetaDataParams)},  };
+// ********** End Function TryGetClosestSurfacePosition Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKRoom, nullptr, "TryGetClosestSurfacePosition", 	Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::MRUKRoom_eventTryGetClosestSurfacePosition_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition_Statics::MRUKRoom_eventTryGetClosestSurfacePosition_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition()
 {
@@ -2441,42 +2877,6 @@ DEFINE_FUNCTION(AMRUKRoom::execTryGetClosestSurfacePosition)
 // ********** End Class AMRUKRoom Function TryGetClosestSurfacePosition ****************************
 
 // ********** Begin Class AMRUKRoom ****************************************************************
-void AMRUKRoom::StaticRegisterNativesAMRUKRoom()
-{
-	UClass* Class = AMRUKRoom::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "AddAnchorToRoom", &AMRUKRoom::execAddAnchorToRoom },
-		{ "AttachProceduralMeshToWalls", &AMRUKRoom::execAttachProceduralMeshToWalls },
-		{ "ClearRoom", &AMRUKRoom::execClearRoom },
-		{ "ComputeCentroid", &AMRUKRoom::execComputeCentroid },
-		{ "ComputeWallMeshUVAdjustments", &AMRUKRoom::execComputeWallMeshUVAdjustments },
-		{ "DoesRoomHave", &AMRUKRoom::execDoesRoomHave },
-		{ "GenerateProceduralSceneMesh", &AMRUKRoom::execGenerateProceduralSceneMesh },
-		{ "GenerateRandomPositionInRoom", &AMRUKRoom::execGenerateRandomPositionInRoom },
-		{ "GenerateRandomPositionInRoomFromStream", &AMRUKRoom::execGenerateRandomPositionInRoomFromStream },
-		{ "GenerateRandomPositionOnSurface", &AMRUKRoom::execGenerateRandomPositionOnSurface },
-		{ "GetAnchorsByLabel", &AMRUKRoom::execGetAnchorsByLabel },
-		{ "GetBestPoseFromRaycast", &AMRUKRoom::execGetBestPoseFromRaycast },
-		{ "GetCeilingAnchor", &AMRUKRoom::execGetCeilingAnchor },
-		{ "GetFirstAnchorByLabel", &AMRUKRoom::execGetFirstAnchorByLabel },
-		{ "GetFloorAnchor", &AMRUKRoom::execGetFloorAnchor },
-		{ "GetKeyWall", &AMRUKRoom::execGetKeyWall },
-		{ "GetLargestSurface", &AMRUKRoom::execGetLargestSurface },
-		{ "GetRoomEdges", &AMRUKRoom::execGetRoomEdges },
-		{ "IsPositionInRoom", &AMRUKRoom::execIsPositionInRoom },
-		{ "IsPositionInSceneVolume", &AMRUKRoom::execIsPositionInSceneVolume },
-		{ "IsWallAnchor", &AMRUKRoom::execIsWallAnchor },
-		{ "LoadGlobalMeshFromDevice", &AMRUKRoom::execLoadGlobalMeshFromDevice },
-		{ "LoadGlobalMeshFromJsonString", &AMRUKRoom::execLoadGlobalMeshFromJsonString },
-		{ "Raycast", &AMRUKRoom::execRaycast },
-		{ "RaycastAll", &AMRUKRoom::execRaycastAll },
-		{ "SpawnInterior", &AMRUKRoom::execSpawnInterior },
-		{ "SpawnInteriorFromStream", &AMRUKRoom::execSpawnInteriorFromStream },
-		{ "TryGetClosestSeatPose", &AMRUKRoom::execTryGetClosestSeatPose },
-		{ "TryGetClosestSurfacePosition", &AMRUKRoom::execTryGetClosestSurfacePosition },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AMRUKRoom;
 UClass* AMRUKRoom::GetPrivateStaticClass()
 {
@@ -2484,7 +2884,7 @@ UClass* AMRUKRoom::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AMRUKRoom.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKRoom"),
 			Z_Registration_Info_UClass_AMRUKRoom.InnerSingleton,
 			StaticRegisterNativesAMRUKRoom,
@@ -2511,122 +2911,196 @@ struct Z_Construct_UClass_AMRUKRoom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "MRUtilityKit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents a room in the MRUK.\n * A room holds (MRUK)Anchors as children for entities such as Desk, Floor, Ceiling, Walls, etc. Those entities are defined with their label.\n * It also provides events which will be triggered when an anchor has been added, removed or updated from space setup.\n *\n * This room class calculates different helper properties such as Outline, Edges, Bounds\n * and provides room functions as helpers such as determine if a point in space (XYZ) is inside the room, generating points on surfaces, generate points in room (floating), raycasts and more.\n */" },
+#endif
 		{ "DisplayName", "MR Utility Kit Room Actor" },
 		{ "IncludePath", "MRUtilityKitRoom.h" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a room in the MRUK.\nA room holds (MRUK)Anchors as children for entities such as Desk, Floor, Ceiling, Walls, etc. Those entities are defined with their label.\nIt also provides events which will be triggered when an anchor has been added, removed or updated from space setup.\n\nThis room class calculates different helper properties such as Outline, Edges, Bounds\nand provides room functions as helpers such as determine if a point in space (XYZ) is inside the room, generating points on surfaces, generate points in room (floating), raycasts and more." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SceneModel_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The scene model from which the room was loaded.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The scene model from which the room was loaded." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SpaceHandle_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The space handle of this anchor\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The space handle of this anchor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AnchorUUID_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The anchors UUID\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The anchors UUID" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RoomMesh_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Contains the mesh data for the room, including vertices and faces.\n\x09 * This property can be used to access the geometric representation of the room.\n\x09 * This property will be null if Scene Model V1 was chosen when loading the scene.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Contains the mesh data for the room, including vertices and faces.\nThis property can be used to access the geometric representation of the room.\nThis property will be null if Scene Model V1 was chosen when loading the scene." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAnchorUpdated_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Event that gets fired if a anchor in this room was updated.\n\x09 * E.g. volume or plane changed.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Event that gets fired if a anchor in this room was updated.\nE.g. volume or plane changed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAnchorCreated_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Event that gets fired if a new anchor was created in this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Event that gets fired if a new anchor was created in this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnAnchorRemoved_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Event that gets fired if a anchor gets removed from this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Event that gets fired if a anchor gets removed from this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RoomBounds_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Bounds of the room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Bounds of the room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RoomEdges_MetaData[] = {
 		{ "BlueprintGetter", "GetRoomEdges" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Edges of the room. Only valid when using a single floor.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Edges of the room. Only valid when using a single floor." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FloorAnchor_MetaData[] = {
 		{ "BlueprintGetter", "GetFloorAnchor" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The floor anchor of this room. Deprecated, only kept for compatibility.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The floor anchor of this room. Deprecated, only kept for compatibility." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FloorAnchors_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The floor anchors of this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The floor anchors of this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CeilingAnchor_MetaData[] = {
 		{ "BlueprintGetter", "GetCeilingAnchor" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The ceiling anchor of this room. Deprecated, only kept for compatibility.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ceiling anchor of this room. Deprecated, only kept for compatibility." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CeilingAnchors_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The ceiling anchors of this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ceiling anchors of this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WallAnchors_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The wall anchors of this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The wall anchors of this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GlobalMeshAnchor_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The global mesh anchor of this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The global mesh anchor of this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SeatAnchors_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * All anchors which are possible to sit on.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All anchors which are possible to sit on." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AllAnchors_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * All anchors of this room.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "All anchors of this room." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_KeyWallAnchor_MetaData[] = {
 		{ "ModuleRelativePath", "Public/MRUtilityKitRoom.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AMRUKRoom constinit property declarations ********************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_SceneModel_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_SceneModel;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SpaceHandle;
@@ -2653,55 +3127,89 @@ struct Z_Construct_UClass_AMRUKRoom_Statics
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_AllAnchors;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_KeyWallAnchor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AMRUKRoom constinit property declarations **********************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("AddAnchorToRoom"), .Pointer = &AMRUKRoom::execAddAnchorToRoom },
+		{ .NameUTF8 = UTF8TEXT("AttachProceduralMeshToWalls"), .Pointer = &AMRUKRoom::execAttachProceduralMeshToWalls },
+		{ .NameUTF8 = UTF8TEXT("ClearRoom"), .Pointer = &AMRUKRoom::execClearRoom },
+		{ .NameUTF8 = UTF8TEXT("ComputeCentroid"), .Pointer = &AMRUKRoom::execComputeCentroid },
+		{ .NameUTF8 = UTF8TEXT("ComputeWallMeshUVAdjustments"), .Pointer = &AMRUKRoom::execComputeWallMeshUVAdjustments },
+		{ .NameUTF8 = UTF8TEXT("DoesRoomHave"), .Pointer = &AMRUKRoom::execDoesRoomHave },
+		{ .NameUTF8 = UTF8TEXT("GenerateProceduralSceneMesh"), .Pointer = &AMRUKRoom::execGenerateProceduralSceneMesh },
+		{ .NameUTF8 = UTF8TEXT("GenerateRandomPositionInRoom"), .Pointer = &AMRUKRoom::execGenerateRandomPositionInRoom },
+		{ .NameUTF8 = UTF8TEXT("GenerateRandomPositionInRoomFromStream"), .Pointer = &AMRUKRoom::execGenerateRandomPositionInRoomFromStream },
+		{ .NameUTF8 = UTF8TEXT("GenerateRandomPositionOnSurface"), .Pointer = &AMRUKRoom::execGenerateRandomPositionOnSurface },
+		{ .NameUTF8 = UTF8TEXT("GetAnchorsByLabel"), .Pointer = &AMRUKRoom::execGetAnchorsByLabel },
+		{ .NameUTF8 = UTF8TEXT("GetBestPoseFromRaycast"), .Pointer = &AMRUKRoom::execGetBestPoseFromRaycast },
+		{ .NameUTF8 = UTF8TEXT("GetCeilingAnchor"), .Pointer = &AMRUKRoom::execGetCeilingAnchor },
+		{ .NameUTF8 = UTF8TEXT("GetFirstAnchorByLabel"), .Pointer = &AMRUKRoom::execGetFirstAnchorByLabel },
+		{ .NameUTF8 = UTF8TEXT("GetFloorAnchor"), .Pointer = &AMRUKRoom::execGetFloorAnchor },
+		{ .NameUTF8 = UTF8TEXT("GetKeyWall"), .Pointer = &AMRUKRoom::execGetKeyWall },
+		{ .NameUTF8 = UTF8TEXT("GetLargestSurface"), .Pointer = &AMRUKRoom::execGetLargestSurface },
+		{ .NameUTF8 = UTF8TEXT("GetRoomEdges"), .Pointer = &AMRUKRoom::execGetRoomEdges },
+		{ .NameUTF8 = UTF8TEXT("IsPositionInRoom"), .Pointer = &AMRUKRoom::execIsPositionInRoom },
+		{ .NameUTF8 = UTF8TEXT("IsPositionInSceneVolume"), .Pointer = &AMRUKRoom::execIsPositionInSceneVolume },
+		{ .NameUTF8 = UTF8TEXT("IsWallAnchor"), .Pointer = &AMRUKRoom::execIsWallAnchor },
+		{ .NameUTF8 = UTF8TEXT("LoadGlobalMeshFromDevice"), .Pointer = &AMRUKRoom::execLoadGlobalMeshFromDevice },
+		{ .NameUTF8 = UTF8TEXT("LoadGlobalMeshFromJsonString"), .Pointer = &AMRUKRoom::execLoadGlobalMeshFromJsonString },
+		{ .NameUTF8 = UTF8TEXT("Raycast"), .Pointer = &AMRUKRoom::execRaycast },
+		{ .NameUTF8 = UTF8TEXT("RaycastAll"), .Pointer = &AMRUKRoom::execRaycastAll },
+		{ .NameUTF8 = UTF8TEXT("SpawnInterior"), .Pointer = &AMRUKRoom::execSpawnInterior },
+		{ .NameUTF8 = UTF8TEXT("SpawnInteriorFromStream"), .Pointer = &AMRUKRoom::execSpawnInteriorFromStream },
+		{ .NameUTF8 = UTF8TEXT("TryGetClosestSeatPose"), .Pointer = &AMRUKRoom::execTryGetClosestSeatPose },
+		{ .NameUTF8 = UTF8TEXT("TryGetClosestSurfacePosition"), .Pointer = &AMRUKRoom::execTryGetClosestSurfacePosition },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom, "AddAnchorToRoom" }, // 3519989980
-		{ &Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls, "AttachProceduralMeshToWalls" }, // 1427560728
-		{ &Z_Construct_UFunction_AMRUKRoom_ClearRoom, "ClearRoom" }, // 2413157593
-		{ &Z_Construct_UFunction_AMRUKRoom_ComputeCentroid, "ComputeCentroid" }, // 1492518576
-		{ &Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments, "ComputeWallMeshUVAdjustments" }, // 2001397914
-		{ &Z_Construct_UFunction_AMRUKRoom_DoesRoomHave, "DoesRoomHave" }, // 1414469504
-		{ &Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh, "GenerateProceduralSceneMesh" }, // 1137706404
-		{ &Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom, "GenerateRandomPositionInRoom" }, // 385733
-		{ &Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream, "GenerateRandomPositionInRoomFromStream" }, // 968731474
-		{ &Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface, "GenerateRandomPositionOnSurface" }, // 3621945455
-		{ &Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel, "GetAnchorsByLabel" }, // 3193954082
-		{ &Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast, "GetBestPoseFromRaycast" }, // 2986884851
-		{ &Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor, "GetCeilingAnchor" }, // 2389595015
-		{ &Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel, "GetFirstAnchorByLabel" }, // 2348405270
-		{ &Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor, "GetFloorAnchor" }, // 1859005914
-		{ &Z_Construct_UFunction_AMRUKRoom_GetKeyWall, "GetKeyWall" }, // 3455613685
-		{ &Z_Construct_UFunction_AMRUKRoom_GetLargestSurface, "GetLargestSurface" }, // 2477316872
-		{ &Z_Construct_UFunction_AMRUKRoom_GetRoomEdges, "GetRoomEdges" }, // 2463502221
-		{ &Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom, "IsPositionInRoom" }, // 2829197931
-		{ &Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume, "IsPositionInSceneVolume" }, // 240518148
-		{ &Z_Construct_UFunction_AMRUKRoom_IsWallAnchor, "IsWallAnchor" }, // 299468108
-		{ &Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice, "LoadGlobalMeshFromDevice" }, // 2515526486
-		{ &Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString, "LoadGlobalMeshFromJsonString" }, // 1859818979
-		{ &Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature, "OnAnchorCreated__DelegateSignature" }, // 2692790254
-		{ &Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature, "OnAnchorRemoved__DelegateSignature" }, // 3089106155
-		{ &Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature, "OnAnchorUpdated__DelegateSignature" }, // 3792847423
-		{ &Z_Construct_UFunction_AMRUKRoom_Raycast, "Raycast" }, // 322864502
-		{ &Z_Construct_UFunction_AMRUKRoom_RaycastAll, "RaycastAll" }, // 2900920437
-		{ &Z_Construct_UFunction_AMRUKRoom_SpawnInterior, "SpawnInterior" }, // 304109280
-		{ &Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream, "SpawnInteriorFromStream" }, // 808179005
-		{ &Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose, "TryGetClosestSeatPose" }, // 2813760900
-		{ &Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition, "TryGetClosestSurfacePosition" }, // 1514190096
+		{ &Z_Construct_UFunction_AMRUKRoom_AddAnchorToRoom, "AddAnchorToRoom" }, // 3768011668
+		{ &Z_Construct_UFunction_AMRUKRoom_AttachProceduralMeshToWalls, "AttachProceduralMeshToWalls" }, // 2934468875
+		{ &Z_Construct_UFunction_AMRUKRoom_ClearRoom, "ClearRoom" }, // 2303383410
+		{ &Z_Construct_UFunction_AMRUKRoom_ComputeCentroid, "ComputeCentroid" }, // 307298343
+		{ &Z_Construct_UFunction_AMRUKRoom_ComputeWallMeshUVAdjustments, "ComputeWallMeshUVAdjustments" }, // 856200317
+		{ &Z_Construct_UFunction_AMRUKRoom_DoesRoomHave, "DoesRoomHave" }, // 643516773
+		{ &Z_Construct_UFunction_AMRUKRoom_GenerateProceduralSceneMesh, "GenerateProceduralSceneMesh" }, // 3969358359
+		{ &Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoom, "GenerateRandomPositionInRoom" }, // 2253414514
+		{ &Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionInRoomFromStream, "GenerateRandomPositionInRoomFromStream" }, // 1587476985
+		{ &Z_Construct_UFunction_AMRUKRoom_GenerateRandomPositionOnSurface, "GenerateRandomPositionOnSurface" }, // 3194009556
+		{ &Z_Construct_UFunction_AMRUKRoom_GetAnchorsByLabel, "GetAnchorsByLabel" }, // 2148313721
+		{ &Z_Construct_UFunction_AMRUKRoom_GetBestPoseFromRaycast, "GetBestPoseFromRaycast" }, // 3022747454
+		{ &Z_Construct_UFunction_AMRUKRoom_GetCeilingAnchor, "GetCeilingAnchor" }, // 3399847946
+		{ &Z_Construct_UFunction_AMRUKRoom_GetFirstAnchorByLabel, "GetFirstAnchorByLabel" }, // 377169634
+		{ &Z_Construct_UFunction_AMRUKRoom_GetFloorAnchor, "GetFloorAnchor" }, // 2995251035
+		{ &Z_Construct_UFunction_AMRUKRoom_GetKeyWall, "GetKeyWall" }, // 2036954111
+		{ &Z_Construct_UFunction_AMRUKRoom_GetLargestSurface, "GetLargestSurface" }, // 425012821
+		{ &Z_Construct_UFunction_AMRUKRoom_GetRoomEdges, "GetRoomEdges" }, // 1521275481
+		{ &Z_Construct_UFunction_AMRUKRoom_IsPositionInRoom, "IsPositionInRoom" }, // 2531241497
+		{ &Z_Construct_UFunction_AMRUKRoom_IsPositionInSceneVolume, "IsPositionInSceneVolume" }, // 1186831593
+		{ &Z_Construct_UFunction_AMRUKRoom_IsWallAnchor, "IsWallAnchor" }, // 2832669034
+		{ &Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromDevice, "LoadGlobalMeshFromDevice" }, // 2568786870
+		{ &Z_Construct_UFunction_AMRUKRoom_LoadGlobalMeshFromJsonString, "LoadGlobalMeshFromJsonString" }, // 2880204893
+		{ &Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature, "OnAnchorCreated__DelegateSignature" }, // 736188333
+		{ &Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature, "OnAnchorRemoved__DelegateSignature" }, // 546003509
+		{ &Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature, "OnAnchorUpdated__DelegateSignature" }, // 4113646999
+		{ &Z_Construct_UFunction_AMRUKRoom_Raycast, "Raycast" }, // 786688556
+		{ &Z_Construct_UFunction_AMRUKRoom_RaycastAll, "RaycastAll" }, // 3899095440
+		{ &Z_Construct_UFunction_AMRUKRoom_SpawnInterior, "SpawnInterior" }, // 916611431
+		{ &Z_Construct_UFunction_AMRUKRoom_SpawnInteriorFromStream, "SpawnInteriorFromStream" }, // 3936779578
+		{ &Z_Construct_UFunction_AMRUKRoom_TryGetClosestSeatPose, "TryGetClosestSeatPose" }, // 4158931529
+		{ &Z_Construct_UFunction_AMRUKRoom_TryGetClosestSurfacePosition, "TryGetClosestSurfacePosition" }, // 586455438
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMRUKRoom>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AMRUKRoom_Statics
+
+// ********** Begin Class AMRUKRoom Property Definitions *******************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_SceneModel_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_SceneModel = { "SceneModel", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, SceneModel), Z_Construct_UEnum_MRUtilityKit_EMRUKSceneModel, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SceneModel_MetaData), NewProp_SceneModel_MetaData) }; // 881506815
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_SpaceHandle = { "SpaceHandle", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, SpaceHandle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpaceHandle_MetaData), NewProp_SpaceHandle_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_AnchorUUID = { "AnchorUUID", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, AnchorUUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUID_MetaData), NewProp_AnchorUUID_MetaData) }; // 3912340335
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_SceneModel = { "SceneModel", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, SceneModel), Z_Construct_UEnum_MRUtilityKit_EMRUKSceneModel, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SceneModel_MetaData), NewProp_SceneModel_MetaData) }; // 3207743963
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_SpaceHandle = { "SpaceHandle", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, SpaceHandle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SpaceHandle_MetaData), NewProp_SpaceHandle_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_AnchorUUID = { "AnchorUUID", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, AnchorUUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUID_MetaData), NewProp_AnchorUUID_MetaData) }; // 520639859
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_RoomMesh = { "RoomMesh", nullptr, (EPropertyFlags)0x0114000000022815, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, RoomMesh), Z_Construct_UClass_UMRUKRoomMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomMesh_MetaData), NewProp_RoomMesh_MetaData) };
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_OnAnchorUpdated = { "OnAnchorUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, OnAnchorUpdated), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAnchorUpdated_MetaData), NewProp_OnAnchorUpdated_MetaData) }; // 3792847423
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_OnAnchorCreated = { "OnAnchorCreated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, OnAnchorCreated), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAnchorCreated_MetaData), NewProp_OnAnchorCreated_MetaData) }; // 2692790254
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_OnAnchorRemoved = { "OnAnchorRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, OnAnchorRemoved), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAnchorRemoved_MetaData), NewProp_OnAnchorRemoved_MetaData) }; // 3089106155
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_OnAnchorUpdated = { "OnAnchorUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, OnAnchorUpdated), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAnchorUpdated_MetaData), NewProp_OnAnchorUpdated_MetaData) }; // 4113646999
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_OnAnchorCreated = { "OnAnchorCreated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, OnAnchorCreated), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAnchorCreated_MetaData), NewProp_OnAnchorCreated_MetaData) }; // 736188333
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_OnAnchorRemoved = { "OnAnchorRemoved", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, OnAnchorRemoved), Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnAnchorRemoved_MetaData), NewProp_OnAnchorRemoved_MetaData) }; // 546003509
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_RoomBounds = { "RoomBounds", nullptr, (EPropertyFlags)0x0010000000022815, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, RoomBounds), Z_Construct_UScriptStruct_FBox, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomBounds_MetaData), NewProp_RoomBounds_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_RoomEdges_Inner = { "RoomEdges", nullptr, (EPropertyFlags)0x0000000020000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AMRUKRoom_Statics::NewProp_RoomEdges = { "RoomEdges", nullptr, (EPropertyFlags)0x0010000020002014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKRoom, RoomEdges_DEPRECATED), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomEdges_MetaData), NewProp_RoomEdges_MetaData) };
@@ -2747,6 +3255,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMRUKRoom
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMRUKRoom_Statics::NewProp_KeyWallAnchor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKRoom_Statics::PropPointers) < 2048);
+// ********** End Class AMRUKRoom Property Definitions *********************************************
 UObject* (*const Z_Construct_UClass_AMRUKRoom_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -2764,9 +3273,14 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMRUKRoom_Statics::Clas
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKRoom_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKRoom_Statics::Class_MetaDataParams), Z_Construct_UClass_AMRUKRoom_Statics::Class_MetaDataParams)
 };
+void AMRUKRoom::StaticRegisterNativesAMRUKRoom()
+{
+	UClass* Class = AMRUKRoom::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_AMRUKRoom_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_AMRUKRoom()
 {
 	if (!Z_Registration_Info_UClass_AMRUKRoom.OuterSingleton)
@@ -2775,31 +3289,33 @@ UClass* Z_Construct_UClass_AMRUKRoom()
 	}
 	return Z_Registration_Info_UClass_AMRUKRoom.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AMRUKRoom);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AMRUKRoom);
 AMRUKRoom::~AMRUKRoom() {}
 // ********** End Class AMRUKRoom ******************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EMRUKSpawnLocation_StaticEnum, TEXT("EMRUKSpawnLocation"), &Z_Registration_Info_UEnum_EMRUKSpawnLocation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1396309959U) },
-		{ EMRUKRoomFilter_StaticEnum, TEXT("EMRUKRoomFilter"), &Z_Registration_Info_UEnum_EMRUKRoomFilter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1183284872U) },
-		{ EMRUKPositioningMethod_StaticEnum, TEXT("EMRUKPositioningMethod"), &Z_Registration_Info_UEnum_EMRUKPositioningMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3582575800U) },
+		{ EMRUKSpawnLocation_StaticEnum, TEXT("EMRUKSpawnLocation"), &Z_Registration_Info_UEnum_EMRUKSpawnLocation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1966095933U) },
+		{ EMRUKRoomFilter_StaticEnum, TEXT("EMRUKRoomFilter"), &Z_Registration_Info_UEnum_EMRUKRoomFilter, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2339530297U) },
+		{ EMRUKPositioningMethod_StaticEnum, TEXT("EMRUKPositioningMethod"), &Z_Registration_Info_UEnum_EMRUKPositioningMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 789641404U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMRUKAnchorWithPlaneUVs::StaticStruct, Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewStructOps, TEXT("MRUKAnchorWithPlaneUVs"), &Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMRUKAnchorWithPlaneUVs), 3149888397U) },
-		{ FMRUKRoomFace::StaticStruct, Z_Construct_UScriptStruct_FMRUKRoomFace_Statics::NewStructOps, TEXT("MRUKRoomFace"), &Z_Registration_Info_UScriptStruct_FMRUKRoomFace, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMRUKRoomFace), 2716392789U) },
+		{ FMRUKAnchorWithPlaneUVs::StaticStruct, Z_Construct_UScriptStruct_FMRUKAnchorWithPlaneUVs_Statics::NewStructOps, TEXT("MRUKAnchorWithPlaneUVs"),&Z_Registration_Info_UScriptStruct_FMRUKAnchorWithPlaneUVs, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMRUKAnchorWithPlaneUVs), 3083808258U) },
+		{ FMRUKRoomFace::StaticStruct, Z_Construct_UScriptStruct_FMRUKRoomFace_Statics::NewStructOps, TEXT("MRUKRoomFace"),&Z_Registration_Info_UScriptStruct_FMRUKRoomFace, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMRUKRoomFace), 1562270846U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMRUKRoomMesh, UMRUKRoomMesh::StaticClass, TEXT("UMRUKRoomMesh"), &Z_Registration_Info_UClass_UMRUKRoomMesh, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKRoomMesh), 1766469100U) },
-		{ Z_Construct_UClass_AMRUKRoom, AMRUKRoom::StaticClass, TEXT("AMRUKRoom"), &Z_Registration_Info_UClass_AMRUKRoom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKRoom), 1788123366U) },
+		{ Z_Construct_UClass_UMRUKRoomMesh, UMRUKRoomMesh::StaticClass, TEXT("UMRUKRoomMesh"), &Z_Registration_Info_UClass_UMRUKRoomMesh, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKRoomMesh), 1627533164U) },
+		{ Z_Construct_UClass_AMRUKRoom, AMRUKRoom::StaticClass, TEXT("AMRUKRoom"), &Z_Registration_Info_UClass_AMRUKRoom, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKRoom), 173872735U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_1234728459{
+	TEXT("/Script/MRUtilityKit"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_3260945683(TEXT("/Script/MRUtilityKit"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitRoom_h__Script_MRUtilityKit_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

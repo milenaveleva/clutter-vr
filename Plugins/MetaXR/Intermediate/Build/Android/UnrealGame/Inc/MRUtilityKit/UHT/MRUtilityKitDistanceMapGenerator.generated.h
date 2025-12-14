@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AActor;
 class AMRUKAnchor;
 class AMRUKRoom;
@@ -24,14 +23,14 @@ class UTexture;
 struct FMinimalViewInfo;
 
 // ********** Begin Delegate FOnReady **************************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_49_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_49_DELEGATE \
 static void FOnReady_DelegateWrapper(const FMulticastScriptDelegate& OnReady);
 
 
 // ********** End Delegate FOnReady ****************************************************************
 
 // ********** Begin Class AMRUKDistanceMapGenerator ************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execUpdateMaskMeshOfAnchor); \
 	DECLARE_FUNCTION(execCreateMaskMeshOfAnchor); \
 	DECLARE_FUNCTION(execOnRoomUpdated); \
@@ -44,20 +43,21 @@ static void FOnReady_DelegateWrapper(const FMulticastScriptDelegate& OnReady);
 	DECLARE_FUNCTION(execCaptureDistanceMap);
 
 
+struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_AMRUKDistanceMapGenerator_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMRUKDistanceMapGenerator(); \
-	friend struct Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics; \
+	friend struct ::Z_Construct_UClass_AMRUKDistanceMapGenerator_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_AMRUKDistanceMapGenerator_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_AMRUKDistanceMapGenerator_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AMRUKDistanceMapGenerator, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_AMRUKDistanceMapGenerator_NoRegister) \
 	DECLARE_SERIALIZER(AMRUKDistanceMapGenerator)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMRUKDistanceMapGenerator(AMRUKDistanceMapGenerator&&) = delete; \
 	AMRUKDistanceMapGenerator(const AMRUKDistanceMapGenerator&) = delete; \
@@ -67,13 +67,13 @@ public: \
 	NO_API virtual ~AMRUKDistanceMapGenerator();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_43_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_43_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -83,7 +83,7 @@ class AMRUKDistanceMapGenerator;
 // ********** End Class AMRUKDistanceMapGenerator **************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDistanceMapGenerator_h
 
 // ********** Begin Enum EMRUKDistanceMapGenerationMode ********************************************
 #define FOREACH_ENUM_EMRUKDISTANCEMAPGENERATIONMODE(op) \
@@ -94,7 +94,7 @@ class AMRUKDistanceMapGenerator;
 
 enum class EMRUKDistanceMapGenerationMode : uint8;
 template<> struct TIsUEnumClass<EMRUKDistanceMapGenerationMode> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKDistanceMapGenerationMode>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKDistanceMapGenerationMode>();
 // ********** End Enum EMRUKDistanceMapGenerationMode **********************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

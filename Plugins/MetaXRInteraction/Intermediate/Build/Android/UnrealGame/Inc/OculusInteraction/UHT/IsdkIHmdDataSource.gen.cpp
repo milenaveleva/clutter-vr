@@ -8,7 +8,7 @@
 #include "DataSources/IsdkIHmdDataSource.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIHmdDataSource() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -38,11 +38,11 @@ void IIsdkIHmdDataSource::Execute_GetHmdPose(UObject* O, FTransform& HmdPose, bo
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIHmdDataSource_GetHmdPose);
 	if (Func)
 	{
-		Parms.HmdPose=HmdPose;
-		Parms.IsTracked=IsTracked;
+		Parms.HmdPose=std::move(HmdPose);
+		Parms.IsTracked=std::move(IsTracked);
 		O->ProcessEvent(Func, &Parms);
-		HmdPose=Parms.HmdPose;
-		IsTracked=Parms.IsTracked;
+		HmdPose=std::move(Parms.HmdPose);
+		IsTracked=std::move(Parms.IsTracked);
 	}
 	else if (auto I = (IIsdkIHmdDataSource*)(O->GetNativeInterfaceAddress(UIsdkIHmdDataSource::StaticClass())))
 	{
@@ -55,15 +55,22 @@ struct Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHmdDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "transform of the headset, world space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHmdPose constinit property declarations ****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HmdPose;
 	static void NewProp_IsTracked_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsTracked;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHmdPose constinit property declarations ******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHmdPose Property Definitions ***************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::NewProp_HmdPose = { "HmdPose", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHmdDataSource_eventGetHmdPose_Parms, HmdPose), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::NewProp_IsTracked_SetBit(void* Obj)
 {
@@ -75,7 +82,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::NewProp_IsTracked,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHmdDataSource, nullptr, "GetHmdPose", Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::PropPointers), sizeof(IsdkIHmdDataSource_eventGetHmdPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHmdPose Property Definitions *****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHmdDataSource, nullptr, "GetHmdPose", 	Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::PropPointers), 
+sizeof(IsdkIHmdDataSource_eventGetHmdPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHmdDataSource_eventGetHmdPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose()
 {
@@ -116,11 +127,11 @@ void IIsdkIHmdDataSource::Execute_GetRelativeHmdPose(UObject* O, FTransform& Hmd
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIHmdDataSource_GetRelativeHmdPose);
 	if (Func)
 	{
-		Parms.HmdRelativePose=HmdRelativePose;
-		Parms.IsTracked=IsTracked;
+		Parms.HmdRelativePose=std::move(HmdRelativePose);
+		Parms.IsTracked=std::move(IsTracked);
 		O->ProcessEvent(Func, &Parms);
-		HmdRelativePose=Parms.HmdRelativePose;
-		IsTracked=Parms.IsTracked;
+		HmdRelativePose=std::move(Parms.HmdRelativePose);
+		IsTracked=std::move(Parms.IsTracked);
 	}
 	else if (auto I = (IIsdkIHmdDataSource*)(O->GetNativeInterfaceAddress(UIsdkIHmdDataSource::StaticClass())))
 	{
@@ -133,15 +144,22 @@ struct Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHmdDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "transform of the headset, relative to tracking space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRelativeHmdPose constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HmdRelativePose;
 	static void NewProp_IsTracked_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsTracked;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRelativeHmdPose constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRelativeHmdPose Property Definitions *******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::NewProp_HmdRelativePose = { "HmdRelativePose", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHmdDataSource_eventGetRelativeHmdPose_Parms, HmdRelativePose), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::NewProp_IsTracked_SetBit(void* Obj)
 {
@@ -153,7 +171,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::NewProp_IsTracked,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHmdDataSource, nullptr, "GetRelativeHmdPose", Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::PropPointers), sizeof(IsdkIHmdDataSource_eventGetRelativeHmdPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRelativeHmdPose Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHmdDataSource, nullptr, "GetRelativeHmdPose", 	Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::PropPointers), 
+sizeof(IsdkIHmdDataSource_eventGetRelativeHmdPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHmdDataSource_eventGetRelativeHmdPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose()
 {
@@ -214,16 +236,25 @@ struct Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns whether or not the HMD in this data source is tracked */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHmdDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns whether or not the HMD in this data source is tracked" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsHmdTracked constinit property declarations **************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsHmdTracked constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsHmdTracked Property Definitions *************************************
 void Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkIHmdDataSource_eventIsHmdTracked_Parms*)Obj)->ReturnValue = 1;
@@ -233,7 +264,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHmdDataSource, nullptr, "IsHmdTracked", Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::PropPointers), sizeof(IsdkIHmdDataSource_eventIsHmdTracked_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsHmdTracked Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHmdDataSource, nullptr, "IsHmdTracked", 	Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::PropPointers), 
+sizeof(IsdkIHmdDataSource_eventIsHmdTracked_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHmdDataSource_eventIsHmdTracked_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked()
 {
@@ -254,16 +289,6 @@ DEFINE_FUNCTION(IIsdkIHmdDataSource::execIsHmdTracked)
 // ********** End Interface UIsdkIHmdDataSource Function IsHmdTracked ******************************
 
 // ********** Begin Interface UIsdkIHmdDataSource **************************************************
-void UIsdkIHmdDataSource::StaticRegisterNativesUIsdkIHmdDataSource()
-{
-	UClass* Class = UIsdkIHmdDataSource::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetHmdPose", &IIsdkIHmdDataSource::execGetHmdPose },
-		{ "GetRelativeHmdPose", &IIsdkIHmdDataSource::execGetRelativeHmdPose },
-		{ "IsHmdTracked", &IIsdkIHmdDataSource::execIsHmdTracked },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIHmdDataSource;
 UClass* UIsdkIHmdDataSource::GetPrivateStaticClass()
 {
@@ -271,7 +296,7 @@ UClass* UIsdkIHmdDataSource::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIHmdDataSource.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIHmdDataSource"),
 			Z_Registration_Info_UClass_UIsdkIHmdDataSource.InnerSingleton,
 			StaticRegisterNativesUIsdkIHmdDataSource,
@@ -303,18 +328,26 @@ struct Z_Construct_UClass_UIsdkIHmdDataSource_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHmdDataSource.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIHmdDataSource constinit property declarations ******************
+// ********** End Interface UIsdkIHmdDataSource constinit property declarations ********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetHmdPose"), .Pointer = &IIsdkIHmdDataSource::execGetHmdPose },
+		{ .NameUTF8 = UTF8TEXT("GetRelativeHmdPose"), .Pointer = &IIsdkIHmdDataSource::execGetRelativeHmdPose },
+		{ .NameUTF8 = UTF8TEXT("IsHmdTracked"), .Pointer = &IIsdkIHmdDataSource::execIsHmdTracked },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose, "GetHmdPose" }, // 1971260273
-		{ &Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose, "GetRelativeHmdPose" }, // 4249805340
-		{ &Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked, "IsHmdTracked" }, // 498093823
+		{ &Z_Construct_UFunction_UIsdkIHmdDataSource_GetHmdPose, "GetHmdPose" }, // 1362163795
+		{ &Z_Construct_UFunction_UIsdkIHmdDataSource_GetRelativeHmdPose, "GetRelativeHmdPose" }, // 359152404
+		{ &Z_Construct_UFunction_UIsdkIHmdDataSource_IsHmdTracked, "IsHmdTracked" }, // 3324984221
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIHmdDataSource>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIHmdDataSource_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIHmdDataSource_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -335,6 +368,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIHmdDataSource_Sta
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIHmdDataSource_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIHmdDataSource_Statics::Class_MetaDataParams)
 };
+void UIsdkIHmdDataSource::StaticRegisterNativesUIsdkIHmdDataSource()
+{
+	UClass* Class = UIsdkIHmdDataSource::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIHmdDataSource_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIHmdDataSource()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIHmdDataSource.OuterSingleton)
@@ -344,20 +382,22 @@ UClass* Z_Construct_UClass_UIsdkIHmdDataSource()
 	return Z_Registration_Info_UClass_UIsdkIHmdDataSource.OuterSingleton;
 }
 UIsdkIHmdDataSource::UIsdkIHmdDataSource(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIHmdDataSource);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIHmdDataSource);
 // ********** End Interface UIsdkIHmdDataSource ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIHmdDataSource, UIsdkIHmdDataSource::StaticClass, TEXT("UIsdkIHmdDataSource"), &Z_Registration_Info_UClass_UIsdkIHmdDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIHmdDataSource), 1922529606U) },
+		{ Z_Construct_UClass_UIsdkIHmdDataSource, UIsdkIHmdDataSource::StaticClass, TEXT("UIsdkIHmdDataSource"), &Z_Registration_Info_UClass_UIsdkIHmdDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIHmdDataSource), 2633044703U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_1919958865(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_1819727108{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHmdDataSource_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

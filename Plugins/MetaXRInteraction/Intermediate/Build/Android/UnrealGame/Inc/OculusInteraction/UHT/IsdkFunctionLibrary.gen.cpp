@@ -11,7 +11,7 @@
 #include "StructTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkFunctionLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -62,11 +62,16 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Stati
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function FindGrabbableByComponent constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function FindGrabbableByComponent constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function FindGrabbableByComponent Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventFindGrabbableByComponent_Parms, Component), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Component_MetaData), NewProp_Component_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventFindGrabbableByComponent_Parms, ReturnValue), Z_Construct_UClass_UIsdkGrabbableComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::PropPointers[] = {
@@ -74,7 +79,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "FindGrabbableByComponent", Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::IsdkFunctionLibrary_eventFindGrabbableByComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::Function_MetaDataParams)},  };
+// ********** End Function FindGrabbableByComponent Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "FindGrabbableByComponent", 	Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::IsdkFunctionLibrary_eventFindGrabbableByComponent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent_Statics::IsdkFunctionLibrary_eventFindGrabbableByComponent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent()
 {
@@ -106,17 +115,26 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Finds the tracking subsystem for the given actor\n   * @param World which world contains the subsystem\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 		{ "NativeMakeFunc", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Finds the tracking subsystem for the given actor\n@param World which world contains the subsystem" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function FindTrackingDataSubsystem constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_World;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function FindTrackingDataSubsystem constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function FindTrackingDataSubsystem Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::NewProp_World = { "World", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventFindTrackingDataSubsystem_Parms, World), Z_Construct_UClass_UWorld_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventFindTrackingDataSubsystem_Parms, ReturnValue), Z_Construct_UClass_UIsdkITrackingDataSubsystem_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::PropPointers[] = {
@@ -124,7 +142,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "FindTrackingDataSubsystem", Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::IsdkFunctionLibrary_eventFindTrackingDataSubsystem_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::Function_MetaDataParams)},  };
+// ********** End Function FindTrackingDataSubsystem Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "FindTrackingDataSubsystem", 	Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::IsdkFunctionLibrary_eventFindTrackingDataSubsystem_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem_Statics::IsdkFunctionLibrary_eventFindTrackingDataSubsystem_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem()
 {
@@ -156,29 +178,42 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Get the current ControllerHandBehavior\n   * @return the current ControllerHandBehavior\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 		{ "ReturnDisplayName", "ControllerHandBehavior" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the current ControllerHandBehavior\n@return the current ControllerHandBehavior" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetControllerHandBehavior constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetControllerHandBehavior constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetControllerHandBehavior Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetControllerHandBehavior_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetControllerHandBehavior_Parms, ReturnValue), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 802605893
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetControllerHandBehavior_Parms, ReturnValue), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 1789409571
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_WorldContextObject,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetControllerHandBehavior", Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::IsdkFunctionLibrary_eventGetControllerHandBehavior_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetControllerHandBehavior Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetControllerHandBehavior", 	Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::IsdkFunctionLibrary_eventGetControllerHandBehavior_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior_Statics::IsdkFunctionLibrary_eventGetControllerHandBehavior_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior()
 {
@@ -212,11 +247,16 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDefaultJointRadii constinit property declarations ******************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDefaultJointRadii constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetDefaultJointRadii Property Definitions *****************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetDefaultJointRadii_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::PropPointers[] = {
@@ -224,7 +264,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetDefaultJointRadii", Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::IsdkFunctionLibrary_eventGetDefaultJointRadii_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDefaultJointRadii Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetDefaultJointRadii", 	Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::IsdkFunctionLibrary_eventGetDefaultJointRadii_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii_Statics::IsdkFunctionLibrary_eventGetDefaultJointRadii_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii()
 {
@@ -257,19 +301,28 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDefaultOpenXRFingerMapping constinit property declarations *********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDefaultOpenXRFingerMapping constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, METADATA_PARAMS(0, nullptr) }; // 320220292
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetDefaultOpenXRFingerMapping_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 320220292
+
+// ********** Begin Function GetDefaultOpenXRFingerMapping Property Definitions ********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, METADATA_PARAMS(0, nullptr) }; // 230323569
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetDefaultOpenXRFingerMapping_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 230323569
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::NewProp_ReturnValue_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetDefaultOpenXRFingerMapping", Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::IsdkFunctionLibrary_eventGetDefaultOpenXRFingerMapping_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDefaultOpenXRFingerMapping Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetDefaultOpenXRFingerMapping", 	Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::IsdkFunctionLibrary_eventGetDefaultOpenXRFingerMapping_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping_Statics::IsdkFunctionLibrary_eventGetDefaultOpenXRFingerMapping_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping()
 {
@@ -302,19 +355,28 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_S
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDefaultOpenXRThumbMapping constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDefaultOpenXRThumbMapping constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, METADATA_PARAMS(0, nullptr) }; // 1556225157
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetDefaultOpenXRThumbMapping_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 1556225157
+
+// ********** Begin Function GetDefaultOpenXRThumbMapping Property Definitions *********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, METADATA_PARAMS(0, nullptr) }; // 3578312779
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetDefaultOpenXRThumbMapping_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 3578312779
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::NewProp_ReturnValue_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetDefaultOpenXRThumbMapping", Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::IsdkFunctionLibrary_eventGetDefaultOpenXRThumbMapping_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDefaultOpenXRThumbMapping Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetDefaultOpenXRThumbMapping", 	Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::IsdkFunctionLibrary_eventGetDefaultOpenXRThumbMapping_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping_Statics::IsdkFunctionLibrary_eventGetDefaultOpenXRThumbMapping_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping()
 {
@@ -346,23 +408,32 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Will iterate through every component of an actor, get all ISDK GameplayTags via interface, and\n   * collate them into one container */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Will iterate through every component of an actor, get all ISDK GameplayTags via interface, and\n  * collate them into one container" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ActorIn_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetISDKGameplayTagsFromActor constinit property declarations **********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ActorIn;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ContainerOut;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetISDKGameplayTagsFromActor constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetISDKGameplayTagsFromActor Property Definitions *********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::NewProp_ActorIn = { "ActorIn", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms, ActorIn), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ActorIn_MetaData), NewProp_ActorIn_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::NewProp_ContainerOut = { "ContainerOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms, ContainerOut), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(0, nullptr) }; // 2104890724
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::NewProp_ContainerOut = { "ContainerOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms, ContainerOut), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(0, nullptr) }; // 3438578166
 void Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms*)Obj)->ReturnValue = 1;
@@ -374,7 +445,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetISDKGameplayTagsFromActor", Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetISDKGameplayTagsFromActor Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "GetISDKGameplayTagsFromActor", 	Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor_Statics::IsdkFunctionLibrary_eventGetISDKGameplayTagsFromActor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor()
 {
@@ -408,10 +483,14 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Helpers\n" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 		{ "NativeMakeFunc", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Helpers" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InPose_MetaData[] = {
 		{ "NativeConst", "" },
@@ -420,17 +499,22 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Sta
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function MakeBoundsClippersFromPose constinit property declarations ************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_InPose;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Size;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function MakeBoundsClippersFromPose constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function MakeBoundsClippersFromPose Property Definitions ***********************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_InPose = { "InPose", nullptr, (EPropertyFlags)0x0014000008000182, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms, InPose), Z_Construct_UClass_UIsdkIPose_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InPose_MetaData), NewProp_InPose_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms, Size), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Size_MetaData), NewProp_Size_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FIsdkBoundsClipper, METADATA_PARAMS(0, nullptr) }; // 4237424159
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 4237424159
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FIsdkBoundsClipper, METADATA_PARAMS(0, nullptr) }; // 3667170436
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) }; // 3667170436
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_InPose,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_Size,
@@ -438,7 +522,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MakeBoundsClippersFromPose", Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function MakeBoundsClippersFromPose Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MakeBoundsClippersFromPose", 	Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose_Statics::IsdkFunctionLibrary_eventMakeBoundsClippersFromPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose()
 {
@@ -483,17 +571,22 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function MakeGrabPoseStruct constinit property declarations ********************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Identifier;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Location;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Orientation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function MakeGrabPoseStruct constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function MakeGrabPoseStruct Property Definitions *******************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_Identifier = { "Identifier", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms, Identifier), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms, Location), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Location_MetaData), NewProp_Location_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_Orientation = { "Orientation", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms, Orientation), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Orientation_MetaData), NewProp_Orientation_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkGrabPose, METADATA_PARAMS(0, nullptr) }; // 2116190937
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkGrabPose, METADATA_PARAMS(0, nullptr) }; // 1410713248
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_Identifier,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_Location,
@@ -501,7 +594,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MakeGrabPoseStruct", Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::Function_MetaDataParams)},  };
+// ********** End Function MakeGrabPoseStruct Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MakeGrabPoseStruct", 	Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct_Statics::IsdkFunctionLibrary_eventMakeGrabPoseStruct_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct()
 {
@@ -543,19 +640,28 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Stat
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function MakeTargetTransformStruct constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Target;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function MakeTargetTransformStruct constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function MakeTargetTransformStruct Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::NewProp_Target = { "Target", nullptr, (EPropertyFlags)0x0010000000080082, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeTargetTransformStruct_Parms, Target), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Target_MetaData), NewProp_Target_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeTargetTransformStruct_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkTargetTransform, METADATA_PARAMS(0, nullptr) }; // 3529349854
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMakeTargetTransformStruct_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkTargetTransform, METADATA_PARAMS(0, nullptr) }; // 3350651162
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::NewProp_Target,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MakeTargetTransformStruct", Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::IsdkFunctionLibrary_eventMakeTargetTransformStruct_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::Function_MetaDataParams)},  };
+// ********** End Function MakeTargetTransformStruct Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MakeTargetTransformStruct", 	Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::IsdkFunctionLibrary_eventMakeTargetTransformStruct_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct_Statics::IsdkFunctionLibrary_eventMakeTargetTransformStruct_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct()
 {
@@ -592,6 +698,8 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function MapXrFingerJoint constinit property declarations **********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Finger_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Finger;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Joint_Underlying;
@@ -599,14 +707,17 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function MapXrFingerJoint constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function MapXrFingerJoint Property Definitions *********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Finger_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Finger = { "Finger", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, Finger), Z_Construct_UEnum_OculusInteraction_EIsdkFingerType, METADATA_PARAMS(0, nullptr) }; // 1877342163
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Finger = { "Finger", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, Finger), Z_Construct_UEnum_OculusInteraction_EIsdkFingerType, METADATA_PARAMS(0, nullptr) }; // 155703524
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Joint_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint, METADATA_PARAMS(0, nullptr) }; // 2701713263
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint, METADATA_PARAMS(0, nullptr) }; // 2728139297
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, Index), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, METADATA_PARAMS(0, nullptr) }; // 320220292
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrFingerJoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, METADATA_PARAMS(0, nullptr) }; // 230323569
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Finger_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_Finger,
@@ -616,7 +727,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MapXrFingerJoint", Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::IsdkFunctionLibrary_eventMapXrFingerJoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::Function_MetaDataParams)},  };
+// ********** End Function MapXrFingerJoint Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MapXrFingerJoint", 	Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::IsdkFunctionLibrary_eventMapXrFingerJoint_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint_Statics::IsdkFunctionLibrary_eventMapXrFingerJoint_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint()
 {
@@ -654,17 +769,22 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function MapXrThumbJoint constinit property declarations ***********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Joint_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Joint;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function MapXrThumbJoint constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function MapXrThumbJoint Property Definitions **********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_Joint_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrThumbJoint_Parms, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint, METADATA_PARAMS(0, nullptr) }; // 2604514386
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrThumbJoint_Parms, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint, METADATA_PARAMS(0, nullptr) }; // 706532749
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrThumbJoint_Parms, Index), METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrThumbJoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, METADATA_PARAMS(0, nullptr) }; // 1556225157
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMapXrThumbJoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, METADATA_PARAMS(0, nullptr) }; // 3578312779
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_Joint_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_Joint,
@@ -672,7 +792,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MapXrThumbJoint", Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::IsdkFunctionLibrary_eventMapXrThumbJoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::Function_MetaDataParams)},  };
+// ********** End Function MapXrThumbJoint Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MapXrThumbJoint", 	Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::IsdkFunctionLibrary_eventMapXrThumbJoint_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint_Statics::IsdkFunctionLibrary_eventMapXrThumbJoint_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint()
 {
@@ -706,16 +830,25 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintThreadSafe", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* For a given Transform representing a hand joint, mirror it (reflecting across the thumb side)\n   * and return the new transform */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "For a given Transform representing a hand joint, mirror it (reflecting across the thumb side)\n  * and return the new transform" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function MirrorHandTransform constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HandTransformIn;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function MirrorHandTransform constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function MirrorHandTransform Property Definitions ******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::NewProp_HandTransformIn = { "HandTransformIn", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMirrorHandTransform_Parms, HandTransformIn), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventMirrorHandTransform_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::PropPointers[] = {
@@ -723,7 +856,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MirrorHandTransform", Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::IsdkFunctionLibrary_eventMirrorHandTransform_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::Function_MetaDataParams)},  };
+// ********** End Function MirrorHandTransform Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "MirrorHandTransform", 	Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::IsdkFunctionLibrary_eventMirrorHandTransform_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform_Statics::IsdkFunctionLibrary_eventMirrorHandTransform_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform()
 {
@@ -755,28 +892,41 @@ struct Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Set the behavior and display of the controller and hands when holding a controller.  May\n   * behave differently on the oculus runtime than on other runtimes.\n   *\n   * Controller and Hands (Animated) - Show both the controller and hands.  Hands will use an\n   *   animation blueprint to drive their animations.\n   *\n   * Controller Only - Show only the controller.\n   *\n   * Hands Only (Procedural) - Show only the hands.  Hands will be posed by runtime bone transforms\n   *   coming from the oculus runtime.\n   *\n   * Hands Only (Animated) - Show only the hands.  Hands will use an animation blueprint to drive\n   *   their animations.\n   *\n   * Note that for non-oculus runtimes, the procedural variants are disabled and will\n   * fall back to their animated counterparts.\n   *\n   * @param WorldContextObject A UObject from which to find the UWorld reference from\n   * @param ControllerHandBehavior the ControllerHandBehavior to set\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the behavior and display of the controller and hands when holding a controller.  May\nbehave differently on the oculus runtime than on other runtimes.\n\nController and Hands (Animated) - Show both the controller and hands.  Hands will use an\n  animation blueprint to drive their animations.\n\nController Only - Show only the controller.\n\nHands Only (Procedural) - Show only the hands.  Hands will be posed by runtime bone transforms\n  coming from the oculus runtime.\n\nHands Only (Animated) - Show only the hands.  Hands will use an animation blueprint to drive\n  their animations.\n\nNote that for non-oculus runtimes, the procedural variants are disabled and will\nfall back to their animated counterparts.\n\n@param WorldContextObject A UObject from which to find the UWorld reference from\n@param ControllerHandBehavior the ControllerHandBehavior to set" },
+#endif
 		{ "WorldContext", "WorldContextObject" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetControllerHandBehavior constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_WorldContextObject;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ControllerHandBehavior_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ControllerHandBehavior;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetControllerHandBehavior constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetControllerHandBehavior Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_WorldContextObject = { "WorldContextObject", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventSetControllerHandBehavior_Parms, WorldContextObject), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_ControllerHandBehavior_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_ControllerHandBehavior = { "ControllerHandBehavior", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventSetControllerHandBehavior_Parms, ControllerHandBehavior), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 802605893
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_ControllerHandBehavior = { "ControllerHandBehavior", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFunctionLibrary_eventSetControllerHandBehavior_Parms, ControllerHandBehavior), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 1789409571
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_WorldContextObject,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_ControllerHandBehavior_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::NewProp_ControllerHandBehavior,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "SetControllerHandBehavior", Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::IsdkFunctionLibrary_eventSetControllerHandBehavior_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetControllerHandBehavior Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFunctionLibrary, nullptr, "SetControllerHandBehavior", 	Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::IsdkFunctionLibrary_eventSetControllerHandBehavior_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior_Statics::IsdkFunctionLibrary_eventSetControllerHandBehavior_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior()
 {
@@ -799,27 +949,6 @@ DEFINE_FUNCTION(UIsdkFunctionLibrary::execSetControllerHandBehavior)
 // ********** End Class UIsdkFunctionLibrary Function SetControllerHandBehavior ********************
 
 // ********** Begin Class UIsdkFunctionLibrary *****************************************************
-void UIsdkFunctionLibrary::StaticRegisterNativesUIsdkFunctionLibrary()
-{
-	UClass* Class = UIsdkFunctionLibrary::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "FindGrabbableByComponent", &UIsdkFunctionLibrary::execFindGrabbableByComponent },
-		{ "FindTrackingDataSubsystem", &UIsdkFunctionLibrary::execFindTrackingDataSubsystem },
-		{ "GetControllerHandBehavior", &UIsdkFunctionLibrary::execGetControllerHandBehavior },
-		{ "GetDefaultJointRadii", &UIsdkFunctionLibrary::execGetDefaultJointRadii },
-		{ "GetDefaultOpenXRFingerMapping", &UIsdkFunctionLibrary::execGetDefaultOpenXRFingerMapping },
-		{ "GetDefaultOpenXRThumbMapping", &UIsdkFunctionLibrary::execGetDefaultOpenXRThumbMapping },
-		{ "GetISDKGameplayTagsFromActor", &UIsdkFunctionLibrary::execGetISDKGameplayTagsFromActor },
-		{ "MakeBoundsClippersFromPose", &UIsdkFunctionLibrary::execMakeBoundsClippersFromPose },
-		{ "MakeGrabPoseStruct", &UIsdkFunctionLibrary::execMakeGrabPoseStruct },
-		{ "MakeTargetTransformStruct", &UIsdkFunctionLibrary::execMakeTargetTransformStruct },
-		{ "MapXrFingerJoint", &UIsdkFunctionLibrary::execMapXrFingerJoint },
-		{ "MapXrThumbJoint", &UIsdkFunctionLibrary::execMapXrThumbJoint },
-		{ "MirrorHandTransform", &UIsdkFunctionLibrary::execMirrorHandTransform },
-		{ "SetControllerHandBehavior", &UIsdkFunctionLibrary::execSetControllerHandBehavior },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkFunctionLibrary;
 UClass* UIsdkFunctionLibrary::GetPrivateStaticClass()
 {
@@ -827,7 +956,7 @@ UClass* UIsdkFunctionLibrary::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkFunctionLibrary.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkFunctionLibrary"),
 			Z_Registration_Info_UClass_UIsdkFunctionLibrary.InnerSingleton,
 			StaticRegisterNativesUIsdkFunctionLibrary,
@@ -858,29 +987,48 @@ struct Z_Construct_UClass_UIsdkFunctionLibrary_Statics
 		{ "ModuleRelativePath", "Public/IsdkFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkFunctionLibrary constinit property declarations *********************
+// ********** End Class UIsdkFunctionLibrary constinit property declarations ***********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("FindGrabbableByComponent"), .Pointer = &UIsdkFunctionLibrary::execFindGrabbableByComponent },
+		{ .NameUTF8 = UTF8TEXT("FindTrackingDataSubsystem"), .Pointer = &UIsdkFunctionLibrary::execFindTrackingDataSubsystem },
+		{ .NameUTF8 = UTF8TEXT("GetControllerHandBehavior"), .Pointer = &UIsdkFunctionLibrary::execGetControllerHandBehavior },
+		{ .NameUTF8 = UTF8TEXT("GetDefaultJointRadii"), .Pointer = &UIsdkFunctionLibrary::execGetDefaultJointRadii },
+		{ .NameUTF8 = UTF8TEXT("GetDefaultOpenXRFingerMapping"), .Pointer = &UIsdkFunctionLibrary::execGetDefaultOpenXRFingerMapping },
+		{ .NameUTF8 = UTF8TEXT("GetDefaultOpenXRThumbMapping"), .Pointer = &UIsdkFunctionLibrary::execGetDefaultOpenXRThumbMapping },
+		{ .NameUTF8 = UTF8TEXT("GetISDKGameplayTagsFromActor"), .Pointer = &UIsdkFunctionLibrary::execGetISDKGameplayTagsFromActor },
+		{ .NameUTF8 = UTF8TEXT("MakeBoundsClippersFromPose"), .Pointer = &UIsdkFunctionLibrary::execMakeBoundsClippersFromPose },
+		{ .NameUTF8 = UTF8TEXT("MakeGrabPoseStruct"), .Pointer = &UIsdkFunctionLibrary::execMakeGrabPoseStruct },
+		{ .NameUTF8 = UTF8TEXT("MakeTargetTransformStruct"), .Pointer = &UIsdkFunctionLibrary::execMakeTargetTransformStruct },
+		{ .NameUTF8 = UTF8TEXT("MapXrFingerJoint"), .Pointer = &UIsdkFunctionLibrary::execMapXrFingerJoint },
+		{ .NameUTF8 = UTF8TEXT("MapXrThumbJoint"), .Pointer = &UIsdkFunctionLibrary::execMapXrThumbJoint },
+		{ .NameUTF8 = UTF8TEXT("MirrorHandTransform"), .Pointer = &UIsdkFunctionLibrary::execMirrorHandTransform },
+		{ .NameUTF8 = UTF8TEXT("SetControllerHandBehavior"), .Pointer = &UIsdkFunctionLibrary::execSetControllerHandBehavior },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent, "FindGrabbableByComponent" }, // 3933642430
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem, "FindTrackingDataSubsystem" }, // 2178972159
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior, "GetControllerHandBehavior" }, // 3113847815
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii, "GetDefaultJointRadii" }, // 3794061456
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping, "GetDefaultOpenXRFingerMapping" }, // 2672097175
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping, "GetDefaultOpenXRThumbMapping" }, // 3135469826
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor, "GetISDKGameplayTagsFromActor" }, // 2736158593
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose, "MakeBoundsClippersFromPose" }, // 1327551160
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct, "MakeGrabPoseStruct" }, // 3227058103
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct, "MakeTargetTransformStruct" }, // 716165187
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint, "MapXrFingerJoint" }, // 4182770814
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint, "MapXrThumbJoint" }, // 3053421528
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform, "MirrorHandTransform" }, // 3924765840
-		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior, "SetControllerHandBehavior" }, // 2426218621
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_FindGrabbableByComponent, "FindGrabbableByComponent" }, // 2963753958
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_FindTrackingDataSubsystem, "FindTrackingDataSubsystem" }, // 288361915
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetControllerHandBehavior, "GetControllerHandBehavior" }, // 3355923546
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultJointRadii, "GetDefaultJointRadii" }, // 2551603504
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRFingerMapping, "GetDefaultOpenXRFingerMapping" }, // 3580656487
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetDefaultOpenXRThumbMapping, "GetDefaultOpenXRThumbMapping" }, // 2611850938
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_GetISDKGameplayTagsFromActor, "GetISDKGameplayTagsFromActor" }, // 3817255835
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MakeBoundsClippersFromPose, "MakeBoundsClippersFromPose" }, // 964347197
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MakeGrabPoseStruct, "MakeGrabPoseStruct" }, // 479738275
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MakeTargetTransformStruct, "MakeTargetTransformStruct" }, // 4055152524
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrFingerJoint, "MapXrFingerJoint" }, // 138886358
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MapXrThumbJoint, "MapXrThumbJoint" }, // 2154996165
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_MirrorHandTransform, "MirrorHandTransform" }, // 3665237992
+		{ &Z_Construct_UFunction_UIsdkFunctionLibrary_SetControllerHandBehavior, "SetControllerHandBehavior" }, // 2189679733
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkFunctionLibrary>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkFunctionLibrary_Statics
 UObject* (*const Z_Construct_UClass_UIsdkFunctionLibrary_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -901,6 +1049,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFunctionLibrary_St
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFunctionLibrary_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkFunctionLibrary_Statics::Class_MetaDataParams)
 };
+void UIsdkFunctionLibrary::StaticRegisterNativesUIsdkFunctionLibrary()
+{
+	UClass* Class = UIsdkFunctionLibrary::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkFunctionLibrary_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkFunctionLibrary()
 {
 	if (!Z_Registration_Info_UClass_UIsdkFunctionLibrary.OuterSingleton)
@@ -910,21 +1063,23 @@ UClass* Z_Construct_UClass_UIsdkFunctionLibrary()
 	return Z_Registration_Info_UClass_UIsdkFunctionLibrary.OuterSingleton;
 }
 UIsdkFunctionLibrary::UIsdkFunctionLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkFunctionLibrary);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkFunctionLibrary);
 UIsdkFunctionLibrary::~UIsdkFunctionLibrary() {}
 // ********** End Class UIsdkFunctionLibrary *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkFunctionLibrary, UIsdkFunctionLibrary::StaticClass, TEXT("UIsdkFunctionLibrary"), &Z_Registration_Info_UClass_UIsdkFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFunctionLibrary), 3011297595U) },
+		{ Z_Construct_UClass_UIsdkFunctionLibrary, UIsdkFunctionLibrary::StaticClass, TEXT("UIsdkFunctionLibrary"), &Z_Registration_Info_UClass_UIsdkFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFunctionLibrary), 1894739524U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_1710573910(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_875516257{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkFunctionLibrary_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

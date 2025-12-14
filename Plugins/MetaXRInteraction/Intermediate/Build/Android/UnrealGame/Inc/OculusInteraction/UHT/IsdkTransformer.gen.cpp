@@ -8,7 +8,7 @@
 #include "Interaction/Grabbable/IsdkTransformer.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkTransformer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkTransformer *********************************************************
-void UIsdkTransformer::StaticRegisterNativesUIsdkTransformer()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkTransformer;
 UClass* UIsdkTransformer::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkTransformer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkTransformer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkTransformer"),
 			Z_Registration_Info_UClass_UIsdkTransformer.InnerSingleton,
 			StaticRegisterNativesUIsdkTransformer,
@@ -56,26 +53,33 @@ struct Z_Construct_UClass_UIsdkTransformer_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkTransformer\n * @brief Abstract class that implements baseline functionality from IIsdkITransformer for child\n * transformer classes to further implement\n * @see IIsdkITransformer\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "Interaction/Grabbable/IsdkTransformer.h" },
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkTransformer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkTransformer\n@brief Abstract class that implements baseline functionality from IIsdkITransformer for child\ntransformer classes to further implement\n@see IIsdkITransformer\n@addtogroup InteractionSDK" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkTransformer constinit property declarations *************************
+// ********** End Class UIsdkTransformer constinit property declarations ***************************
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkTransformer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkTransformer_Statics
 UObject* (*const Z_Construct_UClass_UIsdkTransformer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkTransformer_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkTransformer_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkITransformer_NoRegister, (int32)VTABLE_OFFSET(UIsdkTransformer, IIsdkITransformer), false },  // 3267274176
+	{ Z_Construct_UClass_UIsdkITransformer_NoRegister, (int32)VTABLE_OFFSET(UIsdkTransformer, IIsdkITransformer), false },  // 1122117854
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkTransformer_Statics::ClassParams = {
 	&UIsdkTransformer::StaticClass,
@@ -92,6 +96,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkTransformer_Static
 	0x003010A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkTransformer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkTransformer_Statics::Class_MetaDataParams)
 };
+void UIsdkTransformer::StaticRegisterNativesUIsdkTransformer()
+{
+}
 UClass* Z_Construct_UClass_UIsdkTransformer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkTransformer.OuterSingleton)
@@ -100,21 +107,23 @@ UClass* Z_Construct_UClass_UIsdkTransformer()
 	}
 	return Z_Registration_Info_UClass_UIsdkTransformer.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkTransformer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkTransformer);
 UIsdkTransformer::~UIsdkTransformer() {}
 // ********** End Class UIsdkTransformer ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkTransformer, UIsdkTransformer::StaticClass, TEXT("UIsdkTransformer"), &Z_Registration_Info_UClass_UIsdkTransformer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkTransformer), 3155338642U) },
+		{ Z_Construct_UClass_UIsdkTransformer, UIsdkTransformer::StaticClass, TEXT("UIsdkTransformer"), &Z_Registration_Info_UClass_UIsdkTransformer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkTransformer), 1315368710U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_3998013451(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_402522029{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkTransformer_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

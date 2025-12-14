@@ -8,7 +8,7 @@
 #include "OculusXRPassthroughLayerShapes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRPassthroughLayerShapes() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -26,9 +26,15 @@ struct Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResume
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughLayerShapes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXRPassthrough_LayerResumed constinit property declarations *****
+// ********** End Delegate FOculusXRPassthrough_LayerResumed constinit property declarations *******
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRHMD, nullptr, "OculusXRPassthrough_LayerResumed__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRHMD, nullptr, "OculusXRPassthrough_LayerResumed__DelegateSignature", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -54,7 +60,7 @@ static UEnum* EOculusXRColorMapType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRColorMapType.OuterSingleton;
 }
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRColorMapType>()
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRColorMapType>()
 {
 	return EOculusXRColorMapType_StaticEnum();
 }
@@ -87,9 +93,13 @@ struct Z_Construct_UEnum_OculusXRHMD_EOculusXRColorMapType_Statics
 		{ "ColorMapType_None.DisplayName", "None" },
 		{ "ColorMapType_None.Name", "ColorMapType_None" },
 		{ "ColorMapType_None.ToolTip", "No color map is applied" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The color mapping technique which can be applied to a passthrough layer.\n * @see https://developers.meta.com/horizon/documentation/unreal/unreal-customize-passthrough-color-mapping/ for more details.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRPassthroughLayerShapes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The color mapping technique which can be applied to a passthrough layer.\n@see https://developers.meta.com/horizon/documentation/unreal/unreal-customize-passthrough-color-mapping/ for more details." },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -102,7 +112,7 @@ struct Z_Construct_UEnum_OculusXRHMD_EOculusXRColorMapType_Statics
 		{ "ColorMapType_MAX", (int64)ColorMapType_MAX },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRHMD_EOculusXRColorMapType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRHMD_EOculusXRColorMapType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRHMD,
 	nullptr,
@@ -135,7 +145,7 @@ static UEnum* EOculusXRPassthroughLayerOrder_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRPassthroughLayerOrder.OuterSingleton;
 }
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRPassthroughLayerOrder>()
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRPassthroughLayerOrder>()
 {
 	return EOculusXRPassthroughLayerOrder_StaticEnum();
 }
@@ -161,7 +171,7 @@ struct Z_Construct_UEnum_OculusXRHMD_EOculusXRPassthroughLayerOrder_Statics
 		{ "PassthroughLayerOrder_MAX", (int64)PassthroughLayerOrder_MAX },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRHMD_EOculusXRPassthroughLayerOrder_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRHMD_EOculusXRPassthroughLayerOrder_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRHMD,
 	nullptr,
@@ -185,17 +195,19 @@ UEnum* Z_Construct_UEnum_OculusXRHMD_EOculusXRPassthroughLayerOrder()
 // ********** End Enum EOculusXRPassthroughLayerOrder **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EOculusXRColorMapType_StaticEnum, TEXT("EOculusXRColorMapType"), &Z_Registration_Info_UEnum_EOculusXRColorMapType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3874072206U) },
-		{ EOculusXRPassthroughLayerOrder_StaticEnum, TEXT("EOculusXRPassthroughLayerOrder"), &Z_Registration_Info_UEnum_EOculusXRPassthroughLayerOrder, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 377958872U) },
+		{ EOculusXRColorMapType_StaticEnum, TEXT("EOculusXRColorMapType"), &Z_Registration_Info_UEnum_EOculusXRColorMapType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 903193068U) },
+		{ EOculusXRPassthroughLayerOrder_StaticEnum, TEXT("EOculusXRPassthroughLayerOrder"), &Z_Registration_Info_UEnum_EOculusXRPassthroughLayerOrder, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1955119003U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_2953798074{
+	TEXT("/Script/OculusXRHMD"),
+	nullptr, 0,
+	nullptr, 0,
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_2703006456(TEXT("/Script/OculusXRHMD"),
-	nullptr, 0,
-	nullptr, 0,
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRPassthroughLayerShapes_h__Script_OculusXRHMD_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

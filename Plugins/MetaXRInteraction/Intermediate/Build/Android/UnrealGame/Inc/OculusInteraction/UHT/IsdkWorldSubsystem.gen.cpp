@@ -8,7 +8,7 @@
 #include "Subsystem/IsdkWorldSubsystem.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkWorldSubsystem() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -29,9 +29,15 @@ struct Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelega
 		{ "ModuleRelativePath", "Public/Subsystem/IsdkWorldSubsystem.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FIsdkWorldFrameEventDelegate constinit property declarations **********
+// ********** End Delegate FIsdkWorldFrameEventDelegate constinit property declarations ************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkWorldFrameEventDelegate__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkWorldFrameEventDelegate__DelegateSignature", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -48,9 +54,6 @@ void FIsdkWorldFrameEventDelegate_DelegateWrapper(const FMulticastScriptDelegate
 // ********** End Delegate FIsdkWorldFrameEventDelegate ********************************************
 
 // ********** Begin Class UIsdkWorldSubsystem ******************************************************
-void UIsdkWorldSubsystem::StaticRegisterNativesUIsdkWorldSubsystem()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkWorldSubsystem;
 UClass* UIsdkWorldSubsystem::GetPrivateStaticClass()
 {
@@ -58,7 +61,7 @@ UClass* UIsdkWorldSubsystem::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkWorldSubsystem.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkWorldSubsystem"),
 			Z_Registration_Info_UClass_UIsdkWorldSubsystem.InnerSingleton,
 			StaticRegisterNativesUIsdkWorldSubsystem,
@@ -84,7 +87,9 @@ struct Z_Construct_UClass_UIsdkWorldSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\n */" },
+#endif
 		{ "IncludePath", "Subsystem/IsdkWorldSubsystem.h" },
 		{ "ModuleRelativePath", "Public/Subsystem/IsdkWorldSubsystem.h" },
 	};
@@ -105,6 +110,8 @@ struct Z_Construct_UClass_UIsdkWorldSubsystem_Statics
 		{ "ModuleRelativePath", "Public/Subsystem/IsdkWorldSubsystem.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkWorldSubsystem constinit property declarations **********************
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_FrameStartingEventDelegate;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_FrameFinishedEventDelegate;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RegisteredInteractorPayloads_Inner;
@@ -112,14 +119,17 @@ struct Z_Construct_UClass_UIsdkWorldSubsystem_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RegisteredInteractables_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_RegisteredInteractables;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkWorldSubsystem constinit property declarations ************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkWorldSubsystem>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_FrameStartingEventDelegate = { "FrameStartingEventDelegate", nullptr, (EPropertyFlags)0x0040000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWorldSubsystem, FrameStartingEventDelegate), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FrameStartingEventDelegate_MetaData), NewProp_FrameStartingEventDelegate_MetaData) }; // 4271687820
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_FrameFinishedEventDelegate = { "FrameFinishedEventDelegate", nullptr, (EPropertyFlags)0x0040000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWorldSubsystem, FrameFinishedEventDelegate), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FrameFinishedEventDelegate_MetaData), NewProp_FrameFinishedEventDelegate_MetaData) }; // 4271687820
+}; // struct Z_Construct_UClass_UIsdkWorldSubsystem_Statics
+
+// ********** Begin Class UIsdkWorldSubsystem Property Definitions *********************************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_FrameStartingEventDelegate = { "FrameStartingEventDelegate", nullptr, (EPropertyFlags)0x0040000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWorldSubsystem, FrameStartingEventDelegate), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FrameStartingEventDelegate_MetaData), NewProp_FrameStartingEventDelegate_MetaData) }; // 2833529990
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_FrameFinishedEventDelegate = { "FrameFinishedEventDelegate", nullptr, (EPropertyFlags)0x0040000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWorldSubsystem, FrameFinishedEventDelegate), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWorldFrameEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FrameFinishedEventDelegate_MetaData), NewProp_FrameFinishedEventDelegate_MetaData) }; // 2833529990
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_RegisteredInteractorPayloads_Inner = { "RegisteredInteractorPayloads", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UIsdkInteractorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_RegisteredInteractorPayloads = { "RegisteredInteractorPayloads", nullptr, (EPropertyFlags)0x0040008000000008, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWorldSubsystem, RegisteredInteractorPayloads), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RegisteredInteractorPayloads_MetaData), NewProp_RegisteredInteractorPayloads_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_RegisteredInteractables_Inner = { "RegisteredInteractables", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UIsdkInteractableComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -133,6 +143,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkWorl
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkWorldSubsystem_Statics::NewProp_RegisteredInteractables,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkWorldSubsystem_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkWorldSubsystem Property Definitions ***********************************
 UObject* (*const Z_Construct_UClass_UIsdkWorldSubsystem_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UTickableWorldSubsystem,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -153,6 +164,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkWorldSubsystem_Sta
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkWorldSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkWorldSubsystem_Statics::Class_MetaDataParams)
 };
+void UIsdkWorldSubsystem::StaticRegisterNativesUIsdkWorldSubsystem()
+{
+}
 UClass* Z_Construct_UClass_UIsdkWorldSubsystem()
 {
 	if (!Z_Registration_Info_UClass_UIsdkWorldSubsystem.OuterSingleton)
@@ -161,21 +175,23 @@ UClass* Z_Construct_UClass_UIsdkWorldSubsystem()
 	}
 	return Z_Registration_Info_UClass_UIsdkWorldSubsystem.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkWorldSubsystem);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkWorldSubsystem);
 UIsdkWorldSubsystem::~UIsdkWorldSubsystem() {}
 // ********** End Class UIsdkWorldSubsystem ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkWorldSubsystem, UIsdkWorldSubsystem::StaticClass, TEXT("UIsdkWorldSubsystem"), &Z_Registration_Info_UClass_UIsdkWorldSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkWorldSubsystem), 3816169517U) },
+		{ Z_Construct_UClass_UIsdkWorldSubsystem, UIsdkWorldSubsystem::StaticClass, TEXT("UIsdkWorldSubsystem"), &Z_Registration_Info_UClass_UIsdkWorldSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkWorldSubsystem), 3329727825U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_2017342605(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_3256659650{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Subsystem_IsdkWorldSubsystem_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

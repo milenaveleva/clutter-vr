@@ -8,7 +8,7 @@
 #include "OculusXRSceneTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRSceneTypes() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -18,6 +18,24 @@ UPackage* Z_Construct_UPackage__Script_OculusXRScene();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FSceneTypesPlaceholder ********************************************
+struct Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FSceneTypesPlaceholder); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FSceneTypesPlaceholder); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/OculusXRSceneTypes.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FSceneTypesPlaceholder constinit property declarations ************
+// ********** End ScriptStruct FSceneTypesPlaceholder constinit property declarations **************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSceneTypesPlaceholder>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder;
 class UScriptStruct* FSceneTypesPlaceholder::StaticStruct()
 {
@@ -26,20 +44,7 @@ class UScriptStruct* FSceneTypesPlaceholder::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FSceneTypesPlaceholder, (UObject*)Z_Construct_UPackage__Script_OculusXRScene(), TEXT("SceneTypesPlaceholder"));
 	}
 	return Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/OculusXRSceneTypes.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FSceneTypesPlaceholder>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRScene,
 	nullptr,
@@ -59,7 +64,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FSceneTypesPlaceholder()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder.InnerSingleton, Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder.InnerSingleton);
 }
 // ********** End ScriptStruct FSceneTypesPlaceholder **********************************************
 
@@ -73,7 +78,7 @@ static UEnum* EOculusXRBoundaryVisibility_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRBoundaryVisibility.OuterSingleton;
 }
-template<> OCULUSXRSCENE_API UEnum* StaticEnum<EOculusXRBoundaryVisibility>()
+template<> OCULUSXRSCENE_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBoundaryVisibility>()
 {
 	return EOculusXRBoundaryVisibility_StaticEnum();
 }
@@ -94,7 +99,7 @@ struct Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility_Statics
 		{ "EOculusXRBoundaryVisibility::Suppressed", (int64)EOculusXRBoundaryVisibility::Suppressed },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRScene,
 	nullptr,
@@ -118,19 +123,21 @@ UEnum* Z_Construct_UEnum_OculusXRScene_EOculusXRBoundaryVisibility()
 // ********** End Enum EOculusXRBoundaryVisibility *************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EOculusXRBoundaryVisibility_StaticEnum, TEXT("EOculusXRBoundaryVisibility"), &Z_Registration_Info_UEnum_EOculusXRBoundaryVisibility, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1439512401U) },
+		{ EOculusXRBoundaryVisibility_StaticEnum, TEXT("EOculusXRBoundaryVisibility"), &Z_Registration_Info_UEnum_EOculusXRBoundaryVisibility, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1017915458U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FSceneTypesPlaceholder::StaticStruct, Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics::NewStructOps, TEXT("SceneTypesPlaceholder"), &Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSceneTypesPlaceholder), 2721925268U) },
+		{ FSceneTypesPlaceholder::StaticStruct, Z_Construct_UScriptStruct_FSceneTypesPlaceholder_Statics::NewStructOps, TEXT("SceneTypesPlaceholder"),&Z_Registration_Info_UScriptStruct_FSceneTypesPlaceholder, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSceneTypesPlaceholder), 2241345387U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_1627468951(TEXT("/Script/OculusXRScene"),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_3876045627{
+	TEXT("/Script/OculusXRScene"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneTypes_h__Script_OculusXRScene_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

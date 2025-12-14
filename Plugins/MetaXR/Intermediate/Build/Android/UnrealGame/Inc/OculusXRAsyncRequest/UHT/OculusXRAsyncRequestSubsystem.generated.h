@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRAsyncRequestSubsystem *******************************************
+struct Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics;
 OCULUSXRASYNCREQUEST_API UClass* Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRAsyncRequestSubsystem(); \
-	friend struct Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRASYNCREQUEST_API UClass* Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_NoRegister(); \
+	friend OCULUSXRASYNCREQUEST_API UClass* ::Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRAsyncRequestSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRAsyncRequest"), Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRAsyncRequestSubsystem)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRAsyncRequestSubsystem(); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +43,12 @@ public: \
 	NO_API virtual ~UOculusXRAsyncRequestSubsystem();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_13_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_13_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,6 +58,6 @@ class UOculusXRAsyncRequestSubsystem;
 // ********** End Class UOculusXRAsyncRequestSubsystem *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

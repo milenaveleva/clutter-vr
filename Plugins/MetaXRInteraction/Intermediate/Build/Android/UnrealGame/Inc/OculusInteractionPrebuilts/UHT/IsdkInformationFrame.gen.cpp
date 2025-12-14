@@ -8,7 +8,7 @@
 #include "RoundedBoxVisuals/IsdkInformationFrame.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInformationFrame() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -26,17 +26,10 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FIsdkInformationFrameLabelProps ***********************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps;
-class UScriptStruct* FIsdkInformationFrameLabelProps::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkInformationFrameLabelProps"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkInformationFrameLabelProps); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkInformationFrameLabelProps); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkInformationFrame.h" },
@@ -59,21 +52,35 @@ struct Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkInformationFrame.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkInformationFrameLabelProps constinit property declarations ***
 	static const UECodeGen_Private::FTextPropertyParams NewProp_Text;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Size;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Color;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Alignment;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkInformationFrameLabelProps constinit property declarations *****
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkInformationFrameLabelProps>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps;
+class UScriptStruct* FIsdkInformationFrameLabelProps::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkInformationFrameLabelProps"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkInformationFrameLabelProps Property Definitions **************
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Text = { "Text", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInformationFrameLabelProps, Text), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Text_MetaData), NewProp_Text_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInformationFrameLabelProps, Size), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Size_MetaData), NewProp_Size_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInformationFrameLabelProps, Color), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Color_MetaData), NewProp_Color_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Alignment = { "Alignment", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInformationFrameLabelProps, Alignment), Z_Construct_UEnum_Engine_EHorizTextAligment, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Alignment_MetaData), NewProp_Alignment_MetaData) }; // 3415569103
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Alignment = { "Alignment", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInformationFrameLabelProps, Alignment), Z_Construct_UEnum_Engine_EHorizTextAligment, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Alignment_MetaData), NewProp_Alignment_MetaData) }; // 3168613303
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Text,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Size,
@@ -81,6 +88,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewProp_Alignment,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkInformationFrameLabelProps Property Definitions ****************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
 	nullptr,
@@ -100,14 +108,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.InnerSingleton, Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkInformationFrameLabelProps *************************************
 
 // ********** Begin Class AIsdkInformationFrame ****************************************************
-void AIsdkInformationFrame::StaticRegisterNativesAIsdkInformationFrame()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AIsdkInformationFrame;
 UClass* AIsdkInformationFrame::GetPrivateStaticClass()
 {
@@ -115,7 +120,7 @@ UClass* AIsdkInformationFrame::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AIsdkInformationFrame.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInformationFrame"),
 			Z_Registration_Info_UClass_AIsdkInformationFrame.InnerSingleton,
 			StaticRegisterNativesAIsdkInformationFrame,
@@ -196,6 +201,8 @@ struct Z_Construct_UClass_AIsdkInformationFrame_Statics
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkInformationFrame.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AIsdkInformationFrame constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InformationFrameRoot;
 	static const UECodeGen_Private::FTextPropertyParams NewProp_LabelText;
 	static const UECodeGen_Private::FTextPropertyParams NewProp_BodyText;
@@ -209,12 +216,15 @@ struct Z_Construct_UClass_AIsdkInformationFrame_Statics
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OutlineWidth;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutlineSize;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AIsdkInformationFrame constinit property declarations **********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AIsdkInformationFrame>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AIsdkInformationFrame_Statics
+
+// ********** Begin Class AIsdkInformationFrame Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIsdkInformationFrame_Statics::NewProp_InformationFrameRoot = { "InformationFrameRoot", nullptr, (EPropertyFlags)0x012408000009001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AIsdkInformationFrame, InformationFrameRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InformationFrameRoot_MetaData), NewProp_InformationFrameRoot_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_AIsdkInformationFrame_Statics::NewProp_LabelText = { "LabelText", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AIsdkInformationFrame, LabelText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelText_MetaData), NewProp_LabelText_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_AIsdkInformationFrame_Statics::NewProp_BodyText = { "BodyText", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AIsdkInformationFrame, BodyText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BodyText_MetaData), NewProp_BodyText_MetaData) };
@@ -244,6 +254,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AIsdkInfo
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIsdkInformationFrame_Statics::NewProp_OutlineSize,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkInformationFrame_Statics::PropPointers) < 2048);
+// ********** End Class AIsdkInformationFrame Property Definitions *********************************
 UObject* (*const Z_Construct_UClass_AIsdkInformationFrame_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -261,9 +272,12 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AIsdkInformationFrame_S
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkInformationFrame_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkInformationFrame_Statics::Class_MetaDataParams), Z_Construct_UClass_AIsdkInformationFrame_Statics::Class_MetaDataParams)
 };
+void AIsdkInformationFrame::StaticRegisterNativesAIsdkInformationFrame()
+{
+}
 UClass* Z_Construct_UClass_AIsdkInformationFrame()
 {
 	if (!Z_Registration_Info_UClass_AIsdkInformationFrame.OuterSingleton)
@@ -272,24 +286,26 @@ UClass* Z_Construct_UClass_AIsdkInformationFrame()
 	}
 	return Z_Registration_Info_UClass_AIsdkInformationFrame.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AIsdkInformationFrame);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AIsdkInformationFrame);
 AIsdkInformationFrame::~AIsdkInformationFrame() {}
 // ********** End Class AIsdkInformationFrame ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkInformationFrameLabelProps::StaticStruct, Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewStructOps, TEXT("IsdkInformationFrameLabelProps"), &Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInformationFrameLabelProps), 3743403198U) },
+		{ FIsdkInformationFrameLabelProps::StaticStruct, Z_Construct_UScriptStruct_FIsdkInformationFrameLabelProps_Statics::NewStructOps, TEXT("IsdkInformationFrameLabelProps"),&Z_Registration_Info_UScriptStruct_FIsdkInformationFrameLabelProps, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInformationFrameLabelProps), 3938128123U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AIsdkInformationFrame, AIsdkInformationFrame::StaticClass, TEXT("AIsdkInformationFrame"), &Z_Registration_Info_UClass_AIsdkInformationFrame, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AIsdkInformationFrame), 394755340U) },
+		{ Z_Construct_UClass_AIsdkInformationFrame, AIsdkInformationFrame::StaticClass, TEXT("AIsdkInformationFrame"), &Z_Registration_Info_UClass_AIsdkInformationFrame, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AIsdkInformationFrame), 3342598710U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_1165277449{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_603852494(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkInformationFrame_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

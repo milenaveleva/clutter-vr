@@ -15,19 +15,19 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UOculusXRStereoLayerShapeReconstructed;
 
 // ********** Begin Delegate FOculusXRPassthrough_LayerResumed_Single ******************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_15_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_15_DELEGATE \
 OCULUSXRPASSTHROUGH_API void FOculusXRPassthrough_LayerResumed_Single_DelegateWrapper(const FScriptDelegate& OculusXRPassthrough_LayerResumed_Single);
 
 
 // ********** End Delegate FOculusXRPassthrough_LayerResumed_Single ********************************
 
 // ********** Begin ScriptStruct FOculusXRPersistentPassthroughParameters **************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_23_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_23_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -35,7 +35,7 @@ struct FOculusXRPersistentPassthroughParameters;
 // ********** End ScriptStruct FOculusXRPersistentPassthroughParameters ****************************
 
 // ********** Begin Class UOculusXRPersistentPassthroughInstance ***********************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execOnAnyLayerResumedEvent); \
 	DECLARE_FUNCTION(execGetShape); \
 	DECLARE_FUNCTION(execGetPriority); \
@@ -44,20 +44,21 @@ struct FOculusXRPersistentPassthroughParameters;
 	DECLARE_FUNCTION(execSetVisible);
 
 
+struct Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics;
 OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRPersistentPassthroughInstance(); \
-	friend struct Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_NoRegister(); \
+	friend OCULUSXRPASSTHROUGH_API UClass* ::Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRPersistentPassthroughInstance, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRPassthrough"), Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRPersistentPassthroughInstance)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRPersistentPassthroughInstance(UOculusXRPersistentPassthroughInstance&&) = delete; \
 	UOculusXRPersistentPassthroughInstance(const UOculusXRPersistentPassthroughInstance&) = delete; \
@@ -67,13 +68,13 @@ public: \
 	NO_API virtual ~UOculusXRPersistentPassthroughInstance();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_99_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_99_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h_102_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -83,6 +84,6 @@ class UOculusXRPersistentPassthroughInstance;
 // ********** End Class UOculusXRPersistentPassthroughInstance *************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

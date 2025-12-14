@@ -8,7 +8,7 @@
 #include "OculusXRMR_CastingCameraActor.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRMR_CastingCameraActor() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -28,9 +28,6 @@ XRBASE_API UClass* Z_Construct_UClass_UVRNotificationsComponent_NoRegister();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class AOculusXRMR_CastingCameraActor *******************************************
-void AOculusXRMR_CastingCameraActor::StaticRegisterNativesAOculusXRMR_CastingCameraActor()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor;
 UClass* AOculusXRMR_CastingCameraActor::GetPrivateStaticClass()
 {
@@ -38,7 +35,7 @@ UClass* AOculusXRMR_CastingCameraActor::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRMR_CastingCameraActor"),
 			Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor.InnerSingleton,
 			StaticRegisterNativesAOculusXRMR_CastingCameraActor,
@@ -65,13 +62,17 @@ struct Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "OculusXRMR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The camera actor in the level that tracks the binded physical camera in game\n */" },
+#endif
 		{ "HideCategories", "Collision Material Attachment Actor Collision Attachment Actor" },
 		{ "IncludePath", "OculusXRMR_CastingCameraActor.h" },
 		{ "IsBlueprintBase", "false" },
 		{ "ModuleRelativePath", "Private/OculusXRMR_CastingCameraActor.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The camera actor in the level that tracks the binded physical camera in game" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VRNotificationComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -109,6 +110,8 @@ struct Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics
 		{ "ModuleRelativePath", "Private/OculusXRMR_CastingCameraActor.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AOculusXRMR_CastingCameraActor constinit property declarations ***********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_VRNotificationComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlaneMeshComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OpaqueColoredMaterial;
@@ -124,12 +127,15 @@ struct Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MRSettings;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MRState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AOculusXRMR_CastingCameraActor constinit property declarations *************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AOculusXRMR_CastingCameraActor>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics
+
+// ********** Begin Class AOculusXRMR_CastingCameraActor Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::NewProp_VRNotificationComponent = { "VRNotificationComponent", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AOculusXRMR_CastingCameraActor, VRNotificationComponent), Z_Construct_UClass_UVRNotificationsComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VRNotificationComponent_MetaData), NewProp_VRNotificationComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::NewProp_PlaneMeshComponent = { "PlaneMeshComponent", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AOculusXRMR_CastingCameraActor, PlaneMeshComponent), Z_Construct_UClass_UOculusXRMR_PlaneMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlaneMeshComponent_MetaData), NewProp_PlaneMeshComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::NewProp_OpaqueColoredMaterial = { "OpaqueColoredMaterial", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AOculusXRMR_CastingCameraActor, OpaqueColoredMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OpaqueColoredMaterial_MetaData), NewProp_OpaqueColoredMaterial_MetaData) };
@@ -161,6 +167,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::NewProp_MRState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::PropPointers) < 2048);
+// ********** End Class AOculusXRMR_CastingCameraActor Property Definitions ************************
 UObject* (*const Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_ASceneCapture2D,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMR,
@@ -178,9 +185,12 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AOculusXRMR_CastingCame
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::PropPointers),
 	0,
-	0x008003A4u,
+	0x008002A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::Class_MetaDataParams), Z_Construct_UClass_AOculusXRMR_CastingCameraActor_Statics::Class_MetaDataParams)
 };
+void AOculusXRMR_CastingCameraActor::StaticRegisterNativesAOculusXRMR_CastingCameraActor()
+{
+}
 UClass* Z_Construct_UClass_AOculusXRMR_CastingCameraActor()
 {
 	if (!Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor.OuterSingleton)
@@ -189,21 +199,23 @@ UClass* Z_Construct_UClass_AOculusXRMR_CastingCameraActor()
 	}
 	return Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AOculusXRMR_CastingCameraActor);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AOculusXRMR_CastingCameraActor);
 AOculusXRMR_CastingCameraActor::~AOculusXRMR_CastingCameraActor() {}
 // ********** End Class AOculusXRMR_CastingCameraActor *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AOculusXRMR_CastingCameraActor, AOculusXRMR_CastingCameraActor::StaticClass, TEXT("AOculusXRMR_CastingCameraActor"), &Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AOculusXRMR_CastingCameraActor), 2070861424U) },
+		{ Z_Construct_UClass_AOculusXRMR_CastingCameraActor, AOculusXRMR_CastingCameraActor::StaticClass, TEXT("AOculusXRMR_CastingCameraActor"), &Z_Registration_Info_UClass_AOculusXRMR_CastingCameraActor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AOculusXRMR_CastingCameraActor), 774701378U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_3924398480(TEXT("/Script/OculusXRMR"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_94066152{
+	TEXT("/Script/OculusXRMR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_CastingCameraActor_h__Script_OculusXRMR_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

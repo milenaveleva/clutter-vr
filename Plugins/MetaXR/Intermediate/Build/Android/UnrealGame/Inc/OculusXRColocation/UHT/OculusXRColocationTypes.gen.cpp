@@ -8,7 +8,7 @@
 #include "OculusXRColocationTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRColocationTypes() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -26,7 +26,7 @@ static UEnum* EColocationResult_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EColocationResult.OuterSingleton;
 }
-template<> OCULUSXRCOLOCATION_API UEnum* StaticEnum<EColocationResult>()
+template<> OCULUSXRCOLOCATION_NON_ATTRIBUTED_API UEnum* StaticEnum<EColocationResult>()
 {
 	return EColocationResult_StaticEnum();
 }
@@ -63,7 +63,7 @@ struct Z_Construct_UEnum_OculusXRColocation_EColocationResult_Statics
 		{ "EColocationResult::NoDiscoveryMethodAvailable", (int64)EColocationResult::NoDiscoveryMethodAvailable },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRColocation_EColocationResult_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRColocation_EColocationResult_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRColocation,
 	nullptr,
@@ -87,16 +87,18 @@ UEnum* Z_Construct_UEnum_OculusXRColocation_EColocationResult()
 // ********** End Enum EColocationResult ***********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EColocationResult_StaticEnum, TEXT("EColocationResult"), &Z_Registration_Info_UEnum_EColocationResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4150974659U) },
+		{ EColocationResult_StaticEnum, TEXT("EColocationResult"), &Z_Registration_Info_UEnum_EColocationResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1611609952U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_4025574016{
+	TEXT("/Script/OculusXRColocation"),
+	nullptr, 0,
+	nullptr, 0,
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_4068409500(TEXT("/Script/OculusXRColocation"),
-	nullptr, 0,
-	nullptr, 0,
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationTypes_h__Script_OculusXRColocation_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

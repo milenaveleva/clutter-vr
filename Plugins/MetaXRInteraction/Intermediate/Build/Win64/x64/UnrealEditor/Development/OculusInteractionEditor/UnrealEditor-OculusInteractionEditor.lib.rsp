@@ -8,6 +8,5 @@
 /NODEFAULTLIB
 "D:/git/ClutterVR/Intermediate/Build/Win64/x64/ClutterVREditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_6.h.obj"
 "D:/git/ClutterVR/Plugins/MetaXRInteraction/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusInteractionEditor/Module.OculusInteractionEditor.cpp.obj"
-"D:/git/ClutterVR/Plugins/MetaXRInteraction/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusInteractionEditor/IsdkTelemetryPrivacySettings.cpp.obj"
 "D:/git/ClutterVR/Plugins/MetaXRInteraction/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusInteractionEditor/Default.rc2.res"
 /OUT:"D:/git/ClutterVR/Plugins/MetaXRInteraction/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusInteractionEditor/UnrealEditor-OculusInteractionEditor.lib"

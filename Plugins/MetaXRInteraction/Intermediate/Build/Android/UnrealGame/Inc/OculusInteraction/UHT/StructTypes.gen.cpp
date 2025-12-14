@@ -9,7 +9,7 @@
 #include "StructTypesNonGenerated.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeStructTypes() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -72,7 +72,7 @@ static UEnum* EIsdkAxisAlignedBox_BoxSide_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkAxisAlignedBox_BoxSide.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkAxisAlignedBox_BoxSide>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkAxisAlignedBox_BoxSide>()
 {
 	return EIsdkAxisAlignedBox_BoxSide_StaticEnum();
 }
@@ -99,7 +99,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkAxisAlignedBox_BoxSide_Statics
 		{ "EIsdkAxisAlignedBox_BoxSide::Zmax", (int64)EIsdkAxisAlignedBox_BoxSide::Zmax },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkAxisAlignedBox_BoxSide_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkAxisAlignedBox_BoxSide_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -132,7 +132,7 @@ static UEnum* EIsdkDataSourceUpdateAttributeResult_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDataSourceUpdateAttributeResult.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDataSourceUpdateAttributeResult>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDataSourceUpdateAttributeResult>()
 {
 	return EIsdkDataSourceUpdateAttributeResult_StaticEnum();
 }
@@ -157,7 +157,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDataSourceUpdateAttributeResult_
 		{ "EIsdkDataSourceUpdateAttributeResult::WrongValueType", (int64)EIsdkDataSourceUpdateAttributeResult::WrongValueType },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDataSourceUpdateAttributeResult_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDataSourceUpdateAttributeResult_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -190,7 +190,7 @@ static UEnum* EIsdkDataSourceUpdateDataResult_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDataSourceUpdateDataResult.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDataSourceUpdateDataResult>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDataSourceUpdateDataResult>()
 {
 	return EIsdkDataSourceUpdateDataResult_StaticEnum();
 }
@@ -212,7 +212,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDataSourceUpdateDataResult_Stati
 		{ "EIsdkDataSourceUpdateDataResult::NotModified", (int64)EIsdkDataSourceUpdateDataResult::NotModified },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDataSourceUpdateDataResult_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDataSourceUpdateDataResult_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -245,7 +245,7 @@ static UEnum* EIsdkDetection_FingerCalcType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDetection_FingerCalcType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDetection_FingerCalcType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDetection_FingerCalcType>()
 {
 	return EIsdkDetection_FingerCalcType_StaticEnum();
 }
@@ -278,7 +278,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDetection_FingerCalcType_Statics
 		{ "EIsdkDetection_FingerCalcType::OppositionTopThree", (int64)EIsdkDetection_FingerCalcType::OppositionTopThree },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDetection_FingerCalcType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDetection_FingerCalcType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -311,7 +311,7 @@ static UEnum* EIsdkDetection_ThumbCalcType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDetection_ThumbCalcType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDetection_ThumbCalcType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDetection_ThumbCalcType>()
 {
 	return EIsdkDetection_ThumbCalcType_StaticEnum();
 }
@@ -330,7 +330,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDetection_ThumbCalcType_Statics
 		{ "EIsdkDetection_ThumbCalcType::Flexion", (int64)EIsdkDetection_ThumbCalcType::Flexion },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDetection_ThumbCalcType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDetection_ThumbCalcType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -363,7 +363,7 @@ static UEnum* EIsdkDigitRecognizer_UpdateResult_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkDigitRecognizer_UpdateResult.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkDigitRecognizer_UpdateResult>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkDigitRecognizer_UpdateResult>()
 {
 	return EIsdkDigitRecognizer_UpdateResult_StaticEnum();
 }
@@ -387,7 +387,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkDigitRecognizer_UpdateResult_Sta
 		{ "EIsdkDigitRecognizer_UpdateResult::FrameDataIsStale", (int64)EIsdkDigitRecognizer_UpdateResult::FrameDataIsStale },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkDigitRecognizer_UpdateResult_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkDigitRecognizer_UpdateResult_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -420,7 +420,7 @@ static UEnum* EIsdkFingerJoint_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkFingerJoint.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkFingerJoint>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkFingerJoint>()
 {
 	return EIsdkFingerJoint_StaticEnum();
 }
@@ -445,7 +445,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint_Statics
 		{ "EIsdkFingerJoint::Tip", (int64)EIsdkFingerJoint::Tip },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -478,7 +478,7 @@ static UEnum* EIsdkFingerType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkFingerType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkFingerType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkFingerType>()
 {
 	return EIsdkFingerType_StaticEnum();
 }
@@ -501,7 +501,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkFingerType_Statics
 		{ "EIsdkFingerType::Pinky", (int64)EIsdkFingerType::Pinky },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkFingerType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkFingerType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -534,7 +534,7 @@ static UEnum* EIsdkHandedness_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkHandedness.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandedness>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandedness>()
 {
 	return EIsdkHandedness_StaticEnum();
 }
@@ -553,7 +553,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkHandedness_Statics
 		{ "EIsdkHandedness::Right", (int64)EIsdkHandedness::Right },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkHandedness_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkHandedness_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -586,7 +586,7 @@ static UEnum* EIsdkInteractableState_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkInteractableState.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkInteractableState>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkInteractableState>()
 {
 	return EIsdkInteractableState_StaticEnum();
 }
@@ -609,7 +609,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState_Statics
 		{ "EIsdkInteractableState::Disabled", (int64)EIsdkInteractableState::Disabled },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -642,7 +642,7 @@ static UEnum* EIsdkInteractorState_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkInteractorState.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkInteractorState>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkInteractorState>()
 {
 	return EIsdkInteractorState_StaticEnum();
 }
@@ -665,7 +665,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState_Statics
 		{ "EIsdkInteractorState::Disabled", (int64)EIsdkInteractorState::Disabled },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -698,7 +698,7 @@ static UEnum* EIsdkNormalFacing_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkNormalFacing.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkNormalFacing>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkNormalFacing>()
 {
 	return EIsdkNormalFacing_StaticEnum();
 }
@@ -719,7 +719,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkNormalFacing_Statics
 		{ "EIsdkNormalFacing::Out", (int64)EIsdkNormalFacing::Out },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkNormalFacing_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkNormalFacing_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -752,7 +752,7 @@ static UEnum* EIsdkOneEuroHandFilter_AttributeId_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkOneEuroHandFilter_AttributeId.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkOneEuroHandFilter_AttributeId>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkOneEuroHandFilter_AttributeId>()
 {
 	return EIsdkOneEuroHandFilter_AttributeId_StaticEnum();
 }
@@ -789,7 +789,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkOneEuroHandFilter_AttributeId_St
 		{ "EIsdkOneEuroHandFilter_AttributeId::FingerRotDeltaMinCutOff", (int64)EIsdkOneEuroHandFilter_AttributeId::FingerRotDeltaMinCutOff },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkOneEuroHandFilter_AttributeId_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkOneEuroHandFilter_AttributeId_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -822,7 +822,7 @@ static UEnum* EIsdkPointerEventType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkPointerEventType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkPointerEventType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkPointerEventType>()
 {
 	return EIsdkPointerEventType_StaticEnum();
 }
@@ -849,7 +849,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType_Statics
 		{ "EIsdkPointerEventType::Cancel", (int64)EIsdkPointerEventType::Cancel },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -882,7 +882,7 @@ static UEnum* EIsdkSyntheticHand_WristLockMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkSyntheticHand_WristLockMode.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkSyntheticHand_WristLockMode>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkSyntheticHand_WristLockMode>()
 {
 	return EIsdkSyntheticHand_WristLockMode_StaticEnum();
 }
@@ -902,7 +902,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkSyntheticHand_WristLockMode_Stat
 		{ "EIsdkSyntheticHand_WristLockMode::Full", (int64)EIsdkSyntheticHand_WristLockMode::Full },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkSyntheticHand_WristLockMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkSyntheticHand_WristLockMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -935,7 +935,7 @@ static UEnum* EIsdkThumbJoint_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkThumbJoint.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkThumbJoint>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkThumbJoint>()
 {
 	return EIsdkThumbJoint_StaticEnum();
 }
@@ -958,7 +958,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint_Statics
 		{ "EIsdkThumbJoint::Tip", (int64)EIsdkThumbJoint::Tip },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -982,17 +982,10 @@ UEnum* Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint()
 // ********** End Enum EIsdkThumbJoint *************************************************************
 
 // ********** Begin ScriptStruct FIsdkDigitRangeParams *********************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams;
-class UScriptStruct* FIsdkDigitRangeParams::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkDigitRangeParams, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkDigitRangeParams"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkDigitRangeParams); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkDigitRangeParams); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1019,18 +1012,32 @@ struct Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkDigitRangeParams constinit property declarations *************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_LowerLimit;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_LowerTolerance;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_UpperLimit;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_UpperTolerance;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinTimeToTransition;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkDigitRangeParams constinit property declarations ***************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkDigitRangeParams>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams;
+class UScriptStruct* FIsdkDigitRangeParams::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkDigitRangeParams, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkDigitRangeParams"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkDigitRangeParams Property Definitions ************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::NewProp_LowerLimit = { "LowerLimit", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRangeParams, LowerLimit), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LowerLimit_MetaData), NewProp_LowerLimit_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::NewProp_LowerTolerance = { "LowerTolerance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRangeParams, LowerTolerance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LowerTolerance_MetaData), NewProp_LowerTolerance_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::NewProp_UpperLimit = { "UpperLimit", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRangeParams, UpperLimit), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UpperLimit_MetaData), NewProp_UpperLimit_MetaData) };
@@ -1044,6 +1051,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::NewProp_MinTimeToTransition,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkDigitRangeParams Property Definitions **************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1063,22 +1071,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkDigitRangeParams()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.InnerSingleton, Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkDigitRangeParams ***********************************************
 
 // ********** Begin ScriptStruct FIsdkDigitRecognizer_ExpectedAngleValueRange **********************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange;
-class UScriptStruct* FIsdkDigitRecognizer_ExpectedAngleValueRange::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkDigitRecognizer_ExpectedAngleValueRange"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkDigitRecognizer_ExpectedAngleValueRange); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkDigitRecognizer_ExpectedAngleValueRange); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1093,15 +1094,29 @@ struct Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_St
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkDigitRecognizer_ExpectedAngleValueRange constinit property declarations 
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinValue;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkDigitRecognizer_ExpectedAngleValueRange constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkDigitRecognizer_ExpectedAngleValueRange>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange;
+class UScriptStruct* FIsdkDigitRecognizer_ExpectedAngleValueRange::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkDigitRecognizer_ExpectedAngleValueRange"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkDigitRecognizer_ExpectedAngleValueRange Property Definitions *
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::NewProp_MinValue = { "MinValue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRecognizer_ExpectedAngleValueRange, MinValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinValue_MetaData), NewProp_MinValue_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::NewProp_MaxValue = { "MaxValue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRecognizer_ExpectedAngleValueRange, MaxValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxValue_MetaData), NewProp_MaxValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::PropPointers[] = {
@@ -1109,6 +1124,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::NewProp_MaxValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkDigitRecognizer_ExpectedAngleValueRange Property Definitions ***
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1128,22 +1144,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValue
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.InnerSingleton, Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkDigitRecognizer_ExpectedAngleValueRange ************************
 
 // ********** Begin ScriptStruct FIsdkDigitRecognizer_ExpectedDistanceValueRange *******************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange;
-class UScriptStruct* FIsdkDigitRecognizer_ExpectedDistanceValueRange::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkDigitRecognizer_ExpectedDistanceValueRange"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkDigitRecognizer_ExpectedDistanceValueRange); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkDigitRecognizer_ExpectedDistanceValueRange); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1158,15 +1167,29 @@ struct Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkDigitRecognizer_ExpectedDistanceValueRange constinit property declarations 
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinValue;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkDigitRecognizer_ExpectedDistanceValueRange constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkDigitRecognizer_ExpectedDistanceValueRange>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange;
+class UScriptStruct* FIsdkDigitRecognizer_ExpectedDistanceValueRange::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkDigitRecognizer_ExpectedDistanceValueRange"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkDigitRecognizer_ExpectedDistanceValueRange Property Definitions 
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::NewProp_MinValue = { "MinValue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRecognizer_ExpectedDistanceValueRange, MinValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinValue_MetaData), NewProp_MinValue_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::NewProp_MaxValue = { "MaxValue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkDigitRecognizer_ExpectedDistanceValueRange, MaxValue), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxValue_MetaData), NewProp_MaxValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::PropPointers[] = {
@@ -1174,6 +1197,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::NewProp_MaxValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkDigitRecognizer_ExpectedDistanceValueRange Property Definitions 
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1193,22 +1217,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceVa
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.InnerSingleton, Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkDigitRecognizer_ExpectedDistanceValueRange *********************
 
 // ********** Begin ScriptStruct FIsdkExternalHandPositionFrame_FingerJointMapping *****************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping;
-class UScriptStruct* FIsdkExternalHandPositionFrame_FingerJointMapping::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkExternalHandPositionFrame_FingerJointMapping"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkExternalHandPositionFrame_FingerJointMapping); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkExternalHandPositionFrame_FingerJointMapping); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1227,22 +1244,36 @@ struct Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMappi
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkExternalHandPositionFrame_FingerJointMapping constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Finger_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Finger;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Joint_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Joint;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkExternalHandPositionFrame_FingerJointMapping constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkExternalHandPositionFrame_FingerJointMapping>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping;
+class UScriptStruct* FIsdkExternalHandPositionFrame_FingerJointMapping::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkExternalHandPositionFrame_FingerJointMapping"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkExternalHandPositionFrame_FingerJointMapping Property Definitions 
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Finger_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Finger = { "Finger", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_FingerJointMapping, Finger), Z_Construct_UEnum_OculusInteraction_EIsdkFingerType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Finger_MetaData), NewProp_Finger_MetaData) }; // 1877342163
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Finger = { "Finger", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_FingerJointMapping, Finger), Z_Construct_UEnum_OculusInteraction_EIsdkFingerType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Finger_MetaData), NewProp_Finger_MetaData) }; // 155703524
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Joint_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_FingerJointMapping, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Joint_MetaData), NewProp_Joint_MetaData) }; // 2701713263
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_FingerJointMapping, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkFingerJoint, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Joint_MetaData), NewProp_Joint_MetaData) }; // 2728139297
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_FingerJointMapping, Index), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Index_MetaData), NewProp_Index_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Finger_Underlying,
@@ -1252,6 +1283,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewProp_Index,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkExternalHandPositionFrame_FingerJointMapping Property Definitions 
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1271,22 +1303,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJo
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.InnerSingleton, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkExternalHandPositionFrame_FingerJointMapping *******************
 
 // ********** Begin ScriptStruct FIsdkExternalHandPositionFrame_ThumbJointMapping ******************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping;
-class UScriptStruct* FIsdkExternalHandPositionFrame_ThumbJointMapping::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkExternalHandPositionFrame_ThumbJointMapping"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkExternalHandPositionFrame_ThumbJointMapping); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkExternalHandPositionFrame_ThumbJointMapping); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1301,18 +1326,32 @@ struct Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMappin
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkExternalHandPositionFrame_ThumbJointMapping constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Joint_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Joint;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkExternalHandPositionFrame_ThumbJointMapping constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkExternalHandPositionFrame_ThumbJointMapping>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping;
+class UScriptStruct* FIsdkExternalHandPositionFrame_ThumbJointMapping::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkExternalHandPositionFrame_ThumbJointMapping"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkExternalHandPositionFrame_ThumbJointMapping Property Definitions 
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewProp_Joint_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_ThumbJointMapping, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Joint_MetaData), NewProp_Joint_MetaData) }; // 2604514386
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewProp_Joint = { "Joint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_ThumbJointMapping, Joint), Z_Construct_UEnum_OculusInteraction_EIsdkThumbJoint, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Joint_MetaData), NewProp_Joint_MetaData) }; // 706532749
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkExternalHandPositionFrame_ThumbJointMapping, Index), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Index_MetaData), NewProp_Index_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewProp_Joint_Underlying,
@@ -1320,6 +1359,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewProp_Index,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkExternalHandPositionFrame_ThumbJointMapping Property Definitions 
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1339,22 +1379,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJoi
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.InnerSingleton, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkExternalHandPositionFrame_ThumbJointMapping ********************
 
 // ********** Begin ScriptStruct FIsdkFilterPropertyBlock ******************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock;
-class UScriptStruct* FIsdkFilterPropertyBlock::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkFilterPropertyBlock"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkFilterPropertyBlock); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkFilterPropertyBlock); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1373,16 +1406,30 @@ struct Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkFilterPropertyBlock constinit property declarations **********
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinCutOff;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Beta;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaMinCutOff;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkFilterPropertyBlock constinit property declarations ************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkFilterPropertyBlock>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock;
+class UScriptStruct* FIsdkFilterPropertyBlock::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkFilterPropertyBlock"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkFilterPropertyBlock Property Definitions *********************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::NewProp_MinCutOff = { "MinCutOff", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFilterPropertyBlock, MinCutOff), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinCutOff_MetaData), NewProp_MinCutOff_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::NewProp_Beta = { "Beta", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFilterPropertyBlock, Beta), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Beta_MetaData), NewProp_Beta_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::NewProp_DeltaMinCutOff = { "DeltaMinCutOff", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFilterPropertyBlock, DeltaMinCutOff), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DeltaMinCutOff_MetaData), NewProp_DeltaMinCutOff_MetaData) };
@@ -1392,6 +1439,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::NewProp_DeltaMinCutOff,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkFilterPropertyBlock Property Definitions ***********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1411,22 +1459,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.InnerSingleton, Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkFilterPropertyBlock ********************************************
 
 // ********** Begin ScriptStruct FIsdkFingerRecognizer_ExpectedFingerValueRanges *******************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges;
-class UScriptStruct* FIsdkFingerRecognizer_ExpectedFingerValueRanges::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkFingerRecognizer_ExpectedFingerValueRanges"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkFingerRecognizer_ExpectedFingerValueRanges); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkFingerRecognizer_ExpectedFingerValueRanges); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1469,6 +1510,8 @@ struct Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkFingerRecognizer_ExpectedFingerValueRanges constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Curl;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Flexion;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Abduction;
@@ -1479,21 +1522,33 @@ struct Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OppositionTopTwo;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OppositionTopThree;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkFingerRecognizer_ExpectedFingerValueRanges constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkFingerRecognizer_ExpectedFingerValueRanges>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Curl = { "Curl", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Curl), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Curl_MetaData), NewProp_Curl_MetaData) }; // 3939503584
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Flexion = { "Flexion", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Flexion), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flexion_MetaData), NewProp_Flexion_MetaData) }; // 3939503584
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Abduction = { "Abduction", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Abduction), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Abduction_MetaData), NewProp_Abduction_MetaData) }; // 3939503584
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Opposition = { "Opposition", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Opposition), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Opposition_MetaData), NewProp_Opposition_MetaData) }; // 4223499773
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Grab = { "Grab", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Grab), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Grab_MetaData), NewProp_Grab_MetaData) }; // 3939503584
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTangentPlane = { "OppositionTangentPlane", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionTangentPlane), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionTangentPlane_MetaData), NewProp_OppositionTangentPlane_MetaData) }; // 4223499773
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionNormal = { "OppositionNormal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionNormal), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionNormal_MetaData), NewProp_OppositionNormal_MetaData) }; // 4223499773
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTopTwo = { "OppositionTopTwo", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionTopTwo), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionTopTwo_MetaData), NewProp_OppositionTopTwo_MetaData) }; // 4223499773
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTopThree = { "OppositionTopThree", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionTopThree), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionTopThree_MetaData), NewProp_OppositionTopThree_MetaData) }; // 4223499773
+}; // struct Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges;
+class UScriptStruct* FIsdkFingerRecognizer_ExpectedFingerValueRanges::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkFingerRecognizer_ExpectedFingerValueRanges"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkFingerRecognizer_ExpectedFingerValueRanges Property Definitions 
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Curl = { "Curl", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Curl), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Curl_MetaData), NewProp_Curl_MetaData) }; // 491609503
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Flexion = { "Flexion", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Flexion), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flexion_MetaData), NewProp_Flexion_MetaData) }; // 491609503
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Abduction = { "Abduction", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Abduction), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Abduction_MetaData), NewProp_Abduction_MetaData) }; // 491609503
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Opposition = { "Opposition", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Opposition), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Opposition_MetaData), NewProp_Opposition_MetaData) }; // 2375433659
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Grab = { "Grab", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, Grab), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Grab_MetaData), NewProp_Grab_MetaData) }; // 491609503
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTangentPlane = { "OppositionTangentPlane", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionTangentPlane), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionTangentPlane_MetaData), NewProp_OppositionTangentPlane_MetaData) }; // 2375433659
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionNormal = { "OppositionNormal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionNormal), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionNormal_MetaData), NewProp_OppositionNormal_MetaData) }; // 2375433659
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTopTwo = { "OppositionTopTwo", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionTopTwo), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionTopTwo_MetaData), NewProp_OppositionTopTwo_MetaData) }; // 2375433659
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTopThree = { "OppositionTopThree", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkFingerRecognizer_ExpectedFingerValueRanges, OppositionTopThree), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OppositionTopThree_MetaData), NewProp_OppositionTopThree_MetaData) }; // 2375433659
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Curl,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_Flexion,
@@ -1506,6 +1561,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewProp_OppositionTopThree,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkFingerRecognizer_ExpectedFingerValueRanges Property Definitions 
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1525,22 +1581,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerVal
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.InnerSingleton, Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkFingerRecognizer_ExpectedFingerValueRanges *********************
 
 // ********** Begin ScriptStruct FIsdkInteractableStateChangeArgs **********************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs;
-class UScriptStruct* FIsdkInteractableStateChangeArgs::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkInteractableStateChangeArgs"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkInteractableStateChangeArgs); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkInteractableStateChangeArgs); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1555,21 +1604,35 @@ struct Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkInteractableStateChangeArgs constinit property declarations **
 	static const UECodeGen_Private::FBytePropertyParams NewProp_PreviousState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_PreviousState;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_NewState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_NewState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkInteractableStateChangeArgs constinit property declarations ****
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkInteractableStateChangeArgs>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs;
+class UScriptStruct* FIsdkInteractableStateChangeArgs::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkInteractableStateChangeArgs"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkInteractableStateChangeArgs Property Definitions *************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_PreviousState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_PreviousState = { "PreviousState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractableStateChangeArgs, PreviousState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PreviousState_MetaData), NewProp_PreviousState_MetaData) }; // 932219690
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_PreviousState = { "PreviousState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractableStateChangeArgs, PreviousState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PreviousState_MetaData), NewProp_PreviousState_MetaData) }; // 894680486
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_NewState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractableStateChangeArgs, NewState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NewState_MetaData), NewProp_NewState_MetaData) }; // 932219690
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractableStateChangeArgs, NewState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractableState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NewState_MetaData), NewProp_NewState_MetaData) }; // 894680486
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_PreviousState_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_PreviousState,
@@ -1577,6 +1640,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewProp_NewState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkInteractableStateChangeArgs Property Definitions ***************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1596,22 +1660,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.InnerSingleton, Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkInteractableStateChangeArgs ************************************
 
 // ********** Begin ScriptStruct FIsdkInteractorStateChangeArgs ************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs;
-class UScriptStruct* FIsdkInteractorStateChangeArgs::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkInteractorStateChangeArgs"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkInteractorStateChangeArgs); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkInteractorStateChangeArgs); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1626,21 +1683,35 @@ struct Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkInteractorStateChangeArgs constinit property declarations ****
 	static const UECodeGen_Private::FBytePropertyParams NewProp_PreviousState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_PreviousState;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_NewState_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_NewState;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkInteractorStateChangeArgs constinit property declarations ******
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkInteractorStateChangeArgs>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs;
+class UScriptStruct* FIsdkInteractorStateChangeArgs::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkInteractorStateChangeArgs"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkInteractorStateChangeArgs Property Definitions ***************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_PreviousState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_PreviousState = { "PreviousState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractorStateChangeArgs, PreviousState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PreviousState_MetaData), NewProp_PreviousState_MetaData) }; // 2133851697
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_PreviousState = { "PreviousState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractorStateChangeArgs, PreviousState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PreviousState_MetaData), NewProp_PreviousState_MetaData) }; // 1908326024
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_NewState_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractorStateChangeArgs, NewState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NewState_MetaData), NewProp_NewState_MetaData) }; // 2133851697
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_NewState = { "NewState", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkInteractorStateChangeArgs, NewState), Z_Construct_UEnum_OculusInteraction_EIsdkInteractorState, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NewState_MetaData), NewProp_NewState_MetaData) }; // 1908326024
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_PreviousState_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_PreviousState,
@@ -1648,6 +1719,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewProp_NewState,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkInteractorStateChangeArgs Property Definitions *****************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1667,22 +1739,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.InnerSingleton, Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkInteractorStateChangeArgs **************************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractable_DragThresholdingConfig **********************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig;
-class UScriptStruct* FIsdkPokeInteractable_DragThresholdingConfig::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_DragThresholdingConfig"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractable_DragThresholdingConfig); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractable_DragThresholdingConfig); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1701,17 +1766,31 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_St
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_DragThresholdingConfig constinit property declarations 
 	static void NewProp_Enabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Enabled;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DragNormal;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DragTangent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPokeInteractable_DragThresholdingConfig constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractable_DragThresholdingConfig>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig;
+class UScriptStruct* FIsdkPokeInteractable_DragThresholdingConfig::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_DragThresholdingConfig"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_DragThresholdingConfig Property Definitions *
 void Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::NewProp_Enabled_SetBit(void* Obj)
 {
 	((FIsdkPokeInteractable_DragThresholdingConfig*)Obj)->Enabled = 1;
@@ -1725,6 +1804,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::NewProp_DragTangent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPokeInteractable_DragThresholdingConfig Property Definitions ***
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1744,22 +1824,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingC
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractable_DragThresholdingConfig ************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractable_MinThresholdsConfig *************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig;
-class UScriptStruct* FIsdkPokeInteractable_MinThresholdsConfig::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_MinThresholdsConfig"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractable_MinThresholdsConfig); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractable_MinThresholdsConfig); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1774,16 +1847,30 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Stati
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_MinThresholdsConfig constinit property declarations 
 	static void NewProp_Enabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Enabled;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MinNormal;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPokeInteractable_MinThresholdsConfig constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractable_MinThresholdsConfig>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig;
+class UScriptStruct* FIsdkPokeInteractable_MinThresholdsConfig::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_MinThresholdsConfig"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_MinThresholdsConfig Property Definitions ****
 void Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::NewProp_Enabled_SetBit(void* Obj)
 {
 	((FIsdkPokeInteractable_MinThresholdsConfig*)Obj)->Enabled = 1;
@@ -1795,6 +1882,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::NewProp_MinNormal,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPokeInteractable_MinThresholdsConfig Property Definitions ******
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1814,22 +1902,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConf
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractable_MinThresholdsConfig ***************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractable_PositionPinningConfig ***********************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig;
-class UScriptStruct* FIsdkPokeInteractable_PositionPinningConfig::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_PositionPinningConfig"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractable_PositionPinningConfig); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractable_PositionPinningConfig); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1844,16 +1925,30 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Sta
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_PositionPinningConfig constinit property declarations 
 	static void NewProp_Enabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Enabled;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxPinDistance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPokeInteractable_PositionPinningConfig constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractable_PositionPinningConfig>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig;
+class UScriptStruct* FIsdkPokeInteractable_PositionPinningConfig::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_PositionPinningConfig"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_PositionPinningConfig Property Definitions **
 void Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::NewProp_Enabled_SetBit(void* Obj)
 {
 	((FIsdkPokeInteractable_PositionPinningConfig*)Obj)->Enabled = 1;
@@ -1865,6 +1960,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::NewProp_MaxPinDistance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPokeInteractable_PositionPinningConfig Property Definitions ****
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -1884,22 +1980,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningCo
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractable_PositionPinningConfig *************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractable_RecoilAssistConfig **************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig;
-class UScriptStruct* FIsdkPokeInteractable_RecoilAssistConfig::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_RecoilAssistConfig"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractable_RecoilAssistConfig); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractable_RecoilAssistConfig); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1962,6 +2051,8 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Static
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_RecoilAssistConfig constinit property declarations 
 	static void NewProp_Enabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Enabled;
 	static void NewProp_UseVelocityExpansion_SetBit(void* Obj);
@@ -1981,12 +2072,24 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Static
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ExitDistance;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReEnterDistance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPokeInteractable_RecoilAssistConfig constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractable_RecoilAssistConfig>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig;
+class UScriptStruct* FIsdkPokeInteractable_RecoilAssistConfig::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_RecoilAssistConfig"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_RecoilAssistConfig Property Definitions *****
 void Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::NewProp_Enabled_SetBit(void* Obj)
 {
 	((FIsdkPokeInteractable_RecoilAssistConfig*)Obj)->Enabled = 1;
@@ -2034,6 +2137,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::NewProp_ReEnterDistance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPokeInteractable_RecoilAssistConfig Property Definitions *******
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2053,22 +2157,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfi
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractable_RecoilAssistConfig ****************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractable_Config **************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config;
-class UScriptStruct* FIsdkPokeInteractable_Config::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_Config"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractable_Config); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractable_Config); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2115,6 +2212,8 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_Config constinit property declarations ******
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EnterHoverNormal;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EnterHoverTangent;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ExitHoverNormal;
@@ -2126,22 +2225,34 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MinThresholdsConfig;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RecoilAssistConfig;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPokeInteractable_Config constinit property declarations ********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractable_Config>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config;
+class UScriptStruct* FIsdkPokeInteractable_Config::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractable_Config"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPokeInteractable_Config Property Definitions *****************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_EnterHoverNormal = { "EnterHoverNormal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, EnterHoverNormal), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnterHoverNormal_MetaData), NewProp_EnterHoverNormal_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_EnterHoverTangent = { "EnterHoverTangent", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, EnterHoverTangent), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EnterHoverTangent_MetaData), NewProp_EnterHoverTangent_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_ExitHoverNormal = { "ExitHoverNormal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, ExitHoverNormal), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExitHoverNormal_MetaData), NewProp_ExitHoverNormal_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_ExitHoverTangent = { "ExitHoverTangent", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, ExitHoverTangent), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExitHoverTangent_MetaData), NewProp_ExitHoverTangent_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_CancelSelectNormal = { "CancelSelectNormal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, CancelSelectNormal), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CancelSelectNormal_MetaData), NewProp_CancelSelectNormal_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_CancelSelectTangent = { "CancelSelectTangent", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, CancelSelectTangent), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CancelSelectTangent_MetaData), NewProp_CancelSelectTangent_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_PositionPinningConfig = { "PositionPinningConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, PositionPinningConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PositionPinningConfig_MetaData), NewProp_PositionPinningConfig_MetaData) }; // 351504560
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_DragThresholdsConfig = { "DragThresholdsConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, DragThresholdsConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DragThresholdsConfig_MetaData), NewProp_DragThresholdsConfig_MetaData) }; // 1291546165
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_MinThresholdsConfig = { "MinThresholdsConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, MinThresholdsConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinThresholdsConfig_MetaData), NewProp_MinThresholdsConfig_MetaData) }; // 2836774867
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_RecoilAssistConfig = { "RecoilAssistConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, RecoilAssistConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RecoilAssistConfig_MetaData), NewProp_RecoilAssistConfig_MetaData) }; // 2475897442
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_PositionPinningConfig = { "PositionPinningConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, PositionPinningConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PositionPinningConfig_MetaData), NewProp_PositionPinningConfig_MetaData) }; // 169099053
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_DragThresholdsConfig = { "DragThresholdsConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, DragThresholdsConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DragThresholdsConfig_MetaData), NewProp_DragThresholdsConfig_MetaData) }; // 315753105
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_MinThresholdsConfig = { "MinThresholdsConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, MinThresholdsConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MinThresholdsConfig_MetaData), NewProp_MinThresholdsConfig_MetaData) }; // 4014818084
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_RecoilAssistConfig = { "RecoilAssistConfig", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractable_Config, RecoilAssistConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RecoilAssistConfig_MetaData), NewProp_RecoilAssistConfig_MetaData) }; // 217652993
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_EnterHoverNormal,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_EnterHoverTangent,
@@ -2155,6 +2266,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewProp_RecoilAssistConfig,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPokeInteractable_Config Property Definitions *******************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2174,22 +2286,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractable_Config ****************************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractor_Config ****************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config;
-class UScriptStruct* FIsdkPokeInteractor_Config::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractor_Config"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractor_Config); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractor_Config); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2216,6 +2321,8 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractor_Config constinit property declarations ********
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TouchReleaseThreshold;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxDeltaFromTouchPoint;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EqualDistanceThreshold;
@@ -2223,12 +2330,24 @@ struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics
 	static void NewProp_IgnorePositionPinning_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IgnorePositionPinning;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPokeInteractor_Config constinit property declarations **********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractor_Config>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config;
+class UScriptStruct* FIsdkPokeInteractor_Config::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractor_Config"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPokeInteractor_Config Property Definitions *******************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::NewProp_TouchReleaseThreshold = { "TouchReleaseThreshold", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractor_Config, TouchReleaseThreshold), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TouchReleaseThreshold_MetaData), NewProp_TouchReleaseThreshold_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::NewProp_MaxDeltaFromTouchPoint = { "MaxDeltaFromTouchPoint", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractor_Config, MaxDeltaFromTouchPoint), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxDeltaFromTouchPoint_MetaData), NewProp_MaxDeltaFromTouchPoint_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::NewProp_EqualDistanceThreshold = { "EqualDistanceThreshold", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPokeInteractor_Config, EqualDistanceThreshold), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EqualDistanceThreshold_MetaData), NewProp_EqualDistanceThreshold_MetaData) };
@@ -2246,6 +2365,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::NewProp_IgnorePositionPinning,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPokeInteractor_Config Property Definitions *********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2265,11 +2385,30 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractor_Config ******************************************
 
 // ********** Begin ScriptStruct FIsdkPokeInteractor_SurfaceHitCache *******************************
+struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPokeInteractor_SurfaceHitCache); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPokeInteractor_SurfaceHitCache); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/StructTypes.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPokeInteractor_SurfaceHitCache constinit property declarations 
+// ********** End ScriptStruct FIsdkPokeInteractor_SurfaceHitCache constinit property declarations *
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractor_SurfaceHitCache>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache;
 class UScriptStruct* FIsdkPokeInteractor_SurfaceHitCache::StaticStruct()
 {
@@ -2278,21 +2417,7 @@ class UScriptStruct* FIsdkPokeInteractor_SurfaceHitCache::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPokeInteractor_SurfaceHitCache"));
 	}
 	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/StructTypes.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPokeInteractor_SurfaceHitCache>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2312,22 +2437,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPokeInteractor_SurfaceHitCache *********************************
 
 // ********** Begin ScriptStruct FIsdkRayInteractor_Config *****************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config;
-class UScriptStruct* FIsdkRayInteractor_Config::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRayInteractor_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkRayInteractor_Config"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkRayInteractor_Config); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkRayInteractor_Config); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2342,15 +2460,29 @@ struct Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkRayInteractor_Config constinit property declarations *********
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_MaxRayLength;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_EqualDistanceThreshold;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkRayInteractor_Config constinit property declarations ***********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkRayInteractor_Config>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config;
+class UScriptStruct* FIsdkRayInteractor_Config::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRayInteractor_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkRayInteractor_Config"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkRayInteractor_Config Property Definitions ********************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::NewProp_MaxRayLength = { "MaxRayLength", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRayInteractor_Config, MaxRayLength), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxRayLength_MetaData), NewProp_MaxRayLength_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::NewProp_EqualDistanceThreshold = { "EqualDistanceThreshold", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRayInteractor_Config, EqualDistanceThreshold), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EqualDistanceThreshold_MetaData), NewProp_EqualDistanceThreshold_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::PropPointers[] = {
@@ -2358,6 +2490,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::NewProp_EqualDistanceThreshold,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkRayInteractor_Config Property Definitions **********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2377,11 +2510,30 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkRayInteractor_Config()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.InnerSingleton, Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkRayInteractor_Config *******************************************
 
 // ********** Begin ScriptStruct FIsdkRayInteractor_RayCandidateProperties *************************
+struct Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkRayInteractor_RayCandidateProperties); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkRayInteractor_RayCandidateProperties); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/StructTypes.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkRayInteractor_RayCandidateProperties constinit property declarations 
+// ********** End ScriptStruct FIsdkRayInteractor_RayCandidateProperties constinit property declarations 
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkRayInteractor_RayCandidateProperties>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties;
 class UScriptStruct* FIsdkRayInteractor_RayCandidateProperties::StaticStruct()
 {
@@ -2390,21 +2542,7 @@ class UScriptStruct* FIsdkRayInteractor_RayCandidateProperties::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkRayInteractor_RayCandidateProperties"));
 	}
 	return Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/StructTypes.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkRayInteractor_RayCandidateProperties>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2424,11 +2562,30 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperti
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties.InnerSingleton, Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkRayInteractor_RayCandidateProperties ***************************
 
 // ********** Begin ScriptStruct FIsdkSyntheticHand_Config *****************************************
+struct Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkSyntheticHand_Config); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkSyntheticHand_Config); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/StructTypes.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkSyntheticHand_Config constinit property declarations *********
+// ********** End ScriptStruct FIsdkSyntheticHand_Config constinit property declarations ***********
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkSyntheticHand_Config>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config;
 class UScriptStruct* FIsdkSyntheticHand_Config::StaticStruct()
 {
@@ -2437,21 +2594,7 @@ class UScriptStruct* FIsdkSyntheticHand_Config::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkSyntheticHand_Config"));
 	}
 	return Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/StructTypes.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkSyntheticHand_Config>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2471,22 +2614,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config.InnerSingleton, Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkSyntheticHand_Config *******************************************
 
 // ********** Begin ScriptStruct FIsdkThumbRecognizer_ExpectedThumbValueRanges *********************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges;
-class UScriptStruct* FIsdkThumbRecognizer_ExpectedThumbValueRanges::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkThumbRecognizer_ExpectedThumbValueRanges"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkThumbRecognizer_ExpectedThumbValueRanges); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkThumbRecognizer_ExpectedThumbValueRanges); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2501,22 +2637,37 @@ struct Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_S
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkThumbRecognizer_ExpectedThumbValueRanges constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Curl;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Flexion;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkThumbRecognizer_ExpectedThumbValueRanges constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkThumbRecognizer_ExpectedThumbValueRanges>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewProp_Curl = { "Curl", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThumbRecognizer_ExpectedThumbValueRanges, Curl), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Curl_MetaData), NewProp_Curl_MetaData) }; // 3939503584
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewProp_Flexion = { "Flexion", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThumbRecognizer_ExpectedThumbValueRanges, Flexion), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flexion_MetaData), NewProp_Flexion_MetaData) }; // 3939503584
+}; // struct Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges;
+class UScriptStruct* FIsdkThumbRecognizer_ExpectedThumbValueRanges::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkThumbRecognizer_ExpectedThumbValueRanges"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkThumbRecognizer_ExpectedThumbValueRanges Property Definitions 
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewProp_Curl = { "Curl", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThumbRecognizer_ExpectedThumbValueRanges, Curl), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Curl_MetaData), NewProp_Curl_MetaData) }; // 491609503
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewProp_Flexion = { "Flexion", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThumbRecognizer_ExpectedThumbValueRanges, Flexion), Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flexion_MetaData), NewProp_Flexion_MetaData) }; // 491609503
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewProp_Curl,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewProp_Flexion,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkThumbRecognizer_ExpectedThumbValueRanges Property Definitions **
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2536,22 +2687,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValue
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.InnerSingleton, Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkThumbRecognizer_ExpectedThumbValueRanges ***********************
 
 // ********** Begin ScriptStruct FIsdkAxisAlignedBox ***********************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox;
-class UScriptStruct* FIsdkAxisAlignedBox::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkAxisAlignedBox, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkAxisAlignedBox"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkAxisAlignedBox); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkAxisAlignedBox); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2574,17 +2718,31 @@ struct Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkAxisAlignedBox constinit property declarations ***************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_LowerBound;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UpperBound;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Centroid;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HalfSize;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkAxisAlignedBox constinit property declarations *****************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkAxisAlignedBox>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox;
+class UScriptStruct* FIsdkAxisAlignedBox::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkAxisAlignedBox, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkAxisAlignedBox"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkAxisAlignedBox Property Definitions **************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::NewProp_LowerBound = { "LowerBound", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkAxisAlignedBox, LowerBound), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LowerBound_MetaData), NewProp_LowerBound_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::NewProp_UpperBound = { "UpperBound", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkAxisAlignedBox, UpperBound), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UpperBound_MetaData), NewProp_UpperBound_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::NewProp_Centroid = { "Centroid", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkAxisAlignedBox, Centroid), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Centroid_MetaData), NewProp_Centroid_MetaData) };
@@ -2596,6 +2754,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::NewProp_HalfSize,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkAxisAlignedBox Property Definitions ****************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2615,22 +2774,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkAxisAlignedBox()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.InnerSingleton, Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkAxisAlignedBox *************************************************
 
 // ********** Begin ScriptStruct FIsdkBoundsClipper ************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper;
-class UScriptStruct* FIsdkBoundsClipper::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkBoundsClipper, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkBoundsClipper"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkBoundsClipper); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkBoundsClipper); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2649,16 +2801,30 @@ struct Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkBoundsClipper constinit property declarations ****************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_PoseProvider;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Position;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Size;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkBoundsClipper constinit property declarations ******************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkBoundsClipper>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper;
+class UScriptStruct* FIsdkBoundsClipper::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkBoundsClipper, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkBoundsClipper"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkBoundsClipper Property Definitions ***************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::NewProp_PoseProvider = { "PoseProvider", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkBoundsClipper, PoseProvider), Z_Construct_UClass_UIsdkIPose_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PoseProvider_MetaData), NewProp_PoseProvider_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::NewProp_Position = { "Position", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkBoundsClipper, Position), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Position_MetaData), NewProp_Position_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkBoundsClipper, Size), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Size_MetaData), NewProp_Size_MetaData) };
@@ -2668,6 +2834,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::NewProp_Size,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkBoundsClipper Property Definitions *****************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2687,22 +2854,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkBoundsClipper()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.InnerSingleton, Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkBoundsClipper **************************************************
 
 // ********** Begin ScriptStruct FIsdkRay **********************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRay;
-class UScriptStruct* FIsdkRay::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkRay.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkRay.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRay, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkRay"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRay.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkRay_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkRay); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkRay); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2717,15 +2877,29 @@ struct Z_Construct_UScriptStruct_FIsdkRay_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkRay constinit property declarations **************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Origin;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Direction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkRay constinit property declarations ****************************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkRay>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkRay_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRay;
+class UScriptStruct* FIsdkRay::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkRay.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkRay.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRay, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkRay"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkRay.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkRay Property Definitions *************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkRay_Statics::NewProp_Origin = { "Origin", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRay, Origin), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Origin_MetaData), NewProp_Origin_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkRay_Statics::NewProp_Direction = { "Direction", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRay, Direction), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Direction_MetaData), NewProp_Direction_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkRay_Statics::PropPointers[] = {
@@ -2733,6 +2907,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkRay_Statics::NewProp_Direction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkRay_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkRay Property Definitions ***************************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkRay_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2752,22 +2927,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkRay()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkRay.InnerSingleton, Z_Construct_UScriptStruct_FIsdkRay_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRay.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkRay.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkRay ************************************************************
 
 // ********** Begin ScriptStruct FIsdkSurfaceHit ***************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit;
-class UScriptStruct* FIsdkSurfaceHit::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkSurfaceHit, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkSurfaceHit"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkSurfaceHit); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkSurfaceHit); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2786,16 +2954,30 @@ struct Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkSurfaceHit constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Point;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Normal;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Distance;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkSurfaceHit constinit property declarations *********************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkSurfaceHit>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit;
+class UScriptStruct* FIsdkSurfaceHit::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkSurfaceHit, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkSurfaceHit"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkSurfaceHit Property Definitions ******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::NewProp_Point = { "Point", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkSurfaceHit, Point), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Point_MetaData), NewProp_Point_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::NewProp_Normal = { "Normal", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkSurfaceHit, Normal), Z_Construct_UScriptStruct_FVector3f, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Normal_MetaData), NewProp_Normal_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::NewProp_Distance = { "Distance", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkSurfaceHit, Distance), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Distance_MetaData), NewProp_Distance_MetaData) };
@@ -2805,6 +2987,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::NewProp_Distance,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkSurfaceHit Property Definitions ********************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2824,22 +3007,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkSurfaceHit()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.InnerSingleton, Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkSurfaceHit *****************************************************
 
 // ********** Begin ScriptStruct FIsdkOptionalSurfaceHit *******************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit;
-class UScriptStruct* FIsdkOptionalSurfaceHit::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkOptionalSurfaceHit"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkOptionalSurfaceHit); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkOptionalSurfaceHit); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2854,27 +3030,42 @@ struct Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkOptionalSurfaceHit constinit property declarations ***********
 	static void NewProp_HasValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_HasValue;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkOptionalSurfaceHit constinit property declarations *************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkOptionalSurfaceHit>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit;
+class UScriptStruct* FIsdkOptionalSurfaceHit::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkOptionalSurfaceHit"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkOptionalSurfaceHit Property Definitions **********************
 void Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_HasValue_SetBit(void* Obj)
 {
 	((FIsdkOptionalSurfaceHit*)Obj)->HasValue = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_HasValue = { "HasValue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FIsdkOptionalSurfaceHit), &Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_HasValue_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HasValue_MetaData), NewProp_HasValue_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkOptionalSurfaceHit, Value), Z_Construct_UScriptStruct_FIsdkSurfaceHit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Value_MetaData), NewProp_Value_MetaData) }; // 2426538376
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkOptionalSurfaceHit, Value), Z_Construct_UScriptStruct_FIsdkSurfaceHit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Value_MetaData), NewProp_Value_MetaData) }; // 2981207946
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_HasValue,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkOptionalSurfaceHit Property Definitions ************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2894,22 +3085,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.InnerSingleton, Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkOptionalSurfaceHit *********************************************
 
 // ********** Begin ScriptStruct FIsdkPointerEvent *************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPointerEvent;
-class UScriptStruct* FIsdkPointerEvent::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPointerEvent, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPointerEvent"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkPointerEvent); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkPointerEvent); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -2932,22 +3116,36 @@ struct Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics
 		{ "ModuleRelativePath", "Public/StructTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkPointerEvent constinit property declarations *****************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Identifier;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Type_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Type;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Pose;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_Payload;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkPointerEvent constinit property declarations *******************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkPointerEvent>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkPointerEvent;
+class UScriptStruct* FIsdkPointerEvent::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkPointerEvent, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkPointerEvent"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkPointerEvent Property Definitions ****************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Identifier = { "Identifier", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPointerEvent, Identifier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Identifier_MetaData), NewProp_Identifier_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPointerEvent, Type), Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Type_MetaData), NewProp_Type_MetaData) }; // 2809597128
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Pose = { "Pose", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPointerEvent, Pose), Z_Construct_UScriptStruct_FIsdkPosef, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pose_MetaData), NewProp_Pose_MetaData) }; // 3274912445
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPointerEvent, Type), Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Type_MetaData), NewProp_Type_MetaData) }; // 3207414997
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Pose = { "Pose", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPointerEvent, Pose), Z_Construct_UScriptStruct_FIsdkPosef, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pose_MetaData), NewProp_Pose_MetaData) }; // 3444616462
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Payload = { "Payload", nullptr, (EPropertyFlags)0x0014000000000005, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkPointerEvent, Payload), Z_Construct_UClass_UIsdkIPayload_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Payload_MetaData), NewProp_Payload_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Identifier,
@@ -2957,6 +3155,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewProp_Payload,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkPointerEvent Property Definitions ******************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -2976,64 +3175,66 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkPointerEvent()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.InnerSingleton, Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkPointerEvent.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkPointerEvent ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkAxisAlignedBox_BoxSide_StaticEnum, TEXT("EIsdkAxisAlignedBox_BoxSide"), &Z_Registration_Info_UEnum_EIsdkAxisAlignedBox_BoxSide, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2860274670U) },
-		{ EIsdkDataSourceUpdateAttributeResult_StaticEnum, TEXT("EIsdkDataSourceUpdateAttributeResult"), &Z_Registration_Info_UEnum_EIsdkDataSourceUpdateAttributeResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1782970218U) },
-		{ EIsdkDataSourceUpdateDataResult_StaticEnum, TEXT("EIsdkDataSourceUpdateDataResult"), &Z_Registration_Info_UEnum_EIsdkDataSourceUpdateDataResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 924607448U) },
-		{ EIsdkDetection_FingerCalcType_StaticEnum, TEXT("EIsdkDetection_FingerCalcType"), &Z_Registration_Info_UEnum_EIsdkDetection_FingerCalcType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3423644650U) },
-		{ EIsdkDetection_ThumbCalcType_StaticEnum, TEXT("EIsdkDetection_ThumbCalcType"), &Z_Registration_Info_UEnum_EIsdkDetection_ThumbCalcType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2894301549U) },
-		{ EIsdkDigitRecognizer_UpdateResult_StaticEnum, TEXT("EIsdkDigitRecognizer_UpdateResult"), &Z_Registration_Info_UEnum_EIsdkDigitRecognizer_UpdateResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1997043020U) },
-		{ EIsdkFingerJoint_StaticEnum, TEXT("EIsdkFingerJoint"), &Z_Registration_Info_UEnum_EIsdkFingerJoint, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2701713263U) },
-		{ EIsdkFingerType_StaticEnum, TEXT("EIsdkFingerType"), &Z_Registration_Info_UEnum_EIsdkFingerType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1877342163U) },
-		{ EIsdkHandedness_StaticEnum, TEXT("EIsdkHandedness"), &Z_Registration_Info_UEnum_EIsdkHandedness, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 49432891U) },
-		{ EIsdkInteractableState_StaticEnum, TEXT("EIsdkInteractableState"), &Z_Registration_Info_UEnum_EIsdkInteractableState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 932219690U) },
-		{ EIsdkInteractorState_StaticEnum, TEXT("EIsdkInteractorState"), &Z_Registration_Info_UEnum_EIsdkInteractorState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2133851697U) },
-		{ EIsdkNormalFacing_StaticEnum, TEXT("EIsdkNormalFacing"), &Z_Registration_Info_UEnum_EIsdkNormalFacing, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1209736093U) },
-		{ EIsdkOneEuroHandFilter_AttributeId_StaticEnum, TEXT("EIsdkOneEuroHandFilter_AttributeId"), &Z_Registration_Info_UEnum_EIsdkOneEuroHandFilter_AttributeId, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 994028513U) },
-		{ EIsdkPointerEventType_StaticEnum, TEXT("EIsdkPointerEventType"), &Z_Registration_Info_UEnum_EIsdkPointerEventType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2809597128U) },
-		{ EIsdkSyntheticHand_WristLockMode_StaticEnum, TEXT("EIsdkSyntheticHand_WristLockMode"), &Z_Registration_Info_UEnum_EIsdkSyntheticHand_WristLockMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1957477323U) },
-		{ EIsdkThumbJoint_StaticEnum, TEXT("EIsdkThumbJoint"), &Z_Registration_Info_UEnum_EIsdkThumbJoint, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2604514386U) },
+		{ EIsdkAxisAlignedBox_BoxSide_StaticEnum, TEXT("EIsdkAxisAlignedBox_BoxSide"), &Z_Registration_Info_UEnum_EIsdkAxisAlignedBox_BoxSide, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 422488866U) },
+		{ EIsdkDataSourceUpdateAttributeResult_StaticEnum, TEXT("EIsdkDataSourceUpdateAttributeResult"), &Z_Registration_Info_UEnum_EIsdkDataSourceUpdateAttributeResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3722180939U) },
+		{ EIsdkDataSourceUpdateDataResult_StaticEnum, TEXT("EIsdkDataSourceUpdateDataResult"), &Z_Registration_Info_UEnum_EIsdkDataSourceUpdateDataResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2726619719U) },
+		{ EIsdkDetection_FingerCalcType_StaticEnum, TEXT("EIsdkDetection_FingerCalcType"), &Z_Registration_Info_UEnum_EIsdkDetection_FingerCalcType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2857846514U) },
+		{ EIsdkDetection_ThumbCalcType_StaticEnum, TEXT("EIsdkDetection_ThumbCalcType"), &Z_Registration_Info_UEnum_EIsdkDetection_ThumbCalcType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2588286467U) },
+		{ EIsdkDigitRecognizer_UpdateResult_StaticEnum, TEXT("EIsdkDigitRecognizer_UpdateResult"), &Z_Registration_Info_UEnum_EIsdkDigitRecognizer_UpdateResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3798105498U) },
+		{ EIsdkFingerJoint_StaticEnum, TEXT("EIsdkFingerJoint"), &Z_Registration_Info_UEnum_EIsdkFingerJoint, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2728139297U) },
+		{ EIsdkFingerType_StaticEnum, TEXT("EIsdkFingerType"), &Z_Registration_Info_UEnum_EIsdkFingerType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 155703524U) },
+		{ EIsdkHandedness_StaticEnum, TEXT("EIsdkHandedness"), &Z_Registration_Info_UEnum_EIsdkHandedness, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2143392285U) },
+		{ EIsdkInteractableState_StaticEnum, TEXT("EIsdkInteractableState"), &Z_Registration_Info_UEnum_EIsdkInteractableState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 894680486U) },
+		{ EIsdkInteractorState_StaticEnum, TEXT("EIsdkInteractorState"), &Z_Registration_Info_UEnum_EIsdkInteractorState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1908326024U) },
+		{ EIsdkNormalFacing_StaticEnum, TEXT("EIsdkNormalFacing"), &Z_Registration_Info_UEnum_EIsdkNormalFacing, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3364467604U) },
+		{ EIsdkOneEuroHandFilter_AttributeId_StaticEnum, TEXT("EIsdkOneEuroHandFilter_AttributeId"), &Z_Registration_Info_UEnum_EIsdkOneEuroHandFilter_AttributeId, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2809932244U) },
+		{ EIsdkPointerEventType_StaticEnum, TEXT("EIsdkPointerEventType"), &Z_Registration_Info_UEnum_EIsdkPointerEventType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3207414997U) },
+		{ EIsdkSyntheticHand_WristLockMode_StaticEnum, TEXT("EIsdkSyntheticHand_WristLockMode"), &Z_Registration_Info_UEnum_EIsdkSyntheticHand_WristLockMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2721871544U) },
+		{ EIsdkThumbJoint_StaticEnum, TEXT("EIsdkThumbJoint"), &Z_Registration_Info_UEnum_EIsdkThumbJoint, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 706532749U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkDigitRangeParams::StaticStruct, Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::NewStructOps, TEXT("IsdkDigitRangeParams"), &Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkDigitRangeParams), 2967017442U) },
-		{ FIsdkDigitRecognizer_ExpectedAngleValueRange::StaticStruct, Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::NewStructOps, TEXT("IsdkDigitRecognizer_ExpectedAngleValueRange"), &Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkDigitRecognizer_ExpectedAngleValueRange), 3939503584U) },
-		{ FIsdkDigitRecognizer_ExpectedDistanceValueRange::StaticStruct, Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::NewStructOps, TEXT("IsdkDigitRecognizer_ExpectedDistanceValueRange"), &Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkDigitRecognizer_ExpectedDistanceValueRange), 4223499773U) },
-		{ FIsdkExternalHandPositionFrame_FingerJointMapping::StaticStruct, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewStructOps, TEXT("IsdkExternalHandPositionFrame_FingerJointMapping"), &Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkExternalHandPositionFrame_FingerJointMapping), 320220292U) },
-		{ FIsdkExternalHandPositionFrame_ThumbJointMapping::StaticStruct, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewStructOps, TEXT("IsdkExternalHandPositionFrame_ThumbJointMapping"), &Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkExternalHandPositionFrame_ThumbJointMapping), 1556225157U) },
-		{ FIsdkFilterPropertyBlock::StaticStruct, Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::NewStructOps, TEXT("IsdkFilterPropertyBlock"), &Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkFilterPropertyBlock), 512412821U) },
-		{ FIsdkFingerRecognizer_ExpectedFingerValueRanges::StaticStruct, Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewStructOps, TEXT("IsdkFingerRecognizer_ExpectedFingerValueRanges"), &Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkFingerRecognizer_ExpectedFingerValueRanges), 1518353618U) },
-		{ FIsdkInteractableStateChangeArgs::StaticStruct, Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewStructOps, TEXT("IsdkInteractableStateChangeArgs"), &Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInteractableStateChangeArgs), 4056882987U) },
-		{ FIsdkInteractorStateChangeArgs::StaticStruct, Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewStructOps, TEXT("IsdkInteractorStateChangeArgs"), &Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInteractorStateChangeArgs), 2163041558U) },
-		{ FIsdkPokeInteractable_DragThresholdingConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_DragThresholdingConfig"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_DragThresholdingConfig), 1291546165U) },
-		{ FIsdkPokeInteractable_MinThresholdsConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_MinThresholdsConfig"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_MinThresholdsConfig), 2836774867U) },
-		{ FIsdkPokeInteractable_PositionPinningConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_PositionPinningConfig"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_PositionPinningConfig), 351504560U) },
-		{ FIsdkPokeInteractable_RecoilAssistConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_RecoilAssistConfig"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_RecoilAssistConfig), 2475897442U) },
-		{ FIsdkPokeInteractable_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewStructOps, TEXT("IsdkPokeInteractable_Config"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_Config), 3969149830U) },
-		{ FIsdkPokeInteractor_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::NewStructOps, TEXT("IsdkPokeInteractor_Config"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractor_Config), 2206340171U) },
-		{ FIsdkPokeInteractor_SurfaceHitCache::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics::NewStructOps, TEXT("IsdkPokeInteractor_SurfaceHitCache"), &Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractor_SurfaceHitCache), 2708799662U) },
-		{ FIsdkRayInteractor_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::NewStructOps, TEXT("IsdkRayInteractor_Config"), &Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRayInteractor_Config), 420567941U) },
-		{ FIsdkRayInteractor_RayCandidateProperties::StaticStruct, Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics::NewStructOps, TEXT("IsdkRayInteractor_RayCandidateProperties"), &Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRayInteractor_RayCandidateProperties), 678536000U) },
-		{ FIsdkSyntheticHand_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics::NewStructOps, TEXT("IsdkSyntheticHand_Config"), &Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkSyntheticHand_Config), 2989004587U) },
-		{ FIsdkThumbRecognizer_ExpectedThumbValueRanges::StaticStruct, Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewStructOps, TEXT("IsdkThumbRecognizer_ExpectedThumbValueRanges"), &Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkThumbRecognizer_ExpectedThumbValueRanges), 3870931187U) },
-		{ FIsdkAxisAlignedBox::StaticStruct, Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::NewStructOps, TEXT("IsdkAxisAlignedBox"), &Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkAxisAlignedBox), 3204788144U) },
-		{ FIsdkBoundsClipper::StaticStruct, Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::NewStructOps, TEXT("IsdkBoundsClipper"), &Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkBoundsClipper), 4237424159U) },
-		{ FIsdkRay::StaticStruct, Z_Construct_UScriptStruct_FIsdkRay_Statics::NewStructOps, TEXT("IsdkRay"), &Z_Registration_Info_UScriptStruct_FIsdkRay, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRay), 2571607586U) },
-		{ FIsdkSurfaceHit::StaticStruct, Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::NewStructOps, TEXT("IsdkSurfaceHit"), &Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkSurfaceHit), 2426538376U) },
-		{ FIsdkOptionalSurfaceHit::StaticStruct, Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewStructOps, TEXT("IsdkOptionalSurfaceHit"), &Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkOptionalSurfaceHit), 3485887102U) },
-		{ FIsdkPointerEvent::StaticStruct, Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewStructOps, TEXT("IsdkPointerEvent"), &Z_Registration_Info_UScriptStruct_FIsdkPointerEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPointerEvent), 1656121350U) },
+		{ FIsdkDigitRangeParams::StaticStruct, Z_Construct_UScriptStruct_FIsdkDigitRangeParams_Statics::NewStructOps, TEXT("IsdkDigitRangeParams"),&Z_Registration_Info_UScriptStruct_FIsdkDigitRangeParams, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkDigitRangeParams), 1998521608U) },
+		{ FIsdkDigitRecognizer_ExpectedAngleValueRange::StaticStruct, Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange_Statics::NewStructOps, TEXT("IsdkDigitRecognizer_ExpectedAngleValueRange"),&Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedAngleValueRange, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkDigitRecognizer_ExpectedAngleValueRange), 491609503U) },
+		{ FIsdkDigitRecognizer_ExpectedDistanceValueRange::StaticStruct, Z_Construct_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange_Statics::NewStructOps, TEXT("IsdkDigitRecognizer_ExpectedDistanceValueRange"),&Z_Registration_Info_UScriptStruct_FIsdkDigitRecognizer_ExpectedDistanceValueRange, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkDigitRecognizer_ExpectedDistanceValueRange), 2375433659U) },
+		{ FIsdkExternalHandPositionFrame_FingerJointMapping::StaticStruct, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping_Statics::NewStructOps, TEXT("IsdkExternalHandPositionFrame_FingerJointMapping"),&Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_FingerJointMapping, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkExternalHandPositionFrame_FingerJointMapping), 230323569U) },
+		{ FIsdkExternalHandPositionFrame_ThumbJointMapping::StaticStruct, Z_Construct_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping_Statics::NewStructOps, TEXT("IsdkExternalHandPositionFrame_ThumbJointMapping"),&Z_Registration_Info_UScriptStruct_FIsdkExternalHandPositionFrame_ThumbJointMapping, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkExternalHandPositionFrame_ThumbJointMapping), 3578312779U) },
+		{ FIsdkFilterPropertyBlock::StaticStruct, Z_Construct_UScriptStruct_FIsdkFilterPropertyBlock_Statics::NewStructOps, TEXT("IsdkFilterPropertyBlock"),&Z_Registration_Info_UScriptStruct_FIsdkFilterPropertyBlock, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkFilterPropertyBlock), 3186518089U) },
+		{ FIsdkFingerRecognizer_ExpectedFingerValueRanges::StaticStruct, Z_Construct_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges_Statics::NewStructOps, TEXT("IsdkFingerRecognizer_ExpectedFingerValueRanges"),&Z_Registration_Info_UScriptStruct_FIsdkFingerRecognizer_ExpectedFingerValueRanges, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkFingerRecognizer_ExpectedFingerValueRanges), 206437569U) },
+		{ FIsdkInteractableStateChangeArgs::StaticStruct, Z_Construct_UScriptStruct_FIsdkInteractableStateChangeArgs_Statics::NewStructOps, TEXT("IsdkInteractableStateChangeArgs"),&Z_Registration_Info_UScriptStruct_FIsdkInteractableStateChangeArgs, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInteractableStateChangeArgs), 522619685U) },
+		{ FIsdkInteractorStateChangeArgs::StaticStruct, Z_Construct_UScriptStruct_FIsdkInteractorStateChangeArgs_Statics::NewStructOps, TEXT("IsdkInteractorStateChangeArgs"),&Z_Registration_Info_UScriptStruct_FIsdkInteractorStateChangeArgs, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkInteractorStateChangeArgs), 2797970396U) },
+		{ FIsdkPokeInteractable_DragThresholdingConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_DragThresholdingConfig"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_DragThresholdingConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_DragThresholdingConfig), 315753105U) },
+		{ FIsdkPokeInteractable_MinThresholdsConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_MinThresholdsConfig"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_MinThresholdsConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_MinThresholdsConfig), 4014818084U) },
+		{ FIsdkPokeInteractable_PositionPinningConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_PositionPinningConfig"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_PositionPinningConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_PositionPinningConfig), 169099053U) },
+		{ FIsdkPokeInteractable_RecoilAssistConfig::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig_Statics::NewStructOps, TEXT("IsdkPokeInteractable_RecoilAssistConfig"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_RecoilAssistConfig, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_RecoilAssistConfig), 217652993U) },
+		{ FIsdkPokeInteractable_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractable_Config_Statics::NewStructOps, TEXT("IsdkPokeInteractable_Config"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractable_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractable_Config), 3317578565U) },
+		{ FIsdkPokeInteractor_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config_Statics::NewStructOps, TEXT("IsdkPokeInteractor_Config"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractor_Config), 3390925270U) },
+		{ FIsdkPokeInteractor_SurfaceHitCache::StaticStruct, Z_Construct_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache_Statics::NewStructOps, TEXT("IsdkPokeInteractor_SurfaceHitCache"),&Z_Registration_Info_UScriptStruct_FIsdkPokeInteractor_SurfaceHitCache, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPokeInteractor_SurfaceHitCache), 2404190499U) },
+		{ FIsdkRayInteractor_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkRayInteractor_Config_Statics::NewStructOps, TEXT("IsdkRayInteractor_Config"),&Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRayInteractor_Config), 3129436069U) },
+		{ FIsdkRayInteractor_RayCandidateProperties::StaticStruct, Z_Construct_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties_Statics::NewStructOps, TEXT("IsdkRayInteractor_RayCandidateProperties"),&Z_Registration_Info_UScriptStruct_FIsdkRayInteractor_RayCandidateProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRayInteractor_RayCandidateProperties), 4075574909U) },
+		{ FIsdkSyntheticHand_Config::StaticStruct, Z_Construct_UScriptStruct_FIsdkSyntheticHand_Config_Statics::NewStructOps, TEXT("IsdkSyntheticHand_Config"),&Z_Registration_Info_UScriptStruct_FIsdkSyntheticHand_Config, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkSyntheticHand_Config), 684129109U) },
+		{ FIsdkThumbRecognizer_ExpectedThumbValueRanges::StaticStruct, Z_Construct_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges_Statics::NewStructOps, TEXT("IsdkThumbRecognizer_ExpectedThumbValueRanges"),&Z_Registration_Info_UScriptStruct_FIsdkThumbRecognizer_ExpectedThumbValueRanges, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkThumbRecognizer_ExpectedThumbValueRanges), 4177687228U) },
+		{ FIsdkAxisAlignedBox::StaticStruct, Z_Construct_UScriptStruct_FIsdkAxisAlignedBox_Statics::NewStructOps, TEXT("IsdkAxisAlignedBox"),&Z_Registration_Info_UScriptStruct_FIsdkAxisAlignedBox, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkAxisAlignedBox), 646942122U) },
+		{ FIsdkBoundsClipper::StaticStruct, Z_Construct_UScriptStruct_FIsdkBoundsClipper_Statics::NewStructOps, TEXT("IsdkBoundsClipper"),&Z_Registration_Info_UScriptStruct_FIsdkBoundsClipper, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkBoundsClipper), 3667170436U) },
+		{ FIsdkRay::StaticStruct, Z_Construct_UScriptStruct_FIsdkRay_Statics::NewStructOps, TEXT("IsdkRay"),&Z_Registration_Info_UScriptStruct_FIsdkRay, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRay), 2389416770U) },
+		{ FIsdkSurfaceHit::StaticStruct, Z_Construct_UScriptStruct_FIsdkSurfaceHit_Statics::NewStructOps, TEXT("IsdkSurfaceHit"),&Z_Registration_Info_UScriptStruct_FIsdkSurfaceHit, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkSurfaceHit), 2981207946U) },
+		{ FIsdkOptionalSurfaceHit::StaticStruct, Z_Construct_UScriptStruct_FIsdkOptionalSurfaceHit_Statics::NewStructOps, TEXT("IsdkOptionalSurfaceHit"),&Z_Registration_Info_UScriptStruct_FIsdkOptionalSurfaceHit, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkOptionalSurfaceHit), 3259708562U) },
+		{ FIsdkPointerEvent::StaticStruct, Z_Construct_UScriptStruct_FIsdkPointerEvent_Statics::NewStructOps, TEXT("IsdkPointerEvent"),&Z_Registration_Info_UScriptStruct_FIsdkPointerEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkPointerEvent), 1408707123U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_1648373815(TEXT("/Script/OculusInteraction"),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_2582818416{
+	TEXT("/Script/OculusInteraction"),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_StructTypes_h__Script_OculusInteraction_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

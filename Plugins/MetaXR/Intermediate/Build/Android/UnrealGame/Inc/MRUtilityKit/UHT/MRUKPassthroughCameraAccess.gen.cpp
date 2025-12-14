@@ -8,7 +8,7 @@
 #include "MRUKPassthroughCameraAccess.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeMRUKPassthroughCameraAccess() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -41,7 +41,7 @@ static UEnum* EMRUKCameraEye_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EMRUKCameraEye.OuterSingleton;
 }
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKCameraEye>()
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKCameraEye>()
 {
 	return EMRUKCameraEye_StaticEnum();
 }
@@ -62,7 +62,7 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye_Statics
 		{ "EMRUKCameraEye::Count", (int64)EMRUKCameraEye::Count },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -95,7 +95,7 @@ static UEnum* EMRUKCameraPlayState_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EMRUKCameraPlayState.OuterSingleton;
 }
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKCameraPlayState>()
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKCameraPlayState>()
 {
 	return EMRUKCameraPlayState_StaticEnum();
 }
@@ -116,7 +116,7 @@ struct Z_Construct_UEnum_MRUtilityKit_EMRUKCameraPlayState_Statics
 		{ "EMRUKCameraPlayState::PlaySuspended", (int64)EMRUKCameraPlayState::PlaySuspended },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_MRUtilityKit_EMRUKCameraPlayState_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_MRUtilityKit_EMRUKCameraPlayState_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -140,6 +140,25 @@ UEnum* Z_Construct_UEnum_MRUtilityKit_EMRUKCameraPlayState()
 // ********** End Enum EMRUKCameraPlayState ********************************************************
 
 // ********** Begin ScriptStruct FMRUKCameraIntrinsics *********************************************
+struct Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FMRUKCameraIntrinsics); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FMRUKCameraIntrinsics); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FMRUKCameraIntrinsics constinit property declarations *************
+// ********** End ScriptStruct FMRUKCameraIntrinsics constinit property declarations ***************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMRUKCameraIntrinsics>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics;
 class UScriptStruct* FMRUKCameraIntrinsics::StaticStruct()
 {
@@ -148,21 +167,7 @@ class UScriptStruct* FMRUKCameraIntrinsics::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FMRUKCameraIntrinsics, (UObject*)Z_Construct_UPackage__Script_MRUtilityKit(), TEXT("MRUKCameraIntrinsics"));
 	}
 	return Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FMRUKCameraIntrinsics>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
 	nullptr,
@@ -182,7 +187,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FMRUKCameraIntrinsics()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics.InnerSingleton, Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics.InnerSingleton);
 }
 // ********** End ScriptStruct FMRUKCameraIntrinsics ***********************************************
 
@@ -197,27 +202,40 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntr
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get the camera intrinsics.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the camera intrinsics." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCameraIntrinsics constinit property declarations *******************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Eye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Eye;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCameraIntrinsics constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCameraIntrinsics Property Definitions ******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_Eye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms, ReturnValue), Z_Construct_UScriptStruct_FMRUKCameraIntrinsics, METADATA_PARAMS(0, nullptr) }; // 2085868216
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms, ReturnValue), Z_Construct_UScriptStruct_FMRUKCameraIntrinsics, METADATA_PARAMS(0, nullptr) }; // 4183012812
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_Eye_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_Eye,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetCameraIntrinsics", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCameraIntrinsics Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetCameraIntrinsics", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetCameraIntrinsics_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics()
 {
@@ -250,20 +268,29 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get the pose of the camera.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the pose of the camera." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCameraPose constinit property declarations *************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Eye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Eye;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutOrientation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCameraPose constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCameraPose Property Definitions ************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::NewProp_Eye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::NewProp_OutOrientation = { "OutOrientation", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms, OutOrientation), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::PropPointers[] = {
@@ -273,7 +300,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::NewProp_OutOrientation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetCameraPose", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCameraPose Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetCameraPose", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetCameraPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose()
 {
@@ -307,20 +338,29 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedR
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get a list of all supported resolutions.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get a list of all supported resolutions." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSupportedResolutions constinit property declarations ***************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CameraEye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CameraEye;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSupportedResolutions constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSupportedResolutions Property Definitions **************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::NewProp_CameraEye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetSupportedResolutions_Parms, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetSupportedResolutions_Parms, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::NewProp_ReturnValue_Inner = { "ReturnValue", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetSupportedResolutions_Parms, ReturnValue), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::PropPointers[] = {
@@ -330,7 +370,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetSupportedResolutions", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetSupportedResolutions_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSupportedResolutions Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetSupportedResolutions", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetSupportedResolutions_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetSupportedResolutions_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions()
 {
@@ -362,19 +406,28 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Timestamp associated with the latest camera image.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Timestamp associated with the latest camera image." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetTimestamp constinit property declarations **************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Eye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Eye;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetTimestamp constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetTimestamp Property Definitions *************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::NewProp_Eye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetTimestamp_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetTimestamp_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventGetTimestamp_Parms, ReturnValue), Z_Construct_UScriptStruct_FDateTime, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::NewProp_Eye_Underlying,
@@ -382,7 +435,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetTimestamp", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetTimestamp_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetTimestamp Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "GetTimestamp", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetTimestamp_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp_Statics::MRUKPassthroughCameraAccessSubsystem_eventGetTimestamp_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp()
 {
@@ -417,11 +474,17 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Start the passthrough camera for the given eye.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start the passthrough camera for the given eye." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Play constinit property declarations **********************************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Width;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Height;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxFramerate;
@@ -430,13 +493,16 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function Play constinit property declarations ************************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function Play Property Definitions *********************************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_Width = { "Width", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms, Width), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_Height = { "Height", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms, Height), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_MaxFramerate = { "MaxFramerate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms, MaxFramerate), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_CameraEye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 void Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms*)Obj)->ReturnValue = 1;
@@ -451,7 +517,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "Play", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::Function_MetaDataParams)},  };
+// ********** End Function Play Property Definitions ***********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "Play", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play_Statics::MRUKPassthroughCameraAccessSubsystem_eventPlay_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play()
 {
@@ -485,24 +555,37 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Stop the passthrough camera for the given eye.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop the passthrough camera for the given eye." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Stop constinit property declarations **********************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CameraEye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CameraEye;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function Stop constinit property declarations ************************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function Stop Property Definitions *********************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::NewProp_CameraEye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventStop_Parms, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventStop_Parms, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::NewProp_CameraEye_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::NewProp_CameraEye,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "Stop", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::MRUKPassthroughCameraAccessSubsystem_eventStop_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::Function_MetaDataParams)},  };
+// ********** End Function Stop Property Definitions ***********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "Stop", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::MRUKPassthroughCameraAccessSubsystem_eventStop_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop_Statics::MRUKPassthroughCameraAccessSubsystem_eventStop_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop()
 {
@@ -536,21 +619,30 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPoint
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Constructs a ray in world space that points to the given point in passthrough camera space.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Constructs a ray in world space that points to the given point in passthrough camera space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ViewportPointToWorldSpaceRay constinit property declarations **********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Eye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Eye;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ViewportPoint;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutDirection;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ViewportPointToWorldSpaceRay constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function ViewportPointToWorldSpaceRay Property Definitions *********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_Eye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_ViewportPoint = { "ViewportPoint", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms, ViewportPoint), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_OutDirection = { "OutDirection", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms, OutDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
@@ -562,7 +654,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::NewProp_OutDirection,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "ViewportPointToWorldSpaceRay", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams)},  };
+// ********** End Function ViewportPointToWorldSpaceRay Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "ViewportPointToWorldSpaceRay", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay_Statics::MRUKPassthroughCameraAccessSubsystem_eventViewportPointToWorldSpaceRay_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay()
 {
@@ -598,20 +694,29 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewpo
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Converts the world position into the passthrough camera space.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Converts the world position into the passthrough camera space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function WorldToViewportPoint constinit property declarations ******************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Eye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Eye;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WorldPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function WorldToViewportPoint constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function WorldToViewportPoint Property Definitions *****************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::NewProp_Eye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::NewProp_Eye = { "Eye", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms, Eye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(0, nullptr) }; // 3202221545
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::NewProp_WorldPosition = { "WorldPosition", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms, WorldPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::PropPointers[] = {
@@ -621,7 +726,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "WorldToViewportPoint", Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::Function_MetaDataParams)},  };
+// ********** End Function WorldToViewportPoint Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, nullptr, "WorldToViewportPoint", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint_Statics::MRUKPassthroughCameraAccessSubsystem_eventWorldToViewportPoint_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint()
 {
@@ -644,21 +753,6 @@ DEFINE_FUNCTION(UMRUKPassthroughCameraAccessSubsystem::execWorldToViewportPoint)
 // ********** End Class UMRUKPassthroughCameraAccessSubsystem Function WorldToViewportPoint ********
 
 // ********** Begin Class UMRUKPassthroughCameraAccessSubsystem ************************************
-void UMRUKPassthroughCameraAccessSubsystem::StaticRegisterNativesUMRUKPassthroughCameraAccessSubsystem()
-{
-	UClass* Class = UMRUKPassthroughCameraAccessSubsystem::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetCameraIntrinsics", &UMRUKPassthroughCameraAccessSubsystem::execGetCameraIntrinsics },
-		{ "GetCameraPose", &UMRUKPassthroughCameraAccessSubsystem::execGetCameraPose },
-		{ "GetSupportedResolutions", &UMRUKPassthroughCameraAccessSubsystem::execGetSupportedResolutions },
-		{ "GetTimestamp", &UMRUKPassthroughCameraAccessSubsystem::execGetTimestamp },
-		{ "Play", &UMRUKPassthroughCameraAccessSubsystem::execPlay },
-		{ "Stop", &UMRUKPassthroughCameraAccessSubsystem::execStop },
-		{ "ViewportPointToWorldSpaceRay", &UMRUKPassthroughCameraAccessSubsystem::execViewportPointToWorldSpaceRay },
-		{ "WorldToViewportPoint", &UMRUKPassthroughCameraAccessSubsystem::execWorldToViewportPoint },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem;
 UClass* UMRUKPassthroughCameraAccessSubsystem::GetPrivateStaticClass()
 {
@@ -666,7 +760,7 @@ UClass* UMRUKPassthroughCameraAccessSubsystem::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKPassthroughCameraAccessSubsystem"),
 			Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem.InnerSingleton,
 			StaticRegisterNativesUMRUKPassthroughCameraAccessSubsystem,
@@ -699,23 +793,36 @@ struct Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem_Statics
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UMRUKPassthroughCameraAccessSubsystem constinit property declarations ****
+// ********** End Class UMRUKPassthroughCameraAccessSubsystem constinit property declarations ******
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetCameraIntrinsics"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execGetCameraIntrinsics },
+		{ .NameUTF8 = UTF8TEXT("GetCameraPose"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execGetCameraPose },
+		{ .NameUTF8 = UTF8TEXT("GetSupportedResolutions"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execGetSupportedResolutions },
+		{ .NameUTF8 = UTF8TEXT("GetTimestamp"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execGetTimestamp },
+		{ .NameUTF8 = UTF8TEXT("Play"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execPlay },
+		{ .NameUTF8 = UTF8TEXT("Stop"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execStop },
+		{ .NameUTF8 = UTF8TEXT("ViewportPointToWorldSpaceRay"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execViewportPointToWorldSpaceRay },
+		{ .NameUTF8 = UTF8TEXT("WorldToViewportPoint"), .Pointer = &UMRUKPassthroughCameraAccessSubsystem::execWorldToViewportPoint },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics, "GetCameraIntrinsics" }, // 1755727785
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose, "GetCameraPose" }, // 1987034792
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions, "GetSupportedResolutions" }, // 487982415
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp, "GetTimestamp" }, // 2030091877
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play, "Play" }, // 1599096959
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop, "Stop" }, // 763606937
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay, "ViewportPointToWorldSpaceRay" }, // 2546213884
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint, "WorldToViewportPoint" }, // 841653110
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraIntrinsics, "GetCameraIntrinsics" }, // 1880570342
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetCameraPose, "GetCameraPose" }, // 1506228898
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetSupportedResolutions, "GetSupportedResolutions" }, // 3944247680
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_GetTimestamp, "GetTimestamp" }, // 582869045
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Play, "Play" }, // 1343002950
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_Stop, "Stop" }, // 1590356262
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_ViewportPointToWorldSpaceRay, "ViewportPointToWorldSpaceRay" }, // 1517195648
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessSubsystem_WorldToViewportPoint, "WorldToViewportPoint" }, // 4151974366
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMRUKPassthroughCameraAccessSubsystem>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem_Statics
 UObject* (*const Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UEngineSubsystem,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -736,6 +843,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UMRUKPassthroughCameraA
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem_Statics::Class_MetaDataParams)
 };
+void UMRUKPassthroughCameraAccessSubsystem::StaticRegisterNativesUMRUKPassthroughCameraAccessSubsystem()
+{
+	UClass* Class = UMRUKPassthroughCameraAccessSubsystem::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem()
 {
 	if (!Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem.OuterSingleton)
@@ -745,7 +857,7 @@ UClass* Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem()
 	return Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem.OuterSingleton;
 }
 UMRUKPassthroughCameraAccessSubsystem::UMRUKPassthroughCameraAccessSubsystem() {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UMRUKPassthroughCameraAccessSubsystem);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UMRUKPassthroughCameraAccessSubsystem);
 UMRUKPassthroughCameraAccessSubsystem::~UMRUKPassthroughCameraAccessSubsystem() {}
 // ********** End Class UMRUKPassthroughCameraAccessSubsystem **************************************
 
@@ -759,21 +871,34 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get the camera intrinsics.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the camera intrinsics." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCameraIntrinsics constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCameraIntrinsics constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetCameraIntrinsics_Parms, ReturnValue), Z_Construct_UScriptStruct_FMRUKCameraIntrinsics, METADATA_PARAMS(0, nullptr) }; // 2085868216
+
+// ********** Begin Function GetCameraIntrinsics Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetCameraIntrinsics_Parms, ReturnValue), Z_Construct_UScriptStruct_FMRUKCameraIntrinsics, METADATA_PARAMS(0, nullptr) }; // 4183012812
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetCameraIntrinsics", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::MRUKPassthroughCameraAccess_eventGetCameraIntrinsics_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCameraIntrinsics Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetCameraIntrinsics", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::MRUKPassthroughCameraAccess_eventGetCameraIntrinsics_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics_Statics::MRUKPassthroughCameraAccess_eventGetCameraIntrinsics_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics()
 {
@@ -803,24 +928,37 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Sta
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get the current camera play state.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the current camera play state." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCameraPlayState constinit property declarations ********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCameraPlayState constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCameraPlayState Property Definitions *******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetCameraPlayState_Parms, ReturnValue), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraPlayState, METADATA_PARAMS(0, nullptr) }; // 1978133757
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetCameraPlayState_Parms, ReturnValue), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraPlayState, METADATA_PARAMS(0, nullptr) }; // 2311246723
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetCameraPlayState", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::MRUKPassthroughCameraAccess_eventGetCameraPlayState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCameraPlayState Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetCameraPlayState", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::MRUKPassthroughCameraAccess_eventGetCameraPlayState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState_Statics::MRUKPassthroughCameraAccess_eventGetCameraPlayState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState()
 {
@@ -851,16 +989,25 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Get the pose of the camera.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the pose of the camera." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCameraPose constinit property declarations *************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutOrientation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCameraPose constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCameraPose Property Definitions ************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetCameraPose_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::NewProp_OutOrientation = { "OutOrientation", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetCameraPose_Parms, OutOrientation), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::PropPointers[] = {
@@ -868,7 +1015,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::NewProp_OutOrientation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetCameraPose", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::MRUKPassthroughCameraAccess_eventGetCameraPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCameraPose Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetCameraPose", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::MRUKPassthroughCameraAccess_eventGetCameraPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose_Statics::MRUKPassthroughCameraAccess_eventGetCameraPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose()
 {
@@ -900,21 +1051,34 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Timestamp associated with the latest camera image.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Timestamp associated with the latest camera image." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetTimestamp constinit property declarations **************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetTimestamp constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetTimestamp Property Definitions *************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventGetTimestamp_Parms, ReturnValue), Z_Construct_UScriptStruct_FDateTime, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetTimestamp", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::MRUKPassthroughCameraAccess_eventGetTimestamp_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetTimestamp Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "GetTimestamp", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::MRUKPassthroughCameraAccess_eventGetTimestamp_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp_Statics::MRUKPassthroughCameraAccess_eventGetTimestamp_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp()
 {
@@ -944,16 +1108,25 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Check if the camera is currently playing.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Check if the camera is currently playing." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsCameraPlaying constinit property declarations ***********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsCameraPlaying constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsCameraPlaying Property Definitions **********************************
 void Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((MRUKPassthroughCameraAccess_eventIsCameraPlaying_Parms*)Obj)->ReturnValue = 1;
@@ -963,7 +1136,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "IsCameraPlaying", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::MRUKPassthroughCameraAccess_eventIsCameraPlaying_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsCameraPlaying Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "IsCameraPlaying", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::MRUKPassthroughCameraAccess_eventIsCameraPlaying_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying_Statics::MRUKPassthroughCameraAccess_eventIsCameraPlaying_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying()
 {
@@ -991,9 +1168,15 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnResume constinit property declarations ******************************
+// ********** End Function OnResume constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "OnResume", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "OnResume", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -1020,9 +1203,15 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnSuspend constinit property declarations *****************************
+// ********** End Function OnSuspend constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "OnSuspend", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "OnSuspend", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -1051,16 +1240,25 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Start the passthrough camera.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Start the passthrough camera." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Play constinit property declarations **********************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function Play constinit property declarations ************************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function Play Property Definitions *********************************************
 void Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((MRUKPassthroughCameraAccess_eventPlay_Parms*)Obj)->ReturnValue = 1;
@@ -1070,7 +1268,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "Play", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::MRUKPassthroughCameraAccess_eventPlay_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::Function_MetaDataParams)},  };
+// ********** End Function Play Property Definitions ***********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "Play", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::MRUKPassthroughCameraAccess_eventPlay_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play_Statics::MRUKPassthroughCameraAccess_eventPlay_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play()
 {
@@ -1096,14 +1298,24 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Stop the passthrough camera.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Stop the passthrough camera." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Stop constinit property declarations **********************************
+// ********** End Function Stop constinit property declarations ************************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "Stop", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "Stop", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -1134,17 +1346,26 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSp
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Constructs a ray in world space that points to the given point in passthrough camera space.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Constructs a ray in world space that points to the given point in passthrough camera space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ViewportPointToWorldSpaceRay constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ViewportPoint;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutDirection;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ViewportPointToWorldSpaceRay constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function ViewportPointToWorldSpaceRay Property Definitions *********************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::NewProp_ViewportPoint = { "ViewportPoint", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventViewportPointToWorldSpaceRay_Parms, ViewportPoint), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::NewProp_OutPosition = { "OutPosition", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventViewportPointToWorldSpaceRay_Parms, OutPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::NewProp_OutDirection = { "OutDirection", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventViewportPointToWorldSpaceRay_Parms, OutDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
@@ -1154,7 +1375,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::NewProp_OutDirection,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "ViewportPointToWorldSpaceRay", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::MRUKPassthroughCameraAccess_eventViewportPointToWorldSpaceRay_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams)},  };
+// ********** End Function ViewportPointToWorldSpaceRay Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "ViewportPointToWorldSpaceRay", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::MRUKPassthroughCameraAccess_eventViewportPointToWorldSpaceRay_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay_Statics::MRUKPassthroughCameraAccess_eventViewportPointToWorldSpaceRay_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay()
 {
@@ -1188,16 +1413,25 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Converts the world position into the passthrough camera space.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Converts the world position into the passthrough camera space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function WorldToViewportPoint constinit property declarations ******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WorldPosition;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function WorldToViewportPoint constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function WorldToViewportPoint Property Definitions *****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::NewProp_WorldPosition = { "WorldPosition", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventWorldToViewportPoint_Parms, WorldPosition), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccess_eventWorldToViewportPoint_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::PropPointers[] = {
@@ -1205,7 +1439,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "WorldToViewportPoint", Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::MRUKPassthroughCameraAccess_eventWorldToViewportPoint_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::Function_MetaDataParams)},  };
+// ********** End Function WorldToViewportPoint Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccess, nullptr, "WorldToViewportPoint", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::MRUKPassthroughCameraAccess_eventWorldToViewportPoint_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint_Statics::MRUKPassthroughCameraAccess_eventWorldToViewportPoint_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint()
 {
@@ -1227,24 +1465,6 @@ DEFINE_FUNCTION(UMRUKPassthroughCameraAccess::execWorldToViewportPoint)
 // ********** End Class UMRUKPassthroughCameraAccess Function WorldToViewportPoint *****************
 
 // ********** Begin Class UMRUKPassthroughCameraAccess *********************************************
-void UMRUKPassthroughCameraAccess::StaticRegisterNativesUMRUKPassthroughCameraAccess()
-{
-	UClass* Class = UMRUKPassthroughCameraAccess::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetCameraIntrinsics", &UMRUKPassthroughCameraAccess::execGetCameraIntrinsics },
-		{ "GetCameraPlayState", &UMRUKPassthroughCameraAccess::execGetCameraPlayState },
-		{ "GetCameraPose", &UMRUKPassthroughCameraAccess::execGetCameraPose },
-		{ "GetTimestamp", &UMRUKPassthroughCameraAccess::execGetTimestamp },
-		{ "IsCameraPlaying", &UMRUKPassthroughCameraAccess::execIsCameraPlaying },
-		{ "OnResume", &UMRUKPassthroughCameraAccess::execOnResume },
-		{ "OnSuspend", &UMRUKPassthroughCameraAccess::execOnSuspend },
-		{ "Play", &UMRUKPassthroughCameraAccess::execPlay },
-		{ "Stop", &UMRUKPassthroughCameraAccess::execStop },
-		{ "ViewportPointToWorldSpaceRay", &UMRUKPassthroughCameraAccess::execViewportPointToWorldSpaceRay },
-		{ "WorldToViewportPoint", &UMRUKPassthroughCameraAccess::execWorldToViewportPoint },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess;
 UClass* UMRUKPassthroughCameraAccess::GetPrivateStaticClass()
 {
@@ -1252,7 +1472,7 @@ UClass* UMRUKPassthroughCameraAccess::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKPassthroughCameraAccess"),
 			Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess.InnerSingleton,
 			StaticRegisterNativesUMRUKPassthroughCameraAccess,
@@ -1284,57 +1504,91 @@ struct Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CameraEye_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * From which camera eye the video should be played.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "From which camera eye the video should be played." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ResolutionWidth_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Max resolution width of the video.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Max resolution width of the video." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ResolutionHeight_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Max resolution height of the video.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Max resolution height of the video." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MaxFramerate_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Maximum framerate of the video.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Maximum framerate of the video." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UMRUKPassthroughCameraAccess constinit property declarations *************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CameraEye_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CameraEye;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ResolutionWidth;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ResolutionHeight;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxFramerate;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UMRUKPassthroughCameraAccess constinit property declarations ***************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetCameraIntrinsics"), .Pointer = &UMRUKPassthroughCameraAccess::execGetCameraIntrinsics },
+		{ .NameUTF8 = UTF8TEXT("GetCameraPlayState"), .Pointer = &UMRUKPassthroughCameraAccess::execGetCameraPlayState },
+		{ .NameUTF8 = UTF8TEXT("GetCameraPose"), .Pointer = &UMRUKPassthroughCameraAccess::execGetCameraPose },
+		{ .NameUTF8 = UTF8TEXT("GetTimestamp"), .Pointer = &UMRUKPassthroughCameraAccess::execGetTimestamp },
+		{ .NameUTF8 = UTF8TEXT("IsCameraPlaying"), .Pointer = &UMRUKPassthroughCameraAccess::execIsCameraPlaying },
+		{ .NameUTF8 = UTF8TEXT("OnResume"), .Pointer = &UMRUKPassthroughCameraAccess::execOnResume },
+		{ .NameUTF8 = UTF8TEXT("OnSuspend"), .Pointer = &UMRUKPassthroughCameraAccess::execOnSuspend },
+		{ .NameUTF8 = UTF8TEXT("Play"), .Pointer = &UMRUKPassthroughCameraAccess::execPlay },
+		{ .NameUTF8 = UTF8TEXT("Stop"), .Pointer = &UMRUKPassthroughCameraAccess::execStop },
+		{ .NameUTF8 = UTF8TEXT("ViewportPointToWorldSpaceRay"), .Pointer = &UMRUKPassthroughCameraAccess::execViewportPointToWorldSpaceRay },
+		{ .NameUTF8 = UTF8TEXT("WorldToViewportPoint"), .Pointer = &UMRUKPassthroughCameraAccess::execWorldToViewportPoint },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics, "GetCameraIntrinsics" }, // 923074732
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState, "GetCameraPlayState" }, // 2865570568
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose, "GetCameraPose" }, // 4169668686
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp, "GetTimestamp" }, // 1142830060
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying, "IsCameraPlaying" }, // 3933810409
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume, "OnResume" }, // 670000232
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend, "OnSuspend" }, // 3403788684
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play, "Play" }, // 4243284203
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop, "Stop" }, // 1691102040
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay, "ViewportPointToWorldSpaceRay" }, // 1682794965
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint, "WorldToViewportPoint" }, // 1229839327
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraIntrinsics, "GetCameraIntrinsics" }, // 554176321
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPlayState, "GetCameraPlayState" }, // 1659190326
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetCameraPose, "GetCameraPose" }, // 2776634240
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_GetTimestamp, "GetTimestamp" }, // 2314306971
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_IsCameraPlaying, "IsCameraPlaying" }, // 4272878355
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnResume, "OnResume" }, // 571148847
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_OnSuspend, "OnSuspend" }, // 3325588868
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Play, "Play" }, // 3694372981
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_Stop, "Stop" }, // 3400776661
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_ViewportPointToWorldSpaceRay, "ViewportPointToWorldSpaceRay" }, // 2044853362
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccess_WorldToViewportPoint, "WorldToViewportPoint" }, // 158589137
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMRUKPassthroughCameraAccess>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics
+
+// ********** Begin Class UMRUKPassthroughCameraAccess Property Definitions ************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_CameraEye_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKPassthroughCameraAccess, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraEye_MetaData), NewProp_CameraEye_MetaData) }; // 527181034
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_CameraEye = { "CameraEye", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKPassthroughCameraAccess, CameraEye), Z_Construct_UEnum_MRUtilityKit_EMRUKCameraEye, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CameraEye_MetaData), NewProp_CameraEye_MetaData) }; // 3202221545
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_ResolutionWidth = { "ResolutionWidth", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKPassthroughCameraAccess, ResolutionWidth), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ResolutionWidth_MetaData), NewProp_ResolutionWidth_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_ResolutionHeight = { "ResolutionHeight", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKPassthroughCameraAccess, ResolutionHeight), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ResolutionHeight_MetaData), NewProp_ResolutionHeight_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_MaxFramerate = { "MaxFramerate", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKPassthroughCameraAccess, MaxFramerate), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxFramerate_MetaData), NewProp_MaxFramerate_MetaData) };
@@ -1346,6 +1600,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMRUKPass
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::NewProp_MaxFramerate,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::PropPointers) < 2048);
+// ********** End Class UMRUKPassthroughCameraAccess Property Definitions **************************
 UObject* (*const Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -1366,6 +1621,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UMRUKPassthroughCameraA
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::Class_MetaDataParams), Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::Class_MetaDataParams)
 };
+void UMRUKPassthroughCameraAccess::StaticRegisterNativesUMRUKPassthroughCameraAccess()
+{
+	UClass* Class = UMRUKPassthroughCameraAccess::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UMRUKPassthroughCameraAccess_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UMRUKPassthroughCameraAccess()
 {
 	if (!Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess.OuterSingleton)
@@ -1374,7 +1634,7 @@ UClass* Z_Construct_UClass_UMRUKPassthroughCameraAccess()
 	}
 	return Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UMRUKPassthroughCameraAccess);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UMRUKPassthroughCameraAccess);
 UMRUKPassthroughCameraAccess::~UMRUKPassthroughCameraAccess() {}
 // ********** End Class UMRUKPassthroughCameraAccess ***********************************************
 
@@ -1388,21 +1648,34 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the current aspect ratio of the texture.\n\x09 *\n\x09 * @return Texture aspect ratio.\n\x09 * @see GetHeight, GetWidth\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the current aspect ratio of the texture.\n\n@return Texture aspect ratio.\n@see GetHeight, GetWidth" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetAspectRatio constinit property declarations ************************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetAspectRatio constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetAspectRatio Property Definitions ***********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessTexture_eventGetAspectRatio_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, nullptr, "GetAspectRatio", Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::MRUKPassthroughCameraAccessTexture_eventGetAspectRatio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020403, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetAspectRatio Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, nullptr, "GetAspectRatio", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::MRUKPassthroughCameraAccessTexture_eventGetAspectRatio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020403, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio_Statics::MRUKPassthroughCameraAccessTexture_eventGetAspectRatio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio()
 {
@@ -1432,21 +1705,34 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Stati
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the current height of the texture.\n\x09 *\n\x09 * @return Texture height (in pixels).\n\x09 * @see GetAspectRatio, GetWidth\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the current height of the texture.\n\n@return Texture height (in pixels).\n@see GetAspectRatio, GetWidth" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHeight constinit property declarations *****************************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHeight constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHeight Property Definitions ****************************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessTexture_eventGetHeight_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, nullptr, "GetHeight", Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::MRUKPassthroughCameraAccessTexture_eventGetHeight_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020403, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHeight Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, nullptr, "GetHeight", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::MRUKPassthroughCameraAccessTexture_eventGetHeight_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020403, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight_Statics::MRUKPassthroughCameraAccessTexture_eventGetHeight_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight()
 {
@@ -1476,21 +1762,34 @@ struct Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Gets the current width of the texture.\n\x09 *\n\x09 * @return Texture width (in pixels).\n\x09 * @see GetAspectRatio, GetHeight\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Gets the current width of the texture.\n\n@return Texture width (in pixels).\n@see GetAspectRatio, GetHeight" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetWidth constinit property declarations ******************************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetWidth constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetWidth Property Definitions *****************************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKPassthroughCameraAccessTexture_eventGetWidth_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, nullptr, "GetWidth", Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::MRUKPassthroughCameraAccessTexture_eventGetWidth_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020403, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetWidth Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, nullptr, "GetWidth", 	Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::MRUKPassthroughCameraAccessTexture_eventGetWidth_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020403, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth_Statics::MRUKPassthroughCameraAccessTexture_eventGetWidth_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth()
 {
@@ -1511,16 +1810,6 @@ DEFINE_FUNCTION(UMRUKPassthroughCameraAccessTexture::execGetWidth)
 // ********** End Class UMRUKPassthroughCameraAccessTexture Function GetWidth **********************
 
 // ********** Begin Class UMRUKPassthroughCameraAccessTexture **************************************
-void UMRUKPassthroughCameraAccessTexture::StaticRegisterNativesUMRUKPassthroughCameraAccessTexture()
-{
-	UClass* Class = UMRUKPassthroughCameraAccessTexture::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetAspectRatio", &UMRUKPassthroughCameraAccessTexture::execGetAspectRatio },
-		{ "GetHeight", &UMRUKPassthroughCameraAccessTexture::execGetHeight },
-		{ "GetWidth", &UMRUKPassthroughCameraAccessTexture::execGetWidth },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessTexture;
 UClass* UMRUKPassthroughCameraAccessTexture::GetPrivateStaticClass()
 {
@@ -1528,7 +1817,7 @@ UClass* UMRUKPassthroughCameraAccessTexture::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessTexture.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKPassthroughCameraAccessTexture"),
 			Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessTexture.InnerSingleton,
 			StaticRegisterNativesUMRUKPassthroughCameraAccessTexture,
@@ -1563,25 +1852,36 @@ struct Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics
 		{ "ModuleRelativePath", "Public/MRUKPassthroughCameraAccess.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UMRUKPassthroughCameraAccessTexture constinit property declarations ******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PassthroughCameraAccess;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UMRUKPassthroughCameraAccessTexture constinit property declarations ********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetAspectRatio"), .Pointer = &UMRUKPassthroughCameraAccessTexture::execGetAspectRatio },
+		{ .NameUTF8 = UTF8TEXT("GetHeight"), .Pointer = &UMRUKPassthroughCameraAccessTexture::execGetHeight },
+		{ .NameUTF8 = UTF8TEXT("GetWidth"), .Pointer = &UMRUKPassthroughCameraAccessTexture::execGetWidth },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio, "GetAspectRatio" }, // 222393994
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight, "GetHeight" }, // 4047958869
-		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth, "GetWidth" }, // 1865219908
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetAspectRatio, "GetAspectRatio" }, // 2373632700
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetHeight, "GetHeight" }, // 2465882099
+		{ &Z_Construct_UFunction_UMRUKPassthroughCameraAccessTexture_GetWidth, "GetWidth" }, // 3954768691
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UMRUKPassthroughCameraAccessTexture>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics
+
+// ********** Begin Class UMRUKPassthroughCameraAccessTexture Property Definitions *****************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::NewProp_PassthroughCameraAccess = { "PassthroughCameraAccess", nullptr, (EPropertyFlags)0x0114000000000015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMRUKPassthroughCameraAccessTexture, PassthroughCameraAccess), Z_Construct_UClass_UMRUKPassthroughCameraAccess_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PassthroughCameraAccess_MetaData), NewProp_PassthroughCameraAccess_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::NewProp_PassthroughCameraAccess,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::PropPointers) < 2048);
+// ********** End Class UMRUKPassthroughCameraAccessTexture Property Definitions *******************
 UObject* (*const Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UTexture,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -1602,6 +1902,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UMRUKPassthroughCameraA
 	0x008800A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::Class_MetaDataParams), Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::Class_MetaDataParams)
 };
+void UMRUKPassthroughCameraAccessTexture::StaticRegisterNativesUMRUKPassthroughCameraAccessTexture()
+{
+	UClass* Class = UMRUKPassthroughCameraAccessTexture::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture()
 {
 	if (!Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessTexture.OuterSingleton)
@@ -1615,25 +1920,27 @@ UMRUKPassthroughCameraAccessTexture::~UMRUKPassthroughCameraAccessTexture() {}
 // ********** End Class UMRUKPassthroughCameraAccessTexture ****************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EMRUKCameraEye_StaticEnum, TEXT("EMRUKCameraEye"), &Z_Registration_Info_UEnum_EMRUKCameraEye, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 527181034U) },
-		{ EMRUKCameraPlayState_StaticEnum, TEXT("EMRUKCameraPlayState"), &Z_Registration_Info_UEnum_EMRUKCameraPlayState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1978133757U) },
+		{ EMRUKCameraEye_StaticEnum, TEXT("EMRUKCameraEye"), &Z_Registration_Info_UEnum_EMRUKCameraEye, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3202221545U) },
+		{ EMRUKCameraPlayState_StaticEnum, TEXT("EMRUKCameraPlayState"), &Z_Registration_Info_UEnum_EMRUKCameraPlayState, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2311246723U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FMRUKCameraIntrinsics::StaticStruct, Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics::NewStructOps, TEXT("MRUKCameraIntrinsics"), &Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMRUKCameraIntrinsics), 2085868216U) },
+		{ FMRUKCameraIntrinsics::StaticStruct, Z_Construct_UScriptStruct_FMRUKCameraIntrinsics_Statics::NewStructOps, TEXT("MRUKCameraIntrinsics"),&Z_Registration_Info_UScriptStruct_FMRUKCameraIntrinsics, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FMRUKCameraIntrinsics), 4183012812U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, UMRUKPassthroughCameraAccessSubsystem::StaticClass, TEXT("UMRUKPassthroughCameraAccessSubsystem"), &Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKPassthroughCameraAccessSubsystem), 1782816630U) },
-		{ Z_Construct_UClass_UMRUKPassthroughCameraAccess, UMRUKPassthroughCameraAccess::StaticClass, TEXT("UMRUKPassthroughCameraAccess"), &Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKPassthroughCameraAccess), 2236854976U) },
-		{ Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, UMRUKPassthroughCameraAccessTexture::StaticClass, TEXT("UMRUKPassthroughCameraAccessTexture"), &Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessTexture, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKPassthroughCameraAccessTexture), 2730807268U) },
+		{ Z_Construct_UClass_UMRUKPassthroughCameraAccessSubsystem, UMRUKPassthroughCameraAccessSubsystem::StaticClass, TEXT("UMRUKPassthroughCameraAccessSubsystem"), &Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKPassthroughCameraAccessSubsystem), 1834930186U) },
+		{ Z_Construct_UClass_UMRUKPassthroughCameraAccess, UMRUKPassthroughCameraAccess::StaticClass, TEXT("UMRUKPassthroughCameraAccess"), &Z_Registration_Info_UClass_UMRUKPassthroughCameraAccess, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKPassthroughCameraAccess), 3799508772U) },
+		{ Z_Construct_UClass_UMRUKPassthroughCameraAccessTexture, UMRUKPassthroughCameraAccessTexture::StaticClass, TEXT("UMRUKPassthroughCameraAccessTexture"), &Z_Registration_Info_UClass_UMRUKPassthroughCameraAccessTexture, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMRUKPassthroughCameraAccessTexture), 1959202066U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_2695697580{
+	TEXT("/Script/MRUtilityKit"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_3433688332(TEXT("/Script/MRUtilityKit"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUKPassthroughCameraAccess_h__Script_MRUtilityKit_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

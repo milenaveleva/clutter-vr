@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AActor;
 class UMaterialInstanceDynamic;
 class USceneComponent;
@@ -24,8 +23,9 @@ struct FIsdkRoundedBoxProperties;
 struct FLinearColor;
 
 // ********** Begin ScriptStruct FIsdkRoundedBoxProperties *****************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_33_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_33_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics; \
 	OCULUSINTERACTIONPREBUILTS_API static class UScriptStruct* StaticStruct();
 
 
@@ -33,7 +33,7 @@ struct FIsdkRoundedBoxProperties;
 // ********** End ScriptStruct FIsdkRoundedBoxProperties *******************************************
 
 // ********** Begin Class UIsdkRoundedBoxFunctionLibrary *******************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetRoundedBoxMaterialCornerRadius); \
 	DECLARE_FUNCTION(execSetRoundedBoxMaterialBorderColor); \
 	DECLARE_FUNCTION(execSetRoundedBoxMaterialColor); \
@@ -44,20 +44,21 @@ struct FIsdkRoundedBoxProperties;
 	DECLARE_FUNCTION(execCreateRoundedBox);
 
 
+struct Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkRoundedBoxFunctionLibrary(); \
-	friend struct Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkRoundedBoxFunctionLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkRoundedBoxFunctionLibrary)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UIsdkRoundedBoxFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -69,13 +70,13 @@ public: \
 	NO_API virtual ~UIsdkRoundedBoxFunctionLibrary();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_52_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_52_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h_56_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -85,6 +86,6 @@ class UIsdkRoundedBoxFunctionLibrary;
 // ********** End Class UIsdkRoundedBoxFunctionLibrary *********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

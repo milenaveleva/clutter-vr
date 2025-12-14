@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FOculusXRAnchorLocationFlags **************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_67_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_67_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FOculusXRAnchorLocationFlags;
 // ********** End ScriptStruct FOculusXRAnchorLocationFlags ****************************************
 
 // ********** Begin ScriptStruct FOculusXRUUID *****************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_105_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRUUID_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRUUID_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_105_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRUUID_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -35,8 +37,9 @@ struct FOculusXRUUID;
 // ********** End ScriptStruct FOculusXRUUID *******************************************************
 
 // ********** Begin ScriptStruct FOculusXRUInt64 ***************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_143_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRUInt64_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRUInt64_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_143_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRUInt64_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -44,8 +47,9 @@ struct FOculusXRUInt64;
 // ********** End ScriptStruct FOculusXRUInt64 *****************************************************
 
 // ********** Begin ScriptStruct FOculusXRAnchor ***************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_174_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRAnchor_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRAnchor_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_174_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRAnchor_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -53,8 +57,9 @@ struct FOculusXRAnchor;
 // ********** End ScriptStruct FOculusXRAnchor *****************************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceQueryInfo *******************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_241_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_241_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -62,8 +67,9 @@ struct FOculusXRSpaceQueryInfo;
 // ********** End ScriptStruct FOculusXRSpaceQueryInfo *********************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceQueryResult *****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_273_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_273_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -71,8 +77,9 @@ struct FOculusXRSpaceQueryResult;
 // ********** End ScriptStruct FOculusXRSpaceQueryResult *******************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceQueryFilterValues ***********************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_293_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_293_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -80,20 +87,21 @@ struct FOculusXRSpaceQueryFilterValues;
 // ********** End ScriptStruct FOculusXRSpaceQueryFilterValues *************************************
 
 // ********** Begin Class UOculusXRSpaceDiscoveryFilterBase ****************************************
+struct Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics;
 OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRSpaceDiscoveryFilterBase(); \
-	friend struct Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_NoRegister(); \
+	friend OCULUSXRANCHORS_API UClass* ::Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRSpaceDiscoveryFilterBase, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRAnchors"), Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRSpaceDiscoveryFilterBase)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRSpaceDiscoveryFilterBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -105,12 +113,12 @@ public: \
 	NO_API virtual ~UOculusXRSpaceDiscoveryFilterBase();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_302_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_302_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_305_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -120,8 +128,9 @@ class UOculusXRSpaceDiscoveryFilterBase;
 // ********** End Class UOculusXRSpaceDiscoveryFilterBase ******************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceDiscoveryInfo ***************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_316_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_316_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -129,8 +138,9 @@ struct FOculusXRSpaceDiscoveryInfo;
 // ********** End ScriptStruct FOculusXRSpaceDiscoveryInfo *****************************************
 
 // ********** Begin ScriptStruct FOculusXRAnchorsDiscoverResult ************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_329_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_329_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -138,20 +148,21 @@ struct FOculusXRAnchorsDiscoverResult;
 // ********** End ScriptStruct FOculusXRAnchorsDiscoverResult **************************************
 
 // ********** Begin Class UOculusXRSpaceDiscoveryIdsFilter *****************************************
+struct Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics;
 OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRSpaceDiscoveryIdsFilter(); \
-	friend struct Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_NoRegister(); \
+	friend OCULUSXRANCHORS_API UClass* ::Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRSpaceDiscoveryIdsFilter, UOculusXRSpaceDiscoveryFilterBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRAnchors"), Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRSpaceDiscoveryIdsFilter)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRSpaceDiscoveryIdsFilter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -163,12 +174,12 @@ public: \
 	NO_API virtual ~UOculusXRSpaceDiscoveryIdsFilter();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_355_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_355_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_358_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -178,20 +189,21 @@ class UOculusXRSpaceDiscoveryIdsFilter;
 // ********** End Class UOculusXRSpaceDiscoveryIdsFilter *******************************************
 
 // ********** Begin Class UOculusXRSpaceDiscoveryComponentsFilter **********************************
+struct Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics;
 OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRSpaceDiscoveryComponentsFilter(); \
-	friend struct Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_NoRegister(); \
+	friend OCULUSXRANCHORS_API UClass* ::Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRSpaceDiscoveryComponentsFilter, UOculusXRSpaceDiscoveryFilterBase, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRAnchors"), Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRSpaceDiscoveryComponentsFilter)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRSpaceDiscoveryComponentsFilter(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -203,12 +215,12 @@ public: \
 	NO_API virtual ~UOculusXRSpaceDiscoveryComponentsFilter();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_378_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_378_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_381_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -218,8 +230,9 @@ class UOculusXRSpaceDiscoveryComponentsFilter;
 // ********** End Class UOculusXRSpaceDiscoveryComponentsFilter ************************************
 
 // ********** Begin ScriptStruct FOculusXRRoomLayout ***********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_396_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h_396_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -227,7 +240,7 @@ struct FOculusXRRoomLayout;
 // ********** End ScriptStruct FOculusXRRoomLayout *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h
 
 // ********** Begin Enum EOculusXRAnchorResult *****************************************************
 #define FOREACH_ENUM_EOCULUSXRANCHORRESULT(op) \
@@ -269,7 +282,7 @@ struct FOculusXRRoomLayout;
 
 enum class EOculusLocationFlags : uint8;
 template<> struct TIsUEnumClass<EOculusLocationFlags> { enum { Value = true }; };
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusLocationFlags>();
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusLocationFlags>();
 // ********** End Enum EOculusLocationFlags ********************************************************
 
 // ********** Begin Enum EOculusXRSpaceQueryFilterType *********************************************
@@ -281,7 +294,7 @@ template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusLocationFlags>();
 
 enum class EOculusXRSpaceQueryFilterType : uint8;
 template<> struct TIsUEnumClass<EOculusXRSpaceQueryFilterType> { enum { Value = true }; };
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceQueryFilterType>();
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceQueryFilterType>();
 // ********** End Enum EOculusXRSpaceQueryFilterType ***********************************************
 
 // ********** Begin Enum EOculusXRSpaceStorageLocation *********************************************
@@ -292,7 +305,7 @@ template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceQueryFilterType>(
 
 enum class EOculusXRSpaceStorageLocation : uint8;
 template<> struct TIsUEnumClass<EOculusXRSpaceStorageLocation> { enum { Value = true }; };
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceStorageLocation>();
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceStorageLocation>();
 // ********** End Enum EOculusXRSpaceStorageLocation ***********************************************
 
 // ********** Begin Enum EOculusXRSpaceStoragePersistenceMode **************************************
@@ -302,7 +315,7 @@ template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceStorageLocation>(
 
 enum class EOculusXRSpaceStoragePersistenceMode : uint8;
 template<> struct TIsUEnumClass<EOculusXRSpaceStoragePersistenceMode> { enum { Value = true }; };
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceStoragePersistenceMode>();
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceStoragePersistenceMode>();
 // ********** End Enum EOculusXRSpaceStoragePersistenceMode ****************************************
 
 // ********** Begin Enum EOculusXRSpaceComponentType ***********************************************
@@ -320,7 +333,7 @@ template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceStoragePersistenc
 
 enum class EOculusXRSpaceComponentType : uint8;
 template<> struct TIsUEnumClass<EOculusXRSpaceComponentType> { enum { Value = true }; };
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceComponentType>();
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceComponentType>();
 // ********** End Enum EOculusXRSpaceComponentType *************************************************
 
 // ********** Begin Enum EOculusXRAnchorSpace ******************************************************
@@ -330,7 +343,7 @@ template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceComponentType>();
 
 enum class EOculusXRAnchorSpace : uint8;
 template<> struct TIsUEnumClass<EOculusXRAnchorSpace> { enum { Value = true }; };
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRAnchorSpace>();
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRAnchorSpace>();
 // ********** End Enum EOculusXRAnchorSpace ********************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,7 +9,7 @@
 #include "StructTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandDigitRecognizer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,21 +32,34 @@ struct Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the raw value normalized by the recognizer's expected range */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the raw value normalized by the recognizer's expected range" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetNormalizedRawValue constinit property declarations *****************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetNormalizedRawValue constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetNormalizedRawValue Property Definitions ****************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandDigitRecognizer_eventGetNormalizedRawValue_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "GetNormalizedRawValue", Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::IsdkHandDigitRecognizer_eventGetNormalizedRawValue_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetNormalizedRawValue Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "GetNormalizedRawValue", 	Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::IsdkHandDigitRecognizer_eventGetNormalizedRawValue_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue_Statics::IsdkHandDigitRecognizer_eventGetNormalizedRawValue_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue()
 {
@@ -76,21 +89,34 @@ struct Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the expected range of the recognizer, represented by min/max */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the expected range of the recognizer, represented by min/max" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRawExpectedRange constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRawExpectedRange constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRawExpectedRange Property Definitions ******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandDigitRecognizer_eventGetRawExpectedRange_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector2f, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "GetRawExpectedRange", Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::IsdkHandDigitRecognizer_eventGetRawExpectedRange_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRawExpectedRange Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "GetRawExpectedRange", 	Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::IsdkHandDigitRecognizer_eventGetRawExpectedRange_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange_Statics::IsdkHandDigitRecognizer_eventGetRawExpectedRange_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange()
 {
@@ -120,21 +146,34 @@ struct Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the raw value of the recognizer */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the raw value of the recognizer" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRawValue constinit property declarations ***************************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRawValue constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRawValue Property Definitions **************************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandDigitRecognizer_eventGetRawValue_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "GetRawValue", Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::IsdkHandDigitRecognizer_eventGetRawValue_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRawValue Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "GetRawValue", 	Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::IsdkHandDigitRecognizer_eventGetRawValue_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue_Statics::IsdkHandDigitRecognizer_eventGetRawValue_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue()
 {
@@ -164,16 +203,25 @@ struct Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Whether or not the API recognizer is active */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether or not the API recognizer is active" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsActive constinit property declarations ******************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsActive constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsActive Property Definitions *****************************************
 void Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkHandDigitRecognizer_eventIsActive_Parms*)Obj)->ReturnValue = 1;
@@ -183,7 +231,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "IsActive", Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::IsdkHandDigitRecognizer_eventIsActive_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsActive Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "IsActive", 	Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::IsdkHandDigitRecognizer_eventIsActive_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive_Statics::IsdkHandDigitRecognizer_eventIsActive_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive()
 {
@@ -213,21 +265,34 @@ struct Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Primary driver for updating the recognizer (including instantiating the API implementation if\n   * needed), needs to be called externally */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Primary driver for updating the recognizer (including instantiating the API implementation if\n  * needed), needs to be called externally" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function UpdateState constinit property declarations ***************************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function UpdateState constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function UpdateState Property Definitions **************************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::NewProp_DeltaTime = { "DeltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandDigitRecognizer_eventUpdateState_Parms, DeltaTime), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::NewProp_DeltaTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "UpdateState", Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::IsdkHandDigitRecognizer_eventUpdateState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::Function_MetaDataParams)},  };
+// ********** End Function UpdateState Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandDigitRecognizer, nullptr, "UpdateState", 	Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::IsdkHandDigitRecognizer_eventUpdateState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState_Statics::IsdkHandDigitRecognizer_eventUpdateState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState()
 {
@@ -249,18 +314,6 @@ DEFINE_FUNCTION(UIsdkHandDigitRecognizer::execUpdateState)
 // ********** End Class UIsdkHandDigitRecognizer Function UpdateState ******************************
 
 // ********** Begin Class UIsdkHandDigitRecognizer *************************************************
-void UIsdkHandDigitRecognizer::StaticRegisterNativesUIsdkHandDigitRecognizer()
-{
-	UClass* Class = UIsdkHandDigitRecognizer::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetNormalizedRawValue", &UIsdkHandDigitRecognizer::execGetNormalizedRawValue },
-		{ "GetRawExpectedRange", &UIsdkHandDigitRecognizer::execGetRawExpectedRange },
-		{ "GetRawValue", &UIsdkHandDigitRecognizer::execGetRawValue },
-		{ "IsActive", &UIsdkHandDigitRecognizer::execIsActive },
-		{ "UpdateState", &UIsdkHandDigitRecognizer::execUpdateState },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandDigitRecognizer;
 UClass* UIsdkHandDigitRecognizer::GetPrivateStaticClass()
 {
@@ -268,7 +321,7 @@ UClass* UIsdkHandDigitRecognizer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandDigitRecognizer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandDigitRecognizer"),
 			Z_Registration_Info_UClass_UIsdkHandDigitRecognizer.InnerSingleton,
 			StaticRegisterNativesUIsdkHandDigitRecognizer,
@@ -296,52 +349,77 @@ struct Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Container for API-driven Digit Recognizer\n */" },
+#endif
 		{ "IncludePath", "HandPoseDetection/IsdkHandDigitRecognizer.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Container for API-driven Digit Recognizer" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandMesh_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The Hand Visual Component referenced during digit recognition */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ExposeOnSpawn", "" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The Hand Visual Component referenced during digit recognition" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RangeParameters_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Struct of upper and lower tolerances and limits during digit recognition */" },
+#endif
 		{ "ExposeOnSpawn", "" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandDigitRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Struct of upper and lower tolerances and limits during digit recognition" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandDigitRecognizer constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandMesh;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RangeParameters;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandDigitRecognizer constinit property declarations *******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetNormalizedRawValue"), .Pointer = &UIsdkHandDigitRecognizer::execGetNormalizedRawValue },
+		{ .NameUTF8 = UTF8TEXT("GetRawExpectedRange"), .Pointer = &UIsdkHandDigitRecognizer::execGetRawExpectedRange },
+		{ .NameUTF8 = UTF8TEXT("GetRawValue"), .Pointer = &UIsdkHandDigitRecognizer::execGetRawValue },
+		{ .NameUTF8 = UTF8TEXT("IsActive"), .Pointer = &UIsdkHandDigitRecognizer::execIsActive },
+		{ .NameUTF8 = UTF8TEXT("UpdateState"), .Pointer = &UIsdkHandDigitRecognizer::execUpdateState },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue, "GetNormalizedRawValue" }, // 3561605733
-		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange, "GetRawExpectedRange" }, // 2631827390
-		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue, "GetRawValue" }, // 3749529552
-		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive, "IsActive" }, // 814784622
-		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState, "UpdateState" }, // 2798112288
+		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetNormalizedRawValue, "GetNormalizedRawValue" }, // 57922314
+		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawExpectedRange, "GetRawExpectedRange" }, // 643127888
+		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_GetRawValue, "GetRawValue" }, // 3651884688
+		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_IsActive, "IsActive" }, // 3341721049
+		{ &Z_Construct_UFunction_UIsdkHandDigitRecognizer_UpdateState, "UpdateState" }, // 848466990
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkHandDigitRecognizer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics
+
+// ********** Begin Class UIsdkHandDigitRecognizer Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::NewProp_HandMesh = { "HandMesh", nullptr, (EPropertyFlags)0x001100000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandDigitRecognizer, HandMesh), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandMesh_MetaData), NewProp_HandMesh_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::NewProp_RangeParameters = { "RangeParameters", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandDigitRecognizer, RangeParameters), Z_Construct_UScriptStruct_FIsdkDigitRangeParams, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RangeParameters_MetaData), NewProp_RangeParameters_MetaData) }; // 2967017442
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::NewProp_RangeParameters = { "RangeParameters", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandDigitRecognizer, RangeParameters), Z_Construct_UScriptStruct_FIsdkDigitRangeParams, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RangeParameters_MetaData), NewProp_RangeParameters_MetaData) }; // 1998521608
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::NewProp_HandMesh,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::NewProp_RangeParameters,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandDigitRecognizer Property Definitions ******************************
 UObject* (*const Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -362,6 +440,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandDigitRecognize
 	0x009000A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::Class_MetaDataParams)
 };
+void UIsdkHandDigitRecognizer::StaticRegisterNativesUIsdkHandDigitRecognizer()
+{
+	UClass* Class = UIsdkHandDigitRecognizer::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandDigitRecognizer_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandDigitRecognizer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandDigitRecognizer.OuterSingleton)
@@ -371,21 +454,23 @@ UClass* Z_Construct_UClass_UIsdkHandDigitRecognizer()
 	return Z_Registration_Info_UClass_UIsdkHandDigitRecognizer.OuterSingleton;
 }
 UIsdkHandDigitRecognizer::UIsdkHandDigitRecognizer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandDigitRecognizer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandDigitRecognizer);
 UIsdkHandDigitRecognizer::~UIsdkHandDigitRecognizer() {}
 // ********** End Class UIsdkHandDigitRecognizer ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandDigitRecognizer, UIsdkHandDigitRecognizer::StaticClass, TEXT("UIsdkHandDigitRecognizer"), &Z_Registration_Info_UClass_UIsdkHandDigitRecognizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandDigitRecognizer), 1502665721U) },
+		{ Z_Construct_UClass_UIsdkHandDigitRecognizer, UIsdkHandDigitRecognizer::StaticClass, TEXT("UIsdkHandDigitRecognizer"), &Z_Registration_Info_UClass_UIsdkHandDigitRecognizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandDigitRecognizer), 3040151446U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_545637479(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_3813302145{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandDigitRecognizer_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

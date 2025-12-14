@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class IIsdkIHmdDataSource;
 class UIsdkGrabberComponent;
 class UIsdkGrabInteractionRigComponent;
@@ -30,14 +29,14 @@ class UIsdkRigModifier;
 struct FIsdkVirtualUserInfo;
 
 // ********** Begin Delegate FIsdkRigComponentLifecycleEvent ***************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_47_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_47_DELEGATE \
 OCULUSINTERACTIONPREBUILTS_API void FIsdkRigComponentLifecycleEvent_DelegateWrapper(const FMulticastScriptDelegate& IsdkRigComponentLifecycleEvent);
 
 
 // ********** End Delegate FIsdkRigComponentLifecycleEvent *****************************************
 
 // ********** Begin Class UIsdkRigComponent ********************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleVisualsDataSourcesCreatedEvent); \
 	DECLARE_FUNCTION(execGetHmdDataSource); \
 	DECLARE_FUNCTION(execGetActiveRigModifiers); \
@@ -54,20 +53,21 @@ OCULUSINTERACTIONPREBUILTS_API void FIsdkRigComponentLifecycleEvent_DelegateWrap
 	DECLARE_FUNCTION(execGetPokeInteractor);
 
 
+struct Z_Construct_UClass_UIsdkRigComponent_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkRigComponent_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkRigComponent(); \
-	friend struct Z_Construct_UClass_UIsdkRigComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkRigComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkRigComponent_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkRigComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkRigComponent, USceneComponent, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkRigComponent_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkRigComponent)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkRigComponent(UIsdkRigComponent&&) = delete; \
 	UIsdkRigComponent(const UIsdkRigComponent&) = delete; \
@@ -77,13 +77,13 @@ public: \
 	NO_API virtual ~UIsdkRigComponent();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_66_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_66_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h_69_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -93,6 +93,6 @@ class UIsdkRigComponent;
 // ********** End Class UIsdkRigComponent **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkRigComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

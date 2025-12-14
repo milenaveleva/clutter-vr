@@ -10,7 +10,7 @@
 #include "Materials/MaterialInstanceDynamic.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkRoundedBoxFunctionLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -29,17 +29,10 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FIsdkRoundedBoxProperties *****************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties;
-class UScriptStruct* FIsdkRoundedBoxProperties::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkRoundedBoxProperties"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkRoundedBoxProperties); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkRoundedBoxProperties); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -70,6 +63,8 @@ struct Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkRoundedBoxProperties constinit property declarations *********
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_InnerBorderRadius;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OuterBorderRadius;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Size;
@@ -77,12 +72,24 @@ struct Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_FillColor;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_OutlineColor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkRoundedBoxProperties constinit property declarations ***********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkRoundedBoxProperties>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties;
+class UScriptStruct* FIsdkRoundedBoxProperties::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, (UObject*)Z_Construct_UPackage__Script_OculusInteractionPrebuilts(), TEXT("IsdkRoundedBoxProperties"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkRoundedBoxProperties Property Definitions ********************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::NewProp_InnerBorderRadius = { "InnerBorderRadius", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRoundedBoxProperties, InnerBorderRadius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InnerBorderRadius_MetaData), NewProp_InnerBorderRadius_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::NewProp_OuterBorderRadius = { "OuterBorderRadius", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRoundedBoxProperties, OuterBorderRadius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OuterBorderRadius_MetaData), NewProp_OuterBorderRadius_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkRoundedBoxProperties, Size), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Size_MetaData), NewProp_Size_MetaData) };
@@ -98,6 +105,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::NewProp_OutlineColor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkRoundedBoxProperties Property Definitions **********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
 	nullptr,
@@ -117,7 +125,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.InnerSingleton, Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkRoundedBoxProperties *******************************************
 
@@ -147,6 +155,8 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Sta
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function CreateRoundedBox constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Target;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Properties;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Parent;
@@ -155,10 +165,13 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Sta
 	static void NewProp_TwoSided_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_TwoSided;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function CreateRoundedBox constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function CreateRoundedBox Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_Target = { "Target", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms, Target), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_Properties = { "Properties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms, Properties), Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, METADATA_PARAMS(0, nullptr) }; // 2585525129
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_Properties = { "Properties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms, Properties), Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, METADATA_PARAMS(0, nullptr) }; // 1727093425
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_Parent = { "Parent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms, Parent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Parent_MetaData), NewProp_Parent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0010000000080180, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComponent_MetaData), NewProp_MeshComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -176,7 +189,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::NewProp_TwoSided,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "CreateRoundedBox", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::Function_MetaDataParams)},  };
+// ********** End Function CreateRoundedBox Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "CreateRoundedBox", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox_Statics::IsdkRoundedBoxFunctionLibrary_eventCreateRoundedBox_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox()
 {
@@ -220,12 +237,17 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScal
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetMeshComponentScale constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Size;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OuterBorderRadius;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetMeshComponentScale constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetMeshComponentScale Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetMeshComponentScale_Parms, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComponent_MetaData), NewProp_MeshComponent_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetMeshComponentScale_Parms, Size), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::NewProp_OuterBorderRadius = { "OuterBorderRadius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetMeshComponentScale_Parms, OuterBorderRadius), METADATA_PARAMS(0, nullptr) };
@@ -235,7 +257,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::NewProp_OuterBorderRadius,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetMeshComponentScale", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::IsdkRoundedBoxFunctionLibrary_eventSetMeshComponentScale_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetMeshComponentScale Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetMeshComponentScale", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::IsdkRoundedBoxFunctionLibrary_eventSetMeshComponentScale_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale_Statics::IsdkRoundedBoxFunctionLibrary_eventSetMeshComponentScale_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale()
 {
@@ -274,13 +300,18 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensi
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedBoxDimensions constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedBoxMaterial;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Size;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_InnerBorderRadius;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OuterBorderRadius;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRoundedBoxDimensions constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRoundedBoxDimensions Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxDimensions_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxDimensions_Parms, Size), Z_Construct_UScriptStruct_FVector2D, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::NewProp_InnerBorderRadius = { "InnerBorderRadius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxDimensions_Parms, InnerBorderRadius), METADATA_PARAMS(0, nullptr) };
@@ -292,7 +323,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::NewProp_OuterBorderRadius,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxDimensions", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxDimensions_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRoundedBoxDimensions Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxDimensions", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxDimensions_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxDimensions_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions()
 {
@@ -330,11 +365,16 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMateria
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedBoxMaterialBorderColor constinit property declarations ******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedBoxMaterial;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Color;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRoundedBoxMaterialBorderColor constinit property declarations ********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRoundedBoxMaterialBorderColor Property Definitions *****************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialBorderColor_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialBorderColor_Parms, Color), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::PropPointers[] = {
@@ -342,7 +382,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::NewProp_Color,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialBorderColor", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialBorderColor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRoundedBoxMaterialBorderColor Property Definitions *******************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialBorderColor", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialBorderColor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialBorderColor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor()
 {
@@ -378,11 +422,16 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMateria
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedBoxMaterialColor constinit property declarations ************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedBoxMaterial;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Color;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRoundedBoxMaterialColor constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRoundedBoxMaterialColor Property Definitions ***********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialColor_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialColor_Parms, Color), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::PropPointers[] = {
@@ -390,7 +439,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::NewProp_Color,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialColor", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialColor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRoundedBoxMaterialColor Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialColor", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialColor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialColor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor()
 {
@@ -426,11 +479,16 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMateria
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedBoxMaterialCornerRadius constinit property declarations *****
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedBoxMaterial;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Radii;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRoundedBoxMaterialCornerRadius constinit property declarations *******
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRoundedBoxMaterialCornerRadius Property Definitions ****************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialCornerRadius_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::NewProp_Radii = { "Radii", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialCornerRadius_Parms, Radii), Z_Construct_UScriptStruct_FVector4, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::PropPointers[] = {
@@ -438,7 +496,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::NewProp_Radii,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialCornerRadius", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialCornerRadius_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRoundedBoxMaterialCornerRadius Property Definitions ******************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialCornerRadius", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialCornerRadius_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04822401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialCornerRadius_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius()
 {
@@ -474,19 +536,28 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMateria
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRoundedBoxMaterialParameters constinit property declarations *******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedBoxMaterial;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Properties;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRoundedBoxMaterialParameters constinit property declarations *********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRoundedBoxMaterialParameters Property Definitions ******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialParameters_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::NewProp_Properties = { "Properties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialParameters_Parms, Properties), Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, METADATA_PARAMS(0, nullptr) }; // 2585525129
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::NewProp_Properties = { "Properties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialParameters_Parms, Properties), Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, METADATA_PARAMS(0, nullptr) }; // 1727093425
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::NewProp_RoundedBoxMaterial,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::NewProp_Properties,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialParameters", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialParameters_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRoundedBoxMaterialParameters Property Definitions ********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetRoundedBoxMaterialParameters", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialParameters_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters_Statics::IsdkRoundedBoxFunctionLibrary_eventSetRoundedBoxMaterialParameters_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters()
 {
@@ -534,6 +605,8 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Stat
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetupRoundedBox constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Target;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Properties;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Parent;
@@ -542,10 +615,13 @@ struct Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Stat
 	static void NewProp_TwoSided_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_TwoSided;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetupRoundedBox constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetupRoundedBox Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_Target = { "Target", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms, Target), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_Properties = { "Properties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms, Properties), Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, METADATA_PARAMS(0, nullptr) }; // 2585525129
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_Properties = { "Properties", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms, Properties), Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties, METADATA_PARAMS(0, nullptr) }; // 1727093425
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_Parent = { "Parent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms, Parent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Parent_MetaData), NewProp_Parent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComponent_MetaData), NewProp_MeshComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_RoundedBoxMaterial = { "RoundedBoxMaterial", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms, RoundedBoxMaterial), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -563,7 +639,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::NewProp_TwoSided,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetupRoundedBox", Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetupRoundedBox Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, nullptr, "SetupRoundedBox", 	Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox_Statics::IsdkRoundedBoxFunctionLibrary_eventSetupRoundedBox_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox()
 {
@@ -590,21 +670,6 @@ DEFINE_FUNCTION(UIsdkRoundedBoxFunctionLibrary::execSetupRoundedBox)
 // ********** End Class UIsdkRoundedBoxFunctionLibrary Function SetupRoundedBox ********************
 
 // ********** Begin Class UIsdkRoundedBoxFunctionLibrary *******************************************
-void UIsdkRoundedBoxFunctionLibrary::StaticRegisterNativesUIsdkRoundedBoxFunctionLibrary()
-{
-	UClass* Class = UIsdkRoundedBoxFunctionLibrary::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "CreateRoundedBox", &UIsdkRoundedBoxFunctionLibrary::execCreateRoundedBox },
-		{ "SetMeshComponentScale", &UIsdkRoundedBoxFunctionLibrary::execSetMeshComponentScale },
-		{ "SetRoundedBoxDimensions", &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxDimensions },
-		{ "SetRoundedBoxMaterialBorderColor", &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialBorderColor },
-		{ "SetRoundedBoxMaterialColor", &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialColor },
-		{ "SetRoundedBoxMaterialCornerRadius", &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialCornerRadius },
-		{ "SetRoundedBoxMaterialParameters", &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialParameters },
-		{ "SetupRoundedBox", &UIsdkRoundedBoxFunctionLibrary::execSetupRoundedBox },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary;
 UClass* UIsdkRoundedBoxFunctionLibrary::GetPrivateStaticClass()
 {
@@ -612,7 +677,7 @@ UClass* UIsdkRoundedBoxFunctionLibrary::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkRoundedBoxFunctionLibrary"),
 			Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary.InnerSingleton,
 			StaticRegisterNativesUIsdkRoundedBoxFunctionLibrary,
@@ -638,28 +703,43 @@ struct Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\n */" },
+#endif
 		{ "IncludePath", "RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 		{ "ModuleRelativePath", "Public/RoundedBoxVisuals/IsdkRoundedBoxFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkRoundedBoxFunctionLibrary constinit property declarations ***********
+// ********** End Class UIsdkRoundedBoxFunctionLibrary constinit property declarations *************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("CreateRoundedBox"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execCreateRoundedBox },
+		{ .NameUTF8 = UTF8TEXT("SetMeshComponentScale"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetMeshComponentScale },
+		{ .NameUTF8 = UTF8TEXT("SetRoundedBoxDimensions"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxDimensions },
+		{ .NameUTF8 = UTF8TEXT("SetRoundedBoxMaterialBorderColor"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialBorderColor },
+		{ .NameUTF8 = UTF8TEXT("SetRoundedBoxMaterialColor"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialColor },
+		{ .NameUTF8 = UTF8TEXT("SetRoundedBoxMaterialCornerRadius"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialCornerRadius },
+		{ .NameUTF8 = UTF8TEXT("SetRoundedBoxMaterialParameters"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetRoundedBoxMaterialParameters },
+		{ .NameUTF8 = UTF8TEXT("SetupRoundedBox"), .Pointer = &UIsdkRoundedBoxFunctionLibrary::execSetupRoundedBox },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox, "CreateRoundedBox" }, // 3896583238
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale, "SetMeshComponentScale" }, // 3866221788
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions, "SetRoundedBoxDimensions" }, // 680366404
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor, "SetRoundedBoxMaterialBorderColor" }, // 2527836501
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor, "SetRoundedBoxMaterialColor" }, // 2660996405
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius, "SetRoundedBoxMaterialCornerRadius" }, // 956938068
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters, "SetRoundedBoxMaterialParameters" }, // 1464035589
-		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox, "SetupRoundedBox" }, // 161440761
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_CreateRoundedBox, "CreateRoundedBox" }, // 931351292
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetMeshComponentScale, "SetMeshComponentScale" }, // 2350640351
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxDimensions, "SetRoundedBoxDimensions" }, // 1259232310
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialBorderColor, "SetRoundedBoxMaterialBorderColor" }, // 2820289967
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialColor, "SetRoundedBoxMaterialColor" }, // 3634922776
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialCornerRadius, "SetRoundedBoxMaterialCornerRadius" }, // 3705287144
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetRoundedBoxMaterialParameters, "SetRoundedBoxMaterialParameters" }, // 3884958964
+		{ &Z_Construct_UFunction_UIsdkRoundedBoxFunctionLibrary_SetupRoundedBox, "SetupRoundedBox" }, // 3208030500
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkRoundedBoxFunctionLibrary>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics
 UObject* (*const Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -680,6 +760,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkRoundedBoxFunction
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics::Class_MetaDataParams)
 };
+void UIsdkRoundedBoxFunctionLibrary::StaticRegisterNativesUIsdkRoundedBoxFunctionLibrary()
+{
+	UClass* Class = UIsdkRoundedBoxFunctionLibrary::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary()
 {
 	if (!Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary.OuterSingleton)
@@ -689,24 +774,26 @@ UClass* Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary()
 	return Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary.OuterSingleton;
 }
 UIsdkRoundedBoxFunctionLibrary::UIsdkRoundedBoxFunctionLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkRoundedBoxFunctionLibrary);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkRoundedBoxFunctionLibrary);
 UIsdkRoundedBoxFunctionLibrary::~UIsdkRoundedBoxFunctionLibrary() {}
 // ********** End Class UIsdkRoundedBoxFunctionLibrary *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkRoundedBoxProperties::StaticStruct, Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::NewStructOps, TEXT("IsdkRoundedBoxProperties"), &Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRoundedBoxProperties), 2585525129U) },
+		{ FIsdkRoundedBoxProperties::StaticStruct, Z_Construct_UScriptStruct_FIsdkRoundedBoxProperties_Statics::NewStructOps, TEXT("IsdkRoundedBoxProperties"),&Z_Registration_Info_UScriptStruct_FIsdkRoundedBoxProperties, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkRoundedBoxProperties), 1727093425U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, UIsdkRoundedBoxFunctionLibrary::StaticClass, TEXT("UIsdkRoundedBoxFunctionLibrary"), &Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRoundedBoxFunctionLibrary), 1338550903U) },
+		{ Z_Construct_UClass_UIsdkRoundedBoxFunctionLibrary, UIsdkRoundedBoxFunctionLibrary::StaticClass, TEXT("UIsdkRoundedBoxFunctionLibrary"), &Z_Registration_Info_UClass_UIsdkRoundedBoxFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRoundedBoxFunctionLibrary), 2751079763U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_4254447432{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_1475124813(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_RoundedBoxVisuals_IsdkRoundedBoxFunctionLibrary_h__Script_OculusInteractionPrebuilts_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

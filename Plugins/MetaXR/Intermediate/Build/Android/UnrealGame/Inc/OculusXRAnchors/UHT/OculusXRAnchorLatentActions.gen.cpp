@@ -9,7 +9,7 @@
 #include "OculusXRAnchorTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRAnchorLatentActions() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -102,19 +102,28 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Creat
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Success Property Definitions 
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Success_Parms, Anchor), Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchor_MetaData), NewProp_Anchor_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::NewProp_Anchor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Success Property Definitions *
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature()
 {
@@ -151,16 +160,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Creat
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Failure Property Definitions 
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_CreateSpatialAnchor_Failure Property Definitions *
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_CreateSpatialAnchor_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature()
 {
@@ -197,22 +215,31 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Erase
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchor_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UUID;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchor_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchor_Success Property Definitions *******
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_UUID = { "UUID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms, UUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_UUID = { "UUID", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms, UUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_Actor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_UUID,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchor_Success Property Definitions *********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature()
 {
@@ -251,16 +278,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Erase
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchor_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchor_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchor_Failure Property Definitions *******
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchor_Failure Property Definitions *********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchor_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature()
 {
@@ -299,19 +335,28 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveA
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchor_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchor_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchor_Success Property Definitions ********
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Success_Parms, Anchor), Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchor_MetaData), NewProp_Anchor_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::NewProp_Anchor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchor_Success Property Definitions **********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature()
 {
@@ -348,16 +393,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveA
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchor_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchor_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchor_Failure Property Definitions ********
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchor_Failure Property Definitions **********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchor_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature()
 {
@@ -397,22 +451,31 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveA
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchorList_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Anchors;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchorList_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchorList_Success Property Definitions ****
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000080000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Success_Parms, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Anchors_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Anchors,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchorList_Success Property Definitions ******
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature()
 {
@@ -449,16 +512,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveA
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchorList_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchorList_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchorList_Failure Property Definitions ****
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchorList_Failure Property Definitions ******
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchorList_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature()
 {
@@ -497,22 +569,31 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Query
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_QueryAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_QueryResults_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_QueryResults;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_QueryAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_QueryResults_Inner = { "QueryResults", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult, METADATA_PARAMS(0, nullptr) }; // 635753313
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_QueryResults = { "QueryResults", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms, QueryResults), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QueryResults_MetaData), NewProp_QueryResults_MetaData) }; // 635753313
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_QueryAnchors_Success Property Definitions ******
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_QueryResults_Inner = { "QueryResults", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult, METADATA_PARAMS(0, nullptr) }; // 3522842805
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_QueryResults = { "QueryResults", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms, QueryResults), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QueryResults_MetaData), NewProp_QueryResults_MetaData) }; // 3522842805
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_QueryResults_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_QueryResults,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_QueryAnchors_Success Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature()
 {
@@ -549,16 +630,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Query
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_QueryAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_QueryAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_QueryAnchors_Failure Property Definitions ******
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_QueryAnchors_Failure Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_QueryAnchors_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature()
 {
@@ -599,6 +689,8 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetCo
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetComponentStatus_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ComponentType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ComponentType;
@@ -606,17 +698,20 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetCo
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Enabled;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SetComponentStatus_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetComponentStatus_Success Property Definitions 
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Anchor = { "Anchor", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms, Anchor), Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchor_MetaData), NewProp_Anchor_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_ComponentType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_ComponentType = { "ComponentType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms, ComponentType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(0, nullptr) }; // 362484532
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_ComponentType = { "ComponentType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms, ComponentType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(0, nullptr) }; // 428507294
 void Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Enabled_SetBit(void* Obj)
 {
 	((_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms*)Obj)->Enabled = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Enabled = { "Enabled", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms), &Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Enabled_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Anchor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_ComponentType_Underlying,
@@ -625,7 +720,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SetComponentStatus_Success Property Definitions **
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature()
 {
@@ -666,16 +765,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetCo
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetComponentStatus_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SetComponentStatus_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetComponentStatus_Failure Property Definitions 
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SetComponentStatus_Failure Property Definitions **
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetComponentStatus_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature()
 {
@@ -711,19 +819,28 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAn
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Success Property Definitions 
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Success_Parms, Component), Z_Construct_UClass_UOculusXRBaseAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::NewProp_Component,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Success Property Definitions 
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature()
 {
@@ -760,16 +877,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAn
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Failure Property Definitions 
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SetAnchorComponentStatus_Failure Property Definitions 
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SetAnchorComponentStatus_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature()
 {
@@ -813,19 +939,24 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Share
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_ShareAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SharedAnchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_SharedAnchors;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_UserIds_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_UserIds;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_ShareAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_ShareAnchors_Success Property Definitions ******
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors_Inner = { "SharedAnchors", nullptr, (EPropertyFlags)0x0000000000080000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors = { "SharedAnchors", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms, SharedAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SharedAnchors_MetaData), NewProp_SharedAnchors_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_UserIds_Inner = { "UserIds", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_UserIds = { "UserIds", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms, UserIds), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UserIds_MetaData), NewProp_UserIds_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors,
@@ -834,7 +965,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_ShareAnchors_Success Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature()
 {
@@ -873,16 +1008,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Share
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_ShareAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_ShareAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_ShareAnchors_Failure Property Definitions ******
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_ShareAnchors_Failure Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchors_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature()
 {
@@ -922,22 +1066,31 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveA
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Anchors;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchors_Success Property Definitions *******
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000080000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Success_Parms, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Anchors_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Anchors,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchors_Success Property Definitions *********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature()
 {
@@ -974,16 +1127,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveA
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_SaveAnchors_Failure Property Definitions *******
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_SaveAnchors_Failure Property Definitions *********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_SaveAnchors_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature()
 {
@@ -1031,6 +1193,8 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Erase
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Anchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Anchors;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorHandles_Inner;
@@ -1039,15 +1203,18 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Erase
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_UUIDs;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchors_Success Property Definitions ******
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000080000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 1603820546
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_UUIDs_Inner = { "UUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_UUIDs = { "UUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, UUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUIDs_MetaData), NewProp_UUIDs_MetaData) }; // 3912340335
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 2459929064
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_UUIDs_Inner = { "UUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_UUIDs = { "UUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, UUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUIDs_MetaData), NewProp_UUIDs_MetaData) }; // 520639859
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Anchors_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Anchors,
@@ -1058,7 +1225,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchors_Success Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature()
 {
@@ -1099,16 +1270,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Erase
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_EraseAnchors_Failure Property Definitions ******
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_EraseAnchors_Failure Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_EraseAnchors_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature()
 {
@@ -1146,19 +1326,28 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Disco
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_DiscoverAnchors_Discovered constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DiscoveryResult_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_DiscoveryResult;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_DiscoverAnchors_Discovered constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::NewProp_DiscoveryResult_Inner = { "DiscoveryResult", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult, METADATA_PARAMS(0, nullptr) }; // 2389389487
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::NewProp_DiscoveryResult = { "DiscoveryResult", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Discovered_Parms, DiscoveryResult), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DiscoveryResult_MetaData), NewProp_DiscoveryResult_MetaData) }; // 2389389487
+
+// ********** Begin Delegate FOculusXR_LatentAction_DiscoverAnchors_Discovered Property Definitions 
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::NewProp_DiscoveryResult_Inner = { "DiscoveryResult", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult, METADATA_PARAMS(0, nullptr) }; // 3376724701
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::NewProp_DiscoveryResult = { "DiscoveryResult", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Discovered_Parms, DiscoveryResult), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DiscoveryResult_MetaData), NewProp_DiscoveryResult_MetaData) }; // 3376724701
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::NewProp_DiscoveryResult_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::NewProp_DiscoveryResult,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Discovered_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_DiscoverAnchors_Discovered Property Definitions **
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Discovered_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Discovered_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature()
 {
@@ -1193,16 +1382,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Disco
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_DiscoverAnchors_Complete constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_DiscoverAnchors_Complete constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Complete_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_DiscoverAnchors_Complete Property Definitions **
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Complete_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Complete_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_DiscoverAnchors_Complete Property Definitions ****
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Complete_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Complete_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature()
 {
@@ -1237,16 +1435,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Disco
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_DiscoverAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_DiscoverAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_DiscoverAnchors_Failure Property Definitions ***
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_DiscoverAnchors_Failure Property Definitions *****
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_DiscoverAnchors_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature()
 {
@@ -1285,22 +1492,31 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSh
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_GetSharedAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SharedAnchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_SharedAnchors;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_GetSharedAnchors_Success constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors_Inner = { "SharedAnchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult, METADATA_PARAMS(0, nullptr) }; // 2389389487
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors = { "SharedAnchors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms, SharedAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SharedAnchors_MetaData), NewProp_SharedAnchors_MetaData) }; // 2389389487
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_GetSharedAnchors_Success Property Definitions **
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors_Inner = { "SharedAnchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult, METADATA_PARAMS(0, nullptr) }; // 3376724701
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors = { "SharedAnchors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms, SharedAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SharedAnchors_MetaData), NewProp_SharedAnchors_MetaData) }; // 3376724701
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_SharedAnchors,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_GetSharedAnchors_Success Property Definitions ****
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Success_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature()
 {
@@ -1337,16 +1553,25 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSh
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_GetSharedAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_GetSharedAnchors_Failure constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+
+// ********** Begin Delegate FOculusXR_LatentAction_GetSharedAnchors_Failure Property Definitions **
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Failure_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Failure_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_GetSharedAnchors_Failure Property Definitions ****
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Failure_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchors_Failure_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature()
 {
@@ -1390,6 +1615,8 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Share
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_ShareAnchorsWithGroups_Complete constinit property declarations 
 	static void NewProp_Success_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Success;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Groups_Inner;
@@ -1398,18 +1625,21 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_Share
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_AnchorHandles;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_ShareAnchorsWithGroups_Complete constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_ShareAnchorsWithGroups_Complete Property Definitions 
 void Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Success_SetBit(void* Obj)
 {
 	((_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms*)Obj)->Success = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms), &Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Success_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Groups_Inner = { "Groups", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Groups = { "Groups", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms, Groups), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Groups_MetaData), NewProp_Groups_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 1603820546
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 1603820546
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Groups_Inner = { "Groups", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Groups = { "Groups", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms, Groups), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Groups_MetaData), NewProp_Groups_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 2459929064
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 2459929064
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Success,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Groups_Inner,
@@ -1419,7 +1649,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_ShareAnchorsWithGroups_Complete Property Definitions 
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_ShareAnchorsWithGroups_Complete_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature()
 {
@@ -1465,22 +1699,27 @@ struct Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSh
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete constinit property declarations 
 	static void NewProp_Success_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Success;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Anchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Anchors;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete Property Definitions 
 void Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Success_SetBit(void* Obj)
 {
 	((_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms*)Obj)->Success = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms), &Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Success_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRAnchor, METADATA_PARAMS(0, nullptr) }; // 2144909794
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) }; // 2144909794
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 2715698107
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRAnchor, METADATA_PARAMS(0, nullptr) }; // 860553646
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) }; // 860553646
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms, Result), Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult, METADATA_PARAMS(0, nullptr) }; // 552975918
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Success,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Anchors_Inner,
@@ -1488,7 +1727,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::NewProp_Result,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature", Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete Property Definitions 
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors, nullptr, "OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00530000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature_Statics::_Script_OculusXRAnchors_eventOculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature()
 {
@@ -1533,12 +1776,17 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAs
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncCreateSpatialAnchor constinit property declarations ******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorTransform;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncCreateSpatialAnchor constinit property declarations ********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncCreateSpatialAnchor Property Definitions *****************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_CreateSpatialAnchor_eventOculusXRAsyncCreateSpatialAnchor_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::NewProp_AnchorTransform = { "AnchorTransform", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_CreateSpatialAnchor_eventOculusXRAsyncCreateSpatialAnchor_Parms, AnchorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorTransform_MetaData), NewProp_AnchorTransform_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_CreateSpatialAnchor_eventOculusXRAsyncCreateSpatialAnchor_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -1548,7 +1796,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor, nullptr, "OculusXRAsyncCreateSpatialAnchor", Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::OculusXRAsyncAction_CreateSpatialAnchor_eventOculusXRAsyncCreateSpatialAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncCreateSpatialAnchor Property Definitions *******************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor, nullptr, "OculusXRAsyncCreateSpatialAnchor", 	Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::OculusXRAsyncAction_CreateSpatialAnchor_eventOculusXRAsyncCreateSpatialAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor_Statics::OculusXRAsyncAction_CreateSpatialAnchor_eventOculusXRAsyncCreateSpatialAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor()
 {
@@ -1571,14 +1823,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_CreateSpatialAnchor::execOculusXRAsyncCreat
 // ********** End Class UOculusXRAsyncAction_CreateSpatialAnchor Function OculusXRAsyncCreateSpatialAnchor 
 
 // ********** Begin Class UOculusXRAsyncAction_CreateSpatialAnchor *********************************
-void UOculusXRAsyncAction_CreateSpatialAnchor::StaticRegisterNativesUOculusXRAsyncAction_CreateSpatialAnchor()
-{
-	UClass* Class = UOculusXRAsyncAction_CreateSpatialAnchor::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncCreateSpatialAnchor", &UOculusXRAsyncAction_CreateSpatialAnchor::execOculusXRAsyncCreateSpatialAnchor },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor;
 UClass* UOculusXRAsyncAction_CreateSpatialAnchor::GetPrivateStaticClass()
 {
@@ -1586,7 +1830,7 @@ UClass* UOculusXRAsyncAction_CreateSpatialAnchor::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_CreateSpatialAnchor"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_CreateSpatialAnchor,
@@ -1612,10 +1856,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Create Anchor\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Create Anchor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -1624,27 +1872,39 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetActor_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Target actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Target actor" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_CreateSpatialAnchor constinit property declarations *
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_CreateSpatialAnchor constinit property declarations ***
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncCreateSpatialAnchor"), .Pointer = &UOculusXRAsyncAction_CreateSpatialAnchor::execOculusXRAsyncCreateSpatialAnchor },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor, "OculusXRAsyncCreateSpatialAnchor" }, // 3999260197
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_CreateSpatialAnchor_OculusXRAsyncCreateSpatialAnchor, "OculusXRAsyncCreateSpatialAnchor" }, // 3593254126
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_CreateSpatialAnchor>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_CreateSpatialAnchor, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2001380779
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_CreateSpatialAnchor, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2383007011
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_CreateSpatialAnchor Property Definitions ************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_CreateSpatialAnchor, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2262047761
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_CreateSpatialAnchor, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_CreateSpatialAnchor_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 738150542
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_CreateSpatialAnchor, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActor_MetaData), NewProp_TargetActor_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_Success,
@@ -1652,6 +1912,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::NewProp_TargetActor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_CreateSpatialAnchor Property Definitions **************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -1672,6 +1933,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Cr
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_CreateSpatialAnchor::StaticRegisterNativesUOculusXRAsyncAction_CreateSpatialAnchor()
+{
+	UClass* Class = UOculusXRAsyncAction_CreateSpatialAnchor::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor.OuterSingleton)
@@ -1681,7 +1947,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor.OuterSingleton;
 }
 UOculusXRAsyncAction_CreateSpatialAnchor::UOculusXRAsyncAction_CreateSpatialAnchor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_CreateSpatialAnchor);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_CreateSpatialAnchor);
 UOculusXRAsyncAction_CreateSpatialAnchor::~UOculusXRAsyncAction_CreateSpatialAnchor() {}
 // ********** End Class UOculusXRAsyncAction_CreateSpatialAnchor ***********************************
 
@@ -1699,11 +1965,16 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncErase
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncEraseAnchor constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncEraseAnchor constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncEraseAnchor Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchor_eventOculusXRAsyncEraseAnchor_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchor_eventOculusXRAsyncEraseAnchor_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::PropPointers[] = {
@@ -1711,7 +1982,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor, nullptr, "OculusXRAsyncEraseAnchor", Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::OculusXRAsyncAction_EraseAnchor_eventOculusXRAsyncEraseAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncEraseAnchor Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor, nullptr, "OculusXRAsyncEraseAnchor", 	Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::OculusXRAsyncAction_EraseAnchor_eventOculusXRAsyncEraseAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor_Statics::OculusXRAsyncAction_EraseAnchor_eventOculusXRAsyncEraseAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor()
 {
@@ -1733,14 +2008,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_EraseAnchor::execOculusXRAsyncEraseAnchor)
 // ********** End Class UOculusXRAsyncAction_EraseAnchor Function OculusXRAsyncEraseAnchor *********
 
 // ********** Begin Class UOculusXRAsyncAction_EraseAnchor *****************************************
-void UOculusXRAsyncAction_EraseAnchor::StaticRegisterNativesUOculusXRAsyncAction_EraseAnchor()
-{
-	UClass* Class = UOculusXRAsyncAction_EraseAnchor::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncEraseAnchor", &UOculusXRAsyncAction_EraseAnchor::execOculusXRAsyncEraseAnchor },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor;
 UClass* UOculusXRAsyncAction_EraseAnchor::GetPrivateStaticClass()
 {
@@ -1748,7 +2015,7 @@ UClass* UOculusXRAsyncAction_EraseAnchor::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_EraseAnchor"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_EraseAnchor,
@@ -1774,10 +2041,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Erase Anchor\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Erase Anchor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -1786,27 +2057,39 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetActor_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Target actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Target actor" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_EraseAnchor constinit property declarations *********
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_EraseAnchor constinit property declarations ***********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncEraseAnchor"), .Pointer = &UOculusXRAsyncAction_EraseAnchor::execOculusXRAsyncEraseAnchor },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor, "OculusXRAsyncEraseAnchor" }, // 2304449868
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchor_OculusXRAsyncEraseAnchor, "OculusXRAsyncEraseAnchor" }, // 2150764486
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_EraseAnchor>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchor, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 77283667
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchor, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2993454476
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_EraseAnchor Property Definitions ********************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchor, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2946069669
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchor, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchor_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 533783820
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchor, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActor_MetaData), NewProp_TargetActor_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_Success,
@@ -1814,6 +2097,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::NewProp_TargetActor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_EraseAnchor Property Definitions **********************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -1834,6 +2118,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Er
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_EraseAnchor::StaticRegisterNativesUOculusXRAsyncAction_EraseAnchor()
+{
+	UClass* Class = UOculusXRAsyncAction_EraseAnchor::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor.OuterSingleton)
@@ -1843,7 +2132,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor.OuterSingleton;
 }
 UOculusXRAsyncAction_EraseAnchor::UOculusXRAsyncAction_EraseAnchor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_EraseAnchor);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_EraseAnchor);
 UOculusXRAsyncAction_EraseAnchor::~UOculusXRAsyncAction_EraseAnchor() {}
 // ********** End Class UOculusXRAsyncAction_EraseAnchor *******************************************
 
@@ -1862,16 +2151,21 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAn
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncSaveAnchor constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_StorageLocation_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_StorageLocation;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncSaveAnchor constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncSaveAnchor Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_StorageLocation_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_StorageLocation = { "StorageLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms, StorageLocation), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 3607691446
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_StorageLocation = { "StorageLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms, StorageLocation), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 1743423733
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_TargetActor,
@@ -1880,7 +2174,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor, nullptr, "OculusXRAsyncSaveAnchor", Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncSaveAnchor Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor, nullptr, "OculusXRAsyncSaveAnchor", 	Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor_Statics::OculusXRAsyncAction_SaveAnchor_eventOculusXRAsyncSaveAnchor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor()
 {
@@ -1903,14 +2201,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_SaveAnchor::execOculusXRAsyncSaveAnchor)
 // ********** End Class UOculusXRAsyncAction_SaveAnchor Function OculusXRAsyncSaveAnchor ***********
 
 // ********** Begin Class UOculusXRAsyncAction_SaveAnchor ******************************************
-void UOculusXRAsyncAction_SaveAnchor::StaticRegisterNativesUOculusXRAsyncAction_SaveAnchor()
-{
-	UClass* Class = UOculusXRAsyncAction_SaveAnchor::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncSaveAnchor", &UOculusXRAsyncAction_SaveAnchor::execOculusXRAsyncSaveAnchor },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor;
 UClass* UOculusXRAsyncAction_SaveAnchor::GetPrivateStaticClass()
 {
@@ -1918,7 +2208,7 @@ UClass* UOculusXRAsyncAction_SaveAnchor::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_SaveAnchor"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_SaveAnchor,
@@ -1944,10 +2234,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Save Anchor\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Save Anchor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -1956,27 +2250,39 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetActor_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Target actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Target actor" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_SaveAnchor constinit property declarations **********
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_SaveAnchor constinit property declarations ************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncSaveAnchor"), .Pointer = &UOculusXRAsyncAction_SaveAnchor::execOculusXRAsyncSaveAnchor },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor, "OculusXRAsyncSaveAnchor" }, // 18368873
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchor_OculusXRAsyncSaveAnchor, "OculusXRAsyncSaveAnchor" }, // 930741927
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_SaveAnchor>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchor, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 506119649
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchor, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 903057492
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_SaveAnchor Property Definitions *********************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchor, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 3747267529
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchor, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchor_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2446675189
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchor, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActor_MetaData), NewProp_TargetActor_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_Success,
@@ -1984,6 +2290,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::NewProp_TargetActor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_SaveAnchor Property Definitions ***********************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -2004,6 +2311,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Sa
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_SaveAnchor::StaticRegisterNativesUOculusXRAsyncAction_SaveAnchor()
+{
+	UClass* Class = UOculusXRAsyncAction_SaveAnchor::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor.OuterSingleton)
@@ -2013,7 +2325,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor.OuterSingleton;
 }
 UOculusXRAsyncAction_SaveAnchor::UOculusXRAsyncAction_SaveAnchor(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_SaveAnchor);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_SaveAnchor);
 UOculusXRAsyncAction_SaveAnchor::~UOculusXRAsyncAction_SaveAnchor() {}
 // ********** End Class UOculusXRAsyncAction_SaveAnchor ********************************************
 
@@ -2035,18 +2347,23 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSa
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncSaveAnchorList constinit property declarations ***********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetActors;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_StorageLocation_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_StorageLocation;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncSaveAnchorList constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncSaveAnchorList Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_TargetActors_Inner = { "TargetActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_TargetActors = { "TargetActors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms, TargetActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActors_MetaData), NewProp_TargetActors_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_StorageLocation_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_StorageLocation = { "StorageLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms, StorageLocation), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 3607691446
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_StorageLocation = { "StorageLocation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms, StorageLocation), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 1743423733
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_TargetActors_Inner,
@@ -2056,7 +2373,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList, nullptr, "OculusXRAsyncSaveAnchorList", Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncSaveAnchorList Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList, nullptr, "OculusXRAsyncSaveAnchorList", 	Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList_Statics::OculusXRAsyncAction_SaveAnchorList_eventOculusXRAsyncSaveAnchorList_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList()
 {
@@ -2079,14 +2400,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_SaveAnchorList::execOculusXRAsyncSaveAnchor
 // ********** End Class UOculusXRAsyncAction_SaveAnchorList Function OculusXRAsyncSaveAnchorList ***
 
 // ********** Begin Class UOculusXRAsyncAction_SaveAnchorList **************************************
-void UOculusXRAsyncAction_SaveAnchorList::StaticRegisterNativesUOculusXRAsyncAction_SaveAnchorList()
-{
-	UClass* Class = UOculusXRAsyncAction_SaveAnchorList::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncSaveAnchorList", &UOculusXRAsyncAction_SaveAnchorList::execOculusXRAsyncSaveAnchorList },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList;
 UClass* UOculusXRAsyncAction_SaveAnchorList::GetPrivateStaticClass()
 {
@@ -2094,7 +2407,7 @@ UClass* UOculusXRAsyncAction_SaveAnchorList::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_SaveAnchorList"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_SaveAnchorList,
@@ -2120,10 +2433,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Save Anchor List\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Save Anchor List" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -2136,23 +2453,31 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_SaveAnchorList constinit property declarations ******
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetAnchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetAnchors;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_SaveAnchorList constinit property declarations ********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncSaveAnchorList"), .Pointer = &UOculusXRAsyncAction_SaveAnchorList::execOculusXRAsyncSaveAnchorList },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList, "OculusXRAsyncSaveAnchorList" }, // 3966738226
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchorList_OculusXRAsyncSaveAnchorList, "OculusXRAsyncSaveAnchorList" }, // 3034538323
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_SaveAnchorList>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchorList, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2847635261
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchorList, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 1359868103
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_SaveAnchorList Property Definitions *****************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchorList, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 353475962
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchorList, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchorList_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 3414361867
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_TargetAnchors_Inner = { "TargetAnchors", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_TargetAnchors = { "TargetAnchors", nullptr, (EPropertyFlags)0x0010008000002008, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchorList, TargetAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetAnchors_MetaData), NewProp_TargetAnchors_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::PropPointers[] = {
@@ -2162,6 +2487,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::NewProp_TargetAnchors,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_SaveAnchorList Property Definitions *******************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -2182,6 +2508,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Sa
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_SaveAnchorList::StaticRegisterNativesUOculusXRAsyncAction_SaveAnchorList()
+{
+	UClass* Class = UOculusXRAsyncAction_SaveAnchorList::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList.OuterSingleton)
@@ -2191,7 +2522,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList.OuterSingleton;
 }
 UOculusXRAsyncAction_SaveAnchorList::UOculusXRAsyncAction_SaveAnchorList(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_SaveAnchorList);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_SaveAnchorList);
 UOculusXRAsyncAction_SaveAnchorList::~UOculusXRAsyncAction_SaveAnchorList() {}
 // ********** End Class UOculusXRAsyncAction_SaveAnchorList ****************************************
 
@@ -2213,18 +2544,23 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQuer
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncQueryAnchors constinit property declarations *************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Location_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Location;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UUIDs_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_UUIDs;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncQueryAnchors constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncQueryAnchors Property Definitions ************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_Location_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 3607691446
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_UUIDs_Inner = { "UUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_UUIDs = { "UUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms, UUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUIDs_MetaData), NewProp_UUIDs_MetaData) }; // 3912340335
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 1743423733
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_UUIDs_Inner = { "UUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_UUIDs = { "UUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms, UUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUIDs_MetaData), NewProp_UUIDs_MetaData) }; // 520639859
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_Location_Underlying,
@@ -2234,7 +2570,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors, nullptr, "OculusXRAsyncQueryAnchors", Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncQueryAnchors Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors, nullptr, "OculusXRAsyncQueryAnchors", 	Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors_Statics::OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchors_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors()
 {
@@ -2273,19 +2613,28 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQuer
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncQueryAnchorsAdvanced constinit property declarations *****
 	static const UECodeGen_Private::FStructPropertyParams NewProp_QueryInfo;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncQueryAnchorsAdvanced constinit property declarations *******
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::NewProp_QueryInfo = { "QueryInfo", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchorsAdvanced_Parms, QueryInfo), Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QueryInfo_MetaData), NewProp_QueryInfo_MetaData) }; // 741533706
+
+// ********** Begin Function OculusXRAsyncQueryAnchorsAdvanced Property Definitions ****************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::NewProp_QueryInfo = { "QueryInfo", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchorsAdvanced_Parms, QueryInfo), Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_QueryInfo_MetaData), NewProp_QueryInfo_MetaData) }; // 3316709969
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchorsAdvanced_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::NewProp_QueryInfo,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors, nullptr, "OculusXRAsyncQueryAnchorsAdvanced", Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchorsAdvanced_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncQueryAnchorsAdvanced Property Definitions ******************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors, nullptr, "OculusXRAsyncQueryAnchorsAdvanced", 	Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchorsAdvanced_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced_Statics::OculusXRAsyncAction_QueryAnchors_eventOculusXRAsyncQueryAnchorsAdvanced_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced()
 {
@@ -2307,15 +2656,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_QueryAnchors::execOculusXRAsyncQueryAnchors
 // ********** End Class UOculusXRAsyncAction_QueryAnchors Function OculusXRAsyncQueryAnchorsAdvanced 
 
 // ********** Begin Class UOculusXRAsyncAction_QueryAnchors ****************************************
-void UOculusXRAsyncAction_QueryAnchors::StaticRegisterNativesUOculusXRAsyncAction_QueryAnchors()
-{
-	UClass* Class = UOculusXRAsyncAction_QueryAnchors::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncQueryAnchors", &UOculusXRAsyncAction_QueryAnchors::execOculusXRAsyncQueryAnchors },
-		{ "OculusXRAsyncQueryAnchorsAdvanced", &UOculusXRAsyncAction_QueryAnchors::execOculusXRAsyncQueryAnchorsAdvanced },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors;
 UClass* UOculusXRAsyncAction_QueryAnchors::GetPrivateStaticClass()
 {
@@ -2323,7 +2663,7 @@ UClass* UOculusXRAsyncAction_QueryAnchors::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_QueryAnchors"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_QueryAnchors,
@@ -2349,10 +2689,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Query Anchors\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Query Anchors" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -2361,27 +2705,37 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_QueryAnchors constinit property declarations ********
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_QueryAnchors constinit property declarations **********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncQueryAnchors"), .Pointer = &UOculusXRAsyncAction_QueryAnchors::execOculusXRAsyncQueryAnchors },
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncQueryAnchorsAdvanced"), .Pointer = &UOculusXRAsyncAction_QueryAnchors::execOculusXRAsyncQueryAnchorsAdvanced },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors, "OculusXRAsyncQueryAnchors" }, // 3279581086
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced, "OculusXRAsyncQueryAnchorsAdvanced" }, // 2161417919
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchors, "OculusXRAsyncQueryAnchors" }, // 1579286140
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_QueryAnchors_OculusXRAsyncQueryAnchorsAdvanced, "OculusXRAsyncQueryAnchorsAdvanced" }, // 3876856705
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_QueryAnchors>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_QueryAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 1781156478
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_QueryAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2976044151
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_QueryAnchors Property Definitions *******************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_QueryAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 4226238661
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_QueryAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_QueryAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2748456945
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::NewProp_Success,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::NewProp_Failure,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_QueryAnchors Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -2402,6 +2756,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Qu
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_QueryAnchors::StaticRegisterNativesUOculusXRAsyncAction_QueryAnchors()
+{
+	UClass* Class = UOculusXRAsyncAction_QueryAnchors::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors.OuterSingleton)
@@ -2411,7 +2770,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors.OuterSingleton;
 }
 UOculusXRAsyncAction_QueryAnchors::UOculusXRAsyncAction_QueryAnchors(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_QueryAnchors);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_QueryAnchors);
 UOculusXRAsyncAction_QueryAnchors::~UOculusXRAsyncAction_QueryAnchors() {}
 // ********** End Class UOculusXRAsyncAction_QueryAnchors ******************************************
 
@@ -2431,6 +2790,8 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_Oculu
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncSetAnchorComponentStatus constinit property declarations *
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ComponentType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ComponentType;
@@ -2438,11 +2799,14 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_Oculu
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bEnabled;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncSetAnchorComponentStatus constinit property declarations ***
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncSetAnchorComponentStatus Property Definitions ************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::NewProp_ComponentType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::NewProp_ComponentType = { "ComponentType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms, ComponentType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(0, nullptr) }; // 362484532
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::NewProp_ComponentType = { "ComponentType", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms, ComponentType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(0, nullptr) }; // 428507294
 void Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::NewProp_bEnabled_SetBit(void* Obj)
 {
 	((OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms*)Obj)->bEnabled = 1;
@@ -2457,7 +2821,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus, nullptr, "OculusXRAsyncSetAnchorComponentStatus", Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncSetAnchorComponentStatus Property Definitions **************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus, nullptr, "OculusXRAsyncSetAnchorComponentStatus", 	Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus_Statics::OculusXRAsyncAction_SetAnchorComponentStatus_eventOculusXRAsyncSetAnchorComponentStatus_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus()
 {
@@ -2481,14 +2849,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_SetAnchorComponentStatus::execOculusXRAsync
 // ********** End Class UOculusXRAsyncAction_SetAnchorComponentStatus Function OculusXRAsyncSetAnchorComponentStatus 
 
 // ********** Begin Class UOculusXRAsyncAction_SetAnchorComponentStatus ****************************
-void UOculusXRAsyncAction_SetAnchorComponentStatus::StaticRegisterNativesUOculusXRAsyncAction_SetAnchorComponentStatus()
-{
-	UClass* Class = UOculusXRAsyncAction_SetAnchorComponentStatus::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncSetAnchorComponentStatus", &UOculusXRAsyncAction_SetAnchorComponentStatus::execOculusXRAsyncSetAnchorComponentStatus },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus;
 UClass* UOculusXRAsyncAction_SetAnchorComponentStatus::GetPrivateStaticClass()
 {
@@ -2496,7 +2856,7 @@ UClass* UOculusXRAsyncAction_SetAnchorComponentStatus::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_SetAnchorComponentStatus"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_SetAnchorComponentStatus,
@@ -2522,10 +2882,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Set Component Status\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set Component Status" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -2534,32 +2898,44 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetActor_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Target actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Target actor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetAnchorComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_SetAnchorComponentStatus constinit property declarations 
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetAnchorComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_SetAnchorComponentStatus constinit property declarations 
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncSetAnchorComponentStatus"), .Pointer = &UOculusXRAsyncAction_SetAnchorComponentStatus::execOculusXRAsyncSetAnchorComponentStatus },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus, "OculusXRAsyncSetAnchorComponentStatus" }, // 511228791
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SetAnchorComponentStatus_OculusXRAsyncSetAnchorComponentStatus, "OculusXRAsyncSetAnchorComponentStatus" }, // 4039787398
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_SetAnchorComponentStatus>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetAnchorComponentStatus, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 992035519
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetAnchorComponentStatus, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 3944843718
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_SetAnchorComponentStatus Property Definitions *******
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetAnchorComponentStatus, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 1867465206
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetAnchorComponentStatus, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetComponentStatus_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 590093392
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetAnchorComponentStatus, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActor_MetaData), NewProp_TargetActor_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_TargetAnchorComponent = { "TargetAnchorComponent", nullptr, (EPropertyFlags)0x0010000000082008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetAnchorComponentStatus, TargetAnchorComponent), Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetAnchorComponent_MetaData), NewProp_TargetAnchorComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::PropPointers[] = {
@@ -2569,6 +2945,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::NewProp_TargetAnchorComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_SetAnchorComponentStatus Property Definitions *********
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -2589,6 +2966,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Se
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_SetAnchorComponentStatus::StaticRegisterNativesUOculusXRAsyncAction_SetAnchorComponentStatus()
+{
+	UClass* Class = UOculusXRAsyncAction_SetAnchorComponentStatus::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus.OuterSingleton)
@@ -2598,7 +2980,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus.OuterSingleton;
 }
 UOculusXRAsyncAction_SetAnchorComponentStatus::UOculusXRAsyncAction_SetAnchorComponentStatus(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_SetAnchorComponentStatus);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_SetAnchorComponentStatus);
 UOculusXRAsyncAction_SetAnchorComponentStatus::~UOculusXRAsyncAction_SetAnchorComponentStatus() {}
 // ********** End Class UOculusXRAsyncAction_SetAnchorComponentStatus ******************************
 
@@ -2617,13 +2999,18 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsy
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncSetComponentStatus constinit property declarations *******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static void NewProp_bEnabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bEnabled;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncSetComponentStatus constinit property declarations *********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncSetComponentStatus Property Definitions ******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SetComponentStatus_eventOculusXRAsyncSetComponentStatus_Parms, Component), Z_Construct_UClass_UOculusXRBaseAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::NewProp_bEnabled_SetBit(void* Obj)
 {
@@ -2637,7 +3024,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus, nullptr, "OculusXRAsyncSetComponentStatus", Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::OculusXRAsyncAction_SetComponentStatus_eventOculusXRAsyncSetComponentStatus_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncSetComponentStatus Property Definitions ********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus, nullptr, "OculusXRAsyncSetComponentStatus", 	Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::OculusXRAsyncAction_SetComponentStatus_eventOculusXRAsyncSetComponentStatus_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus_Statics::OculusXRAsyncAction_SetComponentStatus_eventOculusXRAsyncSetComponentStatus_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus()
 {
@@ -2660,14 +3051,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_SetComponentStatus::execOculusXRAsyncSetCom
 // ********** End Class UOculusXRAsyncAction_SetComponentStatus Function OculusXRAsyncSetComponentStatus 
 
 // ********** Begin Class UOculusXRAsyncAction_SetComponentStatus **********************************
-void UOculusXRAsyncAction_SetComponentStatus::StaticRegisterNativesUOculusXRAsyncAction_SetComponentStatus()
-{
-	UClass* Class = UOculusXRAsyncAction_SetComponentStatus::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncSetComponentStatus", &UOculusXRAsyncAction_SetComponentStatus::execOculusXRAsyncSetComponentStatus },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus;
 UClass* UOculusXRAsyncAction_SetComponentStatus::GetPrivateStaticClass()
 {
@@ -2675,7 +3058,7 @@ UClass* UOculusXRAsyncAction_SetComponentStatus::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_SetComponentStatus"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_SetComponentStatus,
@@ -2701,10 +3084,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Set Anchor Component Status\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set Anchor Component Status" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -2713,27 +3100,39 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Component_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Target actor\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Target actor" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_SetComponentStatus constinit property declarations **
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Component;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_SetComponentStatus constinit property declarations ****
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncSetComponentStatus"), .Pointer = &UOculusXRAsyncAction_SetComponentStatus::execOculusXRAsyncSetComponentStatus },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus, "OculusXRAsyncSetComponentStatus" }, // 3534766459
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SetComponentStatus_OculusXRAsyncSetComponentStatus, "OculusXRAsyncSetComponentStatus" }, // 1735791800
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_SetComponentStatus>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetComponentStatus, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 1310293744
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetComponentStatus, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 970970246
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_SetComponentStatus Property Definitions *************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetComponentStatus, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 1228426319
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetComponentStatus, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SetAnchorComponentStatus_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 663090610
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Component = { "Component", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SetComponentStatus, Component), Z_Construct_UClass_UOculusXRBaseAnchorComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Component_MetaData), NewProp_Component_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Success,
@@ -2741,6 +3140,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::NewProp_Component,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_SetComponentStatus Property Definitions ***************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -2761,6 +3161,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Se
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_SetComponentStatus::StaticRegisterNativesUOculusXRAsyncAction_SetComponentStatus()
+{
+	UClass* Class = UOculusXRAsyncAction_SetComponentStatus::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus.OuterSingleton)
@@ -2770,7 +3175,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus.OuterSingleton;
 }
 UOculusXRAsyncAction_SetComponentStatus::UOculusXRAsyncAction_SetComponentStatus(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_SetComponentStatus);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_SetComponentStatus);
 UOculusXRAsyncAction_SetComponentStatus::~UOculusXRAsyncAction_SetComponentStatus() {}
 // ********** End Class UOculusXRAsyncAction_SetComponentStatus ************************************
 
@@ -2795,14 +3200,19 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShar
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncShareAnchors constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetActors;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ToShareWithIds_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ToShareWithIds;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncShareAnchors constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncShareAnchors Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::NewProp_TargetActors_Inner = { "TargetActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::NewProp_TargetActors = { "TargetActors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_ShareAnchors_eventOculusXRAsyncShareAnchors_Parms, TargetActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActors_MetaData), NewProp_TargetActors_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::NewProp_ToShareWithIds_Inner = { "ToShareWithIds", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
@@ -2816,7 +3226,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors, nullptr, "OculusXRAsyncShareAnchors", Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::OculusXRAsyncAction_ShareAnchors_eventOculusXRAsyncShareAnchors_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncShareAnchors Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors, nullptr, "OculusXRAsyncShareAnchors", 	Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::OculusXRAsyncAction_ShareAnchors_eventOculusXRAsyncShareAnchors_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors_Statics::OculusXRAsyncAction_ShareAnchors_eventOculusXRAsyncShareAnchors_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors()
 {
@@ -2839,14 +3253,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_ShareAnchors::execOculusXRAsyncShareAnchors
 // ********** End Class UOculusXRAsyncAction_ShareAnchors Function OculusXRAsyncShareAnchors *******
 
 // ********** Begin Class UOculusXRAsyncAction_ShareAnchors ****************************************
-void UOculusXRAsyncAction_ShareAnchors::StaticRegisterNativesUOculusXRAsyncAction_ShareAnchors()
-{
-	UClass* Class = UOculusXRAsyncAction_ShareAnchors::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncShareAnchors", &UOculusXRAsyncAction_ShareAnchors::execOculusXRAsyncShareAnchors },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors;
 UClass* UOculusXRAsyncAction_ShareAnchors::GetPrivateStaticClass()
 {
@@ -2854,7 +3260,7 @@ UClass* UOculusXRAsyncAction_ShareAnchors::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_ShareAnchors"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_ShareAnchors,
@@ -2880,10 +3286,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Share Anchors\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Share Anchors" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -2892,29 +3302,41 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TargetAnchors_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Target Spaces\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Target Spaces" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_ShareAnchors constinit property declarations ********
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetAnchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetAnchors;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_ShareAnchors constinit property declarations **********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncShareAnchors"), .Pointer = &UOculusXRAsyncAction_ShareAnchors::execOculusXRAsyncShareAnchors },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors, "OculusXRAsyncShareAnchors" }, // 1470823357
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchors_OculusXRAsyncShareAnchors, "OculusXRAsyncShareAnchors" }, // 3906386610
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_ShareAnchors>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 781037947
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 3091032824
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_ShareAnchors Property Definitions *******************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 3813370572
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2934649635
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_TargetAnchors_Inner = { "TargetAnchors", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_TargetAnchors = { "TargetAnchors", nullptr, (EPropertyFlags)0x0010008000002008, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchors, TargetAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetAnchors_MetaData), NewProp_TargetAnchors_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::PropPointers[] = {
@@ -2924,6 +3346,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::NewProp_TargetAnchors,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_ShareAnchors Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -2944,6 +3367,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Sh
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_ShareAnchors::StaticRegisterNativesUOculusXRAsyncAction_ShareAnchors()
+{
+	UClass* Class = UOculusXRAsyncAction_ShareAnchors::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors.OuterSingleton)
@@ -2953,7 +3381,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors.OuterSingleton;
 }
 UOculusXRAsyncAction_ShareAnchors::UOculusXRAsyncAction_ShareAnchors(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_ShareAnchors);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_ShareAnchors);
 UOculusXRAsyncAction_ShareAnchors::~UOculusXRAsyncAction_ShareAnchors() {}
 // ********** End Class UOculusXRAsyncAction_ShareAnchors ******************************************
 
@@ -2974,12 +3402,17 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveA
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncSaveAnchors constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetActors;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncSaveAnchors constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncSaveAnchors Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::NewProp_TargetActors_Inner = { "TargetActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::NewProp_TargetActors = { "TargetActors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchors_eventOculusXRAsyncSaveAnchors_Parms, TargetActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActors_MetaData), NewProp_TargetActors_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_SaveAnchors_eventOculusXRAsyncSaveAnchors_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_NoRegister, METADATA_PARAMS(0, nullptr) };
@@ -2989,7 +3422,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors, nullptr, "OculusXRAsyncSaveAnchors", Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::OculusXRAsyncAction_SaveAnchors_eventOculusXRAsyncSaveAnchors_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncSaveAnchors Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors, nullptr, "OculusXRAsyncSaveAnchors", 	Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::OculusXRAsyncAction_SaveAnchors_eventOculusXRAsyncSaveAnchors_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors_Statics::OculusXRAsyncAction_SaveAnchors_eventOculusXRAsyncSaveAnchors_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors()
 {
@@ -3011,14 +3448,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_SaveAnchors::execOculusXRAsyncSaveAnchors)
 // ********** End Class UOculusXRAsyncAction_SaveAnchors Function OculusXRAsyncSaveAnchors *********
 
 // ********** Begin Class UOculusXRAsyncAction_SaveAnchors *****************************************
-void UOculusXRAsyncAction_SaveAnchors::StaticRegisterNativesUOculusXRAsyncAction_SaveAnchors()
-{
-	UClass* Class = UOculusXRAsyncAction_SaveAnchors::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncSaveAnchors", &UOculusXRAsyncAction_SaveAnchors::execOculusXRAsyncSaveAnchors },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors;
 UClass* UOculusXRAsyncAction_SaveAnchors::GetPrivateStaticClass()
 {
@@ -3026,7 +3455,7 @@ UClass* UOculusXRAsyncAction_SaveAnchors::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_SaveAnchors"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_SaveAnchors,
@@ -3052,10 +3481,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Save Anchors\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Save Anchors" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -3068,23 +3501,31 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_SaveAnchors constinit property declarations *********
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetAnchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetAnchors;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_SaveAnchors constinit property declarations ***********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncSaveAnchors"), .Pointer = &UOculusXRAsyncAction_SaveAnchors::execOculusXRAsyncSaveAnchors },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors, "OculusXRAsyncSaveAnchors" }, // 3197041620
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_SaveAnchors_OculusXRAsyncSaveAnchors, "OculusXRAsyncSaveAnchors" }, // 1639137306
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_SaveAnchors>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 4147735864
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 1998432193
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_SaveAnchors Property Definitions ********************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2780371395
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_SaveAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 1712511915
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_TargetAnchors_Inner = { "TargetAnchors", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_TargetAnchors = { "TargetAnchors", nullptr, (EPropertyFlags)0x0010008000002008, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_SaveAnchors, TargetAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetAnchors_MetaData), NewProp_TargetAnchors_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::PropPointers[] = {
@@ -3094,6 +3535,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::NewProp_TargetAnchors,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_SaveAnchors Property Definitions **********************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -3114,6 +3556,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Sa
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_SaveAnchors::StaticRegisterNativesUOculusXRAsyncAction_SaveAnchors()
+{
+	UClass* Class = UOculusXRAsyncAction_SaveAnchors::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors.OuterSingleton)
@@ -3123,7 +3570,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors.OuterSingleton;
 }
 UOculusXRAsyncAction_SaveAnchors::UOculusXRAsyncAction_SaveAnchors(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_SaveAnchors);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_SaveAnchors);
 UOculusXRAsyncAction_SaveAnchors::~UOculusXRAsyncAction_SaveAnchors() {}
 // ********** End Class UOculusXRAsyncAction_SaveAnchors *******************************************
 
@@ -3153,6 +3600,8 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEras
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncEraseAnchors constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetActors;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorHandles_Inner;
@@ -3161,14 +3610,17 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEras
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_AnchorUUIDs;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncEraseAnchors constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OculusXRAsyncEraseAnchors Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_TargetActors_Inner = { "TargetActors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_TargetActors = { "TargetActors", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms, TargetActors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetActors_MetaData), NewProp_TargetActors_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 1603820546
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorUUIDs_Inner = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorUUIDs = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms, AnchorUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUIDs_MetaData), NewProp_AnchorUUIDs_MetaData) }; // 3912340335
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 2459929064
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorUUIDs_Inner = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_AnchorUUIDs = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms, AnchorUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUIDs_MetaData), NewProp_AnchorUUIDs_MetaData) }; // 520639859
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_TargetActors_Inner,
@@ -3180,7 +3632,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors, nullptr, "OculusXRAsyncEraseAnchors", Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncEraseAnchors Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors, nullptr, "OculusXRAsyncEraseAnchors", 	Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors_Statics::OculusXRAsyncAction_EraseAnchors_eventOculusXRAsyncEraseAnchors_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors()
 {
@@ -3204,14 +3660,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_EraseAnchors::execOculusXRAsyncEraseAnchors
 // ********** End Class UOculusXRAsyncAction_EraseAnchors Function OculusXRAsyncEraseAnchors *******
 
 // ********** Begin Class UOculusXRAsyncAction_EraseAnchors ****************************************
-void UOculusXRAsyncAction_EraseAnchors::StaticRegisterNativesUOculusXRAsyncAction_EraseAnchors()
-{
-	UClass* Class = UOculusXRAsyncAction_EraseAnchors::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncEraseAnchors", &UOculusXRAsyncAction_EraseAnchors::execOculusXRAsyncEraseAnchors },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors;
 UClass* UOculusXRAsyncAction_EraseAnchors::GetPrivateStaticClass()
 {
@@ -3219,7 +3667,7 @@ UClass* UOculusXRAsyncAction_EraseAnchors::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_EraseAnchors"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_EraseAnchors,
@@ -3245,10 +3693,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Erase Anchors\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Erase Anchors" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -3261,23 +3713,31 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_EraseAnchors constinit property declarations ********
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetAnchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_TargetAnchors;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_EraseAnchors constinit property declarations **********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncEraseAnchors"), .Pointer = &UOculusXRAsyncAction_EraseAnchors::execOculusXRAsyncEraseAnchors },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors, "OculusXRAsyncEraseAnchors" }, // 1534797676
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_EraseAnchors_OculusXRAsyncEraseAnchors, "OculusXRAsyncEraseAnchors" }, // 2352385884
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_EraseAnchors>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 4005767604
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 928909994
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_EraseAnchors Property Definitions *******************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 3685790864
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_EraseAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2742343467
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_TargetAnchors_Inner = { "TargetAnchors", nullptr, (EPropertyFlags)0x0000000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_TargetAnchors = { "TargetAnchors", nullptr, (EPropertyFlags)0x0010008000002008, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_EraseAnchors, TargetAnchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetAnchors_MetaData), NewProp_TargetAnchors_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::PropPointers[] = {
@@ -3287,6 +3747,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::NewProp_TargetAnchors,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_EraseAnchors Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -3307,6 +3768,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Er
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_EraseAnchors::StaticRegisterNativesUOculusXRAsyncAction_EraseAnchors()
+{
+	UClass* Class = UOculusXRAsyncAction_EraseAnchors::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors.OuterSingleton)
@@ -3316,7 +3782,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors.OuterSingleton;
 }
 UOculusXRAsyncAction_EraseAnchors::UOculusXRAsyncAction_EraseAnchors(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_EraseAnchors);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_EraseAnchors);
 UOculusXRAsyncAction_EraseAnchors::~UOculusXRAsyncAction_EraseAnchors() {}
 // ********** End Class UOculusXRAsyncAction_EraseAnchors ******************************************
 
@@ -3337,19 +3803,28 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncD
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncDiscoverAnchors constinit property declarations **********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DiscoveryInfo;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncDiscoverAnchors constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::NewProp_DiscoveryInfo = { "DiscoveryInfo", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_DiscoverAnchors_eventOculusXRAsyncDiscoverAnchors_Parms, DiscoveryInfo), Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DiscoveryInfo_MetaData), NewProp_DiscoveryInfo_MetaData) }; // 2971489904
+
+// ********** Begin Function OculusXRAsyncDiscoverAnchors Property Definitions *********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::NewProp_DiscoveryInfo = { "DiscoveryInfo", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_DiscoverAnchors_eventOculusXRAsyncDiscoverAnchors_Parms, DiscoveryInfo), Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DiscoveryInfo_MetaData), NewProp_DiscoveryInfo_MetaData) }; // 598761459
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_DiscoverAnchors_eventOculusXRAsyncDiscoverAnchors_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::NewProp_DiscoveryInfo,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors, nullptr, "OculusXRAsyncDiscoverAnchors", Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::OculusXRAsyncAction_DiscoverAnchors_eventOculusXRAsyncDiscoverAnchors_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncDiscoverAnchors Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors, nullptr, "OculusXRAsyncDiscoverAnchors", 	Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::OculusXRAsyncAction_DiscoverAnchors_eventOculusXRAsyncDiscoverAnchors_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors_Statics::OculusXRAsyncAction_DiscoverAnchors_eventOculusXRAsyncDiscoverAnchors_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors()
 {
@@ -3371,14 +3846,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_DiscoverAnchors::execOculusXRAsyncDiscoverA
 // ********** End Class UOculusXRAsyncAction_DiscoverAnchors Function OculusXRAsyncDiscoverAnchors *
 
 // ********** Begin Class UOculusXRAsyncAction_DiscoverAnchors *************************************
-void UOculusXRAsyncAction_DiscoverAnchors::StaticRegisterNativesUOculusXRAsyncAction_DiscoverAnchors()
-{
-	UClass* Class = UOculusXRAsyncAction_DiscoverAnchors::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncDiscoverAnchors", &UOculusXRAsyncAction_DiscoverAnchors::execOculusXRAsyncDiscoverAnchors },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors;
 UClass* UOculusXRAsyncAction_DiscoverAnchors::GetPrivateStaticClass()
 {
@@ -3386,7 +3853,7 @@ UClass* UOculusXRAsyncAction_DiscoverAnchors::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_DiscoverAnchors"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_DiscoverAnchors,
@@ -3412,10 +3879,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Anchors Discovery\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Anchors Discovery" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Discovered_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -3430,25 +3901,33 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_DiscoverAnchors constinit property declarations *****
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Discovered;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Complete;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_DiscoveryInfo;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_DiscoverAnchors constinit property declarations *******
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncDiscoverAnchors"), .Pointer = &UOculusXRAsyncAction_DiscoverAnchors::execOculusXRAsyncDiscoverAnchors },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors, "OculusXRAsyncDiscoverAnchors" }, // 1280474835
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_DiscoverAnchors_OculusXRAsyncDiscoverAnchors, "OculusXRAsyncDiscoverAnchors" }, // 2527660569
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_DiscoverAnchors>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Discovered = { "Discovered", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, Discovered), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Discovered_MetaData), NewProp_Discovered_MetaData) }; // 1422533775
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Complete = { "Complete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, Complete), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Complete_MetaData), NewProp_Complete_MetaData) }; // 4146105454
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2440729629
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_DiscoveryInfo = { "DiscoveryInfo", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, DiscoveryInfo), Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DiscoveryInfo_MetaData), NewProp_DiscoveryInfo_MetaData) }; // 2971489904
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_DiscoverAnchors Property Definitions ****************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Discovered = { "Discovered", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, Discovered), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Discovered__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Discovered_MetaData), NewProp_Discovered_MetaData) }; // 893474102
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Complete = { "Complete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, Complete), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Complete__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Complete_MetaData), NewProp_Complete_MetaData) }; // 2583970701
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_DiscoverAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 1277966563
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_DiscoveryInfo = { "DiscoveryInfo", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_DiscoverAnchors, DiscoveryInfo), Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DiscoveryInfo_MetaData), NewProp_DiscoveryInfo_MetaData) }; // 598761459
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Discovered,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_Complete,
@@ -3456,6 +3935,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::NewProp_DiscoveryInfo,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_DiscoverAnchors Property Definitions ******************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -3476,6 +3956,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Di
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_DiscoverAnchors::StaticRegisterNativesUOculusXRAsyncAction_DiscoverAnchors()
+{
+	UClass* Class = UOculusXRAsyncAction_DiscoverAnchors::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors.OuterSingleton)
@@ -3485,7 +3970,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors.OuterSingleton;
 }
 UOculusXRAsyncAction_DiscoverAnchors::UOculusXRAsyncAction_DiscoverAnchors(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_DiscoverAnchors);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_DiscoverAnchors);
 UOculusXRAsyncAction_DiscoverAnchors::~UOculusXRAsyncAction_DiscoverAnchors() {}
 // ********** End Class UOculusXRAsyncAction_DiscoverAnchors ***************************************
 
@@ -3506,14 +3991,19 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsync
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRAsyncGetSharedAnchors constinit property declarations *********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorUUIDs_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_AnchorUUIDs;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRAsyncGetSharedAnchors constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_AnchorUUIDs_Inner = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_AnchorUUIDs = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchors_eventOculusXRAsyncGetSharedAnchors_Parms, AnchorUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUIDs_MetaData), NewProp_AnchorUUIDs_MetaData) }; // 3912340335
+
+// ********** Begin Function OculusXRAsyncGetSharedAnchors Property Definitions ********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_AnchorUUIDs_Inner = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_AnchorUUIDs = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchors_eventOculusXRAsyncGetSharedAnchors_Parms, AnchorUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUIDs_MetaData), NewProp_AnchorUUIDs_MetaData) }; // 520639859
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchors_eventOculusXRAsyncGetSharedAnchors_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_AnchorUUIDs_Inner,
@@ -3521,7 +4011,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors, nullptr, "OculusXRAsyncGetSharedAnchors", Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::OculusXRAsyncAction_GetSharedAnchors_eventOculusXRAsyncGetSharedAnchors_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRAsyncGetSharedAnchors Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors, nullptr, "OculusXRAsyncGetSharedAnchors", 	Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::OculusXRAsyncAction_GetSharedAnchors_eventOculusXRAsyncGetSharedAnchors_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors_Statics::OculusXRAsyncAction_GetSharedAnchors_eventOculusXRAsyncGetSharedAnchors_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors()
 {
@@ -3543,14 +4037,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_GetSharedAnchors::execOculusXRAsyncGetShare
 // ********** End Class UOculusXRAsyncAction_GetSharedAnchors Function OculusXRAsyncGetSharedAnchors 
 
 // ********** Begin Class UOculusXRAsyncAction_GetSharedAnchors ************************************
-void UOculusXRAsyncAction_GetSharedAnchors::StaticRegisterNativesUOculusXRAsyncAction_GetSharedAnchors()
-{
-	UClass* Class = UOculusXRAsyncAction_GetSharedAnchors::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRAsyncGetSharedAnchors", &UOculusXRAsyncAction_GetSharedAnchors::execOculusXRAsyncGetSharedAnchors },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors;
 UClass* UOculusXRAsyncAction_GetSharedAnchors::GetPrivateStaticClass()
 {
@@ -3558,7 +4044,7 @@ UClass* UOculusXRAsyncAction_GetSharedAnchors::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_GetSharedAnchors"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_GetSharedAnchors,
@@ -3584,10 +4070,14 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Get Shared Anchors\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get Shared Anchors" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Success_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
@@ -3599,25 +4089,33 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_GetSharedAnchors constinit property declarations ****
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Success;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Failure;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Anchors_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Anchors;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_GetSharedAnchors constinit property declarations ******
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRAsyncGetSharedAnchors"), .Pointer = &UOculusXRAsyncAction_GetSharedAnchors::execOculusXRAsyncGetSharedAnchors },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors, "OculusXRAsyncGetSharedAnchors" }, // 17809500
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchors_OculusXRAsyncGetSharedAnchors, "OculusXRAsyncGetSharedAnchors" }, // 1254254365
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_GetSharedAnchors>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2074048944
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 2722252290
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchors, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) }; // 3912340335
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_GetSharedAnchors Property Definitions ***************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Success = { "Success", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchors, Success), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Success__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Success_MetaData), NewProp_Success_MetaData) }; // 2967676799
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Failure = { "Failure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchors, Failure), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchors_Failure__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Failure_MetaData), NewProp_Failure_MetaData) }; // 3608805194
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Anchors_Inner = { "Anchors", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Anchors = { "Anchors", nullptr, (EPropertyFlags)0x0010000000002000, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchors, Anchors), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Anchors_MetaData), NewProp_Anchors_MetaData) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Success,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Failure,
@@ -3625,6 +4123,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::NewProp_Anchors,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_GetSharedAnchors Property Definitions *****************
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -3645,6 +4144,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Ge
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_GetSharedAnchors::StaticRegisterNativesUOculusXRAsyncAction_GetSharedAnchors()
+{
+	UClass* Class = UOculusXRAsyncAction_GetSharedAnchors::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors.OuterSingleton)
@@ -3654,7 +4158,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors.OuterSingleton;
 }
 UOculusXRAsyncAction_GetSharedAnchors::UOculusXRAsyncAction_GetSharedAnchors(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_GetSharedAnchors);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_GetSharedAnchors);
 UOculusXRAsyncAction_GetSharedAnchors::~UOculusXRAsyncAction_GetSharedAnchors() {}
 // ********** End Class UOculusXRAsyncAction_GetSharedAnchors **************************************
 
@@ -3679,18 +4183,23 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusX
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRShareAnchorsWithGroupsAsync constinit property declarations ***
 	static const UECodeGen_Private::FStructPropertyParams NewProp_GroupUUIDs_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_GroupUUIDs;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorHandles_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_AnchorHandles;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRShareAnchorsWithGroupsAsync constinit property declarations *****
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_GroupUUIDs_Inner = { "GroupUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_GroupUUIDs = { "GroupUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms, GroupUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GroupUUIDs_MetaData), NewProp_GroupUUIDs_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 1603820546
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 1603820546
+
+// ********** Begin Function OculusXRShareAnchorsWithGroupsAsync Property Definitions **************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_GroupUUIDs_Inner = { "GroupUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_GroupUUIDs = { "GroupUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms, GroupUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GroupUUIDs_MetaData), NewProp_GroupUUIDs_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_AnchorHandles_Inner = { "AnchorHandles", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 2459929064
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_AnchorHandles = { "AnchorHandles", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms, AnchorHandles), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandles_MetaData), NewProp_AnchorHandles_MetaData) }; // 2459929064
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_GroupUUIDs_Inner,
@@ -3700,7 +4209,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups, nullptr, "OculusXRShareAnchorsWithGroupsAsync", Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRShareAnchorsWithGroupsAsync Property Definitions ****************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups, nullptr, "OculusXRShareAnchorsWithGroupsAsync", 	Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync_Statics::OculusXRAsyncAction_ShareAnchorsWithGroups_eventOculusXRShareAnchorsWithGroupsAsync_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync()
 {
@@ -3723,14 +4236,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_ShareAnchorsWithGroups::execOculusXRShareAn
 // ********** End Class UOculusXRAsyncAction_ShareAnchorsWithGroups Function OculusXRShareAnchorsWithGroupsAsync 
 
 // ********** Begin Class UOculusXRAsyncAction_ShareAnchorsWithGroups ******************************
-void UOculusXRAsyncAction_ShareAnchorsWithGroups::StaticRegisterNativesUOculusXRAsyncAction_ShareAnchorsWithGroups()
-{
-	UClass* Class = UOculusXRAsyncAction_ShareAnchorsWithGroups::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRShareAnchorsWithGroupsAsync", &UOculusXRAsyncAction_ShareAnchorsWithGroups::execOculusXRShareAnchorsWithGroupsAsync },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups;
 UClass* UOculusXRAsyncAction_ShareAnchorsWithGroups::GetPrivateStaticClass()
 {
@@ -3738,7 +4243,7 @@ UClass* UOculusXRAsyncAction_ShareAnchorsWithGroups::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_ShareAnchorsWithGroups"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_ShareAnchorsWithGroups,
@@ -3764,32 +4269,45 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Share with groups\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Share with groups" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Complete_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_ShareAnchorsWithGroups constinit property declarations 
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Complete;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_ShareAnchorsWithGroups constinit property declarations 
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRShareAnchorsWithGroupsAsync"), .Pointer = &UOculusXRAsyncAction_ShareAnchorsWithGroups::execOculusXRShareAnchorsWithGroupsAsync },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync, "OculusXRShareAnchorsWithGroupsAsync" }, // 2211399321
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_ShareAnchorsWithGroups_OculusXRShareAnchorsWithGroupsAsync, "OculusXRShareAnchorsWithGroupsAsync" }, // 4012786486
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_ShareAnchorsWithGroups>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::NewProp_Complete = { "Complete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchorsWithGroups, Complete), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Complete_MetaData), NewProp_Complete_MetaData) }; // 4047957759
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_ShareAnchorsWithGroups Property Definitions *********
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::NewProp_Complete = { "Complete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_ShareAnchorsWithGroups, Complete), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_ShareAnchorsWithGroups_Complete__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Complete_MetaData), NewProp_Complete_MetaData) }; // 3002522779
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::NewProp_Complete,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_ShareAnchorsWithGroups Property Definitions ***********
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -3810,6 +4328,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Sh
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_ShareAnchorsWithGroups::StaticRegisterNativesUOculusXRAsyncAction_ShareAnchorsWithGroups()
+{
+	UClass* Class = UOculusXRAsyncAction_ShareAnchorsWithGroups::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups.OuterSingleton)
@@ -3819,7 +4342,7 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups.OuterSingleton;
 }
 UOculusXRAsyncAction_ShareAnchorsWithGroups::UOculusXRAsyncAction_ShareAnchorsWithGroups(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_ShareAnchorsWithGroups);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_ShareAnchorsWithGroups);
 UOculusXRAsyncAction_ShareAnchorsWithGroups::~UOculusXRAsyncAction_ShareAnchorsWithGroups() {}
 // ********** End Class UOculusXRAsyncAction_ShareAnchorsWithGroups ********************************
 
@@ -3845,16 +4368,21 @@ struct Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Ocul
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OculusXRGetSharedAnchorsFromGroupAsync constinit property declarations 
 	static const UECodeGen_Private::FStructPropertyParams NewProp_GroupUUIDs;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorUUIDs_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_AnchorUUIDs;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OculusXRGetSharedAnchorsFromGroupAsync constinit property declarations **
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_GroupUUIDs = { "GroupUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms, GroupUUIDs), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GroupUUIDs_MetaData), NewProp_GroupUUIDs_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_AnchorUUIDs_Inner = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_AnchorUUIDs = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms, AnchorUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUIDs_MetaData), NewProp_AnchorUUIDs_MetaData) }; // 3912340335
+
+// ********** Begin Function OculusXRGetSharedAnchorsFromGroupAsync Property Definitions ***********
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_GroupUUIDs = { "GroupUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms, GroupUUIDs), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GroupUUIDs_MetaData), NewProp_GroupUUIDs_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_AnchorUUIDs_Inner = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_AnchorUUIDs = { "AnchorUUIDs", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms, AnchorUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorUUIDs_MetaData), NewProp_AnchorUUIDs_MetaData) }; // 520639859
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms, ReturnValue), Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_GroupUUIDs,
@@ -3863,7 +4391,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup, nullptr, "OculusXRGetSharedAnchorsFromGroupAsync", Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::Function_MetaDataParams)},  };
+// ********** End Function OculusXRGetSharedAnchorsFromGroupAsync Property Definitions *************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup, nullptr, "OculusXRGetSharedAnchorsFromGroupAsync", 	Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync_Statics::OculusXRAsyncAction_GetSharedAnchorsFromGroup_eventOculusXRGetSharedAnchorsFromGroupAsync_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync()
 {
@@ -3886,14 +4418,6 @@ DEFINE_FUNCTION(UOculusXRAsyncAction_GetSharedAnchorsFromGroup::execOculusXRGetS
 // ********** End Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup Function OculusXRGetSharedAnchorsFromGroupAsync 
 
 // ********** Begin Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup ***************************
-void UOculusXRAsyncAction_GetSharedAnchorsFromGroup::StaticRegisterNativesUOculusXRAsyncAction_GetSharedAnchorsFromGroup()
-{
-	UClass* Class = UOculusXRAsyncAction_GetSharedAnchorsFromGroup::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "OculusXRGetSharedAnchorsFromGroupAsync", &UOculusXRAsyncAction_GetSharedAnchorsFromGroup::execOculusXRGetSharedAnchorsFromGroupAsync },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup;
 UClass* UOculusXRAsyncAction_GetSharedAnchorsFromGroup::GetPrivateStaticClass()
 {
@@ -3901,7 +4425,7 @@ UClass* UOculusXRAsyncAction_GetSharedAnchorsFromGroup::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncAction_GetSharedAnchorsFromGroup"),
 			Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncAction_GetSharedAnchorsFromGroup,
@@ -3927,32 +4451,45 @@ struct Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "//\n// Get shared anchors from groups\n//\n" },
+#endif
 		{ "IncludePath", "OculusXRAnchorLatentActions.h" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get shared anchors from groups" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Complete_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRAnchorLatentActions.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup constinit property declarations 
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_Complete;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup constinit property declarations 
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("OculusXRGetSharedAnchorsFromGroupAsync"), .Pointer = &UOculusXRAsyncAction_GetSharedAnchorsFromGroup::execOculusXRGetSharedAnchorsFromGroupAsync },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync, "OculusXRGetSharedAnchorsFromGroupAsync" }, // 491514491
+		{ &Z_Construct_UFunction_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_OculusXRGetSharedAnchorsFromGroupAsync, "OculusXRGetSharedAnchorsFromGroupAsync" }, // 915142302
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncAction_GetSharedAnchorsFromGroup>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::NewProp_Complete = { "Complete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchorsFromGroup, Complete), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Complete_MetaData), NewProp_Complete_MetaData) }; // 753568844
+}; // struct Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics
+
+// ********** Begin Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup Property Definitions ******
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::NewProp_Complete = { "Complete", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAsyncAction_GetSharedAnchorsFromGroup, Complete), Z_Construct_UDelegateFunction_OculusXRAnchors_OculusXR_LatentAction_GetSharedAnchorsFromGroup_Complete__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Complete_MetaData), NewProp_Complete_MetaData) }; // 3336827835
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::NewProp_Complete,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup Property Definitions ********
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -3973,6 +4510,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncAction_Ge
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncAction_GetSharedAnchorsFromGroup::StaticRegisterNativesUOculusXRAsyncAction_GetSharedAnchorsFromGroup()
+{
+	UClass* Class = UOculusXRAsyncAction_GetSharedAnchorsFromGroup::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup.OuterSingleton)
@@ -3982,34 +4524,36 @@ UClass* Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup()
 	return Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup.OuterSingleton;
 }
 UOculusXRAsyncAction_GetSharedAnchorsFromGroup::UOculusXRAsyncAction_GetSharedAnchorsFromGroup(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncAction_GetSharedAnchorsFromGroup);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncAction_GetSharedAnchorsFromGroup);
 UOculusXRAsyncAction_GetSharedAnchorsFromGroup::~UOculusXRAsyncAction_GetSharedAnchorsFromGroup() {}
 // ********** End Class UOculusXRAsyncAction_GetSharedAnchorsFromGroup *****************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor, UOculusXRAsyncAction_CreateSpatialAnchor::StaticClass, TEXT("UOculusXRAsyncAction_CreateSpatialAnchor"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_CreateSpatialAnchor), 3049639892U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor, UOculusXRAsyncAction_EraseAnchor::StaticClass, TEXT("UOculusXRAsyncAction_EraseAnchor"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_EraseAnchor), 2430674120U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor, UOculusXRAsyncAction_SaveAnchor::StaticClass, TEXT("UOculusXRAsyncAction_SaveAnchor"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SaveAnchor), 1452267534U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList, UOculusXRAsyncAction_SaveAnchorList::StaticClass, TEXT("UOculusXRAsyncAction_SaveAnchorList"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SaveAnchorList), 503143494U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors, UOculusXRAsyncAction_QueryAnchors::StaticClass, TEXT("UOculusXRAsyncAction_QueryAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_QueryAnchors), 2026467982U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus, UOculusXRAsyncAction_SetAnchorComponentStatus::StaticClass, TEXT("UOculusXRAsyncAction_SetAnchorComponentStatus"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SetAnchorComponentStatus), 515678720U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus, UOculusXRAsyncAction_SetComponentStatus::StaticClass, TEXT("UOculusXRAsyncAction_SetComponentStatus"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SetComponentStatus), 2316980172U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors, UOculusXRAsyncAction_ShareAnchors::StaticClass, TEXT("UOculusXRAsyncAction_ShareAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_ShareAnchors), 1276707350U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors, UOculusXRAsyncAction_SaveAnchors::StaticClass, TEXT("UOculusXRAsyncAction_SaveAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SaveAnchors), 953455134U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors, UOculusXRAsyncAction_EraseAnchors::StaticClass, TEXT("UOculusXRAsyncAction_EraseAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_EraseAnchors), 1047183653U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors, UOculusXRAsyncAction_DiscoverAnchors::StaticClass, TEXT("UOculusXRAsyncAction_DiscoverAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_DiscoverAnchors), 1702931157U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors, UOculusXRAsyncAction_GetSharedAnchors::StaticClass, TEXT("UOculusXRAsyncAction_GetSharedAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_GetSharedAnchors), 1861068053U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups, UOculusXRAsyncAction_ShareAnchorsWithGroups::StaticClass, TEXT("UOculusXRAsyncAction_ShareAnchorsWithGroups"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_ShareAnchorsWithGroups), 2068435583U) },
-		{ Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup, UOculusXRAsyncAction_GetSharedAnchorsFromGroup::StaticClass, TEXT("UOculusXRAsyncAction_GetSharedAnchorsFromGroup"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_GetSharedAnchorsFromGroup), 3129427375U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_CreateSpatialAnchor, UOculusXRAsyncAction_CreateSpatialAnchor::StaticClass, TEXT("UOculusXRAsyncAction_CreateSpatialAnchor"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_CreateSpatialAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_CreateSpatialAnchor), 1846546745U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchor, UOculusXRAsyncAction_EraseAnchor::StaticClass, TEXT("UOculusXRAsyncAction_EraseAnchor"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_EraseAnchor), 1656416975U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchor, UOculusXRAsyncAction_SaveAnchor::StaticClass, TEXT("UOculusXRAsyncAction_SaveAnchor"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SaveAnchor), 252259520U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchorList, UOculusXRAsyncAction_SaveAnchorList::StaticClass, TEXT("UOculusXRAsyncAction_SaveAnchorList"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchorList, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SaveAnchorList), 1841600897U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_QueryAnchors, UOculusXRAsyncAction_QueryAnchors::StaticClass, TEXT("UOculusXRAsyncAction_QueryAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_QueryAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_QueryAnchors), 2715133671U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus, UOculusXRAsyncAction_SetAnchorComponentStatus::StaticClass, TEXT("UOculusXRAsyncAction_SetAnchorComponentStatus"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SetAnchorComponentStatus, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SetAnchorComponentStatus), 1355893491U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_SetComponentStatus, UOculusXRAsyncAction_SetComponentStatus::StaticClass, TEXT("UOculusXRAsyncAction_SetComponentStatus"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SetComponentStatus, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SetComponentStatus), 4283661568U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchors, UOculusXRAsyncAction_ShareAnchors::StaticClass, TEXT("UOculusXRAsyncAction_ShareAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_ShareAnchors), 4108286315U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_SaveAnchors, UOculusXRAsyncAction_SaveAnchors::StaticClass, TEXT("UOculusXRAsyncAction_SaveAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_SaveAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_SaveAnchors), 12163834U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_EraseAnchors, UOculusXRAsyncAction_EraseAnchors::StaticClass, TEXT("UOculusXRAsyncAction_EraseAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_EraseAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_EraseAnchors), 111905120U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_DiscoverAnchors, UOculusXRAsyncAction_DiscoverAnchors::StaticClass, TEXT("UOculusXRAsyncAction_DiscoverAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_DiscoverAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_DiscoverAnchors), 3370352887U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchors, UOculusXRAsyncAction_GetSharedAnchors::StaticClass, TEXT("UOculusXRAsyncAction_GetSharedAnchors"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchors, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_GetSharedAnchors), 1045973998U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups, UOculusXRAsyncAction_ShareAnchorsWithGroups::StaticClass, TEXT("UOculusXRAsyncAction_ShareAnchorsWithGroups"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_ShareAnchorsWithGroups, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_ShareAnchorsWithGroups), 2251178287U) },
+		{ Z_Construct_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup, UOculusXRAsyncAction_GetSharedAnchorsFromGroup::StaticClass, TEXT("UOculusXRAsyncAction_GetSharedAnchorsFromGroup"), &Z_Registration_Info_UClass_UOculusXRAsyncAction_GetSharedAnchorsFromGroup, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncAction_GetSharedAnchorsFromGroup), 40155774U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_983335451(TEXT("/Script/OculusXRAnchors"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_2168144311{
+	TEXT("/Script/OculusXRAnchors"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorLatentActions_h__Script_OculusXRAnchors_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

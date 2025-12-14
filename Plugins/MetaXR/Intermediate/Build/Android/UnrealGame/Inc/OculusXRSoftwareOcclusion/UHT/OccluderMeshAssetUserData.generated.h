@@ -17,25 +17,26 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOccluderMeshAssetUserData ***********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ARCHIVESERIALIZER \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ARCHIVESERIALIZER \
 	DECLARE_FSTRUCTUREDARCHIVE_SERIALIZER(UOccluderMeshAssetUserData, NO_API)
 
 
+struct Z_Construct_UClass_UOccluderMeshAssetUserData_Statics;
 OCULUSXRSOFTWAREOCCLUSION_API UClass* Z_Construct_UClass_UOccluderMeshAssetUserData_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOccluderMeshAssetUserData(); \
-	friend struct Z_Construct_UClass_UOccluderMeshAssetUserData_Statics; \
+	friend struct ::Z_Construct_UClass_UOccluderMeshAssetUserData_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRSOFTWAREOCCLUSION_API UClass* Z_Construct_UClass_UOccluderMeshAssetUserData_NoRegister(); \
+	friend OCULUSXRSOFTWAREOCCLUSION_API UClass* ::Z_Construct_UClass_UOccluderMeshAssetUserData_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOccluderMeshAssetUserData, UAssetUserData, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRSoftwareOcclusion"), Z_Construct_UClass_UOccluderMeshAssetUserData_NoRegister) \
 	DECLARE_SERIALIZER(UOccluderMeshAssetUserData) \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ARCHIVESERIALIZER
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ARCHIVESERIALIZER
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOccluderMeshAssetUserData(UOccluderMeshAssetUserData&&) = delete; \
 	UOccluderMeshAssetUserData(const UOccluderMeshAssetUserData&) = delete; \
@@ -45,12 +46,12 @@ public: \
 	NO_API virtual ~UOccluderMeshAssetUserData();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_26_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_26_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h_29_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,6 +61,6 @@ class UOccluderMeshAssetUserData;
 // ********** End Class UOccluderMeshAssetUserData *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRSoftwareOcclusion_Private_OccluderMeshAssetUserData_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -28,7 +28,14 @@
             "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\classes\\materialgraph\\materialgraphschema.h",
             "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\unrealed\\uht\\materialgraphschema.generated.h",
             "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\animationblueprinteditor\\private\\animgraphconnectiondrawingpolicy.h",
-            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\animationblueprinteditor\\private\\animationpins\\sgraphpinpose.h"
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\animationblueprinteditor\\private\\animationpins\\sgraphpinpose.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\animgraph\\public\\animationgraphschema.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\animgraph\\uht\\animationgraphschema.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\animgraph\\public\\animgraphnode_base.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\ipropertyaccesseditor.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\animgraph\\uht\\animgraphnode_base.generated.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\unrealed\\public\\kismet2\\blueprinteditorutils.h",
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\editor\\classviewer\\public\\classviewermodule.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

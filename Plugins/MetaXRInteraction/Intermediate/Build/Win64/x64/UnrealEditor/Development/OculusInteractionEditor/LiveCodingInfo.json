@@ -17,6 +17,7 @@
 			"PerModuleInline.gen.cpp.obj",
 			"IsdkEditorTelemetry.cpp.obj",
 			"IsdkEditorTelemetryNotifications.cpp.obj",
+			"IsdkTelemetryPrivacySettings.cpp.obj",
 			"IsdkHandPoseDataActions.cpp.obj",
 			"IsdkHandPoseDataFactory.cpp.obj",
 			"IsdkHandPoseDetectionProfileActions.cpp.obj",
@@ -33,8 +34,7 @@
 			"IsdkTestHandPoseDetection.cpp.obj",
 			"IsdkTestPokeInteraction.cpp.obj",
 			"IsdkTestRayInteraction.cpp.obj",
-			"IsdkTestRigComponents.cpp.obj",
-			"IsdkTelemetryPrivacySettings.cpp.obj"
+			"IsdkTestRigComponents.cpp.obj"
 		]
 	}
 }

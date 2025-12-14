@@ -9,7 +9,7 @@
 #include "Interaction/Pointable/IsdkInteractionPointerEvent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkPokeLimiterRigModifier() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -43,13 +43,18 @@ struct Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_S
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ApplyRootPokeLimiting constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RootPoseIn;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_LimitedRootPose;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ApplyRootPokeLimiting constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function ApplyRootPokeLimiting Property Definitions ****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::NewProp_RootPoseIn = { "RootPoseIn", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeLimiterRigModifier_eventApplyRootPokeLimiting_Parms, RootPoseIn), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RootPoseIn_MetaData), NewProp_RootPoseIn_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::NewProp_LimitedRootPose = { "LimitedRootPose", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeLimiterRigModifier_eventApplyRootPokeLimiting_Parms, LimitedRootPose), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -63,7 +68,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkP
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeLimiterRigModifier, nullptr, "ApplyRootPokeLimiting", Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::IsdkPokeLimiterRigModifier_eventApplyRootPokeLimiting_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C40401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::Function_MetaDataParams)},  };
+// ********** End Function ApplyRootPokeLimiting Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeLimiterRigModifier, nullptr, "ApplyRootPokeLimiting", 	Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::IsdkPokeLimiterRigModifier_eventApplyRootPokeLimiting_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C40401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting_Statics::IsdkPokeLimiterRigModifier_eventApplyRootPokeLimiting_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting()
 {
@@ -94,24 +103,37 @@ struct Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEve
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The handler for the state event delegate that the Interactors will be firing, used for\n   * comparing requirements for triggering. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkPokeLimiterRigModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The handler for the state event delegate that the Interactors will be firing, used for\n  * comparing requirements for triggering." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEvent_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleRelayedPointerEvent constinit property declarations *************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointerEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleRelayedPointerEvent constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::NewProp_PointerEvent = { "PointerEvent", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeLimiterRigModifier_eventHandleRelayedPointerEvent_Parms, PointerEvent), Z_Construct_UScriptStruct_FIsdkInteractionPointerEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerEvent_MetaData), NewProp_PointerEvent_MetaData) }; // 384809535
+
+// ********** Begin Function HandleRelayedPointerEvent Property Definitions ************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::NewProp_PointerEvent = { "PointerEvent", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeLimiterRigModifier_eventHandleRelayedPointerEvent_Parms, PointerEvent), Z_Construct_UScriptStruct_FIsdkInteractionPointerEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerEvent_MetaData), NewProp_PointerEvent_MetaData) }; // 2900802931
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::NewProp_PointerEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeLimiterRigModifier, nullptr, "HandleRelayedPointerEvent", Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::IsdkPokeLimiterRigModifier_eventHandleRelayedPointerEvent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleRelayedPointerEvent Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeLimiterRigModifier, nullptr, "HandleRelayedPointerEvent", 	Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::IsdkPokeLimiterRigModifier_eventHandleRelayedPointerEvent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent_Statics::IsdkPokeLimiterRigModifier_eventHandleRelayedPointerEvent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent()
 {
@@ -133,15 +155,6 @@ DEFINE_FUNCTION(UIsdkPokeLimiterRigModifier::execHandleRelayedPointerEvent)
 // ********** End Class UIsdkPokeLimiterRigModifier Function HandleRelayedPointerEvent *************
 
 // ********** Begin Class UIsdkPokeLimiterRigModifier **********************************************
-void UIsdkPokeLimiterRigModifier::StaticRegisterNativesUIsdkPokeLimiterRigModifier()
-{
-	UClass* Class = UIsdkPokeLimiterRigModifier::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "ApplyRootPokeLimiting", &UIsdkPokeLimiterRigModifier::execApplyRootPokeLimiting },
-		{ "HandleRelayedPointerEvent", &UIsdkPokeLimiterRigModifier::execHandleRelayedPointerEvent },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier;
 UClass* UIsdkPokeLimiterRigModifier::GetPrivateStaticClass()
 {
@@ -149,7 +162,7 @@ UClass* UIsdkPokeLimiterRigModifier::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkPokeLimiterRigModifier"),
 			Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier.InnerSingleton,
 			StaticRegisterNativesUIsdkPokeLimiterRigModifier,
@@ -177,17 +190,25 @@ struct Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n  A Prebuilt Rig Modifier that will enable Poke Limiting on any valid objects that implement\n  IsdkIPosedMesh\n\n*/" },
+#endif
 		{ "IncludePath", "Rig/IsdkPokeLimiterRigModifier.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkPokeLimiterRigModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A Prebuilt Rig Modifier that will enable Poke Limiting on any valid objects that implement\nIsdkIPosedMesh" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ConditionalPoseOverride_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The ConditionalPoseOverride for our Mesh that we use to convey poke limiting transforms*/" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkPokeLimiterRigModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The ConditionalPoseOverride for our Mesh that we use to convey poke limiting transforms" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ConnectedPoseMesh_MetaData[] = {
 		{ "ModuleRelativePath", "Public/Rig/IsdkPokeLimiterRigModifier.h" },
@@ -205,23 +226,32 @@ struct Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics
 		{ "ModuleRelativePath", "Public/Rig/IsdkPokeLimiterRigModifier.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkPokeLimiterRigModifier constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ConditionalPoseOverride;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_ConnectedPoseMesh;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_EventPokeInteractable;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_BoundPokeInteractor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ParentMotionController;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkPokeLimiterRigModifier constinit property declarations ****************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("ApplyRootPokeLimiting"), .Pointer = &UIsdkPokeLimiterRigModifier::execApplyRootPokeLimiting },
+		{ .NameUTF8 = UTF8TEXT("HandleRelayedPointerEvent"), .Pointer = &UIsdkPokeLimiterRigModifier::execHandleRelayedPointerEvent },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting, "ApplyRootPokeLimiting" }, // 3848846620
-		{ &Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent, "HandleRelayedPointerEvent" }, // 2377871053
+		{ &Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_ApplyRootPokeLimiting, "ApplyRootPokeLimiting" }, // 742031793
+		{ &Z_Construct_UFunction_UIsdkPokeLimiterRigModifier_HandleRelayedPointerEvent, "HandleRelayedPointerEvent" }, // 1647424205
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkPokeLimiterRigModifier>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics
+
+// ********** Begin Class UIsdkPokeLimiterRigModifier Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::NewProp_ConditionalPoseOverride = { "ConditionalPoseOverride", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPokeLimiterRigModifier, ConditionalPoseOverride), Z_Construct_UClass_UIsdkConditionalPoseOverride_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ConditionalPoseOverride_MetaData), NewProp_ConditionalPoseOverride_MetaData) };
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::NewProp_ConnectedPoseMesh = { "ConnectedPoseMesh", nullptr, (EPropertyFlags)0x0044000000000000, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPokeLimiterRigModifier, ConnectedPoseMesh), Z_Construct_UClass_UIsdkIPosedMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ConnectedPoseMesh_MetaData), NewProp_ConnectedPoseMesh_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::NewProp_EventPokeInteractable = { "EventPokeInteractable", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPokeLimiterRigModifier, EventPokeInteractable), Z_Construct_UClass_UIsdkPokeInteractable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_EventPokeInteractable_MetaData), NewProp_EventPokeInteractable_MetaData) };
@@ -235,6 +265,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkPoke
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::NewProp_ParentMotionController,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkPokeLimiterRigModifier Property Definitions ***************************
 UObject* (*const Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkRigModifier,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -255,6 +286,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkPokeLimiterRigModi
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::Class_MetaDataParams)
 };
+void UIsdkPokeLimiterRigModifier::StaticRegisterNativesUIsdkPokeLimiterRigModifier()
+{
+	UClass* Class = UIsdkPokeLimiterRigModifier::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkPokeLimiterRigModifier_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkPokeLimiterRigModifier()
 {
 	if (!Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier.OuterSingleton)
@@ -263,21 +299,23 @@ UClass* Z_Construct_UClass_UIsdkPokeLimiterRigModifier()
 	}
 	return Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkPokeLimiterRigModifier);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkPokeLimiterRigModifier);
 UIsdkPokeLimiterRigModifier::~UIsdkPokeLimiterRigModifier() {}
 // ********** End Class UIsdkPokeLimiterRigModifier ************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkPokeLimiterRigModifier, UIsdkPokeLimiterRigModifier::StaticClass, TEXT("UIsdkPokeLimiterRigModifier"), &Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPokeLimiterRigModifier), 1796690816U) },
+		{ Z_Construct_UClass_UIsdkPokeLimiterRigModifier, UIsdkPokeLimiterRigModifier::StaticClass, TEXT("UIsdkPokeLimiterRigModifier"), &Z_Registration_Info_UClass_UIsdkPokeLimiterRigModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPokeLimiterRigModifier), 1644289539U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_2662808514(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_1039276673{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeLimiterRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

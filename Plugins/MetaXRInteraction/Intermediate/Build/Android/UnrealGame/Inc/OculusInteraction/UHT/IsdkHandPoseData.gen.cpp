@@ -8,7 +8,7 @@
 #include "IsdkHandPoseData.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandPoseData() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -38,7 +38,7 @@ static UEnum* EIsdkJointFreedom_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkJointFreedom.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkJointFreedom>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkJointFreedom>()
 {
 	return EIsdkJointFreedom_StaticEnum();
 }
@@ -47,12 +47,16 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Mode of freedom for a given joint\n * Free - No restrictions\n * Constrained - Some constraints may restrict movement\n * Locked - Joint receives no movement\n */" },
+#endif
 		{ "Constrained.Name", "EIsdkJointFreedom::Constrained" },
 		{ "Free.Name", "EIsdkJointFreedom::Free" },
 		{ "Locked.Name", "EIsdkJointFreedom::Locked" },
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Mode of freedom for a given joint\n* Free - No restrictions\n* Constrained - Some constraints may restrict movement\n* Locked - Joint receives no movement" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -61,7 +65,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom_Statics
 		{ "EIsdkJointFreedom::Locked", (int64)EIsdkJointFreedom::Locked },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -95,19 +99,28 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Get the quaternion at a given joint index*/" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Get the quaternion at a given joint index" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetJointRotation constinit property declarations **********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_JointIndex_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_JointIndex;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetJointRotation constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetJointRotation Property Definitions *********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::NewProp_JointIndex_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::NewProp_JointIndex = { "JointIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventGetJointRotation_Parms, JointIndex), Z_Construct_UEnum_OculusInteraction_EIsdkHandBones, METADATA_PARAMS(0, nullptr) }; // 2680050074
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::NewProp_JointIndex = { "JointIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventGetJointRotation_Parms, JointIndex), Z_Construct_UEnum_OculusInteraction_EIsdkHandBones, METADATA_PARAMS(0, nullptr) }; // 3097577295
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventGetJointRotation_Parms, ReturnValue), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::NewProp_JointIndex_Underlying,
@@ -115,7 +128,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "GetJointRotation", Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::IsdkHandPoseData_eventGetJointRotation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetJointRotation Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "GetJointRotation", 	Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::IsdkHandPoseData_eventGetJointRotation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation_Statics::IsdkHandPoseData_eventGetJointRotation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation()
 {
@@ -147,21 +164,34 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the pose lerp time */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the pose lerp time" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPoseLerpTime constinit property declarations ***********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPoseLerpTime constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPoseLerpTime Property Definitions **********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventGetPoseLerpTime_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "GetPoseLerpTime", Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::IsdkHandPoseData_eventGetPoseLerpTime_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPoseLerpTime Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "GetPoseLerpTime", 	Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::IsdkHandPoseData_eventGetPoseLerpTime_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime_Statics::IsdkHandPoseData_eventGetPoseLerpTime_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime()
 {
@@ -187,14 +217,24 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Mark this asset as dirty and required to be saved */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Mark this asset as dirty and required to be saved" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetDirty constinit property declarations ******************************
+// ********** End Function SetDirty constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetDirty", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetDirty", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetDirty_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_SetDirty()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -224,19 +264,28 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Set the quaternion of a given joint index*/" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Set the quaternion of a given joint index" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetJointRotation constinit property declarations **********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_JointIndex_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_JointIndex;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Rotation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetJointRotation constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetJointRotation Property Definitions *********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::NewProp_JointIndex_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::NewProp_JointIndex = { "JointIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetJointRotation_Parms, JointIndex), Z_Construct_UEnum_OculusInteraction_EIsdkHandBones, METADATA_PARAMS(0, nullptr) }; // 2680050074
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::NewProp_JointIndex = { "JointIndex", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetJointRotation_Parms, JointIndex), Z_Construct_UEnum_OculusInteraction_EIsdkHandBones, METADATA_PARAMS(0, nullptr) }; // 3097577295
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::NewProp_Rotation = { "Rotation", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetJointRotation_Parms, Rotation), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::NewProp_JointIndex_Underlying,
@@ -244,7 +293,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::NewProp_Rotation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetJointRotation", Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::IsdkHandPoseData_eventSetJointRotation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetJointRotation Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetJointRotation", 	Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::IsdkHandPoseData_eventSetJointRotation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation_Statics::IsdkHandPoseData_eventSetJointRotation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation()
 {
@@ -277,24 +330,37 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Sets the pose lerp time */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the pose lerp time" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LerpTimeIn_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetPoseLerpTime constinit property declarations ***********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_LerpTimeIn;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetPoseLerpTime constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetPoseLerpTime Property Definitions **********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::NewProp_LerpTimeIn = { "LerpTimeIn", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetPoseLerpTime_Parms, LerpTimeIn), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LerpTimeIn_MetaData), NewProp_LerpTimeIn_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::NewProp_LerpTimeIn,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetPoseLerpTime", Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::IsdkHandPoseData_eventSetPoseLerpTime_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetPoseLerpTime Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetPoseLerpTime", 	Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::IsdkHandPoseData_eventSetPoseLerpTime_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime_Statics::IsdkHandPoseData_eventSetPoseLerpTime_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime()
 {
@@ -327,16 +393,25 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Stati
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Sets the Hand Pose (all joints) from a given named Pose Asset */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the Hand Pose (all joints) from a given named Pose Asset" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRotationFromPoseWithName constinit property declarations ***********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Pose;
 	static const UECodeGen_Private::FNamePropertyParams NewProp_Name;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRotationFromPoseWithName constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRotationFromPoseWithName Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::NewProp_Pose = { "Pose", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetRotationFromPoseWithName_Parms, Pose), Z_Construct_UClass_UPoseAsset_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetRotationFromPoseWithName_Parms, Name), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::PropPointers[] = {
@@ -344,7 +419,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::NewProp_Name,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetRotationFromPoseWithName", Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::IsdkHandPoseData_eventSetRotationFromPoseWithName_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRotationFromPoseWithName Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetRotationFromPoseWithName", 	Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::IsdkHandPoseData_eventSetRotationFromPoseWithName_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName_Statics::IsdkHandPoseData_eventSetRotationFromPoseWithName_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName()
 {
@@ -377,21 +456,34 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Sets the Hand Pose (all joints) from a given skeleton */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the Hand Pose (all joints) from a given skeleton" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRotationFromSkeleton constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SkinnedAsset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRotationFromSkeleton constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRotationFromSkeleton Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::NewProp_SkinnedAsset = { "SkinnedAsset", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetRotationFromSkeleton_Parms, SkinnedAsset), Z_Construct_UClass_USkinnedAsset_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::NewProp_SkinnedAsset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetRotationFromSkeleton", Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::IsdkHandPoseData_eventSetRotationFromSkeleton_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRotationFromSkeleton Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetRotationFromSkeleton", 	Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::IsdkHandPoseData_eventSetRotationFromSkeleton_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton_Statics::IsdkHandPoseData_eventSetRotationFromSkeleton_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton()
 {
@@ -423,24 +515,37 @@ struct Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Sets the Hand Pose (all joints) from a given Hand Visual Component */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Sets the Hand Pose (all joints) from a given Hand Visual Component" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandMesh_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRotationFromVisual constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandMesh;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRotationFromVisual constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRotationFromVisual Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::NewProp_HandMesh = { "HandMesh", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseData_eventSetRotationFromVisual_Parms, HandMesh), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandMesh_MetaData), NewProp_HandMesh_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::NewProp_HandMesh,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetRotationFromVisual", Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::IsdkHandPoseData_eventSetRotationFromVisual_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRotationFromVisual Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseData, nullptr, "SetRotationFromVisual", 	Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::IsdkHandPoseData_eventSetRotationFromVisual_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual_Statics::IsdkHandPoseData_eventSetRotationFromVisual_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual()
 {
@@ -462,21 +567,6 @@ DEFINE_FUNCTION(UIsdkHandPoseData::execSetRotationFromVisual)
 // ********** End Class UIsdkHandPoseData Function SetRotationFromVisual ***************************
 
 // ********** Begin Class UIsdkHandPoseData ********************************************************
-void UIsdkHandPoseData::StaticRegisterNativesUIsdkHandPoseData()
-{
-	UClass* Class = UIsdkHandPoseData::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetJointRotation", &UIsdkHandPoseData::execGetJointRotation },
-		{ "GetPoseLerpTime", &UIsdkHandPoseData::execGetPoseLerpTime },
-		{ "SetDirty", &UIsdkHandPoseData::execSetDirty },
-		{ "SetJointRotation", &UIsdkHandPoseData::execSetJointRotation },
-		{ "SetPoseLerpTime", &UIsdkHandPoseData::execSetPoseLerpTime },
-		{ "SetRotationFromPoseWithName", &UIsdkHandPoseData::execSetRotationFromPoseWithName },
-		{ "SetRotationFromSkeleton", &UIsdkHandPoseData::execSetRotationFromSkeleton },
-		{ "SetRotationFromVisual", &UIsdkHandPoseData::execSetRotationFromVisual },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandPoseData;
 UClass* UIsdkHandPoseData::GetPrivateStaticClass()
 {
@@ -484,7 +574,7 @@ UClass* UIsdkHandPoseData::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandPoseData.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandPoseData"),
 			Z_Registration_Info_UClass_UIsdkHandPoseData.InnerSingleton,
 			StaticRegisterNativesUIsdkHandPoseData,
@@ -519,68 +609,110 @@ struct Z_Construct_UClass_UIsdkHandPoseData_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Handedness_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The assigned handedness for this pose data, will determine which hand skeleton is utilized */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The assigned handedness for this pose data, will determine which hand skeleton is utilized" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Thumb_MetaData[] = {
 		{ "Category", "InteractionSDK|Joint Freedom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Joint freedom mode for the thumb */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Joint freedom mode for the thumb" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Index_MetaData[] = {
 		{ "Category", "InteractionSDK|Joint Freedom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Joint freedom mode for the index finger */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Joint freedom mode for the index finger" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Middle_MetaData[] = {
 		{ "Category", "InteractionSDK|Joint Freedom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Joint freedom mode for the middle finger */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Joint freedom mode for the middle finger" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Ring_MetaData[] = {
 		{ "Category", "InteractionSDK|Joint Freedom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Joint freedom mode for the ring finger */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Joint freedom mode for the ring finger" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Pinky_MetaData[] = {
 		{ "Category", "InteractionSDK|Joint Freedom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Joint freedom mode for the pinky finger */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Joint freedom mode for the pinky finger" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandData_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Hand Data object, storing joint & bone information */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Hand Data object, storing joint & bone information" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandJointMapping_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Thumb and Finger Joint Mappings */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Thumb and Finger Joint Mappings" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_JointNames_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Array of Joint Names */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Array of Joint Names" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PoseLerpTime_MetaData[] = {
 		{ "BlueprintGetter", "GetPoseLerpTime" },
 		{ "BlueprintSetter", "SetPoseLerpTime" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* If positive, will lerp into/out of hand pose with the given timing */" },
+#endif
 		{ "ModuleRelativePath", "Public/IsdkHandPoseData.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If positive, will lerp into/out of hand pose with the given timing" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandPoseData constinit property declarations ************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Handedness_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Handedness;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Thumb_Underlying;
@@ -598,16 +730,27 @@ struct Z_Construct_UClass_UIsdkHandPoseData_Statics
 	static const UECodeGen_Private::FNamePropertyParams NewProp_JointNames;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_PoseLerpTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandPoseData constinit property declarations **************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetJointRotation"), .Pointer = &UIsdkHandPoseData::execGetJointRotation },
+		{ .NameUTF8 = UTF8TEXT("GetPoseLerpTime"), .Pointer = &UIsdkHandPoseData::execGetPoseLerpTime },
+		{ .NameUTF8 = UTF8TEXT("SetDirty"), .Pointer = &UIsdkHandPoseData::execSetDirty },
+		{ .NameUTF8 = UTF8TEXT("SetJointRotation"), .Pointer = &UIsdkHandPoseData::execSetJointRotation },
+		{ .NameUTF8 = UTF8TEXT("SetPoseLerpTime"), .Pointer = &UIsdkHandPoseData::execSetPoseLerpTime },
+		{ .NameUTF8 = UTF8TEXT("SetRotationFromPoseWithName"), .Pointer = &UIsdkHandPoseData::execSetRotationFromPoseWithName },
+		{ .NameUTF8 = UTF8TEXT("SetRotationFromSkeleton"), .Pointer = &UIsdkHandPoseData::execSetRotationFromSkeleton },
+		{ .NameUTF8 = UTF8TEXT("SetRotationFromVisual"), .Pointer = &UIsdkHandPoseData::execSetRotationFromVisual },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation, "GetJointRotation" }, // 2398509389
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime, "GetPoseLerpTime" }, // 816785171
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetDirty, "SetDirty" }, // 1068877604
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation, "SetJointRotation" }, // 1974669700
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime, "SetPoseLerpTime" }, // 539885845
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName, "SetRotationFromPoseWithName" }, // 1197322706
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton, "SetRotationFromSkeleton" }, // 2060913464
-		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual, "SetRotationFromVisual" }, // 2272382851
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_GetJointRotation, "GetJointRotation" }, // 3467659729
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_GetPoseLerpTime, "GetPoseLerpTime" }, // 1770994728
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetDirty, "SetDirty" }, // 1810550368
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetJointRotation, "SetJointRotation" }, // 733140843
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetPoseLerpTime, "SetPoseLerpTime" }, // 2339182770
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromPoseWithName, "SetRotationFromPoseWithName" }, // 4020026328
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromSkeleton, "SetRotationFromSkeleton" }, // 3957590601
+		{ &Z_Construct_UFunction_UIsdkHandPoseData_SetRotationFromVisual, "SetRotationFromVisual" }, // 66617328
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -615,19 +758,21 @@ struct Z_Construct_UClass_UIsdkHandPoseData_Statics
 		TCppClassTypeTraits<UIsdkHandPoseData>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandPoseData_Statics
+
+// ********** Begin Class UIsdkHandPoseData Property Definitions ***********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Handedness_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 49432891
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 2143392285
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Thumb_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Thumb = { "Thumb", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Thumb), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Thumb_MetaData), NewProp_Thumb_MetaData) }; // 3785138186
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Thumb = { "Thumb", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Thumb), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Thumb_MetaData), NewProp_Thumb_MetaData) }; // 263824226
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Index_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Index), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Index_MetaData), NewProp_Index_MetaData) }; // 3785138186
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Index), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Index_MetaData), NewProp_Index_MetaData) }; // 263824226
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Middle_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Middle = { "Middle", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Middle), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Middle_MetaData), NewProp_Middle_MetaData) }; // 3785138186
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Middle = { "Middle", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Middle), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Middle_MetaData), NewProp_Middle_MetaData) }; // 263824226
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Ring_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Ring = { "Ring", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Ring), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Ring_MetaData), NewProp_Ring_MetaData) }; // 3785138186
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Ring = { "Ring", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Ring), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Ring_MetaData), NewProp_Ring_MetaData) }; // 263824226
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Pinky_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Pinky = { "Pinky", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Pinky), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pinky_MetaData), NewProp_Pinky_MetaData) }; // 3785138186
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_Pinky = { "Pinky", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, Pinky), Z_Construct_UEnum_OculusInteraction_EIsdkJointFreedom, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pinky_MetaData), NewProp_Pinky_MetaData) }; // 263824226
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_HandData = { "HandData", nullptr, (EPropertyFlags)0x01140000000a001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, HandData), Z_Construct_UClass_UIsdkHandData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandData_MetaData), NewProp_HandData_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_HandJointMapping = { "HandJointMapping", nullptr, (EPropertyFlags)0x0114000000082008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseData, HandJointMapping), Z_Construct_UClass_UIsdkHandJointMappings_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandJointMapping_MetaData), NewProp_HandJointMapping_MetaData) };
 const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_JointNames = { "JointNames", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, CPP_ARRAY_DIM(JointNames, UIsdkHandPoseData), STRUCT_OFFSET(UIsdkHandPoseData, JointNames), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_JointNames_MetaData), NewProp_JointNames_MetaData) };
@@ -651,13 +796,14 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHand
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandPoseData_Statics::NewProp_PoseLerpTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandPoseData_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandPoseData Property Definitions *************************************
 UObject* (*const Z_Construct_UClass_UIsdkHandPoseData_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UPrimaryDataAsset,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandPoseData_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkHandPoseData_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIHandJoints_NoRegister, (int32)VTABLE_OFFSET(UIsdkHandPoseData, IIsdkIHandJoints), false },  // 1228590249
+	{ Z_Construct_UClass_UIsdkIHandJoints_NoRegister, (int32)VTABLE_OFFSET(UIsdkHandPoseData, IIsdkIHandJoints), false },  // 2109163287
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandPoseData_Statics::ClassParams = {
 	&UIsdkHandPoseData::StaticClass,
@@ -674,6 +820,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandPoseData_Stati
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandPoseData_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandPoseData_Statics::Class_MetaDataParams)
 };
+void UIsdkHandPoseData::StaticRegisterNativesUIsdkHandPoseData()
+{
+	UClass* Class = UIsdkHandPoseData::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandPoseData_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandPoseData()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandPoseData.OuterSingleton)
@@ -682,24 +833,26 @@ UClass* Z_Construct_UClass_UIsdkHandPoseData()
 	}
 	return Z_Registration_Info_UClass_UIsdkHandPoseData.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandPoseData);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandPoseData);
 UIsdkHandPoseData::~UIsdkHandPoseData() {}
 // ********** End Class UIsdkHandPoseData **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkJointFreedom_StaticEnum, TEXT("EIsdkJointFreedom"), &Z_Registration_Info_UEnum_EIsdkJointFreedom, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3785138186U) },
+		{ EIsdkJointFreedom_StaticEnum, TEXT("EIsdkJointFreedom"), &Z_Registration_Info_UEnum_EIsdkJointFreedom, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 263824226U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandPoseData, UIsdkHandPoseData::StaticClass, TEXT("UIsdkHandPoseData"), &Z_Registration_Info_UClass_UIsdkHandPoseData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandPoseData), 1423775137U) },
+		{ Z_Construct_UClass_UIsdkHandPoseData, UIsdkHandPoseData::StaticClass, TEXT("UIsdkHandPoseData"), &Z_Registration_Info_UClass_UIsdkHandPoseData, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandPoseData), 1505983568U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_4054342022(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_1215630288{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandPoseData_h__Script_OculusInteraction_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

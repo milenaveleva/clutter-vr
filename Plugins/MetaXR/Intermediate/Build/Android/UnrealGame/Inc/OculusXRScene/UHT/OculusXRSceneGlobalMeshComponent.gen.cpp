@@ -9,10 +9,11 @@
 #include "Engine/CollisionProfile.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRSceneGlobalMeshComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UActorComponent();
 ENGINE_API UClass* Z_Construct_UClass_UMaterialInterface_NoRegister();
 ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FCollisionProfileName();
@@ -23,9 +24,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRScene();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRSceneGlobalMeshComponent ****************************************
-void UOculusXRSceneGlobalMeshComponent::StaticRegisterNativesUOculusXRSceneGlobalMeshComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent;
 UClass* UOculusXRSceneGlobalMeshComponent::GetPrivateStaticClass()
 {
@@ -33,7 +31,7 @@ UClass* UOculusXRSceneGlobalMeshComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSceneGlobalMeshComponent"),
 			Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRSceneGlobalMeshComponent,
@@ -60,12 +58,16 @@ struct Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * DEPRECATED: AOculusXRSceneActor and associated classes are deprecated (v65), please use MR Utility Kit instead\n * (https://developer.oculus.com/documentation/unreal/unreal-mr-utility-kit-overview)\n */" },
+#endif
 		{ "DisplayName", "OculusXR Scene Global Mesh Component" },
 		{ "IncludePath", "OculusXRSceneGlobalMeshComponent.h" },
 		{ "ModuleRelativePath", "Public/OculusXRSceneGlobalMeshComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DEPRECATED: AOculusXRSceneActor and associated classes are deprecated (v65), please use MR Utility Kit instead\n(https://developer.oculus.com/documentation/unreal/unreal-mr-utility-kit-overview)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Collision_MetaData[] = {
 		{ "Category", "OculusXR" },
@@ -88,6 +90,8 @@ struct Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics
 		{ "ModuleRelativePath", "Public/OculusXRSceneGlobalMeshComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSceneGlobalMeshComponent constinit property declarations ********
 	static void NewProp_Collision_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Collision;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CollisionProfileName;
@@ -96,18 +100,21 @@ struct Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Material;
 	static const UECodeGen_Private::FSoftClassPropertyParams NewProp_SceneAnchorComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRSceneGlobalMeshComponent constinit property declarations **********
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSceneGlobalMeshComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics
+
+// ********** Begin Class UOculusXRSceneGlobalMeshComponent Property Definitions *******************
 void Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_Collision_SetBit(void* Obj)
 {
 	((UOculusXRSceneGlobalMeshComponent*)Obj)->Collision = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_Collision = { "Collision", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UOculusXRSceneGlobalMeshComponent), &Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_Collision_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Collision_MetaData), NewProp_Collision_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_CollisionProfileName = { "CollisionProfileName", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSceneGlobalMeshComponent, CollisionProfileName), Z_Construct_UScriptStruct_FCollisionProfileName, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollisionProfileName_MetaData), NewProp_CollisionProfileName_MetaData) }; // 3274416141
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_CollisionProfileName = { "CollisionProfileName", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSceneGlobalMeshComponent, CollisionProfileName), Z_Construct_UScriptStruct_FCollisionProfileName, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollisionProfileName_MetaData), NewProp_CollisionProfileName_MetaData) }; // 1144355507
 void Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_Visible_SetBit(void* Obj)
 {
 	((UOculusXRSceneGlobalMeshComponent*)Obj)->Visible = 1;
@@ -123,6 +130,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::NewProp_SceneAnchorComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRSceneGlobalMeshComponent Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRScene,
@@ -143,6 +151,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSceneGlobalMes
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRSceneGlobalMeshComponent::StaticRegisterNativesUOculusXRSceneGlobalMeshComponent()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent.OuterSingleton)
@@ -151,21 +162,23 @@ UClass* Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSceneGlobalMeshComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSceneGlobalMeshComponent);
 UOculusXRSceneGlobalMeshComponent::~UOculusXRSceneGlobalMeshComponent() {}
 // ********** End Class UOculusXRSceneGlobalMeshComponent ******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent, UOculusXRSceneGlobalMeshComponent::StaticClass, TEXT("UOculusXRSceneGlobalMeshComponent"), &Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSceneGlobalMeshComponent), 352602059U) },
+		{ Z_Construct_UClass_UOculusXRSceneGlobalMeshComponent, UOculusXRSceneGlobalMeshComponent::StaticClass, TEXT("UOculusXRSceneGlobalMeshComponent"), &Z_Registration_Info_UClass_UOculusXRSceneGlobalMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSceneGlobalMeshComponent), 2449401568U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_3790271469(TEXT("/Script/OculusXRScene"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_407831600{
+	TEXT("/Script/OculusXRScene"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneGlobalMeshComponent_h__Script_OculusXRScene_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

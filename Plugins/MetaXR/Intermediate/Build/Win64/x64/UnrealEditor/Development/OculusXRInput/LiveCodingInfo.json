@@ -15,6 +15,7 @@
 			"OculusXRHandComponent.cpp.obj",
 			"OculusXRHandTracking.cpp.obj",
 			"OculusXRInput.cpp.obj",
+			"OculusXRInputExtensionPlugin.cpp.obj",
 			"OculusXRInputFunctionLibrary.cpp.obj",
 			"OculusXRInputHandTrackingExtensionPlugin.cpp.obj",
 			"OculusXRInputHapticsExtensionPlugin.cpp.obj",
@@ -25,8 +26,7 @@
 			"OculusXRLegacyPoseTransformComponent.cpp.obj",
 			"OculusXRSimultaneousHandsAndControllersExtensionPlugin.cpp.obj",
 			"OculusXRTouchPlusInputExtensionPlugin.cpp.obj",
-			"OculusXRTouchProInputExtensionPlugin.cpp.obj",
-			"OculusXRInputExtensionPlugin.cpp.obj"
+			"OculusXRTouchProInputExtensionPlugin.cpp.obj"
 		]
 	}
 }

@@ -8,7 +8,7 @@
 #include "OculusXRSpatialAnchorComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRSpatialAnchorComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRAnchors();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRSpatialAnchorComponent ******************************************
-void UOculusXRSpatialAnchorComponent::StaticRegisterNativesUOculusXRSpatialAnchorComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent;
 UClass* UOculusXRSpatialAnchorComponent::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UOculusXRSpatialAnchorComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSpatialAnchorComponent"),
 			Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRSpatialAnchorComponent,
@@ -62,12 +59,15 @@ struct Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics
 		{ "ObjectInitializerConstructorDeclared", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSpatialAnchorComponent constinit property declarations **********
+// ********** End Class UOculusXRSpatialAnchorComponent constinit property declarations ************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSpatialAnchorComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UOculusXRAnchorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -88,6 +88,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSpatialAnchorC
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRSpatialAnchorComponent::StaticRegisterNativesUOculusXRSpatialAnchorComponent()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRSpatialAnchorComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent.OuterSingleton)
@@ -96,21 +99,23 @@ UClass* Z_Construct_UClass_UOculusXRSpatialAnchorComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSpatialAnchorComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSpatialAnchorComponent);
 UOculusXRSpatialAnchorComponent::~UOculusXRSpatialAnchorComponent() {}
 // ********** End Class UOculusXRSpatialAnchorComponent ********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRSpatialAnchorComponent, UOculusXRSpatialAnchorComponent::StaticClass, TEXT("UOculusXRSpatialAnchorComponent"), &Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpatialAnchorComponent), 921015677U) },
+		{ Z_Construct_UClass_UOculusXRSpatialAnchorComponent, UOculusXRSpatialAnchorComponent::StaticClass, TEXT("UOculusXRSpatialAnchorComponent"), &Z_Registration_Info_UClass_UOculusXRSpatialAnchorComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpatialAnchorComponent), 3961876105U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_435495783(TEXT("/Script/OculusXRAnchors"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_649013450{
+	TEXT("/Script/OculusXRAnchors"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -15,29 +15,29 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UIsdkConditionalGroupAll;
 
 // ********** Begin Class UIsdkPokeInteractionRigComponent *****************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleIsEnabledConditionalChanged); \
 	DECLARE_FUNCTION(execGetEnabledConditional);
 
 
+struct Z_Construct_UClass_UIsdkPokeInteractionRigComponent_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkPokeInteractionRigComponent_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkPokeInteractionRigComponent(); \
-	friend struct Z_Construct_UClass_UIsdkPokeInteractionRigComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkPokeInteractionRigComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkPokeInteractionRigComponent_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkPokeInteractionRigComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkPokeInteractionRigComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkPokeInteractionRigComponent_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkPokeInteractionRigComponent)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkPokeInteractionRigComponent(UIsdkPokeInteractionRigComponent&&) = delete; \
 	UIsdkPokeInteractionRigComponent(const UIsdkPokeInteractionRigComponent&) = delete; \
@@ -47,13 +47,13 @@ public: \
 	NO_API virtual ~UIsdkPokeInteractionRigComponent();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_43_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_43_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +63,6 @@ class UIsdkPokeInteractionRigComponent;
 // ********** End Class UIsdkPokeInteractionRigComponent *******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkPokeInteractionRigComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

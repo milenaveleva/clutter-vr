@@ -7,7 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeMRUtilityKit_init() {}
-	MRUTILITYKIT_API UFunction* Z_Construct_UDelegateFunction_AMRUKAnchorActorSpawner_OnInteriorSpawned__DelegateSignature();
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");	MRUTILITYKIT_API UFunction* Z_Construct_UDelegateFunction_AMRUKAnchorActorSpawner_OnInteriorSpawned__DelegateSignature();
 	MRUTILITYKIT_API UFunction* Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature();
 	MRUTILITYKIT_API UFunction* Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature();
 	MRUTILITYKIT_API UFunction* Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature();
@@ -25,33 +25,33 @@ void EmptyLinkFunctionForGeneratedCodeMRUtilityKit_init() {}
 	{
 		if (!Z_Registration_Info_UPackage__Script_MRUtilityKit.OuterSingleton)
 		{
-			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKAnchorActorSpawner_OnInteriorSpawned__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKDestructibleMeshComponent_OnMeshesGenerated__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKLoadFromDevice_MRUKLoaded__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKLoadFromJson_MRUKLoaded__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnCaptureComplete__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnLoaded__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnRoomCreated__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnRoomRemoved__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnRoomUpdated__DelegateSignature,
-			};
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/MRUtilityKit",
-				SingletonFuncArray,
-				UE_ARRAY_COUNT(SingletonFuncArray),
-				PKG_CompiledIn | 0x00000000,
-				0x37AEBD13,
-				0xDBCE599F,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_MRUtilityKit.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_MRUtilityKit.OuterSingleton;
+		static UObject* (*const SingletonFuncArray[])() = {
+			(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKAnchorActorSpawner_OnInteriorSpawned__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKDistanceMapGenerator_OnReady__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorCreated__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorRemoved__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_AMRUKRoom_OnAnchorUpdated__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKDestructibleMeshComponent_OnMeshesGenerated__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKLoadFromDevice_MRUKLoaded__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKLoadFromJson_MRUKLoaded__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnCaptureComplete__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnLoaded__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnRoomCreated__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnRoomRemoved__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UMRUKSubsystem_OnRoomUpdated__DelegateSignature,
+		};
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/MRUtilityKit",
+			SingletonFuncArray,
+			UE_ARRAY_COUNT(SingletonFuncArray),
+			PKG_CompiledIn | 0x00000000,
+			0x3FEE3CAB,
+			0xDBCE599F,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_MRUtilityKit.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MRUtilityKit(Z_Construct_UPackage__Script_MRUtilityKit, TEXT("/Script/MRUtilityKit"), Z_Registration_Info_UPackage__Script_MRUtilityKit, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x37AEBD13, 0xDBCE599F));
+	return Z_Registration_Info_UPackage__Script_MRUtilityKit.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_MRUtilityKit(Z_Construct_UPackage__Script_MRUtilityKit, TEXT("/Script/MRUtilityKit"), Z_Registration_Info_UPackage__Script_MRUtilityKit, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x3FEE3CAB, 0xDBCE599F));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

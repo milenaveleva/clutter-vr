@@ -8,7 +8,7 @@
 #include "MRUtilityKitLightDispatcher.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeMRUtilityKitLightDispatcher() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,21 +32,34 @@ struct Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Add a actor to the AdditionalActorsToLookForPointLightComponents list.\n\x09 * This should be used during runtime instead of adding actors directly to AdditionalActorsToLookForPointLightComponents.\n\x09 * @param Actor Actor to add to AdditionalActorsToLookForPointLightComponents.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Add a actor to the AdditionalActorsToLookForPointLightComponents list.\nThis should be used during runtime instead of adding actors directly to AdditionalActorsToLookForPointLightComponents.\n@param Actor Actor to add to AdditionalActorsToLookForPointLightComponents." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AddAdditionalPointLightActor constinit property declarations **********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Actor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AddAdditionalPointLightActor constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function AddAdditionalPointLightActor Property Definitions *********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::NewProp_Actor = { "Actor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MRUKLightDispatcher_eventAddAdditionalPointLightActor_Parms, Actor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::NewProp_Actor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKLightDispatcher, nullptr, "AddAdditionalPointLightActor", Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::PropPointers), sizeof(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::MRUKLightDispatcher_eventAddAdditionalPointLightActor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::Function_MetaDataParams)},  };
+// ********** End Function AddAdditionalPointLightActor Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKLightDispatcher, nullptr, "AddAdditionalPointLightActor", 	Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::MRUKLightDispatcher_eventAddAdditionalPointLightActor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor_Statics::MRUKLightDispatcher_eventAddAdditionalPointLightActor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor()
 {
@@ -74,14 +87,24 @@ struct Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "CallInEditor", "true" },
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Only callable in the editor from the scene, will update the linked parameter collection with the info\n\x09 * of the point lights in the scene (based on the parameters), updating the highlight effect in the process.\n\x09 * This is meant to preview the effect in the editor.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Only callable in the editor from the scene, will update the linked parameter collection with the info\nof the point lights in the scene (based on the parameters), updating the highlight effect in the process.\nThis is meant to preview the effect in the editor." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ForceUpdateCollection constinit property declarations *****************
+// ********** End Function ForceUpdateCollection constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKLightDispatcher, nullptr, "ForceUpdateCollection", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_AMRUKLightDispatcher, nullptr, "ForceUpdateCollection", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -101,15 +124,6 @@ DEFINE_FUNCTION(AMRUKLightDispatcher::execForceUpdateCollection)
 // ********** End Class AMRUKLightDispatcher Function ForceUpdateCollection ************************
 
 // ********** Begin Class AMRUKLightDispatcher *****************************************************
-void AMRUKLightDispatcher::StaticRegisterNativesAMRUKLightDispatcher()
-{
-	UClass* Class = AMRUKLightDispatcher::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "AddAdditionalPointLightActor", &AMRUKLightDispatcher::execAddAdditionalPointLightActor },
-		{ "ForceUpdateCollection", &AMRUKLightDispatcher::execForceUpdateCollection },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AMRUKLightDispatcher;
 UClass* AMRUKLightDispatcher::GetPrivateStaticClass()
 {
@@ -117,7 +131,7 @@ UClass* AMRUKLightDispatcher::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AMRUKLightDispatcher.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("MRUKLightDispatcher"),
 			Z_Registration_Info_UClass_AMRUKLightDispatcher.InnerSingleton,
 			StaticRegisterNativesAMRUKLightDispatcher,
@@ -144,42 +158,64 @@ struct Z_Construct_UClass_AMRUKLightDispatcher_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "MRUtilityKit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * If you want to have highlights from lights over passthrough use this actor to collect all point lights in the scene and send them to the M_Highlights material.\n * It lights and sends them to a highlight material, which can be used to achieve highlights over Passthrough.\n * The highlight effect is achieved by using a material parameter collection.\n * See the PTRL Sample Project for an example of how to use this.\n */" },
+#endif
 		{ "DisplayName", "MR Utility Kit Light Dispatcher" },
 		{ "IncludePath", "MRUtilityKitLightDispatcher.h" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "If you want to have highlights from lights over passthrough use this actor to collect all point lights in the scene and send them to the M_Highlights material.\nIt lights and sends them to a highlight material, which can be used to achieve highlights over Passthrough.\nThe highlight effect is achieved by using a material parameter collection.\nSee the PTRL Sample Project for an example of how to use this." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Collection_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * The material parameter collection in which to fill lights data.\n\x09 * This parameter collection gets then send to the shader.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The material parameter collection in which to fill lights data.\nThis parameter collection gets then send to the shader." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShouldFetchPointLightsAtBeginPlay_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * Whether all point lights should be fetched automatically at BeginPlay().\n\x09 * The automatic fetching only works for PointLightActors. Actors that have PointLightComponents\n\x09 * attached to them will not be detected. These should be specified in AdditionalActorsToLookForPointLightComponents.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Whether all point lights should be fetched automatically at BeginPlay().\nThe automatic fetching only works for PointLightActors. Actors that have PointLightComponents\nattached to them will not be detected. These should be specified in AdditionalActorsToLookForPointLightComponents." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AdditionalActorsToLookForPointLightComponents_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * List of actor(s) that contain a PointLightComponent that should contribute to the highlight effect.\n\x09 * Use AddAdditionalPointLightActor to add actors during runtime.\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "List of actor(s) that contain a PointLightComponent that should contribute to the highlight effect.\nUse AddAdditionalPointLightActor to add actors during runtime." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ManualPointLights_MetaData[] = {
 		{ "Category", "MR Utility Kit" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n\x09 * PointLightActors to use for the highlight effect (not available if \"Fetch Point Lights At Begin Play\" is true).\n\x09 */" },
+#endif
 		{ "EditCondition", "!ShouldFetchPointLightsAtBeginPlay" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "PointLightActors to use for the highlight effect (not available if \"Fetch Point Lights At Begin Play\" is true)." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointLightComponents_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/MRUtilityKitLightDispatcher.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AMRUKLightDispatcher constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Collection;
 	static void NewProp_ShouldFetchPointLightsAtBeginPlay_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ShouldFetchPointLightsAtBeginPlay;
@@ -190,17 +226,24 @@ struct Z_Construct_UClass_AMRUKLightDispatcher_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PointLightComponents_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_PointLightComponents;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AMRUKLightDispatcher constinit property declarations ***********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("AddAdditionalPointLightActor"), .Pointer = &AMRUKLightDispatcher::execAddAdditionalPointLightActor },
+		{ .NameUTF8 = UTF8TEXT("ForceUpdateCollection"), .Pointer = &AMRUKLightDispatcher::execForceUpdateCollection },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor, "AddAdditionalPointLightActor" }, // 677911099
-		{ &Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection, "ForceUpdateCollection" }, // 3244730825
+		{ &Z_Construct_UFunction_AMRUKLightDispatcher_AddAdditionalPointLightActor, "AddAdditionalPointLightActor" }, // 1171524225
+		{ &Z_Construct_UFunction_AMRUKLightDispatcher_ForceUpdateCollection, "ForceUpdateCollection" }, // 2796427563
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMRUKLightDispatcher>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AMRUKLightDispatcher_Statics
+
+// ********** Begin Class AMRUKLightDispatcher Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMRUKLightDispatcher_Statics::NewProp_Collection = { "Collection", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMRUKLightDispatcher, Collection), Z_Construct_UClass_UMaterialParameterCollection_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Collection_MetaData), NewProp_Collection_MetaData) };
 void Z_Construct_UClass_AMRUKLightDispatcher_Statics::NewProp_ShouldFetchPointLightsAtBeginPlay_SetBit(void* Obj)
 {
@@ -224,6 +267,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMRUKLigh
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMRUKLightDispatcher_Statics::NewProp_PointLightComponents,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKLightDispatcher_Statics::PropPointers) < 2048);
+// ********** End Class AMRUKLightDispatcher Property Definitions **********************************
 UObject* (*const Z_Construct_UClass_AMRUKLightDispatcher_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_MRUtilityKit,
@@ -241,9 +285,14 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AMRUKLightDispatcher_St
 	UE_ARRAY_COUNT(FuncInfo),
 	UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKLightDispatcher_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMRUKLightDispatcher_Statics::Class_MetaDataParams), Z_Construct_UClass_AMRUKLightDispatcher_Statics::Class_MetaDataParams)
 };
+void AMRUKLightDispatcher::StaticRegisterNativesAMRUKLightDispatcher()
+{
+	UClass* Class = AMRUKLightDispatcher::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_AMRUKLightDispatcher_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_AMRUKLightDispatcher()
 {
 	if (!Z_Registration_Info_UClass_AMRUKLightDispatcher.OuterSingleton)
@@ -252,21 +301,23 @@ UClass* Z_Construct_UClass_AMRUKLightDispatcher()
 	}
 	return Z_Registration_Info_UClass_AMRUKLightDispatcher.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AMRUKLightDispatcher);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AMRUKLightDispatcher);
 AMRUKLightDispatcher::~AMRUKLightDispatcher() {}
 // ********** End Class AMRUKLightDispatcher *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AMRUKLightDispatcher, AMRUKLightDispatcher::StaticClass, TEXT("AMRUKLightDispatcher"), &Z_Registration_Info_UClass_AMRUKLightDispatcher, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKLightDispatcher), 921351503U) },
+		{ Z_Construct_UClass_AMRUKLightDispatcher, AMRUKLightDispatcher::StaticClass, TEXT("AMRUKLightDispatcher"), &Z_Registration_Info_UClass_AMRUKLightDispatcher, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMRUKLightDispatcher), 1150737648U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_524720140(TEXT("/Script/MRUtilityKit"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_1604571372{
+	TEXT("/Script/MRUtilityKit"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitLightDispatcher_h__Script_MRUtilityKit_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

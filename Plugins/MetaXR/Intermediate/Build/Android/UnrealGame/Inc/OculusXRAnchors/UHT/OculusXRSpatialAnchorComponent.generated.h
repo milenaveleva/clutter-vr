@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRSpatialAnchorComponent ******************************************
+struct Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics;
 OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpatialAnchorComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRSpatialAnchorComponent(); \
-	friend struct Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRSpatialAnchorComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRSpatialAnchorComponent_NoRegister(); \
+	friend OCULUSXRANCHORS_API UClass* ::Z_Construct_UClass_UOculusXRSpatialAnchorComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRSpatialAnchorComponent, UOculusXRAnchorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRAnchors"), Z_Construct_UClass_UOculusXRSpatialAnchorComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRSpatialAnchorComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRSpatialAnchorComponent(UOculusXRSpatialAnchorComponent&&) = delete; \
 	UOculusXRSpatialAnchorComponent(const UOculusXRSpatialAnchorComponent&) = delete; \
@@ -40,12 +41,12 @@ public: \
 	NO_API virtual ~UOculusXRSpatialAnchorComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_12_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_12_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +56,6 @@ class UOculusXRSpatialAnchorComponent;
 // ********** End Class UOculusXRSpatialAnchorComponent ********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRSpatialAnchorComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

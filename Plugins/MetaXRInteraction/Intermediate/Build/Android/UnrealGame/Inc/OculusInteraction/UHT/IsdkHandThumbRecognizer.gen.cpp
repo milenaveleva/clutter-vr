@@ -8,7 +8,7 @@
 #include "HandPoseDetection/IsdkHandThumbRecognizer.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandThumbRecognizer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkHandThumbRecognizer *************************************************
-void UIsdkHandThumbRecognizer::StaticRegisterNativesUIsdkHandThumbRecognizer()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandThumbRecognizer;
 UClass* UIsdkHandThumbRecognizer::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkHandThumbRecognizer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandThumbRecognizer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandThumbRecognizer"),
 			Z_Registration_Info_UClass_UIsdkHandThumbRecognizer.InnerSingleton,
 			StaticRegisterNativesUIsdkHandThumbRecognizer,
@@ -58,35 +55,49 @@ struct Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Child of UIsdkHandDigitRecognizer, used specifically for recognizing thumbs (non-finger)\n */" },
+#endif
 		{ "IncludePath", "HandPoseDetection/IsdkHandThumbRecognizer.h" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandThumbRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Child of UIsdkHandDigitRecognizer, used specifically for recognizing thumbs (non-finger)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CalcType_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The type of thumb (non-finger) action/position this is set to recognize */" },
+#endif
 		{ "ExposeOnSpawn", "" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandThumbRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The type of thumb (non-finger) action/position this is set to recognize" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandThumbRecognizer constinit property declarations *****************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_CalcType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_CalcType;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandThumbRecognizer constinit property declarations *******************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkHandThumbRecognizer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics
+
+// ********** Begin Class UIsdkHandThumbRecognizer Property Definitions ****************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::NewProp_CalcType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::NewProp_CalcType = { "CalcType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandThumbRecognizer, CalcType), Z_Construct_UEnum_OculusInteraction_EIsdkDetection_ThumbCalcType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CalcType_MetaData), NewProp_CalcType_MetaData) }; // 2894301549
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::NewProp_CalcType = { "CalcType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandThumbRecognizer, CalcType), Z_Construct_UEnum_OculusInteraction_EIsdkDetection_ThumbCalcType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CalcType_MetaData), NewProp_CalcType_MetaData) }; // 2588286467
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::NewProp_CalcType_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::NewProp_CalcType,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandThumbRecognizer Property Definitions ******************************
 UObject* (*const Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkHandDigitRecognizer,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -107,6 +118,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandThumbRecognize
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandThumbRecognizer_Statics::Class_MetaDataParams)
 };
+void UIsdkHandThumbRecognizer::StaticRegisterNativesUIsdkHandThumbRecognizer()
+{
+}
 UClass* Z_Construct_UClass_UIsdkHandThumbRecognizer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandThumbRecognizer.OuterSingleton)
@@ -115,21 +129,23 @@ UClass* Z_Construct_UClass_UIsdkHandThumbRecognizer()
 	}
 	return Z_Registration_Info_UClass_UIsdkHandThumbRecognizer.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandThumbRecognizer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandThumbRecognizer);
 UIsdkHandThumbRecognizer::~UIsdkHandThumbRecognizer() {}
 // ********** End Class UIsdkHandThumbRecognizer ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandThumbRecognizer, UIsdkHandThumbRecognizer::StaticClass, TEXT("UIsdkHandThumbRecognizer"), &Z_Registration_Info_UClass_UIsdkHandThumbRecognizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandThumbRecognizer), 2160300385U) },
+		{ Z_Construct_UClass_UIsdkHandThumbRecognizer, UIsdkHandThumbRecognizer::StaticClass, TEXT("UIsdkHandThumbRecognizer"), &Z_Registration_Info_UClass_UIsdkHandThumbRecognizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandThumbRecognizer), 219358227U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_2568400611(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_3432076502{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandThumbRecognizer_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

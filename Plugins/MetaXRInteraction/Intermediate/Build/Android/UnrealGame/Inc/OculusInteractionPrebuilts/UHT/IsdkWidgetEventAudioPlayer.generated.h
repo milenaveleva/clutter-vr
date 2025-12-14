@@ -15,12 +15,11 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UAudioComponent;
 struct FIsdkWidgetEvent;
 
 // ********** Begin Class UIsdkWidgetEventAudioPlayer **********************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleWidgetStateChanged); \
 	DECLARE_FUNCTION(execSetUnselectedEmptyAudio); \
 	DECLARE_FUNCTION(execGetUnselectedEmptyAudio); \
@@ -32,20 +31,21 @@ struct FIsdkWidgetEvent;
 	DECLARE_FUNCTION(execGetSelectedHoveredAudio);
 
 
+struct Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkWidgetEventAudioPlayer(); \
-	friend struct Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkWidgetEventAudioPlayer, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkWidgetEventAudioPlayer)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkWidgetEventAudioPlayer(UIsdkWidgetEventAudioPlayer&&) = delete; \
 	UIsdkWidgetEventAudioPlayer(const UIsdkWidgetEventAudioPlayer&) = delete; \
@@ -55,13 +55,13 @@ public: \
 	NO_API virtual ~UIsdkWidgetEventAudioPlayer();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_29_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_29_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h_32_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -71,6 +71,6 @@ class UIsdkWidgetEventAudioPlayer;
 // ********** End Class UIsdkWidgetEventAudioPlayer ************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

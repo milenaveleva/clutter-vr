@@ -8,7 +8,7 @@
 #include "DataSources/IsdkIHandPointerPose.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIHandPointerPose() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -38,11 +38,11 @@ void IIsdkIHandPointerPose::Execute_GetPointerPose(UObject* O, FTransform& Point
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIHandPointerPose_GetPointerPose);
 	if (Func)
 	{
-		Parms.PointerPose=PointerPose;
-		Parms.IsValid=IsValid;
+		Parms.PointerPose=std::move(PointerPose);
+		Parms.IsValid=std::move(IsValid);
 		O->ProcessEvent(Func, &Parms);
-		PointerPose=Parms.PointerPose;
-		IsValid=Parms.IsValid;
+		PointerPose=std::move(Parms.PointerPose);
+		IsValid=std::move(Parms.IsValid);
 	}
 	else if (auto I = (IIsdkIHandPointerPose*)(O->GetNativeInterfaceAddress(UIsdkIHandPointerPose::StaticClass())))
 	{
@@ -55,15 +55,22 @@ struct Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandPointerPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "transform used for raycast origin, world space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPointerPose constinit property declarations ************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointerPose;
 	static void NewProp_IsValid_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsValid;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPointerPose constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPointerPose Property Definitions ***********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::NewProp_PointerPose = { "PointerPose", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHandPointerPose_eventGetPointerPose_Parms, PointerPose), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::NewProp_IsValid_SetBit(void* Obj)
 {
@@ -75,7 +82,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::NewProp_IsValid,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandPointerPose, nullptr, "GetPointerPose", Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::PropPointers), sizeof(IsdkIHandPointerPose_eventGetPointerPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPointerPose Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandPointerPose, nullptr, "GetPointerPose", 	Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::PropPointers), 
+sizeof(IsdkIHandPointerPose_eventGetPointerPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandPointerPose_eventGetPointerPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose()
 {
@@ -116,11 +127,11 @@ void IIsdkIHandPointerPose::Execute_GetRelativePointerPose(UObject* O, FTransfor
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIHandPointerPose_GetRelativePointerPose);
 	if (Func)
 	{
-		Parms.PointerRelativePose=PointerRelativePose;
-		Parms.IsValid=IsValid;
+		Parms.PointerRelativePose=std::move(PointerRelativePose);
+		Parms.IsValid=std::move(IsValid);
 		O->ProcessEvent(Func, &Parms);
-		PointerRelativePose=Parms.PointerRelativePose;
-		IsValid=Parms.IsValid;
+		PointerRelativePose=std::move(Parms.PointerRelativePose);
+		IsValid=std::move(Parms.IsValid);
 	}
 	else if (auto I = (IIsdkIHandPointerPose*)(O->GetNativeInterfaceAddress(UIsdkIHandPointerPose::StaticClass())))
 	{
@@ -133,15 +144,22 @@ struct Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Static
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandPointerPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "transform used for raycast origin, relative to tracking space." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRelativePointerPose constinit property declarations ****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointerRelativePose;
 	static void NewProp_IsValid_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_IsValid;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRelativePointerPose constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRelativePointerPose Property Definitions ***************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::NewProp_PointerRelativePose = { "PointerRelativePose", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHandPointerPose_eventGetRelativePointerPose_Parms, PointerRelativePose), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::NewProp_IsValid_SetBit(void* Obj)
 {
@@ -153,7 +171,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::NewProp_IsValid,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandPointerPose, nullptr, "GetRelativePointerPose", Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::PropPointers), sizeof(IsdkIHandPointerPose_eventGetRelativePointerPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRelativePointerPose Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandPointerPose, nullptr, "GetRelativePointerPose", 	Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::PropPointers), 
+sizeof(IsdkIHandPointerPose_eventGetRelativePointerPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0CC20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandPointerPose_eventGetRelativePointerPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose()
 {
@@ -214,16 +236,25 @@ struct Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns whether or not the pointer pose on this object is valid */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandPointerPose.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns whether or not the pointer pose on this object is valid" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsPointerPoseValid constinit property declarations ********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsPointerPoseValid constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsPointerPoseValid Property Definitions *******************************
 void Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkIHandPointerPose_eventIsPointerPoseValid_Parms*)Obj)->ReturnValue = 1;
@@ -233,7 +264,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandPointerPose, nullptr, "IsPointerPoseValid", Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::PropPointers), sizeof(IsdkIHandPointerPose_eventIsPointerPoseValid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsPointerPoseValid Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandPointerPose, nullptr, "IsPointerPoseValid", 	Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::PropPointers), 
+sizeof(IsdkIHandPointerPose_eventIsPointerPoseValid_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandPointerPose_eventIsPointerPoseValid_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid()
 {
@@ -254,16 +289,6 @@ DEFINE_FUNCTION(IIsdkIHandPointerPose::execIsPointerPoseValid)
 // ********** End Interface UIsdkIHandPointerPose Function IsPointerPoseValid **********************
 
 // ********** Begin Interface UIsdkIHandPointerPose ************************************************
-void UIsdkIHandPointerPose::StaticRegisterNativesUIsdkIHandPointerPose()
-{
-	UClass* Class = UIsdkIHandPointerPose::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetPointerPose", &IIsdkIHandPointerPose::execGetPointerPose },
-		{ "GetRelativePointerPose", &IIsdkIHandPointerPose::execGetRelativePointerPose },
-		{ "IsPointerPoseValid", &IIsdkIHandPointerPose::execIsPointerPoseValid },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIHandPointerPose;
 UClass* UIsdkIHandPointerPose::GetPrivateStaticClass()
 {
@@ -271,7 +296,7 @@ UClass* UIsdkIHandPointerPose::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIHandPointerPose.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIHandPointerPose"),
 			Z_Registration_Info_UClass_UIsdkIHandPointerPose.InnerSingleton,
 			StaticRegisterNativesUIsdkIHandPointerPose,
@@ -303,18 +328,26 @@ struct Z_Construct_UClass_UIsdkIHandPointerPose_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandPointerPose.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIHandPointerPose constinit property declarations ****************
+// ********** End Interface UIsdkIHandPointerPose constinit property declarations ******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetPointerPose"), .Pointer = &IIsdkIHandPointerPose::execGetPointerPose },
+		{ .NameUTF8 = UTF8TEXT("GetRelativePointerPose"), .Pointer = &IIsdkIHandPointerPose::execGetRelativePointerPose },
+		{ .NameUTF8 = UTF8TEXT("IsPointerPoseValid"), .Pointer = &IIsdkIHandPointerPose::execIsPointerPoseValid },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose, "GetPointerPose" }, // 710100994
-		{ &Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose, "GetRelativePointerPose" }, // 1784728293
-		{ &Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid, "IsPointerPoseValid" }, // 2974016318
+		{ &Z_Construct_UFunction_UIsdkIHandPointerPose_GetPointerPose, "GetPointerPose" }, // 21448519
+		{ &Z_Construct_UFunction_UIsdkIHandPointerPose_GetRelativePointerPose, "GetRelativePointerPose" }, // 3099956892
+		{ &Z_Construct_UFunction_UIsdkIHandPointerPose_IsPointerPoseValid, "IsPointerPoseValid" }, // 2942272198
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIHandPointerPose>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIHandPointerPose_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIHandPointerPose_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -335,6 +368,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIHandPointerPose_S
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIHandPointerPose_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIHandPointerPose_Statics::Class_MetaDataParams)
 };
+void UIsdkIHandPointerPose::StaticRegisterNativesUIsdkIHandPointerPose()
+{
+	UClass* Class = UIsdkIHandPointerPose::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIHandPointerPose_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIHandPointerPose()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIHandPointerPose.OuterSingleton)
@@ -344,20 +382,22 @@ UClass* Z_Construct_UClass_UIsdkIHandPointerPose()
 	return Z_Registration_Info_UClass_UIsdkIHandPointerPose.OuterSingleton;
 }
 UIsdkIHandPointerPose::UIsdkIHandPointerPose(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIHandPointerPose);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIHandPointerPose);
 // ********** End Interface UIsdkIHandPointerPose **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIHandPointerPose, UIsdkIHandPointerPose::StaticClass, TEXT("UIsdkIHandPointerPose"), &Z_Registration_Info_UClass_UIsdkIHandPointerPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIHandPointerPose), 262544849U) },
+		{ Z_Construct_UClass_UIsdkIHandPointerPose, UIsdkIHandPointerPose::StaticClass, TEXT("UIsdkIHandPointerPose"), &Z_Registration_Info_UClass_UIsdkIHandPointerPose, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIHandPointerPose), 920478983U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_3899623863(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_2305808576{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandPointerPose_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

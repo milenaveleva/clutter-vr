@@ -8,7 +8,7 @@
 #include "Interaction/GrabDetectors/IsdkGrabDetector.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkGrabDetector() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkGrabDetector ********************************************************
-void UIsdkGrabDetector::StaticRegisterNativesUIsdkGrabDetector()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkGrabDetector;
 UClass* UIsdkGrabDetector::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkGrabDetector::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkGrabDetector.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkGrabDetector"),
 			Z_Registration_Info_UClass_UIsdkGrabDetector.InnerSingleton,
 			StaticRegisterNativesUIsdkGrabDetector,
@@ -56,29 +53,39 @@ struct Z_Construct_UClass_UIsdkGrabDetector_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * UIsdkGrabDetector is an abstract base class that provides a grab interaction with a means of\n * detecting grabbables (eg, by hand, distance, or ray).  It is intended to be used by\n * UIsdkGrabberComponent to support multiple grab behaviors.\n *\n * @see UIsdkGrabberComponent\n * @see UIsdkHandGrabDetector\n * @see UIsdkRayGrabDetector\n * @see UIsdkDistanceGrabDetector\n */" },
+#endif
 		{ "IncludePath", "Interaction/GrabDetectors/IsdkGrabDetector.h" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UIsdkGrabDetector is an abstract base class that provides a grab interaction with a means of\ndetecting grabbables (eg, by hand, distance, or ray).  It is intended to be used by\nUIsdkGrabberComponent to support multiple grab behaviors.\n\n@see UIsdkGrabberComponent\n@see UIsdkHandGrabDetector\n@see UIsdkRayGrabDetector\n@see UIsdkDistanceGrabDetector" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_GrabberComponent_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkGrabDetector.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkGrabDetector constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_GrabberComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkGrabDetector constinit property declarations **************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkGrabDetector>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkGrabDetector_Statics
+
+// ********** Begin Class UIsdkGrabDetector Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkGrabDetector_Statics::NewProp_GrabberComponent = { "GrabberComponent", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkGrabDetector, GrabberComponent), Z_Construct_UClass_UIsdkGrabberComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrabberComponent_MetaData), NewProp_GrabberComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkGrabDetector_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkGrabDetector_Statics::NewProp_GrabberComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkGrabDetector_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkGrabDetector Property Definitions *************************************
 UObject* (*const Z_Construct_UClass_UIsdkGrabDetector_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -99,6 +106,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkGrabDetector_Stati
 	0x009000A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkGrabDetector_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkGrabDetector_Statics::Class_MetaDataParams)
 };
+void UIsdkGrabDetector::StaticRegisterNativesUIsdkGrabDetector()
+{
+}
 UClass* Z_Construct_UClass_UIsdkGrabDetector()
 {
 	if (!Z_Registration_Info_UClass_UIsdkGrabDetector.OuterSingleton)
@@ -108,21 +118,23 @@ UClass* Z_Construct_UClass_UIsdkGrabDetector()
 	return Z_Registration_Info_UClass_UIsdkGrabDetector.OuterSingleton;
 }
 UIsdkGrabDetector::UIsdkGrabDetector(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkGrabDetector);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkGrabDetector);
 UIsdkGrabDetector::~UIsdkGrabDetector() {}
 // ********** End Class UIsdkGrabDetector **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkGrabDetector, UIsdkGrabDetector::StaticClass, TEXT("UIsdkGrabDetector"), &Z_Registration_Info_UClass_UIsdkGrabDetector, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkGrabDetector), 957407316U) },
+		{ Z_Construct_UClass_UIsdkGrabDetector, UIsdkGrabDetector::StaticClass, TEXT("UIsdkGrabDetector"), &Z_Registration_Info_UClass_UIsdkGrabDetector, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkGrabDetector), 2867334300U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_288948890(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_1159470322{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -39,7 +39,6 @@
 /NATVIS:"../Intermediate/Build/Win64/x64/UnrealEditor/Development/RenderCore/RenderCore.natvis"
 "D:/git/ClutterVR/Intermediate/Build/Win64/x64/ClutterVREditor/Development/UnrealEd/SharedPCH.UnrealEd.Project.ValApi.ValExpApi.Cpp20.InclOrderUnreal5_4.h.obj"
 "D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRSoftwareOcclusion/Module.OculusXRSoftwareOcclusion.cpp.obj"
-"D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRSoftwareOcclusion/SceneSoftwareOcclusionProvider.cpp.obj"
 "D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXRSoftwareOcclusion/Default.rc2.res"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/Core/UnrealEditor-Core.lib"
 "../Intermediate/Build/Win64/x64/UnrealEditor/Development/CoreUObject/UnrealEditor-CoreUObject.lib"

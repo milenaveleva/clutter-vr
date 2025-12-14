@@ -8,7 +8,7 @@
 #include "Tests/IsdkExternalHandDataModifierTestFixtures.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkExternalHandDataModifierTestFixtures() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkExternalHandDataModifierTestFixtures ********************************
-void UIsdkExternalHandDataModifierTestFixtures::StaticRegisterNativesUIsdkExternalHandDataModifierTestFixtures()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures;
 UClass* UIsdkExternalHandDataModifierTestFixtures::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkExternalHandDataModifierTestFixtures::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkExternalHandDataModifierTestFixtures"),
 			Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures.InnerSingleton,
 			StaticRegisterNativesUIsdkExternalHandDataModifierTestFixtures,
@@ -59,12 +56,15 @@ struct Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures_Statics
 		{ "ModuleRelativePath", "Private/Tests/IsdkExternalHandDataModifierTestFixtures.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkExternalHandDataModifierTestFixtures constinit property declarations 
+// ********** End Class UIsdkExternalHandDataModifierTestFixtures constinit property declarations **
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkExternalHandDataModifierTestFixtures>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures_Statics
 UObject* (*const Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkExternalHandDataModifier,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -85,6 +85,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkExternalHandDataMo
 	0x00A000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures_Statics::Class_MetaDataParams)
 };
+void UIsdkExternalHandDataModifierTestFixtures::StaticRegisterNativesUIsdkExternalHandDataModifierTestFixtures()
+{
+}
 UClass* Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures()
 {
 	if (!Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures.OuterSingleton)
@@ -94,21 +97,23 @@ UClass* Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures()
 	return Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures.OuterSingleton;
 }
 UIsdkExternalHandDataModifierTestFixtures::UIsdkExternalHandDataModifierTestFixtures() {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkExternalHandDataModifierTestFixtures);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkExternalHandDataModifierTestFixtures);
 UIsdkExternalHandDataModifierTestFixtures::~UIsdkExternalHandDataModifierTestFixtures() {}
 // ********** End Class UIsdkExternalHandDataModifierTestFixtures **********************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures, UIsdkExternalHandDataModifierTestFixtures::StaticClass, TEXT("UIsdkExternalHandDataModifierTestFixtures"), &Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkExternalHandDataModifierTestFixtures), 2255528606U) },
+		{ Z_Construct_UClass_UIsdkExternalHandDataModifierTestFixtures, UIsdkExternalHandDataModifierTestFixtures::StaticClass, TEXT("UIsdkExternalHandDataModifierTestFixtures"), &Z_Registration_Info_UClass_UIsdkExternalHandDataModifierTestFixtures, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkExternalHandDataModifierTestFixtures), 2887817825U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_1759050128(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_1581329723{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkExternalHandDataModifierTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

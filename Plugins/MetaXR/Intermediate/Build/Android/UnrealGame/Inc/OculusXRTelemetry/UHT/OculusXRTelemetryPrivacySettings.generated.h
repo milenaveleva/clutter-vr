@@ -17,23 +17,24 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRTelemetryPrivacySettings ****************************************
+struct Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics;
 OCULUSXRTELEMETRY_API UClass* Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRTelemetryPrivacySettings(); \
-	friend struct Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRTELEMETRY_API UClass* Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_NoRegister(); \
+	friend OCULUSXRTELEMETRY_API UClass* ::Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRTelemetryPrivacySettings, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRTelemetry"), Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRTelemetryPrivacySettings) \
-	static const TCHAR* StaticConfigName() {return TEXT("EditorSettings");} \
+	static constexpr const TCHAR* StaticConfigName() {return TEXT("EditorSettings");} \
  \
 	virtual UObject* _getUObject() const override { return const_cast<UOculusXRTelemetryPrivacySettings*>(this); }
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	OCULUSXRTELEMETRY_API UOculusXRTelemetryPrivacySettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRTelemetryPrivacySettings) \
@@ -45,12 +46,12 @@ public: \
 	OCULUSXRTELEMETRY_API virtual ~UOculusXRTelemetryPrivacySettings();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_10_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_10_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h_13_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,6 +61,6 @@ class UOculusXRTelemetryPrivacySettings;
 // ********** End Class UOculusXRTelemetryPrivacySettings ******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

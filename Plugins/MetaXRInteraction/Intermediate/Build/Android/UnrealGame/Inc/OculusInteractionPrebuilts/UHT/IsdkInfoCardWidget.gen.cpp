@@ -8,7 +8,7 @@
 #include "InfoCard/IsdkInfoCardWidget.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInfoCardWidget() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkInfoCardWidget ******************************************************
-void UIsdkInfoCardWidget::StaticRegisterNativesUIsdkInfoCardWidget()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkInfoCardWidget;
 UClass* UIsdkInfoCardWidget::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkInfoCardWidget::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkInfoCardWidget.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInfoCardWidget"),
 			Z_Registration_Info_UClass_UIsdkInfoCardWidget.InnerSingleton,
 			StaticRegisterNativesUIsdkInfoCardWidget,
@@ -67,15 +64,20 @@ struct Z_Construct_UClass_UIsdkInfoCardWidget_Statics
 		{ "ModuleRelativePath", "Public/InfoCard/IsdkInfoCardWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkInfoCardWidget constinit property declarations **********************
 	static const UECodeGen_Private::FTextPropertyParams NewProp_LabelText;
 	static const UECodeGen_Private::FTextPropertyParams NewProp_BodyText;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkInfoCardWidget constinit property declarations ************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkInfoCardWidget>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkInfoCardWidget_Statics
+
+// ********** Begin Class UIsdkInfoCardWidget Property Definitions *********************************
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UIsdkInfoCardWidget_Statics::NewProp_LabelText = { "LabelText", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInfoCardWidget, LabelText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_LabelText_MetaData), NewProp_LabelText_MetaData) };
 const UECodeGen_Private::FTextPropertyParams Z_Construct_UClass_UIsdkInfoCardWidget_Statics::NewProp_BodyText = { "BodyText", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Text, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInfoCardWidget, BodyText), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_BodyText_MetaData), NewProp_BodyText_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInfoCardWidget_Statics::PropPointers[] = {
@@ -83,6 +85,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInfo
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInfoCardWidget_Statics::NewProp_BodyText,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInfoCardWidget_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkInfoCardWidget Property Definitions ***********************************
 UObject* (*const Z_Construct_UClass_UIsdkInfoCardWidget_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UUserWidget,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -103,6 +106,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkInfoCardWidget_Sta
 	0x00B010A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInfoCardWidget_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkInfoCardWidget_Statics::Class_MetaDataParams)
 };
+void UIsdkInfoCardWidget::StaticRegisterNativesUIsdkInfoCardWidget()
+{
+}
 UClass* Z_Construct_UClass_UIsdkInfoCardWidget()
 {
 	if (!Z_Registration_Info_UClass_UIsdkInfoCardWidget.OuterSingleton)
@@ -112,21 +118,23 @@ UClass* Z_Construct_UClass_UIsdkInfoCardWidget()
 	return Z_Registration_Info_UClass_UIsdkInfoCardWidget.OuterSingleton;
 }
 UIsdkInfoCardWidget::UIsdkInfoCardWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkInfoCardWidget);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkInfoCardWidget);
 UIsdkInfoCardWidget::~UIsdkInfoCardWidget() {}
 // ********** End Class UIsdkInfoCardWidget ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkInfoCardWidget, UIsdkInfoCardWidget::StaticClass, TEXT("UIsdkInfoCardWidget"), &Z_Registration_Info_UClass_UIsdkInfoCardWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInfoCardWidget), 1055437824U) },
+		{ Z_Construct_UClass_UIsdkInfoCardWidget, UIsdkInfoCardWidget::StaticClass, TEXT("UIsdkInfoCardWidget"), &Z_Registration_Info_UClass_UIsdkInfoCardWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInfoCardWidget), 3069703050U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_2328110470(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_3288768066{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardWidget_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

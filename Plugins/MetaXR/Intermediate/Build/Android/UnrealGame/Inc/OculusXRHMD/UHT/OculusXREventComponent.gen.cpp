@@ -8,7 +8,7 @@
 #include "OculusXREventComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXREventComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -33,11 +33,16 @@ struct Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefres
 		{ "ModuleRelativePath", "Public/OculusXREventComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusDisplayRefreshRateChangedEventDelegate constinit property declarations 
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_fromRefreshRate;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_toRefreshRate;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusDisplayRefreshRateChangedEventDelegate constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusDisplayRefreshRateChangedEventDelegate Property Definitions ****
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::NewProp_fromRefreshRate = { "fromRefreshRate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXREventComponent_eventOculusDisplayRefreshRateChangedEventDelegate_Parms, fromRefreshRate), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::NewProp_toRefreshRate = { "toRefreshRate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXREventComponent_eventOculusDisplayRefreshRateChangedEventDelegate_Parms, toRefreshRate), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::PropPointers[] = {
@@ -45,7 +50,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::NewProp_toRefreshRate,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXREventComponent, nullptr, "OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature", Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::OculusXREventComponent_eventOculusDisplayRefreshRateChangedEventDelegate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusDisplayRefreshRateChangedEventDelegate Property Definitions ******
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXREventComponent, nullptr, "OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature", 	Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::OculusXREventComponent_eventOculusDisplayRefreshRateChangedEventDelegate_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature_Statics::OculusXREventComponent_eventOculusDisplayRefreshRateChangedEventDelegate_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature()
 {
@@ -82,11 +91,16 @@ struct Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingSt
 		{ "ModuleRelativePath", "Public/OculusXREventComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusEyeTrackingStateChangedEventDelegate constinit property declarations 
 	static void NewProp_bEyeTrackingOn_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bEyeTrackingOn;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOculusEyeTrackingStateChangedEventDelegate constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
+
+// ********** Begin Delegate FOculusEyeTrackingStateChangedEventDelegate Property Definitions ******
 void Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::NewProp_bEyeTrackingOn_SetBit(void* Obj)
 {
 	((OculusXREventComponent_eventOculusEyeTrackingStateChangedEventDelegate_Parms*)Obj)->bEyeTrackingOn = 1;
@@ -96,7 +110,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunctio
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::NewProp_bEyeTrackingOn,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXREventComponent, nullptr, "OculusEyeTrackingStateChangedEventDelegate__DelegateSignature", Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::OculusXREventComponent_eventOculusEyeTrackingStateChangedEventDelegate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FOculusEyeTrackingStateChangedEventDelegate Property Definitions ********
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXREventComponent, nullptr, "OculusEyeTrackingStateChangedEventDelegate__DelegateSignature", 	Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::OculusXREventComponent_eventOculusEyeTrackingStateChangedEventDelegate_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature_Statics::OculusXREventComponent_eventOculusEyeTrackingStateChangedEventDelegate_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature()
 {
@@ -120,9 +138,6 @@ void UOculusXREventComponent::FOculusEyeTrackingStateChangedEventDelegate_Delega
 // ********** End Delegate FOculusEyeTrackingStateChangedEventDelegate *****************************
 
 // ********** Begin Class UOculusXREventComponent **************************************************
-void UOculusXREventComponent::StaticRegisterNativesUOculusXREventComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXREventComponent;
 UClass* UOculusXREventComponent::GetPrivateStaticClass()
 {
@@ -130,7 +145,7 @@ UClass* UOculusXREventComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXREventComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXREventComponent"),
 			Z_Registration_Info_UClass_UOculusXREventComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXREventComponent,
@@ -170,27 +185,33 @@ struct Z_Construct_UClass_UOculusXREventComponent_Statics
 		{ "ModuleRelativePath", "Public/OculusXREventComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXREventComponent constinit property declarations ******************
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OculusDisplayRefreshRateChanged;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OculusEyeTrackingStateChanged;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXREventComponent constinit property declarations ********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature, "OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature" }, // 1909158691
-		{ &Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature, "OculusEyeTrackingStateChangedEventDelegate__DelegateSignature" }, // 2302303331
+		{ &Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature, "OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature" }, // 1553971107
+		{ &Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature, "OculusEyeTrackingStateChangedEventDelegate__DelegateSignature" }, // 1376002335
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXREventComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXREventComponent_Statics::NewProp_OculusDisplayRefreshRateChanged = { "OculusDisplayRefreshRateChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXREventComponent, OculusDisplayRefreshRateChanged), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OculusDisplayRefreshRateChanged_MetaData), NewProp_OculusDisplayRefreshRateChanged_MetaData) }; // 1909158691
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXREventComponent_Statics::NewProp_OculusEyeTrackingStateChanged = { "OculusEyeTrackingStateChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXREventComponent, OculusEyeTrackingStateChanged), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OculusEyeTrackingStateChanged_MetaData), NewProp_OculusEyeTrackingStateChanged_MetaData) }; // 2302303331
+}; // struct Z_Construct_UClass_UOculusXREventComponent_Statics
+
+// ********** Begin Class UOculusXREventComponent Property Definitions *****************************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXREventComponent_Statics::NewProp_OculusDisplayRefreshRateChanged = { "OculusDisplayRefreshRateChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXREventComponent, OculusDisplayRefreshRateChanged), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OculusDisplayRefreshRateChanged_MetaData), NewProp_OculusDisplayRefreshRateChanged_MetaData) }; // 1553971107
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXREventComponent_Statics::NewProp_OculusEyeTrackingStateChanged = { "OculusEyeTrackingStateChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXREventComponent, OculusEyeTrackingStateChanged), Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OculusEyeTrackingStateChanged_MetaData), NewProp_OculusEyeTrackingStateChanged_MetaData) }; // 1376002335
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXREventComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXREventComponent_Statics::NewProp_OculusDisplayRefreshRateChanged,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXREventComponent_Statics::NewProp_OculusEyeTrackingStateChanged,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXREventComponent_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXREventComponent Property Definitions *******************************
 UObject* (*const Z_Construct_UClass_UOculusXREventComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRHMD,
@@ -211,6 +232,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXREventComponent
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXREventComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXREventComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXREventComponent::StaticRegisterNativesUOculusXREventComponent()
+{
+}
 UClass* Z_Construct_UClass_UOculusXREventComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXREventComponent.OuterSingleton)
@@ -220,21 +244,23 @@ UClass* Z_Construct_UClass_UOculusXREventComponent()
 	return Z_Registration_Info_UClass_UOculusXREventComponent.OuterSingleton;
 }
 UOculusXREventComponent::UOculusXREventComponent(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXREventComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXREventComponent);
 UOculusXREventComponent::~UOculusXREventComponent() {}
 // ********** End Class UOculusXREventComponent ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXREventComponent, UOculusXREventComponent::StaticClass, TEXT("UOculusXREventComponent"), &Z_Registration_Info_UClass_UOculusXREventComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXREventComponent), 1293516811U) },
+		{ Z_Construct_UClass_UOculusXREventComponent, UOculusXREventComponent::StaticClass, TEXT("UOculusXREventComponent"), &Z_Registration_Info_UClass_UOculusXREventComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXREventComponent), 1796407660U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_2347135797(TEXT("/Script/OculusXRHMD"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_3710868549{
+	TEXT("/Script/OculusXRHMD"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h__Script_OculusXRHMD_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,7 +9,7 @@
 #include "OculusXRAnchorTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRSceneAnchorComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -21,9 +21,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRScene();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRSceneAnchorComponent ********************************************
-void UOculusXRSceneAnchorComponent::StaticRegisterNativesUOculusXRSceneAnchorComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent;
 UClass* UOculusXRSceneAnchorComponent::GetPrivateStaticClass()
 {
@@ -31,7 +28,7 @@ UClass* UOculusXRSceneAnchorComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSceneAnchorComponent"),
 			Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRSceneAnchorComponent,
@@ -58,12 +55,16 @@ struct Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * DEPRECATED: AOculusXRSceneActor and associated classes are deprecated (v65), please use MR Utility Kit instead\n * (https://developer.oculus.com/documentation/unreal/unreal-mr-utility-kit-overview)\n */" },
+#endif
 		{ "DisplayName", "OculusXR Scene Anchor Component" },
 		{ "IncludePath", "OculusXRSceneAnchorComponent.h" },
 		{ "ModuleRelativePath", "Public/OculusXRSceneAnchorComponent.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "DEPRECATED: AOculusXRSceneActor and associated classes are deprecated (v65), please use MR Utility Kit instead\n(https://developer.oculus.com/documentation/unreal/unreal-mr-utility-kit-overview)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SemanticClassifications_MetaData[] = {
 		{ "Category", "OculusXR|Scene Anchor Component" },
@@ -74,25 +75,31 @@ struct Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics
 		{ "ModuleRelativePath", "Public/OculusXRSceneAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSceneAnchorComponent constinit property declarations ************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_SemanticClassifications_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_SemanticClassifications;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RoomSpaceID;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRSceneAnchorComponent constinit property declarations **************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSceneAnchorComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics
+
+// ********** Begin Class UOculusXRSceneAnchorComponent Property Definitions ***********************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_SemanticClassifications_Inner = { "SemanticClassifications", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_SemanticClassifications = { "SemanticClassifications", nullptr, (EPropertyFlags)0x0010000000002014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSceneAnchorComponent, SemanticClassifications), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SemanticClassifications_MetaData), NewProp_SemanticClassifications_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_RoomSpaceID = { "RoomSpaceID", nullptr, (EPropertyFlags)0x0010000000002014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSceneAnchorComponent, RoomSpaceID), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomSpaceID_MetaData), NewProp_RoomSpaceID_MetaData) }; // 1603820546
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_RoomSpaceID = { "RoomSpaceID", nullptr, (EPropertyFlags)0x0010000000002014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSceneAnchorComponent, RoomSpaceID), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomSpaceID_MetaData), NewProp_RoomSpaceID_MetaData) }; // 2459929064
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_SemanticClassifications_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_SemanticClassifications,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::NewProp_RoomSpaceID,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRSceneAnchorComponent Property Definitions *************************
 UObject* (*const Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UOculusXRAnchorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRScene,
@@ -113,6 +120,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSceneAnchorCom
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSceneAnchorComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRSceneAnchorComponent::StaticRegisterNativesUOculusXRSceneAnchorComponent()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRSceneAnchorComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent.OuterSingleton)
@@ -121,21 +131,23 @@ UClass* Z_Construct_UClass_UOculusXRSceneAnchorComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSceneAnchorComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSceneAnchorComponent);
 UOculusXRSceneAnchorComponent::~UOculusXRSceneAnchorComponent() {}
 // ********** End Class UOculusXRSceneAnchorComponent **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRSceneAnchorComponent, UOculusXRSceneAnchorComponent::StaticClass, TEXT("UOculusXRSceneAnchorComponent"), &Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSceneAnchorComponent), 2460741345U) },
+		{ Z_Construct_UClass_UOculusXRSceneAnchorComponent, UOculusXRSceneAnchorComponent::StaticClass, TEXT("UOculusXRSceneAnchorComponent"), &Z_Registration_Info_UClass_UOculusXRSceneAnchorComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSceneAnchorComponent), 3035612665U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_4147574039(TEXT("/Script/OculusXRScene"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_3407511850{
+	TEXT("/Script/OculusXRScene"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRScene_Public_OculusXRSceneAnchorComponent_h__Script_OculusXRScene_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

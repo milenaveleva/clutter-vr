@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FOculusXRBoneCorrection *******************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_38_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBoneCorrection_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBoneCorrection_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_38_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBoneCorrection_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FOculusXRBoneCorrection;
 // ********** End ScriptStruct FOculusXRBoneCorrection *********************************************
 
 // ********** Begin ScriptStruct FOculusXRBoneCorrectionSet ****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_59_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBoneCorrectionSet_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBoneCorrectionSet_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_59_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBoneCorrectionSet_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -35,20 +37,21 @@ struct FOculusXRBoneCorrectionSet;
 // ********** End ScriptStruct FOculusXRBoneCorrectionSet ******************************************
 
 // ********** Begin Class UOculusXRLiveLinkRetargetBodyAsset ***************************************
+struct Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_Statics;
 OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRLiveLinkRetargetBodyAsset(); \
-	friend struct Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_NoRegister(); \
+	friend OCULUSXRMOVEMENT_API UClass* ::Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRLiveLinkRetargetBodyAsset, ULiveLinkRetargetAsset, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRMovement"), Z_Construct_UClass_UOculusXRLiveLinkRetargetBodyAsset_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRLiveLinkRetargetBodyAsset)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRLiveLinkRetargetBodyAsset(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRLiveLinkRetargetBodyAsset) \
@@ -60,12 +63,12 @@ public: \
 	NO_API virtual ~UOculusXRLiveLinkRetargetBodyAsset();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_76_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_76_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h_79_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -75,7 +78,7 @@ class UOculusXRLiveLinkRetargetBodyAsset;
 // ********** End Class UOculusXRLiveLinkRetargetBodyAsset *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRLiveLinkRetargetBodyAsset_h
 
 // ********** Begin Enum EOculusXRAxis *************************************************************
 #define FOREACH_ENUM_EOCULUSXRAXIS(op) \
@@ -88,7 +91,7 @@ class UOculusXRLiveLinkRetargetBodyAsset;
 
 enum class EOculusXRAxis : uint8;
 template<> struct TIsUEnumClass<EOculusXRAxis> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRAxis>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRAxis>();
 // ********** End Enum EOculusXRAxis ***************************************************************
 
 // ********** Begin Enum EOculusXRRetargetingMode **************************************************
@@ -101,7 +104,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRAxis>();
 
 enum class EOculusXRRetargetingMode : uint8;
 template<> struct TIsUEnumClass<EOculusXRRetargetingMode> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRRetargetingMode>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRRetargetingMode>();
 // ********** End Enum EOculusXRRetargetingMode ****************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

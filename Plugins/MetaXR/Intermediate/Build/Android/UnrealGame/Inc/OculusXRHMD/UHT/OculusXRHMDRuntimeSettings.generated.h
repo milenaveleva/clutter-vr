@@ -18,29 +18,28 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRHMDRuntimeSettings **********************************************
 #if WITH_EDITOR
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_RPC_WRAPPERS_EOD \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_RPC_WRAPPERS_EOD \
 	DECLARE_FUNCTION(execGetMetaXRSimulatorInstalledVersions);
 #else // WITH_EDITOR
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_RPC_WRAPPERS_EOD
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_RPC_WRAPPERS_EOD
 #endif // WITH_EDITOR
 
 
+struct Z_Construct_UClass_UOculusXRHMDRuntimeSettings_Statics;
 OCULUSXRHMD_API UClass* Z_Construct_UClass_UOculusXRHMDRuntimeSettings_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRHMDRuntimeSettings(); \
-	friend struct Z_Construct_UClass_UOculusXRHMDRuntimeSettings_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRHMDRuntimeSettings_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRHMD_API UClass* Z_Construct_UClass_UOculusXRHMDRuntimeSettings_NoRegister(); \
+	friend OCULUSXRHMD_API UClass* ::Z_Construct_UClass_UOculusXRHMDRuntimeSettings_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRHMDRuntimeSettings, UObject, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRHMD"), Z_Construct_UClass_UOculusXRHMDRuntimeSettings_NoRegister) \
-	DECLARE_SERIALIZER(UOculusXRHMDRuntimeSettings) \
-	static const TCHAR* StaticConfigName() {return TEXT("Engine");} \
+	DECLARE_SERIALIZER(UOculusXRHMDRuntimeSettings)
 
 
-
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRHMDRuntimeSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRHMDRuntimeSettings) \
@@ -52,13 +51,13 @@ public: \
 	NO_API virtual ~UOculusXRHMDRuntimeSettings();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_26_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_26_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_RPC_WRAPPERS_EOD \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_RPC_WRAPPERS_EOD \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h_29_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -68,7 +67,7 @@ class UOculusXRHMDRuntimeSettings;
 // ********** End Class UOculusXRHMDRuntimeSettings ************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRHMDRuntimeSettings_h
 
 // ********** Begin Enum EOculusXRSupportedDevices *************************************************
 #define FOREACH_ENUM_EOCULUSXRSUPPORTEDDEVICES(op) \
@@ -79,7 +78,7 @@ class UOculusXRHMDRuntimeSettings;
 
 enum class EOculusXRSupportedDevices : uint8;
 template<> struct TIsUEnumClass<EOculusXRSupportedDevices> { enum { Value = true }; };
-template<> OCULUSXRHMD_API UEnum* StaticEnum<EOculusXRSupportedDevices>();
+template<> OCULUSXRHMD_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSupportedDevices>();
 // ********** End Enum EOculusXRSupportedDevices ***************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRColocationSubsystem *********************************************
+struct Z_Construct_UClass_UOculusXRColocationSubsystem_Statics;
 OCULUSXRCOLOCATION_API UClass* Z_Construct_UClass_UOculusXRColocationSubsystem_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRColocationSubsystem(); \
-	friend struct Z_Construct_UClass_UOculusXRColocationSubsystem_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRColocationSubsystem_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRCOLOCATION_API UClass* Z_Construct_UClass_UOculusXRColocationSubsystem_NoRegister(); \
+	friend OCULUSXRCOLOCATION_API UClass* ::Z_Construct_UClass_UOculusXRColocationSubsystem_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRColocationSubsystem, UGameInstanceSubsystem, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRColocation"), Z_Construct_UClass_UOculusXRColocationSubsystem_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRColocationSubsystem)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRColocationSubsystem(UOculusXRColocationSubsystem&&) = delete; \
 	UOculusXRColocationSubsystem(const UOculusXRColocationSubsystem&) = delete; \
@@ -40,12 +41,12 @@ public: \
 	NO_API virtual ~UOculusXRColocationSubsystem();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_12_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_12_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +56,6 @@ class UOculusXRColocationSubsystem;
 // ********** End Class UOculusXRColocationSubsystem ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSubsystem_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

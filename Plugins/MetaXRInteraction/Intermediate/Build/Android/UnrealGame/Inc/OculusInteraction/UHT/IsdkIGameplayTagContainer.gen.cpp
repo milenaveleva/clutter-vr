@@ -9,7 +9,7 @@
 #include "GameplayTagContainer.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIGameplayTagContainer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -47,9 +47,9 @@ bool IIsdkIGameplayTagContainer::Execute_GetGameplayTagContainer(UObject* O, FGa
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIGameplayTagContainer_GetGameplayTagContainer);
 	if (Func)
 	{
-		Parms.ContainerOut=ContainerOut;
+		Parms.ContainerOut=std::move(ContainerOut);
 		O->ProcessEvent(Func, &Parms);
-		ContainerOut=Parms.ContainerOut;
+		ContainerOut=std::move(Parms.ContainerOut);
 	}
 	else if (auto I = (IIsdkIGameplayTagContainer*)(O->GetNativeInterfaceAddress(UIsdkIGameplayTagContainer::StaticClass())))
 	{
@@ -62,18 +62,27 @@ struct Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Implementing class will replace the given container with its GameplayTagContainer for use in\n   * interactions\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkIGameplayTagContainer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Implementing class will replace the given container with its GameplayTagContainer for use in\n  * interactions" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetGameplayTagContainer constinit property declarations ***************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ContainerOut;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetGameplayTagContainer constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::NewProp_ContainerOut = { "ContainerOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIGameplayTagContainer_eventGetGameplayTagContainer_Parms, ContainerOut), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(0, nullptr) }; // 2104890724
+
+// ********** Begin Function GetGameplayTagContainer Property Definitions **************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::NewProp_ContainerOut = { "ContainerOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIGameplayTagContainer_eventGetGameplayTagContainer_Parms, ContainerOut), Z_Construct_UScriptStruct_FGameplayTagContainer, METADATA_PARAMS(0, nullptr) }; // 3438578166
 void Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkIGameplayTagContainer_eventGetGameplayTagContainer_Parms*)Obj)->ReturnValue = 1;
@@ -84,7 +93,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIGameplayTagContainer, nullptr, "GetGameplayTagContainer", Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::PropPointers), sizeof(IsdkIGameplayTagContainer_eventGetGameplayTagContainer_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetGameplayTagContainer Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIGameplayTagContainer, nullptr, "GetGameplayTagContainer", 	Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::PropPointers), 
+sizeof(IsdkIGameplayTagContainer_eventGetGameplayTagContainer_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C420C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIGameplayTagContainer_eventGetGameplayTagContainer_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer()
 {
@@ -106,14 +119,6 @@ DEFINE_FUNCTION(IIsdkIGameplayTagContainer::execGetGameplayTagContainer)
 // ********** End Interface UIsdkIGameplayTagContainer Function GetGameplayTagContainer ************
 
 // ********** Begin Interface UIsdkIGameplayTagContainer *******************************************
-void UIsdkIGameplayTagContainer::StaticRegisterNativesUIsdkIGameplayTagContainer()
-{
-	UClass* Class = UIsdkIGameplayTagContainer::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetGameplayTagContainer", &IIsdkIGameplayTagContainer::execGetGameplayTagContainer },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIGameplayTagContainer;
 UClass* UIsdkIGameplayTagContainer::GetPrivateStaticClass()
 {
@@ -121,7 +126,7 @@ UClass* UIsdkIGameplayTagContainer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIGameplayTagContainer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIGameplayTagContainer"),
 			Z_Registration_Info_UClass_UIsdkIGameplayTagContainer.InnerSingleton,
 			StaticRegisterNativesUIsdkIGameplayTagContainer,
@@ -150,16 +155,22 @@ struct Z_Construct_UClass_UIsdkIGameplayTagContainer_Statics
 		{ "ModuleRelativePath", "Public/Core/IsdkIGameplayTagContainer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIGameplayTagContainer constinit property declarations ***********
+// ********** End Interface UIsdkIGameplayTagContainer constinit property declarations *************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetGameplayTagContainer"), .Pointer = &IIsdkIGameplayTagContainer::execGetGameplayTagContainer },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer, "GetGameplayTagContainer" }, // 1247845449
+		{ &Z_Construct_UFunction_UIsdkIGameplayTagContainer_GetGameplayTagContainer, "GetGameplayTagContainer" }, // 3068897703
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIGameplayTagContainer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIGameplayTagContainer_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIGameplayTagContainer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -180,6 +191,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIGameplayTagContai
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIGameplayTagContainer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIGameplayTagContainer_Statics::Class_MetaDataParams)
 };
+void UIsdkIGameplayTagContainer::StaticRegisterNativesUIsdkIGameplayTagContainer()
+{
+	UClass* Class = UIsdkIGameplayTagContainer::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIGameplayTagContainer_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIGameplayTagContainer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIGameplayTagContainer.OuterSingleton)
@@ -189,20 +205,22 @@ UClass* Z_Construct_UClass_UIsdkIGameplayTagContainer()
 	return Z_Registration_Info_UClass_UIsdkIGameplayTagContainer.OuterSingleton;
 }
 UIsdkIGameplayTagContainer::UIsdkIGameplayTagContainer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIGameplayTagContainer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIGameplayTagContainer);
 // ********** End Interface UIsdkIGameplayTagContainer *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIGameplayTagContainer, UIsdkIGameplayTagContainer::StaticClass, TEXT("UIsdkIGameplayTagContainer"), &Z_Registration_Info_UClass_UIsdkIGameplayTagContainer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIGameplayTagContainer), 258907587U) },
+		{ Z_Construct_UClass_UIsdkIGameplayTagContainer, UIsdkIGameplayTagContainer::StaticClass, TEXT("UIsdkIGameplayTagContainer"), &Z_Registration_Info_UClass_UIsdkIGameplayTagContainer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIGameplayTagContainer), 899830290U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_1706851668(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_2653854811{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkIGameplayTagContainer_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

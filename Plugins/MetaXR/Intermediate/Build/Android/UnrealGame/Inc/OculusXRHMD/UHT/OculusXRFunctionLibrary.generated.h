@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UObject;
 class UTexture2D;
 enum class EControllerHand : uint8;
@@ -36,7 +35,7 @@ struct FOculusXRHmdUserProfile;
 struct FOculusXRPerformanceMetrics;
 
 // ********** Begin Class UOculusXRFunctionLibrary *************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_RPC_WRAPPERS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execSetGuardianVisibility); \
 	DECLARE_FUNCTION(execGetNodeGuardianIntersection); \
 	DECLARE_FUNCTION(execGetPointGuardianIntersection); \
@@ -94,20 +93,21 @@ struct FOculusXRPerformanceMetrics;
 	DECLARE_FUNCTION(execGetPose);
 
 
+struct Z_Construct_UClass_UOculusXRFunctionLibrary_Statics;
 OCULUSXRHMD_API UClass* Z_Construct_UClass_UOculusXRFunctionLibrary_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRFunctionLibrary(); \
-	friend struct Z_Construct_UClass_UOculusXRFunctionLibrary_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRFunctionLibrary_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRHMD_API UClass* Z_Construct_UClass_UOculusXRFunctionLibrary_NoRegister(); \
+	friend OCULUSXRHMD_API UClass* ::Z_Construct_UClass_UOculusXRFunctionLibrary_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRFunctionLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRHMD"), Z_Construct_UClass_UOculusXRFunctionLibrary_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRFunctionLibrary)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRFunctionLibrary) \
@@ -119,13 +119,13 @@ public: \
 	NO_API virtual ~UOculusXRFunctionLibrary();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_82_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_82_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_RPC_WRAPPERS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_RPC_WRAPPERS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h_85_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -135,6 +135,6 @@ class UOculusXRFunctionLibrary;
 // ********** End Class UOculusXRFunctionLibrary ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRFunctionLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

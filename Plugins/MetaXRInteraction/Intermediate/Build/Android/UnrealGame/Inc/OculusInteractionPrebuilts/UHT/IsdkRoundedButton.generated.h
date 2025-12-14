@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class AIsdkRoundedButton *******************************************************
+struct Z_Construct_UClass_AIsdkRoundedButton_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_AIsdkRoundedButton_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAIsdkRoundedButton(); \
-	friend struct Z_Construct_UClass_AIsdkRoundedButton_Statics; \
+	friend struct ::Z_Construct_UClass_AIsdkRoundedButton_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_AIsdkRoundedButton_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_AIsdkRoundedButton_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AIsdkRoundedButton, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_AIsdkRoundedButton_NoRegister) \
 	DECLARE_SERIALIZER(AIsdkRoundedButton)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AIsdkRoundedButton(AIsdkRoundedButton&&) = delete; \
 	AIsdkRoundedButton(const AIsdkRoundedButton&) = delete; \
@@ -40,12 +41,12 @@ public: \
 	NO_API virtual ~AIsdkRoundedButton();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_28_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_28_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h_31_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +56,6 @@ class AIsdkRoundedButton;
 // ********** End Class AIsdkRoundedButton *********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

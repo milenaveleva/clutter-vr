@@ -15,13 +15,12 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 enum class EOculusXRSpaceStorageLocation : uint8;
 struct FOculusXRUInt64;
 struct FOculusXRUUID;
 
 // ********** Begin Class UOculusXRAnchorComponent *************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execIsSaved); \
 	DECLARE_FUNCTION(execIsStoredAtLocation); \
 	DECLARE_FUNCTION(execGetUUID); \
@@ -30,20 +29,21 @@ struct FOculusXRUUID;
 	DECLARE_FUNCTION(execGetHandle);
 
 
+struct Z_Construct_UClass_UOculusXRAnchorComponent_Statics;
 OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRAnchorComponent(); \
-	friend struct Z_Construct_UClass_UOculusXRAnchorComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRAnchorComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRANCHORS_API UClass* Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister(); \
+	friend OCULUSXRANCHORS_API UClass* ::Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRAnchorComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRAnchors"), Z_Construct_UClass_UOculusXRAnchorComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRAnchorComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRAnchorComponent(UOculusXRAnchorComponent&&) = delete; \
 	UOculusXRAnchorComponent(const UOculusXRAnchorComponent&) = delete; \
@@ -53,13 +53,13 @@ public: \
 	NO_API virtual ~UOculusXRAnchorComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_9_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_9_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h_12_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -69,6 +69,6 @@ class UOculusXRAnchorComponent;
 // ********** End Class UOculusXRAnchorComponent ***************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

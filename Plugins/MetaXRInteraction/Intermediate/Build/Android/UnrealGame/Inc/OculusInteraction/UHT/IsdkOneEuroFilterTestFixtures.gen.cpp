@@ -8,7 +8,7 @@
 #include "Tests/IsdkOneEuroFilterTestFixtures.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkOneEuroFilterTestFixtures() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -21,9 +21,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkOneEuroFilterTestFixtures *******************************************
-void UIsdkOneEuroFilterTestFixtures::StaticRegisterNativesUIsdkOneEuroFilterTestFixtures()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures;
 UClass* UIsdkOneEuroFilterTestFixtures::GetPrivateStaticClass()
 {
@@ -31,7 +28,7 @@ UClass* UIsdkOneEuroFilterTestFixtures::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkOneEuroFilterTestFixtures"),
 			Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures.InnerSingleton,
 			StaticRegisterNativesUIsdkOneEuroFilterTestFixtures,
@@ -69,15 +66,20 @@ struct Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics
 		{ "ModuleRelativePath", "Private/Tests/IsdkOneEuroFilterTestFixtures.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkOneEuroFilterTestFixtures constinit property declarations ***********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OneEuroFilterDataModifier;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ExternalHandDataSource;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkOneEuroFilterTestFixtures constinit property declarations *************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkOneEuroFilterTestFixtures>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics
+
+// ********** Begin Class UIsdkOneEuroFilterTestFixtures Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::NewProp_OneEuroFilterDataModifier = { "OneEuroFilterDataModifier", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkOneEuroFilterTestFixtures, OneEuroFilterDataModifier), Z_Construct_UClass_UIsdkOneEuroFilterDataModifier_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OneEuroFilterDataModifier_MetaData), NewProp_OneEuroFilterDataModifier_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::NewProp_ExternalHandDataSource = { "ExternalHandDataSource", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkOneEuroFilterTestFixtures, ExternalHandDataSource), Z_Construct_UClass_UIsdkExternalHandDataSource_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ExternalHandDataSource_MetaData), NewProp_ExternalHandDataSource_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::PropPointers[] = {
@@ -85,6 +87,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkOneE
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::NewProp_ExternalHandDataSource,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkOneEuroFilterTestFixtures Property Definitions ************************
 UObject* (*const Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -105,6 +108,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkOneEuroFilterTestF
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures_Statics::Class_MetaDataParams)
 };
+void UIsdkOneEuroFilterTestFixtures::StaticRegisterNativesUIsdkOneEuroFilterTestFixtures()
+{
+}
 UClass* Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures()
 {
 	if (!Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures.OuterSingleton)
@@ -114,21 +120,23 @@ UClass* Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures()
 	return Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures.OuterSingleton;
 }
 UIsdkOneEuroFilterTestFixtures::UIsdkOneEuroFilterTestFixtures(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkOneEuroFilterTestFixtures);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkOneEuroFilterTestFixtures);
 UIsdkOneEuroFilterTestFixtures::~UIsdkOneEuroFilterTestFixtures() {}
 // ********** End Class UIsdkOneEuroFilterTestFixtures *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures, UIsdkOneEuroFilterTestFixtures::StaticClass, TEXT("UIsdkOneEuroFilterTestFixtures"), &Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkOneEuroFilterTestFixtures), 3146820840U) },
+		{ Z_Construct_UClass_UIsdkOneEuroFilterTestFixtures, UIsdkOneEuroFilterTestFixtures::StaticClass, TEXT("UIsdkOneEuroFilterTestFixtures"), &Z_Registration_Info_UClass_UIsdkOneEuroFilterTestFixtures, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkOneEuroFilterTestFixtures), 4014165684U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_3390101635(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_1319041549{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Tests_IsdkOneEuroFilterTestFixtures_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

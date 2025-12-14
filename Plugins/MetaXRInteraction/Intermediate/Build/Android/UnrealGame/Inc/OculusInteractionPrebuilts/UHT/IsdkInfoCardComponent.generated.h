@@ -17,24 +17,25 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UIsdkInfoCardComponent ***************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetRoundedMaterialProperties);
 
 
+struct Z_Construct_UClass_UIsdkInfoCardComponent_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkInfoCardComponent_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkInfoCardComponent(); \
-	friend struct Z_Construct_UClass_UIsdkInfoCardComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkInfoCardComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkInfoCardComponent_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkInfoCardComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkInfoCardComponent, UWidgetComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkInfoCardComponent_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkInfoCardComponent)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkInfoCardComponent(UIsdkInfoCardComponent&&) = delete; \
 	UIsdkInfoCardComponent(const UIsdkInfoCardComponent&) = delete; \
@@ -44,13 +45,13 @@ public: \
 	NO_API virtual ~UIsdkInfoCardComponent();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_32_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_32_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h_35_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,6 +61,6 @@ class UIsdkInfoCardComponent;
 // ********** End Class UIsdkInfoCardComponent *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InfoCard_IsdkInfoCardComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

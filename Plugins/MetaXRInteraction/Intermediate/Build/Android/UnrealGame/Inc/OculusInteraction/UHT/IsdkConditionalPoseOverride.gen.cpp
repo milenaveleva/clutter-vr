@@ -8,7 +8,7 @@
 #include "Core/IsdkConditionalPoseOverride.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkConditionalPoseOverride() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -30,18 +30,27 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Returns a boolean representing if a joint override is currently active, passing an array\n   * of Transforms by reference of the current override\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Returns a boolean representing if a joint override is currently active, passing an array\n* of Transforms by reference of the current override" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetJointsOverride constinit property declarations *********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_JointsOverriddenOut_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_JointsOverriddenOut;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetJointsOverride constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetJointsOverride Property Definitions ********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::NewProp_JointsOverriddenOut_Inner = { "JointsOverriddenOut", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::NewProp_JointsOverriddenOut = { "JointsOverriddenOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalPoseOverride_eventGetJointsOverride_Parms, JointsOverriddenOut), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::NewProp_ReturnValue_SetBit(void* Obj)
@@ -55,7 +64,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "GetJointsOverride", Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::IsdkConditionalPoseOverride_eventGetJointsOverride_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetJointsOverride Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "GetJointsOverride", 	Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::IsdkConditionalPoseOverride_eventGetJointsOverride_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride_Statics::IsdkConditionalPoseOverride_eventGetJointsOverride_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride()
 {
@@ -87,17 +100,26 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Returns a boolean representing if a root pose override is currently active, passing a\n   * Transform by reference of the current override\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Returns a boolean representing if a root pose override is currently active, passing a\n* Transform by reference of the current override" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootOverride constinit property declarations ***********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TransformOut;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootOverride constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootOverride Property Definitions **********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::NewProp_TransformOut = { "TransformOut", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalPoseOverride_eventGetRootOverride_Parms, TransformOut), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -109,7 +131,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "GetRootOverride", Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::IsdkConditionalPoseOverride_eventGetRootOverride_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootOverride Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "GetRootOverride", 	Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::IsdkConditionalPoseOverride_eventGetRootOverride_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride_Statics::IsdkConditionalPoseOverride_eventGetRootOverride_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride()
 {
@@ -140,16 +166,25 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Returns whether or not there is an active joint override\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Returns whether or not there is an active joint override" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsJointsOverrideActive constinit property declarations ****************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsJointsOverrideActive constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsJointsOverrideActive Property Definitions ***************************
 void Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkConditionalPoseOverride_eventIsJointsOverrideActive_Parms*)Obj)->ReturnValue = 1;
@@ -159,7 +194,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "IsJointsOverrideActive", Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::IsdkConditionalPoseOverride_eventIsJointsOverrideActive_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsJointsOverrideActive Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "IsJointsOverrideActive", 	Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::IsdkConditionalPoseOverride_eventIsJointsOverrideActive_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive_Statics::IsdkConditionalPoseOverride_eventIsJointsOverrideActive_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive()
 {
@@ -189,16 +228,25 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Returns whether or not there is an active root pose override\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Returns whether or not there is an active root pose override" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsRootOverrideActive constinit property declarations ******************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsRootOverrideActive constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsRootOverrideActive Property Definitions *****************************
 void Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkConditionalPoseOverride_eventIsRootOverrideActive_Parms*)Obj)->ReturnValue = 1;
@@ -208,7 +256,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "IsRootOverrideActive", Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::IsdkConditionalPoseOverride_eventIsRootOverrideActive_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsRootOverrideActive Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "IsRootOverrideActive", 	Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::IsdkConditionalPoseOverride_eventIsRootOverrideActive_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive_Statics::IsdkConditionalPoseOverride_eventIsRootOverrideActive_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive()
 {
@@ -234,14 +286,24 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_St
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Resets the current joint pose override, completely losing the previous state\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Resets the current joint pose override, completely losing the previous state" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ResetJointsOverride constinit property declarations *******************
+// ********** End Function ResetJointsOverride constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "ResetJointsOverride", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "ResetJointsOverride", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -266,14 +328,24 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Resets the current root pose override, completely losing the previous state\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Resets the current root pose override, completely losing the previous state" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ResetRootOverride constinit property declarations *********************
+// ********** End Function ResetRootOverride constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "ResetRootOverride", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "ResetRootOverride", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -302,16 +374,25 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Sets an override of the joint poses with the given array of transforms. Will overwrite\n   * any previous override in place\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Sets an override of the joint poses with the given array of transforms. Will overwrite\n* any previous override in place" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetJointsOverride constinit property declarations *********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_JointsOverride_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_JointsOverride;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetJointsOverride constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetJointsOverride Property Definitions ********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::NewProp_JointsOverride_Inner = { "JointsOverride", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::NewProp_JointsOverride = { "JointsOverride", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalPoseOverride_eventSetJointsOverride_Parms, JointsOverride), EArrayPropertyFlags::None, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::PropPointers[] = {
@@ -319,7 +400,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::NewProp_JointsOverride,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "SetJointsOverride", Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::IsdkConditionalPoseOverride_eventSetJointsOverride_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetJointsOverride Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "SetJointsOverride", 	Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::IsdkConditionalPoseOverride_eventSetJointsOverride_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride_Statics::IsdkConditionalPoseOverride_eventSetJointsOverride_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride()
 {
@@ -350,21 +435,34 @@ struct Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Static
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Sets an override of the root pose with a given transform\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Sets an override of the root pose with a given transform" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRootOverride constinit property declarations ***********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RootOverride;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRootOverride constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRootOverride Property Definitions **********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::NewProp_RootOverride = { "RootOverride", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkConditionalPoseOverride_eventSetRootOverride_Parms, RootOverride), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::NewProp_RootOverride,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "SetRootOverride", Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::IsdkConditionalPoseOverride_eventSetRootOverride_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRootOverride Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkConditionalPoseOverride, nullptr, "SetRootOverride", 	Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::IsdkConditionalPoseOverride_eventSetRootOverride_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride_Statics::IsdkConditionalPoseOverride_eventSetRootOverride_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride()
 {
@@ -386,21 +484,6 @@ DEFINE_FUNCTION(UIsdkConditionalPoseOverride::execSetRootOverride)
 // ********** End Class UIsdkConditionalPoseOverride Function SetRootOverride **********************
 
 // ********** Begin Class UIsdkConditionalPoseOverride *********************************************
-void UIsdkConditionalPoseOverride::StaticRegisterNativesUIsdkConditionalPoseOverride()
-{
-	UClass* Class = UIsdkConditionalPoseOverride::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetJointsOverride", &UIsdkConditionalPoseOverride::execGetJointsOverride },
-		{ "GetRootOverride", &UIsdkConditionalPoseOverride::execGetRootOverride },
-		{ "IsJointsOverrideActive", &UIsdkConditionalPoseOverride::execIsJointsOverrideActive },
-		{ "IsRootOverrideActive", &UIsdkConditionalPoseOverride::execIsRootOverrideActive },
-		{ "ResetJointsOverride", &UIsdkConditionalPoseOverride::execResetJointsOverride },
-		{ "ResetRootOverride", &UIsdkConditionalPoseOverride::execResetRootOverride },
-		{ "SetJointsOverride", &UIsdkConditionalPoseOverride::execSetJointsOverride },
-		{ "SetRootOverride", &UIsdkConditionalPoseOverride::execSetRootOverride },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkConditionalPoseOverride;
 UClass* UIsdkConditionalPoseOverride::GetPrivateStaticClass()
 {
@@ -408,7 +491,7 @@ UClass* UIsdkConditionalPoseOverride::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkConditionalPoseOverride.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkConditionalPoseOverride"),
 			Z_Registration_Info_UClass_UIsdkConditionalPoseOverride.InnerSingleton,
 			StaticRegisterNativesUIsdkConditionalPoseOverride,
@@ -436,30 +519,47 @@ struct Z_Construct_UClass_UIsdkConditionalPoseOverride_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Conditional that stores if the associated object that implements IsdkIPosedMesh is currently\n * being overridden or not, as well as the overriding pose information\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "Core/IsdkConditionalPoseOverride.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalPoseOverride.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Conditional that stores if the associated object that implements IsdkIPosedMesh is currently\nbeing overridden or not, as well as the overriding pose information\n@addtogroup InteractionSDK" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkConditionalPoseOverride constinit property declarations *************
+// ********** End Class UIsdkConditionalPoseOverride constinit property declarations ***************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetJointsOverride"), .Pointer = &UIsdkConditionalPoseOverride::execGetJointsOverride },
+		{ .NameUTF8 = UTF8TEXT("GetRootOverride"), .Pointer = &UIsdkConditionalPoseOverride::execGetRootOverride },
+		{ .NameUTF8 = UTF8TEXT("IsJointsOverrideActive"), .Pointer = &UIsdkConditionalPoseOverride::execIsJointsOverrideActive },
+		{ .NameUTF8 = UTF8TEXT("IsRootOverrideActive"), .Pointer = &UIsdkConditionalPoseOverride::execIsRootOverrideActive },
+		{ .NameUTF8 = UTF8TEXT("ResetJointsOverride"), .Pointer = &UIsdkConditionalPoseOverride::execResetJointsOverride },
+		{ .NameUTF8 = UTF8TEXT("ResetRootOverride"), .Pointer = &UIsdkConditionalPoseOverride::execResetRootOverride },
+		{ .NameUTF8 = UTF8TEXT("SetJointsOverride"), .Pointer = &UIsdkConditionalPoseOverride::execSetJointsOverride },
+		{ .NameUTF8 = UTF8TEXT("SetRootOverride"), .Pointer = &UIsdkConditionalPoseOverride::execSetRootOverride },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride, "GetJointsOverride" }, // 2570969489
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride, "GetRootOverride" }, // 962005596
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive, "IsJointsOverrideActive" }, // 333491085
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive, "IsRootOverrideActive" }, // 923819799
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride, "ResetJointsOverride" }, // 111564500
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride, "ResetRootOverride" }, // 4215655620
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride, "SetJointsOverride" }, // 3500917944
-		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride, "SetRootOverride" }, // 766682825
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetJointsOverride, "GetJointsOverride" }, // 1977175698
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_GetRootOverride, "GetRootOverride" }, // 2500021596
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsJointsOverrideActive, "IsJointsOverrideActive" }, // 1485744294
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_IsRootOverrideActive, "IsRootOverrideActive" }, // 3899480648
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetJointsOverride, "ResetJointsOverride" }, // 541572420
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_ResetRootOverride, "ResetRootOverride" }, // 3421939530
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetJointsOverride, "SetJointsOverride" }, // 2603429389
+		{ &Z_Construct_UFunction_UIsdkConditionalPoseOverride_SetRootOverride, "SetRootOverride" }, // 1898347286
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkConditionalPoseOverride>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkConditionalPoseOverride_Statics
 UObject* (*const Z_Construct_UClass_UIsdkConditionalPoseOverride_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkConditional,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -480,6 +580,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkConditionalPoseOve
 	0x00B000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkConditionalPoseOverride_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkConditionalPoseOverride_Statics::Class_MetaDataParams)
 };
+void UIsdkConditionalPoseOverride::StaticRegisterNativesUIsdkConditionalPoseOverride()
+{
+	UClass* Class = UIsdkConditionalPoseOverride::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkConditionalPoseOverride_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkConditionalPoseOverride()
 {
 	if (!Z_Registration_Info_UClass_UIsdkConditionalPoseOverride.OuterSingleton)
@@ -488,21 +593,23 @@ UClass* Z_Construct_UClass_UIsdkConditionalPoseOverride()
 	}
 	return Z_Registration_Info_UClass_UIsdkConditionalPoseOverride.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkConditionalPoseOverride);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkConditionalPoseOverride);
 UIsdkConditionalPoseOverride::~UIsdkConditionalPoseOverride() {}
 // ********** End Class UIsdkConditionalPoseOverride ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkConditionalPoseOverride, UIsdkConditionalPoseOverride::StaticClass, TEXT("UIsdkConditionalPoseOverride"), &Z_Registration_Info_UClass_UIsdkConditionalPoseOverride, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalPoseOverride), 2448056932U) },
+		{ Z_Construct_UClass_UIsdkConditionalPoseOverride, UIsdkConditionalPoseOverride::StaticClass, TEXT("UIsdkConditionalPoseOverride"), &Z_Registration_Info_UClass_UIsdkConditionalPoseOverride, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalPoseOverride), 1960677191U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_1794371496(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_4173614744{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalPoseOverride_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

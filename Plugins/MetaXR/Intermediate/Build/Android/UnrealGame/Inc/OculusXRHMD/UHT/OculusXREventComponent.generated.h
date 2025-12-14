@@ -17,34 +17,35 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Delegate FOculusDisplayRefreshRateChangedEventDelegate *************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_18_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_18_DELEGATE \
 static void FOculusDisplayRefreshRateChangedEventDelegate_DelegateWrapper(const FMulticastScriptDelegate& OculusDisplayRefreshRateChangedEventDelegate, float fromRefreshRate, float toRefreshRate);
 
 
 // ********** End Delegate FOculusDisplayRefreshRateChangedEventDelegate ***************************
 
 // ********** Begin Delegate FOculusEyeTrackingStateChangedEventDelegate ***************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_19_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_19_DELEGATE \
 static void FOculusEyeTrackingStateChangedEventDelegate_DelegateWrapper(const FMulticastScriptDelegate& OculusEyeTrackingStateChangedEventDelegate, bool bEyeTrackingOn);
 
 
 // ********** End Delegate FOculusEyeTrackingStateChangedEventDelegate *****************************
 
 // ********** Begin Class UOculusXREventComponent **************************************************
+struct Z_Construct_UClass_UOculusXREventComponent_Statics;
 OCULUSXRHMD_API UClass* Z_Construct_UClass_UOculusXREventComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXREventComponent(); \
-	friend struct Z_Construct_UClass_UOculusXREventComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXREventComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRHMD_API UClass* Z_Construct_UClass_UOculusXREventComponent_NoRegister(); \
+	friend OCULUSXRHMD_API UClass* ::Z_Construct_UClass_UOculusXREventComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXREventComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRHMD"), Z_Construct_UClass_UOculusXREventComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXREventComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXREventComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -56,12 +57,12 @@ public: \
 	NO_API virtual ~UOculusXREventComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_12_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_12_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h_15_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -71,6 +72,6 @@ class UOculusXREventComponent;
 // ********** End Class UOculusXREventComponent ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXREventComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXREventComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -7,7 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOculusXRColocation_init() {}
-	OCULUSXRCOLOCATION_API UFunction* Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStarted__DelegateSignature();
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");	OCULUSXRCOLOCATION_API UFunction* Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStarted__DelegateSignature();
 	OCULUSXRCOLOCATION_API UFunction* Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStopped__DelegateSignature();
 	OCULUSXRCOLOCATION_API UFunction* Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationDiscoveryComplete__DelegateSignature();
 	OCULUSXRCOLOCATION_API UFunction* Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationSessionFound__DelegateSignature();
@@ -16,24 +16,24 @@ void EmptyLinkFunctionForGeneratedCodeOculusXRColocation_init() {}
 	{
 		if (!Z_Registration_Info_UPackage__Script_OculusXRColocation.OuterSingleton)
 		{
-			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStarted__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStopped__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationDiscoveryComplete__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationSessionFound__DelegateSignature,
-			};
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/OculusXRColocation",
-				SingletonFuncArray,
-				UE_ARRAY_COUNT(SingletonFuncArray),
-				PKG_CompiledIn | 0x00000000,
-				0xAD65FC99,
-				0xA29A28EC,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRColocation.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_OculusXRColocation.OuterSingleton;
+		static UObject* (*const SingletonFuncArray[])() = {
+			(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStarted__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationAdvertisementStopped__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationDiscoveryComplete__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRColocation_OculusXR_LatentAction_ColocationSessionFound__DelegateSignature,
+		};
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/OculusXRColocation",
+			SingletonFuncArray,
+			UE_ARRAY_COUNT(SingletonFuncArray),
+			PKG_CompiledIn | 0x00000000,
+			0x95974A1E,
+			0xA29A28EC,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRColocation.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRColocation(Z_Construct_UPackage__Script_OculusXRColocation, TEXT("/Script/OculusXRColocation"), Z_Registration_Info_UPackage__Script_OculusXRColocation, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xAD65FC99, 0xA29A28EC));
+	return Z_Registration_Info_UPackage__Script_OculusXRColocation.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRColocation(Z_Construct_UPackage__Script_OculusXRColocation, TEXT("/Script/OculusXRColocation"), Z_Registration_Info_UPackage__Script_OculusXRColocation, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x95974A1E, 0xA29A28EC));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

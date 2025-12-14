@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FOculusXRBodyJoint ************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_125_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBodyJoint_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBodyJoint_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_125_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBodyJoint_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FOculusXRBodyJoint;
 // ********** End ScriptStruct FOculusXRBodyJoint **************************************************
 
 // ********** Begin ScriptStruct FOculusXRBodyState ************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_147_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBodyState_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBodyState_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_147_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBodyState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -35,8 +37,9 @@ struct FOculusXRBodyState;
 // ********** End ScriptStruct FOculusXRBodyState **************************************************
 
 // ********** Begin ScriptStruct FOculusXRBodySkeletonBone *****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_170_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBodySkeletonBone_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBodySkeletonBone_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_170_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBodySkeletonBone_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -44,8 +47,9 @@ struct FOculusXRBodySkeletonBone;
 // ********** End ScriptStruct FOculusXRBodySkeletonBone *******************************************
 
 // ********** Begin ScriptStruct FOculusXRBodySkeleton *********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_193_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBodySkeleton_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBodySkeleton_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_193_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBodySkeleton_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -53,8 +57,9 @@ struct FOculusXRBodySkeleton;
 // ********** End ScriptStruct FOculusXRBodySkeleton ***********************************************
 
 // ********** Begin ScriptStruct FOculusXRBodySkeletonState ****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_207_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRBodySkeletonState_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRBodySkeletonState_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_207_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRBodySkeletonState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -62,8 +67,9 @@ struct FOculusXRBodySkeletonState;
 // ********** End ScriptStruct FOculusXRBodySkeletonState ******************************************
 
 // ********** Begin ScriptStruct FOculusXRFaceState ************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_314_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRFaceState_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRFaceState_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_314_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRFaceState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -71,8 +77,9 @@ struct FOculusXRFaceState;
 // ********** End ScriptStruct FOculusXRFaceState **************************************************
 
 // ********** Begin ScriptStruct FOculusXRFaceVisemesState *****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_361_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRFaceVisemesState_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRFaceVisemesState_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_361_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRFaceVisemesState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -80,8 +87,9 @@ struct FOculusXRFaceVisemesState;
 // ********** End ScriptStruct FOculusXRFaceVisemesState *******************************************
 
 // ********** Begin ScriptStruct FOculusXRFaceExpressionModifier ***********************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_378_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRFaceExpressionModifier_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRFaceExpressionModifier_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_378_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRFaceExpressionModifier_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -89,8 +97,9 @@ struct FOculusXRFaceExpressionModifier;
 // ********** End ScriptStruct FOculusXRFaceExpressionModifier *************************************
 
 // ********** Begin ScriptStruct FOculusXREyeGazeState *********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_406_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXREyeGazeState_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXREyeGazeState_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_406_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXREyeGazeState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -98,8 +107,9 @@ struct FOculusXREyeGazeState;
 // ********** End ScriptStruct FOculusXREyeGazeState ***********************************************
 
 // ********** Begin ScriptStruct FOculusXREyeGazesState ********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_426_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXREyeGazesState_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXREyeGazesState_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h_426_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXREyeGazesState_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -107,7 +117,7 @@ struct FOculusXREyeGazesState;
 // ********** End ScriptStruct FOculusXREyeGazesState **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementTypes_h
 
 // ********** Begin Enum EOculusXRBodyJointSet *****************************************************
 #define FOREACH_ENUM_EOCULUSXRBODYJOINTSET(op) \
@@ -116,7 +126,7 @@ struct FOculusXREyeGazesState;
 
 enum class EOculusXRBodyJointSet : uint8;
 template<> struct TIsUEnumClass<EOculusXRBodyJointSet> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRBodyJointSet>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBodyJointSet>();
 // ********** End Enum EOculusXRBodyJointSet *******************************************************
 
 // ********** Begin Enum EOculusXRBodyTrackingFidelity *********************************************
@@ -127,7 +137,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRBodyJointSet>();
 
 enum class EOculusXRBodyTrackingFidelity : uint8;
 template<> struct TIsUEnumClass<EOculusXRBodyTrackingFidelity> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRBodyTrackingFidelity>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBodyTrackingFidelity>();
 // ********** End Enum EOculusXRBodyTrackingFidelity ***********************************************
 
 // ********** Begin Enum EOculusXRBoneID ***********************************************************
@@ -221,7 +231,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRBodyTrackingFidelity>
 
 enum class EOculusXRBoneID : uint8;
 template<> struct TIsUEnumClass<EOculusXRBoneID> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRBoneID>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRBoneID>();
 // ********** End Enum EOculusXRBoneID *************************************************************
 
 // ********** Begin Enum EFaceTrackingDataSource ***************************************************
@@ -231,7 +241,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRBoneID>();
 
 enum class EFaceTrackingDataSource : uint8;
 template<> struct TIsUEnumClass<EFaceTrackingDataSource> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EFaceTrackingDataSource>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EFaceTrackingDataSource>();
 // ********** End Enum EFaceTrackingDataSource *****************************************************
 
 // ********** Begin Enum EOculusXRFaceExpression ***************************************************
@@ -310,7 +320,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EFaceTrackingDataSource>();
 
 enum class EOculusXRFaceExpression : uint8;
 template<> struct TIsUEnumClass<EOculusXRFaceExpression> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRFaceExpression>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRFaceExpression>();
 // ********** End Enum EOculusXRFaceExpression *****************************************************
 
 // ********** Begin Enum EOculusXRFaceConfidence ***************************************************
@@ -321,7 +331,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRFaceExpression>();
 
 enum class EOculusXRFaceConfidence : uint8;
 template<> struct TIsUEnumClass<EOculusXRFaceConfidence> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRFaceConfidence>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRFaceConfidence>();
 // ********** End Enum EOculusXRFaceConfidence *****************************************************
 
 // ********** Begin Enum EOculusXRFaceVisemesExpression ********************************************
@@ -345,7 +355,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRFaceConfidence>();
 
 enum class EOculusXRFaceVisemesExpression : uint8;
 template<> struct TIsUEnumClass<EOculusXRFaceVisemesExpression> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRFaceVisemesExpression>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRFaceVisemesExpression>();
 // ********** End Enum EOculusXRFaceVisemesExpression **********************************************
 
 // ********** Begin Enum EOculusXREye **************************************************************
@@ -356,7 +366,7 @@ template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXRFaceVisemesExpression
 
 enum class EOculusXREye : uint8;
 template<> struct TIsUEnumClass<EOculusXREye> { enum { Value = true }; };
-template<> OCULUSXRMOVEMENT_API UEnum* StaticEnum<EOculusXREye>();
+template<> OCULUSXRMOVEMENT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXREye>();
 // ********** End Enum EOculusXREye ****************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

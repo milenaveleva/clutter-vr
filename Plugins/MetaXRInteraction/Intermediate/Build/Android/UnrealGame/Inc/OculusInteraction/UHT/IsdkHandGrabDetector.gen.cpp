@@ -9,7 +9,7 @@
 #include "Engine/HitResult.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandGrabDetector() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -34,24 +34,37 @@ struct Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Attaches the given collider and replaces the existing palm collider with it.  Collider must\n   * be a valid object.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attaches the given collider and replaces the existing palm collider with it.  Collider must\nbe a valid object." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Collider_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AttachAndReplacePalmCollider constinit property declarations **********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Collider;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AttachAndReplacePalmCollider constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function AttachAndReplacePalmCollider Property Definitions *********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::NewProp_Collider = { "Collider", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventAttachAndReplacePalmCollider_Parms, Collider), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Collider_MetaData), NewProp_Collider_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::NewProp_Collider,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "AttachAndReplacePalmCollider", Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::IsdkHandGrabDetector_eventAttachAndReplacePalmCollider_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::Function_MetaDataParams)},  };
+// ********** End Function AttachAndReplacePalmCollider Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "AttachAndReplacePalmCollider", 	Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::IsdkHandGrabDetector_eventAttachAndReplacePalmCollider_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider_Statics::IsdkHandGrabDetector_eventAttachAndReplacePalmCollider_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider()
 {
@@ -82,24 +95,37 @@ struct Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Attaches the given collider and replaces the existing pinch collider with it.  Collider must\n   * be a valid object.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Attaches the given collider and replaces the existing pinch collider with it.  Collider must\nbe a valid object." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Collider_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function AttachAndReplacePinchCollider constinit property declarations *********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Collider;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function AttachAndReplacePinchCollider constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function AttachAndReplacePinchCollider Property Definitions ********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::NewProp_Collider = { "Collider", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventAttachAndReplacePinchCollider_Parms, Collider), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Collider_MetaData), NewProp_Collider_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::NewProp_Collider,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "AttachAndReplacePinchCollider", Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::IsdkHandGrabDetector_eventAttachAndReplacePinchCollider_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::Function_MetaDataParams)},  };
+// ********** End Function AttachAndReplacePinchCollider Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "AttachAndReplacePinchCollider", 	Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::IsdkHandGrabDetector_eventAttachAndReplacePinchCollider_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider_Statics::IsdkHandGrabDetector_eventAttachAndReplacePinchCollider_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider()
 {
@@ -130,25 +156,38 @@ struct Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @return the collider that is being used to select the currently selected grabbable.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
 		{ "ReturnDisplayName", "GrabbingComponent" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@return the collider that is being used to select the currently selected grabbable." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetGrabbingComponent constinit property declarations ******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetGrabbingComponent constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetGrabbingComponent Property Definitions *****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventGetGrabbingComponent_Parms, ReturnValue), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "GetGrabbingComponent", Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::IsdkHandGrabDetector_eventGetGrabbingComponent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetGrabbingComponent Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "GetGrabbingComponent", 	Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::IsdkHandGrabDetector_eventGetGrabbingComponent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent_Statics::IsdkHandGrabDetector_eventGetGrabbingComponent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent()
 {
@@ -194,6 +233,8 @@ struct Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleBeginOverlap constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappedComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
@@ -202,8 +243,11 @@ struct Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bFromSweep;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_SweepResult;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleBeginOverlap constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HandleBeginOverlap Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_OverlappedComponent = { "OverlappedComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleBeginOverlap_Parms, OverlappedComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlappedComponent_MetaData), NewProp_OverlappedComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleBeginOverlap_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleBeginOverlap_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OtherComp_MetaData), NewProp_OtherComp_MetaData) };
@@ -213,7 +257,7 @@ void Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::New
 	((IsdkHandGrabDetector_eventHandleBeginOverlap_Parms*)Obj)->bFromSweep = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_bFromSweep = { "bFromSweep", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(IsdkHandGrabDetector_eventHandleBeginOverlap_Parms), &Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_bFromSweep_SetBit, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleBeginOverlap_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SweepResult_MetaData), NewProp_SweepResult_MetaData) }; // 267591329
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleBeginOverlap_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SweepResult_MetaData), NewProp_SweepResult_MetaData) }; // 222120718
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_OverlappedComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_OtherActor,
@@ -223,7 +267,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::NewProp_SweepResult,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "HandleBeginOverlap", Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::IsdkHandGrabDetector_eventHandleBeginOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleBeginOverlap Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "HandleBeginOverlap", 	Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::IsdkHandGrabDetector_eventHandleBeginOverlap_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap_Statics::IsdkHandGrabDetector_eventHandleBeginOverlap_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap()
 {
@@ -270,13 +318,18 @@ struct Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleEndOverlap constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OverlappedComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_OtherBodyIndex;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleEndOverlap constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HandleEndOverlap Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::NewProp_OverlappedComponent = { "OverlappedComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleEndOverlap_Parms, OverlappedComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverlappedComponent_MetaData), NewProp_OverlappedComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleEndOverlap_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandGrabDetector_eventHandleEndOverlap_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OtherComp_MetaData), NewProp_OtherComp_MetaData) };
@@ -288,7 +341,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::NewProp_OtherBodyIndex,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "HandleEndOverlap", Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::IsdkHandGrabDetector_eventHandleEndOverlap_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleEndOverlap Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandGrabDetector, nullptr, "HandleEndOverlap", 	Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::IsdkHandGrabDetector_eventHandleEndOverlap_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap_Statics::IsdkHandGrabDetector_eventHandleEndOverlap_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap()
 {
@@ -313,18 +370,6 @@ DEFINE_FUNCTION(UIsdkHandGrabDetector::execHandleEndOverlap)
 // ********** End Class UIsdkHandGrabDetector Function HandleEndOverlap ****************************
 
 // ********** Begin Class UIsdkHandGrabDetector ****************************************************
-void UIsdkHandGrabDetector::StaticRegisterNativesUIsdkHandGrabDetector()
-{
-	UClass* Class = UIsdkHandGrabDetector::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "AttachAndReplacePalmCollider", &UIsdkHandGrabDetector::execAttachAndReplacePalmCollider },
-		{ "AttachAndReplacePinchCollider", &UIsdkHandGrabDetector::execAttachAndReplacePinchCollider },
-		{ "GetGrabbingComponent", &UIsdkHandGrabDetector::execGetGrabbingComponent },
-		{ "HandleBeginOverlap", &UIsdkHandGrabDetector::execHandleBeginOverlap },
-		{ "HandleEndOverlap", &UIsdkHandGrabDetector::execHandleEndOverlap },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandGrabDetector;
 UClass* UIsdkHandGrabDetector::GetPrivateStaticClass()
 {
@@ -332,7 +377,7 @@ UClass* UIsdkHandGrabDetector::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandGrabDetector.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandGrabDetector"),
 			Z_Registration_Info_UClass_UIsdkHandGrabDetector.InnerSingleton,
 			StaticRegisterNativesUIsdkHandGrabDetector,
@@ -358,78 +403,124 @@ struct Z_Construct_UClass_UIsdkHandGrabDetector_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief UIsdkHandGrabDetector is used by a grab interactor to detect grabbables at\n * close to the hand.  This grab detector features two sets of colliders used for\n * the separate detection of pinches and palm grabs.\n *\n * @see UIsdkGrabDetector\n * @see UIsdkGrabberComponent\n * @see UIsdkGrabbableComponent\n */" },
+#endif
 		{ "IncludePath", "Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief UIsdkHandGrabDetector is used by a grab interactor to detect grabbables at\nclose to the hand.  This grab detector features two sets of colliders used for\nthe separate detection of pinches and palm grabs.\n\n@see UIsdkGrabDetector\n@see UIsdkGrabberComponent\n@see UIsdkGrabbableComponent" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SelectingCollider_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * The collider which is currently selecting the selected interactable\n   */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The collider which is currently selecting the selected interactable" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchColliderRadius_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Radius of the to set when initializing for the pinch grab overlap collider */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Radius of the to set when initializing for the pinch grab overlap collider" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PalmColliderRadius_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Radius of the to set when initializing for the palm grab overlap collider */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Radius of the to set when initializing for the palm grab overlap collider" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CollisionObjectType_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * The collision object type of the default colliders used to detect grabbables\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The collision object type of the default colliders used to detect grabbables" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HoveredGrabbables_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// HoveredGrabbables is the set of all grabbables hovered by ray, distance, and hand grab.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "HoveredGrabbables is the set of all grabbables hovered by ray, distance, and hand grab." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchGrabCandidate_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// PinchGrabCandidate is the grabbable that will be grabbed if the user pinches\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "PinchGrabCandidate is the grabbable that will be grabbed if the user pinches" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PalmGrabCandidate_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// PalmGrabCandidate is the grabbable that will be grabbed if the user palm grabs\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "PalmGrabCandidate is the grabbable that will be grabbed if the user palm grabs" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchCollider_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// We use PinchColliders to track which colliders are being used for pinch grab.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We use PinchColliders to track which colliders are being used for pinch grab." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PalmGrabCollider_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// We use PalmGrabColliders to track which colliders are being used for palm grab.\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "We use PalmGrabColliders to track which colliders are being used for palm grab." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDisableDebugVisuals_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Allows disabling debug visuals\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/GrabDetectors/IsdkHandGrabDetector.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Allows disabling debug visuals" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandGrabDetector constinit property declarations ********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectingCollider;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_PinchColliderRadius;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_PalmColliderRadius;
@@ -443,24 +534,34 @@ struct Z_Construct_UClass_UIsdkHandGrabDetector_Statics
 	static void NewProp_bDisableDebugVisuals_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bDisableDebugVisuals;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandGrabDetector constinit property declarations **********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("AttachAndReplacePalmCollider"), .Pointer = &UIsdkHandGrabDetector::execAttachAndReplacePalmCollider },
+		{ .NameUTF8 = UTF8TEXT("AttachAndReplacePinchCollider"), .Pointer = &UIsdkHandGrabDetector::execAttachAndReplacePinchCollider },
+		{ .NameUTF8 = UTF8TEXT("GetGrabbingComponent"), .Pointer = &UIsdkHandGrabDetector::execGetGrabbingComponent },
+		{ .NameUTF8 = UTF8TEXT("HandleBeginOverlap"), .Pointer = &UIsdkHandGrabDetector::execHandleBeginOverlap },
+		{ .NameUTF8 = UTF8TEXT("HandleEndOverlap"), .Pointer = &UIsdkHandGrabDetector::execHandleEndOverlap },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider, "AttachAndReplacePalmCollider" }, // 4060043986
-		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider, "AttachAndReplacePinchCollider" }, // 1088036904
-		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent, "GetGrabbingComponent" }, // 4162593843
-		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap, "HandleBeginOverlap" }, // 2111388764
-		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap, "HandleEndOverlap" }, // 564005189
+		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePalmCollider, "AttachAndReplacePalmCollider" }, // 1755326227
+		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_AttachAndReplacePinchCollider, "AttachAndReplacePinchCollider" }, // 674946175
+		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_GetGrabbingComponent, "GetGrabbingComponent" }, // 1102926857
+		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_HandleBeginOverlap, "HandleBeginOverlap" }, // 2537332007
+		{ &Z_Construct_UFunction_UIsdkHandGrabDetector_HandleEndOverlap, "HandleEndOverlap" }, // 418588572
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkHandGrabDetector>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandGrabDetector_Statics
+
+// ********** Begin Class UIsdkHandGrabDetector Property Definitions *******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_SelectingCollider = { "SelectingCollider", nullptr, (EPropertyFlags)0x012408000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, SelectingCollider), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectingCollider_MetaData), NewProp_SelectingCollider_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_PinchColliderRadius = { "PinchColliderRadius", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, PinchColliderRadius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PinchColliderRadius_MetaData), NewProp_PinchColliderRadius_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_PalmColliderRadius = { "PalmColliderRadius", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, PalmColliderRadius), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PalmColliderRadius_MetaData), NewProp_PalmColliderRadius_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_CollisionObjectType = { "CollisionObjectType", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, CollisionObjectType), Z_Construct_UEnum_Engine_ECollisionChannel, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollisionObjectType_MetaData), NewProp_CollisionObjectType_MetaData) }; // 756624936
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_CollisionObjectType = { "CollisionObjectType", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, CollisionObjectType), Z_Construct_UEnum_Engine_ECollisionChannel, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CollisionObjectType_MetaData), NewProp_CollisionObjectType_MetaData) }; // 838391399
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_HoveredGrabbables_ElementProp = { "HoveredGrabbables", nullptr, (EPropertyFlags)0x0104000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UIsdkGrabbableComponent_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FSetPropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_HoveredGrabbables = { "HoveredGrabbables", nullptr, (EPropertyFlags)0x012408800000001c, UECodeGen_Private::EPropertyGenFlags::Set, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, HoveredGrabbables), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HoveredGrabbables_MetaData), NewProp_HoveredGrabbables_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_PinchGrabCandidate = { "PinchGrabCandidate", nullptr, (EPropertyFlags)0x012408000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandGrabDetector, PinchGrabCandidate), Z_Construct_UClass_UIsdkGrabbableComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PinchGrabCandidate_MetaData), NewProp_PinchGrabCandidate_MetaData) };
@@ -486,6 +587,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHand
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandGrabDetector_Statics::NewProp_bDisableDebugVisuals,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandGrabDetector_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandGrabDetector Property Definitions *********************************
 UObject* (*const Z_Construct_UClass_UIsdkHandGrabDetector_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkGrabDetector,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -506,6 +608,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandGrabDetector_S
 	0x00B030A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandGrabDetector_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandGrabDetector_Statics::Class_MetaDataParams)
 };
+void UIsdkHandGrabDetector::StaticRegisterNativesUIsdkHandGrabDetector()
+{
+	UClass* Class = UIsdkHandGrabDetector::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandGrabDetector_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandGrabDetector()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandGrabDetector.OuterSingleton)
@@ -515,21 +622,23 @@ UClass* Z_Construct_UClass_UIsdkHandGrabDetector()
 	return Z_Registration_Info_UClass_UIsdkHandGrabDetector.OuterSingleton;
 }
 UIsdkHandGrabDetector::UIsdkHandGrabDetector(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandGrabDetector);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandGrabDetector);
 UIsdkHandGrabDetector::~UIsdkHandGrabDetector() {}
 // ********** End Class UIsdkHandGrabDetector ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandGrabDetector, UIsdkHandGrabDetector::StaticClass, TEXT("UIsdkHandGrabDetector"), &Z_Registration_Info_UClass_UIsdkHandGrabDetector, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandGrabDetector), 4009437098U) },
+		{ Z_Construct_UClass_UIsdkHandGrabDetector, UIsdkHandGrabDetector::StaticClass, TEXT("UIsdkHandGrabDetector"), &Z_Registration_Info_UClass_UIsdkHandGrabDetector, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandGrabDetector), 1046965211U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_4046303815(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_1982177407{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_GrabDetectors_IsdkHandGrabDetector_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

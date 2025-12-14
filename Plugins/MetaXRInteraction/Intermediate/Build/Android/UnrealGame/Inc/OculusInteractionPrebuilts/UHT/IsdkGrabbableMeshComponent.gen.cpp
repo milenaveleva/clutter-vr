@@ -8,7 +8,7 @@
 #include "IsdkGrabbableMeshComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkGrabbableMeshComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -42,16 +42,25 @@ struct Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCollision constinit property declarations **************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Coll;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCollision constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCollision Property Definitions *************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::NewProp_Coll = { "Coll", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkGrabbableMeshComponent_eventSetCollision_Parms, Coll), Z_Construct_UClass_UShapeComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Coll_MetaData), NewProp_Coll_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::NewProp_Coll,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkGrabbableMeshComponent, nullptr, "SetCollision", Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::IsdkGrabbableMeshComponent_eventSetCollision_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCollision Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkGrabbableMeshComponent, nullptr, "SetCollision", 	Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::IsdkGrabbableMeshComponent_eventSetCollision_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision_Statics::IsdkGrabbableMeshComponent_eventSetCollision_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision()
 {
@@ -85,16 +94,25 @@ struct Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics
 		{ "ModuleRelativePath", "Public/IsdkGrabbableMeshComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetMesh constinit property declarations *******************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_NewMesh;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetMesh constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetMesh Property Definitions ******************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::NewProp_NewMesh = { "NewMesh", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkGrabbableMeshComponent_eventSetMesh_Parms, NewMesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::NewProp_NewMesh,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkGrabbableMeshComponent, nullptr, "SetMesh", Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::IsdkGrabbableMeshComponent_eventSetMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetMesh Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkGrabbableMeshComponent, nullptr, "SetMesh", 	Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::IsdkGrabbableMeshComponent_eventSetMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh_Statics::IsdkGrabbableMeshComponent_eventSetMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh()
 {
@@ -116,15 +134,6 @@ DEFINE_FUNCTION(UIsdkGrabbableMeshComponent::execSetMesh)
 // ********** End Class UIsdkGrabbableMeshComponent Function SetMesh *******************************
 
 // ********** Begin Class UIsdkGrabbableMeshComponent **********************************************
-void UIsdkGrabbableMeshComponent::StaticRegisterNativesUIsdkGrabbableMeshComponent()
-{
-	UClass* Class = UIsdkGrabbableMeshComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "SetCollision", &UIsdkGrabbableMeshComponent::execSetCollision },
-		{ "SetMesh", &UIsdkGrabbableMeshComponent::execSetMesh },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent;
 UClass* UIsdkGrabbableMeshComponent::GetPrivateStaticClass()
 {
@@ -132,7 +141,7 @@ UClass* UIsdkGrabbableMeshComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkGrabbableMeshComponent"),
 			Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkGrabbableMeshComponent,
@@ -161,13 +170,17 @@ struct Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkGrabbableMeshComponent\n * @brief\n *\n * @addtogroup InteractionSDKPrebuilts\n */" },
+#endif
 		{ "DisplayName", "ISDK Grabbable Mesh Component" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "IsdkGrabbableMeshComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/IsdkGrabbableMeshComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkGrabbableMeshComponent\n@brief\n\n@addtogroup InteractionSDKPrebuilts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Root_MetaData[] = {
 		{ "Category", "InteractionSDK" },
@@ -205,6 +218,8 @@ struct Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics
 		{ "ModuleRelativePath", "Public/IsdkGrabbableMeshComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkGrabbableMeshComponent constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Root;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MeshComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
@@ -213,17 +228,24 @@ struct Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Grabbable;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Collision;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkGrabbableMeshComponent constinit property declarations ****************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("SetCollision"), .Pointer = &UIsdkGrabbableMeshComponent::execSetCollision },
+		{ .NameUTF8 = UTF8TEXT("SetMesh"), .Pointer = &UIsdkGrabbableMeshComponent::execSetMesh },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision, "SetCollision" }, // 4056135105
-		{ &Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh, "SetMesh" }, // 1392905340
+		{ &Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetCollision, "SetCollision" }, // 3973465336
+		{ &Z_Construct_UFunction_UIsdkGrabbableMeshComponent_SetMesh, "SetMesh" }, // 3961879199
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkGrabbableMeshComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics
+
+// ********** Begin Class UIsdkGrabbableMeshComponent Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::NewProp_Root = { "Root", nullptr, (EPropertyFlags)0x001200000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkGrabbableMeshComponent, Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Root_MetaData), NewProp_Root_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::NewProp_MeshComponent = { "MeshComponent", nullptr, (EPropertyFlags)0x001200000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkGrabbableMeshComponent, MeshComponent), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MeshComponent_MetaData), NewProp_MeshComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x001200000008001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkGrabbableMeshComponent, Mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Mesh_MetaData), NewProp_Mesh_MetaData) };
@@ -241,6 +263,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkGrab
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::NewProp_Collision,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkGrabbableMeshComponent Property Definitions ***************************
 UObject* (*const Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -261,6 +284,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkGrabbableMeshCompo
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkGrabbableMeshComponent::StaticRegisterNativesUIsdkGrabbableMeshComponent()
+{
+	UClass* Class = UIsdkGrabbableMeshComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkGrabbableMeshComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkGrabbableMeshComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent.OuterSingleton)
@@ -269,21 +297,23 @@ UClass* Z_Construct_UClass_UIsdkGrabbableMeshComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkGrabbableMeshComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkGrabbableMeshComponent);
 UIsdkGrabbableMeshComponent::~UIsdkGrabbableMeshComponent() {}
 // ********** End Class UIsdkGrabbableMeshComponent ************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkGrabbableMeshComponent, UIsdkGrabbableMeshComponent::StaticClass, TEXT("UIsdkGrabbableMeshComponent"), &Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkGrabbableMeshComponent), 1315704947U) },
+		{ Z_Construct_UClass_UIsdkGrabbableMeshComponent, UIsdkGrabbableMeshComponent::StaticClass, TEXT("UIsdkGrabbableMeshComponent"), &Z_Registration_Info_UClass_UIsdkGrabbableMeshComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkGrabbableMeshComponent), 2619143683U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_3440039723(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_1857075233{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkGrabbableMeshComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

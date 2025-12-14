@@ -8,7 +8,7 @@
 #include "Rig/IsdkControllerRigComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkControllerRigComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -36,24 +36,37 @@ struct Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_St
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns the Controller Visuals associated with this controller as a Visuals Rig\n   * Component\n   * @see UIsdkControllerRigComponent#GetVisuals\n   * @return UIsdkControllerVisualsRigComponent The controller visuals component used by this\n   * controller\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns the Controller Visuals associated with this controller as a Visuals Rig\nComponent\n@see UIsdkControllerRigComponent#GetVisuals\n@return UIsdkControllerVisualsRigComponent The controller visuals component used by this\ncontroller" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetControllerVisuals constinit property declarations ******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetControllerVisuals constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetControllerVisuals Property Definitions *****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkControllerRigComponent_eventGetControllerVisuals_Parms, ReturnValue), Z_Construct_UClass_UIsdkControllerVisualsRigComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "GetControllerVisuals", Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::IsdkControllerRigComponent_eventGetControllerVisuals_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetControllerVisuals Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "GetControllerVisuals", 	Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::IsdkControllerRigComponent_eventGetControllerVisuals_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals_Statics::IsdkControllerRigComponent_eventGetControllerVisuals_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals()
 {
@@ -87,19 +100,24 @@ struct Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBeh
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleControllerHandBehaviorChanged constinit property declarations ***
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_IsdkITrackingDataSubsystem;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ControllerHandBehavior_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ControllerHandBehavior;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ControllerHandBehavior1_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ControllerHandBehavior1;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleControllerHandBehaviorChanged constinit property declarations *****
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HandleControllerHandBehaviorChanged Property Definitions **************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_IsdkITrackingDataSubsystem = { "IsdkITrackingDataSubsystem", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms, IsdkITrackingDataSubsystem), Z_Construct_UClass_UIsdkITrackingDataSubsystem_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior = { "ControllerHandBehavior", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms, ControllerHandBehavior), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 802605893
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior = { "ControllerHandBehavior", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms, ControllerHandBehavior), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 1789409571
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior1_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior1 = { "ControllerHandBehavior1", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms, ControllerHandBehavior1), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 802605893
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior1 = { "ControllerHandBehavior1", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms, ControllerHandBehavior1), Z_Construct_UEnum_OculusInteraction_EControllerHandBehavior, METADATA_PARAMS(0, nullptr) }; // 1789409571
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_IsdkITrackingDataSubsystem,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior_Underlying,
@@ -108,7 +126,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkC
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::NewProp_ControllerHandBehavior1,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandleControllerHandBehaviorChanged", Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleControllerHandBehaviorChanged Property Definitions ****************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandleControllerHandBehaviorChanged", 	Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged_Statics::IsdkControllerRigComponent_eventHandleControllerHandBehaviorChanged_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged()
 {
@@ -139,9 +161,15 @@ struct Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedI
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandlePalmGrabFinishedInput constinit property declarations ***********
+// ********** End Function HandlePalmGrabFinishedInput constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePalmGrabFinishedInput", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePalmGrabFinishedInput", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -168,9 +196,15 @@ struct Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedIn
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandlePalmGrabStartedInput constinit property declarations ************
+// ********** End Function HandlePalmGrabStartedInput constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePalmGrabStartedInput", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePalmGrabStartedInput", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -197,9 +231,15 @@ struct Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinished
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandlePinchGrabFinishedInput constinit property declarations **********
+// ********** End Function HandlePinchGrabFinishedInput constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePinchGrabFinishedInput", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePinchGrabFinishedInput", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -226,9 +266,15 @@ struct Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedI
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandlePinchGrabStartedInput constinit property declarations ***********
+// ********** End Function HandlePinchGrabStartedInput constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePinchGrabStartedInput", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkControllerRigComponent, nullptr, "HandlePinchGrabStartedInput", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -248,19 +294,6 @@ DEFINE_FUNCTION(UIsdkControllerRigComponent::execHandlePinchGrabStartedInput)
 // ********** End Class UIsdkControllerRigComponent Function HandlePinchGrabStartedInput ***********
 
 // ********** Begin Class UIsdkControllerRigComponent **********************************************
-void UIsdkControllerRigComponent::StaticRegisterNativesUIsdkControllerRigComponent()
-{
-	UClass* Class = UIsdkControllerRigComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetControllerVisuals", &UIsdkControllerRigComponent::execGetControllerVisuals },
-		{ "HandleControllerHandBehaviorChanged", &UIsdkControllerRigComponent::execHandleControllerHandBehaviorChanged },
-		{ "HandlePalmGrabFinishedInput", &UIsdkControllerRigComponent::execHandlePalmGrabFinishedInput },
-		{ "HandlePalmGrabStartedInput", &UIsdkControllerRigComponent::execHandlePalmGrabStartedInput },
-		{ "HandlePinchGrabFinishedInput", &UIsdkControllerRigComponent::execHandlePinchGrabFinishedInput },
-		{ "HandlePinchGrabStartedInput", &UIsdkControllerRigComponent::execHandlePinchGrabStartedInput },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkControllerRigComponent;
 UClass* UIsdkControllerRigComponent::GetPrivateStaticClass()
 {
@@ -268,7 +301,7 @@ UClass* UIsdkControllerRigComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkControllerRigComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkControllerRigComponent"),
 			Z_Registration_Info_UClass_UIsdkControllerRigComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkControllerRigComponent,
@@ -296,43 +329,65 @@ struct Z_Construct_UClass_UIsdkControllerRigComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "InteractionSDK|Rig" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkControllerRigComponent\n * @brief Drives all controller-based interaction behaviors\n *\n * Highest level ISDK scene component driving interaction\n * behavior while the user is holder a controller.  It is intended to be placed directly below a\n * motion controller in the scene hierarchy, one for each hand.  The component takes input events\n * from the controller and provides a means for interactors to read those events in a\n * controller/hand agnostic manner.\n *\n * @see UIsdkRigComponent\n * @addtogroup InteractionSDKPrebuilts\n */" },
+#endif
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Rig/IsdkControllerRigComponent.h" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkControllerRigComponent\n@brief Drives all controller-based interaction behaviors\n\nHighest level ISDK scene component driving interaction\nbehavior while the user is holder a controller.  It is intended to be placed directly below a\nmotion controller in the scene hierarchy, one for each hand.  The component takes input events\nfrom the controller and provides a means for interactors to read those events in a\ncontroller/hand agnostic manner.\n\n@see UIsdkRigComponent\n@addtogroup InteractionSDKPrebuilts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ControllerVisualsComponent_MetaData[] = {
 		{ "BlueprintGetter", "GetControllerVisuals" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Pointer to the rig component used for the visuals associated with this controller rig\n   */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Pointer to the rig component used for the visuals associated with this controller rig" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkControllerRigComponent constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ControllerVisualsComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkControllerRigComponent constinit property declarations ****************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetControllerVisuals"), .Pointer = &UIsdkControllerRigComponent::execGetControllerVisuals },
+		{ .NameUTF8 = UTF8TEXT("HandleControllerHandBehaviorChanged"), .Pointer = &UIsdkControllerRigComponent::execHandleControllerHandBehaviorChanged },
+		{ .NameUTF8 = UTF8TEXT("HandlePalmGrabFinishedInput"), .Pointer = &UIsdkControllerRigComponent::execHandlePalmGrabFinishedInput },
+		{ .NameUTF8 = UTF8TEXT("HandlePalmGrabStartedInput"), .Pointer = &UIsdkControllerRigComponent::execHandlePalmGrabStartedInput },
+		{ .NameUTF8 = UTF8TEXT("HandlePinchGrabFinishedInput"), .Pointer = &UIsdkControllerRigComponent::execHandlePinchGrabFinishedInput },
+		{ .NameUTF8 = UTF8TEXT("HandlePinchGrabStartedInput"), .Pointer = &UIsdkControllerRigComponent::execHandlePinchGrabStartedInput },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals, "GetControllerVisuals" }, // 234957187
-		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged, "HandleControllerHandBehaviorChanged" }, // 342775333
-		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput, "HandlePalmGrabFinishedInput" }, // 1149044946
-		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput, "HandlePalmGrabStartedInput" }, // 473489576
-		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput, "HandlePinchGrabFinishedInput" }, // 305527379
-		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput, "HandlePinchGrabStartedInput" }, // 1608636652
+		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_GetControllerVisuals, "GetControllerVisuals" }, // 3977815049
+		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandleControllerHandBehaviorChanged, "HandleControllerHandBehaviorChanged" }, // 2825565406
+		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabFinishedInput, "HandlePalmGrabFinishedInput" }, // 1072343447
+		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePalmGrabStartedInput, "HandlePalmGrabStartedInput" }, // 3461239027
+		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabFinishedInput, "HandlePinchGrabFinishedInput" }, // 4100648833
+		{ &Z_Construct_UFunction_UIsdkControllerRigComponent_HandlePinchGrabStartedInput, "HandlePinchGrabStartedInput" }, // 3499556455
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkControllerRigComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkControllerRigComponent_Statics
+
+// ********** Begin Class UIsdkControllerRigComponent Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkControllerRigComponent_Statics::NewProp_ControllerVisualsComponent = { "ControllerVisualsComponent", nullptr, (EPropertyFlags)0x012408000008001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkControllerRigComponent, ControllerVisualsComponent), Z_Construct_UClass_UIsdkControllerVisualsRigComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ControllerVisualsComponent_MetaData), NewProp_ControllerVisualsComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkControllerRigComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkControllerRigComponent_Statics::NewProp_ControllerVisualsComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkControllerRigComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkControllerRigComponent Property Definitions ***************************
 UObject* (*const Z_Construct_UClass_UIsdkControllerRigComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkRigComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -353,6 +408,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkControllerRigCompo
 	0x00B000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkControllerRigComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkControllerRigComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkControllerRigComponent::StaticRegisterNativesUIsdkControllerRigComponent()
+{
+	UClass* Class = UIsdkControllerRigComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkControllerRigComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkControllerRigComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkControllerRigComponent.OuterSingleton)
@@ -361,14 +421,11 @@ UClass* Z_Construct_UClass_UIsdkControllerRigComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkControllerRigComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkControllerRigComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkControllerRigComponent);
 UIsdkControllerRigComponent::~UIsdkControllerRigComponent() {}
 // ********** End Class UIsdkControllerRigComponent ************************************************
 
 // ********** Begin Class UIsdkControllerRigComponentLeft ******************************************
-void UIsdkControllerRigComponentLeft::StaticRegisterNativesUIsdkControllerRigComponentLeft()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft;
 UClass* UIsdkControllerRigComponentLeft::GetPrivateStaticClass()
 {
@@ -376,7 +433,7 @@ UClass* UIsdkControllerRigComponentLeft::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkControllerRigComponentLeft"),
 			Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft.InnerSingleton,
 			StaticRegisterNativesUIsdkControllerRigComponentLeft,
@@ -405,21 +462,28 @@ struct Z_Construct_UClass_UIsdkControllerRigComponentLeft_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK|Rig" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkControllerRigComponentLeft\n * @brief Rig Component Tracking Controller for Left Handedness\n *\n * @see UIsdkControllerRigComponent\n * @addtogroup InteractionSDKPrebuilts\n */" },
+#endif
 		{ "DisplayName", "ISDK Controller Rig Left" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Rig/IsdkControllerRigComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkControllerRigComponentLeft\n@brief Rig Component Tracking Controller for Left Handedness\n\n@see UIsdkControllerRigComponent\n@addtogroup InteractionSDKPrebuilts" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkControllerRigComponentLeft constinit property declarations **********
+// ********** End Class UIsdkControllerRigComponentLeft constinit property declarations ************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkControllerRigComponentLeft>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkControllerRigComponentLeft_Statics
 UObject* (*const Z_Construct_UClass_UIsdkControllerRigComponentLeft_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkControllerRigComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -440,6 +504,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkControllerRigCompo
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkControllerRigComponentLeft_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkControllerRigComponentLeft_Statics::Class_MetaDataParams)
 };
+void UIsdkControllerRigComponentLeft::StaticRegisterNativesUIsdkControllerRigComponentLeft()
+{
+}
 UClass* Z_Construct_UClass_UIsdkControllerRigComponentLeft()
 {
 	if (!Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft.OuterSingleton)
@@ -448,14 +515,11 @@ UClass* Z_Construct_UClass_UIsdkControllerRigComponentLeft()
 	}
 	return Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkControllerRigComponentLeft);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkControllerRigComponentLeft);
 UIsdkControllerRigComponentLeft::~UIsdkControllerRigComponentLeft() {}
 // ********** End Class UIsdkControllerRigComponentLeft ********************************************
 
 // ********** Begin Class UIsdkControllerRigComponentRight *****************************************
-void UIsdkControllerRigComponentRight::StaticRegisterNativesUIsdkControllerRigComponentRight()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkControllerRigComponentRight;
 UClass* UIsdkControllerRigComponentRight::GetPrivateStaticClass()
 {
@@ -463,7 +527,7 @@ UClass* UIsdkControllerRigComponentRight::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkControllerRigComponentRight.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkControllerRigComponentRight"),
 			Z_Registration_Info_UClass_UIsdkControllerRigComponentRight.InnerSingleton,
 			StaticRegisterNativesUIsdkControllerRigComponentRight,
@@ -492,21 +556,28 @@ struct Z_Construct_UClass_UIsdkControllerRigComponentRight_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK|Rig" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkControllerRigComponentLeft\n * @brief Rig Component Tracking Controller for Right Handedness\n *\n * @see UIsdkControllerRigComponent\n * @addtogroup InteractionSDKPrebuiltsPrebuilts\n */" },
+#endif
 		{ "DisplayName", "ISDK Controller Rig Right" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Rig/IsdkControllerRigComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkControllerRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkControllerRigComponentLeft\n@brief Rig Component Tracking Controller for Right Handedness\n\n@see UIsdkControllerRigComponent\n@addtogroup InteractionSDKPrebuiltsPrebuilts" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkControllerRigComponentRight constinit property declarations *********
+// ********** End Class UIsdkControllerRigComponentRight constinit property declarations ***********
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkControllerRigComponentRight>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkControllerRigComponentRight_Statics
 UObject* (*const Z_Construct_UClass_UIsdkControllerRigComponentRight_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkControllerRigComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -527,6 +598,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkControllerRigCompo
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkControllerRigComponentRight_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkControllerRigComponentRight_Statics::Class_MetaDataParams)
 };
+void UIsdkControllerRigComponentRight::StaticRegisterNativesUIsdkControllerRigComponentRight()
+{
+}
 UClass* Z_Construct_UClass_UIsdkControllerRigComponentRight()
 {
 	if (!Z_Registration_Info_UClass_UIsdkControllerRigComponentRight.OuterSingleton)
@@ -535,23 +609,25 @@ UClass* Z_Construct_UClass_UIsdkControllerRigComponentRight()
 	}
 	return Z_Registration_Info_UClass_UIsdkControllerRigComponentRight.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkControllerRigComponentRight);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkControllerRigComponentRight);
 UIsdkControllerRigComponentRight::~UIsdkControllerRigComponentRight() {}
 // ********** End Class UIsdkControllerRigComponentRight *******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkControllerRigComponent, UIsdkControllerRigComponent::StaticClass, TEXT("UIsdkControllerRigComponent"), &Z_Registration_Info_UClass_UIsdkControllerRigComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerRigComponent), 622259061U) },
-		{ Z_Construct_UClass_UIsdkControllerRigComponentLeft, UIsdkControllerRigComponentLeft::StaticClass, TEXT("UIsdkControllerRigComponentLeft"), &Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerRigComponentLeft), 3363118294U) },
-		{ Z_Construct_UClass_UIsdkControllerRigComponentRight, UIsdkControllerRigComponentRight::StaticClass, TEXT("UIsdkControllerRigComponentRight"), &Z_Registration_Info_UClass_UIsdkControllerRigComponentRight, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerRigComponentRight), 965568966U) },
+		{ Z_Construct_UClass_UIsdkControllerRigComponent, UIsdkControllerRigComponent::StaticClass, TEXT("UIsdkControllerRigComponent"), &Z_Registration_Info_UClass_UIsdkControllerRigComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerRigComponent), 194267503U) },
+		{ Z_Construct_UClass_UIsdkControllerRigComponentLeft, UIsdkControllerRigComponentLeft::StaticClass, TEXT("UIsdkControllerRigComponentLeft"), &Z_Registration_Info_UClass_UIsdkControllerRigComponentLeft, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerRigComponentLeft), 2840040798U) },
+		{ Z_Construct_UClass_UIsdkControllerRigComponentRight, UIsdkControllerRigComponentRight::StaticClass, TEXT("UIsdkControllerRigComponentRight"), &Z_Registration_Info_UClass_UIsdkControllerRigComponentRight, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerRigComponentRight), 37745810U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_624924499(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_1940890088{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkControllerRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

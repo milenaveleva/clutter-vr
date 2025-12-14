@@ -3,3 +3,5 @@
 #include "D:/git/ClutterVR/Plugins/ElectronicNodes/Intermediate/Build/Win64/UnrealEditor/Inc/ElectronicNodes/UHT/ElectronicNodesSettings.gen.cpp"
 #include "D:/git/ClutterVR/Plugins/ElectronicNodes/Intermediate/Build/Win64/x64/UnrealEditor/Development/ElectronicNodes/PerModuleInline.gen.cpp"
 #include "D:/git/ClutterVR/Plugins/ElectronicNodes/Source/ElectronicNodes/Private/ElectronicNodes.cpp"
+#include "D:/git/ClutterVR/Plugins/ElectronicNodes/Source/ElectronicNodes/Private/ENConnectionDrawingPolicy.cpp"
+#include "D:/git/ClutterVR/Plugins/ElectronicNodes/Source/ElectronicNodes/Private/ENPathDrawer.cpp"

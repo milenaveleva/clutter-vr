@@ -9,7 +9,7 @@
 #include "Components/SkeletalMeshComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeQuestControllerAnimInstance() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UQuestControllerAnimInstance *********************************************
-void UQuestControllerAnimInstance::StaticRegisterNativesUQuestControllerAnimInstance()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UQuestControllerAnimInstance;
 UClass* UQuestControllerAnimInstance::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UQuestControllerAnimInstance::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UQuestControllerAnimInstance.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("QuestControllerAnimInstance"),
 			Z_Registration_Info_UClass_UQuestControllerAnimInstance.InnerSingleton,
 			StaticRegisterNativesUQuestControllerAnimInstance,
@@ -57,152 +54,250 @@ struct Z_Construct_UClass_UQuestControllerAnimInstance_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * UQuestControllerAnimInstance provides a set of properties corresponding to quest controller\n * inputs (buttons, triggers, etc), used to drive controller-based animations.\n *\n * The intent is to provide a c++ facing class to drive controller and hand animation behavior\n * in a reusable way.  This allows us to wire up all the inputs to the anim instance, and let\n * the blueprint decide what it will do with them.\n */" },
+#endif
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "Animation/QuestControllerAnimInstance.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UQuestControllerAnimInstance provides a set of properties corresponding to quest controller\ninputs (buttons, triggers, etc), used to drive controller-based animations.\n\nThe intent is to provide a c++ facing class to drive controller and hand animation behavior\nin a reusable way.  This allows us to wire up all the inputs to the anim instance, and let\nthe blueprint decide what it will do with them." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAButtonDown_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the A Button currently in a Down state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the A Button currently in a Down state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bBButtonDown_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the B Button currently in a Down state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the B Button currently in a Down state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bXButtonDown_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the X Button currently in a Down state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the X Button currently in a Down state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bYButtonDown_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Y Button currently in a Down state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Y Button currently in a Down state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAButtonTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the A Button currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the A Button currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bBButtonTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the B Button currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the B Button currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bXButtonTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the X Button currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the X Button currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bYButtonTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Y Button currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Y Button currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bLeftMenuButtonDown_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Left Menu Button currently in a Down state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Left Menu Button currently in a Down state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bLeftFrontTriggerTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Left Front Trigger currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Left Front Trigger currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftFrontTriggerAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how far down the Left Front Trigger is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how far down the Left Front Trigger is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRightFrontTriggerTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Right Front Trigger currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Right Front Trigger currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightFrontTriggerAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how far down the Right Front Trigger is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how far down the Right Front Trigger is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftGripTriggerAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how far down the Left Grip Trigger is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how far down the Left Grip Trigger is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightGripTriggerAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how far down the Right Grip Trigger is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how far down the Right Grip Trigger is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bLeftThumbstickTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Left Thumbstick currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Left Thumbstick currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftThumbstickXAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A -1 to 1 value indicating how far to the left (-1) or right (1)\n// the Left Thumbstick is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A -1 to 1 value indicating how far to the left (-1) or right (1)\nthe Left Thumbstick is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftThumbstickYAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A -1 to 1 value indicating how far up (-1) or down (1)\n// the Left Thumbstick is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A -1 to 1 value indicating how far up (-1) or down (1)\nthe Left Thumbstick is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRightThumbstickTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Left Thumbstick currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Left Thumbstick currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightThumbstickXAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A -1 to 1 value indicating how far to the left (-1) or right (1)\n// the Right Thumbstick is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A -1 to 1 value indicating how far to the left (-1) or right (1)\nthe Right Thumbstick is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightThumbstickYAxisValue_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A -1 to 1 value indicating how far up (-1) or down (1)\n// the Right Thumbstick is pressed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A -1 to 1 value indicating how far up (-1) or down (1)\nthe Right Thumbstick is pressed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bLeftPanelTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Left Panel currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Left Panel currently in a Touched state" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bRightPanelTouched_MetaData[] = {
 		{ "Category", "Controller" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Is the Right Panel currently in a Touched state\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Is the Right Panel currently in a Touched state" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UQuestControllerAnimInstance constinit property declarations *************
 	static void NewProp_bAButtonDown_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bAButtonDown;
 	static void NewProp_bBButtonDown_SetBit(void* Obj);
@@ -242,12 +337,15 @@ struct Z_Construct_UClass_UQuestControllerAnimInstance_Statics
 	static void NewProp_bRightPanelTouched_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bRightPanelTouched;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UQuestControllerAnimInstance constinit property declarations ***************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UQuestControllerAnimInstance>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UQuestControllerAnimInstance_Statics
+
+// ********** Begin Class UQuestControllerAnimInstance Property Definitions ************************
 void Z_Construct_UClass_UQuestControllerAnimInstance_Statics::NewProp_bAButtonDown_SetBit(void* Obj)
 {
 	((UQuestControllerAnimInstance*)Obj)->bAButtonDown = 1;
@@ -357,6 +455,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UQuestCon
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuestControllerAnimInstance_Statics::NewProp_bRightPanelTouched,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UQuestControllerAnimInstance_Statics::PropPointers) < 2048);
+// ********** End Class UQuestControllerAnimInstance Property Definitions **************************
 UObject* (*const Z_Construct_UClass_UQuestControllerAnimInstance_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UAnimInstance,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -377,6 +476,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UQuestControllerAnimIns
 	0x009000A8u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UQuestControllerAnimInstance_Statics::Class_MetaDataParams), Z_Construct_UClass_UQuestControllerAnimInstance_Statics::Class_MetaDataParams)
 };
+void UQuestControllerAnimInstance::StaticRegisterNativesUQuestControllerAnimInstance()
+{
+}
 UClass* Z_Construct_UClass_UQuestControllerAnimInstance()
 {
 	if (!Z_Registration_Info_UClass_UQuestControllerAnimInstance.OuterSingleton)
@@ -386,21 +488,23 @@ UClass* Z_Construct_UClass_UQuestControllerAnimInstance()
 	return Z_Registration_Info_UClass_UQuestControllerAnimInstance.OuterSingleton;
 }
 UQuestControllerAnimInstance::UQuestControllerAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UQuestControllerAnimInstance);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UQuestControllerAnimInstance);
 UQuestControllerAnimInstance::~UQuestControllerAnimInstance() {}
 // ********** End Class UQuestControllerAnimInstance ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestControllerAnimInstance, UQuestControllerAnimInstance::StaticClass, TEXT("UQuestControllerAnimInstance"), &Z_Registration_Info_UClass_UQuestControllerAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestControllerAnimInstance), 1580540648U) },
+		{ Z_Construct_UClass_UQuestControllerAnimInstance, UQuestControllerAnimInstance::StaticClass, TEXT("UQuestControllerAnimInstance"), &Z_Registration_Info_UClass_UQuestControllerAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestControllerAnimInstance), 1135949909U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_2860846452(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_1213711716{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

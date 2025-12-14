@@ -9,7 +9,7 @@
 #include "StructTypesNonGenerated.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkITransformer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -24,6 +24,55 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FIsdkGrabPose *****************************************************
+struct Z_Construct_UScriptStruct_FIsdkGrabPose_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkGrabPose); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkGrabPose); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "/**\n * @brief Stores the pose and identifier meant to be used in the Transformer computation.\n */" },
+#endif
+		{ "HasNativeMake", "/Script/OculusInteraction.IsdkFunctionLibrary.MakeGrabPoseStruct" },
+		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "@brief Stores the pose and identifier meant to be used in the Transformer computation." },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Identifier_MetaData[] = {
+		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// Should represent the source of the pose, be identifiable by it, and be different to any other\n// sent to the same transformer\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Should represent the source of the pose, be identifiable by it, and be different to any other\nsent to the same transformer" },
+#endif
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Pose_MetaData[] = {
+		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "// represents the modification point of the source, e.g. the pinch point, palm grab center, snap\n// point, etc..\n" },
+#endif
+		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "represents the modification point of the source, e.g. the pinch point, palm grab center, snap\npoint, etc.." },
+#endif
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkGrabPose constinit property declarations *********************
+	static const UECodeGen_Private::FIntPropertyParams NewProp_Identifier;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_Pose;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkGrabPose constinit property declarations ***********************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkGrabPose>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FIsdkGrabPose_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkGrabPose;
 class UScriptStruct* FIsdkGrabPose::StaticStruct()
 {
@@ -32,46 +81,17 @@ class UScriptStruct* FIsdkGrabPose::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FIsdkGrabPose.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkGrabPose, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkGrabPose"));
 	}
 	return Z_Registration_Info_UScriptStruct_FIsdkGrabPose.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FIsdkGrabPose_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "Comment", "/**\n * @brief Stores the pose and identifier meant to be used in the Transformer computation.\n */" },
-		{ "HasNativeMake", "OculusInteraction.IsdkFunctionLibrary.MakeGrabPoseStruct" },
-		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
-		{ "ToolTip", "@brief Stores the pose and identifier meant to be used in the Transformer computation." },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Identifier_MetaData[] = {
-		{ "Category", "InteractionSDK" },
-		{ "Comment", "// Should represent the source of the pose, be identifiable by it, and be different to any other\n// sent to the same transformer\n" },
-		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
-		{ "ToolTip", "Should represent the source of the pose, be identifiable by it, and be different to any other\nsent to the same transformer" },
-	};
-	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Pose_MetaData[] = {
-		{ "Category", "InteractionSDK" },
-		{ "Comment", "// represents the modification point of the source, e.g. the pinch point, palm grab center, snap\n// point, etc..\n" },
-		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
-		{ "ToolTip", "represents the modification point of the source, e.g. the pinch point, palm grab center, snap\npoint, etc.." },
-	};
-#endif // WITH_METADATA
-	static const UECodeGen_Private::FIntPropertyParams NewProp_Identifier;
-	static const UECodeGen_Private::FStructPropertyParams NewProp_Pose;
-	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkGrabPose>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
+
+// ********** Begin ScriptStruct FIsdkGrabPose Property Definitions ********************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewProp_Identifier = { "Identifier", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkGrabPose, Identifier), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Identifier_MetaData), NewProp_Identifier_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewProp_Pose = { "Pose", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkGrabPose, Pose), Z_Construct_UScriptStruct_FIsdkPosef, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pose_MetaData), NewProp_Pose_MetaData) }; // 3274912445
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewProp_Pose = { "Pose", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkGrabPose, Pose), Z_Construct_UScriptStruct_FIsdkPosef, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pose_MetaData), NewProp_Pose_MetaData) }; // 3444616462
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewProp_Identifier,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewProp_Pose,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkGrabPose Property Definitions **********************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -91,29 +111,26 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkGrabPose()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkGrabPose.InnerSingleton, Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkGrabPose.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkGrabPose.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkGrabPose *******************************************************
 
 // ********** Begin ScriptStruct FIsdkTargetTransform **********************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkTargetTransform;
-class UScriptStruct* FIsdkTargetTransform::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkTargetTransform, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkTargetTransform"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkTargetTransform); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkTargetTransform); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief Stores the transformation matrices that represents the current state of the target\n * USceneComponent the user is trying to update through a Transformer.\n */" },
-		{ "HasNativeMake", "OculusInteraction.IsdkFunctionLibrary.MakeTargetTransformStruct" },
+#endif
+		{ "HasNativeMake", "/Script/OculusInteraction.IsdkFunctionLibrary.MakeTargetTransformStruct" },
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Stores the transformation matrices that represents the current state of the target\nUSceneComponent the user is trying to update through a Transformer." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_WorldTransform_MetaData[] = {
 		{ "Category", "InteractionSDK" },
@@ -128,16 +145,30 @@ struct Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkTargetTransform constinit property declarations **************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WorldTransform;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RelativeTransform;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ParentWorldTransform;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkTargetTransform constinit property declarations ****************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkTargetTransform>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkTargetTransform;
+class UScriptStruct* FIsdkTargetTransform::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkTargetTransform, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkTargetTransform"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkTargetTransform Property Definitions *************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::NewProp_WorldTransform = { "WorldTransform", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkTargetTransform, WorldTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WorldTransform_MetaData), NewProp_WorldTransform_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::NewProp_RelativeTransform = { "RelativeTransform", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkTargetTransform, RelativeTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RelativeTransform_MetaData), NewProp_RelativeTransform_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::NewProp_ParentWorldTransform = { "ParentWorldTransform", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkTargetTransform, ParentWorldTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ParentWorldTransform_MetaData), NewProp_ParentWorldTransform_MetaData) };
@@ -147,6 +178,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::NewProp_ParentWorldTransform,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkTargetTransform Property Definitions ***************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -166,14 +198,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkTargetTransform()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.InnerSingleton, Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkTargetTransform.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkTargetTransform ************************************************
 
 // ********** Begin Interface UIsdkITransformer ****************************************************
-void UIsdkITransformer::StaticRegisterNativesUIsdkITransformer()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkITransformer;
 UClass* UIsdkITransformer::GetPrivateStaticClass()
 {
@@ -181,7 +210,7 @@ UClass* UIsdkITransformer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkITransformer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkITransformer"),
 			Z_Registration_Info_UClass_UIsdkITransformer.InnerSingleton,
 			StaticRegisterNativesUIsdkITransformer,
@@ -212,12 +241,15 @@ struct Z_Construct_UClass_UIsdkITransformer_Statics
 		{ "ModuleRelativePath", "Public/Interaction/Grabbable/IsdkITransformer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkITransformer constinit property declarations ********************
+// ********** End Interface UIsdkITransformer constinit property declarations **********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkITransformer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkITransformer_Statics
 UObject* (*const Z_Construct_UClass_UIsdkITransformer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -238,6 +270,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkITransformer_Stati
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkITransformer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkITransformer_Statics::Class_MetaDataParams)
 };
+void UIsdkITransformer::StaticRegisterNativesUIsdkITransformer()
+{
+}
 UClass* Z_Construct_UClass_UIsdkITransformer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkITransformer.OuterSingleton)
@@ -247,24 +282,26 @@ UClass* Z_Construct_UClass_UIsdkITransformer()
 	return Z_Registration_Info_UClass_UIsdkITransformer.OuterSingleton;
 }
 UIsdkITransformer::UIsdkITransformer(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkITransformer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkITransformer);
 // ********** End Interface UIsdkITransformer ******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkGrabPose::StaticStruct, Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewStructOps, TEXT("IsdkGrabPose"), &Z_Registration_Info_UScriptStruct_FIsdkGrabPose, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkGrabPose), 2116190937U) },
-		{ FIsdkTargetTransform::StaticStruct, Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::NewStructOps, TEXT("IsdkTargetTransform"), &Z_Registration_Info_UScriptStruct_FIsdkTargetTransform, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkTargetTransform), 3529349854U) },
+		{ FIsdkGrabPose::StaticStruct, Z_Construct_UScriptStruct_FIsdkGrabPose_Statics::NewStructOps, TEXT("IsdkGrabPose"),&Z_Registration_Info_UScriptStruct_FIsdkGrabPose, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkGrabPose), 1410713248U) },
+		{ FIsdkTargetTransform::StaticStruct, Z_Construct_UScriptStruct_FIsdkTargetTransform_Statics::NewStructOps, TEXT("IsdkTargetTransform"),&Z_Registration_Info_UScriptStruct_FIsdkTargetTransform, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkTargetTransform), 3350651162U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkITransformer, UIsdkITransformer::StaticClass, TEXT("UIsdkITransformer"), &Z_Registration_Info_UClass_UIsdkITransformer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkITransformer), 3267274176U) },
+		{ Z_Construct_UClass_UIsdkITransformer, UIsdkITransformer::StaticClass, TEXT("UIsdkITransformer"), &Z_Registration_Info_UClass_UIsdkITransformer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkITransformer), 1122117854U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_2014814113{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_1955789841(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkITransformer_h__Script_OculusInteraction_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

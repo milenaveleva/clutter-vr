@@ -8,7 +8,7 @@
 #include "HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandFingerPinchGrabRecognizer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -30,9 +30,15 @@ struct Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEv
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FIsdkPinchGrabRecognizerEventDelegate constinit property declarations *
+// ********** End Delegate FIsdkPinchGrabRecognizerEventDelegate constinit property declarations ***
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkPinchGrabRecognizerEventDelegate__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkPinchGrabRecognizerEventDelegate__DelegateSignature", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -58,21 +64,34 @@ struct Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns the calculated pinch strength of a pinch grab */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns the calculated pinch strength of a pinch grab" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPinchStrength constinit property declarations **********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPinchStrength constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPinchStrength Property Definitions *********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandFingerPinchGrabRecognizer_eventGetPinchStrength_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, nullptr, "GetPinchStrength", Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::IsdkHandFingerPinchGrabRecognizer_eventGetPinchStrength_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPinchStrength Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, nullptr, "GetPinchStrength", 	Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::IsdkHandFingerPinchGrabRecognizer_eventGetPinchStrength_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength_Statics::IsdkHandFingerPinchGrabRecognizer_eventGetPinchStrength_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength()
 {
@@ -102,16 +121,25 @@ struct Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Returns if the recognizer is currently active and a pinch grab is detected */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Returns if the recognizer is currently active and a pinch grab is detected" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsActive constinit property declarations ******************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsActive constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsActive Property Definitions *****************************************
 void Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkHandFingerPinchGrabRecognizer_eventIsActive_Parms*)Obj)->ReturnValue = 1;
@@ -121,7 +149,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkH
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, nullptr, "IsActive", Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::IsdkHandFingerPinchGrabRecognizer_eventIsActive_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsActive Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, nullptr, "IsActive", 	Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::IsdkHandFingerPinchGrabRecognizer_eventIsActive_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive_Statics::IsdkHandFingerPinchGrabRecognizer_eventIsActive_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive()
 {
@@ -151,21 +183,34 @@ struct Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Stat
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Primary driver for detection logic, called externally */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Primary driver for detection logic, called externally" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function UpdateState constinit property declarations ***************************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_DeltaTime;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function UpdateState constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function UpdateState Property Definitions **************************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::NewProp_DeltaTime = { "DeltaTime", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandFingerPinchGrabRecognizer_eventUpdateState_Parms, DeltaTime), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::NewProp_DeltaTime,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, nullptr, "UpdateState", Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::IsdkHandFingerPinchGrabRecognizer_eventUpdateState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::Function_MetaDataParams)},  };
+// ********** End Function UpdateState Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, nullptr, "UpdateState", 	Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::IsdkHandFingerPinchGrabRecognizer_eventUpdateState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState_Statics::IsdkHandFingerPinchGrabRecognizer_eventUpdateState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState()
 {
@@ -187,16 +232,6 @@ DEFINE_FUNCTION(UIsdkHandFingerPinchGrabRecognizer::execUpdateState)
 // ********** End Class UIsdkHandFingerPinchGrabRecognizer Function UpdateState ********************
 
 // ********** Begin Class UIsdkHandFingerPinchGrabRecognizer ***************************************
-void UIsdkHandFingerPinchGrabRecognizer::StaticRegisterNativesUIsdkHandFingerPinchGrabRecognizer()
-{
-	UClass* Class = UIsdkHandFingerPinchGrabRecognizer::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetPinchStrength", &UIsdkHandFingerPinchGrabRecognizer::execGetPinchStrength },
-		{ "IsActive", &UIsdkHandFingerPinchGrabRecognizer::execIsActive },
-		{ "UpdateState", &UIsdkHandFingerPinchGrabRecognizer::execUpdateState },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer;
 UClass* UIsdkHandFingerPinchGrabRecognizer::GetPrivateStaticClass()
 {
@@ -204,7 +239,7 @@ UClass* UIsdkHandFingerPinchGrabRecognizer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandFingerPinchGrabRecognizer"),
 			Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer.InnerSingleton,
 			StaticRegisterNativesUIsdkHandFingerPinchGrabRecognizer,
@@ -232,57 +267,91 @@ struct Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Used to determine if a HandVisual is exhibiting a pinch grab (a finger and a thumb having\n * proximity within a threshold)\n */" },
+#endif
 		{ "IncludePath", "HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Used to determine if a HandVisual is exhibiting a pinch grab (a finger and a thumb having\nproximity within a threshold)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandVisual_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The HandVisualComponent used for recognizing pinch grab */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ExposeOnSpawn", "" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The HandVisualComponent used for recognizing pinch grab" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FingerType_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The finger type to be assessed */" },
+#endif
 		{ "ExposeOnSpawn", "" },
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The finger type to be assessed" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchGrabStarted_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Delegate broadcast when a pinch grab becomes active */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate broadcast when a pinch grab becomes active" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchGrabFinished_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Delegate broadcast when a pinch grab is no longer active*/" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Delegate broadcast when a pinch grab is no longer active" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bLastPinchConfidence_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* When true, previous setting of wrist & HMD forwards to API returned high confidence */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "When true, previous setting of wrist & HMD forwards to API returned high confidence" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentWristForward_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The last forward vector recorded by the wrist joint */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The last forward vector recorded by the wrist joint" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrentHMDForward_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The last forward vector recorded by the HMD */" },
+#endif
 		{ "ModuleRelativePath", "Public/HandPoseDetection/IsdkHandFingerPinchGrabRecognizer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The last forward vector recorded by the HMD" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandFingerPinchGrabRecognizer constinit property declarations *******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandVisual;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_FingerType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_FingerType;
@@ -293,23 +362,31 @@ struct Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CurrentWristForward;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CurrentHMDForward;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandFingerPinchGrabRecognizer constinit property declarations *********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetPinchStrength"), .Pointer = &UIsdkHandFingerPinchGrabRecognizer::execGetPinchStrength },
+		{ .NameUTF8 = UTF8TEXT("IsActive"), .Pointer = &UIsdkHandFingerPinchGrabRecognizer::execIsActive },
+		{ .NameUTF8 = UTF8TEXT("UpdateState"), .Pointer = &UIsdkHandFingerPinchGrabRecognizer::execUpdateState },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength, "GetPinchStrength" }, // 659158743
-		{ &Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive, "IsActive" }, // 615793164
-		{ &Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState, "UpdateState" }, // 1700231563
+		{ &Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_GetPinchStrength, "GetPinchStrength" }, // 2163188172
+		{ &Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_IsActive, "IsActive" }, // 162034112
+		{ &Z_Construct_UFunction_UIsdkHandFingerPinchGrabRecognizer_UpdateState, "UpdateState" }, // 2592251226
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkHandFingerPinchGrabRecognizer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics
+
+// ********** Begin Class UIsdkHandFingerPinchGrabRecognizer Property Definitions ******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_HandVisual = { "HandVisual", nullptr, (EPropertyFlags)0x001100000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, HandVisual), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandVisual_MetaData), NewProp_HandVisual_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_FingerType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_FingerType = { "FingerType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, FingerType), Z_Construct_UEnum_OculusInteraction_EIsdkFingerType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FingerType_MetaData), NewProp_FingerType_MetaData) }; // 1877342163
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_PinchGrabStarted = { "PinchGrabStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, PinchGrabStarted), Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PinchGrabStarted_MetaData), NewProp_PinchGrabStarted_MetaData) }; // 1490937965
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_PinchGrabFinished = { "PinchGrabFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, PinchGrabFinished), Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PinchGrabFinished_MetaData), NewProp_PinchGrabFinished_MetaData) }; // 1490937965
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_FingerType = { "FingerType", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, FingerType), Z_Construct_UEnum_OculusInteraction_EIsdkFingerType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FingerType_MetaData), NewProp_FingerType_MetaData) }; // 155703524
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_PinchGrabStarted = { "PinchGrabStarted", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, PinchGrabStarted), Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PinchGrabStarted_MetaData), NewProp_PinchGrabStarted_MetaData) }; // 3057099505
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_PinchGrabFinished = { "PinchGrabFinished", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandFingerPinchGrabRecognizer, PinchGrabFinished), Z_Construct_UDelegateFunction_OculusInteraction_IsdkPinchGrabRecognizerEventDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PinchGrabFinished_MetaData), NewProp_PinchGrabFinished_MetaData) }; // 3057099505
 void Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_bLastPinchConfidence_SetBit(void* Obj)
 {
 	((UIsdkHandFingerPinchGrabRecognizer*)Obj)->bLastPinchConfidence = 1;
@@ -328,6 +405,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHand
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::NewProp_CurrentHMDForward,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandFingerPinchGrabRecognizer Property Definitions ********************
 UObject* (*const Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -348,6 +426,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandFingerPinchGra
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::Class_MetaDataParams)
 };
+void UIsdkHandFingerPinchGrabRecognizer::StaticRegisterNativesUIsdkHandFingerPinchGrabRecognizer()
+{
+	UClass* Class = UIsdkHandFingerPinchGrabRecognizer::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer.OuterSingleton)
@@ -356,21 +439,23 @@ UClass* Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer()
 	}
 	return Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandFingerPinchGrabRecognizer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandFingerPinchGrabRecognizer);
 UIsdkHandFingerPinchGrabRecognizer::~UIsdkHandFingerPinchGrabRecognizer() {}
 // ********** End Class UIsdkHandFingerPinchGrabRecognizer *****************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, UIsdkHandFingerPinchGrabRecognizer::StaticClass, TEXT("UIsdkHandFingerPinchGrabRecognizer"), &Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandFingerPinchGrabRecognizer), 134896499U) },
+		{ Z_Construct_UClass_UIsdkHandFingerPinchGrabRecognizer, UIsdkHandFingerPinchGrabRecognizer::StaticClass, TEXT("UIsdkHandFingerPinchGrabRecognizer"), &Z_Registration_Info_UClass_UIsdkHandFingerPinchGrabRecognizer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandFingerPinchGrabRecognizer), 1271890515U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_3125786346(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_3258913739{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandFingerPinchGrabRecognizer_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

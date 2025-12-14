@@ -8,7 +8,7 @@
 #include "Interaction/IsdkIPosedMesh.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIPosedMesh() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -53,24 +53,37 @@ struct Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Gets the root pose for the implementing class, before overrides are applied (typically\n   * via the IsdkIRootPose interface)\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkIPosedMesh.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Gets the root pose for the implementing class, before overrides are applied (typically\n* via the IsdkIRootPose interface)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCurrentRootPose constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCurrentRootPose constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCurrentRootPose Property Definitions *******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIPosedMesh_eventGetCurrentRootPose_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "GetCurrentRootPose", Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::PropPointers), sizeof(IsdkIPosedMesh_eventGetCurrentRootPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCurrentRootPose Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "GetCurrentRootPose", 	Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::PropPointers), 
+sizeof(IsdkIPosedMesh_eventGetCurrentRootPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIPosedMesh_eventGetCurrentRootPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose()
 {
@@ -123,24 +136,37 @@ struct Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n   * @brief Gets the final root pose for the implementing class, after all overrides have been\n   * applied\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkIPosedMesh.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "* @brief Gets the final root pose for the implementing class, after all overrides have been\n* applied" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetFinalRootPose constinit property declarations **********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetFinalRootPose constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetFinalRootPose Property Definitions *********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIPosedMesh_eventGetFinalRootPose_Parms, ReturnValue), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "GetFinalRootPose", Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::PropPointers), sizeof(IsdkIPosedMesh_eventGetFinalRootPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetFinalRootPose Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "GetFinalRootPose", 	Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::PropPointers), 
+sizeof(IsdkIPosedMesh_eventGetFinalRootPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C820C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIPosedMesh_eventGetFinalRootPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose()
 {
@@ -199,25 +225,38 @@ struct Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the current Pose Override Conditional, which contains the current override state\n   * and the actual override transforms for root and joint poses\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkIPosedMesh.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the current Pose Override Conditional, which contains the current override state\nand the actual override transforms for root and joint poses" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPoseOverride constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPoseOverride constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPoseOverride Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x001000000008058a, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIPosedMesh_eventGetPoseOverride_Parms, ReturnValue), Z_Construct_UClass_UIsdkConditionalPoseOverride_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "GetPoseOverride", Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::PropPointers), sizeof(IsdkIPosedMesh_eventGetPoseOverride_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPoseOverride Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "GetPoseOverride", 	Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::PropPointers), 
+sizeof(IsdkIPosedMesh_eventGetPoseOverride_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIPosedMesh_eventGetPoseOverride_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride()
 {
@@ -276,19 +315,28 @@ struct Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Whether or not the implementing class has joint poses\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkIPosedMesh.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Whether or not the implementing class has joint poses" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HasJointPoses constinit property declarations *************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HasJointPoses constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HasJointPoses Property Definitions ************************************
 void Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkIPosedMesh_eventHasJointPoses_Parms*)Obj)->ReturnValue = 1;
@@ -298,7 +346,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "HasJointPoses", Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::PropPointers), sizeof(IsdkIPosedMesh_eventHasJointPoses_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::Function_MetaDataParams)},  };
+// ********** End Function HasJointPoses Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIPosedMesh, nullptr, "HasJointPoses", 	Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::PropPointers), 
+sizeof(IsdkIPosedMesh_eventHasJointPoses_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIPosedMesh_eventHasJointPoses_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses()
 {
@@ -319,17 +371,6 @@ DEFINE_FUNCTION(IIsdkIPosedMesh::execHasJointPoses)
 // ********** End Interface UIsdkIPosedMesh Function HasJointPoses *********************************
 
 // ********** Begin Interface UIsdkIPosedMesh ******************************************************
-void UIsdkIPosedMesh::StaticRegisterNativesUIsdkIPosedMesh()
-{
-	UClass* Class = UIsdkIPosedMesh::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetCurrentRootPose", &IIsdkIPosedMesh::execGetCurrentRootPose },
-		{ "GetFinalRootPose", &IIsdkIPosedMesh::execGetFinalRootPose },
-		{ "GetPoseOverride", &IIsdkIPosedMesh::execGetPoseOverride },
-		{ "HasJointPoses", &IIsdkIPosedMesh::execHasJointPoses },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIPosedMesh;
 UClass* UIsdkIPosedMesh::GetPrivateStaticClass()
 {
@@ -337,7 +378,7 @@ UClass* UIsdkIPosedMesh::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIPosedMesh.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIPosedMesh"),
 			Z_Registration_Info_UClass_UIsdkIPosedMesh.InnerSingleton,
 			StaticRegisterNativesUIsdkIPosedMesh,
@@ -366,19 +407,28 @@ struct Z_Construct_UClass_UIsdkIPosedMesh_Statics
 		{ "ModuleRelativePath", "Public/Interaction/IsdkIPosedMesh.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIPosedMesh constinit property declarations **********************
+// ********** End Interface UIsdkIPosedMesh constinit property declarations ************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetCurrentRootPose"), .Pointer = &IIsdkIPosedMesh::execGetCurrentRootPose },
+		{ .NameUTF8 = UTF8TEXT("GetFinalRootPose"), .Pointer = &IIsdkIPosedMesh::execGetFinalRootPose },
+		{ .NameUTF8 = UTF8TEXT("GetPoseOverride"), .Pointer = &IIsdkIPosedMesh::execGetPoseOverride },
+		{ .NameUTF8 = UTF8TEXT("HasJointPoses"), .Pointer = &IIsdkIPosedMesh::execHasJointPoses },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose, "GetCurrentRootPose" }, // 2491082609
-		{ &Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose, "GetFinalRootPose" }, // 2349394816
-		{ &Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride, "GetPoseOverride" }, // 3128995934
-		{ &Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses, "HasJointPoses" }, // 1495226457
+		{ &Z_Construct_UFunction_UIsdkIPosedMesh_GetCurrentRootPose, "GetCurrentRootPose" }, // 3410253734
+		{ &Z_Construct_UFunction_UIsdkIPosedMesh_GetFinalRootPose, "GetFinalRootPose" }, // 1123431784
+		{ &Z_Construct_UFunction_UIsdkIPosedMesh_GetPoseOverride, "GetPoseOverride" }, // 851653826
+		{ &Z_Construct_UFunction_UIsdkIPosedMesh_HasJointPoses, "HasJointPoses" }, // 1909093765
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIPosedMesh>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIPosedMesh_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIPosedMesh_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -399,6 +449,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIPosedMesh_Statics
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIPosedMesh_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIPosedMesh_Statics::Class_MetaDataParams)
 };
+void UIsdkIPosedMesh::StaticRegisterNativesUIsdkIPosedMesh()
+{
+	UClass* Class = UIsdkIPosedMesh::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIPosedMesh_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIPosedMesh()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIPosedMesh.OuterSingleton)
@@ -408,20 +463,22 @@ UClass* Z_Construct_UClass_UIsdkIPosedMesh()
 	return Z_Registration_Info_UClass_UIsdkIPosedMesh.OuterSingleton;
 }
 UIsdkIPosedMesh::UIsdkIPosedMesh(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIPosedMesh);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIPosedMesh);
 // ********** End Interface UIsdkIPosedMesh ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIPosedMesh, UIsdkIPosedMesh::StaticClass, TEXT("UIsdkIPosedMesh"), &Z_Registration_Info_UClass_UIsdkIPosedMesh, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIPosedMesh), 735499893U) },
+		{ Z_Construct_UClass_UIsdkIPosedMesh, UIsdkIPosedMesh::StaticClass, TEXT("UIsdkIPosedMesh"), &Z_Registration_Info_UClass_UIsdkIPosedMesh, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIPosedMesh), 2314368067U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_3082276634(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_2149379232{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkIPosedMesh_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

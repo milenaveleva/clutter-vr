@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FIsdkHandPoseDetectionFingerTarget ********************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_39_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkHandPoseDetectionFingerTarget_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkHandPoseDetectionFingerTarget_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_39_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkHandPoseDetectionFingerTarget_Statics; \
 	OCULUSINTERACTION_API static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FIsdkHandPoseDetectionFingerTarget;
 // ********** End ScriptStruct FIsdkHandPoseDetectionFingerTarget **********************************
 
 // ********** Begin ScriptStruct FIsdkHandPoseDetectionThumbTarget *********************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_54_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FIsdkHandPoseDetectionThumbTarget_Statics; \
+struct Z_Construct_UScriptStruct_FIsdkHandPoseDetectionThumbTarget_Statics;
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_54_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FIsdkHandPoseDetectionThumbTarget_Statics; \
 	OCULUSINTERACTION_API static class UScriptStruct* StaticStruct();
 
 
@@ -35,20 +37,21 @@ struct FIsdkHandPoseDetectionThumbTarget;
 // ********** End ScriptStruct FIsdkHandPoseDetectionThumbTarget ***********************************
 
 // ********** Begin Class UIsdkHandPoseDetectionProfile ********************************************
+struct Z_Construct_UClass_UIsdkHandPoseDetectionProfile_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandPoseDetectionProfile_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkHandPoseDetectionProfile(); \
-	friend struct Z_Construct_UClass_UIsdkHandPoseDetectionProfile_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkHandPoseDetectionProfile_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandPoseDetectionProfile_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkHandPoseDetectionProfile_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkHandPoseDetectionProfile, UPrimaryDataAsset, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkHandPoseDetectionProfile_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkHandPoseDetectionProfile)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkHandPoseDetectionProfile(UIsdkHandPoseDetectionProfile&&) = delete; \
 	UIsdkHandPoseDetectionProfile(const UIsdkHandPoseDetectionProfile&) = delete; \
@@ -58,12 +61,12 @@ public: \
 	NO_API virtual ~UIsdkHandPoseDetectionProfile();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_79_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_79_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h_82_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -73,6 +76,6 @@ class UIsdkHandPoseDetectionProfile;
 // ********** End Class UIsdkHandPoseDetectionProfile **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPoseDetectionProfile_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

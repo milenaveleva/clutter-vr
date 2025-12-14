@@ -17,27 +17,28 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UMRUKDebugComponent ******************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHideAnchorSpace); \
 	DECLARE_FUNCTION(execShowAnchorSpaceAtRayHit); \
 	DECLARE_FUNCTION(execHideAnchor); \
 	DECLARE_FUNCTION(execShowAnchorAtRayHit);
 
 
+struct Z_Construct_UClass_UMRUKDebugComponent_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKDebugComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMRUKDebugComponent(); \
-	friend struct Z_Construct_UClass_UMRUKDebugComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UMRUKDebugComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_UMRUKDebugComponent_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_UMRUKDebugComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UMRUKDebugComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_UMRUKDebugComponent_NoRegister) \
 	DECLARE_SERIALIZER(UMRUKDebugComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMRUKDebugComponent(UMRUKDebugComponent&&) = delete; \
 	UMRUKDebugComponent(const UMRUKDebugComponent&) = delete; \
@@ -47,13 +48,13 @@ public: \
 	NO_API virtual ~UMRUKDebugComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_13_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_13_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +64,6 @@ class UMRUKDebugComponent;
 // ********** End Class UMRUKDebugComponent ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitDebugComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -8,7 +8,7 @@
 #include "DataSources/IsdkFromMetaXRHandDataSource.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkFromMetaXRHandDataSource() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -26,6 +26,24 @@ UPackage* Z_Construct_UPackage__Script_IsdkDataSourcesMetaXR();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FBoneOVRToOXRMap **************************************************
+struct Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FBoneOVRToOXRMap); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FBoneOVRToOXRMap); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FBoneOVRToOXRMap constinit property declarations ******************
+// ********** End ScriptStruct FBoneOVRToOXRMap constinit property declarations ********************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FBoneOVRToOXRMap>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap;
 class UScriptStruct* FBoneOVRToOXRMap::StaticStruct()
 {
@@ -34,20 +52,7 @@ class UScriptStruct* FBoneOVRToOXRMap::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FBoneOVRToOXRMap, (UObject*)Z_Construct_UPackage__Script_IsdkDataSourcesMetaXR(), TEXT("BoneOVRToOXRMap"));
 	}
 	return Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FBoneOVRToOXRMap>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_IsdkDataSourcesMetaXR,
 	nullptr,
@@ -67,7 +72,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FBoneOVRToOXRMap()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap.InnerSingleton, Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap.InnerSingleton);
 }
 // ********** End ScriptStruct FBoneOVRToOXRMap ****************************************************
 
@@ -82,16 +87,25 @@ struct Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTracke
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Checks if low confidence hand data is allowed.\n   * @return bool True if low confidence data is processed, false otherwise.\n   *\n   * The system defaults to high-confidence data for reliability. This setting is\n   * configured internally but can be adjusted if needed for specific scenarios.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Checks if low confidence hand data is allowed.\n@return bool True if low confidence data is processed, false otherwise.\n\nThe system defaults to high-confidence data for reliability. This setting is\nconfigured internally but can be adjusted if needed for specific scenarios." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetAllowInvalidTrackedData constinit property declarations ************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetAllowInvalidTrackedData constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetAllowInvalidTrackedData Property Definitions ***********************
 void Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkFromMetaXRHandDataSource_eventGetAllowInvalidTrackedData_Parms*)Obj)->ReturnValue = 1;
@@ -101,7 +115,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetAllowInvalidTrackedData", Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::IsdkFromMetaXRHandDataSource_eventGetAllowInvalidTrackedData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetAllowInvalidTrackedData Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetAllowInvalidTrackedData", 	Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::IsdkFromMetaXRHandDataSource_eventGetAllowInvalidTrackedData_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData_Statics::IsdkFromMetaXRHandDataSource_eventGetAllowInvalidTrackedData_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData()
 {
@@ -132,24 +150,37 @@ struct Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_S
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Accesses the motion controller component used by this hand data source.\n   * @return UMotionControllerComponent* Pointer to the motion controller component.\n   *\n   * This provides access to the motion controller tied to the hand data source, mainly for internal\n   * use. You might use this if you're doing advanced modifications or debugging.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Accesses the motion controller component used by this hand data source.\n@return UMotionControllerComponent* Pointer to the motion controller component.\n\nThis provides access to the motion controller tied to the hand data source, mainly for internal\nuse. You might use this if you're doing advanced modifications or debugging." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetMotionController constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetMotionController constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetMotionController Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFromMetaXRHandDataSource_eventGetMotionController_Parms, ReturnValue), Z_Construct_UClass_UMotionControllerComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetMotionController", Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::IsdkFromMetaXRHandDataSource_eventGetMotionController_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetMotionController Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetMotionController", 	Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::IsdkFromMetaXRHandDataSource_eventGetMotionController_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController_Statics::IsdkFromMetaXRHandDataSource_eventGetMotionController_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController()
 {
@@ -180,21 +211,34 @@ struct Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedC
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Retrieves the status of the root pose connection.\n   * @return UIsdkConditional* A pointer to the `UIsdkConditional` object that represents the\n   * connection status of the root pose.\n   *\n   * This method checks if the root pose connection is currently active and valid. The returned\n   * `UIsdkConditional` object encapsulates this status and can trigger events when the connection\n   * status changes. For example, this is used to check if the hand should be visible and if the\n   * interaction rig components should be enabled/disabled.\n   * @see UIsdkTrackedDataSourceRigComponent\n   * @see UIsdkPokeInteractionRigComponent\n   * @see UIsdkGrabInteractionRigComponent\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Retrieves the status of the root pose connection.\n@return UIsdkConditional* A pointer to the `UIsdkConditional` object that represents the\nconnection status of the root pose.\n\nThis method checks if the root pose connection is currently active and valid. The returned\n`UIsdkConditional` object encapsulates this status and can trigger events when the connection\nstatus changes. For example, this is used to check if the hand should be visible and if the\ninteraction rig components should be enabled/disabled.\n@see UIsdkTrackedDataSourceRigComponent\n@see UIsdkPokeInteractionRigComponent\n@see UIsdkGrabInteractionRigComponent" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootPoseConnectedConditional_Implementation constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootPoseConnectedConditional_Implementation constinit property declarations 
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootPoseConnectedConditional_Implementation Property Definitions ***
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFromMetaXRHandDataSource_eventGetRootPoseConnectedConditional_Implementation_Parms, ReturnValue), Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetRootPoseConnectedConditional_Implementation", Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::IsdkFromMetaXRHandDataSource_eventGetRootPoseConnectedConditional_Implementation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootPoseConnectedConditional_Implementation Property Definitions *****
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetRootPoseConnectedConditional_Implementation", 	Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::IsdkFromMetaXRHandDataSource_eventGetRootPoseConnectedConditional_Implementation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation_Statics::IsdkFromMetaXRHandDataSource_eventGetRootPoseConnectedConditional_Implementation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation()
 {
@@ -225,21 +269,34 @@ struct Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfid
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the status of the root pose high confidence\n   * @return UIsdkConditional* A pointer to the `UIsdkConditional` object that represents the\n   * state of high confidence in the root pose.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the status of the root pose high confidence\n@return UIsdkConditional* A pointer to the `UIsdkConditional` object that represents the\nstate of high confidence in the root pose." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootPoseHighConfidenceConditional_Implementation constinit property declarations 
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootPoseHighConfidenceConditional_Implementation constinit property declarations 
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootPoseHighConfidenceConditional_Implementation Property Definitions 
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkFromMetaXRHandDataSource_eventGetRootPoseHighConfidenceConditional_Implementation_Parms, ReturnValue), Z_Construct_UClass_UIsdkConditional_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetRootPoseHighConfidenceConditional_Implementation", Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::IsdkFromMetaXRHandDataSource_eventGetRootPoseHighConfidenceConditional_Implementation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootPoseHighConfidenceConditional_Implementation Property Definitions 
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "GetRootPoseHighConfidenceConditional_Implementation", 	Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::IsdkFromMetaXRHandDataSource_eventGetRootPoseHighConfidenceConditional_Implementation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020400, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation_Statics::IsdkFromMetaXRHandDataSource_eventGetRootPoseHighConfidenceConditional_Implementation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation()
 {
@@ -270,16 +327,25 @@ struct Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTracke
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets whether to allow low confidence data.\n   * @param bInAllowInvalidTrackedData True to process low confidence data, false otherwise.\n   *\n   * Adjusting this allows you to fine-tune how the system handles uncertain tracking data, trading\n   * off between precision and responsiveness.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets whether to allow low confidence data.\n@param bInAllowInvalidTrackedData True to process low confidence data, false otherwise.\n\nAdjusting this allows you to fine-tune how the system handles uncertain tracking data, trading\noff between precision and responsiveness." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetAllowInvalidTrackedData constinit property declarations ************
 	static void NewProp_bInAllowInvalidTrackedData_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bInAllowInvalidTrackedData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetAllowInvalidTrackedData constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetAllowInvalidTrackedData Property Definitions ***********************
 void Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::NewProp_bInAllowInvalidTrackedData_SetBit(void* Obj)
 {
 	((IsdkFromMetaXRHandDataSource_eventSetAllowInvalidTrackedData_Parms*)Obj)->bInAllowInvalidTrackedData = 1;
@@ -289,7 +355,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkF
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::NewProp_bInAllowInvalidTrackedData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "SetAllowInvalidTrackedData", Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::IsdkFromMetaXRHandDataSource_eventSetAllowInvalidTrackedData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetAllowInvalidTrackedData Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, nullptr, "SetAllowInvalidTrackedData", 	Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::IsdkFromMetaXRHandDataSource_eventSetAllowInvalidTrackedData_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData_Statics::IsdkFromMetaXRHandDataSource_eventSetAllowInvalidTrackedData_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData()
 {
@@ -311,18 +381,6 @@ DEFINE_FUNCTION(UIsdkFromMetaXRHandDataSource::execSetAllowInvalidTrackedData)
 // ********** End Class UIsdkFromMetaXRHandDataSource Function SetAllowInvalidTrackedData **********
 
 // ********** Begin Class UIsdkFromMetaXRHandDataSource ********************************************
-void UIsdkFromMetaXRHandDataSource::StaticRegisterNativesUIsdkFromMetaXRHandDataSource()
-{
-	UClass* Class = UIsdkFromMetaXRHandDataSource::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetAllowInvalidTrackedData", &UIsdkFromMetaXRHandDataSource::execGetAllowInvalidTrackedData },
-		{ "GetMotionController", &UIsdkFromMetaXRHandDataSource::execGetMotionController },
-		{ "GetRootPoseConnectedConditional_Implementation", &UIsdkFromMetaXRHandDataSource::execGetRootPoseConnectedConditional_Implementation },
-		{ "GetRootPoseHighConfidenceConditional_Implementation", &UIsdkFromMetaXRHandDataSource::execGetRootPoseHighConfidenceConditional_Implementation },
-		{ "SetAllowInvalidTrackedData", &UIsdkFromMetaXRHandDataSource::execSetAllowInvalidTrackedData },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource;
 UClass* UIsdkFromMetaXRHandDataSource::GetPrivateStaticClass()
 {
@@ -330,7 +388,7 @@ UClass* UIsdkFromMetaXRHandDataSource::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkFromMetaXRHandDataSource"),
 			Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource.InnerSingleton,
 			StaticRegisterNativesUIsdkFromMetaXRHandDataSource,
@@ -358,11 +416,15 @@ struct Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkFromMetaXRHandDataSource\n * @brief Manages MetaXR plugin hand tracking data, integrating pointer and root poses into your VR\n * project.\n *\n * This class facilitates the integration of MetaXR plugin hand tracking data by providing access to\n * essential information such as the hand's pointer and root poses. It ensures that this data is\n * updated each frame, maintaining its relevance throughout the application's lifecycle. An instance\n * of this data source is created in the Interaction SDK's prebuilt rig component via\n * UIsdkTrackedDataSourceRigComponent.\n *\n * @see UIsdkExternalHandDataSource\n * @see IIsdkIHandPointerPose\n * @see IIsdkIRootPose\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "DisplayName", "ISDK From MetaXR Hand Data Source" },
 		{ "IncludePath", "DataSources/IsdkFromMetaXRHandDataSource.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkFromMetaXRHandDataSource\n@brief Manages MetaXR plugin hand tracking data, integrating pointer and root poses into your VR\nproject.\n\nThis class facilitates the integration of MetaXR plugin hand tracking data by providing access to\nessential information such as the hand's pointer and root poses. It ensures that this data is\nupdated each frame, maintaining its relevance throughout the application's lifecycle. An instance\nof this data source is created in the Interaction SDK's prebuilt rig component via\nUIsdkTrackedDataSourceRigComponent.\n\n@see UIsdkExternalHandDataSource\n@see IIsdkIHandPointerPose\n@see IIsdkIRootPose\n@addtogroup InteractionSDK" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAllowLowConfidenceData_MetaData[] = {
 		{ "BlueprintGetter", "GetAllowInvalidTrackedData" },
@@ -384,12 +446,18 @@ struct Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OculusXrHandComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Required to generate the \"OpenXR\" Data\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHandDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Required to generate the \"OpenXR\" Data" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkFromMetaXRHandDataSource constinit property declarations ************
 	static void NewProp_bAllowLowConfidenceData_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bAllowLowConfidenceData;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MotionController;
@@ -397,13 +465,21 @@ struct Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_IsRootPoseHighConfidence;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_OculusXrHandComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkFromMetaXRHandDataSource constinit property declarations **************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetAllowInvalidTrackedData"), .Pointer = &UIsdkFromMetaXRHandDataSource::execGetAllowInvalidTrackedData },
+		{ .NameUTF8 = UTF8TEXT("GetMotionController"), .Pointer = &UIsdkFromMetaXRHandDataSource::execGetMotionController },
+		{ .NameUTF8 = UTF8TEXT("GetRootPoseConnectedConditional_Implementation"), .Pointer = &UIsdkFromMetaXRHandDataSource::execGetRootPoseConnectedConditional_Implementation },
+		{ .NameUTF8 = UTF8TEXT("GetRootPoseHighConfidenceConditional_Implementation"), .Pointer = &UIsdkFromMetaXRHandDataSource::execGetRootPoseHighConfidenceConditional_Implementation },
+		{ .NameUTF8 = UTF8TEXT("SetAllowInvalidTrackedData"), .Pointer = &UIsdkFromMetaXRHandDataSource::execSetAllowInvalidTrackedData },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData, "GetAllowInvalidTrackedData" }, // 2322817923
-		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController, "GetMotionController" }, // 3240701239
-		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation, "GetRootPoseConnectedConditional_Implementation" }, // 1241105106
-		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation, "GetRootPoseHighConfidenceConditional_Implementation" }, // 176828193
-		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData, "SetAllowInvalidTrackedData" }, // 427425729
+		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetAllowInvalidTrackedData, "GetAllowInvalidTrackedData" }, // 768894984
+		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetMotionController, "GetMotionController" }, // 2535294013
+		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseConnectedConditional_Implementation, "GetRootPoseConnectedConditional_Implementation" }, // 570122789
+		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_GetRootPoseHighConfidenceConditional_Implementation, "GetRootPoseHighConfidenceConditional_Implementation" }, // 3452518104
+		{ &Z_Construct_UFunction_UIsdkFromMetaXRHandDataSource_SetAllowInvalidTrackedData, "SetAllowInvalidTrackedData" }, // 1428018734
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -411,7 +487,9 @@ struct Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics
 		TCppClassTypeTraits<UIsdkFromMetaXRHandDataSource>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics
+
+// ********** Begin Class UIsdkFromMetaXRHandDataSource Property Definitions ***********************
 void Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::NewProp_bAllowLowConfidenceData_SetBit(void* Obj)
 {
 	((UIsdkFromMetaXRHandDataSource*)Obj)->bAllowLowConfidenceData = 1;
@@ -429,14 +507,15 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkFrom
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::NewProp_OculusXrHandComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkFromMetaXRHandDataSource Property Definitions *************************
 UObject* (*const Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkExternalHandDataSource,
 	(UObject* (*)())Z_Construct_UPackage__Script_IsdkDataSourcesMetaXR,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIHandPointerPose_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromMetaXRHandDataSource, IIsdkIHandPointerPose), false },  // 262544849
-	{ Z_Construct_UClass_UIsdkIRootPose_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromMetaXRHandDataSource, IIsdkIRootPose), false },  // 2159373520
+	{ Z_Construct_UClass_UIsdkIHandPointerPose_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromMetaXRHandDataSource, IIsdkIHandPointerPose), false },  // 920478983
+	{ Z_Construct_UClass_UIsdkIRootPose_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromMetaXRHandDataSource, IIsdkIRootPose), false },  // 1451802214
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::ClassParams = {
 	&UIsdkFromMetaXRHandDataSource::StaticClass,
@@ -453,6 +532,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFromMetaXRHandData
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::Class_MetaDataParams)
 };
+void UIsdkFromMetaXRHandDataSource::StaticRegisterNativesUIsdkFromMetaXRHandDataSource()
+{
+	UClass* Class = UIsdkFromMetaXRHandDataSource::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkFromMetaXRHandDataSource_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkFromMetaXRHandDataSource()
 {
 	if (!Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource.OuterSingleton)
@@ -461,24 +545,26 @@ UClass* Z_Construct_UClass_UIsdkFromMetaXRHandDataSource()
 	}
 	return Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkFromMetaXRHandDataSource);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkFromMetaXRHandDataSource);
 UIsdkFromMetaXRHandDataSource::~UIsdkFromMetaXRHandDataSource() {}
 // ********** End Class UIsdkFromMetaXRHandDataSource **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FBoneOVRToOXRMap::StaticStruct, Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics::NewStructOps, TEXT("BoneOVRToOXRMap"), &Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FBoneOVRToOXRMap), 2228679378U) },
+		{ FBoneOVRToOXRMap::StaticStruct, Z_Construct_UScriptStruct_FBoneOVRToOXRMap_Statics::NewStructOps, TEXT("BoneOVRToOXRMap"),&Z_Registration_Info_UScriptStruct_FBoneOVRToOXRMap, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FBoneOVRToOXRMap), 4084963502U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, UIsdkFromMetaXRHandDataSource::StaticClass, TEXT("UIsdkFromMetaXRHandDataSource"), &Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFromMetaXRHandDataSource), 2935553221U) },
+		{ Z_Construct_UClass_UIsdkFromMetaXRHandDataSource, UIsdkFromMetaXRHandDataSource::StaticClass, TEXT("UIsdkFromMetaXRHandDataSource"), &Z_Registration_Info_UClass_UIsdkFromMetaXRHandDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFromMetaXRHandDataSource), 306805448U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_1258882308{
+	TEXT("/Script/IsdkDataSourcesMetaXR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_1158844663(TEXT("/Script/IsdkDataSourcesMetaXR"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHandDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

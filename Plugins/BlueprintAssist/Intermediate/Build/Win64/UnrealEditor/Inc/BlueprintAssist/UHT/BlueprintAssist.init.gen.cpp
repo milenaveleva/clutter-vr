@@ -17,7 +17,7 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 			nullptr,
 			0,
 			PKG_CompiledIn | 0x00000040,
-			0x17E21AB5,
+			0x6E1352C6,
 			0x1C23ECB6,
 			METADATA_PARAMS(0, nullptr)
 		};
@@ -25,5 +25,5 @@ static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compi
 	}
 	return Z_Registration_Info_UPackage__Script_BlueprintAssist.OuterSingleton;
 }
-static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BlueprintAssist(Z_Construct_UPackage__Script_BlueprintAssist, TEXT("/Script/BlueprintAssist"), Z_Registration_Info_UPackage__Script_BlueprintAssist, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x17E21AB5, 0x1C23ECB6));
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_BlueprintAssist(Z_Construct_UPackage__Script_BlueprintAssist, TEXT("/Script/BlueprintAssist"), Z_Registration_Info_UPackage__Script_BlueprintAssist, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x6E1352C6, 0x1C23ECB6));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

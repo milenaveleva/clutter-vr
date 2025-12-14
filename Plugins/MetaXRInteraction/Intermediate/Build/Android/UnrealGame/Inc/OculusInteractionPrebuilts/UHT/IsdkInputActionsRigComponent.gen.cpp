@@ -8,7 +8,7 @@
 #include "Rig/IsdkInputActionsRigComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkInputActionsRigComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkInputActionsRigComponent ********************************************
-void UIsdkInputActionsRigComponent::StaticRegisterNativesUIsdkInputActionsRigComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkInputActionsRigComponent;
 UClass* UIsdkInputActionsRigComponent::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkInputActionsRigComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkInputActionsRigComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkInputActionsRigComponent"),
 			Z_Registration_Info_UClass_UIsdkInputActionsRigComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkInputActionsRigComponent,
@@ -57,7 +54,9 @@ struct Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\n */" },
+#endif
 		{ "IncludePath", "Rig/IsdkInputActionsRigComponent.h" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkInputActionsRigComponent.h" },
 	};
@@ -178,6 +177,8 @@ struct Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics
 		{ "ModuleRelativePath", "Public/Rig/IsdkInputActionsRigComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkInputActionsRigComponent constinit property declarations ************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectStrengthAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_GrabSelectAction;
@@ -208,12 +209,15 @@ struct Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_LeftPanelTouchedAction;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RightPanelTouchedAction;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkInputActionsRigComponent constinit property declarations **************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkInputActionsRigComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics
+
+// ********** Begin Class UIsdkInputActionsRigComponent Property Definitions ***********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::NewProp_SelectAction = { "SelectAction", nullptr, (EPropertyFlags)0x0114000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInputActionsRigComponent, SelectAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectAction_MetaData), NewProp_SelectAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::NewProp_SelectStrengthAction = { "SelectStrengthAction", nullptr, (EPropertyFlags)0x0114000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInputActionsRigComponent, SelectStrengthAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectStrengthAction_MetaData), NewProp_SelectStrengthAction_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::NewProp_GrabSelectAction = { "GrabSelectAction", nullptr, (EPropertyFlags)0x0114000000010015, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkInputActionsRigComponent, GrabSelectAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GrabSelectAction_MetaData), NewProp_GrabSelectAction_MetaData) };
@@ -275,6 +279,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkInpu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::NewProp_RightPanelTouchedAction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkInputActionsRigComponent Property Definitions *************************
 UObject* (*const Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -295,6 +300,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkInputActionsRigCom
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkInputActionsRigComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkInputActionsRigComponent::StaticRegisterNativesUIsdkInputActionsRigComponent()
+{
+}
 UClass* Z_Construct_UClass_UIsdkInputActionsRigComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkInputActionsRigComponent.OuterSingleton)
@@ -303,21 +311,23 @@ UClass* Z_Construct_UClass_UIsdkInputActionsRigComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkInputActionsRigComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkInputActionsRigComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkInputActionsRigComponent);
 UIsdkInputActionsRigComponent::~UIsdkInputActionsRigComponent() {}
 // ********** End Class UIsdkInputActionsRigComponent **********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkInputActionsRigComponent, UIsdkInputActionsRigComponent::StaticClass, TEXT("UIsdkInputActionsRigComponent"), &Z_Registration_Info_UClass_UIsdkInputActionsRigComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInputActionsRigComponent), 571850908U) },
+		{ Z_Construct_UClass_UIsdkInputActionsRigComponent, UIsdkInputActionsRigComponent::StaticClass, TEXT("UIsdkInputActionsRigComponent"), &Z_Registration_Info_UClass_UIsdkInputActionsRigComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkInputActionsRigComponent), 936692079U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_1734603010(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_3184172318{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkInputActionsRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

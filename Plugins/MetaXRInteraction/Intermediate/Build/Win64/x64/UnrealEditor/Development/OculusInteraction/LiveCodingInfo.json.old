@@ -175,6 +175,31 @@
 			"IsdkControllerMeshComponent.cpp.obj",
 			"IsdkFunctionLibrary.cpp.obj",
 			"IsdkHandData.cpp.obj"
+		],
+		"Module.OculusInteraction.9.cpp.obj": [
+			"IsdkHandMeshComponent.cpp.obj",
+			"IsdkHandPoseData.cpp.obj",
+			"IsdkRuntimeSettings.cpp.obj",
+			"OculusInteraction.cpp.obj",
+			"StructTypesPrivate.cpp.obj",
+			"IsdkHandPoseSubsystem.cpp.obj",
+			"IsdkITrackingDataSubsystem.cpp.obj",
+			"IsdkWidgetSubsystem.cpp.obj",
+			"IsdkWorldSubsystem.cpp.obj",
+			"IsdkConsoleTest.cpp.obj",
+			"IsdkExternalHandDataModifierTest.cpp.obj",
+			"IsdkGameplayTagsTest.cpp.obj",
+			"IsdkMathUtilsTest.cpp.obj",
+			"IsdkMockInteractable.cpp.obj",
+			"IsdkOneEuroFilterTest.cpp.obj",
+			"IsdkPrefixTest.cpp.obj",
+			"IsdkTestConditional.cpp.obj",
+			"IsdkTestSubsystemEventQueue.cpp.obj",
+			"IsdkThrowableTest.cpp.obj",
+			"IsdkDebugUtils.cpp.obj",
+			"IsdkMathUtils.cpp.obj",
+			"IsdkPointableWidget.cpp.obj",
+			"IsdkWidget.cpp.obj"
 		]
 	}
 }

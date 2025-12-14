@@ -15,31 +15,31 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UIsdkConditional;
 class UMotionControllerComponent;
 
 // ********** Begin Class UIsdkFromOpenXRControllerDataSource **************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetRootPoseConnectedConditional_Implementation); \
 	DECLARE_FUNCTION(execGetMotionController);
 
 
+struct Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_Statics;
 ISDKDATASOURCESOPENXR_API UClass* Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkFromOpenXRControllerDataSource(); \
-	friend struct Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend ISDKDATASOURCESOPENXR_API UClass* Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_NoRegister(); \
+	friend ISDKDATASOURCESOPENXR_API UClass* ::Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkFromOpenXRControllerDataSource, UIsdkExternalHandDataSource, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/IsdkDataSourcesOpenXR"), Z_Construct_UClass_UIsdkFromOpenXRControllerDataSource_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkFromOpenXRControllerDataSource) \
 	virtual UObject* _getUObject() const override { return const_cast<UIsdkFromOpenXRControllerDataSource*>(this); }
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkFromOpenXRControllerDataSource(UIsdkFromOpenXRControllerDataSource&&) = delete; \
 	UIsdkFromOpenXRControllerDataSource(const UIsdkFromOpenXRControllerDataSource&) = delete; \
@@ -49,13 +49,13 @@ public: \
 	NO_API virtual ~UIsdkFromOpenXRControllerDataSource();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_53_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_53_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h_59_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,6 +65,6 @@ class UIsdkFromOpenXRControllerDataSource;
 // ********** End Class UIsdkFromOpenXRControllerDataSource ****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRControllerDataSource_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

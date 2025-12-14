@@ -15,13 +15,12 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UIsdkHandGrabPose;
 class UIsdkHandMeshComponent;
 class UIsdkHandPoseData;
 
 // ********** Begin Class UIsdkHandGrabPose ********************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetDebugVisual); \
 	DECLARE_FUNCTION(execIsDebugVisualActive); \
 	DECLARE_FUNCTION(execGetMirrorHandGrabPose); \
@@ -31,20 +30,21 @@ class UIsdkHandPoseData;
 	DECLARE_FUNCTION(execToggleHandPoseEditing);
 
 
+struct Z_Construct_UClass_UIsdkHandGrabPose_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandGrabPose_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkHandGrabPose(); \
-	friend struct Z_Construct_UClass_UIsdkHandGrabPose_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkHandGrabPose_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandGrabPose_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkHandGrabPose_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkHandGrabPose, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkHandGrabPose_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkHandGrabPose)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkHandGrabPose(UIsdkHandGrabPose&&) = delete; \
 	UIsdkHandGrabPose(const UIsdkHandGrabPose&) = delete; \
@@ -54,13 +54,13 @@ public: \
 	NO_API virtual ~UIsdkHandGrabPose();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_35_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_35_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h_38_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -70,6 +70,6 @@ class UIsdkHandGrabPose;
 // ********** End Class UIsdkHandGrabPose **********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Grabbable_IsdkHandGrabPose_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

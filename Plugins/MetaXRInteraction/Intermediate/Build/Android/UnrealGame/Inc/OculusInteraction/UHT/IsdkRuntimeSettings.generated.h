@@ -17,22 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UIsdkRuntimeSettings *****************************************************
+struct Z_Construct_UClass_UIsdkRuntimeSettings_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkRuntimeSettings_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkRuntimeSettings(); \
-	friend struct Z_Construct_UClass_UIsdkRuntimeSettings_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkRuntimeSettings_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkRuntimeSettings_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkRuntimeSettings_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkRuntimeSettings, UObject, COMPILED_IN_FLAGS(0 | CLASS_DefaultConfig | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkRuntimeSettings_NoRegister) \
-	DECLARE_SERIALIZER(UIsdkRuntimeSettings) \
-	static const TCHAR* StaticConfigName() {return TEXT("Engine");} \
+	DECLARE_SERIALIZER(UIsdkRuntimeSettings)
 
 
-
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UIsdkRuntimeSettings(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -44,12 +43,12 @@ public: \
 	NO_API virtual ~UIsdkRuntimeSettings();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_47_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_47_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h_50_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -59,6 +58,6 @@ class UIsdkRuntimeSettings;
 // ********** End Class UIsdkRuntimeSettings *******************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

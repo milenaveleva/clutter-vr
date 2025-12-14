@@ -17,24 +17,25 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXREyeTrackingComponent ********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execClearRotationValues);
 
 
+struct Z_Construct_UClass_UOculusXREyeTrackingComponent_Statics;
 OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXREyeTrackingComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXREyeTrackingComponent(); \
-	friend struct Z_Construct_UClass_UOculusXREyeTrackingComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXREyeTrackingComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRMOVEMENT_API UClass* Z_Construct_UClass_UOculusXREyeTrackingComponent_NoRegister(); \
+	friend OCULUSXRMOVEMENT_API UClass* ::Z_Construct_UClass_UOculusXREyeTrackingComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXREyeTrackingComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRMovement"), Z_Construct_UClass_UOculusXREyeTrackingComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXREyeTrackingComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXREyeTrackingComponent(UOculusXREyeTrackingComponent&&) = delete; \
 	UOculusXREyeTrackingComponent(const UOculusXREyeTrackingComponent&) = delete; \
@@ -44,13 +45,13 @@ public: \
 	NO_API virtual ~UOculusXREyeTrackingComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_27_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_27_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h_30_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -60,6 +61,6 @@ class UOculusXREyeTrackingComponent;
 // ********** End Class UOculusXREyeTrackingComponent **********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXREyeTrackingComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

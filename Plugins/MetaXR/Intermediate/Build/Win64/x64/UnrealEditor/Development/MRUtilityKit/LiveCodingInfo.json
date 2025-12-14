@@ -49,9 +49,9 @@
 		"Module.MRUtilityKit.5.cpp.obj": [
 			"MRUtilityKitSceneDataProvider.cpp.obj",
 			"MRUtilityKitSeatsComponent.cpp.obj",
+			"MRUtilityKitShared.cpp.obj",
 			"MRUtilityKitSharedHelper.cpp.obj",
-			"MRUtilityKitSubsystem.cpp.obj",
-			"MRUtilityKitShared.cpp.obj"
+			"MRUtilityKitSubsystem.cpp.obj"
 		]
 	}
 }

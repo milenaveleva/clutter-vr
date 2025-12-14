@@ -8,7 +8,7 @@
 #include "OculusXRLegacyPoseTransformComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRLegacyPoseTransformComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRInput();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRLegacyPoseTransformComponent ************************************
-void UOculusXRLegacyPoseTransformComponent::StaticRegisterNativesUOculusXRLegacyPoseTransformComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent;
 UClass* UOculusXRLegacyPoseTransformComponent::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UOculusXRLegacyPoseTransformComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRLegacyPoseTransformComponent"),
 			Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRLegacyPoseTransformComponent,
@@ -58,21 +55,28 @@ struct Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "OculusHand" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Handles conversion of components created for the legacy Oculus controller pose into\n * the OpenXR Grip pose. Attach components that need to be transformed under this component.\n */" },
+#endif
 		{ "DisplayName", "OculusXR Legacy Pose Transform Component" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "OculusXRLegacyPoseTransformComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/OculusXRLegacyPoseTransformComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Handles conversion of components created for the legacy Oculus controller pose into\nthe OpenXR Grip pose. Attach components that need to be transformed under this component." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRLegacyPoseTransformComponent constinit property declarations ****
+// ********** End Class UOculusXRLegacyPoseTransformComponent constinit property declarations ******
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRLegacyPoseTransformComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRInput,
@@ -93,6 +97,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRLegacyPoseTran
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRLegacyPoseTransformComponent::StaticRegisterNativesUOculusXRLegacyPoseTransformComponent()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent.OuterSingleton)
@@ -101,21 +108,23 @@ UClass* Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRLegacyPoseTransformComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRLegacyPoseTransformComponent);
 UOculusXRLegacyPoseTransformComponent::~UOculusXRLegacyPoseTransformComponent() {}
 // ********** End Class UOculusXRLegacyPoseTransformComponent **************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent, UOculusXRLegacyPoseTransformComponent::StaticClass, TEXT("UOculusXRLegacyPoseTransformComponent"), &Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRLegacyPoseTransformComponent), 948676475U) },
+		{ Z_Construct_UClass_UOculusXRLegacyPoseTransformComponent, UOculusXRLegacyPoseTransformComponent::StaticClass, TEXT("UOculusXRLegacyPoseTransformComponent"), &Z_Registration_Info_UClass_UOculusXRLegacyPoseTransformComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRLegacyPoseTransformComponent), 2210591383U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_3845702087(TEXT("/Script/OculusXRInput"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_3029471468{
+	TEXT("/Script/OculusXRInput"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRLegacyPoseTransformComponent_h__Script_OculusXRInput_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

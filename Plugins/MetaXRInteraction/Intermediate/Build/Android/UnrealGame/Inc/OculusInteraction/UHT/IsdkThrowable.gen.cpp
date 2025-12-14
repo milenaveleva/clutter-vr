@@ -8,7 +8,7 @@
 #include "Interaction/IsdkThrowable.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkThrowable() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -33,7 +33,7 @@ static UEnum* EIsdkVelocityEstimationMethod_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkVelocityEstimationMethod.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkVelocityEstimationMethod>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkVelocityEstimationMethod>()
 {
 	return EIsdkVelocityEstimationMethod_StaticEnum();
 }
@@ -42,9 +42,13 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Different methods for estimating the velocity of the object after being thrown */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Different methods for estimating the velocity of the object after being thrown" },
+#endif
 		{ "VE_KalmanFilter.DisplayName", "Kalman Filter" },
 		{ "VE_KalmanFilter.Name", "EIsdkVelocityEstimationMethod::VE_KalmanFilter" },
 		{ "VE_KalmanFilter.Tooltip", "[EXPERIMENTAL] An advanced method that uses a statistical approach to estimate the velocity. The Kalman filter takes into account the uncertainty in the position and time data to provide a more accurate estimate of the velocity." },
@@ -62,7 +66,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod_Statics
 		{ "EIsdkVelocityEstimationMethod::VE_KalmanFilter", (int64)EIsdkVelocityEstimationMethod::VE_KalmanFilter },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -86,17 +90,10 @@ UEnum* Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod()
 // ********** End Enum EIsdkVelocityEstimationMethod ***********************************************
 
 // ********** Begin ScriptStruct FIsdkThrowableSettings ********************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings;
-class UScriptStruct* FIsdkThrowableSettings::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkThrowableSettings, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkThrowableSettings"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkThrowableSettings); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkThrowableSettings); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -108,45 +105,67 @@ struct Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics
 		{ "ClampMax", "100" },
 		{ "ClampMin", "1" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "Tooltip", "The number of recent object positions used to estimate the release velocity." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Z_Score_Threshold_MetaData[] = {
 		{ "Category", "InteractionSDK|Throwable" },
 		{ "ClampMax", "5.0" },
 		{ "ClampMin", "1.0" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "Tooltip", "The threshold for the Z-score filter. Object positions with a Z-score above this threshold are considered outliers and are excluded from the velocity estimation." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AngularVelocityScale_MetaData[] = {
 		{ "Category", "InteractionSDK|Throwable" },
 		{ "ClampMax", "5.0" },
 		{ "ClampMin", "1.0" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "Tooltip", "The scale for the angular velocity." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VelocityEstimationMethod_MetaData[] = {
 		{ "Category", "InteractionSDK|Throwable" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "Tooltip", "The method to use for estimating the release velocity of the object." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkThrowableSettings constinit property declarations ************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_SampleSize;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Z_Score_Threshold;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_AngularVelocityScale;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_VelocityEstimationMethod_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_VelocityEstimationMethod;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkThrowableSettings constinit property declarations **************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkThrowableSettings>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings;
+class UScriptStruct* FIsdkThrowableSettings::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkThrowableSettings, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkThrowableSettings"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkThrowableSettings Property Definitions ***********************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_SampleSize = { "SampleSize", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThrowableSettings, SampleSize), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SampleSize_MetaData), NewProp_SampleSize_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_Z_Score_Threshold = { "Z_Score_Threshold", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThrowableSettings, Z_Score_Threshold), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Z_Score_Threshold_MetaData), NewProp_Z_Score_Threshold_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_AngularVelocityScale = { "AngularVelocityScale", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThrowableSettings, AngularVelocityScale), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AngularVelocityScale_MetaData), NewProp_AngularVelocityScale_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_VelocityEstimationMethod_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_VelocityEstimationMethod = { "VelocityEstimationMethod", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThrowableSettings, VelocityEstimationMethod), Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VelocityEstimationMethod_MetaData), NewProp_VelocityEstimationMethod_MetaData) }; // 3350756353
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_VelocityEstimationMethod = { "VelocityEstimationMethod", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkThrowableSettings, VelocityEstimationMethod), Z_Construct_UEnum_OculusInteraction_EIsdkVelocityEstimationMethod, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VelocityEstimationMethod_MetaData), NewProp_VelocityEstimationMethod_MetaData) }; // 3448342010
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_SampleSize,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_Z_Score_Threshold,
@@ -155,6 +174,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewProp_VelocityEstimationMethod,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkThrowableSettings Property Definitions *************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -174,7 +194,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkThrowableSettings()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.InnerSingleton, Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkThrowableSettings **********************************************
 
@@ -188,21 +208,34 @@ struct Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "ISDK Throwable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Calculate angular velocity */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Calculate angular velocity" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetAngularVelocity constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetAngularVelocity constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetAngularVelocity Property Definitions *******************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkThrowable_eventGetAngularVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkThrowable, nullptr, "GetAngularVelocity", Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::IsdkThrowable_eventGetAngularVelocity_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetAngularVelocity Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkThrowable, nullptr, "GetAngularVelocity", 	Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::IsdkThrowable_eventGetAngularVelocity_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity_Statics::IsdkThrowable_eventGetAngularVelocity_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity()
 {
@@ -232,21 +265,34 @@ struct Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "ISDK Throwable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Calculate the release velocity */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Calculate the release velocity" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetVelocity constinit property declarations ***************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetVelocity constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetVelocity Property Definitions **************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkThrowable_eventGetVelocity_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkThrowable, nullptr, "GetVelocity", Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::IsdkThrowable_eventGetVelocity_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetVelocity Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkThrowable, nullptr, "GetVelocity", 	Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::IsdkThrowable_eventGetVelocity_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkThrowable_GetVelocity_Statics::IsdkThrowable_eventGetVelocity_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkThrowable_GetVelocity()
 {
@@ -267,15 +313,6 @@ DEFINE_FUNCTION(UIsdkThrowable::execGetVelocity)
 // ********** End Class UIsdkThrowable Function GetVelocity ****************************************
 
 // ********** Begin Class UIsdkThrowable ***********************************************************
-void UIsdkThrowable::StaticRegisterNativesUIsdkThrowable()
-{
-	UClass* Class = UIsdkThrowable::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetAngularVelocity", &UIsdkThrowable::execGetAngularVelocity },
-		{ "GetVelocity", &UIsdkThrowable::execGetVelocity },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkThrowable;
 UClass* UIsdkThrowable::GetPrivateStaticClass()
 {
@@ -283,7 +320,7 @@ UClass* UIsdkThrowable::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkThrowable.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkThrowable"),
 			Z_Registration_Info_UClass_UIsdkThrowable.InnerSingleton,
 			StaticRegisterNativesUIsdkThrowable,
@@ -312,49 +349,71 @@ struct Z_Construct_UClass_UIsdkThrowable_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Scene component utilized when a grabbable is being thrown, for calculating velocities and physics\n * interactions */" },
+#endif
 		{ "DisplayName", "ISDK Throwable" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Interaction/IsdkThrowable.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Scene component utilized when a grabbable is being thrown, for calculating velocities and physics\n* interactions" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TrackedComponent_MetaData[] = {
 		{ "Category", "ISDK Throwable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The scene component that this throwing component is tracking */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The scene component that this throwing component is tracking" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Settings_MetaData[] = {
 		{ "Category", "ISDK Throwable" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The settings for the throwable component */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkThrowable.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The settings for the throwable component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkThrowable constinit property declarations ***************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TrackedComponent;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Settings;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkThrowable constinit property declarations *****************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetAngularVelocity"), .Pointer = &UIsdkThrowable::execGetAngularVelocity },
+		{ .NameUTF8 = UTF8TEXT("GetVelocity"), .Pointer = &UIsdkThrowable::execGetVelocity },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity, "GetAngularVelocity" }, // 520083143
-		{ &Z_Construct_UFunction_UIsdkThrowable_GetVelocity, "GetVelocity" }, // 1115237080
+		{ &Z_Construct_UFunction_UIsdkThrowable_GetAngularVelocity, "GetAngularVelocity" }, // 3463881347
+		{ &Z_Construct_UFunction_UIsdkThrowable_GetVelocity, "GetVelocity" }, // 1653629750
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkThrowable>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkThrowable_Statics
+
+// ********** Begin Class UIsdkThrowable Property Definitions **************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkThrowable_Statics::NewProp_TrackedComponent = { "TrackedComponent", nullptr, (EPropertyFlags)0x012408000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkThrowable, TrackedComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TrackedComponent_MetaData), NewProp_TrackedComponent_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkThrowable_Statics::NewProp_Settings = { "Settings", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkThrowable, Settings), Z_Construct_UScriptStruct_FIsdkThrowableSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Settings_MetaData), NewProp_Settings_MetaData) }; // 768462151
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkThrowable_Statics::NewProp_Settings = { "Settings", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkThrowable, Settings), Z_Construct_UScriptStruct_FIsdkThrowableSettings, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Settings_MetaData), NewProp_Settings_MetaData) }; // 3788318901
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkThrowable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkThrowable_Statics::NewProp_TrackedComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkThrowable_Statics::NewProp_Settings,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkThrowable_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkThrowable Property Definitions ****************************************
 UObject* (*const Z_Construct_UClass_UIsdkThrowable_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -375,6 +434,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkThrowable_Statics:
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkThrowable_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkThrowable_Statics::Class_MetaDataParams)
 };
+void UIsdkThrowable::StaticRegisterNativesUIsdkThrowable()
+{
+	UClass* Class = UIsdkThrowable::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkThrowable_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkThrowable()
 {
 	if (!Z_Registration_Info_UClass_UIsdkThrowable.OuterSingleton)
@@ -383,27 +447,29 @@ UClass* Z_Construct_UClass_UIsdkThrowable()
 	}
 	return Z_Registration_Info_UClass_UIsdkThrowable.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkThrowable);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkThrowable);
 UIsdkThrowable::~UIsdkThrowable() {}
 // ********** End Class UIsdkThrowable *************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkVelocityEstimationMethod_StaticEnum, TEXT("EIsdkVelocityEstimationMethod"), &Z_Registration_Info_UEnum_EIsdkVelocityEstimationMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3350756353U) },
+		{ EIsdkVelocityEstimationMethod_StaticEnum, TEXT("EIsdkVelocityEstimationMethod"), &Z_Registration_Info_UEnum_EIsdkVelocityEstimationMethod, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3448342010U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkThrowableSettings::StaticStruct, Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewStructOps, TEXT("IsdkThrowableSettings"), &Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkThrowableSettings), 768462151U) },
+		{ FIsdkThrowableSettings::StaticStruct, Z_Construct_UScriptStruct_FIsdkThrowableSettings_Statics::NewStructOps, TEXT("IsdkThrowableSettings"),&Z_Registration_Info_UScriptStruct_FIsdkThrowableSettings, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkThrowableSettings), 3788318901U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkThrowable, UIsdkThrowable::StaticClass, TEXT("UIsdkThrowable"), &Z_Registration_Info_UClass_UIsdkThrowable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkThrowable), 2233658856U) },
+		{ Z_Construct_UClass_UIsdkThrowable, UIsdkThrowable::StaticClass, TEXT("UIsdkThrowable"), &Z_Registration_Info_UClass_UIsdkThrowable, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkThrowable), 1482611192U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_223201730{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_3396944668(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkThrowable_h__Script_OculusInteraction_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -17,34 +17,35 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Delegate FIsdkPalmGrabRecognizerEventDelegate **********************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_28_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_28_DELEGATE \
 OCULUSINTERACTION_API void FIsdkPalmGrabRecognizerEventDelegate_DelegateWrapper(const FMulticastScriptDelegate& IsdkPalmGrabRecognizerEventDelegate);
 
 
 // ********** End Delegate FIsdkPalmGrabRecognizerEventDelegate ************************************
 
 // ********** Begin Class UIsdkHandPalmGrabRecognizer **********************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetPalmGrabMinFingers); \
 	DECLARE_FUNCTION(execSetPalmGrabMinFingerCurl); \
 	DECLARE_FUNCTION(execIsActive); \
 	DECLARE_FUNCTION(execUpdateState);
 
 
+struct Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkHandPalmGrabRecognizer(); \
-	friend struct Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkHandPalmGrabRecognizer, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkHandPalmGrabRecognizer_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkHandPalmGrabRecognizer)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkHandPalmGrabRecognizer(UIsdkHandPalmGrabRecognizer&&) = delete; \
 	UIsdkHandPalmGrabRecognizer(const UIsdkHandPalmGrabRecognizer&) = delete; \
@@ -54,13 +55,13 @@ public: \
 	NO_API virtual ~UIsdkHandPalmGrabRecognizer();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_43_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_43_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h_46_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -70,6 +71,6 @@ class UIsdkHandPalmGrabRecognizer;
 // ********** End Class UIsdkHandPalmGrabRecognizer ************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_HandPoseDetection_IsdkHandPalmGrabRecognizer_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

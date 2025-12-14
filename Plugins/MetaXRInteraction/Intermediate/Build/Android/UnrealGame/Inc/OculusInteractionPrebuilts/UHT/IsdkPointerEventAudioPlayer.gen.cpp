@@ -9,7 +9,7 @@
 #include "Interaction/Pointable/IsdkInteractionPointerEvent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkPointerEventAudioPlayer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -40,16 +40,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCancelAudio constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCancelAudio constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCancelAudio Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetCancelAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetCancelAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::IsdkPointerEventAudioPlayer_eventGetCancelAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCancelAudio Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetCancelAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::IsdkPointerEventAudioPlayer_eventGetCancelAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio_Statics::IsdkPointerEventAudioPlayer_eventGetCancelAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio()
 {
@@ -87,16 +96,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHoverAudio constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHoverAudio constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHoverAudio Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetHoverAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetHoverAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::IsdkPointerEventAudioPlayer_eventGetHoverAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHoverAudio Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetHoverAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::IsdkPointerEventAudioPlayer_eventGetHoverAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio_Statics::IsdkPointerEventAudioPlayer_eventGetHoverAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio()
 {
@@ -134,16 +152,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetMoveAudio constinit property declarations **************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetMoveAudio constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetMoveAudio Property Definitions *************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetMoveAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetMoveAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::IsdkPointerEventAudioPlayer_eventGetMoveAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetMoveAudio Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetMoveAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::IsdkPointerEventAudioPlayer_eventGetMoveAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio_Statics::IsdkPointerEventAudioPlayer_eventGetMoveAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio()
 {
@@ -175,21 +202,34 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics
 		{ "BlueprintInternalUseOnly", "true" },
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Getters\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Audio/IsdkPointerEventAudioPlayer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Getters" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPointable constinit property declarations **************************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPointable constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPointable Property Definitions *************************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetPointable_Parms, ReturnValue), Z_Construct_UClass_UIsdkIPointable_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetPointable", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::IsdkPointerEventAudioPlayer_eventGetPointable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPointable Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetPointable", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::IsdkPointerEventAudioPlayer_eventGetPointable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable_Statics::IsdkPointerEventAudioPlayer_eventGetPointable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable()
 {
@@ -227,16 +267,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSelectAudio constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSelectAudio constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSelectAudio Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetSelectAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetSelectAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::IsdkPointerEventAudioPlayer_eventGetSelectAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSelectAudio Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetSelectAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::IsdkPointerEventAudioPlayer_eventGetSelectAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio_Statics::IsdkPointerEventAudioPlayer_eventGetSelectAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio()
 {
@@ -274,16 +323,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Static
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetUnhoverAudio constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetUnhoverAudio constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetUnhoverAudio Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetUnhoverAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetUnhoverAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::IsdkPointerEventAudioPlayer_eventGetUnhoverAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetUnhoverAudio Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetUnhoverAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::IsdkPointerEventAudioPlayer_eventGetUnhoverAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio_Statics::IsdkPointerEventAudioPlayer_eventGetUnhoverAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio()
 {
@@ -321,16 +379,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Stati
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetUnselectAudio constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetUnselectAudio constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetUnselectAudio Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventGetUnselectAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetUnselectAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::IsdkPointerEventAudioPlayer_eventGetUnselectAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetUnselectAudio Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "GetUnselectAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::IsdkPointerEventAudioPlayer_eventGetUnselectAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio_Statics::IsdkPointerEventAudioPlayer_eventGetUnselectAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio()
 {
@@ -365,16 +432,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Sta
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandlePointerEvent constinit property declarations ********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointerEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandlePointerEvent constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::NewProp_PointerEvent = { "PointerEvent", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventHandlePointerEvent_Parms, PointerEvent), Z_Construct_UScriptStruct_FIsdkInteractionPointerEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerEvent_MetaData), NewProp_PointerEvent_MetaData) }; // 384809535
+
+// ********** Begin Function HandlePointerEvent Property Definitions *******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::NewProp_PointerEvent = { "PointerEvent", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventHandlePointerEvent_Parms, PointerEvent), Z_Construct_UScriptStruct_FIsdkInteractionPointerEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerEvent_MetaData), NewProp_PointerEvent_MetaData) }; // 2900802931
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::NewProp_PointerEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "HandlePointerEvent", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::IsdkPointerEventAudioPlayer_eventHandlePointerEvent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandlePointerEvent Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "HandlePointerEvent", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::IsdkPointerEventAudioPlayer_eventHandlePointerEvent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent_Statics::IsdkPointerEventAudioPlayer_eventHandlePointerEvent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent()
 {
@@ -412,16 +488,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCancelAudio constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCancelAudio constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCancelAudio Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetCancelAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetCancelAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::IsdkPointerEventAudioPlayer_eventSetCancelAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCancelAudio Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetCancelAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::IsdkPointerEventAudioPlayer_eventSetCancelAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio_Statics::IsdkPointerEventAudioPlayer_eventSetCancelAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio()
 {
@@ -459,16 +544,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetHoverAudio constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetHoverAudio constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetHoverAudio Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetHoverAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetHoverAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::IsdkPointerEventAudioPlayer_eventSetHoverAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetHoverAudio Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetHoverAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::IsdkPointerEventAudioPlayer_eventSetHoverAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio_Statics::IsdkPointerEventAudioPlayer_eventSetHoverAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio()
 {
@@ -506,16 +600,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetMoveAudio constinit property declarations **************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetMoveAudio constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetMoveAudio Property Definitions *************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetMoveAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetMoveAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::IsdkPointerEventAudioPlayer_eventSetMoveAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetMoveAudio Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetMoveAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::IsdkPointerEventAudioPlayer_eventSetMoveAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio_Statics::IsdkPointerEventAudioPlayer_eventSetMoveAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio()
 {
@@ -547,24 +650,37 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Setters\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Audio/IsdkPointerEventAudioPlayer.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Setters" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Pointable_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetPointable constinit property declarations **************************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_Pointable;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetPointable constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetPointable Property Definitions *************************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::NewProp_Pointable = { "Pointable", nullptr, (EPropertyFlags)0x0014000008000182, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetPointable_Parms, Pointable), Z_Construct_UClass_UIsdkIPointable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pointable_MetaData), NewProp_Pointable_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::NewProp_Pointable,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetPointable", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::IsdkPointerEventAudioPlayer_eventSetPointable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetPointable Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetPointable", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::IsdkPointerEventAudioPlayer_eventSetPointable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable_Statics::IsdkPointerEventAudioPlayer_eventSetPointable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable()
 {
@@ -602,16 +718,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetSelectAudio constinit property declarations ************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetSelectAudio constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetSelectAudio Property Definitions ***********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetSelectAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetSelectAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::IsdkPointerEventAudioPlayer_eventSetSelectAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetSelectAudio Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetSelectAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::IsdkPointerEventAudioPlayer_eventSetSelectAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio_Statics::IsdkPointerEventAudioPlayer_eventSetSelectAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio()
 {
@@ -649,16 +774,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Static
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetUnhoverAudio constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetUnhoverAudio constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetUnhoverAudio Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetUnhoverAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetUnhoverAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::IsdkPointerEventAudioPlayer_eventSetUnhoverAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetUnhoverAudio Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetUnhoverAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::IsdkPointerEventAudioPlayer_eventSetUnhoverAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio_Statics::IsdkPointerEventAudioPlayer_eventSetUnhoverAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio()
 {
@@ -696,16 +830,25 @@ struct Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Stati
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetUnselectAudio constinit property declarations **********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetUnselectAudio constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetUnselectAudio Property Definitions *********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPointerEventAudioPlayer_eventSetUnselectAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetUnselectAudio", Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::IsdkPointerEventAudioPlayer_eventSetUnselectAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetUnselectAudio Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPointerEventAudioPlayer, nullptr, "SetUnselectAudio", 	Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::IsdkPointerEventAudioPlayer_eventSetUnselectAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio_Statics::IsdkPointerEventAudioPlayer_eventSetUnselectAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio()
 {
@@ -727,28 +870,6 @@ DEFINE_FUNCTION(UIsdkPointerEventAudioPlayer::execSetUnselectAudio)
 // ********** End Class UIsdkPointerEventAudioPlayer Function SetUnselectAudio *********************
 
 // ********** Begin Class UIsdkPointerEventAudioPlayer *********************************************
-void UIsdkPointerEventAudioPlayer::StaticRegisterNativesUIsdkPointerEventAudioPlayer()
-{
-	UClass* Class = UIsdkPointerEventAudioPlayer::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetCancelAudio", &UIsdkPointerEventAudioPlayer::execGetCancelAudio },
-		{ "GetHoverAudio", &UIsdkPointerEventAudioPlayer::execGetHoverAudio },
-		{ "GetMoveAudio", &UIsdkPointerEventAudioPlayer::execGetMoveAudio },
-		{ "GetPointable", &UIsdkPointerEventAudioPlayer::execGetPointable },
-		{ "GetSelectAudio", &UIsdkPointerEventAudioPlayer::execGetSelectAudio },
-		{ "GetUnhoverAudio", &UIsdkPointerEventAudioPlayer::execGetUnhoverAudio },
-		{ "GetUnselectAudio", &UIsdkPointerEventAudioPlayer::execGetUnselectAudio },
-		{ "HandlePointerEvent", &UIsdkPointerEventAudioPlayer::execHandlePointerEvent },
-		{ "SetCancelAudio", &UIsdkPointerEventAudioPlayer::execSetCancelAudio },
-		{ "SetHoverAudio", &UIsdkPointerEventAudioPlayer::execSetHoverAudio },
-		{ "SetMoveAudio", &UIsdkPointerEventAudioPlayer::execSetMoveAudio },
-		{ "SetPointable", &UIsdkPointerEventAudioPlayer::execSetPointable },
-		{ "SetSelectAudio", &UIsdkPointerEventAudioPlayer::execSetSelectAudio },
-		{ "SetUnhoverAudio", &UIsdkPointerEventAudioPlayer::execSetUnhoverAudio },
-		{ "SetUnselectAudio", &UIsdkPointerEventAudioPlayer::execSetUnselectAudio },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer;
 UClass* UIsdkPointerEventAudioPlayer::GetPrivateStaticClass()
 {
@@ -756,7 +877,7 @@ UClass* UIsdkPointerEventAudioPlayer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkPointerEventAudioPlayer"),
 			Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer.InnerSingleton,
 			StaticRegisterNativesUIsdkPointerEventAudioPlayer,
@@ -836,6 +957,8 @@ struct Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics
 		{ "ModuleRelativePath", "Public/Audio/IsdkPointerEventAudioPlayer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkPointerEventAudioPlayer constinit property declarations *************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_Pointable;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HoverAudio;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_UnhoverAudio;
@@ -844,30 +967,50 @@ struct Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MoveAudio;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_CancelAudio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkPointerEventAudioPlayer constinit property declarations ***************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetCancelAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetCancelAudio },
+		{ .NameUTF8 = UTF8TEXT("GetHoverAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetHoverAudio },
+		{ .NameUTF8 = UTF8TEXT("GetMoveAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetMoveAudio },
+		{ .NameUTF8 = UTF8TEXT("GetPointable"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetPointable },
+		{ .NameUTF8 = UTF8TEXT("GetSelectAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetSelectAudio },
+		{ .NameUTF8 = UTF8TEXT("GetUnhoverAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetUnhoverAudio },
+		{ .NameUTF8 = UTF8TEXT("GetUnselectAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execGetUnselectAudio },
+		{ .NameUTF8 = UTF8TEXT("HandlePointerEvent"), .Pointer = &UIsdkPointerEventAudioPlayer::execHandlePointerEvent },
+		{ .NameUTF8 = UTF8TEXT("SetCancelAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetCancelAudio },
+		{ .NameUTF8 = UTF8TEXT("SetHoverAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetHoverAudio },
+		{ .NameUTF8 = UTF8TEXT("SetMoveAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetMoveAudio },
+		{ .NameUTF8 = UTF8TEXT("SetPointable"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetPointable },
+		{ .NameUTF8 = UTF8TEXT("SetSelectAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetSelectAudio },
+		{ .NameUTF8 = UTF8TEXT("SetUnhoverAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetUnhoverAudio },
+		{ .NameUTF8 = UTF8TEXT("SetUnselectAudio"), .Pointer = &UIsdkPointerEventAudioPlayer::execSetUnselectAudio },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio, "GetCancelAudio" }, // 4035356366
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio, "GetHoverAudio" }, // 835761076
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio, "GetMoveAudio" }, // 462518559
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable, "GetPointable" }, // 4131746768
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio, "GetSelectAudio" }, // 1462886904
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio, "GetUnhoverAudio" }, // 1453149917
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio, "GetUnselectAudio" }, // 2221848869
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent, "HandlePointerEvent" }, // 2068230190
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio, "SetCancelAudio" }, // 174924751
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio, "SetHoverAudio" }, // 2814929829
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio, "SetMoveAudio" }, // 3707836444
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable, "SetPointable" }, // 3971562636
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio, "SetSelectAudio" }, // 2794091713
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio, "SetUnhoverAudio" }, // 627566123
-		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio, "SetUnselectAudio" }, // 2602348765
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetCancelAudio, "GetCancelAudio" }, // 2583292823
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetHoverAudio, "GetHoverAudio" }, // 3289650301
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetMoveAudio, "GetMoveAudio" }, // 4207469821
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetPointable, "GetPointable" }, // 3775713599
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetSelectAudio, "GetSelectAudio" }, // 2744253524
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnhoverAudio, "GetUnhoverAudio" }, // 420991890
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_GetUnselectAudio, "GetUnselectAudio" }, // 3816641974
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_HandlePointerEvent, "HandlePointerEvent" }, // 2655220563
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetCancelAudio, "SetCancelAudio" }, // 840092706
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetHoverAudio, "SetHoverAudio" }, // 1019413277
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetMoveAudio, "SetMoveAudio" }, // 1851768929
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetPointable, "SetPointable" }, // 2335741100
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetSelectAudio, "SetSelectAudio" }, // 192927288
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnhoverAudio, "SetUnhoverAudio" }, // 1820267859
+		{ &Z_Construct_UFunction_UIsdkPointerEventAudioPlayer_SetUnselectAudio, "SetUnselectAudio" }, // 1544347116
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkPointerEventAudioPlayer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics
+
+// ********** Begin Class UIsdkPointerEventAudioPlayer Property Definitions ************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::NewProp_Pointable = { "Pointable", nullptr, (EPropertyFlags)0x0044000000000004, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointerEventAudioPlayer, Pointable), Z_Construct_UClass_UIsdkIPointable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Pointable_MetaData), NewProp_Pointable_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::NewProp_HoverAudio = { "HoverAudio", nullptr, (EPropertyFlags)0x004000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointerEventAudioPlayer, HoverAudio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HoverAudio_MetaData), NewProp_HoverAudio_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::NewProp_UnhoverAudio = { "UnhoverAudio", nullptr, (EPropertyFlags)0x004000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPointerEventAudioPlayer, UnhoverAudio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnhoverAudio_MetaData), NewProp_UnhoverAudio_MetaData) };
@@ -885,6 +1028,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkPoin
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::NewProp_CancelAudio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkPointerEventAudioPlayer Property Definitions **************************
 UObject* (*const Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -905,6 +1049,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkPointerEventAudioP
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::Class_MetaDataParams)
 };
+void UIsdkPointerEventAudioPlayer::StaticRegisterNativesUIsdkPointerEventAudioPlayer()
+{
+	UClass* Class = UIsdkPointerEventAudioPlayer::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkPointerEventAudioPlayer_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkPointerEventAudioPlayer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer.OuterSingleton)
@@ -913,21 +1062,23 @@ UClass* Z_Construct_UClass_UIsdkPointerEventAudioPlayer()
 	}
 	return Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkPointerEventAudioPlayer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkPointerEventAudioPlayer);
 UIsdkPointerEventAudioPlayer::~UIsdkPointerEventAudioPlayer() {}
 // ********** End Class UIsdkPointerEventAudioPlayer ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkPointerEventAudioPlayer, UIsdkPointerEventAudioPlayer::StaticClass, TEXT("UIsdkPointerEventAudioPlayer"), &Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPointerEventAudioPlayer), 1324732239U) },
+		{ Z_Construct_UClass_UIsdkPointerEventAudioPlayer, UIsdkPointerEventAudioPlayer::StaticClass, TEXT("UIsdkPointerEventAudioPlayer"), &Z_Registration_Info_UClass_UIsdkPointerEventAudioPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPointerEventAudioPlayer), 3901571453U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_105383526(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_4285646345{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkPointerEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

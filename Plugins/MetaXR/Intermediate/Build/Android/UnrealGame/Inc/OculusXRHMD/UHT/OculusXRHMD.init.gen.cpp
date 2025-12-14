@@ -7,7 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeOculusXRHMD_init() {}
-	OCULUSXRHMD_API UFunction* Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature();
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");	OCULUSXRHMD_API UFunction* Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature();
 	OCULUSXRHMD_API UFunction* Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature();
 	OCULUSXRHMD_API UFunction* Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_OculusXRHMD;
@@ -15,23 +15,23 @@ void EmptyLinkFunctionForGeneratedCodeOculusXRHMD_init() {}
 	{
 		if (!Z_Registration_Info_UPackage__Script_OculusXRHMD.OuterSingleton)
 		{
-			static UObject* (*const SingletonFuncArray[])() = {
-				(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature,
-				(UObject* (*)())Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature,
-			};
-			static const UECodeGen_Private::FPackageParams PackageParams = {
-				"/Script/OculusXRHMD",
-				SingletonFuncArray,
-				UE_ARRAY_COUNT(SingletonFuncArray),
-				PKG_CompiledIn | 0x00000000,
-				0xD5EC2B9D,
-				0x6746F580,
-				METADATA_PARAMS(0, nullptr)
-			};
-			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRHMD.OuterSingleton, PackageParams);
-		}
-		return Z_Registration_Info_UPackage__Script_OculusXRHMD.OuterSingleton;
+		static UObject* (*const SingletonFuncArray[])() = {
+			(UObject* (*)())Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusDisplayRefreshRateChangedEventDelegate__DelegateSignature,
+			(UObject* (*)())Z_Construct_UDelegateFunction_UOculusXREventComponent_OculusEyeTrackingStateChangedEventDelegate__DelegateSignature,
+		};
+		static const UECodeGen_Private::FPackageParams PackageParams = {
+			"/Script/OculusXRHMD",
+			SingletonFuncArray,
+			UE_ARRAY_COUNT(SingletonFuncArray),
+			PKG_CompiledIn | 0x00000000,
+			0xDA8C8E0F,
+			0x6746F580,
+			METADATA_PARAMS(0, nullptr)
+		};
+		UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_OculusXRHMD.OuterSingleton, PackageParams);
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRHMD(Z_Construct_UPackage__Script_OculusXRHMD, TEXT("/Script/OculusXRHMD"), Z_Registration_Info_UPackage__Script_OculusXRHMD, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xD5EC2B9D, 0x6746F580));
+	return Z_Registration_Info_UPackage__Script_OculusXRHMD.OuterSingleton;
+}
+static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_OculusXRHMD(Z_Construct_UPackage__Script_OculusXRHMD, TEXT("/Script/OculusXRHMD"), Z_Registration_Info_UPackage__Script_OculusXRHMD, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xDA8C8E0F, 0x6746F580));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

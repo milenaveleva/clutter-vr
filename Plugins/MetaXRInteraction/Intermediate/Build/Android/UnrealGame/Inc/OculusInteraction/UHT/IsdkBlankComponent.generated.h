@@ -15,31 +15,31 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class IIsdkISurfacePatch;
 
 // ********** Begin Class UIsdkBlankComponent ******************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetSurfacePatch); \
 	DECLARE_FUNCTION(execSetVectorOfSomething); \
 	DECLARE_FUNCTION(execGetSurfacePatch); \
 	DECLARE_FUNCTION(execGetVectorOfSomething);
 
 
+struct Z_Construct_UClass_UIsdkBlankComponent_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkBlankComponent_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkBlankComponent(); \
-	friend struct Z_Construct_UClass_UIsdkBlankComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkBlankComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkBlankComponent_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkBlankComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkBlankComponent, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkBlankComponent_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkBlankComponent)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkBlankComponent(UIsdkBlankComponent&&) = delete; \
 	UIsdkBlankComponent(const UIsdkBlankComponent&) = delete; \
@@ -49,13 +49,13 @@ public: \
 	NO_API virtual ~UIsdkBlankComponent();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_47_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_47_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h_53_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,6 +65,6 @@ class UIsdkBlankComponent;
 // ********** End Class UIsdkBlankComponent ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

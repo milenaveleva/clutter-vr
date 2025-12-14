@@ -8,7 +8,7 @@
 #include "IsdkRoundedButtonComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkRoundedButtonComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -44,16 +44,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_S
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetBackplaneFillColor constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetBackplaneFillColor constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetBackplaneFillColor Property Definitions ****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetBackplaneFillColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetBackplaneFillColor", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::IsdkRoundedButtonComponent_eventGetBackplaneFillColor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetBackplaneFillColor Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetBackplaneFillColor", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::IsdkRoundedButtonComponent_eventGetBackplaneFillColor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor_Statics::IsdkRoundedButtonComponent_eventGetBackplaneFillColor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor()
 {
@@ -90,16 +99,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetButtonMesh constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetButtonMesh constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetButtonMesh Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetButtonMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetButtonMesh", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::IsdkRoundedButtonComponent_eventGetButtonMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetButtonMesh Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetButtonMesh", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::IsdkRoundedButtonComponent_eventGetButtonMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh_Statics::IsdkRoundedButtonComponent_eventGetButtonMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh()
 {
@@ -133,16 +151,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCornerRadius constinit property declarations ***********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCornerRadius constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCornerRadius Property Definitions **********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetCornerRadius_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetCornerRadius", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::IsdkRoundedButtonComponent_eventGetCornerRadius_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCornerRadius Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetCornerRadius", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::IsdkRoundedButtonComponent_eventGetCornerRadius_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius_Statics::IsdkRoundedButtonComponent_eventGetCornerRadius_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius()
 {
@@ -176,11 +203,16 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Stat
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCreateBackplane constinit property declarations ********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCreateBackplane constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCreateBackplane Property Definitions *******************************
 void Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkRoundedButtonComponent_eventGetCreateBackplane_Parms*)Obj)->ReturnValue = 1;
@@ -190,7 +222,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetCreateBackplane", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::IsdkRoundedButtonComponent_eventGetCreateBackplane_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCreateBackplane Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetCreateBackplane", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::IsdkRoundedButtonComponent_eventGetCreateBackplane_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane_Statics::IsdkRoundedButtonComponent_eventGetCreateBackplane_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane()
 {
@@ -227,16 +263,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVis
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetInteractableColorVisual constinit property declarations ************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetInteractableColorVisual constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetInteractableColorVisual Property Definitions ***********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetInteractableColorVisual_Parms, ReturnValue), Z_Construct_UClass_UIsdkInteractableColorVisual_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetInteractableColorVisual", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::IsdkRoundedButtonComponent_eventGetInteractableColorVisual_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetInteractableColorVisual Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetInteractableColorVisual", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::IsdkRoundedButtonComponent_eventGetInteractableColorVisual_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual_Statics::IsdkRoundedButtonComponent_eventGetInteractableColorVisual_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual()
 {
@@ -273,16 +318,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPre
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetInteractionButtonPress constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetInteractionButtonPress constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetInteractionButtonPress Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetInteractionButtonPress_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetInteractionButtonPress", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::IsdkRoundedButtonComponent_eventGetInteractionButtonPress_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetInteractionButtonPress Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetInteractionButtonPress", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::IsdkRoundedButtonComponent_eventGetInteractionButtonPress_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress_Statics::IsdkRoundedButtonComponent_eventGetInteractionButtonPress_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress()
 {
@@ -319,16 +373,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRel
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetInteractionButtonRelease constinit property declarations ***********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetInteractionButtonRelease constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetInteractionButtonRelease Property Definitions **********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetInteractionButtonRelease_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetInteractionButtonRelease", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::IsdkRoundedButtonComponent_eventGetInteractionButtonRelease_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetInteractionButtonRelease Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetInteractionButtonRelease", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::IsdkRoundedButtonComponent_eventGetInteractionButtonRelease_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease_Statics::IsdkRoundedButtonComponent_eventGetInteractionButtonRelease_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease()
 {
@@ -362,16 +425,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetLabelColor constinit property declarations *************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetLabelColor constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetLabelColor Property Definitions ************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetLabelColor_Parms, ReturnValue), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetLabelColor", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::IsdkRoundedButtonComponent_eventGetLabelColor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetLabelColor Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetLabelColor", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::IsdkRoundedButtonComponent_eventGetLabelColor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor_Statics::IsdkRoundedButtonComponent_eventGetLabelColor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor()
 {
@@ -405,16 +477,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetLabelSize constinit property declarations **************************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetLabelSize constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetLabelSize Property Definitions *************************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetLabelSize_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetLabelSize", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::IsdkRoundedButtonComponent_eventGetLabelSize_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetLabelSize Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetLabelSize", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::IsdkRoundedButtonComponent_eventGetLabelSize_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize_Statics::IsdkRoundedButtonComponent_eventGetLabelSize_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize()
 {
@@ -448,16 +529,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetLabelText constinit property declarations **************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetLabelText constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetLabelText Property Definitions *************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetLabelText_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetLabelText", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::IsdkRoundedButtonComponent_eventGetLabelText_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetLabelText Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetLabelText", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::IsdkRoundedButtonComponent_eventGetLabelText_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText_Statics::IsdkRoundedButtonComponent_eventGetLabelText_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText()
 {
@@ -494,16 +584,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Sta
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPokeButtonVisual constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPokeButtonVisual constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPokeButtonVisual Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetPokeButtonVisual_Parms, ReturnValue), Z_Construct_UClass_UIsdkPokeButtonVisual_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetPokeButtonVisual", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::IsdkRoundedButtonComponent_eventGetPokeButtonVisual_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPokeButtonVisual Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetPokeButtonVisual", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::IsdkRoundedButtonComponent_eventGetPokeButtonVisual_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual_Statics::IsdkRoundedButtonComponent_eventGetPokeButtonVisual_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual()
 {
@@ -540,16 +639,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Sta
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPokeInteractable constinit property declarations *******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPokeInteractable constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPokeInteractable Property Definitions ******************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventGetPokeInteractable_Parms, ReturnValue), Z_Construct_UClass_UIsdkPokeInteractable_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetPokeInteractable", Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::IsdkRoundedButtonComponent_eventGetPokeInteractable_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPokeInteractable Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "GetPokeInteractable", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::IsdkRoundedButtonComponent_eventGetPokeInteractable_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable_Statics::IsdkRoundedButtonComponent_eventGetPokeInteractable_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable()
 {
@@ -583,16 +691,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_S
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetBackplaneFillColor constinit property declarations *****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Color;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetBackplaneFillColor constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetBackplaneFillColor Property Definitions ****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::NewProp_Color = { "Color", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventSetBackplaneFillColor_Parms, Color), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::NewProp_Color,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetBackplaneFillColor", Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::IsdkRoundedButtonComponent_eventSetBackplaneFillColor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetBackplaneFillColor Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetBackplaneFillColor", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::IsdkRoundedButtonComponent_eventSetBackplaneFillColor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor_Statics::IsdkRoundedButtonComponent_eventSetBackplaneFillColor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor()
 {
@@ -627,16 +744,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCornerRadius constinit property declarations ***********************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Radius;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCornerRadius constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCornerRadius Property Definitions **********************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::NewProp_Radius = { "Radius", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventSetCornerRadius_Parms, Radius), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::NewProp_Radius,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetCornerRadius", Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::IsdkRoundedButtonComponent_eventSetCornerRadius_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCornerRadius Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetCornerRadius", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::IsdkRoundedButtonComponent_eventSetCornerRadius_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius_Statics::IsdkRoundedButtonComponent_eventSetCornerRadius_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius()
 {
@@ -671,11 +797,16 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Stat
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCreateBackplane constinit property declarations ********************
 	static void NewProp_Value_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCreateBackplane constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCreateBackplane Property Definitions *******************************
 void Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::NewProp_Value_SetBit(void* Obj)
 {
 	((IsdkRoundedButtonComponent_eventSetCreateBackplane_Parms*)Obj)->Value = 1;
@@ -685,7 +816,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetCreateBackplane", Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::IsdkRoundedButtonComponent_eventSetCreateBackplane_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCreateBackplane Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetCreateBackplane", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::IsdkRoundedButtonComponent_eventSetCreateBackplane_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane_Statics::IsdkRoundedButtonComponent_eventSetCreateBackplane_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane()
 {
@@ -720,16 +855,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetLabelColor constinit property declarations *************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetLabelColor constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetLabelColor Property Definitions ************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventSetLabelColor_Parms, Value), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetLabelColor", Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::IsdkRoundedButtonComponent_eventSetLabelColor_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetLabelColor Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetLabelColor", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::IsdkRoundedButtonComponent_eventSetLabelColor_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor_Statics::IsdkRoundedButtonComponent_eventSetLabelColor_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor()
 {
@@ -764,16 +908,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetLabelSize constinit property declarations **************************
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetLabelSize constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetLabelSize Property Definitions *************************************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventSetLabelSize_Parms, Value), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetLabelSize", Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::IsdkRoundedButtonComponent_eventSetLabelSize_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetLabelSize Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetLabelSize", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::IsdkRoundedButtonComponent_eventSetLabelSize_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize_Statics::IsdkRoundedButtonComponent_eventSetLabelSize_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize()
 {
@@ -808,16 +961,25 @@ struct Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetLabelText constinit property declarations **************************
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetLabelText constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetLabelText Property Definitions *************************************
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRoundedButtonComponent_eventSetLabelText_Parms, Value), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetLabelText", Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::IsdkRoundedButtonComponent_eventSetLabelText_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetLabelText Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRoundedButtonComponent, nullptr, "SetLabelText", 	Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::IsdkRoundedButtonComponent_eventSetLabelText_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText_Statics::IsdkRoundedButtonComponent_eventSetLabelText_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText()
 {
@@ -839,31 +1001,6 @@ DEFINE_FUNCTION(UIsdkRoundedButtonComponent::execSetLabelText)
 // ********** End Class UIsdkRoundedButtonComponent Function SetLabelText **************************
 
 // ********** Begin Class UIsdkRoundedButtonComponent **********************************************
-void UIsdkRoundedButtonComponent::StaticRegisterNativesUIsdkRoundedButtonComponent()
-{
-	UClass* Class = UIsdkRoundedButtonComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetBackplaneFillColor", &UIsdkRoundedButtonComponent::execGetBackplaneFillColor },
-		{ "GetButtonMesh", &UIsdkRoundedButtonComponent::execGetButtonMesh },
-		{ "GetCornerRadius", &UIsdkRoundedButtonComponent::execGetCornerRadius },
-		{ "GetCreateBackplane", &UIsdkRoundedButtonComponent::execGetCreateBackplane },
-		{ "GetInteractableColorVisual", &UIsdkRoundedButtonComponent::execGetInteractableColorVisual },
-		{ "GetInteractionButtonPress", &UIsdkRoundedButtonComponent::execGetInteractionButtonPress },
-		{ "GetInteractionButtonRelease", &UIsdkRoundedButtonComponent::execGetInteractionButtonRelease },
-		{ "GetLabelColor", &UIsdkRoundedButtonComponent::execGetLabelColor },
-		{ "GetLabelSize", &UIsdkRoundedButtonComponent::execGetLabelSize },
-		{ "GetLabelText", &UIsdkRoundedButtonComponent::execGetLabelText },
-		{ "GetPokeButtonVisual", &UIsdkRoundedButtonComponent::execGetPokeButtonVisual },
-		{ "GetPokeInteractable", &UIsdkRoundedButtonComponent::execGetPokeInteractable },
-		{ "SetBackplaneFillColor", &UIsdkRoundedButtonComponent::execSetBackplaneFillColor },
-		{ "SetCornerRadius", &UIsdkRoundedButtonComponent::execSetCornerRadius },
-		{ "SetCreateBackplane", &UIsdkRoundedButtonComponent::execSetCreateBackplane },
-		{ "SetLabelColor", &UIsdkRoundedButtonComponent::execSetLabelColor },
-		{ "SetLabelSize", &UIsdkRoundedButtonComponent::execSetLabelSize },
-		{ "SetLabelText", &UIsdkRoundedButtonComponent::execSetLabelText },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkRoundedButtonComponent;
 UClass* UIsdkRoundedButtonComponent::GetPrivateStaticClass()
 {
@@ -871,7 +1008,7 @@ UClass* UIsdkRoundedButtonComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkRoundedButtonComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkRoundedButtonComponent"),
 			Z_Registration_Info_UClass_UIsdkRoundedButtonComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkRoundedButtonComponent,
@@ -960,13 +1097,17 @@ struct Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics
 		{ "Category", "InteractionSDK|Poke Visual" },
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Does nothing when changed after begin play." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VisualOffset_MetaData[] = {
 		{ "Category", "InteractionSDK|Poke Visual" },
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Does nothing when changed after begin play." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bTwoSidedMaterial_MetaData[] = {
 		{ "Category", "InteractionSDK|Poke Visual" },
@@ -1040,6 +1181,8 @@ struct Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButtonComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkRoundedButtonComponent constinit property declarations **************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_NormalColor;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HoverColor;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PressColor;
@@ -1068,33 +1211,56 @@ struct Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ClippedPlaneSurface;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TransitionCurve;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkRoundedButtonComponent constinit property declarations ****************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetBackplaneFillColor"), .Pointer = &UIsdkRoundedButtonComponent::execGetBackplaneFillColor },
+		{ .NameUTF8 = UTF8TEXT("GetButtonMesh"), .Pointer = &UIsdkRoundedButtonComponent::execGetButtonMesh },
+		{ .NameUTF8 = UTF8TEXT("GetCornerRadius"), .Pointer = &UIsdkRoundedButtonComponent::execGetCornerRadius },
+		{ .NameUTF8 = UTF8TEXT("GetCreateBackplane"), .Pointer = &UIsdkRoundedButtonComponent::execGetCreateBackplane },
+		{ .NameUTF8 = UTF8TEXT("GetInteractableColorVisual"), .Pointer = &UIsdkRoundedButtonComponent::execGetInteractableColorVisual },
+		{ .NameUTF8 = UTF8TEXT("GetInteractionButtonPress"), .Pointer = &UIsdkRoundedButtonComponent::execGetInteractionButtonPress },
+		{ .NameUTF8 = UTF8TEXT("GetInteractionButtonRelease"), .Pointer = &UIsdkRoundedButtonComponent::execGetInteractionButtonRelease },
+		{ .NameUTF8 = UTF8TEXT("GetLabelColor"), .Pointer = &UIsdkRoundedButtonComponent::execGetLabelColor },
+		{ .NameUTF8 = UTF8TEXT("GetLabelSize"), .Pointer = &UIsdkRoundedButtonComponent::execGetLabelSize },
+		{ .NameUTF8 = UTF8TEXT("GetLabelText"), .Pointer = &UIsdkRoundedButtonComponent::execGetLabelText },
+		{ .NameUTF8 = UTF8TEXT("GetPokeButtonVisual"), .Pointer = &UIsdkRoundedButtonComponent::execGetPokeButtonVisual },
+		{ .NameUTF8 = UTF8TEXT("GetPokeInteractable"), .Pointer = &UIsdkRoundedButtonComponent::execGetPokeInteractable },
+		{ .NameUTF8 = UTF8TEXT("SetBackplaneFillColor"), .Pointer = &UIsdkRoundedButtonComponent::execSetBackplaneFillColor },
+		{ .NameUTF8 = UTF8TEXT("SetCornerRadius"), .Pointer = &UIsdkRoundedButtonComponent::execSetCornerRadius },
+		{ .NameUTF8 = UTF8TEXT("SetCreateBackplane"), .Pointer = &UIsdkRoundedButtonComponent::execSetCreateBackplane },
+		{ .NameUTF8 = UTF8TEXT("SetLabelColor"), .Pointer = &UIsdkRoundedButtonComponent::execSetLabelColor },
+		{ .NameUTF8 = UTF8TEXT("SetLabelSize"), .Pointer = &UIsdkRoundedButtonComponent::execSetLabelSize },
+		{ .NameUTF8 = UTF8TEXT("SetLabelText"), .Pointer = &UIsdkRoundedButtonComponent::execSetLabelText },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor, "GetBackplaneFillColor" }, // 3446487548
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh, "GetButtonMesh" }, // 1346144553
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius, "GetCornerRadius" }, // 1467447309
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane, "GetCreateBackplane" }, // 2991160428
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual, "GetInteractableColorVisual" }, // 1484006110
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress, "GetInteractionButtonPress" }, // 3780631553
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease, "GetInteractionButtonRelease" }, // 900940033
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor, "GetLabelColor" }, // 3206484719
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize, "GetLabelSize" }, // 3967737518
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText, "GetLabelText" }, // 2597883249
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual, "GetPokeButtonVisual" }, // 2272427370
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable, "GetPokeInteractable" }, // 1006091592
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor, "SetBackplaneFillColor" }, // 351988331
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius, "SetCornerRadius" }, // 1441537108
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane, "SetCreateBackplane" }, // 4047803691
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor, "SetLabelColor" }, // 261763000
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize, "SetLabelSize" }, // 3348734747
-		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText, "SetLabelText" }, // 304260556
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetBackplaneFillColor, "GetBackplaneFillColor" }, // 1422008426
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetButtonMesh, "GetButtonMesh" }, // 226418073
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCornerRadius, "GetCornerRadius" }, // 3299226671
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetCreateBackplane, "GetCreateBackplane" }, // 3884469181
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractableColorVisual, "GetInteractableColorVisual" }, // 889718894
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonPress, "GetInteractionButtonPress" }, // 1695959582
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetInteractionButtonRelease, "GetInteractionButtonRelease" }, // 4194172796
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelColor, "GetLabelColor" }, // 2330866278
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelSize, "GetLabelSize" }, // 2254744526
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetLabelText, "GetLabelText" }, // 25387219
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeButtonVisual, "GetPokeButtonVisual" }, // 430270775
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_GetPokeInteractable, "GetPokeInteractable" }, // 2377537584
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetBackplaneFillColor, "SetBackplaneFillColor" }, // 739106733
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCornerRadius, "SetCornerRadius" }, // 1818022169
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetCreateBackplane, "SetCreateBackplane" }, // 587270590
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelColor, "SetLabelColor" }, // 1010803240
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelSize, "SetLabelSize" }, // 3050048799
+		{ &Z_Construct_UFunction_UIsdkRoundedButtonComponent_SetLabelText, "SetLabelText" }, // 220515024
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkRoundedButtonComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics
+
+// ********** Begin Class UIsdkRoundedButtonComponent Property Definitions *************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::NewProp_NormalColor = { "NormalColor", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkRoundedButtonComponent, NormalColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_NormalColor_MetaData), NewProp_NormalColor_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::NewProp_HoverColor = { "HoverColor", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkRoundedButtonComponent, HoverColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HoverColor_MetaData), NewProp_HoverColor_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::NewProp_PressColor = { "PressColor", nullptr, (EPropertyFlags)0x0020080000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkRoundedButtonComponent, PressColor), Z_Construct_UScriptStruct_FLinearColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PressColor_MetaData), NewProp_PressColor_MetaData) };
@@ -1156,6 +1322,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkRoun
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::NewProp_TransitionCurve,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkRoundedButtonComponent Property Definitions ***************************
 UObject* (*const Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -1176,6 +1343,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkRoundedButtonCompo
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkRoundedButtonComponent::StaticRegisterNativesUIsdkRoundedButtonComponent()
+{
+	UClass* Class = UIsdkRoundedButtonComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkRoundedButtonComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkRoundedButtonComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkRoundedButtonComponent.OuterSingleton)
@@ -1184,21 +1356,23 @@ UClass* Z_Construct_UClass_UIsdkRoundedButtonComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkRoundedButtonComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkRoundedButtonComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkRoundedButtonComponent);
 UIsdkRoundedButtonComponent::~UIsdkRoundedButtonComponent() {}
 // ********** End Class UIsdkRoundedButtonComponent ************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkRoundedButtonComponent, UIsdkRoundedButtonComponent::StaticClass, TEXT("UIsdkRoundedButtonComponent"), &Z_Registration_Info_UClass_UIsdkRoundedButtonComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRoundedButtonComponent), 2407661123U) },
+		{ Z_Construct_UClass_UIsdkRoundedButtonComponent, UIsdkRoundedButtonComponent::StaticClass, TEXT("UIsdkRoundedButtonComponent"), &Z_Registration_Info_UClass_UIsdkRoundedButtonComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRoundedButtonComponent), 1821515619U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_3688104782(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_1799178819{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButtonComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

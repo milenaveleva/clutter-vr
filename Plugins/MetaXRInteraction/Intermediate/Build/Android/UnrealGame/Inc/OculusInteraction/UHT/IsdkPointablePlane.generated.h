@@ -17,27 +17,28 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UIsdkPointablePlane ******************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execGetNormal); \
 	DECLARE_FUNCTION(execSetSize); \
 	DECLARE_FUNCTION(execGetSize);
 
 
+struct Z_Construct_UClass_UIsdkPointablePlane_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkPointablePlane_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkPointablePlane(); \
-	friend struct Z_Construct_UClass_UIsdkPointablePlane_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkPointablePlane_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkPointablePlane_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkPointablePlane_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkPointablePlane, USceneComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkPointablePlane_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkPointablePlane) \
 	virtual UObject* _getUObject() const override { return const_cast<UIsdkPointablePlane*>(this); }
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkPointablePlane(UIsdkPointablePlane&&) = delete; \
 	UIsdkPointablePlane(const UIsdkPointablePlane&) = delete; \
@@ -47,13 +48,13 @@ public: \
 	NO_API virtual ~UIsdkPointablePlane();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_58_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_58_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h_64_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -63,6 +64,6 @@ class UIsdkPointablePlane;
 // ********** End Class UIsdkPointablePlane ********************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_Surfaces_IsdkPointablePlane_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

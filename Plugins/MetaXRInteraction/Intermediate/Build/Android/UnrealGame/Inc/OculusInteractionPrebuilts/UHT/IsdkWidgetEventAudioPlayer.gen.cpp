@@ -9,7 +9,7 @@
 #include "Widget/IsdkWidget.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkWidgetEventAudioPlayer() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -39,16 +39,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_S
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSelectedEmptyAudio constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSelectedEmptyAudio constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSelectedEmptyAudio Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventGetSelectedEmptyAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetSelectedEmptyAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetSelectedEmptyAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSelectedEmptyAudio Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetSelectedEmptyAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetSelectedEmptyAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetSelectedEmptyAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio()
 {
@@ -86,16 +95,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSelectedHoveredAudio constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSelectedHoveredAudio constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSelectedHoveredAudio Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventGetSelectedHoveredAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetSelectedHoveredAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetSelectedHoveredAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSelectedHoveredAudio Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetSelectedHoveredAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetSelectedHoveredAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetSelectedHoveredAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio()
 {
@@ -133,16 +151,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetUnselectedEmptyAudio constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetUnselectedEmptyAudio constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetUnselectedEmptyAudio Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventGetUnselectedEmptyAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetUnselectedEmptyAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetUnselectedEmptyAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetUnselectedEmptyAudio Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetUnselectedEmptyAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetUnselectedEmptyAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetUnselectedEmptyAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio()
 {
@@ -180,16 +207,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAud
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetUnselectedHoveredAudio constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetUnselectedHoveredAudio constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetUnselectedHoveredAudio Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventGetUnselectedHoveredAudio_Parms, ReturnValue), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetUnselectedHoveredAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetUnselectedHoveredAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetUnselectedHoveredAudio Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "GetUnselectedHoveredAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetUnselectedHoveredAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventGetUnselectedHoveredAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio()
 {
@@ -222,16 +258,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChange
 		{ "ModuleRelativePath", "Public/Audio/IsdkWidgetEventAudioPlayer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleWidgetStateChanged constinit property declarations **************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WidgetEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleWidgetStateChanged constinit property declarations ****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::NewProp_WidgetEvent = { "WidgetEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventHandleWidgetStateChanged_Parms, WidgetEvent), Z_Construct_UScriptStruct_FIsdkWidgetEvent, METADATA_PARAMS(0, nullptr) }; // 2690397075
+
+// ********** Begin Function HandleWidgetStateChanged Property Definitions *************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::NewProp_WidgetEvent = { "WidgetEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventHandleWidgetStateChanged_Parms, WidgetEvent), Z_Construct_UScriptStruct_FIsdkWidgetEvent, METADATA_PARAMS(0, nullptr) }; // 1624822955
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::NewProp_WidgetEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "HandleWidgetStateChanged", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::IsdkWidgetEventAudioPlayer_eventHandleWidgetStateChanged_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleWidgetStateChanged Property Definitions ***************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "HandleWidgetStateChanged", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::IsdkWidgetEventAudioPlayer_eventHandleWidgetStateChanged_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged_Statics::IsdkWidgetEventAudioPlayer_eventHandleWidgetStateChanged_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged()
 {
@@ -269,16 +314,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_S
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetSelectedEmptyAudio constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetSelectedEmptyAudio constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetSelectedEmptyAudio Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventSetSelectedEmptyAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetSelectedEmptyAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetSelectedEmptyAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetSelectedEmptyAudio Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetSelectedEmptyAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetSelectedEmptyAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetSelectedEmptyAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio()
 {
@@ -316,16 +370,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetSelectedHoveredAudio constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetSelectedHoveredAudio constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetSelectedHoveredAudio Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventSetSelectedHoveredAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetSelectedHoveredAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetSelectedHoveredAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetSelectedHoveredAudio Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetSelectedHoveredAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetSelectedHoveredAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetSelectedHoveredAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio()
 {
@@ -363,16 +426,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetUnselectedEmptyAudio constinit property declarations ***************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetUnselectedEmptyAudio constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetUnselectedEmptyAudio Property Definitions **************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventSetUnselectedEmptyAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetUnselectedEmptyAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetUnselectedEmptyAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetUnselectedEmptyAudio Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetUnselectedEmptyAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetUnselectedEmptyAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetUnselectedEmptyAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio()
 {
@@ -410,16 +482,25 @@ struct Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAud
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetUnselectedHoveredAudio constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Audio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetUnselectedHoveredAudio constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetUnselectedHoveredAudio Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::NewProp_Audio = { "Audio", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkWidgetEventAudioPlayer_eventSetUnselectedHoveredAudio_Parms, Audio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Audio_MetaData), NewProp_Audio_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::NewProp_Audio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetUnselectedHoveredAudio", Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetUnselectedHoveredAudio_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetUnselectedHoveredAudio Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, nullptr, "SetUnselectedHoveredAudio", 	Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetUnselectedHoveredAudio_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio_Statics::IsdkWidgetEventAudioPlayer_eventSetUnselectedHoveredAudio_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio()
 {
@@ -441,22 +522,6 @@ DEFINE_FUNCTION(UIsdkWidgetEventAudioPlayer::execSetUnselectedHoveredAudio)
 // ********** End Class UIsdkWidgetEventAudioPlayer Function SetUnselectedHoveredAudio *************
 
 // ********** Begin Class UIsdkWidgetEventAudioPlayer **********************************************
-void UIsdkWidgetEventAudioPlayer::StaticRegisterNativesUIsdkWidgetEventAudioPlayer()
-{
-	UClass* Class = UIsdkWidgetEventAudioPlayer::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetSelectedEmptyAudio", &UIsdkWidgetEventAudioPlayer::execGetSelectedEmptyAudio },
-		{ "GetSelectedHoveredAudio", &UIsdkWidgetEventAudioPlayer::execGetSelectedHoveredAudio },
-		{ "GetUnselectedEmptyAudio", &UIsdkWidgetEventAudioPlayer::execGetUnselectedEmptyAudio },
-		{ "GetUnselectedHoveredAudio", &UIsdkWidgetEventAudioPlayer::execGetUnselectedHoveredAudio },
-		{ "HandleWidgetStateChanged", &UIsdkWidgetEventAudioPlayer::execHandleWidgetStateChanged },
-		{ "SetSelectedEmptyAudio", &UIsdkWidgetEventAudioPlayer::execSetSelectedEmptyAudio },
-		{ "SetSelectedHoveredAudio", &UIsdkWidgetEventAudioPlayer::execSetSelectedHoveredAudio },
-		{ "SetUnselectedEmptyAudio", &UIsdkWidgetEventAudioPlayer::execSetUnselectedEmptyAudio },
-		{ "SetUnselectedHoveredAudio", &UIsdkWidgetEventAudioPlayer::execSetUnselectedHoveredAudio },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer;
 UClass* UIsdkWidgetEventAudioPlayer::GetPrivateStaticClass()
 {
@@ -464,7 +529,7 @@ UClass* UIsdkWidgetEventAudioPlayer::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkWidgetEventAudioPlayer"),
 			Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer.InnerSingleton,
 			StaticRegisterNativesUIsdkWidgetEventAudioPlayer,
@@ -524,29 +589,45 @@ struct Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics
 		{ "ModuleRelativePath", "Public/Audio/IsdkWidgetEventAudioPlayer.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkWidgetEventAudioPlayer constinit property declarations **************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectedHoveredAudio;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SelectedEmptyAudio;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_UnselectedHoveredAudio;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_UnselectedEmptyAudio;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkWidgetEventAudioPlayer constinit property declarations ****************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetSelectedEmptyAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execGetSelectedEmptyAudio },
+		{ .NameUTF8 = UTF8TEXT("GetSelectedHoveredAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execGetSelectedHoveredAudio },
+		{ .NameUTF8 = UTF8TEXT("GetUnselectedEmptyAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execGetUnselectedEmptyAudio },
+		{ .NameUTF8 = UTF8TEXT("GetUnselectedHoveredAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execGetUnselectedHoveredAudio },
+		{ .NameUTF8 = UTF8TEXT("HandleWidgetStateChanged"), .Pointer = &UIsdkWidgetEventAudioPlayer::execHandleWidgetStateChanged },
+		{ .NameUTF8 = UTF8TEXT("SetSelectedEmptyAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execSetSelectedEmptyAudio },
+		{ .NameUTF8 = UTF8TEXT("SetSelectedHoveredAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execSetSelectedHoveredAudio },
+		{ .NameUTF8 = UTF8TEXT("SetUnselectedEmptyAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execSetUnselectedEmptyAudio },
+		{ .NameUTF8 = UTF8TEXT("SetUnselectedHoveredAudio"), .Pointer = &UIsdkWidgetEventAudioPlayer::execSetUnselectedHoveredAudio },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio, "GetSelectedEmptyAudio" }, // 1731595638
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio, "GetSelectedHoveredAudio" }, // 2997588017
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio, "GetUnselectedEmptyAudio" }, // 2404602916
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio, "GetUnselectedHoveredAudio" }, // 2376327402
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged, "HandleWidgetStateChanged" }, // 802744458
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio, "SetSelectedEmptyAudio" }, // 3047958276
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio, "SetSelectedHoveredAudio" }, // 4219565560
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio, "SetUnselectedEmptyAudio" }, // 1887061636
-		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio, "SetUnselectedHoveredAudio" }, // 3163603634
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedEmptyAudio, "GetSelectedEmptyAudio" }, // 1017330502
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetSelectedHoveredAudio, "GetSelectedHoveredAudio" }, // 3834170978
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedEmptyAudio, "GetUnselectedEmptyAudio" }, // 2375976210
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_GetUnselectedHoveredAudio, "GetUnselectedHoveredAudio" }, // 231575955
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_HandleWidgetStateChanged, "HandleWidgetStateChanged" }, // 4150586060
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedEmptyAudio, "SetSelectedEmptyAudio" }, // 2986048485
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetSelectedHoveredAudio, "SetSelectedHoveredAudio" }, // 1374822261
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedEmptyAudio, "SetUnselectedEmptyAudio" }, // 3525726675
+		{ &Z_Construct_UFunction_UIsdkWidgetEventAudioPlayer_SetUnselectedHoveredAudio, "SetUnselectedHoveredAudio" }, // 3264447087
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkWidgetEventAudioPlayer>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics
+
+// ********** Begin Class UIsdkWidgetEventAudioPlayer Property Definitions *************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::NewProp_SelectedHoveredAudio = { "SelectedHoveredAudio", nullptr, (EPropertyFlags)0x004000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWidgetEventAudioPlayer, SelectedHoveredAudio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectedHoveredAudio_MetaData), NewProp_SelectedHoveredAudio_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::NewProp_SelectedEmptyAudio = { "SelectedEmptyAudio", nullptr, (EPropertyFlags)0x004000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWidgetEventAudioPlayer, SelectedEmptyAudio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SelectedEmptyAudio_MetaData), NewProp_SelectedEmptyAudio_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::NewProp_UnselectedHoveredAudio = { "UnselectedHoveredAudio", nullptr, (EPropertyFlags)0x004000000008000c, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkWidgetEventAudioPlayer, UnselectedHoveredAudio), Z_Construct_UClass_UAudioComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UnselectedHoveredAudio_MetaData), NewProp_UnselectedHoveredAudio_MetaData) };
@@ -558,6 +639,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkWidg
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::NewProp_UnselectedEmptyAudio,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkWidgetEventAudioPlayer Property Definitions ***************************
 UObject* (*const Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -578,6 +660,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkWidgetEventAudioPl
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::Class_MetaDataParams)
 };
+void UIsdkWidgetEventAudioPlayer::StaticRegisterNativesUIsdkWidgetEventAudioPlayer()
+{
+	UClass* Class = UIsdkWidgetEventAudioPlayer::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkWidgetEventAudioPlayer_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkWidgetEventAudioPlayer()
 {
 	if (!Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer.OuterSingleton)
@@ -586,21 +673,23 @@ UClass* Z_Construct_UClass_UIsdkWidgetEventAudioPlayer()
 	}
 	return Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkWidgetEventAudioPlayer);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkWidgetEventAudioPlayer);
 UIsdkWidgetEventAudioPlayer::~UIsdkWidgetEventAudioPlayer() {}
 // ********** End Class UIsdkWidgetEventAudioPlayer ************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, UIsdkWidgetEventAudioPlayer::StaticClass, TEXT("UIsdkWidgetEventAudioPlayer"), &Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkWidgetEventAudioPlayer), 11095757U) },
+		{ Z_Construct_UClass_UIsdkWidgetEventAudioPlayer, UIsdkWidgetEventAudioPlayer::StaticClass, TEXT("UIsdkWidgetEventAudioPlayer"), &Z_Registration_Info_UClass_UIsdkWidgetEventAudioPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkWidgetEventAudioPlayer), 3278946686U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_4266134361(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_2379892845{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Audio_IsdkWidgetEventAudioPlayer_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -9,7 +9,7 @@
 #include "OculusXRMovementTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRMovementFunctionLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -38,11 +38,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnab
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsBodyTrackingEnabled constinit property declarations *****************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsBodyTrackingEnabled constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsBodyTrackingEnabled Property Definitions ****************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsBodyTrackingEnabled_Parms*)Obj)->ReturnValue = 1;
@@ -52,7 +57,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsBodyTrackingEnabled", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsBodyTrackingEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsBodyTrackingEnabled Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsBodyTrackingEnabled", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsBodyTrackingEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsBodyTrackingEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled()
 {
@@ -85,11 +94,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupp
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsBodyTrackingSupported constinit property declarations ***************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsBodyTrackingSupported constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsBodyTrackingSupported Property Definitions **************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsBodyTrackingSupported_Parms*)Obj)->ReturnValue = 1;
@@ -99,7 +113,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsBodyTrackingSupported", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsBodyTrackingSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsBodyTrackingSupported Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsBodyTrackingSupported", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsBodyTrackingSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsBodyTrackingSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported()
 {
@@ -132,11 +150,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabl
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsEyeTrackingEnabled constinit property declarations ******************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsEyeTrackingEnabled constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsEyeTrackingEnabled Property Definitions *****************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsEyeTrackingEnabled_Parms*)Obj)->ReturnValue = 1;
@@ -146,7 +169,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsEyeTrackingEnabled", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsEyeTrackingEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsEyeTrackingEnabled Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsEyeTrackingEnabled", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsEyeTrackingEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsEyeTrackingEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled()
 {
@@ -179,11 +206,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSuppo
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsEyeTrackingSupported constinit property declarations ****************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsEyeTrackingSupported constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsEyeTrackingSupported Property Definitions ***************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsEyeTrackingSupported_Parms*)Obj)->ReturnValue = 1;
@@ -193,7 +225,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsEyeTrackingSupported", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsEyeTrackingSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsEyeTrackingSupported Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsEyeTrackingSupported", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsEyeTrackingSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsEyeTrackingSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported()
 {
@@ -226,11 +262,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnab
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsFaceTrackingEnabled constinit property declarations *****************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsFaceTrackingEnabled constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsFaceTrackingEnabled Property Definitions ****************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsFaceTrackingEnabled_Parms*)Obj)->ReturnValue = 1;
@@ -240,7 +281,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingEnabled", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsFaceTrackingEnabled Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingEnabled", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled()
 {
@@ -273,11 +318,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupp
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsFaceTrackingSupported constinit property declarations ***************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsFaceTrackingSupported constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsFaceTrackingSupported Property Definitions **************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsFaceTrackingSupported_Parms*)Obj)->ReturnValue = 1;
@@ -287,7 +337,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingSupported", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsFaceTrackingSupported Property Definitions ****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingSupported", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported()
 {
@@ -320,11 +374,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVise
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsFaceTrackingVisemesEnabled constinit property declarations **********
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsFaceTrackingVisemesEnabled constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsFaceTrackingVisemesEnabled Property Definitions *********************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesEnabled_Parms*)Obj)->ReturnValue = 1;
@@ -334,7 +393,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingVisemesEnabled", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsFaceTrackingVisemesEnabled Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingVisemesEnabled", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled()
 {
@@ -367,11 +430,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVise
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsFaceTrackingVisemesSupported constinit property declarations ********
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsFaceTrackingVisemesSupported constinit property declarations **********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsFaceTrackingVisemesSupported Property Definitions *******************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesSupported_Parms*)Obj)->ReturnValue = 1;
@@ -381,7 +449,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingVisemesSupported", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesSupported_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsFaceTrackingVisemesSupported Property Definitions *********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "IsFaceTrackingVisemesSupported", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesSupported_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported_Statics::OculusXRMovementFunctionLibrary_eventIsFaceTrackingVisemesSupported_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported()
 {
@@ -415,15 +487,20 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackin
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function RequestBodyTrackingFidelity constinit property declarations ***********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_fidelity_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_fidelity;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function RequestBodyTrackingFidelity constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function RequestBodyTrackingFidelity Property Definitions **********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::NewProp_fidelity_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::NewProp_fidelity = { "fidelity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventRequestBodyTrackingFidelity_Parms, fidelity), Z_Construct_UEnum_OculusXRMovement_EOculusXRBodyTrackingFidelity, METADATA_PARAMS(0, nullptr) }; // 1250352874
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::NewProp_fidelity = { "fidelity", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventRequestBodyTrackingFidelity_Parms, fidelity), Z_Construct_UEnum_OculusXRMovement_EOculusXRBodyTrackingFidelity, METADATA_PARAMS(0, nullptr) }; // 3111573183
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventRequestBodyTrackingFidelity_Parms*)Obj)->ReturnValue = 1;
@@ -435,7 +512,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "RequestBodyTrackingFidelity", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::OculusXRMovementFunctionLibrary_eventRequestBodyTrackingFidelity_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::Function_MetaDataParams)},  };
+// ********** End Function RequestBodyTrackingFidelity Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "RequestBodyTrackingFidelity", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::OculusXRMovementFunctionLibrary_eventRequestBodyTrackingFidelity_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity_Statics::OculusXRMovementFunctionLibrary_eventRequestBodyTrackingFidelity_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity()
 {
@@ -469,11 +550,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingC
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function ResetBodyTrackingCalibration constinit property declarations **********
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function ResetBodyTrackingCalibration constinit property declarations ************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function ResetBodyTrackingCalibration Property Definitions *********************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventResetBodyTrackingCalibration_Parms*)Obj)->ReturnValue = 1;
@@ -483,7 +569,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "ResetBodyTrackingCalibration", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::OculusXRMovementFunctionLibrary_eventResetBodyTrackingCalibration_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::Function_MetaDataParams)},  };
+// ********** End Function ResetBodyTrackingCalibration Property Definitions ***********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "ResetBodyTrackingCalibration", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::OculusXRMovementFunctionLibrary_eventResetBodyTrackingCalibration_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration_Statics::OculusXRMovementFunctionLibrary_eventResetBodyTrackingCalibration_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration()
 {
@@ -517,13 +607,18 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVis
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetFaceTrackingVisemesEnabled constinit property declarations *********
 	static void NewProp_faceTrackingVisemesEnabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_faceTrackingVisemesEnabled;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetFaceTrackingVisemesEnabled constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetFaceTrackingVisemesEnabled Property Definitions ********************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::NewProp_faceTrackingVisemesEnabled_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventSetFaceTrackingVisemesEnabled_Parms*)Obj)->faceTrackingVisemesEnabled = 1;
@@ -539,7 +634,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "SetFaceTrackingVisemesEnabled", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::OculusXRMovementFunctionLibrary_eventSetFaceTrackingVisemesEnabled_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetFaceTrackingVisemesEnabled Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "SetFaceTrackingVisemesEnabled", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::OculusXRMovementFunctionLibrary_eventSetFaceTrackingVisemesEnabled_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled_Statics::OculusXRMovementFunctionLibrary_eventSetFaceTrackingVisemesEnabled_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled()
 {
@@ -575,11 +674,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StartBodyTracking constinit property declarations *********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StartBodyTracking constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StartBodyTracking Property Definitions ********************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStartBodyTracking_Parms*)Obj)->ReturnValue = 1;
@@ -589,7 +693,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartBodyTracking", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::OculusXRMovementFunctionLibrary_eventStartBodyTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function StartBodyTracking Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartBodyTracking", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::OculusXRMovementFunctionLibrary_eventStartBodyTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking_Statics::OculusXRMovementFunctionLibrary_eventStartBodyTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking()
 {
@@ -623,15 +731,20 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingB
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StartBodyTrackingByJointSet constinit property declarations ***********
 	static const UECodeGen_Private::FBytePropertyParams NewProp_jointSet_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_jointSet;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StartBodyTrackingByJointSet constinit property declarations *************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StartBodyTrackingByJointSet Property Definitions **********************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::NewProp_jointSet_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::NewProp_jointSet = { "jointSet", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventStartBodyTrackingByJointSet_Parms, jointSet), Z_Construct_UEnum_OculusXRMovement_EOculusXRBodyJointSet, METADATA_PARAMS(0, nullptr) }; // 620072139
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::NewProp_jointSet = { "jointSet", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventStartBodyTrackingByJointSet_Parms, jointSet), Z_Construct_UEnum_OculusXRMovement_EOculusXRBodyJointSet, METADATA_PARAMS(0, nullptr) }; // 2782873944
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStartBodyTrackingByJointSet_Parms*)Obj)->ReturnValue = 1;
@@ -643,7 +756,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartBodyTrackingByJointSet", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::OculusXRMovementFunctionLibrary_eventStartBodyTrackingByJointSet_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::Function_MetaDataParams)},  };
+// ********** End Function StartBodyTrackingByJointSet Property Definitions ************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartBodyTrackingByJointSet", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::OculusXRMovementFunctionLibrary_eventStartBodyTrackingByJointSet_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet_Statics::OculusXRMovementFunctionLibrary_eventStartBodyTrackingByJointSet_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet()
 {
@@ -677,11 +794,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_S
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StartEyeTracking constinit property declarations **********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StartEyeTracking constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StartEyeTracking Property Definitions *********************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStartEyeTracking_Parms*)Obj)->ReturnValue = 1;
@@ -691,7 +813,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartEyeTracking", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::OculusXRMovementFunctionLibrary_eventStartEyeTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function StartEyeTracking Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartEyeTracking", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::OculusXRMovementFunctionLibrary_eventStartEyeTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking_Statics::OculusXRMovementFunctionLibrary_eventStartEyeTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking()
 {
@@ -724,11 +850,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StartFaceTracking constinit property declarations *********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StartFaceTracking constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StartFaceTracking Property Definitions ********************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStartFaceTracking_Parms*)Obj)->ReturnValue = 1;
@@ -738,7 +869,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartFaceTracking", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::OculusXRMovementFunctionLibrary_eventStartFaceTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function StartFaceTracking Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StartFaceTracking", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::OculusXRMovementFunctionLibrary_eventStartFaceTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking_Statics::OculusXRMovementFunctionLibrary_eventStartFaceTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking()
 {
@@ -771,11 +906,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_S
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StopBodyTracking constinit property declarations **********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StopBodyTracking constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StopBodyTracking Property Definitions *********************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStopBodyTracking_Parms*)Obj)->ReturnValue = 1;
@@ -785,7 +925,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StopBodyTracking", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::OculusXRMovementFunctionLibrary_eventStopBodyTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function StopBodyTracking Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StopBodyTracking", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::OculusXRMovementFunctionLibrary_eventStopBodyTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking_Statics::OculusXRMovementFunctionLibrary_eventStopBodyTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking()
 {
@@ -818,11 +962,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_St
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StopEyeTracking constinit property declarations ***********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StopEyeTracking constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StopEyeTracking Property Definitions **********************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStopEyeTracking_Parms*)Obj)->ReturnValue = 1;
@@ -832,7 +981,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StopEyeTracking", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::OculusXRMovementFunctionLibrary_eventStopEyeTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function StopEyeTracking Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StopEyeTracking", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::OculusXRMovementFunctionLibrary_eventStopEyeTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking_Statics::OculusXRMovementFunctionLibrary_eventStopEyeTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking()
 {
@@ -865,11 +1018,16 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_S
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function StopFaceTracking constinit property declarations **********************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function StopFaceTracking constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function StopFaceTracking Property Definitions *********************************
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventStopFaceTracking_Parms*)Obj)->ReturnValue = 1;
@@ -879,7 +1037,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StopFaceTracking", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::OculusXRMovementFunctionLibrary_eventStopFaceTracking_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::Function_MetaDataParams)},  };
+// ********** End Function StopFaceTracking Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "StopFaceTracking", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::OculusXRMovementFunctionLibrary_eventStopFaceTracking_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking_Statics::OculusXRMovementFunctionLibrary_eventStopFaceTracking_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking()
 {
@@ -913,12 +1075,17 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackin
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SuggestBodyTrackingCalibrationOverride constinit property declarations 
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_height;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SuggestBodyTrackingCalibrationOverride constinit property declarations **
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SuggestBodyTrackingCalibrationOverride Property Definitions ***********
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::NewProp_height = { "height", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventSuggestBodyTrackingCalibrationOverride_Parms, height), METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -930,7 +1097,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "SuggestBodyTrackingCalibrationOverride", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::OculusXRMovementFunctionLibrary_eventSuggestBodyTrackingCalibrationOverride_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::Function_MetaDataParams)},  };
+// ********** End Function SuggestBodyTrackingCalibrationOverride Property Definitions *************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "SuggestBodyTrackingCalibrationOverride", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::OculusXRMovementFunctionLibrary_eventSuggestBodyTrackingCalibrationOverride_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride_Statics::OculusXRMovementFunctionLibrary_eventSuggestBodyTrackingCalibrationOverride_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride()
 {
@@ -967,14 +1138,19 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_St
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function TryGetBodyState constinit property declarations ***********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_outBodyState;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_WorldToMeters;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function TryGetBodyState constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::NewProp_outBodyState = { "outBodyState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetBodyState_Parms, outBodyState), Z_Construct_UScriptStruct_FOculusXRBodyState, METADATA_PARAMS(0, nullptr) }; // 481926566
+
+// ********** Begin Function TryGetBodyState Property Definitions **********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::NewProp_outBodyState = { "outBodyState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetBodyState_Parms, outBodyState), Z_Construct_UScriptStruct_FOculusXRBodyState, METADATA_PARAMS(0, nullptr) }; // 2834268549
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::NewProp_WorldToMeters = { "WorldToMeters", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetBodyState_Parms, WorldToMeters), METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -987,7 +1163,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetBodyState", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::OculusXRMovementFunctionLibrary_eventTryGetBodyState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::Function_MetaDataParams)},  };
+// ********** End Function TryGetBodyState Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetBodyState", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::OculusXRMovementFunctionLibrary_eventTryGetBodyState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState_Statics::OculusXRMovementFunctionLibrary_eventTryGetBodyState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState()
 {
@@ -1025,14 +1205,19 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesStat
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function TryGetEyeGazesState constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_outEyeGazesState;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_WorldToMeters;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function TryGetEyeGazesState constinit property declarations *********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::NewProp_outEyeGazesState = { "outEyeGazesState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetEyeGazesState_Parms, outEyeGazesState), Z_Construct_UScriptStruct_FOculusXREyeGazesState, METADATA_PARAMS(0, nullptr) }; // 2662313393
+
+// ********** Begin Function TryGetEyeGazesState Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::NewProp_outEyeGazesState = { "outEyeGazesState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetEyeGazesState_Parms, outEyeGazesState), Z_Construct_UScriptStruct_FOculusXREyeGazesState, METADATA_PARAMS(0, nullptr) }; // 2828105861
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::NewProp_WorldToMeters = { "WorldToMeters", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetEyeGazesState_Parms, WorldToMeters), METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
@@ -1045,7 +1230,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetEyeGazesState", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::OculusXRMovementFunctionLibrary_eventTryGetEyeGazesState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::Function_MetaDataParams)},  };
+// ********** End Function TryGetEyeGazesState Property Definitions ********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetEyeGazesState", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::OculusXRMovementFunctionLibrary_eventTryGetEyeGazesState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState_Statics::OculusXRMovementFunctionLibrary_eventTryGetEyeGazesState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState()
 {
@@ -1081,13 +1270,18 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_St
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function TryGetFaceState constinit property declarations ***********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_outFaceState;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function TryGetFaceState constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::NewProp_outFaceState = { "outFaceState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetFaceState_Parms, outFaceState), Z_Construct_UScriptStruct_FOculusXRFaceState, METADATA_PARAMS(0, nullptr) }; // 2994930914
+
+// ********** Begin Function TryGetFaceState Property Definitions **********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::NewProp_outFaceState = { "outFaceState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetFaceState_Parms, outFaceState), Z_Construct_UScriptStruct_FOculusXRFaceState, METADATA_PARAMS(0, nullptr) }; // 3695300330
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventTryGetFaceState_Parms*)Obj)->ReturnValue = 1;
@@ -1098,7 +1292,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetFaceState", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::OculusXRMovementFunctionLibrary_eventTryGetFaceState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::Function_MetaDataParams)},  };
+// ********** End Function TryGetFaceState Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetFaceState", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::OculusXRMovementFunctionLibrary_eventTryGetFaceState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState_Statics::OculusXRMovementFunctionLibrary_eventTryGetFaceState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState()
 {
@@ -1133,13 +1331,18 @@ struct Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesS
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function TryGetFaceVisemesState constinit property declarations ****************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_outFaceVisemesState;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function TryGetFaceVisemesState constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::NewProp_outFaceVisemesState = { "outFaceVisemesState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetFaceVisemesState_Parms, outFaceVisemesState), Z_Construct_UScriptStruct_FOculusXRFaceVisemesState, METADATA_PARAMS(0, nullptr) }; // 1731188101
+
+// ********** Begin Function TryGetFaceVisemesState Property Definitions ***************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::NewProp_outFaceVisemesState = { "outFaceVisemesState", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRMovementFunctionLibrary_eventTryGetFaceVisemesState_Parms, outFaceVisemesState), Z_Construct_UScriptStruct_FOculusXRFaceVisemesState, METADATA_PARAMS(0, nullptr) }; // 998621623
 void Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRMovementFunctionLibrary_eventTryGetFaceVisemesState_Parms*)Obj)->ReturnValue = 1;
@@ -1150,7 +1353,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetFaceVisemesState", Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::OculusXRMovementFunctionLibrary_eventTryGetFaceVisemesState_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::Function_MetaDataParams)},  };
+// ********** End Function TryGetFaceVisemesState Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRMovementFunctionLibrary, nullptr, "TryGetFaceVisemesState", 	Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::OculusXRMovementFunctionLibrary_eventTryGetFaceVisemesState_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04422401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState_Statics::OculusXRMovementFunctionLibrary_eventTryGetFaceVisemesState_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState()
 {
@@ -1172,36 +1379,6 @@ DEFINE_FUNCTION(UOculusXRMovementFunctionLibrary::execTryGetFaceVisemesState)
 // ********** End Class UOculusXRMovementFunctionLibrary Function TryGetFaceVisemesState ***********
 
 // ********** Begin Class UOculusXRMovementFunctionLibrary *****************************************
-void UOculusXRMovementFunctionLibrary::StaticRegisterNativesUOculusXRMovementFunctionLibrary()
-{
-	UClass* Class = UOculusXRMovementFunctionLibrary::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "IsBodyTrackingEnabled", &UOculusXRMovementFunctionLibrary::execIsBodyTrackingEnabled },
-		{ "IsBodyTrackingSupported", &UOculusXRMovementFunctionLibrary::execIsBodyTrackingSupported },
-		{ "IsEyeTrackingEnabled", &UOculusXRMovementFunctionLibrary::execIsEyeTrackingEnabled },
-		{ "IsEyeTrackingSupported", &UOculusXRMovementFunctionLibrary::execIsEyeTrackingSupported },
-		{ "IsFaceTrackingEnabled", &UOculusXRMovementFunctionLibrary::execIsFaceTrackingEnabled },
-		{ "IsFaceTrackingSupported", &UOculusXRMovementFunctionLibrary::execIsFaceTrackingSupported },
-		{ "IsFaceTrackingVisemesEnabled", &UOculusXRMovementFunctionLibrary::execIsFaceTrackingVisemesEnabled },
-		{ "IsFaceTrackingVisemesSupported", &UOculusXRMovementFunctionLibrary::execIsFaceTrackingVisemesSupported },
-		{ "RequestBodyTrackingFidelity", &UOculusXRMovementFunctionLibrary::execRequestBodyTrackingFidelity },
-		{ "ResetBodyTrackingCalibration", &UOculusXRMovementFunctionLibrary::execResetBodyTrackingCalibration },
-		{ "SetFaceTrackingVisemesEnabled", &UOculusXRMovementFunctionLibrary::execSetFaceTrackingVisemesEnabled },
-		{ "StartBodyTracking", &UOculusXRMovementFunctionLibrary::execStartBodyTracking },
-		{ "StartBodyTrackingByJointSet", &UOculusXRMovementFunctionLibrary::execStartBodyTrackingByJointSet },
-		{ "StartEyeTracking", &UOculusXRMovementFunctionLibrary::execStartEyeTracking },
-		{ "StartFaceTracking", &UOculusXRMovementFunctionLibrary::execStartFaceTracking },
-		{ "StopBodyTracking", &UOculusXRMovementFunctionLibrary::execStopBodyTracking },
-		{ "StopEyeTracking", &UOculusXRMovementFunctionLibrary::execStopEyeTracking },
-		{ "StopFaceTracking", &UOculusXRMovementFunctionLibrary::execStopFaceTracking },
-		{ "SuggestBodyTrackingCalibrationOverride", &UOculusXRMovementFunctionLibrary::execSuggestBodyTrackingCalibrationOverride },
-		{ "TryGetBodyState", &UOculusXRMovementFunctionLibrary::execTryGetBodyState },
-		{ "TryGetEyeGazesState", &UOculusXRMovementFunctionLibrary::execTryGetEyeGazesState },
-		{ "TryGetFaceState", &UOculusXRMovementFunctionLibrary::execTryGetFaceState },
-		{ "TryGetFaceVisemesState", &UOculusXRMovementFunctionLibrary::execTryGetFaceVisemesState },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary;
 UClass* UOculusXRMovementFunctionLibrary::GetPrivateStaticClass()
 {
@@ -1209,7 +1386,7 @@ UClass* UOculusXRMovementFunctionLibrary::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRMovementFunctionLibrary"),
 			Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary.InnerSingleton,
 			StaticRegisterNativesUOculusXRMovementFunctionLibrary,
@@ -1239,38 +1416,66 @@ struct Z_Construct_UClass_UOculusXRMovementFunctionLibrary_Statics
 		{ "ModuleRelativePath", "Public/OculusXRMovementFunctionLibrary.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRMovementFunctionLibrary constinit property declarations *********
+// ********** End Class UOculusXRMovementFunctionLibrary constinit property declarations ***********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("IsBodyTrackingEnabled"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsBodyTrackingEnabled },
+		{ .NameUTF8 = UTF8TEXT("IsBodyTrackingSupported"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsBodyTrackingSupported },
+		{ .NameUTF8 = UTF8TEXT("IsEyeTrackingEnabled"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsEyeTrackingEnabled },
+		{ .NameUTF8 = UTF8TEXT("IsEyeTrackingSupported"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsEyeTrackingSupported },
+		{ .NameUTF8 = UTF8TEXT("IsFaceTrackingEnabled"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsFaceTrackingEnabled },
+		{ .NameUTF8 = UTF8TEXT("IsFaceTrackingSupported"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsFaceTrackingSupported },
+		{ .NameUTF8 = UTF8TEXT("IsFaceTrackingVisemesEnabled"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsFaceTrackingVisemesEnabled },
+		{ .NameUTF8 = UTF8TEXT("IsFaceTrackingVisemesSupported"), .Pointer = &UOculusXRMovementFunctionLibrary::execIsFaceTrackingVisemesSupported },
+		{ .NameUTF8 = UTF8TEXT("RequestBodyTrackingFidelity"), .Pointer = &UOculusXRMovementFunctionLibrary::execRequestBodyTrackingFidelity },
+		{ .NameUTF8 = UTF8TEXT("ResetBodyTrackingCalibration"), .Pointer = &UOculusXRMovementFunctionLibrary::execResetBodyTrackingCalibration },
+		{ .NameUTF8 = UTF8TEXT("SetFaceTrackingVisemesEnabled"), .Pointer = &UOculusXRMovementFunctionLibrary::execSetFaceTrackingVisemesEnabled },
+		{ .NameUTF8 = UTF8TEXT("StartBodyTracking"), .Pointer = &UOculusXRMovementFunctionLibrary::execStartBodyTracking },
+		{ .NameUTF8 = UTF8TEXT("StartBodyTrackingByJointSet"), .Pointer = &UOculusXRMovementFunctionLibrary::execStartBodyTrackingByJointSet },
+		{ .NameUTF8 = UTF8TEXT("StartEyeTracking"), .Pointer = &UOculusXRMovementFunctionLibrary::execStartEyeTracking },
+		{ .NameUTF8 = UTF8TEXT("StartFaceTracking"), .Pointer = &UOculusXRMovementFunctionLibrary::execStartFaceTracking },
+		{ .NameUTF8 = UTF8TEXT("StopBodyTracking"), .Pointer = &UOculusXRMovementFunctionLibrary::execStopBodyTracking },
+		{ .NameUTF8 = UTF8TEXT("StopEyeTracking"), .Pointer = &UOculusXRMovementFunctionLibrary::execStopEyeTracking },
+		{ .NameUTF8 = UTF8TEXT("StopFaceTracking"), .Pointer = &UOculusXRMovementFunctionLibrary::execStopFaceTracking },
+		{ .NameUTF8 = UTF8TEXT("SuggestBodyTrackingCalibrationOverride"), .Pointer = &UOculusXRMovementFunctionLibrary::execSuggestBodyTrackingCalibrationOverride },
+		{ .NameUTF8 = UTF8TEXT("TryGetBodyState"), .Pointer = &UOculusXRMovementFunctionLibrary::execTryGetBodyState },
+		{ .NameUTF8 = UTF8TEXT("TryGetEyeGazesState"), .Pointer = &UOculusXRMovementFunctionLibrary::execTryGetEyeGazesState },
+		{ .NameUTF8 = UTF8TEXT("TryGetFaceState"), .Pointer = &UOculusXRMovementFunctionLibrary::execTryGetFaceState },
+		{ .NameUTF8 = UTF8TEXT("TryGetFaceVisemesState"), .Pointer = &UOculusXRMovementFunctionLibrary::execTryGetFaceVisemesState },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled, "IsBodyTrackingEnabled" }, // 2116238892
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported, "IsBodyTrackingSupported" }, // 221024449
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled, "IsEyeTrackingEnabled" }, // 1255272740
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported, "IsEyeTrackingSupported" }, // 335085255
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled, "IsFaceTrackingEnabled" }, // 834278519
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported, "IsFaceTrackingSupported" }, // 2016890468
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled, "IsFaceTrackingVisemesEnabled" }, // 4274914624
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported, "IsFaceTrackingVisemesSupported" }, // 3410568572
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity, "RequestBodyTrackingFidelity" }, // 3006924770
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration, "ResetBodyTrackingCalibration" }, // 804967755
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled, "SetFaceTrackingVisemesEnabled" }, // 4136166874
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking, "StartBodyTracking" }, // 1691474325
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet, "StartBodyTrackingByJointSet" }, // 3522903329
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking, "StartEyeTracking" }, // 2823046333
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking, "StartFaceTracking" }, // 4200552524
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking, "StopBodyTracking" }, // 1797038452
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking, "StopEyeTracking" }, // 2084426495
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking, "StopFaceTracking" }, // 535958593
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride, "SuggestBodyTrackingCalibrationOverride" }, // 1059306866
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState, "TryGetBodyState" }, // 656001907
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState, "TryGetEyeGazesState" }, // 1085763079
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState, "TryGetFaceState" }, // 3839184064
-		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState, "TryGetFaceVisemesState" }, // 3743202628
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingEnabled, "IsBodyTrackingEnabled" }, // 684594920
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsBodyTrackingSupported, "IsBodyTrackingSupported" }, // 3188646450
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingEnabled, "IsEyeTrackingEnabled" }, // 4282067325
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsEyeTrackingSupported, "IsEyeTrackingSupported" }, // 2083910571
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingEnabled, "IsFaceTrackingEnabled" }, // 1137201543
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingSupported, "IsFaceTrackingSupported" }, // 3247276903
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesEnabled, "IsFaceTrackingVisemesEnabled" }, // 598431823
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_IsFaceTrackingVisemesSupported, "IsFaceTrackingVisemesSupported" }, // 229811967
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_RequestBodyTrackingFidelity, "RequestBodyTrackingFidelity" }, // 539020874
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_ResetBodyTrackingCalibration, "ResetBodyTrackingCalibration" }, // 1999289591
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SetFaceTrackingVisemesEnabled, "SetFaceTrackingVisemesEnabled" }, // 3270298379
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTracking, "StartBodyTracking" }, // 1920615924
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartBodyTrackingByJointSet, "StartBodyTrackingByJointSet" }, // 4275150217
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartEyeTracking, "StartEyeTracking" }, // 3384343212
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StartFaceTracking, "StartFaceTracking" }, // 78964539
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopBodyTracking, "StopBodyTracking" }, // 327334884
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopEyeTracking, "StopEyeTracking" }, // 2955041232
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_StopFaceTracking, "StopFaceTracking" }, // 3963630139
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_SuggestBodyTrackingCalibrationOverride, "SuggestBodyTrackingCalibrationOverride" }, // 1396022615
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetBodyState, "TryGetBodyState" }, // 2773769480
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetEyeGazesState, "TryGetEyeGazesState" }, // 2527087792
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceState, "TryGetFaceState" }, // 3644999787
+		{ &Z_Construct_UFunction_UOculusXRMovementFunctionLibrary_TryGetFaceVisemesState, "TryGetFaceVisemesState" }, // 3634478987
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRMovementFunctionLibrary>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRMovementFunctionLibrary_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRMovementFunctionLibrary_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UBlueprintFunctionLibrary,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMovement,
@@ -1291,6 +1496,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRMovementFuncti
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRMovementFunctionLibrary_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRMovementFunctionLibrary_Statics::Class_MetaDataParams)
 };
+void UOculusXRMovementFunctionLibrary::StaticRegisterNativesUOculusXRMovementFunctionLibrary()
+{
+	UClass* Class = UOculusXRMovementFunctionLibrary::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRMovementFunctionLibrary_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRMovementFunctionLibrary()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary.OuterSingleton)
@@ -1300,21 +1510,23 @@ UClass* Z_Construct_UClass_UOculusXRMovementFunctionLibrary()
 	return Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary.OuterSingleton;
 }
 UOculusXRMovementFunctionLibrary::UOculusXRMovementFunctionLibrary(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRMovementFunctionLibrary);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRMovementFunctionLibrary);
 UOculusXRMovementFunctionLibrary::~UOculusXRMovementFunctionLibrary() {}
 // ********** End Class UOculusXRMovementFunctionLibrary *******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRMovementFunctionLibrary, UOculusXRMovementFunctionLibrary::StaticClass, TEXT("UOculusXRMovementFunctionLibrary"), &Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMovementFunctionLibrary), 3806475726U) },
+		{ Z_Construct_UClass_UOculusXRMovementFunctionLibrary, UOculusXRMovementFunctionLibrary::StaticClass, TEXT("UOculusXRMovementFunctionLibrary"), &Z_Registration_Info_UClass_UOculusXRMovementFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMovementFunctionLibrary), 2774187400U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_4041374540(TEXT("/Script/OculusXRMovement"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_1016249333{
+	TEXT("/Script/OculusXRMovement"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Public_OculusXRMovementFunctionLibrary_h__Script_OculusXRMovement_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -8,7 +8,7 @@
 #include "OculusXRMR_State.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRMR_State() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -24,96 +24,143 @@ UPackage* Z_Construct_UPackage__Script_OculusXRMR();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin ScriptStruct FOculusXRTrackedCamera ********************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera;
-class UScriptStruct* FOculusXRTrackedCamera::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRTrackedCamera, (UObject*)Z_Construct_UPackage__Script_OculusXRMR(), TEXT("OculusXRTrackedCamera"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRTrackedCamera); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRTrackedCamera); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Index_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** >=0: the index of the external camera\n\x09 * -1: not bind to any external camera (and would be setup to match the manual CastingCameraActor placement)\n\x09 */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", ">=0: the index of the external camera\n-1: not bind to any external camera (and would be setup to match the manual CastingCameraActor placement)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Name_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The external camera name set through the CameraTool */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The external camera name set through the CameraTool" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UpdateTime_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The time that this camera was updated */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The time that this camera was updated" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_FieldOfView_MetaData[] = {
 		{ "ClampMax", "360.0" },
 		{ "ClampMin", "0.001" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The horizontal FOV, in degrees */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The horizontal FOV, in degrees" },
+#endif
 		{ "UIMax", "170" },
 		{ "UIMin", "5.0" },
 		{ "Units", "deg" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SizeX_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The resolution of the camera frame */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The resolution of the camera frame" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SizeY_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The resolution of the camera frame */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The resolution of the camera frame" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttachedTrackedDevice_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The tracking node the external camera is bound to */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The tracking node the external camera is bound to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CalibratedRotation_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The relative pose of the camera to the attached tracking device */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The relative pose of the camera to the attached tracking device" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CalibratedOffset_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The relative pose of the camera to the attached tracking device */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The relative pose of the camera to the attached tracking device" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UserRotation_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** (optional) The user pose is provided to fine tuning the relative camera pose at the run-time */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "(optional) The user pose is provided to fine tuning the relative camera pose at the run-time" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_UserOffset_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** (optional) The user pose is provided to fine tuning the relative camera pose at the run-time */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "(optional) The user pose is provided to fine tuning the relative camera pose at the run-time" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RawRotation_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The raw pose of the camera to the attached tracking device (Deprecated) */" },
+#endif
 		{ "DeprecatedProperty", "" },
 		{ "DeprecationMessage", "All camera pose info is now in stage space, do not use raw pose data." },
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The raw pose of the camera to the attached tracking device (Deprecated)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RawOffset_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The raw pose of the camera to the attached tracking device (Deprecated) */" },
+#endif
 		{ "DeprecatedProperty", "" },
 		{ "DeprecationMessage", "All camera pose info is now in stage space, do not use raw pose data." },
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The raw pose of the camera to the attached tracking device (Deprecated)" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRTrackedCamera constinit property declarations ************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Index;
 	static const UECodeGen_Private::FStrPropertyParams NewProp_Name;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_UpdateTime;
@@ -129,12 +176,24 @@ struct Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RawRotation;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RawOffset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRTrackedCamera constinit property declarations **************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRTrackedCamera>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera;
+class UScriptStruct* FOculusXRTrackedCamera::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRTrackedCamera, (UObject*)Z_Construct_UPackage__Script_OculusXRMR(), TEXT("OculusXRTrackedCamera"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRTrackedCamera Property Definitions ***********************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_Index = { "Index", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, Index), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Index_MetaData), NewProp_Index_MetaData) };
 const UECodeGen_Private::FStrPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_Name = { "Name", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, Name), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Name_MetaData), NewProp_Name_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_UpdateTime = { "UpdateTime", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, UpdateTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UpdateTime_MetaData), NewProp_UpdateTime_MetaData) };
@@ -142,7 +201,7 @@ const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FOculusX
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_SizeX = { "SizeX", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, SizeX), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SizeX_MetaData), NewProp_SizeX_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_SizeY = { "SizeY", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, SizeY), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SizeY_MetaData), NewProp_SizeY_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_AttachedTrackedDevice_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_AttachedTrackedDevice = { "AttachedTrackedDevice", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, AttachedTrackedDevice), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttachedTrackedDevice_MetaData), NewProp_AttachedTrackedDevice_MetaData) }; // 3212330336
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_AttachedTrackedDevice = { "AttachedTrackedDevice", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, AttachedTrackedDevice), Z_Construct_UEnum_OculusXRHMD_EOculusXRTrackedDeviceType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttachedTrackedDevice_MetaData), NewProp_AttachedTrackedDevice_MetaData) }; // 3067353067
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_CalibratedRotation = { "CalibratedRotation", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, CalibratedRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CalibratedRotation_MetaData), NewProp_CalibratedRotation_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_CalibratedOffset = { "CalibratedOffset", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, CalibratedOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CalibratedOffset_MetaData), NewProp_CalibratedOffset_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_UserRotation = { "UserRotation", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRTrackedCamera, UserRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UserRotation_MetaData), NewProp_UserRotation_MetaData) };
@@ -166,6 +225,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewProp_RawOffset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRTrackedCamera Property Definitions *************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMR,
 	nullptr,
@@ -185,14 +245,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRTrackedCamera()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRTrackedCamera **********************************************
 
 // ********** Begin Class UOculusXRMR_State ********************************************************
-void UOculusXRMR_State::StaticRegisterNativesUOculusXRMR_State()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRMR_State;
 UClass* UOculusXRMR_State::GetPrivateStaticClass()
 {
@@ -200,7 +257,7 @@ UClass* UOculusXRMR_State::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRMR_State.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRMR_State"),
 			Z_Registration_Info_UClass_UOculusXRMR_State.InnerSingleton,
 			StaticRegisterNativesUOculusXRMR_State,
@@ -227,38 +284,60 @@ struct Z_Construct_UClass_UOculusXRMR_State_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "OculusXRMR" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Object to hold the state of MR capture and capturing camera\n */" },
+#endif
 		{ "IncludePath", "OculusXRMR_State.h" },
 		{ "IsBlueprintBase", "false" },
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
 		{ "ObjectInitializerConstructorDeclared", "" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Object to hold the state of MR capture and capturing camera" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TrackedCamera_MetaData[] = {
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TrackingReferenceComponent_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Component at the tracking origin that the camera calibration is applied to\n" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Component at the tracking origin that the camera calibration is applied to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ScalingFactor_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A multiplier on the camera distance, should be based on the scaling of the player component\n" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A multiplier on the camera distance, should be based on the scaling of the player component" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ChangeCameraStateRequested_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Flag indicating a change in the tracked camera state for the camera actor to consume */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Flag indicating a change in the tracked camera state for the camera actor to consume" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BindToTrackedCameraIndexRequested_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Flag indicating a change in the tracked camera index for the camera actor to consume */" },
+#endif
 		{ "ModuleRelativePath", "Private/OculusXRMR_State.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Flag indicating a change in the tracked camera index for the camera actor to consume" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRMR_State constinit property declarations ************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TrackedCamera;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TrackingReferenceComponent;
 	static const UECodeGen_Private::FDoublePropertyParams NewProp_ScalingFactor;
@@ -267,13 +346,16 @@ struct Z_Construct_UClass_UOculusXRMR_State_Statics
 	static void NewProp_BindToTrackedCameraIndexRequested_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_BindToTrackedCameraIndexRequested;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRMR_State constinit property declarations **************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRMR_State>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRMR_State_Statics::NewProp_TrackedCamera = { "TrackedCamera", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRMR_State, TrackedCamera), Z_Construct_UScriptStruct_FOculusXRTrackedCamera, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TrackedCamera_MetaData), NewProp_TrackedCamera_MetaData) }; // 3230692644
+}; // struct Z_Construct_UClass_UOculusXRMR_State_Statics
+
+// ********** Begin Class UOculusXRMR_State Property Definitions ***********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRMR_State_Statics::NewProp_TrackedCamera = { "TrackedCamera", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRMR_State, TrackedCamera), Z_Construct_UScriptStruct_FOculusXRTrackedCamera, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TrackedCamera_MetaData), NewProp_TrackedCamera_MetaData) }; // 1414826594
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRMR_State_Statics::NewProp_TrackingReferenceComponent = { "TrackingReferenceComponent", nullptr, (EPropertyFlags)0x0010000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRMR_State, TrackingReferenceComponent), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TrackingReferenceComponent_MetaData), NewProp_TrackingReferenceComponent_MetaData) };
 const UECodeGen_Private::FDoublePropertyParams Z_Construct_UClass_UOculusXRMR_State_Statics::NewProp_ScalingFactor = { "ScalingFactor", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Double, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRMR_State, ScalingFactor), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ScalingFactor_MetaData), NewProp_ScalingFactor_MetaData) };
 void Z_Construct_UClass_UOculusXRMR_State_Statics::NewProp_ChangeCameraStateRequested_SetBit(void* Obj)
@@ -294,6 +376,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRMR_State_Statics::NewProp_BindToTrackedCameraIndexRequested,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRMR_State_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRMR_State Property Definitions *************************************
 UObject* (*const Z_Construct_UClass_UOculusXRMR_State_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMR,
@@ -314,6 +397,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRMR_State_Stati
 	0x008002A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRMR_State_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRMR_State_Statics::Class_MetaDataParams)
 };
+void UOculusXRMR_State::StaticRegisterNativesUOculusXRMR_State()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRMR_State()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRMR_State.OuterSingleton)
@@ -322,24 +408,26 @@ UClass* Z_Construct_UClass_UOculusXRMR_State()
 	}
 	return Z_Registration_Info_UClass_UOculusXRMR_State.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRMR_State);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRMR_State);
 UOculusXRMR_State::~UOculusXRMR_State() {}
 // ********** End Class UOculusXRMR_State **********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FOculusXRTrackedCamera::StaticStruct, Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewStructOps, TEXT("OculusXRTrackedCamera"), &Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRTrackedCamera), 3230692644U) },
+		{ FOculusXRTrackedCamera::StaticStruct, Z_Construct_UScriptStruct_FOculusXRTrackedCamera_Statics::NewStructOps, TEXT("OculusXRTrackedCamera"),&Z_Registration_Info_UScriptStruct_FOculusXRTrackedCamera, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRTrackedCamera), 1414826594U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRMR_State, UOculusXRMR_State::StaticClass, TEXT("UOculusXRMR_State"), &Z_Registration_Info_UClass_UOculusXRMR_State, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMR_State), 1973753609U) },
+		{ Z_Construct_UClass_UOculusXRMR_State, UOculusXRMR_State::StaticClass, TEXT("UOculusXRMR_State"), &Z_Registration_Info_UClass_UOculusXRMR_State, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMR_State), 2577211226U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_2087394184{
+	TEXT("/Script/OculusXRMR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_3023034327(TEXT("/Script/OculusXRMR"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Private_OculusXRMR_State_h__Script_OculusXRMR_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

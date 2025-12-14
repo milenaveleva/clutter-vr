@@ -8,7 +8,7 @@
 #include "DataSources/IsdkOneEuroFilterDataModifier.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkOneEuroFilterDataModifier() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkOneEuroFilterDataModifier *******************************************
-void UIsdkOneEuroFilterDataModifier::StaticRegisterNativesUIsdkOneEuroFilterDataModifier()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier;
 UClass* UIsdkOneEuroFilterDataModifier::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkOneEuroFilterDataModifier::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkOneEuroFilterDataModifier"),
 			Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier.InnerSingleton,
 			StaticRegisterNativesUIsdkOneEuroFilterDataModifier,
@@ -57,19 +54,26 @@ struct Z_Construct_UClass_UIsdkOneEuroFilterDataModifier_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Hand Data Modifier that returns a HandDataSource having a One Euro Filter applied to it */" },
+#endif
 		{ "DisplayName", "ISDK One Euro Filter" },
 		{ "IncludePath", "DataSources/IsdkOneEuroFilterDataModifier.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkOneEuroFilterDataModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Hand Data Modifier that returns a HandDataSource having a One Euro Filter applied to it" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkOneEuroFilterDataModifier constinit property declarations ***********
+// ********** End Class UIsdkOneEuroFilterDataModifier constinit property declarations *************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkOneEuroFilterDataModifier>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkOneEuroFilterDataModifier_Statics
 UObject* (*const Z_Construct_UClass_UIsdkOneEuroFilterDataModifier_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkHandDataModifier,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -90,6 +94,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkOneEuroFilterDataM
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkOneEuroFilterDataModifier_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkOneEuroFilterDataModifier_Statics::Class_MetaDataParams)
 };
+void UIsdkOneEuroFilterDataModifier::StaticRegisterNativesUIsdkOneEuroFilterDataModifier()
+{
+}
 UClass* Z_Construct_UClass_UIsdkOneEuroFilterDataModifier()
 {
 	if (!Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier.OuterSingleton)
@@ -98,21 +105,23 @@ UClass* Z_Construct_UClass_UIsdkOneEuroFilterDataModifier()
 	}
 	return Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkOneEuroFilterDataModifier);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkOneEuroFilterDataModifier);
 UIsdkOneEuroFilterDataModifier::~UIsdkOneEuroFilterDataModifier() {}
 // ********** End Class UIsdkOneEuroFilterDataModifier *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkOneEuroFilterDataModifier, UIsdkOneEuroFilterDataModifier::StaticClass, TEXT("UIsdkOneEuroFilterDataModifier"), &Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkOneEuroFilterDataModifier), 2417251926U) },
+		{ Z_Construct_UClass_UIsdkOneEuroFilterDataModifier, UIsdkOneEuroFilterDataModifier::StaticClass, TEXT("UIsdkOneEuroFilterDataModifier"), &Z_Registration_Info_UClass_UIsdkOneEuroFilterDataModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkOneEuroFilterDataModifier), 235314063U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_502501535(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_262435765{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkOneEuroFilterDataModifier_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

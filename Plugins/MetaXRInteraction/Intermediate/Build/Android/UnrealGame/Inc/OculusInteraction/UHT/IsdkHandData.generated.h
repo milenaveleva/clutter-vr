@@ -15,13 +15,11 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
- 
 enum class EIsdkFingerJoint : uint8;
 enum class EIsdkFingerType : uint8;
 
 // ********** Begin Class UIsdkHandData ************************************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetOutboundBoneMap); \
 	DECLARE_FUNCTION(execSetInboundBoneMap); \
 	DECLARE_FUNCTION(execSetJointsToIdentity); \
@@ -36,20 +34,21 @@ enum class EIsdkFingerType : uint8;
 	DECLARE_FUNCTION(execGetNumJoints);
 
 
+struct Z_Construct_UClass_UIsdkHandData_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandData_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkHandData(); \
-	friend struct Z_Construct_UClass_UIsdkHandData_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkHandData_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkHandData_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkHandData_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkHandData, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkHandData_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkHandData)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkHandData(UIsdkHandData&&) = delete; \
 	UIsdkHandData(const UIsdkHandData&) = delete; \
@@ -59,13 +58,13 @@ public: \
 	NO_API virtual ~UIsdkHandData();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_105_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_105_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h_108_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -75,7 +74,7 @@ class UIsdkHandData;
 // ********** End Class UIsdkHandData **************************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkHandData_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkHandData_h
 
 // ********** Begin Enum EIsdkHandBones ************************************************************
 #define FOREACH_ENUM_EISDKHANDBONES(op) \
@@ -112,7 +111,7 @@ class UIsdkHandData;
 
 enum class EIsdkHandBones : uint8;
 template<> struct TIsUEnumClass<EIsdkHandBones> { enum { Value = true }; };
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkHandBones>();
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkHandBones>();
 // ********** End Enum EIsdkHandBones **************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

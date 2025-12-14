@@ -8,7 +8,7 @@
 #include "OculusXRResourceHolder.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRResourceHolder() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRHMD();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRResourceHolder **************************************************
-void UOculusXRResourceHolder::StaticRegisterNativesUOculusXRResourceHolder()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRResourceHolder;
 UClass* UOculusXRResourceHolder::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UOculusXRResourceHolder::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRResourceHolder.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRResourceHolder"),
 			Z_Registration_Info_UClass_UOculusXRResourceHolder.InnerSingleton,
 			StaticRegisterNativesUOculusXRResourceHolder,
@@ -56,7 +53,9 @@ struct Z_Construct_UClass_UOculusXRResourceHolder_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n *\n */" },
+#endif
 		{ "IncludePath", "OculusXRResourceHolder.h" },
 		{ "ModuleRelativePath", "Private/OculusXRResourceHolder.h" },
 	};
@@ -64,19 +63,25 @@ struct Z_Construct_UClass_UOculusXRResourceHolder_Statics
 		{ "ModuleRelativePath", "Private/OculusXRResourceHolder.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRResourceHolder constinit property declarations ******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PokeAHoleMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRResourceHolder constinit property declarations ********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRResourceHolder>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRResourceHolder_Statics
+
+// ********** Begin Class UOculusXRResourceHolder Property Definitions *****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRResourceHolder_Statics::NewProp_PokeAHoleMaterial = { "PokeAHoleMaterial", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRResourceHolder, PokeAHoleMaterial), Z_Construct_UClass_UMaterial_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PokeAHoleMaterial_MetaData), NewProp_PokeAHoleMaterial_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRResourceHolder_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRResourceHolder_Statics::NewProp_PokeAHoleMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRResourceHolder_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRResourceHolder Property Definitions *******************************
 UObject* (*const Z_Construct_UClass_UOculusXRResourceHolder_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRHMD,
@@ -97,6 +102,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRResourceHolder
 	0x000000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRResourceHolder_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRResourceHolder_Statics::Class_MetaDataParams)
 };
+void UOculusXRResourceHolder::StaticRegisterNativesUOculusXRResourceHolder()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRResourceHolder()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRResourceHolder.OuterSingleton)
@@ -105,21 +113,23 @@ UClass* Z_Construct_UClass_UOculusXRResourceHolder()
 	}
 	return Z_Registration_Info_UClass_UOculusXRResourceHolder.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRResourceHolder);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRResourceHolder);
 UOculusXRResourceHolder::~UOculusXRResourceHolder() {}
 // ********** End Class UOculusXRResourceHolder ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRResourceHolder, UOculusXRResourceHolder::StaticClass, TEXT("UOculusXRResourceHolder"), &Z_Registration_Info_UClass_UOculusXRResourceHolder, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRResourceHolder), 1514161009U) },
+		{ Z_Construct_UClass_UOculusXRResourceHolder, UOculusXRResourceHolder::StaticClass, TEXT("UOculusXRResourceHolder"), &Z_Registration_Info_UClass_UOculusXRResourceHolder, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRResourceHolder), 2570303230U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_3143590669(TEXT("/Script/OculusXRHMD"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_4176784402{
+	TEXT("/Script/OculusXRHMD"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Private_OculusXRResourceHolder_h__Script_OculusXRHMD_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

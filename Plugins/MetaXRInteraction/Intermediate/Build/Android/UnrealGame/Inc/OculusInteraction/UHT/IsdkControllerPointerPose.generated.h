@@ -17,21 +17,22 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UIsdkControllerPointerPose ***********************************************
+struct Z_Construct_UClass_UIsdkControllerPointerPose_Statics;
 OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkControllerPointerPose_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkControllerPointerPose(); \
-	friend struct Z_Construct_UClass_UIsdkControllerPointerPose_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkControllerPointerPose_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTION_API UClass* Z_Construct_UClass_UIsdkControllerPointerPose_NoRegister(); \
+	friend OCULUSINTERACTION_API UClass* ::Z_Construct_UClass_UIsdkControllerPointerPose_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkControllerPointerPose, UActorComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteraction"), Z_Construct_UClass_UIsdkControllerPointerPose_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkControllerPointerPose) \
 	virtual UObject* _getUObject() const override { return const_cast<UIsdkControllerPointerPose*>(this); }
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkControllerPointerPose(UIsdkControllerPointerPose&&) = delete; \
 	UIsdkControllerPointerPose(const UIsdkControllerPointerPose&) = delete; \
@@ -41,12 +42,12 @@ public: \
 	NO_API virtual ~UIsdkControllerPointerPose();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_30_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_30_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h_34_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -56,6 +57,6 @@ class UIsdkControllerPointerPose;
 // ********** End Class UIsdkControllerPointerPose *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerPointerPose_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

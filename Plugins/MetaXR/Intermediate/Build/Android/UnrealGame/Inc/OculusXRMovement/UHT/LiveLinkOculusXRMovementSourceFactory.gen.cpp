@@ -8,7 +8,7 @@
 #include "LiveLinkOculusXRMovementSourceFactory.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeLiveLinkOculusXRMovementSourceFactory() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRMovement();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class ULiveLinkOculusXRMovementSourceFactory ***********************************
-void ULiveLinkOculusXRMovementSourceFactory::StaticRegisterNativesULiveLinkOculusXRMovementSourceFactory()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory;
 UClass* ULiveLinkOculusXRMovementSourceFactory::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* ULiveLinkOculusXRMovementSourceFactory::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("LiveLinkOculusXRMovementSourceFactory"),
 			Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory.InnerSingleton,
 			StaticRegisterNativesULiveLinkOculusXRMovementSourceFactory,
@@ -59,12 +56,15 @@ struct Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory_Statics
 		{ "ModuleRelativePath", "Private/LiveLinkOculusXRMovementSourceFactory.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class ULiveLinkOculusXRMovementSourceFactory constinit property declarations ***
+// ********** End Class ULiveLinkOculusXRMovementSourceFactory constinit property declarations *****
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ULiveLinkOculusXRMovementSourceFactory>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory_Statics
 UObject* (*const Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_ULiveLinkSourceFactory,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRMovement,
@@ -85,6 +85,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_ULiveLinkOculusXRMoveme
 	0x000000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory_Statics::Class_MetaDataParams), Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory_Statics::Class_MetaDataParams)
 };
+void ULiveLinkOculusXRMovementSourceFactory::StaticRegisterNativesULiveLinkOculusXRMovementSourceFactory()
+{
+}
 UClass* Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory()
 {
 	if (!Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory.OuterSingleton)
@@ -94,21 +97,23 @@ UClass* Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory()
 	return Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory.OuterSingleton;
 }
 ULiveLinkOculusXRMovementSourceFactory::ULiveLinkOculusXRMovementSourceFactory(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(ULiveLinkOculusXRMovementSourceFactory);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, ULiveLinkOculusXRMovementSourceFactory);
 ULiveLinkOculusXRMovementSourceFactory::~ULiveLinkOculusXRMovementSourceFactory() {}
 // ********** End Class ULiveLinkOculusXRMovementSourceFactory *************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory, ULiveLinkOculusXRMovementSourceFactory::StaticClass, TEXT("ULiveLinkOculusXRMovementSourceFactory"), &Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULiveLinkOculusXRMovementSourceFactory), 740662675U) },
+		{ Z_Construct_UClass_ULiveLinkOculusXRMovementSourceFactory, ULiveLinkOculusXRMovementSourceFactory::StaticClass, TEXT("ULiveLinkOculusXRMovementSourceFactory"), &Z_Registration_Info_UClass_ULiveLinkOculusXRMovementSourceFactory, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ULiveLinkOculusXRMovementSourceFactory), 4061654697U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_429940584(TEXT("/Script/OculusXRMovement"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_549095754{
+	TEXT("/Script/OculusXRMovement"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMovement_Private_LiveLinkOculusXRMovementSourceFactory_h__Script_OculusXRMovement_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

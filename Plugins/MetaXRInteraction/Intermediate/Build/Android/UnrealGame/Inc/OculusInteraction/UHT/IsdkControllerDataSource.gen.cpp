@@ -8,7 +8,7 @@
 #include "DataSources/IsdkControllerDataSource.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkControllerDataSource() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkControllerDataSource ************************************************
-void UIsdkControllerDataSource::StaticRegisterNativesUIsdkControllerDataSource()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkControllerDataSource;
 UClass* UIsdkControllerDataSource::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkControllerDataSource::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkControllerDataSource.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkControllerDataSource"),
 			Z_Registration_Info_UClass_UIsdkControllerDataSource.InnerSingleton,
 			StaticRegisterNativesUIsdkControllerDataSource,
@@ -58,26 +55,33 @@ struct Z_Construct_UClass_UIsdkControllerDataSource_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* Data source Actor Component for Controllers that implements the IsdkIRootPose interface */" },
+#endif
 		{ "IncludePath", "DataSources/IsdkControllerDataSource.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkControllerDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Data source Actor Component for Controllers that implements the IsdkIRootPose interface" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkControllerDataSource constinit property declarations ****************
+// ********** End Class UIsdkControllerDataSource constinit property declarations ******************
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkControllerDataSource>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkControllerDataSource_Statics
 UObject* (*const Z_Construct_UClass_UIsdkControllerDataSource_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkControllerDataSource_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkControllerDataSource_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIRootPose_NoRegister, (int32)VTABLE_OFFSET(UIsdkControllerDataSource, IIsdkIRootPose), false },  // 2159373520
+	{ Z_Construct_UClass_UIsdkIRootPose_NoRegister, (int32)VTABLE_OFFSET(UIsdkControllerDataSource, IIsdkIRootPose), false },  // 1451802214
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkControllerDataSource_Statics::ClassParams = {
 	&UIsdkControllerDataSource::StaticClass,
@@ -94,6 +98,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkControllerDataSour
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkControllerDataSource_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkControllerDataSource_Statics::Class_MetaDataParams)
 };
+void UIsdkControllerDataSource::StaticRegisterNativesUIsdkControllerDataSource()
+{
+}
 UClass* Z_Construct_UClass_UIsdkControllerDataSource()
 {
 	if (!Z_Registration_Info_UClass_UIsdkControllerDataSource.OuterSingleton)
@@ -102,21 +109,23 @@ UClass* Z_Construct_UClass_UIsdkControllerDataSource()
 	}
 	return Z_Registration_Info_UClass_UIsdkControllerDataSource.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkControllerDataSource);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkControllerDataSource);
 UIsdkControllerDataSource::~UIsdkControllerDataSource() {}
 // ********** End Class UIsdkControllerDataSource **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkControllerDataSource, UIsdkControllerDataSource::StaticClass, TEXT("UIsdkControllerDataSource"), &Z_Registration_Info_UClass_UIsdkControllerDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerDataSource), 2432328758U) },
+		{ Z_Construct_UClass_UIsdkControllerDataSource, UIsdkControllerDataSource::StaticClass, TEXT("UIsdkControllerDataSource"), &Z_Registration_Info_UClass_UIsdkControllerDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkControllerDataSource), 1199322837U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_2089212669(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_3478690644{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkControllerDataSource_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

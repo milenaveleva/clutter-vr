@@ -8,7 +8,7 @@
 #include "OculusXRPersistentPassthroughInstance.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRPersistentPassthroughInstance() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -35,9 +35,15 @@ struct Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_Lay
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FOculusXRPassthrough_LayerResumed_Single constinit property declarations 
+// ********** End Delegate FOculusXRPassthrough_LayerResumed_Single constinit property declarations 
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRPassthrough, nullptr, "OculusXRPassthrough_LayerResumed_Single__DelegateSignature", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusXRPassthrough, nullptr, "OculusXRPassthrough_LayerResumed_Single__DelegateSignature", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00120000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UDelegateFunction_OculusXRPassthrough_OculusXRPassthrough_LayerResumed_Single__DelegateSignature()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -54,17 +60,10 @@ void FOculusXRPassthrough_LayerResumed_Single_DelegateWrapper(const FScriptDeleg
 // ********** End Delegate FOculusXRPassthrough_LayerResumed_Single ********************************
 
 // ********** Begin ScriptStruct FOculusXRPersistentPassthroughParameters **************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters;
-class UScriptStruct* FOculusXRPersistentPassthroughParameters::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters, (UObject*)Z_Construct_UPackage__Script_OculusXRPassthrough(), TEXT("OculusXRPersistentPassthroughParameters"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRPersistentPassthroughParameters); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRPersistentPassthroughParameters); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -87,9 +86,13 @@ struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Static
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TempShape_LayerOrder_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// These properties are all the ones from UOculusXRStereoLayerShapeReconstructed.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "These properties are all the ones from UOculusXRStereoLayerShapeReconstructed." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TempShape_TextureOpacityFactor_MetaData[] = {
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
@@ -140,6 +143,8 @@ struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Static
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRPersistentPassthroughParameters constinit property declarations 
 	static void NewProp_bVisible_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bVisible;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Priority;
@@ -165,12 +170,24 @@ struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Static
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TempShape_ColorScale;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_TempShape_ColorOffset;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRPersistentPassthroughParameters constinit property declarations 
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRPersistentPassthroughParameters>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters;
+class UScriptStruct* FOculusXRPersistentPassthroughParameters::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters, (UObject*)Z_Construct_UPackage__Script_OculusXRPassthrough(), TEXT("OculusXRPersistentPassthroughParameters"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRPersistentPassthroughParameters Property Definitions *****
 void Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_bVisible_SetBit(void* Obj)
 {
 	((FOculusXRPersistentPassthroughParameters*)Obj)->bVisible = 1;
@@ -178,7 +195,7 @@ void Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics:
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_bVisible = { "bVisible", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FOculusXRPersistentPassthroughParameters), &Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_bVisible_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bVisible_MetaData), NewProp_bVisible_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_Priority = { "Priority", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, Priority), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Priority_MetaData), NewProp_Priority_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_Shape = { "Shape", nullptr, (EPropertyFlags)0x011600000208001d, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, Shape), Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Shape_MetaData), NewProp_Shape_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_LayerOrder = { "TempShape_LayerOrder", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, TempShape_LayerOrder), Z_Construct_UEnum_OculusXRHMD_EOculusXRPassthroughLayerOrder, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TempShape_LayerOrder_MetaData), NewProp_TempShape_LayerOrder_MetaData) }; // 377958872
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_LayerOrder = { "TempShape_LayerOrder", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, TempShape_LayerOrder), Z_Construct_UEnum_OculusXRHMD_EOculusXRPassthroughLayerOrder, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TempShape_LayerOrder_MetaData), NewProp_TempShape_LayerOrder_MetaData) }; // 1955119003
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_TextureOpacityFactor = { "TempShape_TextureOpacityFactor", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, TempShape_TextureOpacityFactor), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TempShape_TextureOpacityFactor_MetaData), NewProp_TempShape_TextureOpacityFactor_MetaData) };
 void Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_bEnableEdgeColor_SetBit(void* Obj)
 {
@@ -191,7 +208,7 @@ void Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics:
 	((FOculusXRPersistentPassthroughParameters*)Obj)->TempShape_bEnableColorMap = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_bEnableColorMap = { "TempShape_bEnableColorMap", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(FOculusXRPersistentPassthroughParameters), &Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_bEnableColorMap_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TempShape_bEnableColorMap_MetaData), NewProp_TempShape_bEnableColorMap_MetaData) };
-const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_ColorMapType = { "TempShape_ColorMapType", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, TempShape_ColorMapType), Z_Construct_UEnum_OculusXRHMD_EOculusXRColorMapType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TempShape_ColorMapType_MetaData), NewProp_TempShape_ColorMapType_MetaData) }; // 3874072206
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_ColorMapType = { "TempShape_ColorMapType", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRPersistentPassthroughParameters, TempShape_ColorMapType), Z_Construct_UEnum_OculusXRHMD_EOculusXRColorMapType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TempShape_ColorMapType_MetaData), NewProp_TempShape_ColorMapType_MetaData) }; // 903193068
 void Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_bUseColorMapCurve_SetBit(void* Obj)
 {
 	((FOculusXRPersistentPassthroughParameters*)Obj)->TempShape_bUseColorMapCurve = 1;
@@ -230,6 +247,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewProp_TempShape_ColorOffset,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRPersistentPassthroughParameters Property Definitions *******
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRPassthrough,
 	nullptr,
@@ -249,7 +267,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameter
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRPersistentPassthroughParameters ****************************
 
@@ -266,16 +284,25 @@ struct Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPriority constinit property declarations ***************************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPriority constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPriority Property Definitions **************************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRPersistentPassthroughInstance_eventGetPriority_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "GetPriority", Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::OculusXRPersistentPassthroughInstance_eventGetPriority_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPriority Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "GetPriority", 	Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::OculusXRPersistentPassthroughInstance_eventGetPriority_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority_Statics::OculusXRPersistentPassthroughInstance_eventGetPriority_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority()
 {
@@ -308,16 +335,25 @@ struct Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Sta
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetShape constinit property declarations ******************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetShape constinit property declarations ********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetShape Property Definitions *****************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRPersistentPassthroughInstance_eventGetShape_Parms, ReturnValue), Z_Construct_UClass_UOculusXRStereoLayerShapeReconstructed_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "GetShape", Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::OculusXRPersistentPassthroughInstance_eventGetShape_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetShape Property Definitions *******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "GetShape", 	Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::OculusXRPersistentPassthroughInstance_eventGetShape_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape_Statics::OculusXRPersistentPassthroughInstance_eventGetShape_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape()
 {
@@ -350,11 +386,16 @@ struct Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_St
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsVisible constinit property declarations *****************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsVisible constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsVisible Property Definitions ****************************************
 void Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRPersistentPassthroughInstance_eventIsVisible_Parms*)Obj)->ReturnValue = 1;
@@ -364,7 +405,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "IsVisible", Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::OculusXRPersistentPassthroughInstance_eventIsVisible_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsVisible Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "IsVisible", 	Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::OculusXRPersistentPassthroughInstance_eventIsVisible_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible_Statics::OculusXRPersistentPassthroughInstance_eventIsVisible_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible()
 {
@@ -396,16 +441,25 @@ struct Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerRe
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function OnAnyLayerResumedEvent constinit property declarations ****************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InLayerId;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function OnAnyLayerResumedEvent constinit property declarations ******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function OnAnyLayerResumedEvent Property Definitions ***************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::NewProp_InLayerId = { "InLayerId", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRPersistentPassthroughInstance_eventOnAnyLayerResumedEvent_Parms, InLayerId), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::NewProp_InLayerId,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "OnAnyLayerResumedEvent", Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::OculusXRPersistentPassthroughInstance_eventOnAnyLayerResumedEvent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::Function_MetaDataParams)},  };
+// ********** End Function OnAnyLayerResumedEvent Property Definitions *****************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "OnAnyLayerResumedEvent", 	Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::OculusXRPersistentPassthroughInstance_eventOnAnyLayerResumedEvent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent_Statics::OculusXRPersistentPassthroughInstance_eventOnAnyLayerResumedEvent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent()
 {
@@ -439,16 +493,25 @@ struct Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetPriority constinit property declarations ***************************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InPriority;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetPriority constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetPriority Property Definitions **************************************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::NewProp_InPriority = { "InPriority", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRPersistentPassthroughInstance_eventSetPriority_Parms, InPriority), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::NewProp_InPriority,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "SetPriority", Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::OculusXRPersistentPassthroughInstance_eventSetPriority_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetPriority Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "SetPriority", 	Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::OculusXRPersistentPassthroughInstance_eventSetPriority_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority_Statics::OculusXRPersistentPassthroughInstance_eventSetPriority_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority()
 {
@@ -482,11 +545,16 @@ struct Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_S
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetVisible constinit property declarations ****************************
 	static void NewProp_InVisible_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_InVisible;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetVisible constinit property declarations ******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetVisible Property Definitions ***************************************
 void Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::NewProp_InVisible_SetBit(void* Obj)
 {
 	((OculusXRPersistentPassthroughInstance_eventSetVisible_Parms*)Obj)->InVisible = 1;
@@ -496,7 +564,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::NewProp_InVisible,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "SetVisible", Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::OculusXRPersistentPassthroughInstance_eventSetVisible_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetVisible Property Definitions *****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, nullptr, "SetVisible", 	Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::OculusXRPersistentPassthroughInstance_eventSetVisible_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible_Statics::OculusXRPersistentPassthroughInstance_eventSetVisible_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible()
 {
@@ -518,19 +590,6 @@ DEFINE_FUNCTION(UOculusXRPersistentPassthroughInstance::execSetVisible)
 // ********** End Class UOculusXRPersistentPassthroughInstance Function SetVisible *****************
 
 // ********** Begin Class UOculusXRPersistentPassthroughInstance ***********************************
-void UOculusXRPersistentPassthroughInstance::StaticRegisterNativesUOculusXRPersistentPassthroughInstance()
-{
-	UClass* Class = UOculusXRPersistentPassthroughInstance::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetPriority", &UOculusXRPersistentPassthroughInstance::execGetPriority },
-		{ "GetShape", &UOculusXRPersistentPassthroughInstance::execGetShape },
-		{ "IsVisible", &UOculusXRPersistentPassthroughInstance::execIsVisible },
-		{ "OnAnyLayerResumedEvent", &UOculusXRPersistentPassthroughInstance::execOnAnyLayerResumedEvent },
-		{ "SetPriority", &UOculusXRPersistentPassthroughInstance::execSetPriority },
-		{ "SetVisible", &UOculusXRPersistentPassthroughInstance::execSetVisible },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance;
 UClass* UOculusXRPersistentPassthroughInstance::GetPrivateStaticClass()
 {
@@ -538,7 +597,7 @@ UClass* UOculusXRPersistentPassthroughInstance::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRPersistentPassthroughInstance"),
 			Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance.InnerSingleton,
 			StaticRegisterNativesUOculusXRPersistentPassthroughInstance,
@@ -576,31 +635,45 @@ struct Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics
 		{ "ModuleRelativePath", "Public/OculusXRPersistentPassthroughInstance.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRPersistentPassthroughInstance constinit property declarations ***
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Parameters;
 	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnLayerResumed;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRPersistentPassthroughInstance constinit property declarations *****
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetPriority"), .Pointer = &UOculusXRPersistentPassthroughInstance::execGetPriority },
+		{ .NameUTF8 = UTF8TEXT("GetShape"), .Pointer = &UOculusXRPersistentPassthroughInstance::execGetShape },
+		{ .NameUTF8 = UTF8TEXT("IsVisible"), .Pointer = &UOculusXRPersistentPassthroughInstance::execIsVisible },
+		{ .NameUTF8 = UTF8TEXT("OnAnyLayerResumedEvent"), .Pointer = &UOculusXRPersistentPassthroughInstance::execOnAnyLayerResumedEvent },
+		{ .NameUTF8 = UTF8TEXT("SetPriority"), .Pointer = &UOculusXRPersistentPassthroughInstance::execSetPriority },
+		{ .NameUTF8 = UTF8TEXT("SetVisible"), .Pointer = &UOculusXRPersistentPassthroughInstance::execSetVisible },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority, "GetPriority" }, // 1985303783
-		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape, "GetShape" }, // 724705916
-		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible, "IsVisible" }, // 2254489750
-		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent, "OnAnyLayerResumedEvent" }, // 1825727977
-		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority, "SetPriority" }, // 4127510112
-		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible, "SetVisible" }, // 1925682889
+		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetPriority, "GetPriority" }, // 4185904111
+		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_GetShape, "GetShape" }, // 1919781678
+		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_IsVisible, "IsVisible" }, // 3341920086
+		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_OnAnyLayerResumedEvent, "OnAnyLayerResumedEvent" }, // 2765756420
+		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetPriority, "SetPriority" }, // 1954838711
+		{ &Z_Construct_UFunction_UOculusXRPersistentPassthroughInstance_SetVisible, "SetVisible" }, // 3194632320
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRPersistentPassthroughInstance>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::NewProp_Parameters = { "Parameters", nullptr, (EPropertyFlags)0x0020088000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPersistentPassthroughInstance, Parameters), Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Parameters_MetaData), NewProp_Parameters_MetaData) }; // 2491370005
-const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::NewProp_OnLayerResumed = { "OnLayerResumed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPersistentPassthroughInstance, OnLayerResumed), Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLayerResumed_MetaData), NewProp_OnLayerResumed_MetaData) }; // 2313892242
+}; // struct Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics
+
+// ********** Begin Class UOculusXRPersistentPassthroughInstance Property Definitions **************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::NewProp_Parameters = { "Parameters", nullptr, (EPropertyFlags)0x0020088000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPersistentPassthroughInstance, Parameters), Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Parameters_MetaData), NewProp_Parameters_MetaData) }; // 2449001077
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::NewProp_OnLayerResumed = { "OnLayerResumed", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRPersistentPassthroughInstance, OnLayerResumed), Z_Construct_UDelegateFunction_OculusXRHMD_OculusXRPassthrough_LayerResumed__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnLayerResumed_MetaData), NewProp_OnLayerResumed_MetaData) }; // 2522868857
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::NewProp_Parameters,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::NewProp_OnLayerResumed,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRPersistentPassthroughInstance Property Definitions ****************
 UObject* (*const Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRPassthrough,
@@ -621,6 +694,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRPersistentPass
 	0x00B010A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::Class_MetaDataParams)
 };
+void UOculusXRPersistentPassthroughInstance::StaticRegisterNativesUOculusXRPersistentPassthroughInstance()
+{
+	UClass* Class = UOculusXRPersistentPassthroughInstance::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRPersistentPassthroughInstance_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRPersistentPassthroughInstance()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance.OuterSingleton)
@@ -629,24 +707,26 @@ UClass* Z_Construct_UClass_UOculusXRPersistentPassthroughInstance()
 	}
 	return Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRPersistentPassthroughInstance);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRPersistentPassthroughInstance);
 UOculusXRPersistentPassthroughInstance::~UOculusXRPersistentPassthroughInstance() {}
 // ********** End Class UOculusXRPersistentPassthroughInstance *************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics
 {
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FOculusXRPersistentPassthroughParameters::StaticStruct, Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewStructOps, TEXT("OculusXRPersistentPassthroughParameters"), &Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRPersistentPassthroughParameters), 2491370005U) },
+		{ FOculusXRPersistentPassthroughParameters::StaticStruct, Z_Construct_UScriptStruct_FOculusXRPersistentPassthroughParameters_Statics::NewStructOps, TEXT("OculusXRPersistentPassthroughParameters"),&Z_Registration_Info_UScriptStruct_FOculusXRPersistentPassthroughParameters, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRPersistentPassthroughParameters), 2449001077U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, UOculusXRPersistentPassthroughInstance::StaticClass, TEXT("UOculusXRPersistentPassthroughInstance"), &Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRPersistentPassthroughInstance), 629548365U) },
+		{ Z_Construct_UClass_UOculusXRPersistentPassthroughInstance, UOculusXRPersistentPassthroughInstance::StaticClass, TEXT("UOculusXRPersistentPassthroughInstance"), &Z_Registration_Info_UClass_UOculusXRPersistentPassthroughInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRPersistentPassthroughInstance), 92570457U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_3243158667{
+	TEXT("/Script/OculusXRPassthrough"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo),
+	nullptr, 0,
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_175105037(TEXT("/Script/OculusXRPassthrough"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPersistentPassthroughInstance_h__Script_OculusXRPassthrough_Statics::ScriptStructInfo),
-	nullptr, 0);
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

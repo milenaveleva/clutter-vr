@@ -9,7 +9,7 @@
 #include "Engine/GameInstance.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRAsyncRequestSubsystem() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRAsyncRequest();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRAsyncRequestSubsystem *******************************************
-void UOculusXRAsyncRequestSubsystem::StaticRegisterNativesUOculusXRAsyncRequestSubsystem()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem;
 UClass* UOculusXRAsyncRequestSubsystem::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UOculusXRAsyncRequestSubsystem::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAsyncRequestSubsystem"),
 			Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem.InnerSingleton,
 			StaticRegisterNativesUOculusXRAsyncRequestSubsystem,
@@ -60,12 +57,15 @@ struct Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics
 		{ "ModuleRelativePath", "Private/OculusXRAsyncRequestSubsystem.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAsyncRequestSubsystem constinit property declarations ***********
+// ********** End Class UOculusXRAsyncRequestSubsystem constinit property declarations *************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAsyncRequestSubsystem>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UGameInstanceSubsystem,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAsyncRequest,
@@ -86,6 +86,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAsyncRequestSu
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAsyncRequestSubsystem_Statics::Class_MetaDataParams)
 };
+void UOculusXRAsyncRequestSubsystem::StaticRegisterNativesUOculusXRAsyncRequestSubsystem()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRAsyncRequestSubsystem()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem.OuterSingleton)
@@ -95,21 +98,23 @@ UClass* Z_Construct_UClass_UOculusXRAsyncRequestSubsystem()
 	return Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem.OuterSingleton;
 }
 UOculusXRAsyncRequestSubsystem::UOculusXRAsyncRequestSubsystem() {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAsyncRequestSubsystem);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAsyncRequestSubsystem);
 UOculusXRAsyncRequestSubsystem::~UOculusXRAsyncRequestSubsystem() {}
 // ********** End Class UOculusXRAsyncRequestSubsystem *********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRAsyncRequestSubsystem, UOculusXRAsyncRequestSubsystem::StaticClass, TEXT("UOculusXRAsyncRequestSubsystem"), &Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncRequestSubsystem), 2147934163U) },
+		{ Z_Construct_UClass_UOculusXRAsyncRequestSubsystem, UOculusXRAsyncRequestSubsystem::StaticClass, TEXT("UOculusXRAsyncRequestSubsystem"), &Z_Registration_Info_UClass_UOculusXRAsyncRequestSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAsyncRequestSubsystem), 970316956U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_2565277588(TEXT("/Script/OculusXRAsyncRequest"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_4099722195{
+	TEXT("/Script/OculusXRAsyncRequest"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAsyncRequest_Private_OculusXRAsyncRequestSubsystem_h__Script_OculusXRAsyncRequest_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

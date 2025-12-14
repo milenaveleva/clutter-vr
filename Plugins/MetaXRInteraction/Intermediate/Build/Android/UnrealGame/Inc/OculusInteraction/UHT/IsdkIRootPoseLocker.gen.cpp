@@ -8,7 +8,7 @@
 #include "DataSources/IsdkIRootPoseLocker.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIRootPoseLocker() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,7 +32,7 @@ static UEnum* EIsdkRootPoseLockMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkRootPoseLockMode.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkRootPoseLockMode>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkRootPoseLockMode>()
 {
 	return EIsdkRootPoseLockMode_StaticEnum();
 }
@@ -56,7 +56,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode_Statics
 		{ "EIsdkRootPoseLockMode::Full", (int64)EIsdkRootPoseLockMode::Full },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -97,7 +97,7 @@ void IIsdkIRootPoseLocker::Execute_FreeRootTransform(UObject* O, EIsdkRootPoseLo
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIRootPoseLocker_FreeRootTransform);
 	if (Func)
 	{
-		Parms.LockMode=LockMode;
+		Parms.LockMode=std::move(LockMode);
 		O->ProcessEvent(Func, &Parms);
 	}
 	else if (auto I = (IIsdkIRootPoseLocker*)(O->GetNativeInterfaceAddress(UIsdkIRootPoseLocker::StaticClass())))
@@ -113,19 +113,28 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPoseLocker.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function FreeRootTransform constinit property declarations *********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_LockMode_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_LockMode;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function FreeRootTransform constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function FreeRootTransform Property Definitions ********************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::NewProp_LockMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::NewProp_LockMode = { "LockMode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventFreeRootTransform_Parms, LockMode), Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode, METADATA_PARAMS(0, nullptr) }; // 2156352062
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::NewProp_LockMode = { "LockMode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventFreeRootTransform_Parms, LockMode), Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode, METADATA_PARAMS(0, nullptr) }; // 3809563883
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::NewProp_LockMode_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::NewProp_LockMode,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "FreeRootTransform", Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::PropPointers), sizeof(IsdkIRootPoseLocker_eventFreeRootTransform_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::Function_MetaDataParams)},  };
+// ********** End Function FreeRootTransform Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "FreeRootTransform", 	Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::PropPointers), 
+sizeof(IsdkIRootPoseLocker_eventFreeRootTransform_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPoseLocker_eventFreeRootTransform_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform()
 {
@@ -166,9 +175,9 @@ void IIsdkIRootPoseLocker::Execute_LockRootLocation(UObject* O, FVector const& P
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIRootPoseLocker_LockRootLocation);
 	if (Func)
 	{
-		Parms.Position=Position;
-		Parms.OverrideFactor=OverrideFactor;
-		Parms.bSkipAnimation=bSkipAnimation;
+		Parms.Position=std::move(Position);
+		Parms.OverrideFactor=std::move(OverrideFactor);
+		Parms.bSkipAnimation=std::move(bSkipAnimation);
 		O->ProcessEvent(Func, &Parms);
 	}
 	else if (auto I = (IIsdkIRootPoseLocker*)(O->GetNativeInterfaceAddress(UIsdkIRootPoseLocker::StaticClass())))
@@ -181,9 +190,13 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Fixes the location of the device's \"root pose\".\n/// @param Position relative to tracking space.\n/// @param OverrideFactor Lerp factor, between 0.0 (unlocked value) and 1.0 (provided, locked,\n/// value.\n/// @param bSkipAnimation When false, the implementation will animate from the previous state to\n/// the new state.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPoseLocker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fixes the location of the device's \"root pose\".\n@param Position relative to tracking space.\n@param OverrideFactor Lerp factor, between 0.0 (unlocked value) and 1.0 (provided, locked,\nvalue.\n@param bSkipAnimation When false, the implementation will animate from the previous state to\nthe new state." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Position_MetaData[] = {
 		{ "NativeConst", "" },
@@ -192,13 +205,18 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function LockRootLocation constinit property declarations **********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Position;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OverrideFactor;
 	static void NewProp_bSkipAnimation_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bSkipAnimation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function LockRootLocation constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function LockRootLocation Property Definitions *********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::NewProp_Position = { "Position", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootLocation_Parms, Position), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Position_MetaData), NewProp_Position_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::NewProp_OverrideFactor = { "OverrideFactor", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootLocation_Parms, OverrideFactor), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverrideFactor_MetaData), NewProp_OverrideFactor_MetaData) };
 void Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::NewProp_bSkipAnimation_SetBit(void* Obj)
@@ -212,7 +230,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::NewProp_bSkipAnimation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "LockRootLocation", Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::PropPointers), sizeof(IsdkIRootPoseLocker_eventLockRootLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::Function_MetaDataParams)},  };
+// ********** End Function LockRootLocation Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "LockRootLocation", 	Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::PropPointers), 
+sizeof(IsdkIRootPoseLocker_eventLockRootLocation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPoseLocker_eventLockRootLocation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation()
 {
@@ -255,9 +277,9 @@ void IIsdkIRootPoseLocker::Execute_LockRootRotation(UObject* O, FQuat const& Rot
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIRootPoseLocker_LockRootRotation);
 	if (Func)
 	{
-		Parms.Rotation=Rotation;
-		Parms.OverrideFactor=OverrideFactor;
-		Parms.bSkipAnimation=bSkipAnimation;
+		Parms.Rotation=std::move(Rotation);
+		Parms.OverrideFactor=std::move(OverrideFactor);
+		Parms.bSkipAnimation=std::move(bSkipAnimation);
 		O->ProcessEvent(Func, &Parms);
 	}
 	else if (auto I = (IIsdkIRootPoseLocker*)(O->GetNativeInterfaceAddress(UIsdkIRootPoseLocker::StaticClass())))
@@ -270,9 +292,13 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Fixes the roation of the device's \"root pose\".\n/// @param Rotation relative to tracking space.\n/// @param OverrideFactor Lerp factor, between 0.0 (unlocked value) and 1.0 (provided, locked,\n/// value.\n/// @param bSkipAnimation When false, the implementation will animate from the previous state to\n/// the new state.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPoseLocker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fixes the roation of the device's \"root pose\".\n@param Rotation relative to tracking space.\n@param OverrideFactor Lerp factor, between 0.0 (unlocked value) and 1.0 (provided, locked,\nvalue.\n@param bSkipAnimation When false, the implementation will animate from the previous state to\nthe new state." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Rotation_MetaData[] = {
 		{ "NativeConst", "" },
@@ -281,13 +307,18 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function LockRootRotation constinit property declarations **********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Rotation;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OverrideFactor;
 	static void NewProp_bSkipAnimation_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bSkipAnimation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function LockRootRotation constinit property declarations ************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function LockRootRotation Property Definitions *********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::NewProp_Rotation = { "Rotation", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootRotation_Parms, Rotation), Z_Construct_UScriptStruct_FQuat, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Rotation_MetaData), NewProp_Rotation_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::NewProp_OverrideFactor = { "OverrideFactor", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootRotation_Parms, OverrideFactor), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverrideFactor_MetaData), NewProp_OverrideFactor_MetaData) };
 void Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::NewProp_bSkipAnimation_SetBit(void* Obj)
@@ -301,7 +332,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::NewProp_bSkipAnimation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "LockRootRotation", Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::PropPointers), sizeof(IsdkIRootPoseLocker_eventLockRootRotation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::Function_MetaDataParams)},  };
+// ********** End Function LockRootRotation Property Definitions ***********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "LockRootRotation", 	Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::PropPointers), 
+sizeof(IsdkIRootPoseLocker_eventLockRootRotation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPoseLocker_eventLockRootRotation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation()
 {
@@ -345,10 +380,10 @@ void IIsdkIRootPoseLocker::Execute_LockRootTransform(UObject* O, FTransform cons
 	UFunction* const Func = O->FindFunction(NAME_UIsdkIRootPoseLocker_LockRootTransform);
 	if (Func)
 	{
-		Parms.Transform=Transform;
-		Parms.OverrideFactor=OverrideFactor;
-		Parms.LockMode=LockMode;
-		Parms.bSkipAnimation=bSkipAnimation;
+		Parms.Transform=std::move(Transform);
+		Parms.OverrideFactor=std::move(OverrideFactor);
+		Parms.LockMode=std::move(LockMode);
+		Parms.bSkipAnimation=std::move(bSkipAnimation);
 		O->ProcessEvent(Func, &Parms);
 	}
 	else if (auto I = (IIsdkIRootPoseLocker*)(O->GetNativeInterfaceAddress(UIsdkIRootPoseLocker::StaticClass())))
@@ -361,9 +396,13 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/// Fixes the location and/or rotation of the device's \"root pose\".\n/// @param Transform Locks both Location and Rotation, relative to tracking space\n/// @param OverrideFactor Lerp factor, between 0.0 (unlocked value) and 1.0 (provided, locked,\n/// value.\n/// @param LockMode Specify which of Location, Rotation to lock. Modes not present in this bitmask\n/// will not be freed - FreeRootTransform must be explicitly called to unlock.\n/// @param bSkipAnimation When false, the implementation will animate from the previous state to\n/// the new state.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPoseLocker.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Fixes the location and/or rotation of the device's \"root pose\".\n@param Transform Locks both Location and Rotation, relative to tracking space\n@param OverrideFactor Lerp factor, between 0.0 (unlocked value) and 1.0 (provided, locked,\nvalue.\n@param LockMode Specify which of Location, Rotation to lock. Modes not present in this bitmask\nwill not be freed - FreeRootTransform must be explicitly called to unlock.\n@param bSkipAnimation When false, the implementation will animate from the previous state to\nthe new state." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Transform_MetaData[] = {
 		{ "NativeConst", "" },
@@ -372,6 +411,8 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function LockRootTransform constinit property declarations *********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Transform;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_OverrideFactor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_LockMode_Underlying;
@@ -379,12 +420,15 @@ struct Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics
 	static void NewProp_bSkipAnimation_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bSkipAnimation;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function LockRootTransform constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function LockRootTransform Property Definitions ********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_Transform = { "Transform", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootTransform_Parms, Transform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Transform_MetaData), NewProp_Transform_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_OverrideFactor = { "OverrideFactor", nullptr, (EPropertyFlags)0x0010000000000082, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootTransform_Parms, OverrideFactor), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OverrideFactor_MetaData), NewProp_OverrideFactor_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_LockMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_LockMode = { "LockMode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootTransform_Parms, LockMode), Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode, METADATA_PARAMS(0, nullptr) }; // 2156352062
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_LockMode = { "LockMode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIRootPoseLocker_eventLockRootTransform_Parms, LockMode), Z_Construct_UEnum_OculusInteraction_EIsdkRootPoseLockMode, METADATA_PARAMS(0, nullptr) }; // 3809563883
 void Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_bSkipAnimation_SetBit(void* Obj)
 {
 	((IsdkIRootPoseLocker_eventLockRootTransform_Parms*)Obj)->bSkipAnimation = 1;
@@ -398,7 +442,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::NewProp_bSkipAnimation,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "LockRootTransform", Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::PropPointers), sizeof(IsdkIRootPoseLocker_eventLockRootTransform_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::Function_MetaDataParams)},  };
+// ********** End Function LockRootTransform Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIRootPoseLocker, nullptr, "LockRootTransform", 	Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::PropPointers), 
+sizeof(IsdkIRootPoseLocker_eventLockRootTransform_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08C20C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIRootPoseLocker_eventLockRootTransform_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform()
 {
@@ -423,17 +471,6 @@ DEFINE_FUNCTION(IIsdkIRootPoseLocker::execLockRootTransform)
 // ********** End Interface UIsdkIRootPoseLocker Function LockRootTransform ************************
 
 // ********** Begin Interface UIsdkIRootPoseLocker *************************************************
-void UIsdkIRootPoseLocker::StaticRegisterNativesUIsdkIRootPoseLocker()
-{
-	UClass* Class = UIsdkIRootPoseLocker::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "FreeRootTransform", &IIsdkIRootPoseLocker::execFreeRootTransform },
-		{ "LockRootLocation", &IIsdkIRootPoseLocker::execLockRootLocation },
-		{ "LockRootRotation", &IIsdkIRootPoseLocker::execLockRootRotation },
-		{ "LockRootTransform", &IIsdkIRootPoseLocker::execLockRootTransform },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIRootPoseLocker;
 UClass* UIsdkIRootPoseLocker::GetPrivateStaticClass()
 {
@@ -441,7 +478,7 @@ UClass* UIsdkIRootPoseLocker::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIRootPoseLocker.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIRootPoseLocker"),
 			Z_Registration_Info_UClass_UIsdkIRootPoseLocker.InnerSingleton,
 			StaticRegisterNativesUIsdkIRootPoseLocker,
@@ -473,19 +510,28 @@ struct Z_Construct_UClass_UIsdkIRootPoseLocker_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIRootPoseLocker.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIRootPoseLocker constinit property declarations *****************
+// ********** End Interface UIsdkIRootPoseLocker constinit property declarations *******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("FreeRootTransform"), .Pointer = &IIsdkIRootPoseLocker::execFreeRootTransform },
+		{ .NameUTF8 = UTF8TEXT("LockRootLocation"), .Pointer = &IIsdkIRootPoseLocker::execLockRootLocation },
+		{ .NameUTF8 = UTF8TEXT("LockRootRotation"), .Pointer = &IIsdkIRootPoseLocker::execLockRootRotation },
+		{ .NameUTF8 = UTF8TEXT("LockRootTransform"), .Pointer = &IIsdkIRootPoseLocker::execLockRootTransform },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform, "FreeRootTransform" }, // 444958525
-		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation, "LockRootLocation" }, // 3015379811
-		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation, "LockRootRotation" }, // 1336956871
-		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform, "LockRootTransform" }, // 584353056
+		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_FreeRootTransform, "FreeRootTransform" }, // 2089347997
+		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootLocation, "LockRootLocation" }, // 2952940010
+		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootRotation, "LockRootRotation" }, // 929471652
+		{ &Z_Construct_UFunction_UIsdkIRootPoseLocker_LockRootTransform, "LockRootTransform" }, // 3536440000
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIRootPoseLocker>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIRootPoseLocker_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIRootPoseLocker_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -506,6 +552,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIRootPoseLocker_St
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIRootPoseLocker_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIRootPoseLocker_Statics::Class_MetaDataParams)
 };
+void UIsdkIRootPoseLocker::StaticRegisterNativesUIsdkIRootPoseLocker()
+{
+	UClass* Class = UIsdkIRootPoseLocker::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIRootPoseLocker_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIRootPoseLocker()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIRootPoseLocker.OuterSingleton)
@@ -515,23 +566,25 @@ UClass* Z_Construct_UClass_UIsdkIRootPoseLocker()
 	return Z_Registration_Info_UClass_UIsdkIRootPoseLocker.OuterSingleton;
 }
 UIsdkIRootPoseLocker::UIsdkIRootPoseLocker(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIRootPoseLocker);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIRootPoseLocker);
 // ********** End Interface UIsdkIRootPoseLocker ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkRootPoseLockMode_StaticEnum, TEXT("EIsdkRootPoseLockMode"), &Z_Registration_Info_UEnum_EIsdkRootPoseLockMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2156352062U) },
+		{ EIsdkRootPoseLockMode_StaticEnum, TEXT("EIsdkRootPoseLockMode"), &Z_Registration_Info_UEnum_EIsdkRootPoseLockMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3809563883U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIRootPoseLocker, UIsdkIRootPoseLocker::StaticClass, TEXT("UIsdkIRootPoseLocker"), &Z_Registration_Info_UClass_UIsdkIRootPoseLocker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIRootPoseLocker), 2107323169U) },
+		{ Z_Construct_UClass_UIsdkIRootPoseLocker, UIsdkIRootPoseLocker::StaticClass, TEXT("UIsdkIRootPoseLocker"), &Z_Registration_Info_UClass_UIsdkIRootPoseLocker, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIRootPoseLocker), 3482934928U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_1430673739(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_3404837512{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIRootPoseLocker_h__Script_OculusInteraction_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

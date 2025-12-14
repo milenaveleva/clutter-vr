@@ -8,7 +8,7 @@
 #include "Core/IsdkConditionalGroupAll.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkConditionalGroupAll() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkConditionalGroupAll *************************************************
-void UIsdkConditionalGroupAll::StaticRegisterNativesUIsdkConditionalGroupAll()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkConditionalGroupAll;
 UClass* UIsdkConditionalGroupAll::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkConditionalGroupAll::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkConditionalGroupAll.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkConditionalGroupAll"),
 			Z_Registration_Info_UClass_UIsdkConditionalGroupAll.InnerSingleton,
 			StaticRegisterNativesUIsdkConditionalGroupAll,
@@ -57,19 +54,26 @@ struct Z_Construct_UClass_UIsdkConditionalGroupAll_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkConditionalGroupAll\n * @brief Conditional Group that resolves true if ALL contained conditionals are true\n *\n * @see UIsdkConditional\n * @see UIsdkConditionalGroupAll\n * @see UIsdkConditionalGroupAny\n * @see UIsdkConditionalGroupNone\n * @see UIsdkConditionalGroupSingle\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "Core/IsdkConditionalGroupAll.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Core/IsdkConditionalGroupAll.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkConditionalGroupAll\n@brief Conditional Group that resolves true if ALL contained conditionals are true\n\n@see UIsdkConditional\n@see UIsdkConditionalGroupAll\n@see UIsdkConditionalGroupAny\n@see UIsdkConditionalGroupNone\n@see UIsdkConditionalGroupSingle\n@addtogroup InteractionSDK" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkConditionalGroupAll constinit property declarations *****************
+// ********** End Class UIsdkConditionalGroupAll constinit property declarations *******************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkConditionalGroupAll>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkConditionalGroupAll_Statics
 UObject* (*const Z_Construct_UClass_UIsdkConditionalGroupAll_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkConditionalGroup,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -90,6 +94,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkConditionalGroupAl
 	0x00B000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkConditionalGroupAll_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkConditionalGroupAll_Statics::Class_MetaDataParams)
 };
+void UIsdkConditionalGroupAll::StaticRegisterNativesUIsdkConditionalGroupAll()
+{
+}
 UClass* Z_Construct_UClass_UIsdkConditionalGroupAll()
 {
 	if (!Z_Registration_Info_UClass_UIsdkConditionalGroupAll.OuterSingleton)
@@ -98,21 +105,23 @@ UClass* Z_Construct_UClass_UIsdkConditionalGroupAll()
 	}
 	return Z_Registration_Info_UClass_UIsdkConditionalGroupAll.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkConditionalGroupAll);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkConditionalGroupAll);
 UIsdkConditionalGroupAll::~UIsdkConditionalGroupAll() {}
 // ********** End Class UIsdkConditionalGroupAll ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkConditionalGroupAll, UIsdkConditionalGroupAll::StaticClass, TEXT("UIsdkConditionalGroupAll"), &Z_Registration_Info_UClass_UIsdkConditionalGroupAll, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalGroupAll), 2765215533U) },
+		{ Z_Construct_UClass_UIsdkConditionalGroupAll, UIsdkConditionalGroupAll::StaticClass, TEXT("UIsdkConditionalGroupAll"), &Z_Registration_Info_UClass_UIsdkConditionalGroupAll, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkConditionalGroupAll), 1865824880U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_3820645655(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_4043868819{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Core_IsdkConditionalGroupAll_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

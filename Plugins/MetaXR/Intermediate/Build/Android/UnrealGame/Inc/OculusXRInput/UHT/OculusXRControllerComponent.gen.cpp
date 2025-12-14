@@ -8,7 +8,7 @@
 #include "OculusXRControllerComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRControllerComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRInput();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRControllerComponent *********************************************
-void UOculusXRControllerComponent::StaticRegisterNativesUOculusXRControllerComponent()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRControllerComponent;
 UClass* UOculusXRControllerComponent::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UOculusXRControllerComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRControllerComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRControllerComponent"),
 			Z_Registration_Info_UClass_UOculusXRControllerComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRControllerComponent,
@@ -66,30 +63,43 @@ struct Z_Construct_UClass_UOculusXRControllerComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SkeletonType_MetaData[] = {
 		{ "Category", "Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** The skeleton that will be loaded */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRControllerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The skeleton that will be loaded" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RenderWhenUsingControllerDrivenHands_MetaData[] = {
 		{ "Category", "Properties" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/** Should this controller be rendered when using controller driven hand poses */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRControllerComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Should this controller be rendered when using controller driven hand poses" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRControllerComponent constinit property declarations *************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_SkeletonType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_SkeletonType;
 	static void NewProp_RenderWhenUsingControllerDrivenHands_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_RenderWhenUsingControllerDrivenHands;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRControllerComponent constinit property declarations ***************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRControllerComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRControllerComponent_Statics
+
+// ********** Begin Class UOculusXRControllerComponent Property Definitions ************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UOculusXRControllerComponent_Statics::NewProp_SkeletonType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRControllerComponent_Statics::NewProp_SkeletonType = { "SkeletonType", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRControllerComponent, SkeletonType), Z_Construct_UEnum_OculusXRInput_EOculusXRSide, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkeletonType_MetaData), NewProp_SkeletonType_MetaData) }; // 3337296388
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRControllerComponent_Statics::NewProp_SkeletonType = { "SkeletonType", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRControllerComponent, SkeletonType), Z_Construct_UEnum_OculusXRInput_EOculusXRSide, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SkeletonType_MetaData), NewProp_SkeletonType_MetaData) }; // 2069127555
 void Z_Construct_UClass_UOculusXRControllerComponent_Statics::NewProp_RenderWhenUsingControllerDrivenHands_SetBit(void* Obj)
 {
 	((UOculusXRControllerComponent*)Obj)->RenderWhenUsingControllerDrivenHands = 1;
@@ -101,6 +111,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRControllerComponent_Statics::NewProp_RenderWhenUsingControllerDrivenHands,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRControllerComponent_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRControllerComponent Property Definitions **************************
 UObject* (*const Z_Construct_UClass_UOculusXRControllerComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UStaticMeshComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRInput,
@@ -121,6 +132,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRControllerComp
 	0x00A010A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRControllerComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRControllerComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRControllerComponent::StaticRegisterNativesUOculusXRControllerComponent()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRControllerComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRControllerComponent.OuterSingleton)
@@ -129,21 +143,23 @@ UClass* Z_Construct_UClass_UOculusXRControllerComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRControllerComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRControllerComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRControllerComponent);
 UOculusXRControllerComponent::~UOculusXRControllerComponent() {}
 // ********** End Class UOculusXRControllerComponent ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRControllerComponent, UOculusXRControllerComponent::StaticClass, TEXT("UOculusXRControllerComponent"), &Z_Registration_Info_UClass_UOculusXRControllerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRControllerComponent), 1969149624U) },
+		{ Z_Construct_UClass_UOculusXRControllerComponent, UOculusXRControllerComponent::StaticClass, TEXT("UOculusXRControllerComponent"), &Z_Registration_Info_UClass_UOculusXRControllerComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRControllerComponent), 1939864849U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_4094396289(TEXT("/Script/OculusXRInput"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_1799393576{
+	TEXT("/Script/OculusXRInput"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h__Script_OculusXRInput_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

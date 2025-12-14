@@ -8,7 +8,7 @@
 #include "Tools/IsdkObjectDebugUI.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkObjectDebugUI() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkObjectDebugUI *******************************************************
-void UIsdkObjectDebugUI::StaticRegisterNativesUIsdkObjectDebugUI()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkObjectDebugUI;
 UClass* UIsdkObjectDebugUI::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkObjectDebugUI::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkObjectDebugUI.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkObjectDebugUI"),
 			Z_Registration_Info_UClass_UIsdkObjectDebugUI.InnerSingleton,
 			StaticRegisterNativesUIsdkObjectDebugUI,
@@ -70,19 +67,25 @@ struct Z_Construct_UClass_UIsdkObjectDebugUI_Statics
 		{ "ModuleRelativePath", "Public/Tools/IsdkObjectDebugUI.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkObjectDebugUI constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_TextComp;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkObjectDebugUI constinit property declarations *************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkObjectDebugUI>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkObjectDebugUI_Statics
+
+// ********** Begin Class UIsdkObjectDebugUI Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkObjectDebugUI_Statics::NewProp_TextComp = { "TextComp", nullptr, (EPropertyFlags)0x0040000000080008, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkObjectDebugUI, TextComp), Z_Construct_UClass_UTextRenderComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TextComp_MetaData), NewProp_TextComp_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkObjectDebugUI_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkObjectDebugUI_Statics::NewProp_TextComp,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkObjectDebugUI_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkObjectDebugUI Property Definitions ************************************
 UObject* (*const Z_Construct_UClass_UIsdkObjectDebugUI_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -103,6 +106,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkObjectDebugUI_Stat
 	0x00A000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkObjectDebugUI_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkObjectDebugUI_Statics::Class_MetaDataParams)
 };
+void UIsdkObjectDebugUI::StaticRegisterNativesUIsdkObjectDebugUI()
+{
+}
 UClass* Z_Construct_UClass_UIsdkObjectDebugUI()
 {
 	if (!Z_Registration_Info_UClass_UIsdkObjectDebugUI.OuterSingleton)
@@ -111,21 +117,23 @@ UClass* Z_Construct_UClass_UIsdkObjectDebugUI()
 	}
 	return Z_Registration_Info_UClass_UIsdkObjectDebugUI.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkObjectDebugUI);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkObjectDebugUI);
 UIsdkObjectDebugUI::~UIsdkObjectDebugUI() {}
 // ********** End Class UIsdkObjectDebugUI *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkObjectDebugUI, UIsdkObjectDebugUI::StaticClass, TEXT("UIsdkObjectDebugUI"), &Z_Registration_Info_UClass_UIsdkObjectDebugUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkObjectDebugUI), 2349020178U) },
+		{ Z_Construct_UClass_UIsdkObjectDebugUI, UIsdkObjectDebugUI::StaticClass, TEXT("UIsdkObjectDebugUI"), &Z_Registration_Info_UClass_UIsdkObjectDebugUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkObjectDebugUI), 448732717U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_2009265811(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_772673008{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Tools_IsdkObjectDebugUI_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

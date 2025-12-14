@@ -8,7 +8,7 @@
 #include "DataSources/IsdkFromMetaXRHmdDataSource.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkFromMetaXRHmdDataSource() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_IsdkDataSourcesMetaXR();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkFromMetaXRHmdDataSource *********************************************
-void UIsdkFromMetaXRHmdDataSource::StaticRegisterNativesUIsdkFromMetaXRHmdDataSource()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource;
 UClass* UIsdkFromMetaXRHmdDataSource::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkFromMetaXRHmdDataSource::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkFromMetaXRHmdDataSource"),
 			Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource.InnerSingleton,
 			StaticRegisterNativesUIsdkFromMetaXRHmdDataSource,
@@ -58,27 +55,34 @@ struct Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkFromMetaXRHmdDataSource\n * @brief Manages HMD tracking data from the MetaXR plugin and helps integrate into your VR project.\n *\n * This class facilitates the integration of HMD tracking data from the MetaXR plugin by providing\n * access to essential information such as the headset's poses and tracking state. It ensures that\n * this data is updated each frame, maintaining its relevance throughout the application's\n * lifecycle. An instance of this data source is created in the Interaction SDK's prebuilt rig\n * component via UIsdkTrackedDataSourceRigComponent.\n *\n * @see IIsdkIHmdDataSource\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "DisplayName", "ISDK From MetaXR HMD Data Source" },
 		{ "IncludePath", "DataSources/IsdkFromMetaXRHmdDataSource.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromMetaXRHmdDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkFromMetaXRHmdDataSource\n@brief Manages HMD tracking data from the MetaXR plugin and helps integrate into your VR project.\n\nThis class facilitates the integration of HMD tracking data from the MetaXR plugin by providing\naccess to essential information such as the headset's poses and tracking state. It ensures that\nthis data is updated each frame, maintaining its relevance throughout the application's\nlifecycle. An instance of this data source is created in the Interaction SDK's prebuilt rig\ncomponent via UIsdkTrackedDataSourceRigComponent.\n\n@see IIsdkIHmdDataSource\n@addtogroup InteractionSDK" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkFromMetaXRHmdDataSource constinit property declarations *************
+// ********** End Class UIsdkFromMetaXRHmdDataSource constinit property declarations ***************
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkFromMetaXRHmdDataSource>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics
 UObject* (*const Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_IsdkDataSourcesMetaXR,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIHmdDataSource_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromMetaXRHmdDataSource, IIsdkIHmdDataSource), false },  // 1922529606
+	{ Z_Construct_UClass_UIsdkIHmdDataSource_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromMetaXRHmdDataSource, IIsdkIHmdDataSource), false },  // 2633044703
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics::ClassParams = {
 	&UIsdkFromMetaXRHmdDataSource::StaticClass,
@@ -95,6 +99,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFromMetaXRHmdDataS
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource_Statics::Class_MetaDataParams)
 };
+void UIsdkFromMetaXRHmdDataSource::StaticRegisterNativesUIsdkFromMetaXRHmdDataSource()
+{
+}
 UClass* Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource()
 {
 	if (!Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource.OuterSingleton)
@@ -104,21 +111,23 @@ UClass* Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource()
 	return Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource.OuterSingleton;
 }
 UIsdkFromMetaXRHmdDataSource::UIsdkFromMetaXRHmdDataSource(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkFromMetaXRHmdDataSource);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkFromMetaXRHmdDataSource);
 UIsdkFromMetaXRHmdDataSource::~UIsdkFromMetaXRHmdDataSource() {}
 // ********** End Class UIsdkFromMetaXRHmdDataSource ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource, UIsdkFromMetaXRHmdDataSource::StaticClass, TEXT("UIsdkFromMetaXRHmdDataSource"), &Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFromMetaXRHmdDataSource), 3955790853U) },
+		{ Z_Construct_UClass_UIsdkFromMetaXRHmdDataSource, UIsdkFromMetaXRHmdDataSource::StaticClass, TEXT("UIsdkFromMetaXRHmdDataSource"), &Z_Registration_Info_UClass_UIsdkFromMetaXRHmdDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFromMetaXRHmdDataSource), 2907466452U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_3826362946(TEXT("/Script/IsdkDataSourcesMetaXR"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_2305416456{
+	TEXT("/Script/IsdkDataSourcesMetaXR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesMetaXR_Public_DataSources_IsdkFromMetaXRHmdDataSource_h__Script_IsdkDataSourcesMetaXR_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -12,6 +12,7 @@
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRHandComponent.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRHandTracking.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRInput.cpp"
+#include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRInputExtensionPlugin.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRInputFunctionLibrary.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRInputHandTrackingExtensionPlugin.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRInput/Private/OculusXRInputHapticsExtensionPlugin.cpp"

@@ -8,7 +8,7 @@
 #include "DataSources/IsdkFromOpenXRHmdDataSource.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkFromOpenXRHmdDataSource() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_IsdkDataSourcesOpenXR();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkFromOpenXRHmdDataSource *********************************************
-void UIsdkFromOpenXRHmdDataSource::StaticRegisterNativesUIsdkFromOpenXRHmdDataSource()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource;
 UClass* UIsdkFromOpenXRHmdDataSource::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UIsdkFromOpenXRHmdDataSource::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkFromOpenXRHmdDataSource"),
 			Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource.InnerSingleton,
 			StaticRegisterNativesUIsdkFromOpenXRHmdDataSource,
@@ -58,26 +55,33 @@ struct Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkFromOpenXRHmdDataSource\n * @brief Manages OpenXR HMD tracking data and helps integrate into your VR project.\n *\n * This class facilitates the integration of OpenXR HMD tracking data by providing access to\n * essential information such as the headset's poses and tracking state. It ensures that this data\n * is updated each frame, maintaining its relevance throughout the application's lifecycle. An\n * instance of this data source is created in the Interaction SDK's prebuilt rig component via\n * UIsdkTrackedDataSourceRigComponent.\n *\n * @see IIsdkIHmdDataSource\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "IncludePath", "DataSources/IsdkFromOpenXRHmdDataSource.h" },
 		{ "ModuleRelativePath", "Public/DataSources/IsdkFromOpenXRHmdDataSource.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkFromOpenXRHmdDataSource\n@brief Manages OpenXR HMD tracking data and helps integrate into your VR project.\n\nThis class facilitates the integration of OpenXR HMD tracking data by providing access to\nessential information such as the headset's poses and tracking state. It ensures that this data\nis updated each frame, maintaining its relevance throughout the application's lifecycle. An\ninstance of this data source is created in the Interaction SDK's prebuilt rig component via\nUIsdkTrackedDataSourceRigComponent.\n\n@see IIsdkIHmdDataSource\n@addtogroup InteractionSDK" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkFromOpenXRHmdDataSource constinit property declarations *************
+// ********** End Class UIsdkFromOpenXRHmdDataSource constinit property declarations ***************
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkFromOpenXRHmdDataSource>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics
 UObject* (*const Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_IsdkDataSourcesOpenXR,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UIsdkIHmdDataSource_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromOpenXRHmdDataSource, IIsdkIHmdDataSource), false },  // 1922529606
+	{ Z_Construct_UClass_UIsdkIHmdDataSource_NoRegister, (int32)VTABLE_OFFSET(UIsdkFromOpenXRHmdDataSource, IIsdkIHmdDataSource), false },  // 2633044703
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics::ClassParams = {
 	&UIsdkFromOpenXRHmdDataSource::StaticClass,
@@ -94,6 +98,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkFromOpenXRHmdDataS
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource_Statics::Class_MetaDataParams)
 };
+void UIsdkFromOpenXRHmdDataSource::StaticRegisterNativesUIsdkFromOpenXRHmdDataSource()
+{
+}
 UClass* Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource()
 {
 	if (!Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource.OuterSingleton)
@@ -102,21 +109,23 @@ UClass* Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource()
 	}
 	return Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkFromOpenXRHmdDataSource);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkFromOpenXRHmdDataSource);
 UIsdkFromOpenXRHmdDataSource::~UIsdkFromOpenXRHmdDataSource() {}
 // ********** End Class UIsdkFromOpenXRHmdDataSource ***********************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource, UIsdkFromOpenXRHmdDataSource::StaticClass, TEXT("UIsdkFromOpenXRHmdDataSource"), &Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFromOpenXRHmdDataSource), 4060921889U) },
+		{ Z_Construct_UClass_UIsdkFromOpenXRHmdDataSource, UIsdkFromOpenXRHmdDataSource::StaticClass, TEXT("UIsdkFromOpenXRHmdDataSource"), &Z_Registration_Info_UClass_UIsdkFromOpenXRHmdDataSource, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkFromOpenXRHmdDataSource), 686022804U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_345724632(TEXT("/Script/IsdkDataSourcesOpenXR"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_563754547{
+	TEXT("/Script/IsdkDataSourcesOpenXR"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_IsdkDataSourcesOpenXR_Public_DataSources_IsdkFromOpenXRHmdDataSource_h__Script_IsdkDataSourcesOpenXR_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

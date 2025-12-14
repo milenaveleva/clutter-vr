@@ -9,7 +9,7 @@
 #include "Interaction/IsdkIInteractorState.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHandPoseRigModifier() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,24 +32,37 @@ struct Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent
 	};
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/* The handler for the state event delegate that the Interactors will be firing, used for\n   * comparing requirements for triggering. */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkHandPoseRigModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The handler for the state event delegate that the Interactors will be firing, used for\n  * comparing requirements for triggering." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_StateEvent_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleInteractorStateEvent constinit property declarations ************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_StateEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HandleInteractorStateEvent constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::NewProp_StateEvent = { "StateEvent", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseRigModifier_eventHandleInteractorStateEvent_Parms, StateEvent), Z_Construct_UScriptStruct_FIsdkInteractorStateEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StateEvent_MetaData), NewProp_StateEvent_MetaData) }; // 2370767474
+
+// ********** Begin Function HandleInteractorStateEvent Property Definitions ***********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::NewProp_StateEvent = { "StateEvent", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkHandPoseRigModifier_eventHandleInteractorStateEvent_Parms, StateEvent), Z_Construct_UScriptStruct_FIsdkInteractorStateEvent, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_StateEvent_MetaData), NewProp_StateEvent_MetaData) }; // 2886564601
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::NewProp_StateEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseRigModifier, nullptr, "HandleInteractorStateEvent", Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::IsdkHandPoseRigModifier_eventHandleInteractorStateEvent_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::Function_MetaDataParams)},  };
+// ********** End Function HandleInteractorStateEvent Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkHandPoseRigModifier, nullptr, "HandleInteractorStateEvent", 	Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::IsdkHandPoseRigModifier_eventHandleInteractorStateEvent_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00440401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent_Statics::IsdkHandPoseRigModifier_eventHandleInteractorStateEvent_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent()
 {
@@ -71,14 +84,6 @@ DEFINE_FUNCTION(UIsdkHandPoseRigModifier::execHandleInteractorStateEvent)
 // ********** End Class UIsdkHandPoseRigModifier Function HandleInteractorStateEvent ***************
 
 // ********** Begin Class UIsdkHandPoseRigModifier *************************************************
-void UIsdkHandPoseRigModifier::StaticRegisterNativesUIsdkHandPoseRigModifier()
-{
-	UClass* Class = UIsdkHandPoseRigModifier::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "HandleInteractorStateEvent", &UIsdkHandPoseRigModifier::execHandleInteractorStateEvent },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHandPoseRigModifier;
 UClass* UIsdkHandPoseRigModifier::GetPrivateStaticClass()
 {
@@ -86,7 +91,7 @@ UClass* UIsdkHandPoseRigModifier::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHandPoseRigModifier.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHandPoseRigModifier"),
 			Z_Registration_Info_UClass_UIsdkHandPoseRigModifier.InnerSingleton,
 			StaticRegisterNativesUIsdkHandPoseRigModifier,
@@ -114,11 +119,15 @@ struct Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/*\n  A Prebuilt Rig Modifier that will initiate a hand pose override when certain conditions are met,\n  with the defined triggers and gameplay tags.\n*/" },
+#endif
 		{ "IncludePath", "Rig/IsdkHandPoseRigModifier.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkHandPoseRigModifier.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A Prebuilt Rig Modifier that will initiate a hand pose override when certain conditions are met,\nwith the defined triggers and gameplay tags." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandMeshComponent_MetaData[] = {
 		{ "EditInline", "true" },
@@ -141,6 +150,8 @@ struct Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics
 		{ "ModuleRelativePath", "Public/Rig/IsdkHandPoseRigModifier.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkHandPoseRigModifier constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandMeshComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_SyntheticHandMeshComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_HandPoseSubsystem;
@@ -151,21 +162,27 @@ struct Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics
 	static void NewProp_bControllerRig_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bControllerRig;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkHandPoseRigModifier constinit property declarations *******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("HandleInteractorStateEvent"), .Pointer = &UIsdkHandPoseRigModifier::execHandleInteractorStateEvent },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent, "HandleInteractorStateEvent" }, // 2291716351
+		{ &Z_Construct_UFunction_UIsdkHandPoseRigModifier_HandleInteractorStateEvent, "HandleInteractorStateEvent" }, // 2178593225
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkHandPoseRigModifier>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics
+
+// ********** Begin Class UIsdkHandPoseRigModifier Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_HandMeshComponent = { "HandMeshComponent", nullptr, (EPropertyFlags)0x0144000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseRigModifier, HandMeshComponent), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandMeshComponent_MetaData), NewProp_HandMeshComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_SyntheticHandMeshComponent = { "SyntheticHandMeshComponent", nullptr, (EPropertyFlags)0x0144000000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseRigModifier, SyntheticHandMeshComponent), Z_Construct_UClass_UIsdkHandMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SyntheticHandMeshComponent_MetaData), NewProp_SyntheticHandMeshComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_HandPoseSubsystem = { "HandPoseSubsystem", nullptr, (EPropertyFlags)0x0144000000000000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseRigModifier, HandPoseSubsystem), Z_Construct_UClass_UIsdkHandPoseSubsystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandPoseSubsystem_MetaData), NewProp_HandPoseSubsystem_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_Handedness_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseRigModifier, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 49432891
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkHandPoseRigModifier, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 2143392285
 void Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_bHandPoseEngaged_SetBit(void* Obj)
 {
 	((UIsdkHandPoseRigModifier*)Obj)->bHandPoseEngaged = 1;
@@ -186,6 +203,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkHand
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::NewProp_bControllerRig,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkHandPoseRigModifier Property Definitions ******************************
 UObject* (*const Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkRigModifier,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -206,6 +224,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHandPoseRigModifie
 	0x009000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::Class_MetaDataParams)
 };
+void UIsdkHandPoseRigModifier::StaticRegisterNativesUIsdkHandPoseRigModifier()
+{
+	UClass* Class = UIsdkHandPoseRigModifier::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkHandPoseRigModifier_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkHandPoseRigModifier()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHandPoseRigModifier.OuterSingleton)
@@ -214,21 +237,23 @@ UClass* Z_Construct_UClass_UIsdkHandPoseRigModifier()
 	}
 	return Z_Registration_Info_UClass_UIsdkHandPoseRigModifier.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHandPoseRigModifier);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHandPoseRigModifier);
 UIsdkHandPoseRigModifier::~UIsdkHandPoseRigModifier() {}
 // ********** End Class UIsdkHandPoseRigModifier ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHandPoseRigModifier, UIsdkHandPoseRigModifier::StaticClass, TEXT("UIsdkHandPoseRigModifier"), &Z_Registration_Info_UClass_UIsdkHandPoseRigModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandPoseRigModifier), 980528158U) },
+		{ Z_Construct_UClass_UIsdkHandPoseRigModifier, UIsdkHandPoseRigModifier::StaticClass, TEXT("UIsdkHandPoseRigModifier"), &Z_Registration_Info_UClass_UIsdkHandPoseRigModifier, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHandPoseRigModifier), 1270068050U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_2847745589(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_254069318{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkHandPoseRigModifier_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

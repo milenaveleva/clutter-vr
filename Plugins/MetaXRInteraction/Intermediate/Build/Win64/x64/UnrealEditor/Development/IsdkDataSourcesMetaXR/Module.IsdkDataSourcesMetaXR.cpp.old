@@ -8,7 +8,6 @@
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/DataSources/IsdkFromMetaXRControllerDataSource.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/DataSources/IsdkFromMetaXRHandDataSource.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/DataSources/IsdkFromMetaXRHmdDataSource.cpp"
-#include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/IsdkDataSourcesMetaXR.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/IsdkDataSourcesMetaXRSubsystem.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/IsdkOculusXRHelper.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXRInteraction/Source/IsdkDataSourcesMetaXR/Private/IsdkOculusXRModuleInstance.cpp"

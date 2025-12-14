@@ -9,7 +9,7 @@
 #include "Subsystem/IsdkITrackingDataSubsystem.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkTrackedDataSourceRigComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -35,7 +35,7 @@ static UEnum* EIsdkRigHandVisibility_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkRigHandVisibility.OuterSingleton;
 }
-template<> OCULUSINTERACTIONPREBUILTS_API UEnum* StaticEnum<EIsdkRigHandVisibility>()
+template<> OCULUSINTERACTIONPREBUILTS_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkRigHandVisibility>()
 {
 	return EIsdkRigHandVisibility_StaticEnum();
 }
@@ -65,7 +65,7 @@ struct Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkRigHandVisibility_Stati
 		{ "EIsdkRigHandVisibility::SyntheticWhenRootChanged", (int64)EIsdkRigHandVisibility::SyntheticWhenRootChanged },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkRigHandVisibility_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkRigHandVisibility_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
 	nullptr,
@@ -98,24 +98,37 @@ struct Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns reference to the TrackingDataSources struct used in this Rig Component\n   * @return FIsdkTrackingDataSources Struct containing the data source, root/pointer poses and hand\n   * joint information\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns reference to the TrackingDataSources struct used in this Rig Component\n@return FIsdkTrackingDataSources Struct containing the data source, root/pointer poses and hand\njoint information" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetDataSources constinit property declarations ************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetDataSources constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008008000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkTrackedDataSourceRigComponent_eventGetDataSources_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkTrackingDataSources, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) }; // 3141570880
+
+// ********** Begin Function GetDataSources Property Definitions ***********************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010008008000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkTrackedDataSourceRigComponent_eventGetDataSources_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkTrackingDataSources, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) }; // 450180261
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, nullptr, "GetDataSources", Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::IsdkTrackedDataSourceRigComponent_eventGetDataSources_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetDataSources Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, nullptr, "GetDataSources", 	Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::IsdkTrackedDataSourceRigComponent_eventGetDataSources_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources_Statics::IsdkTrackedDataSourceRigComponent_eventGetDataSources_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources()
 {
@@ -145,24 +158,37 @@ struct Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisib
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets a pointer to the All Conditional Group for disabling visibility, which is\n   * ultimately set to true only when all of its constituent conditionals are true.\n   * @see UIsdkConditionalGroupAll\n   * @return UIsdkConditionalGroupAll Scene Component associated as a Synthetic Visual\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets a pointer to the All Conditional Group for disabling visibility, which is\nultimately set to true only when all of its constituent conditionals are true.\n@see UIsdkConditionalGroupAll\n@return UIsdkConditionalGroupAll Scene Component associated as a Synthetic Visual" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetForceOffVisibility constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetForceOffVisibility constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetForceOffVisibility Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkTrackedDataSourceRigComponent_eventGetForceOffVisibility_Parms, ReturnValue), Z_Construct_UClass_UIsdkConditionalGroupAll_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, nullptr, "GetForceOffVisibility", Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::IsdkTrackedDataSourceRigComponent_eventGetForceOffVisibility_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetForceOffVisibility Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, nullptr, "GetForceOffVisibility", 	Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::IsdkTrackedDataSourceRigComponent_eventGetForceOffVisibility_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility_Statics::IsdkTrackedDataSourceRigComponent_eventGetForceOffVisibility_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility()
 {
@@ -187,14 +213,24 @@ struct Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameF
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Called after all ISDK operations have been completed\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Called after all ISDK operations have been completed" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HandleIsdkFrameFinished constinit property declarations ***************
+// ********** End Function HandleIsdkFrameFinished constinit property declarations *****************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, nullptr, "HandleIsdkFrameFinished", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, nullptr, "HandleIsdkFrameFinished", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -214,16 +250,6 @@ DEFINE_FUNCTION(UIsdkTrackedDataSourceRigComponent::execHandleIsdkFrameFinished)
 // ********** End Class UIsdkTrackedDataSourceRigComponent Function HandleIsdkFrameFinished ********
 
 // ********** Begin Class UIsdkTrackedDataSourceRigComponent ***************************************
-void UIsdkTrackedDataSourceRigComponent::StaticRegisterNativesUIsdkTrackedDataSourceRigComponent()
-{
-	UClass* Class = UIsdkTrackedDataSourceRigComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetDataSources", &UIsdkTrackedDataSourceRigComponent::execGetDataSources },
-		{ "GetForceOffVisibility", &UIsdkTrackedDataSourceRigComponent::execGetForceOffVisibility },
-		{ "HandleIsdkFrameFinished", &UIsdkTrackedDataSourceRigComponent::execHandleIsdkFrameFinished },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent;
 UClass* UIsdkTrackedDataSourceRigComponent::GetPrivateStaticClass()
 {
@@ -231,7 +257,7 @@ UClass* UIsdkTrackedDataSourceRigComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkTrackedDataSourceRigComponent"),
 			Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkTrackedDataSourceRigComponent,
@@ -258,44 +284,70 @@ struct Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkTrackedDataSourceRigComponent\n * @brief SceneComponent representing a base class for Rig Components utilizing tracked data.\n *\n * Rig Component that holds references to synthetic and tracked visuals driven by a set data source.\n * Provides methods to setup and modify these visuals as well as modify their visibility state\n *\n * @see UIsdkControllerVisualsRigComponent\n * @see UIsdkHandVisualsRigComponent\n * @addtogroup InteractionSDKPrebuiltsPrebuilts\n */" },
+#endif
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Rig/IsdkTrackedDataSourceRigComponent.h" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkTrackedDataSourceRigComponent\n@brief SceneComponent representing a base class for Rig Components utilizing tracked data.\n\nRig Component that holds references to synthetic and tracked visuals driven by a set data source.\nProvides methods to setup and modify these visuals as well as modify their visibility state\n\n@see UIsdkControllerVisualsRigComponent\n@see UIsdkHandVisualsRigComponent\n@addtogroup InteractionSDKPrebuiltsPrebuilts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandVisibilityMode_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Optionally update the visibility of the hand visuals each frame based on the\n   * state of the synthetic hand.\n   */" },
+#endif
 		{ "ExposeOnSpawn", "TRUE" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Optionally update the visibility of the hand visuals each frame based on the\nstate of the synthetic hand." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Handedness_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Which hand this rig represents. This field is used to determine the handedness of the\n   * default hand meshes.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Which hand this rig represents. This field is used to determine the handedness of the\ndefault hand meshes." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CustomTrackingData_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Optional: Use this given subsystem instead of the default one that exists on the world.\n   * The subsystem is used to create components that are able to read hand tracking data.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Optional: Use this given subsystem instead of the default one that exists on the world.\nThe subsystem is used to create components that are able to read hand tracking data." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AttachedToMotionController_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Motion controller this Rig Component is currently attached to\n   */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Motion controller this Rig Component is currently attached to" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ForceOffVisibility_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * The Conditional Group representing if this rig component should be forced invisible, all\n   * constituent conditionals must be true for this to be true.\n   */" },
+#endif
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Rig/IsdkTrackedDataSourceRigComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The Conditional Group representing if this rig component should be forced invisible, all\nconstituent conditionals must be true for this to be true." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkTrackedDataSourceRigComponent constinit property declarations *******
 	static const UECodeGen_Private::FBytePropertyParams NewProp_HandVisibilityMode_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_HandVisibilityMode;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Handedness_Underlying;
@@ -304,22 +356,30 @@ struct Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_AttachedToMotionController;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ForceOffVisibility;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkTrackedDataSourceRigComponent constinit property declarations *********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetDataSources"), .Pointer = &UIsdkTrackedDataSourceRigComponent::execGetDataSources },
+		{ .NameUTF8 = UTF8TEXT("GetForceOffVisibility"), .Pointer = &UIsdkTrackedDataSourceRigComponent::execGetForceOffVisibility },
+		{ .NameUTF8 = UTF8TEXT("HandleIsdkFrameFinished"), .Pointer = &UIsdkTrackedDataSourceRigComponent::execHandleIsdkFrameFinished },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources, "GetDataSources" }, // 659627544
-		{ &Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility, "GetForceOffVisibility" }, // 2953317217
-		{ &Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished, "HandleIsdkFrameFinished" }, // 4054158387
+		{ &Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetDataSources, "GetDataSources" }, // 3860716761
+		{ &Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_GetForceOffVisibility, "GetForceOffVisibility" }, // 421219635
+		{ &Z_Construct_UFunction_UIsdkTrackedDataSourceRigComponent_HandleIsdkFrameFinished, "HandleIsdkFrameFinished" }, // 1471341489
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkTrackedDataSourceRigComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics
+
+// ********** Begin Class UIsdkTrackedDataSourceRigComponent Property Definitions ******************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_HandVisibilityMode_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_HandVisibilityMode = { "HandVisibilityMode", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, HandVisibilityMode), Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkRigHandVisibility, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandVisibilityMode_MetaData), NewProp_HandVisibilityMode_MetaData) }; // 377539145
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_HandVisibilityMode = { "HandVisibilityMode", nullptr, (EPropertyFlags)0x0011000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, HandVisibilityMode), Z_Construct_UEnum_OculusInteractionPrebuilts_EIsdkRigHandVisibility, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_HandVisibilityMode_MetaData), NewProp_HandVisibilityMode_MetaData) }; // 1360758867
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_Handedness_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0010000000020815, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 49432891
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_Handedness = { "Handedness", nullptr, (EPropertyFlags)0x0010000000020815, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, Handedness), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Handedness_MetaData), NewProp_Handedness_MetaData) }; // 2143392285
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_CustomTrackingData = { "CustomTrackingData", nullptr, (EPropertyFlags)0x0014000000000000, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, CustomTrackingData), Z_Construct_UClass_UIsdkITrackingDataSubsystem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CustomTrackingData_MetaData), NewProp_CustomTrackingData_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_AttachedToMotionController = { "AttachedToMotionController", nullptr, (EPropertyFlags)0x011400000008001c, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, AttachedToMotionController), Z_Construct_UClass_UMotionControllerComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AttachedToMotionController_MetaData), NewProp_AttachedToMotionController_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_ForceOffVisibility = { "ForceOffVisibility", nullptr, (EPropertyFlags)0x0124080000080008, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkTrackedDataSourceRigComponent, ForceOffVisibility), Z_Construct_UClass_UIsdkConditionalGroupAll_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ForceOffVisibility_MetaData), NewProp_ForceOffVisibility_MetaData) };
@@ -333,6 +393,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkTrac
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::NewProp_ForceOffVisibility,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkTrackedDataSourceRigComponent Property Definitions ********************
 UObject* (*const Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -353,6 +414,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkTrackedDataSourceR
 	0x00B000A5u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkTrackedDataSourceRigComponent::StaticRegisterNativesUIsdkTrackedDataSourceRigComponent()
+{
+	UClass* Class = UIsdkTrackedDataSourceRigComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent.OuterSingleton)
@@ -361,24 +427,26 @@ UClass* Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkTrackedDataSourceRigComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkTrackedDataSourceRigComponent);
 UIsdkTrackedDataSourceRigComponent::~UIsdkTrackedDataSourceRigComponent() {}
 // ********** End Class UIsdkTrackedDataSourceRigComponent *****************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkRigHandVisibility_StaticEnum, TEXT("EIsdkRigHandVisibility"), &Z_Registration_Info_UEnum_EIsdkRigHandVisibility, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 377539145U) },
+		{ EIsdkRigHandVisibility_StaticEnum, TEXT("EIsdkRigHandVisibility"), &Z_Registration_Info_UEnum_EIsdkRigHandVisibility, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1360758867U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, UIsdkTrackedDataSourceRigComponent::StaticClass, TEXT("UIsdkTrackedDataSourceRigComponent"), &Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkTrackedDataSourceRigComponent), 664042024U) },
+		{ Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent, UIsdkTrackedDataSourceRigComponent::StaticClass, TEXT("UIsdkTrackedDataSourceRigComponent"), &Z_Registration_Info_UClass_UIsdkTrackedDataSourceRigComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkTrackedDataSourceRigComponent), 1012022183U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_3871693330(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_2634899411{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo));
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h__Script_OculusInteractionPrebuilts_Statics::EnumInfo),
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

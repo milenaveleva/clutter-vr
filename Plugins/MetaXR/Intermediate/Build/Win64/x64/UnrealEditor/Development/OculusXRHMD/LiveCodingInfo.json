@@ -39,6 +39,7 @@
 			"OculusXRHMD_Layer.cpp.obj",
 			"OculusXRHMD_Settings.cpp.obj",
 			"OculusXRHMD_SpectatorScreenController.cpp.obj",
+			"OculusXRHMD_Splash.cpp.obj",
 			"OculusXRHMD_StressTester.cpp.obj",
 			"OculusXRHMD_VulkanExtensions.cpp.obj",
 			"OculusXRMultiPlayerTestingSubsystem.cpp.obj",
@@ -47,6 +48,8 @@
 			"OculusXRPluginWrapper.cpp.obj",
 			"OculusXRResourceHolder.cpp.obj",
 			"OculusXRSceneCaptureCubemap.cpp.obj",
+			"OculusXRSimulator.cpp.obj",
+			"OculusXRStereoLayersFlagsSupplier.cpp.obj",
 			"OculusXRSyntheticEnvironmentServer.cpp.obj",
 			"OculusXRCoreExtensionPlugin.cpp.obj",
 			"OculusXREnvironmentDepthExtensionPlugin.cpp.obj",
@@ -56,15 +59,12 @@
 			"OculusXRMultiPlayerStateExtensionPlugin.cpp.obj",
 			"OculusXROpenXRDynamicResolutionState.cpp.obj",
 			"OculusXROpenXRUtilities.cpp.obj",
-			"OculusXRSimulatorExtensionPlugin.cpp.obj",
-			"OculusXRSpaceWarp.cpp.obj",
-			"OculusXRHMD_Splash.cpp.obj",
-			"OculusXRSimulator.cpp.obj",
-			"OculusXRStereoLayersFlagsSupplier.cpp.obj",
 			"OculusXRPerformanceExtensionPlugin.cpp.obj",
-			"OculusXRSystemInfoExtensionPlugin.cpp.obj"
+			"OculusXRSimulatorExtensionPlugin.cpp.obj",
+			"OculusXRSpaceWarp.cpp.obj"
 		],
 		"Module.OculusXRHMD.4.cpp.obj": [
+			"OculusXRSystemInfoExtensionPlugin.cpp.obj",
 			"OculusXRXRFunctions.cpp.obj"
 		]
 	}

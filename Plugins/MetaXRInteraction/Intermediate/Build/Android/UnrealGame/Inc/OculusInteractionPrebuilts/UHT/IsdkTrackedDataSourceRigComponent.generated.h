@@ -15,31 +15,31 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UIsdkConditionalGroupAll;
 struct FIsdkTrackingDataSources;
 
 // ********** Begin Class UIsdkTrackedDataSourceRigComponent ***************************************
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execHandleIsdkFrameFinished); \
 	DECLARE_FUNCTION(execGetForceOffVisibility); \
 	DECLARE_FUNCTION(execGetDataSources);
 
 
+struct Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics;
 OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_NoRegister();
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUIsdkTrackedDataSourceRigComponent(); \
-	friend struct Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSINTERACTIONPREBUILTS_API UClass* Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_NoRegister(); \
+	friend OCULUSINTERACTIONPREBUILTS_API UClass* ::Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UIsdkTrackedDataSourceRigComponent, USceneComponent, COMPILED_IN_FLAGS(CLASS_Abstract | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusInteractionPrebuilts"), Z_Construct_UClass_UIsdkTrackedDataSourceRigComponent_NoRegister) \
 	DECLARE_SERIALIZER(UIsdkTrackedDataSourceRigComponent)
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UIsdkTrackedDataSourceRigComponent(UIsdkTrackedDataSourceRigComponent&&) = delete; \
 	UIsdkTrackedDataSourceRigComponent(const UIsdkTrackedDataSourceRigComponent&) = delete; \
@@ -49,13 +49,13 @@ public: \
 	NO_API virtual ~UIsdkTrackedDataSourceRigComponent();
 
 
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_62_PROLOG
-#define FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_62_PROLOG
+#define FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_INCLASS_NO_PURE_DECLS \
-	FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h_65_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -65,7 +65,7 @@ class UIsdkTrackedDataSourceRigComponent;
 // ********** End Class UIsdkTrackedDataSourceRigComponent *****************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Rig_IsdkTrackedDataSourceRigComponent_h
 
 // ********** Begin Enum EIsdkRigHandVisibility ****************************************************
 #define FOREACH_ENUM_EISDKRIGHANDVISIBILITY(op) \
@@ -76,7 +76,7 @@ class UIsdkTrackedDataSourceRigComponent;
 
 enum class EIsdkRigHandVisibility : uint8;
 template<> struct TIsUEnumClass<EIsdkRigHandVisibility> { enum { Value = true }; };
-template<> OCULUSINTERACTIONPREBUILTS_API UEnum* StaticEnum<EIsdkRigHandVisibility>();
+template<> OCULUSINTERACTIONPREBUILTS_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkRigHandVisibility>();
 // ********** End Enum EIsdkRigHandVisibility ******************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -8,7 +8,7 @@
 #include "IsdkRoundedButton.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkRoundedButton() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class AIsdkRoundedButton *******************************************************
-void AIsdkRoundedButton::StaticRegisterNativesAIsdkRoundedButton()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_AIsdkRoundedButton;
 UClass* AIsdkRoundedButton::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* AIsdkRoundedButton::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_AIsdkRoundedButton.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkRoundedButton"),
 			Z_Registration_Info_UClass_AIsdkRoundedButton.InnerSingleton,
 			StaticRegisterNativesAIsdkRoundedButton,
@@ -67,19 +64,25 @@ struct Z_Construct_UClass_AIsdkRoundedButton_Statics
 		{ "ModuleRelativePath", "Public/IsdkRoundedButton.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class AIsdkRoundedButton constinit property declarations ***********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_RoundedButtonComponent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class AIsdkRoundedButton constinit property declarations *************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AIsdkRoundedButton>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_AIsdkRoundedButton_Statics
+
+// ********** Begin Class AIsdkRoundedButton Property Definitions **********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AIsdkRoundedButton_Statics::NewProp_RoundedButtonComponent = { "RoundedButtonComponent", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AIsdkRoundedButton, RoundedButtonComponent), Z_Construct_UClass_UIsdkRoundedButtonComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoundedButtonComponent_MetaData), NewProp_RoundedButtonComponent_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AIsdkRoundedButton_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AIsdkRoundedButton_Statics::NewProp_RoundedButtonComponent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkRoundedButton_Statics::PropPointers) < 2048);
+// ********** End Class AIsdkRoundedButton Property Definitions ************************************
 UObject* (*const Z_Construct_UClass_AIsdkRoundedButton_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_AActor,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -97,9 +100,12 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AIsdkRoundedButton_Stat
 	0,
 	UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkRoundedButton_Statics::PropPointers),
 	0,
-	0x009001A4u,
+	0x009000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AIsdkRoundedButton_Statics::Class_MetaDataParams), Z_Construct_UClass_AIsdkRoundedButton_Statics::Class_MetaDataParams)
 };
+void AIsdkRoundedButton::StaticRegisterNativesAIsdkRoundedButton()
+{
+}
 UClass* Z_Construct_UClass_AIsdkRoundedButton()
 {
 	if (!Z_Registration_Info_UClass_AIsdkRoundedButton.OuterSingleton)
@@ -108,21 +114,23 @@ UClass* Z_Construct_UClass_AIsdkRoundedButton()
 	}
 	return Z_Registration_Info_UClass_AIsdkRoundedButton.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(AIsdkRoundedButton);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, AIsdkRoundedButton);
 AIsdkRoundedButton::~AIsdkRoundedButton() {}
 // ********** End Class AIsdkRoundedButton *********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AIsdkRoundedButton, AIsdkRoundedButton::StaticClass, TEXT("AIsdkRoundedButton"), &Z_Registration_Info_UClass_AIsdkRoundedButton, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AIsdkRoundedButton), 2322779801U) },
+		{ Z_Construct_UClass_AIsdkRoundedButton, AIsdkRoundedButton::StaticClass, TEXT("AIsdkRoundedButton"), &Z_Registration_Info_UClass_AIsdkRoundedButton, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AIsdkRoundedButton), 839728759U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_792718380(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_832243873{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_IsdkRoundedButton_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

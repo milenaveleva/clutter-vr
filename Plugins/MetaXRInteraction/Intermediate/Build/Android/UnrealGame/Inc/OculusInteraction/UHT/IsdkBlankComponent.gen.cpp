@@ -8,7 +8,7 @@
 #include "Internal/BlankComponent/IsdkBlankComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkBlankComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -34,16 +34,25 @@ struct Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetSurfacePatch constinit property declarations ***********************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetSurfacePatch constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetSurfacePatch Property Definitions **********************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkBlankComponent_eventGetSurfacePatch_Parms, ReturnValue), Z_Construct_UClass_UIsdkISurfacePatch_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "GetSurfacePatch", Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::IsdkBlankComponent_eventGetSurfacePatch_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetSurfacePatch Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "GetSurfacePatch", 	Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::IsdkBlankComponent_eventGetSurfacePatch_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch_Statics::IsdkBlankComponent_eventGetSurfacePatch_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch()
 {
@@ -74,24 +83,37 @@ struct Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Property Getters\n" },
+#endif
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Property Getters" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetVectorOfSomething constinit property declarations ******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetVectorOfSomething constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetVectorOfSomething Property Definitions *****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000008000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkBlankComponent_eventGetVectorOfSomething_Parms, ReturnValue), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "GetVectorOfSomething", Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::IsdkBlankComponent_eventGetVectorOfSomething_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetVectorOfSomething Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "GetVectorOfSomething", 	Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::IsdkBlankComponent_eventGetVectorOfSomething_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething_Statics::IsdkBlankComponent_eventGetVectorOfSomething_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething()
 {
@@ -125,16 +147,25 @@ struct Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetSurfacePatch constinit property declarations ***********************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_InSurfacePatch;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetSurfacePatch constinit property declarations *************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetSurfacePatch Property Definitions **********************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::NewProp_InSurfacePatch = { "InSurfacePatch", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkBlankComponent_eventSetSurfacePatch_Parms, InSurfacePatch), Z_Construct_UClass_UIsdkISurfacePatch_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::NewProp_InSurfacePatch,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "SetSurfacePatch", Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::IsdkBlankComponent_eventSetSurfacePatch_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetSurfacePatch Property Definitions ************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "SetSurfacePatch", 	Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::IsdkBlankComponent_eventSetSurfacePatch_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch_Statics::IsdkBlankComponent_eventSetSurfacePatch_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch()
 {
@@ -166,24 +197,37 @@ struct Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Property Setters\n" },
+#endif
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Property Setters" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InVectorOfSomething_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetVectorOfSomething constinit property declarations ******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InVectorOfSomething;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetVectorOfSomething constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetVectorOfSomething Property Definitions *****************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::NewProp_InVectorOfSomething = { "InVectorOfSomething", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkBlankComponent_eventSetVectorOfSomething_Parms, InVectorOfSomething), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InVectorOfSomething_MetaData), NewProp_InVectorOfSomething_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::NewProp_InVectorOfSomething,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "SetVectorOfSomething", Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::IsdkBlankComponent_eventSetVectorOfSomething_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetVectorOfSomething Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkBlankComponent, nullptr, "SetVectorOfSomething", 	Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::IsdkBlankComponent_eventSetVectorOfSomething_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething_Statics::IsdkBlankComponent_eventSetVectorOfSomething_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething()
 {
@@ -205,17 +249,6 @@ DEFINE_FUNCTION(UIsdkBlankComponent::execSetVectorOfSomething)
 // ********** End Class UIsdkBlankComponent Function SetVectorOfSomething **************************
 
 // ********** Begin Class UIsdkBlankComponent ******************************************************
-void UIsdkBlankComponent::StaticRegisterNativesUIsdkBlankComponent()
-{
-	UClass* Class = UIsdkBlankComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetSurfacePatch", &UIsdkBlankComponent::execGetSurfacePatch },
-		{ "GetVectorOfSomething", &UIsdkBlankComponent::execGetVectorOfSomething },
-		{ "SetSurfacePatch", &UIsdkBlankComponent::execSetSurfacePatch },
-		{ "SetVectorOfSomething", &UIsdkBlankComponent::execSetVectorOfSomething },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkBlankComponent;
 UClass* UIsdkBlankComponent::GetPrivateStaticClass()
 {
@@ -223,7 +256,7 @@ UClass* UIsdkBlankComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkBlankComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkBlankComponent"),
 			Z_Registration_Info_UClass_UIsdkBlankComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkBlankComponent,
@@ -252,20 +285,28 @@ struct Z_Construct_UClass_UIsdkBlankComponent_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * This is example component that derives from UActorComponent.\n * It demonstrates the pattern for taking a dependency on one other object (a ClippedPlaneSurface)\n * and one other basic property type (an FVector)\n */" },
+#endif
 		{ "DisplayName", "ISDK Component" },
 		{ "IncludePath", "Internal/BlankComponent/IsdkBlankComponent.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is example component that derives from UActorComponent.\nIt demonstrates the pattern for taking a dependency on one other object (a ClippedPlaneSurface)\nand one other basic property type (an FVector)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_VectorOfSomething_MetaData[] = {
 		{ "BlueprintGetter", "GetVectorOfSomething" },
 		{ "BlueprintSetter", "SetVectorOfSomething" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Properties\n" },
+#endif
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Properties" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_SurfacePatch_MetaData[] = {
 		{ "BlueprintGetter", "GetSurfacePatch" },
@@ -274,22 +315,33 @@ struct Z_Construct_UClass_UIsdkBlankComponent_Statics
 		{ "ModuleRelativePath", "Private/Internal/BlankComponent/IsdkBlankComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkBlankComponent constinit property declarations **********************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_VectorOfSomething;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_SurfacePatch;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkBlankComponent constinit property declarations ************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetSurfacePatch"), .Pointer = &UIsdkBlankComponent::execGetSurfacePatch },
+		{ .NameUTF8 = UTF8TEXT("GetVectorOfSomething"), .Pointer = &UIsdkBlankComponent::execGetVectorOfSomething },
+		{ .NameUTF8 = UTF8TEXT("SetSurfacePatch"), .Pointer = &UIsdkBlankComponent::execSetSurfacePatch },
+		{ .NameUTF8 = UTF8TEXT("SetVectorOfSomething"), .Pointer = &UIsdkBlankComponent::execSetVectorOfSomething },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch, "GetSurfacePatch" }, // 1331628779
-		{ &Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething, "GetVectorOfSomething" }, // 4135929648
-		{ &Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch, "SetSurfacePatch" }, // 4267998711
-		{ &Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething, "SetVectorOfSomething" }, // 289175297
+		{ &Z_Construct_UFunction_UIsdkBlankComponent_GetSurfacePatch, "GetSurfacePatch" }, // 1296236324
+		{ &Z_Construct_UFunction_UIsdkBlankComponent_GetVectorOfSomething, "GetVectorOfSomething" }, // 1047103928
+		{ &Z_Construct_UFunction_UIsdkBlankComponent_SetSurfacePatch, "SetSurfacePatch" }, // 1345034131
+		{ &Z_Construct_UFunction_UIsdkBlankComponent_SetVectorOfSomething, "SetVectorOfSomething" }, // 4008445728
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkBlankComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkBlankComponent_Statics
+
+// ********** Begin Class UIsdkBlankComponent Property Definitions *********************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkBlankComponent_Statics::NewProp_VectorOfSomething = { "VectorOfSomething", nullptr, (EPropertyFlags)0x0040000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkBlankComponent, VectorOfSomething), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VectorOfSomething_MetaData), NewProp_VectorOfSomething_MetaData) };
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UIsdkBlankComponent_Statics::NewProp_SurfacePatch = { "SurfacePatch", nullptr, (EPropertyFlags)0x0044000000000004, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkBlankComponent, SurfacePatch), Z_Construct_UClass_UIsdkISurfacePatch_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_SurfacePatch_MetaData), NewProp_SurfacePatch_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkBlankComponent_Statics::PropPointers[] = {
@@ -297,6 +349,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkBlan
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkBlankComponent_Statics::NewProp_SurfacePatch,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkBlankComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkBlankComponent Property Definitions ***********************************
 UObject* (*const Z_Construct_UClass_UIsdkBlankComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -317,6 +370,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkBlankComponent_Sta
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkBlankComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkBlankComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkBlankComponent::StaticRegisterNativesUIsdkBlankComponent()
+{
+	UClass* Class = UIsdkBlankComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkBlankComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkBlankComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkBlankComponent.OuterSingleton)
@@ -325,21 +383,23 @@ UClass* Z_Construct_UClass_UIsdkBlankComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkBlankComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkBlankComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkBlankComponent);
 UIsdkBlankComponent::~UIsdkBlankComponent() {}
 // ********** End Class UIsdkBlankComponent ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkBlankComponent, UIsdkBlankComponent::StaticClass, TEXT("UIsdkBlankComponent"), &Z_Registration_Info_UClass_UIsdkBlankComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkBlankComponent), 134438064U) },
+		{ Z_Construct_UClass_UIsdkBlankComponent, UIsdkBlankComponent::StaticClass, TEXT("UIsdkBlankComponent"), &Z_Registration_Info_UClass_UIsdkBlankComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkBlankComponent), 364085557U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_1599200534(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_1437797022{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Private_Internal_BlankComponent_IsdkBlankComponent_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

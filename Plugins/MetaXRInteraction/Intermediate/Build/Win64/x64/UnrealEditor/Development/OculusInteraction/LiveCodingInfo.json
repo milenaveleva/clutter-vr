@@ -173,10 +173,10 @@
 			"IsdkPointablePlane.cpp.obj",
 			"IsdkBlankComponent.cpp.obj",
 			"IsdkControllerMeshComponent.cpp.obj",
-			"IsdkFunctionLibrary.cpp.obj",
-			"IsdkHandData.cpp.obj"
+			"IsdkFunctionLibrary.cpp.obj"
 		],
 		"Module.OculusInteraction.9.cpp.obj": [
+			"IsdkHandData.cpp.obj",
 			"IsdkHandMeshComponent.cpp.obj",
 			"IsdkHandPoseData.cpp.obj",
 			"IsdkRuntimeSettings.cpp.obj",

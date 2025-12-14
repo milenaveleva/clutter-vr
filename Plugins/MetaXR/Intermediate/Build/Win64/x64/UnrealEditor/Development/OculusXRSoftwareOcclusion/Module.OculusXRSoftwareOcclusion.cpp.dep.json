@@ -167,7 +167,8 @@
             "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\renderer\\private\\substrate\\glint\\glintshadingluts.h",
             "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\core\\public\\algo\\removeif.h",
             "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\renderer\\private\\heterogeneousvolumes\\heterogeneousvolumes.h",
-            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\public\\heterogeneousvolumeinterface.h"
+            "c:\\program files\\epic games\\ue_5.7\\engine\\source\\runtime\\engine\\public\\heterogeneousvolumeinterface.h",
+            "d:\\git\\cluttervr\\plugins\\metaxr\\source\\oculusxrsoftwareocclusion\\private\\scenesoftwareocclusionprovider.cpp"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

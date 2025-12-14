@@ -8,7 +8,7 @@
 #include "OculusXRMultiPlayerTestingSubsystem.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRMultiPlayerTestingSubsystem() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRHMD();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRMultiPlayerTestingSubsystem *************************************
-void UOculusXRMultiPlayerTestingSubsystem::StaticRegisterNativesUOculusXRMultiPlayerTestingSubsystem()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem;
 UClass* UOculusXRMultiPlayerTestingSubsystem::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UOculusXRMultiPlayerTestingSubsystem::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRMultiPlayerTestingSubsystem"),
 			Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem.InnerSingleton,
 			StaticRegisterNativesUOculusXRMultiPlayerTestingSubsystem,
@@ -55,18 +52,25 @@ struct Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * The rule processor handles registration and querying of rules\n */" },
+#endif
 		{ "IncludePath", "OculusXRMultiPlayerTestingSubsystem.h" },
 		{ "ModuleRelativePath", "Public/OculusXRMultiPlayerTestingSubsystem.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The rule processor handles registration and querying of rules" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRMultiPlayerTestingSubsystem constinit property declarations *****
+// ********** End Class UOculusXRMultiPlayerTestingSubsystem constinit property declarations *******
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRMultiPlayerTestingSubsystem>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UEngineSubsystem,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRHMD,
@@ -87,6 +91,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRMultiPlayerTes
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem_Statics::Class_MetaDataParams)
 };
+void UOculusXRMultiPlayerTestingSubsystem::StaticRegisterNativesUOculusXRMultiPlayerTestingSubsystem()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem.OuterSingleton)
@@ -96,21 +103,23 @@ UClass* Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem()
 	return Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem.OuterSingleton;
 }
 UOculusXRMultiPlayerTestingSubsystem::UOculusXRMultiPlayerTestingSubsystem() {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRMultiPlayerTestingSubsystem);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRMultiPlayerTestingSubsystem);
 UOculusXRMultiPlayerTestingSubsystem::~UOculusXRMultiPlayerTestingSubsystem() {}
 // ********** End Class UOculusXRMultiPlayerTestingSubsystem ***************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem, UOculusXRMultiPlayerTestingSubsystem::StaticClass, TEXT("UOculusXRMultiPlayerTestingSubsystem"), &Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMultiPlayerTestingSubsystem), 2158845310U) },
+		{ Z_Construct_UClass_UOculusXRMultiPlayerTestingSubsystem, UOculusXRMultiPlayerTestingSubsystem::StaticClass, TEXT("UOculusXRMultiPlayerTestingSubsystem"), &Z_Registration_Info_UClass_UOculusXRMultiPlayerTestingSubsystem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRMultiPlayerTestingSubsystem), 1460595533U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_3938733135(TEXT("/Script/OculusXRHMD"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_3565208098{
+	TEXT("/Script/OculusXRHMD"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRHMD_Public_OculusXRMultiPlayerTestingSubsystem_h__Script_OculusXRHMD_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRControllerComponent *********************************************
+struct Z_Construct_UClass_UOculusXRControllerComponent_Statics;
 OCULUSXRINPUT_API UClass* Z_Construct_UClass_UOculusXRControllerComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRControllerComponent(); \
-	friend struct Z_Construct_UClass_UOculusXRControllerComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRControllerComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRINPUT_API UClass* Z_Construct_UClass_UOculusXRControllerComponent_NoRegister(); \
+	friend OCULUSXRINPUT_API UClass* ::Z_Construct_UClass_UOculusXRControllerComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRControllerComponent, UStaticMeshComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRInput"), Z_Construct_UClass_UOculusXRControllerComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRControllerComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UOculusXRControllerComponent(UOculusXRControllerComponent&&) = delete; \
 	UOculusXRControllerComponent(const UOculusXRControllerComponent&) = delete; \
@@ -40,12 +41,12 @@ public: \
 	NO_API virtual ~UOculusXRControllerComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_15_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_15_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h_18_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -55,6 +56,6 @@ class UOculusXRControllerComponent;
 // ********** End Class UOculusXRControllerComponent ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRControllerComponent_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

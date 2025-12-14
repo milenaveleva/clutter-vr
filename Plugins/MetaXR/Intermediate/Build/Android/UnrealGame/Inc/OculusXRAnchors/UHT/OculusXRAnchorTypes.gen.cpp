@@ -8,7 +8,7 @@
 #include "OculusXRAnchorTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRAnchorTypes() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -49,7 +49,7 @@ static UEnum* EOculusXRAnchorResult_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRAnchorResult.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRAnchorResult::Type>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRAnchorResult::Type>()
 {
 	return EOculusXRAnchorResult_StaticEnum();
 }
@@ -124,7 +124,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult_Statics
 		{ "EOculusXRAnchorResult::Warning_BoundaryVisibilitySuppressionNotAllowed", (int64)EOculusXRAnchorResult::Warning_BoundaryVisibilitySuppressionNotAllowed },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorResult_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -157,7 +157,7 @@ static UEnum* EOculusLocationFlags_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusLocationFlags.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusLocationFlags>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusLocationFlags>()
 {
 	return EOculusLocationFlags_StaticEnum();
 }
@@ -167,7 +167,9 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusLocationFlags_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "Bitflags", "" },
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// namespace EOculusXRAnchorResult\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 		{ "None.Name", "EOculusLocationFlags::None" },
 		{ "OrientationTracked.Name", "EOculusLocationFlags::OrientationTracked" },
@@ -176,7 +178,9 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusLocationFlags_Statics
 		{ "OrientationValid.ToolTip", "required for the metadata generation" },
 		{ "PositionTracked.Name", "EOculusLocationFlags::PositionTracked" },
 		{ "PositionValid.Name", "EOculusLocationFlags::PositionValid" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "namespace EOculusXRAnchorResult" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -187,7 +191,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusLocationFlags_Statics
 		{ "EOculusLocationFlags::PositionTracked", (int64)EOculusLocationFlags::PositionTracked },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusLocationFlags_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusLocationFlags_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -211,17 +215,10 @@ UEnum* Z_Construct_UEnum_OculusXRAnchors_EOculusLocationFlags()
 // ********** End Enum EOculusLocationFlags ********************************************************
 
 // ********** Begin ScriptStruct FOculusXRAnchorLocationFlags **************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags;
-class UScriptStruct* FOculusXRAnchorLocationFlags::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRAnchorLocationFlags"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRAnchorLocationFlags); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRAnchorLocationFlags); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -235,19 +232,34 @@ struct Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRAnchorLocationFlags constinit property declarations ******
 	static const UECodeGen_Private::FIntPropertyParams NewProp_Flags;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRAnchorLocationFlags constinit property declarations ********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRAnchorLocationFlags>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags;
+class UScriptStruct* FOculusXRAnchorLocationFlags::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRAnchorLocationFlags"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRAnchorLocationFlags Property Definitions *****************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::NewProp_Flags = { "Flags", nullptr, (EPropertyFlags)0x0040000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchorLocationFlags, Flags), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Flags_MetaData), NewProp_Flags_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::NewProp_Flags,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRAnchorLocationFlags Property Definitions *******************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -267,11 +279,30 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRAnchorLocationFlags ****************************************
 
 // ********** Begin ScriptStruct FOculusXRUUID *****************************************************
+struct Z_Construct_UScriptStruct_FOculusXRUUID_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRUUID); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRUUID); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRUUID constinit property declarations *********************
+// ********** End ScriptStruct FOculusXRUUID constinit property declarations ***********************
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRUUID>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FOculusXRUUID_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRUUID;
 class UScriptStruct* FOculusXRUUID::StaticStruct()
 {
@@ -280,21 +311,7 @@ class UScriptStruct* FOculusXRUUID::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FOculusXRUUID.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRUUID, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRUUID"));
 	}
 	return Z_Registration_Info_UScriptStruct_FOculusXRUUID.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FOculusXRUUID_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRUUID>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRUUID_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -314,22 +331,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRUUID()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRUUID.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRUUID_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRUUID.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRUUID.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRUUID *******************************************************
 
 // ********** Begin ScriptStruct FOculusXRUInt64 ***************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRUInt64;
-class UScriptStruct* FOculusXRUInt64::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRUInt64.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRUInt64.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRUInt64, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRUInt64"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRUInt64.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRUInt64_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRUInt64); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRUInt64); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -339,19 +349,34 @@ struct Z_Construct_UScriptStruct_FOculusXRUInt64_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRUInt64 constinit property declarations *******************
 	static const UECodeGen_Private::FUInt64PropertyParams NewProp_Value;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRUInt64 constinit property declarations *********************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRUInt64>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRUInt64_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRUInt64;
+class UScriptStruct* FOculusXRUInt64::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRUInt64.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRUInt64.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRUInt64, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRUInt64"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRUInt64.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRUInt64 Property Definitions ******************************
 const UECodeGen_Private::FUInt64PropertyParams Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::NewProp_Value = { "Value", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::UInt64, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRUInt64, Value), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Value_MetaData), NewProp_Value_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::NewProp_Value,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRUInt64 Property Definitions ********************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -371,22 +396,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRUInt64()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRUInt64.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRUInt64.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRUInt64.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRUInt64 *****************************************************
 
 // ********** Begin ScriptStruct FOculusXRAnchor ***************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnchor;
-class UScriptStruct* FOculusXRAnchor::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRAnchor.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRAnchor.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnchor, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRAnchor"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnchor.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRAnchor_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRAnchor); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRAnchor); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -401,22 +419,37 @@ struct Z_Construct_UScriptStruct_FOculusXRAnchor_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRAnchor constinit property declarations *******************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_AnchorHandle;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Uuid;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRAnchor constinit property declarations *********************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRAnchor>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewProp_AnchorHandle = { "AnchorHandle", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchor, AnchorHandle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandle_MetaData), NewProp_AnchorHandle_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewProp_Uuid = { "Uuid", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchor, Uuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Uuid_MetaData), NewProp_Uuid_MetaData) }; // 3912340335
+}; // struct Z_Construct_UScriptStruct_FOculusXRAnchor_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnchor;
+class UScriptStruct* FOculusXRAnchor::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRAnchor.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRAnchor.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnchor, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRAnchor"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRAnchor.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRAnchor Property Definitions ******************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewProp_AnchorHandle = { "AnchorHandle", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchor, AnchorHandle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AnchorHandle_MetaData), NewProp_AnchorHandle_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewProp_Uuid = { "Uuid", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchor, Uuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Uuid_MetaData), NewProp_Uuid_MetaData) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewProp_AnchorHandle,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewProp_Uuid,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRAnchor Property Definitions ********************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -436,7 +469,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRAnchor()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRAnchor.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnchor.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRAnchor.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRAnchor *****************************************************
 
@@ -450,7 +483,7 @@ static UEnum* EOculusXRSpaceQueryFilterType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRSpaceQueryFilterType.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceQueryFilterType>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceQueryFilterType>()
 {
 	return EOculusXRSpaceQueryFilterType_StaticEnum();
 }
@@ -477,7 +510,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceQueryFilterType_Statics
 		{ "EOculusXRSpaceQueryFilterType::FilterByGroup", (int64)EOculusXRSpaceQueryFilterType::FilterByGroup },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceQueryFilterType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceQueryFilterType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -510,7 +543,7 @@ static UEnum* EOculusXRSpaceStorageLocation_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRSpaceStorageLocation.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceStorageLocation>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceStorageLocation>()
 {
 	return EOculusXRSpaceStorageLocation_StaticEnum();
 }
@@ -521,13 +554,17 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation_Statics
 		{ "BlueprintType", "true" },
 		{ "Cloud.DisplayName", "Cloud" },
 		{ "Cloud.Name", "EOculusXRSpaceStorageLocation::Cloud" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// This is used as a bit-mask\n" },
+#endif
 		{ "Invalid.DisplayName", "Invalid" },
 		{ "Invalid.Name", "EOculusXRSpaceStorageLocation::Invalid" },
 		{ "Local.DisplayName", "Local" },
 		{ "Local.Name", "EOculusXRSpaceStorageLocation::Local" },
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "This is used as a bit-mask" },
+#endif
 	};
 #endif // WITH_METADATA
 	static constexpr UECodeGen_Private::FEnumeratorParam Enumerators[] = {
@@ -536,7 +573,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation_Statics
 		{ "EOculusXRSpaceStorageLocation::Cloud", (int64)EOculusXRSpaceStorageLocation::Cloud },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -569,7 +606,7 @@ static UEnum* EOculusXRSpaceStoragePersistenceMode_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRSpaceStoragePersistenceMode.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceStoragePersistenceMode>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceStoragePersistenceMode>()
 {
 	return EOculusXRSpaceStoragePersistenceMode_StaticEnum();
 }
@@ -590,7 +627,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStoragePersistenceMode_St
 		{ "EOculusXRSpaceStoragePersistenceMode::Indefinite", (int64)EOculusXRSpaceStoragePersistenceMode::Indefinite },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStoragePersistenceMode_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStoragePersistenceMode_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -623,7 +660,7 @@ static UEnum* EOculusXRSpaceComponentType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRSpaceComponentType.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRSpaceComponentType>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSpaceComponentType>()
 {
 	return EOculusXRSpaceComponentType_StaticEnum();
 }
@@ -668,7 +705,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType_Statics
 		{ "EOculusXRSpaceComponentType::TriangleMesh", (int64)EOculusXRSpaceComponentType::TriangleMesh },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -692,17 +729,10 @@ UEnum* Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType()
 // ********** End Enum EOculusXRSpaceComponentType *************************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceQueryInfo *******************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo;
-class UScriptStruct* FOculusXRSpaceQueryInfo::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceQueryInfo"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRSpaceQueryInfo); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRSpaceQueryInfo); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -737,6 +767,8 @@ struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRSpaceQueryInfo constinit property declarations ***********
 	static const UECodeGen_Private::FIntPropertyParams NewProp_MaxQuerySpaces;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Timeout;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Location_Underlying;
@@ -750,24 +782,36 @@ struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_ComponentFilter;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_GroupUUIDFilter;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRSpaceQueryInfo constinit property declarations *************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRSpaceQueryInfo>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo;
+class UScriptStruct* FOculusXRSpaceQueryInfo::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceQueryInfo"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRSpaceQueryInfo Property Definitions **********************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_MaxQuerySpaces = { "MaxQuerySpaces", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, MaxQuerySpaces), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MaxQuerySpaces_MetaData), NewProp_MaxQuerySpaces_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_Timeout = { "Timeout", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, Timeout), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Timeout_MetaData), NewProp_Timeout_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_Location_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Location_MetaData), NewProp_Location_MetaData) }; // 3607691446
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Location_MetaData), NewProp_Location_MetaData) }; // 1743423733
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_FilterType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_FilterType = { "FilterType", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, FilterType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceQueryFilterType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FilterType_MetaData), NewProp_FilterType_MetaData) }; // 4193402121
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_IDFilter_Inner = { "IDFilter", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_IDFilter = { "IDFilter", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, IDFilter), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IDFilter_MetaData), NewProp_IDFilter_MetaData) }; // 3912340335
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_FilterType = { "FilterType", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, FilterType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceQueryFilterType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FilterType_MetaData), NewProp_FilterType_MetaData) }; // 2240351106
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_IDFilter_Inner = { "IDFilter", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_IDFilter = { "IDFilter", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, IDFilter), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_IDFilter_MetaData), NewProp_IDFilter_MetaData) }; // 520639859
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_ComponentFilter_Inner_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_ComponentFilter_Inner = { "ComponentFilter", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(0, nullptr) }; // 362484532
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_ComponentFilter = { "ComponentFilter", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, ComponentFilter), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ComponentFilter_MetaData), NewProp_ComponentFilter_MetaData) }; // 362484532
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_GroupUUIDFilter = { "GroupUUIDFilter", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, GroupUUIDFilter), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GroupUUIDFilter_MetaData), NewProp_GroupUUIDFilter_MetaData) }; // 3912340335
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_ComponentFilter_Inner = { "ComponentFilter", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(0, nullptr) }; // 428507294
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_ComponentFilter = { "ComponentFilter", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, ComponentFilter), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ComponentFilter_MetaData), NewProp_ComponentFilter_MetaData) }; // 428507294
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_GroupUUIDFilter = { "GroupUUIDFilter", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryInfo, GroupUUIDFilter), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_GroupUUIDFilter_MetaData), NewProp_GroupUUIDFilter_MetaData) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_MaxQuerySpaces,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_Timeout,
@@ -783,6 +827,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewProp_GroupUUIDFilter,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRSpaceQueryInfo Property Definitions ************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -802,22 +847,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRSpaceQueryInfo *********************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceQueryResult *****************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult;
-class UScriptStruct* FOculusXRSpaceQueryResult::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceQueryResult"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRSpaceQueryResult); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRSpaceQueryResult); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -836,21 +874,35 @@ struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRSpaceQueryResult constinit property declarations *********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Space;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UUID;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Location_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Location;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRSpaceQueryResult constinit property declarations ***********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRSpaceQueryResult>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Space = { "Space", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryResult, Space), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Space_MetaData), NewProp_Space_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_UUID = { "UUID", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryResult, UUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUID_MetaData), NewProp_UUID_MetaData) }; // 3912340335
+}; // struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult;
+class UScriptStruct* FOculusXRSpaceQueryResult::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceQueryResult"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRSpaceQueryResult Property Definitions ********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Space = { "Space", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryResult, Space), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Space_MetaData), NewProp_Space_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_UUID = { "UUID", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryResult, UUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUID_MetaData), NewProp_UUID_MetaData) }; // 520639859
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Location_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryResult, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Location_MetaData), NewProp_Location_MetaData) }; // 3607691446
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceQueryResult, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Location_MetaData), NewProp_Location_MetaData) }; // 1743423733
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Space,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_UUID,
@@ -858,6 +910,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewProp_Location,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRSpaceQueryResult Property Definitions **********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -877,11 +930,30 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRSpaceQueryResult *******************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceQueryFilterValues ***********************************
+struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics
+{
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRSpaceQueryFilterValues); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRSpaceQueryFilterValues); }
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
+		{ "BlueprintType", "true" },
+		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRSpaceQueryFilterValues constinit property declarations ***
+// ********** End ScriptStruct FOculusXRSpaceQueryFilterValues constinit property declarations *****
+	static void* NewStructOps()
+	{
+		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRSpaceQueryFilterValues>();
+	}
+	static const UECodeGen_Private::FStructParams StructParams;
+}; // struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics
 static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues;
 class UScriptStruct* FOculusXRSpaceQueryFilterValues::StaticStruct()
 {
@@ -890,21 +962,7 @@ class UScriptStruct* FOculusXRSpaceQueryFilterValues::StaticStruct()
 		Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceQueryFilterValues"));
 	}
 	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues.OuterSingleton;
-}
-struct Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics
-{
-#if WITH_METADATA
-	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
-		{ "BlueprintType", "true" },
-		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
-	};
-#endif // WITH_METADATA
-	static void* NewStructOps()
-	{
-		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRSpaceQueryFilterValues>();
 	}
-	static const UECodeGen_Private::FStructParams StructParams;
-};
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -924,14 +982,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRSpaceQueryFilterValues *************************************
 
 // ********** Begin Class UOculusXRSpaceDiscoveryFilterBase ****************************************
-void UOculusXRSpaceDiscoveryFilterBase::StaticRegisterNativesUOculusXRSpaceDiscoveryFilterBase()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase;
 UClass* UOculusXRSpaceDiscoveryFilterBase::GetPrivateStaticClass()
 {
@@ -939,7 +994,7 @@ UClass* UOculusXRSpaceDiscoveryFilterBase::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSpaceDiscoveryFilterBase"),
 			Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase.InnerSingleton,
 			StaticRegisterNativesUOculusXRSpaceDiscoveryFilterBase,
@@ -970,12 +1025,15 @@ struct Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSpaceDiscoveryFilterBase constinit property declarations ********
+// ********** End Class UOculusXRSpaceDiscoveryFilterBase constinit property declarations **********
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSpaceDiscoveryFilterBase>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics
 UObject* (*const Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -996,6 +1054,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSpaceDiscovery
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_Statics::Class_MetaDataParams)
 };
+void UOculusXRSpaceDiscoveryFilterBase::StaticRegisterNativesUOculusXRSpaceDiscoveryFilterBase()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase.OuterSingleton)
@@ -1005,22 +1066,15 @@ UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase()
 	return Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase.OuterSingleton;
 }
 UOculusXRSpaceDiscoveryFilterBase::UOculusXRSpaceDiscoveryFilterBase(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSpaceDiscoveryFilterBase);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSpaceDiscoveryFilterBase);
 UOculusXRSpaceDiscoveryFilterBase::~UOculusXRSpaceDiscoveryFilterBase() {}
 // ********** End Class UOculusXRSpaceDiscoveryFilterBase ******************************************
 
 // ********** Begin ScriptStruct FOculusXRSpaceDiscoveryInfo ***************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo;
-class UScriptStruct* FOculusXRSpaceDiscoveryInfo::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceDiscoveryInfo"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRSpaceDiscoveryInfo); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRSpaceDiscoveryInfo); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1031,15 +1085,29 @@ struct Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRSpaceDiscoveryInfo constinit property declarations *******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Filters_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Filters;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRSpaceDiscoveryInfo constinit property declarations *********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRSpaceDiscoveryInfo>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo;
+class UScriptStruct* FOculusXRSpaceDiscoveryInfo::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRSpaceDiscoveryInfo"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRSpaceDiscoveryInfo Property Definitions ******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::NewProp_Filters_Inner = { "Filters", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::NewProp_Filters = { "Filters", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRSpaceDiscoveryInfo, Filters), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Filters_MetaData), NewProp_Filters_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::PropPointers[] = {
@@ -1047,6 +1115,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::NewProp_Filters,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRSpaceDiscoveryInfo Property Definitions ********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -1066,22 +1135,15 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRSpaceDiscoveryInfo *****************************************
 
 // ********** Begin ScriptStruct FOculusXRAnchorsDiscoverResult ************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult;
-class UScriptStruct* FOculusXRAnchorsDiscoverResult::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRAnchorsDiscoverResult"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRAnchorsDiscoverResult); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRAnchorsDiscoverResult); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -1096,22 +1158,37 @@ struct Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRAnchorsDiscoverResult constinit property declarations ****
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Space;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_UUID;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRAnchorsDiscoverResult constinit property declarations ******
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRAnchorsDiscoverResult>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewProp_Space = { "Space", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchorsDiscoverResult, Space), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Space_MetaData), NewProp_Space_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewProp_UUID = { "UUID", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchorsDiscoverResult, UUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUID_MetaData), NewProp_UUID_MetaData) }; // 3912340335
+}; // struct Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult;
+class UScriptStruct* FOculusXRAnchorsDiscoverResult::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRAnchorsDiscoverResult"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRAnchorsDiscoverResult Property Definitions ***************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewProp_Space = { "Space", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchorsDiscoverResult, Space), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Space_MetaData), NewProp_Space_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewProp_UUID = { "UUID", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRAnchorsDiscoverResult, UUID), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_UUID_MetaData), NewProp_UUID_MetaData) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewProp_Space,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewProp_UUID,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRAnchorsDiscoverResult Property Definitions *****************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -1131,14 +1208,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRAnchorsDiscoverResult **************************************
 
 // ********** Begin Class UOculusXRSpaceDiscoveryIdsFilter *****************************************
-void UOculusXRSpaceDiscoveryIdsFilter::StaticRegisterNativesUOculusXRSpaceDiscoveryIdsFilter()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter;
 UClass* UOculusXRSpaceDiscoveryIdsFilter::GetPrivateStaticClass()
 {
@@ -1146,7 +1220,7 @@ UClass* UOculusXRSpaceDiscoveryIdsFilter::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSpaceDiscoveryIdsFilter"),
 			Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter.InnerSingleton,
 			StaticRegisterNativesUOculusXRSpaceDiscoveryIdsFilter,
@@ -1183,22 +1257,28 @@ struct Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSpaceDiscoveryIdsFilter constinit property declarations *********
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Uuids_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_Uuids;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRSpaceDiscoveryIdsFilter constinit property declarations ***********
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSpaceDiscoveryIdsFilter>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::NewProp_Uuids_Inner = { "Uuids", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::NewProp_Uuids = { "Uuids", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSpaceDiscoveryIdsFilter, Uuids), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Uuids_MetaData), NewProp_Uuids_MetaData) }; // 3912340335
+}; // struct Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics
+
+// ********** Begin Class UOculusXRSpaceDiscoveryIdsFilter Property Definitions ********************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::NewProp_Uuids_Inner = { "Uuids", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::NewProp_Uuids = { "Uuids", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSpaceDiscoveryIdsFilter, Uuids), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Uuids_MetaData), NewProp_Uuids_MetaData) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::NewProp_Uuids_Inner,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::NewProp_Uuids,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRSpaceDiscoveryIdsFilter Property Definitions **********************
 UObject* (*const Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -1219,6 +1299,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSpaceDiscovery
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter_Statics::Class_MetaDataParams)
 };
+void UOculusXRSpaceDiscoveryIdsFilter::StaticRegisterNativesUOculusXRSpaceDiscoveryIdsFilter()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter.OuterSingleton)
@@ -1228,14 +1311,11 @@ UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter()
 	return Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter.OuterSingleton;
 }
 UOculusXRSpaceDiscoveryIdsFilter::UOculusXRSpaceDiscoveryIdsFilter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSpaceDiscoveryIdsFilter);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSpaceDiscoveryIdsFilter);
 UOculusXRSpaceDiscoveryIdsFilter::~UOculusXRSpaceDiscoveryIdsFilter() {}
 // ********** End Class UOculusXRSpaceDiscoveryIdsFilter *******************************************
 
 // ********** Begin Class UOculusXRSpaceDiscoveryComponentsFilter **********************************
-void UOculusXRSpaceDiscoveryComponentsFilter::StaticRegisterNativesUOculusXRSpaceDiscoveryComponentsFilter()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter;
 UClass* UOculusXRSpaceDiscoveryComponentsFilter::GetPrivateStaticClass()
 {
@@ -1243,7 +1323,7 @@ UClass* UOculusXRSpaceDiscoveryComponentsFilter::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRSpaceDiscoveryComponentsFilter"),
 			Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter.InnerSingleton,
 			StaticRegisterNativesUOculusXRSpaceDiscoveryComponentsFilter,
@@ -1280,22 +1360,28 @@ struct Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRSpaceDiscoveryComponentsFilter constinit property declarations **
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ComponentType_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ComponentType;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRSpaceDiscoveryComponentsFilter constinit property declarations ****
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRSpaceDiscoveryComponentsFilter>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics
+
+// ********** Begin Class UOculusXRSpaceDiscoveryComponentsFilter Property Definitions *************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::NewProp_ComponentType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::NewProp_ComponentType = { "ComponentType", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSpaceDiscoveryComponentsFilter, ComponentType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ComponentType_MetaData), NewProp_ComponentType_MetaData) }; // 362484532
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::NewProp_ComponentType = { "ComponentType", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRSpaceDiscoveryComponentsFilter, ComponentType), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceComponentType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ComponentType_MetaData), NewProp_ComponentType_MetaData) }; // 428507294
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::NewProp_ComponentType_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::NewProp_ComponentType,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRSpaceDiscoveryComponentsFilter Property Definitions ***************
 UObject* (*const Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -1316,6 +1402,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRSpaceDiscovery
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter_Statics::Class_MetaDataParams)
 };
+void UOculusXRSpaceDiscoveryComponentsFilter::StaticRegisterNativesUOculusXRSpaceDiscoveryComponentsFilter()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter.OuterSingleton)
@@ -1325,28 +1414,25 @@ UClass* Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter()
 	return Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter.OuterSingleton;
 }
 UOculusXRSpaceDiscoveryComponentsFilter::UOculusXRSpaceDiscoveryComponentsFilter(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRSpaceDiscoveryComponentsFilter);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRSpaceDiscoveryComponentsFilter);
 UOculusXRSpaceDiscoveryComponentsFilter::~UOculusXRSpaceDiscoveryComponentsFilter() {}
 // ********** End Class UOculusXRSpaceDiscoveryComponentsFilter ************************************
 
 // ********** Begin ScriptStruct FOculusXRRoomLayout ***********************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout;
-class UScriptStruct* FOculusXRRoomLayout::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRRoomLayout, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRRoomLayout"));
-	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FOculusXRRoomLayout); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FOculusXRRoomLayout); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Represents a room layout within a specific space\n" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents a room layout within a specific space" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RoomAnchorHandle_MetaData[] = {
 		{ "Category", "OculusXR|Anchors" },
@@ -1373,6 +1459,8 @@ struct Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FOculusXRRoomLayout constinit property declarations ***************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RoomAnchorHandle;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RoomUuid;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_FloorUuid;
@@ -1382,20 +1470,32 @@ struct Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_RoomObjectUUIDs_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_RoomObjectUUIDs;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FOculusXRRoomLayout constinit property declarations *****************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FOculusXRRoomLayout>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomAnchorHandle = { "RoomAnchorHandle", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, RoomAnchorHandle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomAnchorHandle_MetaData), NewProp_RoomAnchorHandle_MetaData) }; // 1603820546
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomUuid = { "RoomUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, RoomUuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomUuid_MetaData), NewProp_RoomUuid_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_FloorUuid = { "FloorUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, FloorUuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FloorUuid_MetaData), NewProp_FloorUuid_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_CeilingUuid = { "CeilingUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, CeilingUuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CeilingUuid_MetaData), NewProp_CeilingUuid_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_WallsUuid_Inner = { "WallsUuid", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_WallsUuid = { "WallsUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, WallsUuid), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallsUuid_MetaData), NewProp_WallsUuid_MetaData) }; // 3912340335
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomObjectUUIDs_Inner = { "RoomObjectUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
-const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomObjectUUIDs = { "RoomObjectUUIDs", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, RoomObjectUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomObjectUUIDs_MetaData), NewProp_RoomObjectUUIDs_MetaData) }; // 3912340335
+}; // struct Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout;
+class UScriptStruct* FOculusXRRoomLayout::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FOculusXRRoomLayout, (UObject*)Z_Construct_UPackage__Script_OculusXRAnchors(), TEXT("OculusXRRoomLayout"));
+	}
+	return Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FOculusXRRoomLayout Property Definitions **************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomAnchorHandle = { "RoomAnchorHandle", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, RoomAnchorHandle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomAnchorHandle_MetaData), NewProp_RoomAnchorHandle_MetaData) }; // 2459929064
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomUuid = { "RoomUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, RoomUuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomUuid_MetaData), NewProp_RoomUuid_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_FloorUuid = { "FloorUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, FloorUuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_FloorUuid_MetaData), NewProp_FloorUuid_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_CeilingUuid = { "CeilingUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, CeilingUuid), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CeilingUuid_MetaData), NewProp_CeilingUuid_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_WallsUuid_Inner = { "WallsUuid", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_WallsUuid = { "WallsUuid", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, WallsUuid), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_WallsUuid_MetaData), NewProp_WallsUuid_MetaData) }; // 520639859
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomObjectUUIDs_Inner = { "RoomObjectUUIDs", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
+const UECodeGen_Private::FArrayPropertyParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomObjectUUIDs = { "RoomObjectUUIDs", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FOculusXRRoomLayout, RoomObjectUUIDs), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RoomObjectUUIDs_MetaData), NewProp_RoomObjectUUIDs_MetaData) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomAnchorHandle,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomUuid,
@@ -1407,6 +1507,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FO
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewProp_RoomObjectUUIDs,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FOculusXRRoomLayout Property Definitions ****************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -1426,7 +1527,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FOculusXRRoomLayout()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.InnerSingleton, Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout.InnerSingleton);
 }
 // ********** End ScriptStruct FOculusXRRoomLayout *************************************************
 
@@ -1440,7 +1541,7 @@ static UEnum* EOculusXRAnchorSpace_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EOculusXRAnchorSpace.OuterSingleton;
 }
-template<> OCULUSXRANCHORS_API UEnum* StaticEnum<EOculusXRAnchorSpace>()
+template<> OCULUSXRANCHORS_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRAnchorSpace>()
 {
 	return EOculusXRAnchorSpace_StaticEnum();
 }
@@ -1449,9 +1550,13 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorSpace_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Enum_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Represents different types of Anchor space.\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/OculusXRAnchorTypes.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Represents different types of Anchor space." },
+#endif
 		{ "Tracking.Comment", "/**\n\x09 * Tracking space is relative to the HMD tracking origin.\n\x09 * It does not include the transform of the player pawn.\n\x09 */" },
 		{ "Tracking.Name", "EOculusXRAnchorSpace::Tracking" },
 		{ "Tracking.ToolTip", "Tracking space is relative to the HMD tracking origin.\nIt does not include the transform of the player pawn." },
@@ -1465,7 +1570,7 @@ struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorSpace_Statics
 		{ "EOculusXRAnchorSpace::Tracking", (int64)EOculusXRAnchorSpace::Tracking },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorSpace_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorSpace_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusXRAnchors,
 	nullptr,
@@ -1489,39 +1594,41 @@ UEnum* Z_Construct_UEnum_OculusXRAnchors_EOculusXRAnchorSpace()
 // ********** End Enum EOculusXRAnchorSpace ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EOculusXRAnchorResult_StaticEnum, TEXT("EOculusXRAnchorResult"), &Z_Registration_Info_UEnum_EOculusXRAnchorResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2715698107U) },
-		{ EOculusLocationFlags_StaticEnum, TEXT("EOculusLocationFlags"), &Z_Registration_Info_UEnum_EOculusLocationFlags, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4135558360U) },
-		{ EOculusXRSpaceQueryFilterType_StaticEnum, TEXT("EOculusXRSpaceQueryFilterType"), &Z_Registration_Info_UEnum_EOculusXRSpaceQueryFilterType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4193402121U) },
-		{ EOculusXRSpaceStorageLocation_StaticEnum, TEXT("EOculusXRSpaceStorageLocation"), &Z_Registration_Info_UEnum_EOculusXRSpaceStorageLocation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 3607691446U) },
-		{ EOculusXRSpaceStoragePersistenceMode_StaticEnum, TEXT("EOculusXRSpaceStoragePersistenceMode"), &Z_Registration_Info_UEnum_EOculusXRSpaceStoragePersistenceMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1038858864U) },
-		{ EOculusXRSpaceComponentType_StaticEnum, TEXT("EOculusXRSpaceComponentType"), &Z_Registration_Info_UEnum_EOculusXRSpaceComponentType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 362484532U) },
-		{ EOculusXRAnchorSpace_StaticEnum, TEXT("EOculusXRAnchorSpace"), &Z_Registration_Info_UEnum_EOculusXRAnchorSpace, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 830633385U) },
+		{ EOculusXRAnchorResult_StaticEnum, TEXT("EOculusXRAnchorResult"), &Z_Registration_Info_UEnum_EOculusXRAnchorResult, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 552975918U) },
+		{ EOculusLocationFlags_StaticEnum, TEXT("EOculusLocationFlags"), &Z_Registration_Info_UEnum_EOculusLocationFlags, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 474987934U) },
+		{ EOculusXRSpaceQueryFilterType_StaticEnum, TEXT("EOculusXRSpaceQueryFilterType"), &Z_Registration_Info_UEnum_EOculusXRSpaceQueryFilterType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 2240351106U) },
+		{ EOculusXRSpaceStorageLocation_StaticEnum, TEXT("EOculusXRSpaceStorageLocation"), &Z_Registration_Info_UEnum_EOculusXRSpaceStorageLocation, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1743423733U) },
+		{ EOculusXRSpaceStoragePersistenceMode_StaticEnum, TEXT("EOculusXRSpaceStoragePersistenceMode"), &Z_Registration_Info_UEnum_EOculusXRSpaceStoragePersistenceMode, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1510697480U) },
+		{ EOculusXRSpaceComponentType_StaticEnum, TEXT("EOculusXRSpaceComponentType"), &Z_Registration_Info_UEnum_EOculusXRSpaceComponentType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 428507294U) },
+		{ EOculusXRAnchorSpace_StaticEnum, TEXT("EOculusXRAnchorSpace"), &Z_Registration_Info_UEnum_EOculusXRAnchorSpace, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 298686785U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FOculusXRAnchorLocationFlags::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::NewStructOps, TEXT("OculusXRAnchorLocationFlags"), &Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnchorLocationFlags), 3499776501U) },
-		{ FOculusXRUUID::StaticStruct, Z_Construct_UScriptStruct_FOculusXRUUID_Statics::NewStructOps, TEXT("OculusXRUUID"), &Z_Registration_Info_UScriptStruct_FOculusXRUUID, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRUUID), 3912340335U) },
-		{ FOculusXRUInt64::StaticStruct, Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::NewStructOps, TEXT("OculusXRUInt64"), &Z_Registration_Info_UScriptStruct_FOculusXRUInt64, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRUInt64), 1603820546U) },
-		{ FOculusXRAnchor::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewStructOps, TEXT("OculusXRAnchor"), &Z_Registration_Info_UScriptStruct_FOculusXRAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnchor), 2144909794U) },
-		{ FOculusXRSpaceQueryInfo::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewStructOps, TEXT("OculusXRSpaceQueryInfo"), &Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceQueryInfo), 741533706U) },
-		{ FOculusXRSpaceQueryResult::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewStructOps, TEXT("OculusXRSpaceQueryResult"), &Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceQueryResult), 635753313U) },
-		{ FOculusXRSpaceQueryFilterValues::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics::NewStructOps, TEXT("OculusXRSpaceQueryFilterValues"), &Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceQueryFilterValues), 1380546277U) },
-		{ FOculusXRSpaceDiscoveryInfo::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::NewStructOps, TEXT("OculusXRSpaceDiscoveryInfo"), &Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceDiscoveryInfo), 2971489904U) },
-		{ FOculusXRAnchorsDiscoverResult::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewStructOps, TEXT("OculusXRAnchorsDiscoverResult"), &Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnchorsDiscoverResult), 2389389487U) },
-		{ FOculusXRRoomLayout::StaticStruct, Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewStructOps, TEXT("OculusXRRoomLayout"), &Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRRoomLayout), 243014425U) },
+		{ FOculusXRAnchorLocationFlags::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnchorLocationFlags_Statics::NewStructOps, TEXT("OculusXRAnchorLocationFlags"),&Z_Registration_Info_UScriptStruct_FOculusXRAnchorLocationFlags, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnchorLocationFlags), 2815131783U) },
+		{ FOculusXRUUID::StaticStruct, Z_Construct_UScriptStruct_FOculusXRUUID_Statics::NewStructOps, TEXT("OculusXRUUID"),&Z_Registration_Info_UScriptStruct_FOculusXRUUID, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRUUID), 520639859U) },
+		{ FOculusXRUInt64::StaticStruct, Z_Construct_UScriptStruct_FOculusXRUInt64_Statics::NewStructOps, TEXT("OculusXRUInt64"),&Z_Registration_Info_UScriptStruct_FOculusXRUInt64, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRUInt64), 2459929064U) },
+		{ FOculusXRAnchor::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnchor_Statics::NewStructOps, TEXT("OculusXRAnchor"),&Z_Registration_Info_UScriptStruct_FOculusXRAnchor, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnchor), 860553646U) },
+		{ FOculusXRSpaceQueryInfo::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceQueryInfo_Statics::NewStructOps, TEXT("OculusXRSpaceQueryInfo"),&Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceQueryInfo), 3316709969U) },
+		{ FOculusXRSpaceQueryResult::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceQueryResult_Statics::NewStructOps, TEXT("OculusXRSpaceQueryResult"),&Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceQueryResult), 3522842805U) },
+		{ FOculusXRSpaceQueryFilterValues::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceQueryFilterValues_Statics::NewStructOps, TEXT("OculusXRSpaceQueryFilterValues"),&Z_Registration_Info_UScriptStruct_FOculusXRSpaceQueryFilterValues, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceQueryFilterValues), 2592404556U) },
+		{ FOculusXRSpaceDiscoveryInfo::StaticStruct, Z_Construct_UScriptStruct_FOculusXRSpaceDiscoveryInfo_Statics::NewStructOps, TEXT("OculusXRSpaceDiscoveryInfo"),&Z_Registration_Info_UScriptStruct_FOculusXRSpaceDiscoveryInfo, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRSpaceDiscoveryInfo), 598761459U) },
+		{ FOculusXRAnchorsDiscoverResult::StaticStruct, Z_Construct_UScriptStruct_FOculusXRAnchorsDiscoverResult_Statics::NewStructOps, TEXT("OculusXRAnchorsDiscoverResult"),&Z_Registration_Info_UScriptStruct_FOculusXRAnchorsDiscoverResult, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRAnchorsDiscoverResult), 3376724701U) },
+		{ FOculusXRRoomLayout::StaticStruct, Z_Construct_UScriptStruct_FOculusXRRoomLayout_Statics::NewStructOps, TEXT("OculusXRRoomLayout"),&Z_Registration_Info_UScriptStruct_FOculusXRRoomLayout, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FOculusXRRoomLayout), 1320193309U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase, UOculusXRSpaceDiscoveryFilterBase::StaticClass, TEXT("UOculusXRSpaceDiscoveryFilterBase"), &Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpaceDiscoveryFilterBase), 3924295249U) },
-		{ Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter, UOculusXRSpaceDiscoveryIdsFilter::StaticClass, TEXT("UOculusXRSpaceDiscoveryIdsFilter"), &Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpaceDiscoveryIdsFilter), 427341558U) },
-		{ Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter, UOculusXRSpaceDiscoveryComponentsFilter::StaticClass, TEXT("UOculusXRSpaceDiscoveryComponentsFilter"), &Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpaceDiscoveryComponentsFilter), 1635350288U) },
+		{ Z_Construct_UClass_UOculusXRSpaceDiscoveryFilterBase, UOculusXRSpaceDiscoveryFilterBase::StaticClass, TEXT("UOculusXRSpaceDiscoveryFilterBase"), &Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryFilterBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpaceDiscoveryFilterBase), 2981068994U) },
+		{ Z_Construct_UClass_UOculusXRSpaceDiscoveryIdsFilter, UOculusXRSpaceDiscoveryIdsFilter::StaticClass, TEXT("UOculusXRSpaceDiscoveryIdsFilter"), &Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryIdsFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpaceDiscoveryIdsFilter), 32034957U) },
+		{ Z_Construct_UClass_UOculusXRSpaceDiscoveryComponentsFilter, UOculusXRSpaceDiscoveryComponentsFilter::StaticClass, TEXT("UOculusXRSpaceDiscoveryComponentsFilter"), &Z_Registration_Info_UClass_UOculusXRSpaceDiscoveryComponentsFilter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRSpaceDiscoveryComponentsFilter), 1954971811U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_502019860{
+	TEXT("/Script/OculusXRAnchors"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_1492030879(TEXT("/Script/OculusXRAnchors"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorTypes_h__Script_OculusXRAnchors_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

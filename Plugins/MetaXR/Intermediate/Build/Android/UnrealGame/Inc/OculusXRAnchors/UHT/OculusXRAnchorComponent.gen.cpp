@@ -9,7 +9,7 @@
 #include "OculusXRAnchorTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRAnchorComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -37,16 +37,25 @@ struct Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHandle constinit property declarations *****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHandle constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventGetHandle_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 1603820546
+
+// ********** Begin Function GetHandle Property Definitions ****************************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventGetHandle_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 2459929064
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "GetHandle", Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::OculusXRAnchorComponent_eventGetHandle_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHandle Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "GetHandle", 	Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::OculusXRAnchorComponent_eventGetHandle_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle_Statics::OculusXRAnchorComponent_eventGetHandle_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle()
 {
@@ -80,16 +89,25 @@ struct Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetUUID constinit property declarations *******************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetUUID constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventGetUUID_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 3912340335
+
+// ********** Begin Function GetUUID Property Definitions ******************************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventGetUUID_Parms, ReturnValue), Z_Construct_UScriptStruct_FOculusXRUUID, METADATA_PARAMS(0, nullptr) }; // 520639859
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "GetUUID", Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::OculusXRAnchorComponent_eventGetUUID_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetUUID Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "GetUUID", 	Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::OculusXRAnchorComponent_eventGetUUID_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID_Statics::OculusXRAnchorComponent_eventGetUUID_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID()
 {
@@ -123,11 +141,16 @@ struct Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function HasValidHandle constinit property declarations ************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function HasValidHandle constinit property declarations **************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function HasValidHandle Property Definitions ***********************************
 void Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRAnchorComponent_eventHasValidHandle_Parms*)Obj)->ReturnValue = 1;
@@ -137,7 +160,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "HasValidHandle", Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::OculusXRAnchorComponent_eventHasValidHandle_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::Function_MetaDataParams)},  };
+// ********** End Function HasValidHandle Property Definitions *************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "HasValidHandle", 	Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::OculusXRAnchorComponent_eventHasValidHandle_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle_Statics::OculusXRAnchorComponent_eventHasValidHandle_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle()
 {
@@ -171,11 +198,16 @@ struct Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsSaved constinit property declarations *******************************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsSaved constinit property declarations *********************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsSaved Property Definitions ******************************************
 void Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRAnchorComponent_eventIsSaved_Parms*)Obj)->ReturnValue = 1;
@@ -185,7 +217,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "IsSaved", Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::OculusXRAnchorComponent_eventIsSaved_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsSaved Property Definitions ********************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "IsSaved", 	Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::OculusXRAnchorComponent_eventIsSaved_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved_Statics::OculusXRAnchorComponent_eventIsSaved_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved()
 {
@@ -220,15 +256,20 @@ struct Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsStoredAtLocation constinit property declarations ********************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Location_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Location;
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsStoredAtLocation constinit property declarations **********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsStoredAtLocation Property Definitions *******************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::NewProp_Location_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventIsStoredAtLocation_Parms, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 3607691446
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::NewProp_Location = { "Location", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventIsStoredAtLocation_Parms, Location), Z_Construct_UEnum_OculusXRAnchors_EOculusXRSpaceStorageLocation, METADATA_PARAMS(0, nullptr) }; // 1743423733
 void Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((OculusXRAnchorComponent_eventIsStoredAtLocation_Parms*)Obj)->ReturnValue = 1;
@@ -240,7 +281,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculu
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "IsStoredAtLocation", Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::OculusXRAnchorComponent_eventIsStoredAtLocation_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsStoredAtLocation Property Definitions *********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "IsStoredAtLocation", 	Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::OculusXRAnchorComponent_eventIsStoredAtLocation_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation_Statics::OculusXRAnchorComponent_eventIsStoredAtLocation_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation()
 {
@@ -275,16 +320,25 @@ struct Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetHandle constinit property declarations *****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Handle;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetHandle constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::NewProp_Handle = { "Handle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventSetHandle_Parms, Handle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 1603820546
+
+// ********** Begin Function SetHandle Property Definitions ****************************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::NewProp_Handle = { "Handle", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(OculusXRAnchorComponent_eventSetHandle_Parms, Handle), Z_Construct_UScriptStruct_FOculusXRUInt64, METADATA_PARAMS(0, nullptr) }; // 2459929064
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::NewProp_Handle,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "SetHandle", Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::PropPointers), sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::OculusXRAnchorComponent_eventSetHandle_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetHandle Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UOculusXRAnchorComponent, nullptr, "SetHandle", 	Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::OculusXRAnchorComponent_eventSetHandle_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle_Statics::OculusXRAnchorComponent_eventSetHandle_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle()
 {
@@ -306,19 +360,6 @@ DEFINE_FUNCTION(UOculusXRAnchorComponent::execSetHandle)
 // ********** End Class UOculusXRAnchorComponent Function SetHandle ********************************
 
 // ********** Begin Class UOculusXRAnchorComponent *************************************************
-void UOculusXRAnchorComponent::StaticRegisterNativesUOculusXRAnchorComponent()
-{
-	UClass* Class = UOculusXRAnchorComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetHandle", &UOculusXRAnchorComponent::execGetHandle },
-		{ "GetUUID", &UOculusXRAnchorComponent::execGetUUID },
-		{ "HasValidHandle", &UOculusXRAnchorComponent::execHasValidHandle },
-		{ "IsSaved", &UOculusXRAnchorComponent::execIsSaved },
-		{ "IsStoredAtLocation", &UOculusXRAnchorComponent::execIsStoredAtLocation },
-		{ "SetHandle", &UOculusXRAnchorComponent::execSetHandle },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRAnchorComponent;
 UClass* UOculusXRAnchorComponent::GetPrivateStaticClass()
 {
@@ -326,7 +367,7 @@ UClass* UOculusXRAnchorComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRAnchorComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRAnchorComponent"),
 			Z_Registration_Info_UClass_UOculusXRAnchorComponent.InnerSingleton,
 			StaticRegisterNativesUOculusXRAnchorComponent,
@@ -361,28 +402,42 @@ struct Z_Construct_UClass_UOculusXRAnchorComponent_Statics
 		{ "ModuleRelativePath", "Public/OculusXRAnchorComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRAnchorComponent constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_PlayerCameraManager;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRAnchorComponent constinit property declarations *******************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetHandle"), .Pointer = &UOculusXRAnchorComponent::execGetHandle },
+		{ .NameUTF8 = UTF8TEXT("GetUUID"), .Pointer = &UOculusXRAnchorComponent::execGetUUID },
+		{ .NameUTF8 = UTF8TEXT("HasValidHandle"), .Pointer = &UOculusXRAnchorComponent::execHasValidHandle },
+		{ .NameUTF8 = UTF8TEXT("IsSaved"), .Pointer = &UOculusXRAnchorComponent::execIsSaved },
+		{ .NameUTF8 = UTF8TEXT("IsStoredAtLocation"), .Pointer = &UOculusXRAnchorComponent::execIsStoredAtLocation },
+		{ .NameUTF8 = UTF8TEXT("SetHandle"), .Pointer = &UOculusXRAnchorComponent::execSetHandle },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle, "GetHandle" }, // 2103039885
-		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID, "GetUUID" }, // 2620808639
-		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle, "HasValidHandle" }, // 553435342
-		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved, "IsSaved" }, // 3661856715
-		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation, "IsStoredAtLocation" }, // 857654821
-		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle, "SetHandle" }, // 2552523316
+		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_GetHandle, "GetHandle" }, // 1338716188
+		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_GetUUID, "GetUUID" }, // 1550306015
+		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_HasValidHandle, "HasValidHandle" }, // 2189207749
+		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_IsSaved, "IsSaved" }, // 680602557
+		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_IsStoredAtLocation, "IsStoredAtLocation" }, // 1600621446
+		{ &Z_Construct_UFunction_UOculusXRAnchorComponent_SetHandle, "SetHandle" }, // 3658209956
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRAnchorComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRAnchorComponent_Statics
+
+// ********** Begin Class UOculusXRAnchorComponent Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UOculusXRAnchorComponent_Statics::NewProp_PlayerCameraManager = { "PlayerCameraManager", nullptr, (EPropertyFlags)0x0040000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UOculusXRAnchorComponent, PlayerCameraManager), Z_Construct_UClass_APlayerCameraManager_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PlayerCameraManager_MetaData), NewProp_PlayerCameraManager_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXRAnchorComponent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRAnchorComponent_Statics::NewProp_PlayerCameraManager,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAnchorComponent_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRAnchorComponent Property Definitions ******************************
 UObject* (*const Z_Construct_UClass_UOculusXRAnchorComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UActorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRAnchors,
@@ -403,6 +458,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRAnchorComponen
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRAnchorComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRAnchorComponent_Statics::Class_MetaDataParams)
 };
+void UOculusXRAnchorComponent::StaticRegisterNativesUOculusXRAnchorComponent()
+{
+	UClass* Class = UOculusXRAnchorComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UOculusXRAnchorComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UOculusXRAnchorComponent()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRAnchorComponent.OuterSingleton)
@@ -411,21 +471,23 @@ UClass* Z_Construct_UClass_UOculusXRAnchorComponent()
 	}
 	return Z_Registration_Info_UClass_UOculusXRAnchorComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRAnchorComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRAnchorComponent);
 UOculusXRAnchorComponent::~UOculusXRAnchorComponent() {}
 // ********** End Class UOculusXRAnchorComponent ***************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRAnchorComponent, UOculusXRAnchorComponent::StaticClass, TEXT("UOculusXRAnchorComponent"), &Z_Registration_Info_UClass_UOculusXRAnchorComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAnchorComponent), 2777181646U) },
+		{ Z_Construct_UClass_UOculusXRAnchorComponent, UOculusXRAnchorComponent::StaticClass, TEXT("UOculusXRAnchorComponent"), &Z_Registration_Info_UClass_UOculusXRAnchorComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRAnchorComponent), 2480202486U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_1272764654(TEXT("/Script/OculusXRAnchors"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_3113039522{
+	TEXT("/Script/OculusXRAnchors"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRAnchors_Public_OculusXRAnchorComponent_h__Script_OculusXRAnchors_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

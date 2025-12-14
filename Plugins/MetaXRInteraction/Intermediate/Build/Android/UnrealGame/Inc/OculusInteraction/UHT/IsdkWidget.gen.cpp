@@ -8,7 +8,7 @@
 #include "Widget/IsdkWidget.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkWidget() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -37,7 +37,7 @@ static UEnum* EIsdkWidgetEventType_StaticEnum()
 	}
 	return Z_Registration_Info_UEnum_EIsdkWidgetEventType.OuterSingleton;
 }
-template<> OCULUSINTERACTION_API UEnum* StaticEnum<EIsdkWidgetEventType>()
+template<> OCULUSINTERACTION_NON_ATTRIBUTED_API UEnum* StaticEnum<EIsdkWidgetEventType>()
 {
 	return EIsdkWidgetEventType_StaticEnum();
 }
@@ -60,7 +60,7 @@ struct Z_Construct_UEnum_OculusInteraction_EIsdkWidgetEventType_Statics
 		{ "EIsdkWidgetEventType::UnselectedEmpty", (int64)EIsdkWidgetEventType::UnselectedEmpty },
 	};
 	static const UECodeGen_Private::FEnumParams EnumParams;
-};
+}; // struct Z_Construct_UEnum_OculusInteraction_EIsdkWidgetEventType_Statics 
 const UECodeGen_Private::FEnumParams Z_Construct_UEnum_OculusInteraction_EIsdkWidgetEventType_Statics::EnumParams = {
 	(UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -84,17 +84,10 @@ UEnum* Z_Construct_UEnum_OculusInteraction_EIsdkWidgetEventType()
 // ********** End Enum EIsdkWidgetEventType ********************************************************
 
 // ********** Begin ScriptStruct FIsdkWidgetEvent **************************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent;
-class UScriptStruct* FIsdkWidgetEvent::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkWidgetEvent, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkWidgetEvent"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkWidgetEvent); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkWidgetEvent); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
@@ -109,25 +102,40 @@ struct Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkWidgetEvent constinit property declarations ******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Interactor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Type_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Type;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkWidgetEvent constinit property declarations ********************
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkWidgetEvent>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent;
+class UScriptStruct* FIsdkWidgetEvent::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkWidgetEvent, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkWidgetEvent"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkWidgetEvent Property Definitions *****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Interactor = { "Interactor", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkWidgetEvent, Interactor), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Interactor_MetaData), NewProp_Interactor_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkWidgetEvent, Type), Z_Construct_UEnum_OculusInteraction_EIsdkWidgetEventType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Type_MetaData), NewProp_Type_MetaData) }; // 1733239194
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkWidgetEvent, Type), Z_Construct_UEnum_OculusInteraction_EIsdkWidgetEventType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Type_MetaData), NewProp_Type_MetaData) }; // 89785807
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Interactor,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Type_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewProp_Type,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkWidgetEvent Property Definitions *******************************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -147,7 +155,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkWidgetEvent()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.InnerSingleton, Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkWidgetEvent ****************************************************
 
@@ -163,16 +171,25 @@ struct Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FIsdkWidgetEventDelegate constinit property declarations **************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WidgetEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FIsdkWidgetEventDelegate constinit property declarations ****************
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::NewProp_WidgetEvent = { "WidgetEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusInteraction_eventIsdkWidgetEventDelegate_Parms, WidgetEvent), Z_Construct_UScriptStruct_FIsdkWidgetEvent, METADATA_PARAMS(0, nullptr) }; // 2690397075
+
+// ********** Begin Delegate FIsdkWidgetEventDelegate Property Definitions *************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::NewProp_WidgetEvent = { "WidgetEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusInteraction_eventIsdkWidgetEventDelegate_Parms, WidgetEvent), Z_Construct_UScriptStruct_FIsdkWidgetEvent, METADATA_PARAMS(0, nullptr) }; // 1624822955
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::NewProp_WidgetEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkWidgetEventDelegate__DelegateSignature", Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::_Script_OculusInteraction_eventIsdkWidgetEventDelegate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FIsdkWidgetEventDelegate Property Definitions ***************************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkWidgetEventDelegate__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::_Script_OculusInteraction_eventIsdkWidgetEventDelegate_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature_Statics::_Script_OculusInteraction_eventIsdkWidgetEventDelegate_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusInteraction_IsdkWidgetEventDelegate__DelegateSignature()
 {
@@ -196,23 +213,20 @@ void FIsdkWidgetEventDelegate_DelegateWrapper(const FMulticastScriptDelegate& Is
 // ********** End Delegate FIsdkWidgetEventDelegate ************************************************
 
 // ********** Begin ScriptStruct FIsdkVirtualUserPointerEvent **************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent;
-class UScriptStruct* FIsdkVirtualUserPointerEvent::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkVirtualUserPointerEvent"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkVirtualUserPointerEvent); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkVirtualUserPointerEvent); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "BlueprintType", "true" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * An interaction event for use with Slate Widgets. It contains information about which virtual user\n * is emitting the event\n */" },
+#endif
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "An interaction event for use with Slate Widgets. It contains information about which virtual user\nis emitting the event" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Interactor_MetaData[] = {
 		{ "Category", "InteractionSDK" },
@@ -235,6 +249,8 @@ struct Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkVirtualUserPointerEvent constinit property declarations ******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Interactor;
 	static const UECodeGen_Private::FBytePropertyParams NewProp_Type_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_Type;
@@ -242,15 +258,27 @@ struct Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics
 	static const UECodeGen_Private::FIntPropertyParams NewProp_VirtualUserIndex;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_PointerIndex;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkVirtualUserPointerEvent constinit property declarations ********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkVirtualUserPointerEvent>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent;
+class UScriptStruct* FIsdkVirtualUserPointerEvent::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkVirtualUserPointerEvent"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkVirtualUserPointerEvent Property Definitions *****************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_Interactor = { "Interactor", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkVirtualUserPointerEvent, Interactor), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Interactor_MetaData), NewProp_Interactor_MetaData) };
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_Type_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkVirtualUserPointerEvent, Type), Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Type_MetaData), NewProp_Type_MetaData) }; // 2809597128
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_Type = { "Type", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkVirtualUserPointerEvent, Type), Z_Construct_UEnum_OculusInteraction_EIsdkPointerEventType, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Type_MetaData), NewProp_Type_MetaData) }; // 3207414997
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_Position = { "Position", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkVirtualUserPointerEvent, Position), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Position_MetaData), NewProp_Position_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_VirtualUserIndex = { "VirtualUserIndex", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkVirtualUserPointerEvent, VirtualUserIndex), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_VirtualUserIndex_MetaData), NewProp_VirtualUserIndex_MetaData) };
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_PointerIndex = { "PointerIndex", nullptr, (EPropertyFlags)0x0010000000000004, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkVirtualUserPointerEvent, PointerIndex), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_PointerIndex_MetaData), NewProp_PointerIndex_MetaData) };
@@ -263,6 +291,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewProp_PointerIndex,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkVirtualUserPointerEvent Property Definitions *******************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -282,7 +311,7 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.InnerSingleton, Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkVirtualUserPointerEvent ****************************************
 
@@ -298,16 +327,25 @@ struct Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEve
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Delegate FIsdkVirtualUserPointerEventDelegate constinit property declarations **
 	static const UECodeGen_Private::FStructPropertyParams NewProp_WidgetPointerEvent;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FIsdkVirtualUserPointerEventDelegate constinit property declarations ****
 	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::NewProp_WidgetPointerEvent = { "WidgetPointerEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusInteraction_eventIsdkVirtualUserPointerEventDelegate_Parms, WidgetPointerEvent), Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent, METADATA_PARAMS(0, nullptr) }; // 853788785
+
+// ********** Begin Delegate FIsdkVirtualUserPointerEventDelegate Property Definitions *************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::NewProp_WidgetPointerEvent = { "WidgetPointerEvent", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_OculusInteraction_eventIsdkVirtualUserPointerEventDelegate_Parms, WidgetPointerEvent), Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent, METADATA_PARAMS(0, nullptr) }; // 738370983
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::NewProp_WidgetPointerEvent,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkVirtualUserPointerEventDelegate__DelegateSignature", Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::PropPointers), sizeof(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::_Script_OculusInteraction_eventIsdkVirtualUserPointerEventDelegate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
+// ********** End Delegate FIsdkVirtualUserPointerEventDelegate Property Definitions ***************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_OculusInteraction, nullptr, "IsdkVirtualUserPointerEventDelegate__DelegateSignature", 	Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::_Script_OculusInteraction_eventIsdkVirtualUserPointerEventDelegate_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature_Statics::_Script_OculusInteraction_eventIsdkVirtualUserPointerEventDelegate_Parms) < MAX_uint16);
 UFunction* Z_Construct_UDelegateFunction_OculusInteraction_IsdkVirtualUserPointerEventDelegate__DelegateSignature()
 {
@@ -331,17 +369,10 @@ void FIsdkVirtualUserPointerEventDelegate_DelegateWrapper(const FMulticastScript
 // ********** End Delegate FIsdkVirtualUserPointerEventDelegate ************************************
 
 // ********** Begin ScriptStruct FIsdkWidgetVirtualUserState ***************************************
-static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState;
-class UScriptStruct* FIsdkWidgetVirtualUserState::StaticStruct()
-{
-	if (!Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.OuterSingleton)
-	{
-		Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkWidgetVirtualUserState"));
-	}
-	return Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.OuterSingleton;
-}
 struct Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics
 {
+	static inline consteval int32 GetStructSize() { return sizeof(FIsdkWidgetVirtualUserState); }
+	static inline consteval int16 GetStructAlignment() { return alignof(FIsdkWidgetVirtualUserState); }
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Struct_MetaDataParams[] = {
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
@@ -350,19 +381,34 @@ struct Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin ScriptStruct FIsdkWidgetVirtualUserState constinit property declarations *******
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Interactor;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End ScriptStruct FIsdkWidgetVirtualUserState constinit property declarations *********
 	static void* NewStructOps()
 	{
 		return (UScriptStruct::ICppStructOps*)new UScriptStruct::TCppStructOps<FIsdkWidgetVirtualUserState>();
 	}
 	static const UECodeGen_Private::FStructParams StructParams;
-};
+}; // struct Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics
+static FStructRegistrationInfo Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState;
+class UScriptStruct* FIsdkWidgetVirtualUserState::StaticStruct()
+{
+	if (!Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.OuterSingleton)
+	{
+		Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.OuterSingleton = GetStaticStruct(Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState, (UObject*)Z_Construct_UPackage__Script_OculusInteraction(), TEXT("IsdkWidgetVirtualUserState"));
+	}
+	return Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.OuterSingleton;
+	}
+
+// ********** Begin ScriptStruct FIsdkWidgetVirtualUserState Property Definitions ******************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::NewProp_Interactor = { "Interactor", nullptr, (EPropertyFlags)0x0010000000000000, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(FIsdkWidgetVirtualUserState, Interactor), Z_Construct_UClass_UObject_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Interactor_MetaData), NewProp_Interactor_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::NewProp_Interactor,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::PropPointers) < 2048);
+// ********** End ScriptStruct FIsdkWidgetVirtualUserState Property Definitions ********************
 const UECodeGen_Private::FStructParams Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::StructParams = {
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
 	nullptr,
@@ -382,14 +428,11 @@ UScriptStruct* Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState()
 	{
 		UECodeGen_Private::ConstructUScriptStruct(Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.InnerSingleton, Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::StructParams);
 	}
-	return Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.InnerSingleton;
+	return CastChecked<UScriptStruct>(Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState.InnerSingleton);
 }
 // ********** End ScriptStruct FIsdkWidgetVirtualUserState *****************************************
 
 // ********** Begin Class UIsdkWidget **************************************************************
-void UIsdkWidget::StaticRegisterNativesUIsdkWidget()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkWidget;
 UClass* UIsdkWidget::GetPrivateStaticClass()
 {
@@ -397,7 +440,7 @@ UClass* UIsdkWidget::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkWidget.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkWidget"),
 			Z_Registration_Info_UClass_UIsdkWidget.InnerSingleton,
 			StaticRegisterNativesUIsdkWidget,
@@ -424,18 +467,25 @@ struct Z_Construct_UClass_UIsdkWidget_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @brief Static methods to move data from ISDK into Slate\n */" },
+#endif
 		{ "IncludePath", "Widget/IsdkWidget.h" },
 		{ "ModuleRelativePath", "Public/Widget/IsdkWidget.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Static methods to move data from ISDK into Slate" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkWidget constinit property declarations ******************************
+// ********** End Class UIsdkWidget constinit property declarations ********************************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkWidget>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkWidget_Statics
 UObject* (*const Z_Construct_UClass_UIsdkWidget_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -456,6 +506,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkWidget_Statics::Cl
 	0x001000A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkWidget_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkWidget_Statics::Class_MetaDataParams)
 };
+void UIsdkWidget::StaticRegisterNativesUIsdkWidget()
+{
+}
 UClass* Z_Construct_UClass_UIsdkWidget()
 {
 	if (!Z_Registration_Info_UClass_UIsdkWidget.OuterSingleton)
@@ -465,29 +518,31 @@ UClass* Z_Construct_UClass_UIsdkWidget()
 	return Z_Registration_Info_UClass_UIsdkWidget.OuterSingleton;
 }
 UIsdkWidget::UIsdkWidget(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkWidget);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkWidget);
 UIsdkWidget::~UIsdkWidget() {}
 // ********** End Class UIsdkWidget ****************************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics
 {
 	static constexpr FEnumRegisterCompiledInInfo EnumInfo[] = {
-		{ EIsdkWidgetEventType_StaticEnum, TEXT("EIsdkWidgetEventType"), &Z_Registration_Info_UEnum_EIsdkWidgetEventType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1733239194U) },
+		{ EIsdkWidgetEventType_StaticEnum, TEXT("EIsdkWidgetEventType"), &Z_Registration_Info_UEnum_EIsdkWidgetEventType, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 89785807U) },
 	};
 	static constexpr FStructRegisterCompiledInInfo ScriptStructInfo[] = {
-		{ FIsdkWidgetEvent::StaticStruct, Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewStructOps, TEXT("IsdkWidgetEvent"), &Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkWidgetEvent), 2690397075U) },
-		{ FIsdkVirtualUserPointerEvent::StaticStruct, Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewStructOps, TEXT("IsdkVirtualUserPointerEvent"), &Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkVirtualUserPointerEvent), 853788785U) },
-		{ FIsdkWidgetVirtualUserState::StaticStruct, Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::NewStructOps, TEXT("IsdkWidgetVirtualUserState"), &Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkWidgetVirtualUserState), 2710415241U) },
+		{ FIsdkWidgetEvent::StaticStruct, Z_Construct_UScriptStruct_FIsdkWidgetEvent_Statics::NewStructOps, TEXT("IsdkWidgetEvent"),&Z_Registration_Info_UScriptStruct_FIsdkWidgetEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkWidgetEvent), 1624822955U) },
+		{ FIsdkVirtualUserPointerEvent::StaticStruct, Z_Construct_UScriptStruct_FIsdkVirtualUserPointerEvent_Statics::NewStructOps, TEXT("IsdkVirtualUserPointerEvent"),&Z_Registration_Info_UScriptStruct_FIsdkVirtualUserPointerEvent, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkVirtualUserPointerEvent), 738370983U) },
+		{ FIsdkWidgetVirtualUserState::StaticStruct, Z_Construct_UScriptStruct_FIsdkWidgetVirtualUserState_Statics::NewStructOps, TEXT("IsdkWidgetVirtualUserState"),&Z_Registration_Info_UScriptStruct_FIsdkWidgetVirtualUserState, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FIsdkWidgetVirtualUserState), 2643063398U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkWidget, UIsdkWidget::StaticClass, TEXT("UIsdkWidget"), &Z_Registration_Info_UClass_UIsdkWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkWidget), 1529594373U) },
+		{ Z_Construct_UClass_UIsdkWidget, UIsdkWidget::StaticClass, TEXT("UIsdkWidget"), &Z_Registration_Info_UClass_UIsdkWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkWidget), 1151025157U) },
 	};
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_1850576363{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ClassInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ScriptStructInfo),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::EnumInfo),
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_893821577(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ClassInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::ScriptStructInfo),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Widget_IsdkWidget_h__Script_OculusInteraction_Statics::EnumInfo));
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

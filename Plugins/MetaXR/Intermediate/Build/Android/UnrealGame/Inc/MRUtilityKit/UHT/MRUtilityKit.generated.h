@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FMRUKHit **********************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_147_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKHit_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKHit_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_147_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKHit_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,8 +27,9 @@ struct FMRUKHit;
 // ********** End ScriptStruct FMRUKHit ************************************************************
 
 // ********** Begin ScriptStruct FMRUKLabelFilter **************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_175_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKLabelFilter_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKLabelFilter_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_175_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKLabelFilter_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -35,8 +37,9 @@ struct FMRUKLabelFilter;
 // ********** End ScriptStruct FMRUKLabelFilter ****************************************************
 
 // ********** Begin ScriptStruct FMRUKPlaneUV ******************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_213_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKPlaneUV_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKPlaneUV_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_213_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKPlaneUV_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -44,8 +47,9 @@ struct FMRUKPlaneUV;
 // ********** End ScriptStruct FMRUKPlaneUV ********************************************************
 
 // ********** Begin ScriptStruct FMRUKTexCoordModes ************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_234_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKTexCoordModes_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKTexCoordModes_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_234_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKTexCoordModes_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -53,8 +57,9 @@ struct FMRUKTexCoordModes;
 // ********** End ScriptStruct FMRUKTexCoordModes **************************************************
 
 // ********** Begin ScriptStruct FMRUKSpawnActor ***************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_258_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKSpawnActor_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKSpawnActor_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_258_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKSpawnActor_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -62,8 +67,9 @@ struct FMRUKSpawnActor;
 // ********** End ScriptStruct FMRUKSpawnActor *****************************************************
 
 // ********** Begin ScriptStruct FMRUKSpawnGroup ***************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_324_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKSpawnGroup_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKSpawnGroup_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_324_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKSpawnGroup_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -71,8 +77,9 @@ struct FMRUKSpawnGroup;
 // ********** End ScriptStruct FMRUKSpawnGroup *****************************************************
 
 // ********** Begin ScriptStruct FMRUKEnvironmentRaycastHit ****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h_445_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FMRUKEnvironmentRaycastHit_Statics; \
+struct Z_Construct_UScriptStruct_FMRUKEnvironmentRaycastHit_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h_445_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FMRUKEnvironmentRaycastHit_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -80,7 +87,7 @@ struct FMRUKEnvironmentRaycastHit;
 // ********** End ScriptStruct FMRUKEnvironmentRaycastHit ******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKit_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKit_h
 
 // ********** Begin Enum EMRUKSceneModel ***********************************************************
 #define FOREACH_ENUM_EMRUKSCENEMODEL(op) \
@@ -90,7 +97,7 @@ struct FMRUKEnvironmentRaycastHit;
 
 enum class EMRUKSceneModel : uint8;
 template<> struct TIsUEnumClass<EMRUKSceneModel> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSceneModel>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKSceneModel>();
 // ********** End Enum EMRUKSceneModel *************************************************************
 
 // ********** Begin Enum EMRUKInitStatus ***********************************************************
@@ -102,7 +109,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSceneModel>();
 
 enum class EMRUKInitStatus : uint8;
 template<> struct TIsUEnumClass<EMRUKInitStatus> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKInitStatus>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKInitStatus>();
 // ********** End Enum EMRUKInitStatus *************************************************************
 
 // ********** Begin Enum EMRUKCoordModeU ***********************************************************
@@ -115,7 +122,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKInitStatus>();
 
 enum class EMRUKCoordModeU : uint8;
 template<> struct TIsUEnumClass<EMRUKCoordModeU> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKCoordModeU>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKCoordModeU>();
 // ********** End Enum EMRUKCoordModeU *************************************************************
 
 // ********** Begin Enum EMRUKCoordModeV ***********************************************************
@@ -126,7 +133,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKCoordModeU>();
 
 enum class EMRUKCoordModeV : uint8;
 template<> struct TIsUEnumClass<EMRUKCoordModeV> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKCoordModeV>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKCoordModeV>();
 // ********** End Enum EMRUKCoordModeV *************************************************************
 
 // ********** Begin Enum EMRUKSpawnerSelectionMode *************************************************
@@ -137,7 +144,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKCoordModeV>();
 
 enum class EMRUKSpawnerSelectionMode : uint8;
 template<> struct TIsUEnumClass<EMRUKSpawnerSelectionMode> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnerSelectionMode>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKSpawnerSelectionMode>();
 // ********** End Enum EMRUKSpawnerSelectionMode ***************************************************
 
 // ********** Begin Enum EMRUKSpawnerScalingMode ***************************************************
@@ -150,7 +157,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnerSelectionMode>();
 
 enum class EMRUKSpawnerScalingMode : uint8;
 template<> struct TIsUEnumClass<EMRUKSpawnerScalingMode> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnerScalingMode>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKSpawnerScalingMode>();
 // ********** End Enum EMRUKSpawnerScalingMode *****************************************************
 
 // ********** Begin Enum EMRUKAlignMode ************************************************************
@@ -174,7 +181,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnerScalingMode>();
 
 enum class EMRUKAlignMode : uint8;
 template<> struct TIsUEnumClass<EMRUKAlignMode> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKAlignMode>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKAlignMode>();
 // ********** End Enum EMRUKAlignMode **************************************************************
 
 // ********** Begin Enum EMRUKComponentType ********************************************************
@@ -187,7 +194,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKAlignMode>();
 
 enum class EMRUKComponentType;
 template<> struct TIsUEnumClass<EMRUKComponentType> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKComponentType>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKComponentType>();
 // ********** End Enum EMRUKComponentType **********************************************************
 
 // ********** Begin Enum EMRUKFallbackToProceduralOverwrite ****************************************
@@ -198,7 +205,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKComponentType>();
 
 enum class EMRUKFallbackToProceduralOverwrite : uint8;
 template<> struct TIsUEnumClass<EMRUKFallbackToProceduralOverwrite> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKFallbackToProceduralOverwrite>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKFallbackToProceduralOverwrite>();
 // ********** End Enum EMRUKFallbackToProceduralOverwrite ******************************************
 
 // ********** Begin Enum EMRUKSpawnMode ************************************************************
@@ -209,7 +216,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKFallbackToProceduralOverwrite
 
 enum class EMRUKSpawnMode : uint8;
 template<> struct TIsUEnumClass<EMRUKSpawnMode> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnMode>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKSpawnMode>();
 // ********** End Enum EMRUKSpawnMode **************************************************************
 
 // ********** Begin Enum EMRUKEnvironmentRaycastHitStatus ******************************************
@@ -223,7 +230,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKSpawnMode>();
 
 enum class EMRUKEnvironmentRaycastHitStatus : uint8;
 template<> struct TIsUEnumClass<EMRUKEnvironmentRaycastHitStatus> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKEnvironmentRaycastHitStatus>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKEnvironmentRaycastHitStatus>();
 // ********** End Enum EMRUKEnvironmentRaycastHitStatus ********************************************
 
 // ********** Begin Enum EMRUKEnvironmentRaycasterStatus *******************************************
@@ -234,7 +241,7 @@ template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKEnvironmentRaycastHitStatus>(
 
 enum class EMRUKEnvironmentRaycasterStatus : uint8;
 template<> struct TIsUEnumClass<EMRUKEnvironmentRaycasterStatus> { enum { Value = true }; };
-template<> MRUTILITYKIT_API UEnum* StaticEnum<EMRUKEnvironmentRaycasterStatus>();
+template<> MRUTILITYKIT_NON_ATTRIBUTED_API UEnum* StaticEnum<EMRUKEnvironmentRaycasterStatus>();
 // ********** End Enum EMRUKEnvironmentRaycasterStatus *********************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

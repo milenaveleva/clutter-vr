@@ -6,7 +6,6 @@
 #include "D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/UnrealEditor/Inc/OculusXREditor/UHT/OculusXRPlatformToolSettings.gen.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/UnrealEditor/Inc/OculusXREditor/UHT/OculusXRSurveySettings.gen.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Intermediate/Build/Win64/x64/UnrealEditor/Development/OculusXREditor/PerModuleInline.gen.cpp"
-#include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXREditor/Private/OculusXRBuildAnalytics.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXREditor/Private/OculusXREditorModule.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXREditor/Private/OculusXREditorSettings.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXREditor/Private/OculusXRMovementAssetsFactories.cpp"

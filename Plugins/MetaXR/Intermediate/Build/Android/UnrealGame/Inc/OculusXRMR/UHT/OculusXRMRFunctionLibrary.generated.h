@@ -15,12 +15,11 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class UOculusXRMR_Settings;
 class USceneComponent;
 
 // ********** Begin Class UOculusXRMRFunctionLibrary ***********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_RPC_WRAPPERS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_RPC_WRAPPERS \
 	DECLARE_FUNCTION(execIsMrcActive); \
 	DECLARE_FUNCTION(execIsMrcEnabled); \
 	DECLARE_FUNCTION(execSetMrcScalingFactor); \
@@ -30,20 +29,21 @@ class USceneComponent;
 	DECLARE_FUNCTION(execGetOculusXRMRSettings);
 
 
+struct Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics;
 OCULUSXRMR_API UClass* Z_Construct_UClass_UOculusXRMRFunctionLibrary_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRMRFunctionLibrary(); \
-	friend struct Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRMRFunctionLibrary_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRMR_API UClass* Z_Construct_UClass_UOculusXRMRFunctionLibrary_NoRegister(); \
+	friend OCULUSXRMR_API UClass* ::Z_Construct_UClass_UOculusXRMRFunctionLibrary_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRMRFunctionLibrary, UBlueprintFunctionLibrary, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRMR"), Z_Construct_UClass_UOculusXRMRFunctionLibrary_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRMRFunctionLibrary)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRMRFunctionLibrary(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRMRFunctionLibrary) \
@@ -55,13 +55,13 @@ public: \
 	NO_API virtual ~UOculusXRMRFunctionLibrary();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_18_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_18_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_RPC_WRAPPERS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_RPC_WRAPPERS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h_21_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -71,6 +71,6 @@ class UOculusXRMRFunctionLibrary;
 // ********** End Class UOculusXRMRFunctionLibrary *************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRMR_Public_OculusXRMRFunctionLibrary_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

@@ -8,7 +8,7 @@
 #include "DataSources/IsdkIHandJoints.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkIHandJoints() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -60,24 +60,37 @@ struct Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Retrieve the Hand Data object reference used by this class\n   * @return UIsdkHandData* The actively used hand data reference\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandJoints.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Retrieve the Hand Data object reference used by this class\n@return UIsdkHandData* The actively used hand data reference" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHandData constinit property declarations ***************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHandData constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHandData Property Definitions **************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000080588, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHandJoints_eventGetHandData_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandData_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "GetHandData", Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::PropPointers), sizeof(IsdkIHandJoints_eventGetHandData_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHandData Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "GetHandData", 	Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::PropPointers), 
+sizeof(IsdkIHandJoints_eventGetHandData_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_GetHandData_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandJoints_eventGetHandData_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandJoints_GetHandData()
 {
@@ -136,27 +149,40 @@ struct Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Retrieves the handedness of the implementing object\n   * @return EIsdkHandedness Handedness of this class (normally left or right)\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandJoints.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Retrieves the handedness of the implementing object\n@return EIsdkHandedness Handedness of this class (normally left or right)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHandedness constinit property declarations *************************
 	static const UECodeGen_Private::FBytePropertyParams NewProp_ReturnValue_Underlying;
 	static const UECodeGen_Private::FEnumPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHandedness constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHandedness Property Definitions ************************************
 const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::NewProp_ReturnValue_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHandJoints_eventGetHandedness_Parms, ReturnValue), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) }; // 49432891
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000582, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHandJoints_eventGetHandedness_Parms, ReturnValue), Z_Construct_UEnum_OculusInteraction_EIsdkHandedness, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) }; // 2143392285
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::NewProp_ReturnValue_Underlying,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "GetHandedness", Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::PropPointers), sizeof(IsdkIHandJoints_eventGetHandedness_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHandedness Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "GetHandedness", 	Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::PropPointers), 
+sizeof(IsdkIHandJoints_eventGetHandedness_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandJoints_eventGetHandedness_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness()
 {
@@ -215,25 +241,38 @@ struct Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns an object containing the finger and thumb joint mappings for this object\n   * @return UIsdkHandJointMappings* Mappings object, containing finger joint mappings\n   * (FIsdkExternalHandPositionFrame_FingerJointMapping) and thumb joint mappings\n   * (FIsdkExternalHandPositionFrame_ThumbJointMapping)\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandJoints.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns an object containing the finger and thumb joint mappings for this object\n@return UIsdkHandJointMappings* Mappings object, containing finger joint mappings\n(FIsdkExternalHandPositionFrame_FingerJointMapping) and thumb joint mappings\n(FIsdkExternalHandPositionFrame_ThumbJointMapping)" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "EditInline", "true" },
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetHandJointMappings constinit property declarations ******************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetHandJointMappings constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetHandJointMappings Property Definitions *****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x001000000008058a, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkIHandJoints_eventGetHandJointMappings_Parms, ReturnValue), Z_Construct_UClass_UIsdkHandJointMappings_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "GetHandJointMappings", Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::PropPointers), sizeof(IsdkIHandJoints_eventGetHandJointMappings_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetHandJointMappings Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "GetHandJointMappings", 	Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::PropPointers), 
+sizeof(IsdkIHandJoints_eventGetHandJointMappings_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandJoints_eventGetHandJointMappings_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings()
 {
@@ -292,16 +331,25 @@ struct Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   @brief Returns whether or not the hand joint data for this object is valid, validated by the\n   implementing class.\n   @return bool Whether or not the hand joint data object is valid for use\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandJoints.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns whether or not the hand joint data for this object is valid, validated by the\nimplementing class.\n@return bool Whether or not the hand joint data object is valid for use" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function IsHandJointDataValid constinit property declarations ******************
 	static void NewProp_ReturnValue_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function IsHandJointDataValid constinit property declarations ********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function IsHandJointDataValid Property Definitions *****************************
 void Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::NewProp_ReturnValue_SetBit(void* Obj)
 {
 	((IsdkIHandJoints_eventIsHandJointDataValid_Parms*)Obj)->ReturnValue = 1;
@@ -311,7 +359,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkI
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "IsHandJointDataValid", Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::PropPointers), sizeof(IsdkIHandJoints_eventIsHandJointDataValid_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::Function_MetaDataParams)},  };
+// ********** End Function IsHandJointDataValid Property Definitions *******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkIHandJoints, nullptr, "IsHandJointDataValid", 	Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::PropPointers), 
+sizeof(IsdkIHandJoints_eventIsHandJointDataValid_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x0C020C00, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(IsdkIHandJoints_eventIsHandJointDataValid_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid()
 {
@@ -332,17 +384,6 @@ DEFINE_FUNCTION(IIsdkIHandJoints::execIsHandJointDataValid)
 // ********** End Interface UIsdkIHandJoints Function IsHandJointDataValid *************************
 
 // ********** Begin Interface UIsdkIHandJoints *****************************************************
-void UIsdkIHandJoints::StaticRegisterNativesUIsdkIHandJoints()
-{
-	UClass* Class = UIsdkIHandJoints::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetHandData", &IIsdkIHandJoints::execGetHandData },
-		{ "GetHandedness", &IIsdkIHandJoints::execGetHandedness },
-		{ "GetHandJointMappings", &IIsdkIHandJoints::execGetHandJointMappings },
-		{ "IsHandJointDataValid", &IIsdkIHandJoints::execIsHandJointDataValid },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkIHandJoints;
 UClass* UIsdkIHandJoints::GetPrivateStaticClass()
 {
@@ -350,7 +391,7 @@ UClass* UIsdkIHandJoints::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkIHandJoints.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkIHandJoints"),
 			Z_Registration_Info_UClass_UIsdkIHandJoints.InnerSingleton,
 			StaticRegisterNativesUIsdkIHandJoints,
@@ -382,19 +423,28 @@ struct Z_Construct_UClass_UIsdkIHandJoints_Statics
 		{ "ModuleRelativePath", "Public/DataSources/IsdkIHandJoints.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkIHandJoints constinit property declarations *********************
+// ********** End Interface UIsdkIHandJoints constinit property declarations ***********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetHandData"), .Pointer = &IIsdkIHandJoints::execGetHandData },
+		{ .NameUTF8 = UTF8TEXT("GetHandedness"), .Pointer = &IIsdkIHandJoints::execGetHandedness },
+		{ .NameUTF8 = UTF8TEXT("GetHandJointMappings"), .Pointer = &IIsdkIHandJoints::execGetHandJointMappings },
+		{ .NameUTF8 = UTF8TEXT("IsHandJointDataValid"), .Pointer = &IIsdkIHandJoints::execIsHandJointDataValid },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkIHandJoints_GetHandData, "GetHandData" }, // 1372071574
-		{ &Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness, "GetHandedness" }, // 3370116630
-		{ &Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings, "GetHandJointMappings" }, // 596692386
-		{ &Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid, "IsHandJointDataValid" }, // 1732831322
+		{ &Z_Construct_UFunction_UIsdkIHandJoints_GetHandData, "GetHandData" }, // 2258995111
+		{ &Z_Construct_UFunction_UIsdkIHandJoints_GetHandedness, "GetHandedness" }, // 3042255231
+		{ &Z_Construct_UFunction_UIsdkIHandJoints_GetHandJointMappings, "GetHandJointMappings" }, // 502089278
+		{ &Z_Construct_UFunction_UIsdkIHandJoints_IsHandJointDataValid, "IsHandJointDataValid" }, // 3724125842
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkIHandJoints>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkIHandJoints_Statics
 UObject* (*const Z_Construct_UClass_UIsdkIHandJoints_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -415,6 +465,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkIHandJoints_Static
 	0x001040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkIHandJoints_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkIHandJoints_Statics::Class_MetaDataParams)
 };
+void UIsdkIHandJoints::StaticRegisterNativesUIsdkIHandJoints()
+{
+	UClass* Class = UIsdkIHandJoints::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkIHandJoints_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkIHandJoints()
 {
 	if (!Z_Registration_Info_UClass_UIsdkIHandJoints.OuterSingleton)
@@ -424,20 +479,22 @@ UClass* Z_Construct_UClass_UIsdkIHandJoints()
 	return Z_Registration_Info_UClass_UIsdkIHandJoints.OuterSingleton;
 }
 UIsdkIHandJoints::UIsdkIHandJoints(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkIHandJoints);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkIHandJoints);
 // ********** End Interface UIsdkIHandJoints *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkIHandJoints, UIsdkIHandJoints::StaticClass, TEXT("UIsdkIHandJoints"), &Z_Registration_Info_UClass_UIsdkIHandJoints, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIHandJoints), 1228590249U) },
+		{ Z_Construct_UClass_UIsdkIHandJoints, UIsdkIHandJoints::StaticClass, TEXT("UIsdkIHandJoints"), &Z_Registration_Info_UClass_UIsdkIHandJoints, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkIHandJoints), 2109163287U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_3724030359(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_3364879444{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_DataSources_IsdkIHandJoints_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

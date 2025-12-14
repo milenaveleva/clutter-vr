@@ -9,7 +9,7 @@
 #include "Components/SkeletalMeshComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeQuestControllerHandsAnimInstance() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteractionPrebuilts();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UQuestControllerHandsAnimInstance ****************************************
-void UQuestControllerHandsAnimInstance::StaticRegisterNativesUQuestControllerHandsAnimInstance()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance;
 UClass* UQuestControllerHandsAnimInstance::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UQuestControllerHandsAnimInstance::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("QuestControllerHandsAnimInstance"),
 			Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance.InnerSingleton,
 			StaticRegisterNativesUQuestControllerHandsAnimInstance,
@@ -56,97 +53,159 @@ struct Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * UQuestControllerHandsAnimInstance extends UQuestControllerAnimInstance to provide\n * some basic values intended to drive the animation of hands paired with a controller\n * mesh.\n */" },
+#endif
 		{ "HideCategories", "AnimInstance" },
 		{ "IncludePath", "Animation/QuestControllerHandsAnimInstance.h" },
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "UQuestControllerHandsAnimInstance extends UQuestControllerAnimInstance to provide\nsome basic values intended to drive the animation of hands paired with a controller\nmesh." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InterpolationSpeed_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The speed at which fingers and thumbs should interpolate toward the button\n// they are touching or pressing, toward a maximum of 1, and a minimum of 0.\n// A larger number interpolates faster.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The speed at which fingers and thumbs should interpolate toward the button\nthey are touching or pressing, toward a maximum of 1, and a minimum of 0.\nA larger number interpolates faster." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ButtonPressBlendTime_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// The amount of time to blend between a \"touched\" and \"down\" state for most\n// button press animations.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The amount of time to blend between a \"touched\" and \"down\" state for most\nbutton press animations." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TriggerDeadZone_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// For axial inputs, the range after which we will consider the input \"touched\".\n// We use this value in conjunction with the corresponding \"touched\" boolean value.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "For axial inputs, the range after which we will consider the input \"touched\".\nWe use this value in conjunction with the corresponding \"touched\" boolean value." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AButtonThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the thumb is positioned over the A button.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the thumb is positioned over the A button." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_BButtonThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the thumb is positioned over the B button.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the thumb is positioned over the B button." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_XButtonThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the thumb is positioned over the X button.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the thumb is positioned over the X button." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_YButtonThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the thumb is positioned over the Y button.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the thumb is positioned over the Y button." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftFrontTriggerAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Left Front Trigger.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Left Front Trigger." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightFrontTriggerAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Right Front Trigger.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Right Front Trigger." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftThumbstickAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Left Thumbstick.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Left Thumbstick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightThumbstickAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Right Thumbstick.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Right Thumbstick." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftPanelThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Left Panel.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Left Panel." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RightPanelThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Right Panel.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Right Panel." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_LeftMenuThumbAlpha_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// A 0-1 value indicating how much the finger is positioned over the Left Menu Button.\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Animation/QuestControllerHandsAnimInstance.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "A 0-1 value indicating how much the finger is positioned over the Left Menu Button." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UQuestControllerHandsAnimInstance constinit property declarations ********
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_InterpolationSpeed;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_ButtonPressBlendTime;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TriggerDeadZone;
@@ -162,12 +221,15 @@ struct Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_RightPanelThumbAlpha;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_LeftMenuThumbAlpha;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UQuestControllerHandsAnimInstance constinit property declarations **********
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UQuestControllerHandsAnimInstance>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics
+
+// ********** Begin Class UQuestControllerHandsAnimInstance Property Definitions *******************
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::NewProp_InterpolationSpeed = { "InterpolationSpeed", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuestControllerHandsAnimInstance, InterpolationSpeed), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InterpolationSpeed_MetaData), NewProp_InterpolationSpeed_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::NewProp_ButtonPressBlendTime = { "ButtonPressBlendTime", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuestControllerHandsAnimInstance, ButtonPressBlendTime), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ButtonPressBlendTime_MetaData), NewProp_ButtonPressBlendTime_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::NewProp_TriggerDeadZone = { "TriggerDeadZone", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UQuestControllerHandsAnimInstance, TriggerDeadZone), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TriggerDeadZone_MetaData), NewProp_TriggerDeadZone_MetaData) };
@@ -199,6 +261,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UQuestCon
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::NewProp_LeftMenuThumbAlpha,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::PropPointers) < 2048);
+// ********** End Class UQuestControllerHandsAnimInstance Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UQuestControllerAnimInstance,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -219,6 +282,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UQuestControllerHandsAn
 	0x009000A8u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::Class_MetaDataParams), Z_Construct_UClass_UQuestControllerHandsAnimInstance_Statics::Class_MetaDataParams)
 };
+void UQuestControllerHandsAnimInstance::StaticRegisterNativesUQuestControllerHandsAnimInstance()
+{
+}
 UClass* Z_Construct_UClass_UQuestControllerHandsAnimInstance()
 {
 	if (!Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance.OuterSingleton)
@@ -228,21 +294,23 @@ UClass* Z_Construct_UClass_UQuestControllerHandsAnimInstance()
 	return Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance.OuterSingleton;
 }
 UQuestControllerHandsAnimInstance::UQuestControllerHandsAnimInstance(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UQuestControllerHandsAnimInstance);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UQuestControllerHandsAnimInstance);
 UQuestControllerHandsAnimInstance::~UQuestControllerHandsAnimInstance() {}
 // ********** End Class UQuestControllerHandsAnimInstance ******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UQuestControllerHandsAnimInstance, UQuestControllerHandsAnimInstance::StaticClass, TEXT("UQuestControllerHandsAnimInstance"), &Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestControllerHandsAnimInstance), 965026612U) },
+		{ Z_Construct_UClass_UQuestControllerHandsAnimInstance, UQuestControllerHandsAnimInstance::StaticClass, TEXT("UQuestControllerHandsAnimInstance"), &Z_Registration_Info_UClass_UQuestControllerHandsAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UQuestControllerHandsAnimInstance), 260889830U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_694939462(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_2741496820{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_Animation_QuestControllerHandsAnimInstance_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

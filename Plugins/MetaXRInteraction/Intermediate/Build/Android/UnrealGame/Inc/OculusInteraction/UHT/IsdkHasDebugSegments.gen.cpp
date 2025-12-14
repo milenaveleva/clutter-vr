@@ -8,7 +8,7 @@
 #include "Debug/IsdkHasDebugSegments.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkHasDebugSegments() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -19,9 +19,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Interface UIsdkHasDebugSegments ************************************************
-void UIsdkHasDebugSegments::StaticRegisterNativesUIsdkHasDebugSegments()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkHasDebugSegments;
 UClass* UIsdkHasDebugSegments::GetPrivateStaticClass()
 {
@@ -29,7 +26,7 @@ UClass* UIsdkHasDebugSegments::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkHasDebugSegments.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkHasDebugSegments"),
 			Z_Registration_Info_UClass_UIsdkHasDebugSegments.InnerSingleton,
 			StaticRegisterNativesUIsdkHasDebugSegments,
@@ -58,12 +55,15 @@ struct Z_Construct_UClass_UIsdkHasDebugSegments_Statics
 		{ "ModuleRelativePath", "Public/Debug/IsdkHasDebugSegments.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Interface UIsdkHasDebugSegments constinit property declarations ****************
+// ********** End Interface UIsdkHasDebugSegments constinit property declarations ******************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<IIsdkHasDebugSegments>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkHasDebugSegments_Statics
 UObject* (*const Z_Construct_UClass_UIsdkHasDebugSegments_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UInterface,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -84,6 +84,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkHasDebugSegments_S
 	0x000040A1u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkHasDebugSegments_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkHasDebugSegments_Statics::Class_MetaDataParams)
 };
+void UIsdkHasDebugSegments::StaticRegisterNativesUIsdkHasDebugSegments()
+{
+}
 UClass* Z_Construct_UClass_UIsdkHasDebugSegments()
 {
 	if (!Z_Registration_Info_UClass_UIsdkHasDebugSegments.OuterSingleton)
@@ -93,20 +96,22 @@ UClass* Z_Construct_UClass_UIsdkHasDebugSegments()
 	return Z_Registration_Info_UClass_UIsdkHasDebugSegments.OuterSingleton;
 }
 UIsdkHasDebugSegments::UIsdkHasDebugSegments(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkHasDebugSegments);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkHasDebugSegments);
 // ********** End Interface UIsdkHasDebugSegments **************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkHasDebugSegments, UIsdkHasDebugSegments::StaticClass, TEXT("UIsdkHasDebugSegments"), &Z_Registration_Info_UClass_UIsdkHasDebugSegments, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHasDebugSegments), 3174987218U) },
+		{ Z_Construct_UClass_UIsdkHasDebugSegments, UIsdkHasDebugSegments::StaticClass, TEXT("UIsdkHasDebugSegments"), &Z_Registration_Info_UClass_UIsdkHasDebugSegments, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkHasDebugSegments), 1480890301U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_280526984(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_10352279{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Debug_IsdkHasDebugSegments_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

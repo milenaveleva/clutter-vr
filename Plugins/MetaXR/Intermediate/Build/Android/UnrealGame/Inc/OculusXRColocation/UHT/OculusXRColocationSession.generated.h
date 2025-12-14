@@ -17,8 +17,9 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin ScriptStruct FOculusXRColocationSession ****************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSession_h_11_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FOculusXRColocationSession_Statics; \
+struct Z_Construct_UScriptStruct_FOculusXRColocationSession_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSession_h_11_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FOculusXRColocationSession_Statics; \
 	static class UScriptStruct* StaticStruct();
 
 
@@ -26,6 +27,6 @@ struct FOculusXRColocationSession;
 // ********** End ScriptStruct FOculusXRColocationSession ******************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRColocation_Public_OculusXRColocationSession_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRColocation_Public_OculusXRColocationSession_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

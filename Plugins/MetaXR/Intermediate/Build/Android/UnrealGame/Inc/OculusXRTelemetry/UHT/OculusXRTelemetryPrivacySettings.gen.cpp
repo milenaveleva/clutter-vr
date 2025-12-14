@@ -8,7 +8,7 @@
 #include "OculusXRTelemetryPrivacySettings.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeOculusXRTelemetryPrivacySettings() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -20,9 +20,6 @@ UPackage* Z_Construct_UPackage__Script_OculusXRTelemetry();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UOculusXRTelemetryPrivacySettings ****************************************
-void UOculusXRTelemetryPrivacySettings::StaticRegisterNativesUOculusXRTelemetryPrivacySettings()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings;
 UClass* UOculusXRTelemetryPrivacySettings::GetPrivateStaticClass()
 {
@@ -30,7 +27,7 @@ UClass* UOculusXRTelemetryPrivacySettings::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("OculusXRTelemetryPrivacySettings"),
 			Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings.InnerSingleton,
 			StaticRegisterNativesUOculusXRTelemetryPrivacySettings,
@@ -65,16 +62,21 @@ struct Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics
 		{ "ModuleRelativePath", "Private/OculusXRTelemetryPrivacySettings.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UOculusXRTelemetryPrivacySettings constinit property declarations ********
 	static void NewProp_bIsEnabled_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsEnabled;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UOculusXRTelemetryPrivacySettings constinit property declarations **********
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UOculusXRTelemetryPrivacySettings>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics
+
+// ********** Begin Class UOculusXRTelemetryPrivacySettings Property Definitions *******************
 void Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::NewProp_bIsEnabled_SetBit(void* Obj)
 {
 	((UOculusXRTelemetryPrivacySettings*)Obj)->bIsEnabled = 1;
@@ -84,13 +86,14 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UOculusXR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::NewProp_bIsEnabled,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::PropPointers) < 2048);
+// ********** End Class UOculusXRTelemetryPrivacySettings Property Definitions *********************
 UObject* (*const Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusXRTelemetry,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::DependentSingletons) < 16);
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::InterfaceParams[] = {
-	{ Z_Construct_UClass_UImportantToggleSettingInterface_NoRegister, (int32)VTABLE_OFFSET(UOculusXRTelemetryPrivacySettings, IImportantToggleSettingInterface), false },  // 2631109432
+	{ Z_Construct_UClass_UImportantToggleSettingInterface_NoRegister, (int32)VTABLE_OFFSET(UOculusXRTelemetryPrivacySettings, IImportantToggleSettingInterface), false },  // 1576181813
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::ClassParams = {
 	&UOculusXRTelemetryPrivacySettings::StaticClass,
@@ -107,6 +110,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UOculusXRTelemetryPriva
 	0x000800A0u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::Class_MetaDataParams), Z_Construct_UClass_UOculusXRTelemetryPrivacySettings_Statics::Class_MetaDataParams)
 };
+void UOculusXRTelemetryPrivacySettings::StaticRegisterNativesUOculusXRTelemetryPrivacySettings()
+{
+}
 UClass* Z_Construct_UClass_UOculusXRTelemetryPrivacySettings()
 {
 	if (!Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings.OuterSingleton)
@@ -115,21 +121,23 @@ UClass* Z_Construct_UClass_UOculusXRTelemetryPrivacySettings()
 	}
 	return Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UOculusXRTelemetryPrivacySettings);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UOculusXRTelemetryPrivacySettings);
 UOculusXRTelemetryPrivacySettings::~UOculusXRTelemetryPrivacySettings() {}
 // ********** End Class UOculusXRTelemetryPrivacySettings ******************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UOculusXRTelemetryPrivacySettings, UOculusXRTelemetryPrivacySettings::StaticClass, TEXT("UOculusXRTelemetryPrivacySettings"), &Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRTelemetryPrivacySettings), 4253046486U) },
+		{ Z_Construct_UClass_UOculusXRTelemetryPrivacySettings, UOculusXRTelemetryPrivacySettings::StaticClass, TEXT("UOculusXRTelemetryPrivacySettings"), &Z_Registration_Info_UClass_UOculusXRTelemetryPrivacySettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UOculusXRTelemetryPrivacySettings), 3625372360U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_12961333(TEXT("/Script/OculusXRTelemetry"),
-	Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_2471080257{
+	TEXT("/Script/OculusXRTelemetry"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXR_Source_OculusXRTelemetry_Private_OculusXRTelemetryPrivacySettings_h__Script_OculusXRTelemetry_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

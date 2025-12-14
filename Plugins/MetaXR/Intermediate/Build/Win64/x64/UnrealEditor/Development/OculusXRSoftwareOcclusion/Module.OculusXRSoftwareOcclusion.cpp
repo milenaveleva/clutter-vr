@@ -4,3 +4,4 @@
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRSoftwareOcclusion/Private/OccluderMeshAssetUserData.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRSoftwareOcclusion/Private/OculusXRSoftwareOcclusionModule.cpp"
 #include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRSoftwareOcclusion/Private/SceneSoftwareOcclusion.cpp"
+#include "D:/git/ClutterVR/Plugins/MetaXR/Source/OculusXRSoftwareOcclusion/Private/SceneSoftwareOcclusionProvider.cpp"

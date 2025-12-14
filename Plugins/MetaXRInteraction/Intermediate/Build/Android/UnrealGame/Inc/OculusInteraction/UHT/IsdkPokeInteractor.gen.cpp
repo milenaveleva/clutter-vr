@@ -9,7 +9,7 @@
 #include "StructTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkPokeInteractor() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -32,24 +32,37 @@ struct Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns a struct with the current threshold and radius configurations for this\n   * PokeInteractor\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns a struct with the current threshold and radius configurations for this\nPokeInteractor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReturnValue_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetConfig constinit property declarations *****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetConfig constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000008000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeInteractor_eventGetConfig_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) }; // 2206340171
+
+// ********** Begin Function GetConfig Property Definitions ****************************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000008000582, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeInteractor_eventGetConfig_Parms, ReturnValue), Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_ReturnValue_MetaData), NewProp_ReturnValue_MetaData) }; // 3390925270
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "GetConfig", Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::IsdkPokeInteractor_eventGetConfig_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetConfig Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "GetConfig", 	Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::IsdkPokeInteractor_eventGetConfig_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig_Statics::IsdkPokeInteractor_eventGetConfig_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig()
 {
@@ -80,21 +93,34 @@ struct Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Returns the root pose object (implementing IIsdkIRootPose) being utilized by this\n   * PokeInteractor, not guaranteed to be valid if one has not been set.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Returns the root pose object (implementing IIsdkIRootPose) being utilized by this\nPokeInteractor, not guaranteed to be valid if one has not been set." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetRootPose constinit property declarations ***************************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetRootPose constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetRootPose Property Definitions **************************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0014000000000580, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeInteractor_eventGetRootPose_Parms, ReturnValue), Z_Construct_UClass_UIsdkIRootPose_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "GetRootPose", Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::IsdkPokeInteractor_eventGetRootPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetRootPose Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "GetRootPose", 	Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::IsdkPokeInteractor_eventGetRootPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose_Statics::IsdkPokeInteractor_eventGetRootPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose()
 {
@@ -125,24 +151,37 @@ struct Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Overwrites the current threshold/radius configuration with the given struct\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Overwrites the current threshold/radius configuration with the given struct" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InConfig_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetConfig constinit property declarations *****************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InConfig;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetConfig constinit property declarations *******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::NewProp_InConfig = { "InConfig", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeInteractor_eventSetConfig_Parms, InConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InConfig_MetaData), NewProp_InConfig_MetaData) }; // 2206340171
+
+// ********** Begin Function SetConfig Property Definitions ****************************************
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::NewProp_InConfig = { "InConfig", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeInteractor_eventSetConfig_Parms, InConfig), Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InConfig_MetaData), NewProp_InConfig_MetaData) }; // 3390925270
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::NewProp_InConfig,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "SetConfig", Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::IsdkPokeInteractor_eventSetConfig_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetConfig Property Definitions ******************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "SetConfig", 	Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::IsdkPokeInteractor_eventSetConfig_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig_Statics::IsdkPokeInteractor_eventSetConfig_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig()
 {
@@ -174,24 +213,37 @@ struct Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the root pose object (implementing IIsdkIRootPose) to be utilized by this\n   * PokeInteractor (does not currently validate).\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the root pose object (implementing IIsdkIRootPose) to be utilized by this\nPokeInteractor (does not currently validate)." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InRootPose_MetaData[] = {
 		{ "NativeConst", "" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetRootPose constinit property declarations ***************************
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_InRootPose;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetRootPose constinit property declarations *****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetRootPose Property Definitions **************************************
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::NewProp_InRootPose = { "InRootPose", nullptr, (EPropertyFlags)0x0014000008000182, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkPokeInteractor_eventSetRootPose_Parms, InRootPose), Z_Construct_UClass_UIsdkIRootPose_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InRootPose_MetaData), NewProp_InRootPose_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::NewProp_InRootPose,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "SetRootPose", Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::IsdkPokeInteractor_eventSetRootPose_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetRootPose Property Definitions ****************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkPokeInteractor, nullptr, "SetRootPose", 	Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::IsdkPokeInteractor_eventSetRootPose_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose_Statics::IsdkPokeInteractor_eventSetRootPose_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose()
 {
@@ -213,17 +265,6 @@ DEFINE_FUNCTION(UIsdkPokeInteractor::execSetRootPose)
 // ********** End Class UIsdkPokeInteractor Function SetRootPose ***********************************
 
 // ********** Begin Class UIsdkPokeInteractor ******************************************************
-void UIsdkPokeInteractor::StaticRegisterNativesUIsdkPokeInteractor()
-{
-	UClass* Class = UIsdkPokeInteractor::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetConfig", &UIsdkPokeInteractor::execGetConfig },
-		{ "GetRootPose", &UIsdkPokeInteractor::execGetRootPose },
-		{ "SetConfig", &UIsdkPokeInteractor::execSetConfig },
-		{ "SetRootPose", &UIsdkPokeInteractor::execSetRootPose },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkPokeInteractor;
 UClass* UIsdkPokeInteractor::GetPrivateStaticClass()
 {
@@ -231,7 +272,7 @@ UClass* UIsdkPokeInteractor::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkPokeInteractor.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkPokeInteractor"),
 			Z_Registration_Info_UClass_UIsdkPokeInteractor.InnerSingleton,
 			StaticRegisterNativesUIsdkPokeInteractor,
@@ -260,27 +301,39 @@ struct Z_Construct_UClass_UIsdkPokeInteractor_Statics
 		{ "BlueprintSpawnableComponent", "" },
 		{ "BlueprintType", "true" },
 		{ "ClassGroupNames", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkPokeInteractor\n * @brief IsdkPokeInteractor drives the ability for a pawn to interact with actors that have an\n * IsdkPokeInteractable attached to them\n *\n * Initiated by a single finger non-physics interaction. Passes data to/from the API instance.\n *\n * @see UIsdkInteractorComponent\n * @addtogroup InteractionSDK\n */" },
+#endif
 		{ "DisplayName", "ISDK Poke Interactor" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "Interaction/IsdkPokeInteractor.h" },
 		{ "IsBlueprintBase", "true" },
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkPokeInteractor\n@brief IsdkPokeInteractor drives the ability for a pawn to interact with actors that have an\nIsdkPokeInteractable attached to them\n\nInitiated by a single finger non-physics interaction. Passes data to/from the API instance.\n\n@see UIsdkInteractorComponent\n@addtogroup InteractionSDK" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bDisableDebugVisuals_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief When true, disables debug visuals from being drawn, regardless of console variables\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief When true, disables debug visuals from being drawn, regardless of console variables" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_Config_MetaData[] = {
 		{ "BlueprintGetter", "GetConfig" },
 		{ "BlueprintSetter", "SetConfig" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "// Properties\n" },
+#endif
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Properties" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_RootPose_MetaData[] = {
 		{ "BlueprintGetter", "GetRootPose" },
@@ -290,30 +343,41 @@ struct Z_Construct_UClass_UIsdkPokeInteractor_Statics
 		{ "ModuleRelativePath", "Public/Interaction/IsdkPokeInteractor.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkPokeInteractor constinit property declarations **********************
 	static void NewProp_bDisableDebugVisuals_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bDisableDebugVisuals;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_Config;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_RootPose;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkPokeInteractor constinit property declarations ************************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetConfig"), .Pointer = &UIsdkPokeInteractor::execGetConfig },
+		{ .NameUTF8 = UTF8TEXT("GetRootPose"), .Pointer = &UIsdkPokeInteractor::execGetRootPose },
+		{ .NameUTF8 = UTF8TEXT("SetConfig"), .Pointer = &UIsdkPokeInteractor::execSetConfig },
+		{ .NameUTF8 = UTF8TEXT("SetRootPose"), .Pointer = &UIsdkPokeInteractor::execSetRootPose },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig, "GetConfig" }, // 88793991
-		{ &Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose, "GetRootPose" }, // 644319899
-		{ &Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig, "SetConfig" }, // 2298641649
-		{ &Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose, "SetRootPose" }, // 1252539649
+		{ &Z_Construct_UFunction_UIsdkPokeInteractor_GetConfig, "GetConfig" }, // 1886582195
+		{ &Z_Construct_UFunction_UIsdkPokeInteractor_GetRootPose, "GetRootPose" }, // 3048700580
+		{ &Z_Construct_UFunction_UIsdkPokeInteractor_SetConfig, "SetConfig" }, // 3205853392
+		{ &Z_Construct_UFunction_UIsdkPokeInteractor_SetRootPose, "SetRootPose" }, // 3158297912
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkPokeInteractor>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkPokeInteractor_Statics
+
+// ********** Begin Class UIsdkPokeInteractor Property Definitions *********************************
 void Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_bDisableDebugVisuals_SetBit(void* Obj)
 {
 	((UIsdkPokeInteractor*)Obj)->bDisableDebugVisuals = 1;
 }
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_bDisableDebugVisuals = { "bDisableDebugVisuals", nullptr, (EPropertyFlags)0x0020080000000005, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UIsdkPokeInteractor), &Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_bDisableDebugVisuals_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bDisableDebugVisuals_MetaData), NewProp_bDisableDebugVisuals_MetaData) };
-const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_Config = { "Config", nullptr, (EPropertyFlags)0x0040000000010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPokeInteractor, Config), Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Config_MetaData), NewProp_Config_MetaData) }; // 2206340171
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_Config = { "Config", nullptr, (EPropertyFlags)0x0040000000010005, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPokeInteractor, Config), Z_Construct_UScriptStruct_FIsdkPokeInteractor_Config, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Config_MetaData), NewProp_Config_MetaData) }; // 3390925270
 const UECodeGen_Private::FInterfacePropertyParams Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_RootPose = { "RootPose", nullptr, (EPropertyFlags)0x0045000000000805, UECodeGen_Private::EPropertyGenFlags::Interface, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkPokeInteractor, RootPose), Z_Construct_UClass_UIsdkIRootPose_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_RootPose_MetaData), NewProp_RootPose_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkPokeInteractor_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_bDisableDebugVisuals,
@@ -321,6 +385,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkPoke
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkPokeInteractor_Statics::NewProp_RootPose,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPokeInteractor_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkPokeInteractor Property Definitions ***********************************
 UObject* (*const Z_Construct_UClass_UIsdkPokeInteractor_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UIsdkInteractorComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -341,6 +406,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkPokeInteractor_Sta
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkPokeInteractor_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkPokeInteractor_Statics::Class_MetaDataParams)
 };
+void UIsdkPokeInteractor::StaticRegisterNativesUIsdkPokeInteractor()
+{
+	UClass* Class = UIsdkPokeInteractor::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkPokeInteractor_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkPokeInteractor()
 {
 	if (!Z_Registration_Info_UClass_UIsdkPokeInteractor.OuterSingleton)
@@ -349,21 +419,23 @@ UClass* Z_Construct_UClass_UIsdkPokeInteractor()
 	}
 	return Z_Registration_Info_UClass_UIsdkPokeInteractor.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkPokeInteractor);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkPokeInteractor);
 UIsdkPokeInteractor::~UIsdkPokeInteractor() {}
 // ********** End Class UIsdkPokeInteractor ********************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkPokeInteractor, UIsdkPokeInteractor::StaticClass, TEXT("UIsdkPokeInteractor"), &Z_Registration_Info_UClass_UIsdkPokeInteractor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPokeInteractor), 3834922463U) },
+		{ Z_Construct_UClass_UIsdkPokeInteractor, UIsdkPokeInteractor::StaticClass, TEXT("UIsdkPokeInteractor"), &Z_Registration_Info_UClass_UIsdkPokeInteractor, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkPokeInteractor), 2962465406U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_388943275(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_4005230508{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_Interaction_IsdkPokeInteractor_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

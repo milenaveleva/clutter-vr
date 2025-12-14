@@ -8,11 +8,11 @@
 #include "IsdkRuntimeSettings.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkRuntimeSettings() {}
 
 // ********** Begin Cross Module References ********************************************************
-COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass_NoRegister();
 COREUOBJECT_API UClass* Z_Construct_UClass_UObject();
 COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FColor();
 ENGINE_API UClass* Z_Construct_UClass_USubsystem_NoRegister();
@@ -22,9 +22,6 @@ UPackage* Z_Construct_UPackage__Script_OculusInteraction();
 // ********** End Cross Module References **********************************************************
 
 // ********** Begin Class UIsdkRuntimeSettings *****************************************************
-void UIsdkRuntimeSettings::StaticRegisterNativesUIsdkRuntimeSettings()
-{
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkRuntimeSettings;
 UClass* UIsdkRuntimeSettings::GetPrivateStaticClass()
 {
@@ -32,7 +29,7 @@ UClass* UIsdkRuntimeSettings::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkRuntimeSettings.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkRuntimeSettings"),
 			Z_Registration_Info_UClass_UIsdkRuntimeSettings.InnerSingleton,
 			StaticRegisterNativesUIsdkRuntimeSettings,
@@ -58,11 +55,15 @@ struct Z_Construct_UClass_UIsdkRuntimeSettings_Statics
 {
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * Implements the settings for the ISDK MetaXR plugin.\n */" },
+#endif
 		{ "DisplayName", "Meta XR - Interaction" },
 		{ "IncludePath", "IsdkRuntimeSettings.h" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Implements the settings for the ISDK MetaXR plugin." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_DisabledTrackingDataSubsystems_MetaData[] = {
 		{ "Category", "Tracking Data" },
@@ -71,124 +72,194 @@ struct Z_Construct_UClass_UIsdkRuntimeSettings_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractorColorNormal_MetaData[] = {
 		{ "Category", "Debug | Interactors" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Normal\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Normal Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Normal\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractorColorHover_MetaData[] = {
 		{ "Category", "Debug | Interactors" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Hover\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Hover Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Hover\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractorColorSelect_MetaData[] = {
 		{ "Category", "Debug | Interactors" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Select\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Select Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Select\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractorColorDisabled_MetaData[] = {
 		{ "Category", "Debug | Interactors" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Disabled\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Disabled Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Disabled\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableColorNormal_MetaData[] = {
 		{ "Category", "Debug | Interactables" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Normal\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Normal Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Normal\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableColorHover_MetaData[] = {
 		{ "Category", "Debug | Interactables" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Hover\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Hover Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Hover\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableColorSelect_MetaData[] = {
 		{ "Category", "Debug | Interactables" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Select\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Select Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Select\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InteractableColorDisabled_MetaData[] = {
 		{ "Category", "Debug | Interactables" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Disabled\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Disabled Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Disabled\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventColorHover_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Hover\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Hover Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Hover\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventColorSelect_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Select\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Select Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Select\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventColorUnselect_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Unselect\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Unselect Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Unselect\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventColorCancel_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Cancel\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Cancel Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Cancel\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventColorUnhover_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * What color to display when an interactor is in a \"Unhover\" state.\n   * Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Unhover Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "What color to display when an interactor is in a \"Unhover\" state.\nUsed when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventDebugRadius_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * Pointer events render as spheres when debug drawn.  This settings drives the radius of these\n   * spheres.  Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Debug Radius" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "Pointer events render as spheres when debug drawn.  This settings drives the radius of these\nspheres.  Used when Meta.InteractionSDK.DebugInteractionVisuals console variable is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PointerEventDebugDuration_MetaData[] = {
 		{ "Category", "Debug | Pointer Events" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * How long to display debug pointer events\n   */" },
+#endif
 		{ "DisplayName", "Duration" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "How long to display debug pointer events" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandDebugColor_MetaData[] = {
 		{ "Category", "Debug | Hand" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * The color to use for drawing hand bones when Meta.InteractionSDK.DebugHandVisuals is enabled.\n   */" },
+#endif
 		{ "DisplayName", "Hand Bone Color" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The color to use for drawing hand bones when Meta.InteractionSDK.DebugHandVisuals is enabled." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HandDebugThickness_MetaData[] = {
 		{ "Category", "Debug | Hand" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * The thickness to use for drawing hand bones when Meta.InteractionSDK.DebugHandVisuals is\n   * enabled.\n   */" },
+#endif
 		{ "DisplayName", "Hand Bone Thickness" },
 		{ "ModuleRelativePath", "Public/IsdkRuntimeSettings.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "The thickness to use for drawing hand bones when Meta.InteractionSDK.DebugHandVisuals is\nenabled." },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkRuntimeSettings constinit property declarations *********************
 	static const UECodeGen_Private::FClassPropertyParams NewProp_DisabledTrackingDataSubsystems_Inner;
 	static const UECodeGen_Private::FArrayPropertyParams NewProp_DisabledTrackingDataSubsystems;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_InteractorColorNormal;
@@ -209,13 +280,16 @@ struct Z_Construct_UClass_UIsdkRuntimeSettings_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_HandDebugColor;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_HandDebugThickness;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkRuntimeSettings constinit property declarations ***********************
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkRuntimeSettings>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
-const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UIsdkRuntimeSettings_Statics::NewProp_DisabledTrackingDataSubsystems_Inner = { "DisabledTrackingDataSubsystems", nullptr, (EPropertyFlags)0x0004000000004000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_USubsystem_NoRegister, METADATA_PARAMS(0, nullptr) };
+}; // struct Z_Construct_UClass_UIsdkRuntimeSettings_Statics
+
+// ********** Begin Class UIsdkRuntimeSettings Property Definitions ********************************
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_UIsdkRuntimeSettings_Statics::NewProp_DisabledTrackingDataSubsystems_Inner = { "DisabledTrackingDataSubsystems", nullptr, (EPropertyFlags)0x0004000000004000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass_NoRegister, Z_Construct_UClass_USubsystem_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_UIsdkRuntimeSettings_Statics::NewProp_DisabledTrackingDataSubsystems = { "DisabledTrackingDataSubsystems", nullptr, (EPropertyFlags)0x0014000000004001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkRuntimeSettings, DisabledTrackingDataSubsystems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_DisabledTrackingDataSubsystems_MetaData), NewProp_DisabledTrackingDataSubsystems_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkRuntimeSettings_Statics::NewProp_InteractorColorNormal = { "InteractorColorNormal", nullptr, (EPropertyFlags)0x0010000000004001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkRuntimeSettings, InteractorColorNormal), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractorColorNormal_MetaData), NewProp_InteractorColorNormal_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UIsdkRuntimeSettings_Statics::NewProp_InteractorColorHover = { "InteractorColorHover", nullptr, (EPropertyFlags)0x0010000000004001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UIsdkRuntimeSettings, InteractorColorHover), Z_Construct_UScriptStruct_FColor, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InteractorColorHover_MetaData), NewProp_InteractorColorHover_MetaData) };
@@ -256,6 +330,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkRunt
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkRuntimeSettings_Statics::NewProp_HandDebugThickness,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRuntimeSettings_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkRuntimeSettings Property Definitions **********************************
 UObject* (*const Z_Construct_UClass_UIsdkRuntimeSettings_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UObject,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteraction,
@@ -276,6 +351,9 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkRuntimeSettings_St
 	0x001000A6u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRuntimeSettings_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkRuntimeSettings_Statics::Class_MetaDataParams)
 };
+void UIsdkRuntimeSettings::StaticRegisterNativesUIsdkRuntimeSettings()
+{
+}
 UClass* Z_Construct_UClass_UIsdkRuntimeSettings()
 {
 	if (!Z_Registration_Info_UClass_UIsdkRuntimeSettings.OuterSingleton)
@@ -285,21 +363,23 @@ UClass* Z_Construct_UClass_UIsdkRuntimeSettings()
 	return Z_Registration_Info_UClass_UIsdkRuntimeSettings.OuterSingleton;
 }
 UIsdkRuntimeSettings::UIsdkRuntimeSettings(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkRuntimeSettings);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkRuntimeSettings);
 UIsdkRuntimeSettings::~UIsdkRuntimeSettings() {}
 // ********** End Class UIsdkRuntimeSettings *******************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkRuntimeSettings, UIsdkRuntimeSettings::StaticClass, TEXT("UIsdkRuntimeSettings"), &Z_Registration_Info_UClass_UIsdkRuntimeSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRuntimeSettings), 2066831359U) },
+		{ Z_Construct_UClass_UIsdkRuntimeSettings, UIsdkRuntimeSettings::StaticClass, TEXT("UIsdkRuntimeSettings"), &Z_Registration_Info_UClass_UIsdkRuntimeSettings, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRuntimeSettings), 481189526U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_2501248233(TEXT("/Script/OculusInteraction"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_2243762253{
+	TEXT("/Script/OculusInteraction"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteraction_Public_IsdkRuntimeSettings_h__Script_OculusInteraction_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

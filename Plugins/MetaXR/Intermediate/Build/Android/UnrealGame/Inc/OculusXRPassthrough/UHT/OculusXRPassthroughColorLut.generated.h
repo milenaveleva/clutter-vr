@@ -15,12 +15,12 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 struct FColor;
 
 // ********** Begin ScriptStruct FLutTextureData ***************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_22_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FLutTextureData_Statics; \
+struct Z_Construct_UScriptStruct_FLutTextureData_Statics;
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_22_GENERATED_BODY \
+	friend struct ::Z_Construct_UScriptStruct_FLutTextureData_Statics; \
 	OCULUSXRPASSTHROUGH_API static class UScriptStruct* StaticStruct();
 
 
@@ -28,24 +28,25 @@ struct FLutTextureData;
 // ********** End ScriptStruct FLutTextureData *****************************************************
 
 // ********** Begin Class UOculusXRPassthroughColorLut *********************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execSetLutFromArray);
 
 
+struct Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics;
 OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPassthroughColorLut_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUOculusXRPassthroughColorLut(); \
-	friend struct Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRPassthroughColorLut_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRPASSTHROUGH_API UClass* Z_Construct_UClass_UOculusXRPassthroughColorLut_NoRegister(); \
+	friend OCULUSXRPASSTHROUGH_API UClass* ::Z_Construct_UClass_UOculusXRPassthroughColorLut_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRPassthroughColorLut, UObject, COMPILED_IN_FLAGS(0), CASTCLASS_None, TEXT("/Script/OculusXRPassthrough"), Z_Construct_UClass_UOculusXRPassthroughColorLut_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRPassthroughColorLut)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRPassthroughColorLut(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -57,13 +58,13 @@ public: \
 	NO_API virtual ~UOculusXRPassthroughColorLut();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_59_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_59_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h_62_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -73,7 +74,7 @@ class UOculusXRPassthroughColorLut;
 // ********** End Class UOculusXRPassthroughColorLut ***********************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRPassthrough_Public_OculusXRPassthroughColorLut_h
 
 // ********** Begin Enum EColorLutType *************************************************************
 #define FOREACH_ENUM_ECOLORLUTTYPE(op) \
@@ -83,7 +84,7 @@ class UOculusXRPassthroughColorLut;
 
 enum class EColorLutType : uint8;
 template<> struct TIsUEnumClass<EColorLutType> { enum { Value = true }; };
-template<> OCULUSXRPASSTHROUGH_API UEnum* StaticEnum<EColorLutType>();
+template<> OCULUSXRPASSTHROUGH_NON_ATTRIBUTED_API UEnum* StaticEnum<EColorLutType>();
 // ********** End Enum EColorLutType ***************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

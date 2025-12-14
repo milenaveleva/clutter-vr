@@ -15,7 +15,6 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
 class AActor;
 class AMRUKAnchor;
 class AMRUKRoom;
@@ -26,14 +25,14 @@ struct FMRUKSpawnGroup;
 struct FRandomStream;
 
 // ********** Begin Delegate FOnInteriorSpawned ****************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_24_DELEGATE \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_24_DELEGATE \
 static void FOnInteriorSpawned_DelegateWrapper(const FMulticastScriptDelegate& OnInteriorSpawned, AMRUKRoom* Room);
 
 
 // ********** End Delegate FOnInteriorSpawned ******************************************************
 
 // ********** Begin Class AMRUKAnchorActorSpawner **************************************************
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
 	DECLARE_FUNCTION(execRemoveActors); \
 	DECLARE_FUNCTION(execOnRoomRemoved); \
 	DECLARE_FUNCTION(execOnRoomUpdated); \
@@ -60,21 +59,22 @@ static void FOnInteriorSpawned_DelegateWrapper(const FMulticastScriptDelegate& O
 	DECLARE_FUNCTION(execSpawnActors);
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_CALLBACK_WRAPPERS
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_CALLBACK_WRAPPERS
+struct Z_Construct_UClass_AMRUKAnchorActorSpawner_Statics;
 MRUTILITYKIT_API UClass* Z_Construct_UClass_AMRUKAnchorActorSpawner_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMRUKAnchorActorSpawner(); \
-	friend struct Z_Construct_UClass_AMRUKAnchorActorSpawner_Statics; \
+	friend struct ::Z_Construct_UClass_AMRUKAnchorActorSpawner_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend MRUTILITYKIT_API UClass* Z_Construct_UClass_AMRUKAnchorActorSpawner_NoRegister(); \
+	friend MRUTILITYKIT_API UClass* ::Z_Construct_UClass_AMRUKAnchorActorSpawner_NoRegister(); \
 public: \
 	DECLARE_CLASS2(AMRUKAnchorActorSpawner, AActor, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/MRUtilityKit"), Z_Construct_UClass_AMRUKAnchorActorSpawner_NoRegister) \
 	DECLARE_SERIALIZER(AMRUKAnchorActorSpawner)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API AMRUKAnchorActorSpawner(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -86,14 +86,14 @@ public: \
 	NO_API virtual ~AMRUKAnchorActorSpawner();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_18_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_GENERATED_BODY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_18_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_CALLBACK_WRAPPERS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_INCLASS_NO_PURE_DECLS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_ENHANCED_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_CALLBACK_WRAPPERS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_INCLASS_NO_PURE_DECLS \
+	FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h_21_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -103,6 +103,6 @@ class AMRUKAnchorActorSpawner;
 // ********** End Class AMRUKAnchorActorSpawner ****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_MRUtilityKit_Public_MRUtilityKitAnchorActorSpawner_h
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

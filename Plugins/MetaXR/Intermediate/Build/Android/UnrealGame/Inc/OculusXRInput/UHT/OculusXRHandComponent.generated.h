@@ -17,20 +17,21 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UOculusXRHandComponent ***************************************************
+struct Z_Construct_UClass_UOculusXRHandComponent_Statics;
 OCULUSXRINPUT_API UClass* Z_Construct_UClass_UOculusXRHandComponent_NoRegister();
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_INCLASS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_INCLASS \
 private: \
 	static void StaticRegisterNativesUOculusXRHandComponent(); \
-	friend struct Z_Construct_UClass_UOculusXRHandComponent_Statics; \
+	friend struct ::Z_Construct_UClass_UOculusXRHandComponent_Statics; \
 	static UClass* GetPrivateStaticClass(); \
-	friend OCULUSXRINPUT_API UClass* Z_Construct_UClass_UOculusXRHandComponent_NoRegister(); \
+	friend OCULUSXRINPUT_API UClass* ::Z_Construct_UClass_UOculusXRHandComponent_NoRegister(); \
 public: \
 	DECLARE_CLASS2(UOculusXRHandComponent, UPoseableMeshComponent, COMPILED_IN_FLAGS(0 | CLASS_Config), CASTCLASS_None, TEXT("/Script/OculusXRInput"), Z_Construct_UClass_UOculusXRHandComponent_NoRegister) \
 	DECLARE_SERIALIZER(UOculusXRHandComponent)
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_STANDARD_CONSTRUCTORS \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UOculusXRHandComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UOculusXRHandComponent) \
@@ -42,12 +43,12 @@ public: \
 	NO_API virtual ~UOculusXRHandComponent();
 
 
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_27_PROLOG
-#define FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_GENERATED_BODY_LEGACY \
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_27_PROLOG
+#define FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_INCLASS \
-	FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_STANDARD_CONSTRUCTORS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_INCLASS \
+	FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h_30_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -57,7 +58,7 @@ class UOculusXRHandComponent;
 // ********** End Class UOculusXRHandComponent *****************************************************
 
 #undef CURRENT_FILE_ID
-#define CURRENT_FILE_ID FID_OculusXR_release_HostProject_Plugins_OculusXR_Source_OculusXRInput_Public_OculusXRHandComponent_h
+#define CURRENT_FILE_ID FID_ClutterVR_Plugins_MetaXR_Source_OculusXRInput_Public_OculusXRHandComponent_h
 
 // ********** Begin Enum EOculusXRConfidenceBehavior ***********************************************
 #define FOREACH_ENUM_EOCULUSXRCONFIDENCEBEHAVIOR(op) \
@@ -66,7 +67,7 @@ class UOculusXRHandComponent;
 
 enum class EOculusXRConfidenceBehavior : uint8;
 template<> struct TIsUEnumClass<EOculusXRConfidenceBehavior> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRConfidenceBehavior>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRConfidenceBehavior>();
 // ********** End Enum EOculusXRConfidenceBehavior *************************************************
 
 // ********** Begin Enum EOculusXRSystemGestureBehavior ********************************************
@@ -76,7 +77,7 @@ template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRConfidenceBehavior>();
 
 enum class EOculusXRSystemGestureBehavior : uint8;
 template<> struct TIsUEnumClass<EOculusXRSystemGestureBehavior> { enum { Value = true }; };
-template<> OCULUSXRINPUT_API UEnum* StaticEnum<EOculusXRSystemGestureBehavior>();
+template<> OCULUSXRINPUT_NON_ATTRIBUTED_API UEnum* StaticEnum<EOculusXRSystemGestureBehavior>();
 // ********** End Enum EOculusXRSystemGestureBehavior **********************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

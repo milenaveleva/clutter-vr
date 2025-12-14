@@ -8,7 +8,7 @@
 #include "InteractorVisuals/IsdkRayVisualComponent.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
-
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
 void EmptyLinkFunctionForGeneratedCodeIsdkRayVisualComponent() {}
 
 // ********** Begin Cross Module References ********************************************************
@@ -40,21 +40,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the material being used by the Cursor component\n   * @return UMaterialInterface* Material in use for the Cursor component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the material being used by the Cursor component\n@return UMaterialInterface* Material in use for the Cursor component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCursorMaterial constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCursorMaterial constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCursorMaterial Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetCursorMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetCursorMaterial", Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::IsdkRayVisualComponent_eventGetCursorMaterial_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCursorMaterial Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetCursorMaterial", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::IsdkRayVisualComponent_eventGetCursorMaterial_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial_Statics::IsdkRayVisualComponent_eventGetCursorMaterial_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial()
 {
@@ -84,21 +97,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_S
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the material instance being used by the Cursor component\n   * @return UMaterialInterface* Material instance in use for the Cursor component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the material instance being used by the Cursor component\n@return UMaterialInterface* Material instance in use for the Cursor component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCursorMaterialInstance constinit property declarations *************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCursorMaterialInstance constinit property declarations ***************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCursorMaterialInstance Property Definitions ************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetCursorMaterialInstance_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetCursorMaterialInstance", Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::IsdkRayVisualComponent_eventGetCursorMaterialInstance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCursorMaterialInstance Property Definitions **************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetCursorMaterialInstance", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::IsdkRayVisualComponent_eventGetCursorMaterialInstance_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance_Statics::IsdkRayVisualComponent_eventGetCursorMaterialInstance_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance()
 {
@@ -129,21 +155,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the static mesh being used by the Cursor component\n   * @return UStaticMesh* Mesh in use for the Cursor component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the static mesh being used by the Cursor component\n@return UStaticMesh* Mesh in use for the Cursor component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetCursorMesh constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetCursorMesh constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetCursorMesh Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetCursorMesh_Parms, ReturnValue), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetCursorMesh", Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::IsdkRayVisualComponent_eventGetCursorMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetCursorMesh Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetCursorMesh", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::IsdkRayVisualComponent_eventGetCursorMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh_Statics::IsdkRayVisualComponent_eventGetCursorMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh()
 {
@@ -174,21 +213,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Stati
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the material being used by the PinchArrow component\n   * @return UMaterialInterface* Material in use for the PinchArrow component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the material being used by the PinchArrow component\n@return UMaterialInterface* Material in use for the PinchArrow component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPinchArrowMaterial constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPinchArrowMaterial constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPinchArrowMaterial Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetPinchArrowMaterial_Parms, ReturnValue), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetPinchArrowMaterial", Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::IsdkRayVisualComponent_eventGetPinchArrowMaterial_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPinchArrowMaterial Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetPinchArrowMaterial", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::IsdkRayVisualComponent_eventGetPinchArrowMaterial_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial_Statics::IsdkRayVisualComponent_eventGetPinchArrowMaterial_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial()
 {
@@ -218,21 +270,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstan
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the material instance being used by the PinchArrow component\n   * @return UMaterialInterface* Material instance in use for the PinchArrow component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the material instance being used by the PinchArrow component\n@return UMaterialInterface* Material instance in use for the PinchArrow component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPinchArrowMaterialInstance constinit property declarations *********
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPinchArrowMaterialInstance constinit property declarations ***********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPinchArrowMaterialInstance Property Definitions ********************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetPinchArrowMaterialInstance_Parms, ReturnValue), Z_Construct_UClass_UMaterialInstanceDynamic_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetPinchArrowMaterialInstance", Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::IsdkRayVisualComponent_eventGetPinchArrowMaterialInstance_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPinchArrowMaterialInstance Property Definitions **********************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetPinchArrowMaterialInstance", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::IsdkRayVisualComponent_eventGetPinchArrowMaterialInstance_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance_Statics::IsdkRayVisualComponent_eventGetPinchArrowMaterialInstance_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance()
 {
@@ -263,21 +328,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the static mesh being used by the PinchArrow component\n   * @return UStaticMesh* Mesh in use for the PinchArrow component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the static mesh being used by the PinchArrow component\n@return UStaticMesh* Mesh in use for the PinchArrow component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetPinchArrowMesh constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetPinchArrowMesh constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetPinchArrowMesh Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetPinchArrowMesh_Parms, ReturnValue), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetPinchArrowMesh", Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::IsdkRayVisualComponent_eventGetPinchArrowMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetPinchArrowMesh Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetPinchArrowMesh", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::IsdkRayVisualComponent_eventGetPinchArrowMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x54020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh_Statics::IsdkRayVisualComponent_eventGetPinchArrowMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh()
 {
@@ -308,21 +386,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintGetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Gets the translucence sort priority, used by UPrimiveComponent for rendering\n   * @return int32 The translucence sort priority set for rendering\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Gets the translucence sort priority, used by UPrimiveComponent for rendering\n@return int32 The translucence sort priority set for rendering" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function GetTranslucentSortPriority constinit property declarations ************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_ReturnValue;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function GetTranslucentSortPriority constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function GetTranslucentSortPriority Property Definitions ***********************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventGetTranslucentSortPriority_Parms, ReturnValue), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::NewProp_ReturnValue,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetTranslucentSortPriority", Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::IsdkRayVisualComponent_eventGetTranslucentSortPriority_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::Function_MetaDataParams)},  };
+// ********** End Function GetTranslucentSortPriority Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "GetTranslucentSortPriority", 	Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::IsdkRayVisualComponent_eventGetTranslucentSortPriority_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority_Statics::IsdkRayVisualComponent_eventGetTranslucentSortPriority_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority()
 {
@@ -348,14 +439,24 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the meshes and materials for the Cursor and PinchArrow components\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the meshes and materials for the Cursor and PinchArrow components" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function Initialize constinit property declarations ****************************
+// ********** End Function Initialize constinit property declarations ******************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "Initialize", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "Initialize", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -385,21 +486,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the material to be used by the Cursor component\n   * @param InMaterial New material to use for the Cursor component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the material to be used by the Cursor component\n@param InMaterial New material to use for the Cursor component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCursorMaterial constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCursorMaterial constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCursorMaterial Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::NewProp_InMaterial = { "InMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventSetCursorMaterial_Parms, InMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::NewProp_InMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetCursorMaterial", Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::IsdkRayVisualComponent_eventSetCursorMaterial_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCursorMaterial Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetCursorMaterial", 	Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::IsdkRayVisualComponent_eventSetCursorMaterial_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial_Statics::IsdkRayVisualComponent_eventSetCursorMaterial_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial()
 {
@@ -431,21 +545,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the static mesh to be used by the Cursor component\n   * @param Mesh New mesh to use for the Cursor component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the static mesh to be used by the Cursor component\n@param Mesh New mesh to use for the Cursor component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetCursorMesh constinit property declarations *************************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetCursorMesh constinit property declarations ***************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetCursorMesh Property Definitions ************************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventSetCursorMesh_Parms, Mesh), Z_Construct_UClass_UStaticMesh_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::NewProp_Mesh,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetCursorMesh", Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::IsdkRayVisualComponent_eventSetCursorMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetCursorMesh Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetCursorMesh", 	Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::IsdkRayVisualComponent_eventSetCursorMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh_Statics::IsdkRayVisualComponent_eventSetCursorMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh()
 {
@@ -477,21 +604,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Stati
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the material to be used by the PinchArrow component\n   * @param InMaterial New material to use for the PinchArrow component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the material to be used by the PinchArrow component\n@param InMaterial New material to use for the PinchArrow component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetPinchArrowMaterial constinit property declarations *****************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_InMaterial;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetPinchArrowMaterial constinit property declarations *******************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetPinchArrowMaterial Property Definitions ****************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::NewProp_InMaterial = { "InMaterial", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventSetPinchArrowMaterial_Parms, InMaterial), Z_Construct_UClass_UMaterialInterface_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::NewProp_InMaterial,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetPinchArrowMaterial", Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::IsdkRayVisualComponent_eventSetPinchArrowMaterial_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetPinchArrowMaterial Property Definitions ******************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetPinchArrowMaterial", 	Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::IsdkRayVisualComponent_eventSetPinchArrowMaterial_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial_Statics::IsdkRayVisualComponent_eventSetPinchArrowMaterial_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial()
 {
@@ -523,21 +663,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the static mesh to be used by the PinchArrow component\n   * @param Mesh New mesh to use for the PinchArrow component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the static mesh to be used by the PinchArrow component\n@param Mesh New mesh to use for the PinchArrow component" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetPinchArrowMesh constinit property declarations *********************
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Mesh;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetPinchArrowMesh constinit property declarations ***********************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetPinchArrowMesh Property Definitions ********************************
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::NewProp_Mesh = { "Mesh", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventSetPinchArrowMesh_Parms, Mesh), Z_Construct_UClass_USkeletalMesh_NoRegister, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::NewProp_Mesh,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetPinchArrowMesh", Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::IsdkRayVisualComponent_eventSetPinchArrowMesh_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetPinchArrowMesh Property Definitions **********************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetPinchArrowMesh", 	Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::IsdkRayVisualComponent_eventSetPinchArrowMesh_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh_Statics::IsdkRayVisualComponent_eventSetPinchArrowMesh_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh()
 {
@@ -569,21 +722,34 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "BlueprintSetter", "" },
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Sets the translucence sort priority, used by UPrimiveComponent for rendering\n   * @param InTranslucentSortPriority The translucence sort priority to use for rendering\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Sets the translucence sort priority, used by UPrimiveComponent for rendering\n@param InTranslucentSortPriority The translucence sort priority to use for rendering" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function SetTranslucentSortPriority constinit property declarations ************
 	static const UECodeGen_Private::FIntPropertyParams NewProp_InTranslucentSortPriority;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function SetTranslucentSortPriority constinit property declarations **************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function SetTranslucentSortPriority Property Definitions ***********************
 const UECodeGen_Private::FIntPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::NewProp_InTranslucentSortPriority = { "InTranslucentSortPriority", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventSetTranslucentSortPriority_Parms, InTranslucentSortPriority), METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::NewProp_InTranslucentSortPriority,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetTranslucentSortPriority", Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::IsdkRayVisualComponent_eventSetTranslucentSortPriority_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::Function_MetaDataParams)},  };
+// ********** End Function SetTranslucentSortPriority Property Definitions *************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "SetTranslucentSortPriority", 	Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::IsdkRayVisualComponent_eventSetTranslucentSortPriority_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority_Statics::IsdkRayVisualComponent_eventSetTranslucentSortPriority_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority()
 {
@@ -610,14 +776,24 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParam
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Updates Material Instances with new values for both the Cursor (AccentColor, Color,\n   * ShadowColor) and PinchArrow (Color) components\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Updates Material Instances with new values for both the Cursor (AccentColor, Color,\nShadowColor) and PinchArrow (Color) components" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function UpdateMaterialInstanceParameters constinit property declarations ******
+// ********** End Function UpdateMaterialInstanceParameters constinit property declarations ********
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "UpdateMaterialInstanceParameters", nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters_Statics::Function_MetaDataParams)},  };
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "UpdateMaterialInstanceParameters", 	nullptr, 
+	0, 
+0,
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters_Statics::Function_MetaDataParams)},  };
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters()
 {
 	static UFunction* ReturnFunction = nullptr;
@@ -649,19 +825,28 @@ struct Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics
 #if WITH_METADATA
 	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief With passed in transforms and cursor state and ray strength, update the PinchArrow and\n   * Cursor components\n   * @param PointerPoseTransform The new transform of the pointer pose component\n   * @param CursorTransform The new transform of the cursor component\n   * @param CollisionHitValid If there is currently a collision hit from the Cursor\n   * @param RaySelectStrength Strength to utilize for both cursor and pinch arrow\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief With passed in transforms and cursor state and ray strength, update the PinchArrow and\nCursor components\n@param PointerPoseTransform The new transform of the pointer pose component\n@param CursorTransform The new transform of the cursor component\n@param CollisionHitValid If there is currently a collision hit from the Cursor\n@param RaySelectStrength Strength to utilize for both cursor and pinch arrow" },
+#endif
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Function UpdateVisual constinit property declarations **************************
 	static const UECodeGen_Private::FStructPropertyParams NewProp_PointerPoseTransform;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CursorTransform;
 	static void NewProp_CollisionHitValid_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_CollisionHitValid;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_RaySelectStrength;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function UpdateVisual constinit property declarations ****************************
 	static const UECodeGen_Private::FFunctionParams FuncParams;
 };
+
+// ********** Begin Function UpdateVisual Property Definitions *************************************
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::NewProp_PointerPoseTransform = { "PointerPoseTransform", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventUpdateVisual_Parms, PointerPoseTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::NewProp_CursorTransform = { "CursorTransform", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(IsdkRayVisualComponent_eventUpdateVisual_Parms, CursorTransform), Z_Construct_UScriptStruct_FTransform, METADATA_PARAMS(0, nullptr) };
 void Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::NewProp_CollisionHitValid_SetBit(void* Obj)
@@ -677,7 +862,11 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UIsdkR
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::NewProp_RaySelectStrength,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::PropPointers) < 2048);
-const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "UpdateVisual", Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::PropPointers), sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::IsdkRayVisualComponent_eventUpdateVisual_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::Function_MetaDataParams)},  };
+// ********** End Function UpdateVisual Property Definitions ***************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UIsdkRayVisualComponent, nullptr, "UpdateVisual", 	Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::IsdkRayVisualComponent_eventUpdateVisual_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04820401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::Function_MetaDataParams), Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::Function_MetaDataParams)},  };
 static_assert(sizeof(Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual_Statics::IsdkRayVisualComponent_eventUpdateVisual_Parms) < MAX_uint16);
 UFunction* Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual()
 {
@@ -702,28 +891,6 @@ DEFINE_FUNCTION(UIsdkRayVisualComponent::execUpdateVisual)
 // ********** End Class UIsdkRayVisualComponent Function UpdateVisual ******************************
 
 // ********** Begin Class UIsdkRayVisualComponent **************************************************
-void UIsdkRayVisualComponent::StaticRegisterNativesUIsdkRayVisualComponent()
-{
-	UClass* Class = UIsdkRayVisualComponent::StaticClass();
-	static const FNameNativePtrPair Funcs[] = {
-		{ "GetCursorMaterial", &UIsdkRayVisualComponent::execGetCursorMaterial },
-		{ "GetCursorMaterialInstance", &UIsdkRayVisualComponent::execGetCursorMaterialInstance },
-		{ "GetCursorMesh", &UIsdkRayVisualComponent::execGetCursorMesh },
-		{ "GetPinchArrowMaterial", &UIsdkRayVisualComponent::execGetPinchArrowMaterial },
-		{ "GetPinchArrowMaterialInstance", &UIsdkRayVisualComponent::execGetPinchArrowMaterialInstance },
-		{ "GetPinchArrowMesh", &UIsdkRayVisualComponent::execGetPinchArrowMesh },
-		{ "GetTranslucentSortPriority", &UIsdkRayVisualComponent::execGetTranslucentSortPriority },
-		{ "Initialize", &UIsdkRayVisualComponent::execInitialize },
-		{ "SetCursorMaterial", &UIsdkRayVisualComponent::execSetCursorMaterial },
-		{ "SetCursorMesh", &UIsdkRayVisualComponent::execSetCursorMesh },
-		{ "SetPinchArrowMaterial", &UIsdkRayVisualComponent::execSetPinchArrowMaterial },
-		{ "SetPinchArrowMesh", &UIsdkRayVisualComponent::execSetPinchArrowMesh },
-		{ "SetTranslucentSortPriority", &UIsdkRayVisualComponent::execSetTranslucentSortPriority },
-		{ "UpdateMaterialInstanceParameters", &UIsdkRayVisualComponent::execUpdateMaterialInstanceParameters },
-		{ "UpdateVisual", &UIsdkRayVisualComponent::execUpdateVisual },
-	};
-	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
-}
 FClassRegistrationInfo Z_Registration_Info_UClass_UIsdkRayVisualComponent;
 UClass* UIsdkRayVisualComponent::GetPrivateStaticClass()
 {
@@ -731,7 +898,7 @@ UClass* UIsdkRayVisualComponent::GetPrivateStaticClass()
 	if (!Z_Registration_Info_UClass_UIsdkRayVisualComponent.InnerSingleton)
 	{
 		GetPrivateStaticClassBody(
-			StaticPackage(),
+			TClass::StaticPackage(),
 			TEXT("IsdkRayVisualComponent"),
 			Z_Registration_Info_UClass_UIsdkRayVisualComponent.InnerSingleton,
 			StaticRegisterNativesUIsdkRayVisualComponent,
@@ -759,23 +926,35 @@ struct Z_Construct_UClass_UIsdkRayVisualComponent_Statics
 	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
 		{ "BlueprintSpawnableComponent", "" },
 		{ "ClassGroupNames", "Custom" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n * @class UIsdkRayVisualComponent\n * @brief Scene Component containing all relevant data for a ray visual\n *\n * Includes configuration parameters, getters and setters for related meshes and materials for the\n * ray visual\n * @see AIsdkRayVisual\n * @addtogroup InteractionSDKPrebuilts\n */" },
+#endif
 		{ "DisplayName", "ISDK Ray Visual Component" },
 		{ "HideCategories", "Trigger PhysicsVolume" },
 		{ "IncludePath", "InteractorVisuals/IsdkRayVisualComponent.h" },
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@class UIsdkRayVisualComponent\n@brief Scene Component containing all relevant data for a ray visual\n\nIncludes configuration parameters, getters and setters for related meshes and materials for the\nray visual\n@see AIsdkRayVisual\n@addtogroup InteractionSDKPrebuilts" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bAutoBindInputActions_MetaData[] = {
 		{ "Category", "InteractionSDK" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief When true, during BeginPlay this actor will bind the configured input actions to the\n   * PlayerController at index 0.\n   * If false, a manual call to BindInputActionEvents must be made to bind the input actions.\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief When true, during BeginPlay this actor will bind the configured input actions to the\nPlayerController at index 0.\nIf false, a manual call to BindInputActionEvents must be made to bind the input actions." },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_HmdDataSource_MetaData[] = {
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Object implementing IIsdkIHmdDataSource to be used as the headset data source for this\n   * component\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Object implementing IIsdkIHmdDataSource to be used as the headset data source for this\ncomponent" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchArrow_MetaData[] = {
 		{ "Category", "InteractionSDK" },
@@ -823,57 +1002,93 @@ struct Z_Construct_UClass_UIsdkRayVisualComponent_Statics
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowArrow_MetaData[] = {
 		{ "Category", "InteractionSDK|Pinch Arrow" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief If the Arrow element of the cursor should be rendered\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief If the Arrow element of the cursor should be rendered" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MorphTargetNames_MetaData[] = {
 		{ "Category", "InteractionSDK|Pinch Arrow" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Morph target names used for the PinchArrow\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Morph target names used for the PinchArrow" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_PinchArrowColor_MetaData[] = {
 		{ "Category", "InteractionSDK|Pinch Arrow|Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Linear color used when rendering the PinchArrow\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Linear color used when rendering the PinchArrow" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ShowCursor_MetaData[] = {
 		{ "Category", "InteractionSDK|Cursor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief If the cursor element of the cursor should be rendered\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief If the cursor element of the cursor should be rendered" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_ReferenceDistance_MetaData[] = {
 		{ "Category", "InteractionSDK|Cursor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Distance at which the scale of the cursor is 1.0\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Distance at which the scale of the cursor is 1.0" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CursorSizeMinMax_MetaData[] = {
 		{ "Category", "InteractionSDK|Cursor" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Cursor size range used for the scale change based on the current pinch strength\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Cursor size range used for the scale change based on the current pinch strength" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CursorAccentColor_MetaData[] = {
 		{ "Category", "InteractionSDK|Cursor|Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Linear accent color to be used when rendering the Cursor\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Linear accent color to be used when rendering the Cursor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CursorColor_MetaData[] = {
 		{ "Category", "InteractionSDK|Cursor|Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Linear color to be used when rendering the Cursor\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Linear color to be used when rendering the Cursor" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CursorShadowColor_MetaData[] = {
 		{ "Category", "InteractionSDK|Cursor|Material" },
+#if !UE_BUILD_SHIPPING
 		{ "Comment", "/**\n   * @brief Linear color to be used when rendering the Cursor's shadow\n   */" },
+#endif
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
+#if !UE_BUILD_SHIPPING
 		{ "ToolTip", "@brief Linear color to be used when rendering the Cursor's shadow" },
+#endif
 	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_TranslucentSortPriority_MetaData[] = {
 		{ "BlueprintGetter", "GetTranslucentSortPriority" },
@@ -882,6 +1097,8 @@ struct Z_Construct_UClass_UIsdkRayVisualComponent_Statics
 		{ "ModuleRelativePath", "Public/InteractorVisuals/IsdkRayVisualComponent.h" },
 	};
 #endif // WITH_METADATA
+
+// ********** Begin Class UIsdkRayVisualComponent constinit property declarations ******************
 	static void NewProp_bAutoBindInputActions_SetBit(void* Obj);
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bAutoBindInputActions;
 	static const UECodeGen_Private::FInterfacePropertyParams NewProp_HmdDataSource;
@@ -908,30 +1125,50 @@ struct Z_Construct_UClass_UIsdkRayVisualComponent_Statics
 	static const UECodeGen_Private::FStructPropertyParams NewProp_CursorShadowColor;
 	static const UECodeGen_Private::FIntPropertyParams NewProp_TranslucentSortPriority;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class UIsdkRayVisualComponent constinit property declarations ********************
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("GetCursorMaterial"), .Pointer = &UIsdkRayVisualComponent::execGetCursorMaterial },
+		{ .NameUTF8 = UTF8TEXT("GetCursorMaterialInstance"), .Pointer = &UIsdkRayVisualComponent::execGetCursorMaterialInstance },
+		{ .NameUTF8 = UTF8TEXT("GetCursorMesh"), .Pointer = &UIsdkRayVisualComponent::execGetCursorMesh },
+		{ .NameUTF8 = UTF8TEXT("GetPinchArrowMaterial"), .Pointer = &UIsdkRayVisualComponent::execGetPinchArrowMaterial },
+		{ .NameUTF8 = UTF8TEXT("GetPinchArrowMaterialInstance"), .Pointer = &UIsdkRayVisualComponent::execGetPinchArrowMaterialInstance },
+		{ .NameUTF8 = UTF8TEXT("GetPinchArrowMesh"), .Pointer = &UIsdkRayVisualComponent::execGetPinchArrowMesh },
+		{ .NameUTF8 = UTF8TEXT("GetTranslucentSortPriority"), .Pointer = &UIsdkRayVisualComponent::execGetTranslucentSortPriority },
+		{ .NameUTF8 = UTF8TEXT("Initialize"), .Pointer = &UIsdkRayVisualComponent::execInitialize },
+		{ .NameUTF8 = UTF8TEXT("SetCursorMaterial"), .Pointer = &UIsdkRayVisualComponent::execSetCursorMaterial },
+		{ .NameUTF8 = UTF8TEXT("SetCursorMesh"), .Pointer = &UIsdkRayVisualComponent::execSetCursorMesh },
+		{ .NameUTF8 = UTF8TEXT("SetPinchArrowMaterial"), .Pointer = &UIsdkRayVisualComponent::execSetPinchArrowMaterial },
+		{ .NameUTF8 = UTF8TEXT("SetPinchArrowMesh"), .Pointer = &UIsdkRayVisualComponent::execSetPinchArrowMesh },
+		{ .NameUTF8 = UTF8TEXT("SetTranslucentSortPriority"), .Pointer = &UIsdkRayVisualComponent::execSetTranslucentSortPriority },
+		{ .NameUTF8 = UTF8TEXT("UpdateMaterialInstanceParameters"), .Pointer = &UIsdkRayVisualComponent::execUpdateMaterialInstanceParameters },
+		{ .NameUTF8 = UTF8TEXT("UpdateVisual"), .Pointer = &UIsdkRayVisualComponent::execUpdateVisual },
+	};
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial, "GetCursorMaterial" }, // 1036878746
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance, "GetCursorMaterialInstance" }, // 1693300418
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh, "GetCursorMesh" }, // 2474258795
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial, "GetPinchArrowMaterial" }, // 3040240690
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance, "GetPinchArrowMaterialInstance" }, // 3139886926
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh, "GetPinchArrowMesh" }, // 2367870064
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority, "GetTranslucentSortPriority" }, // 933768491
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize, "Initialize" }, // 2404141445
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial, "SetCursorMaterial" }, // 394341930
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh, "SetCursorMesh" }, // 1310393416
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial, "SetPinchArrowMaterial" }, // 2070066662
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh, "SetPinchArrowMesh" }, // 764925747
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority, "SetTranslucentSortPriority" }, // 2377141861
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters, "UpdateMaterialInstanceParameters" }, // 3527153561
-		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual, "UpdateVisual" }, // 1118597999
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterial, "GetCursorMaterial" }, // 3974358526
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMaterialInstance, "GetCursorMaterialInstance" }, // 730525892
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetCursorMesh, "GetCursorMesh" }, // 554640790
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterial, "GetPinchArrowMaterial" }, // 954059588
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMaterialInstance, "GetPinchArrowMaterialInstance" }, // 2908971593
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetPinchArrowMesh, "GetPinchArrowMesh" }, // 1798448586
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_GetTranslucentSortPriority, "GetTranslucentSortPriority" }, // 1368334166
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_Initialize, "Initialize" }, // 1223466604
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMaterial, "SetCursorMaterial" }, // 3421244492
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetCursorMesh, "SetCursorMesh" }, // 3796087398
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMaterial, "SetPinchArrowMaterial" }, // 2536033219
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetPinchArrowMesh, "SetPinchArrowMesh" }, // 2621011780
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_SetTranslucentSortPriority, "SetTranslucentSortPriority" }, // 1124729495
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateMaterialInstanceParameters, "UpdateMaterialInstanceParameters" }, // 378256663
+		{ &Z_Construct_UFunction_UIsdkRayVisualComponent_UpdateVisual, "UpdateVisual" }, // 77021492
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UIsdkRayVisualComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
-};
+}; // struct Z_Construct_UClass_UIsdkRayVisualComponent_Statics
+
+// ********** Begin Class UIsdkRayVisualComponent Property Definitions *****************************
 void Z_Construct_UClass_UIsdkRayVisualComponent_Statics::NewProp_bAutoBindInputActions_SetBit(void* Obj)
 {
 	((UIsdkRayVisualComponent*)Obj)->bAutoBindInputActions = 1;
@@ -991,6 +1228,7 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UIsdkRayV
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UIsdkRayVisualComponent_Statics::NewProp_TranslucentSortPriority,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRayVisualComponent_Statics::PropPointers) < 2048);
+// ********** End Class UIsdkRayVisualComponent Property Definitions *******************************
 UObject* (*const Z_Construct_UClass_UIsdkRayVisualComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_USceneComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_OculusInteractionPrebuilts,
@@ -1011,6 +1249,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UIsdkRayVisualComponent
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UIsdkRayVisualComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UIsdkRayVisualComponent_Statics::Class_MetaDataParams)
 };
+void UIsdkRayVisualComponent::StaticRegisterNativesUIsdkRayVisualComponent()
+{
+	UClass* Class = UIsdkRayVisualComponent::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_UIsdkRayVisualComponent_Statics::Funcs));
+}
 UClass* Z_Construct_UClass_UIsdkRayVisualComponent()
 {
 	if (!Z_Registration_Info_UClass_UIsdkRayVisualComponent.OuterSingleton)
@@ -1019,21 +1262,23 @@ UClass* Z_Construct_UClass_UIsdkRayVisualComponent()
 	}
 	return Z_Registration_Info_UClass_UIsdkRayVisualComponent.OuterSingleton;
 }
-DEFINE_VTABLE_PTR_HELPER_CTOR(UIsdkRayVisualComponent);
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, UIsdkRayVisualComponent);
 UIsdkRayVisualComponent::~UIsdkRayVisualComponent() {}
 // ********** End Class UIsdkRayVisualComponent ****************************************************
 
 // ********** Begin Registration *******************************************************************
-struct Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics
+struct Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UIsdkRayVisualComponent, UIsdkRayVisualComponent::StaticClass, TEXT("UIsdkRayVisualComponent"), &Z_Registration_Info_UClass_UIsdkRayVisualComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRayVisualComponent), 2734708636U) },
+		{ Z_Construct_UClass_UIsdkRayVisualComponent, UIsdkRayVisualComponent::StaticClass, TEXT("UIsdkRayVisualComponent"), &Z_Registration_Info_UClass_UIsdkRayVisualComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UIsdkRayVisualComponent), 3812551002U) },
 	};
-};
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_3806155323(TEXT("/Script/OculusInteractionPrebuilts"),
-	Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_MetaIsdk_release_HostProject_Plugins_OculusInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
+}; // Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_147450935{
+	TEXT("/Script/OculusInteractionPrebuilts"),
+	Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_ClutterVR_Plugins_MetaXRInteraction_Source_OculusInteractionPrebuilts_Public_InteractorVisuals_IsdkRayVisualComponent_h__Script_OculusInteractionPrebuilts_Statics::ClassInfo),
 	nullptr, 0,
-	nullptr, 0);
+	nullptr, 0,
+};
 // ********** End Registration *********************************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
