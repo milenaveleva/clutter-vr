@@ -6,9 +6,9 @@
 			"ElectronicNodesSettings.gen.cpp.obj",
 			"PerModuleInline.gen.cpp.obj",
 			"ElectronicNodes.cpp.obj",
-			"ENAnimGraphConnectionDrawingPolicy.cpp.obj",
+			"ENConnectionDrawingPolicy.cpp.obj",
 			"ENPathDrawer.cpp.obj",
-			"ENConnectionDrawingPolicy.cpp.obj"
+			"ENAnimGraphConnectionDrawingPolicy.cpp.obj"
 		]
 	}
 }
