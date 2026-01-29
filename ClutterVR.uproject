@@ -3,17 +3,19 @@
 	"EngineAssociation": "5.7",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "ClutterVR",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "OpenXR",
-			"Enabled": true
-		},
-		{
-			"Name": "OpenXREyeTracker",
-			"Enabled": true
-		},
-		{
-			"Name": "OpenXRHandTracking",
 			"Enabled": true
 		}
 	],
