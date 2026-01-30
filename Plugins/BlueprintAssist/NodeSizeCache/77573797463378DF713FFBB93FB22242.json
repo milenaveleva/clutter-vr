@@ -12283,6 +12283,1020 @@
 					}
 				}
 			}
+		},
+		"/Game/UI/HandUI/WBP_HandUI":
+		{
+			"graphData":
+			{
+				"E4B0CA0941497F0FE7B990A74059970C":
+				{
+					"nodeData":
+					{
+						"AD5A1EFF4C8231C8E0585FA21079615B":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"99C1C350435307F429B706B44BDBE77D":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"3CE9467F4AB4C5E2C0F6018BB3773553":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"DED9A8A94D6988D606F6E0A4ED40D9A2":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"0E909C41416ACA226911BAB51B8E3814":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"5FE404964F89686D93B815895D6C72D5":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"A17BFDAB4EF2AC28872859B3D07D0BC0":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"CEEA43D54359DE4B41D63197055B8F13":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"3199B87244770931A80D158828ABA7B1":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"B6F6FECE46527EF2BA7428AE7695A3E6":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"133699ED4505D5A7ADD010832CACE35A":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"BBE4FA5848D353017E4DFA8C9F1A4598":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"F689B376400EDE36DBC19081502DBD65":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"CD755C2C44ED8998636EAFB27ED9E2B2":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"8E6EAF1D4E13B6A435F379A31F52B7E4":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"718615C94B522507B4E6149A11FF6597":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"5CF963B944B40D6E2DF2AE88528A8F35":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"C055DA2F45057E11E607B99DDC482BD4":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"98F5C95349CA56ED8D51E883A53F039A":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				}
+			}
+		},
+		"/Game/Blueprints/Core/BP_ClutterHUD":
+		{
+			"graphData":
+			{
+				"1DC6690345AB7CDA7A8A7A8F38586577":
+				{
+					"nodeData":
+					{
+						"38A77CFC41C4B3ECA5693BB9D4C284BC":
+						{
+							"cachedNodeSize":
+							{
+								"x": 158,
+								"y": 62
+							},
+							"cachedPins":
+							{
+								"1F3D7A5E41ED789C257A31BEDD78BB63": 12,
+								"ED7794114D3D56DC535E418DF56F2E85": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"5C0624EA4C3388F265645BBE394B498F":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"5FC58046476E308EDCC3DA805B1C8780":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"F0B488E645229BCF93A731A1A49419FF":
+						{
+							"cachedNodeSize":
+							{
+								"x": 294,
+								"y": 146
+							},
+							"cachedPins":
+							{
+								"DF60F6A24E887C048CA760BB1E022C99": 43,
+								"8165F9834C44E002BD906D974E5EE45C": 86,
+								"196858E04A52B026CE3215B1A0B361A7": 128,
+								"212F2C004239CC18FA42518ABDFC3D19": 43,
+								"AB37290E44855A9FC61C948B6033AEB8": 74
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"34285B6E4CB623BEC0EA5A91ED5B796A":
+						{
+							"cachedNodeSize":
+							{
+								"x": 255,
+								"y": 65
+							},
+							"cachedPins":
+							{
+								"576B9ADF47E9659C9F37CC93F820A5B6": 44.5,
+								"5F1A9C1F4EE49E41654A7383EF744D96": 42
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"DE2D71134937DEA4424506AE4D0026F4":
+						{
+							"cachedNodeSize":
+							{
+								"x": 179,
+								"y": 126
+							},
+							"cachedPins":
+							{
+								"CAD529AF45EBC0CC50096DAA8DD810CC": 58,
+								"2352F9D143ED20C8889CF4A3EE12C023": 89,
+								"6E713421468DF08462518C9BD03F11A2": 0,
+								"9C4AB9E04ABBF2EF6A99CDB9E06CAC32": 58
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"C0A1A0A64D77C13B279CD094761FA34F":
+						{
+							"cachedNodeSize":
+							{
+								"x": 260,
+								"y": 122
+							},
+							"cachedPins":
+							{
+								"727EC5C84275E51F401BEF8CCB25F2F5": 43,
+								"E9498FA84124398371A0DEA58D8F7069": 74,
+								"38E59AAE41E46A141244FFA36F998945": 104,
+								"F6654D88434B9EE9830BD2A3594CB722": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"09FC360046F82615F1C96A8BD7F879A5":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"4D5AB9C7415ACD1958AE84A166177364":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"D2911F18427E8878B27CB6BFCF439116":
+						{
+							"cachedNodeSize":
+							{
+								"x": 192.39999389648438,
+								"y": 122
+							},
+							"cachedPins":
+							{
+								"12F70FB743F4FAA0D914B380E2B8E806": 44.5,
+								"F1CD72B64E4E8640CE9224A071DA13FE": 42
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"47334D5B496603B25F5C31B4CB12E4F8":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"F4B81B7F4C2B76FFECCE89BD430F51B3":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"17BDBD8A40795CC2320AF0811D5FF5ED":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				},
+				"397460E74F434B96D062B0AECACFBD58":
+				{
+					"nodeData":
+					{
+						"FF0FF0814B4CE0E3DF1D09B057E4DC6D":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				}
+			}
+		},
+		"/Game/UI/HUD/WBP_Timer":
+		{
+			"graphData":
+			{
+				"D39D6A5C47A8D19F4865FB857A0C8FCD":
+				{
+					"nodeData":
+					{
+						"8FAEA8BE470D2F75457DEFB020B08E5B":
+						{
+							"cachedNodeSize":
+							{
+								"x": 165,
+								"y": 71
+							},
+							"cachedPins":
+							{
+								"F3236D134B038CF957A61DA40C737A95": 18,
+								"C93A23B0487F1089601DB8AB5812960C": 50.5,
+								"6DA3957C4634C0D5FFFFA182A02A6246": 35.5
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"BBAE40C24CDAC8F27AA6BA88DEF8856C":
+						{
+							"cachedNodeSize":
+							{
+								"x": 159,
+								"y": 62
+							},
+							"cachedPins":
+							{
+								"5B9392B448BA6C9435F3D69232326A07": 12,
+								"AD07B1544075CDB05C2F4595550F4DDB": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"4CB31C0A4012764FB9FFACA51691A8E1":
+						{
+							"cachedNodeSize":
+							{
+								"x": 274,
+								"y": 124
+							},
+							"cachedPins":
+							{
+								"280C1BB74BA455C01FB13E9E606E02DA": 43,
+								"6F609FF94958BA2B47D82E8115ABD2E9": 74,
+								"2BF878154C52A77B1857BEB2E85F131B": 43,
+								"27C7EB044B73CEDADE6431A3B5BCD9BC": 75,
+								"F55200384BA81F62F63E52902871276D": 106
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"2255D8424C0B4D1009D8259435EA9BFD":
+						{
+							"cachedNodeSize":
+							{
+								"x": 302,
+								"y": 214
+							},
+							"cachedPins":
+							{
+								"5768A77947636C360DBB53BAE9DA4C09": 43,
+								"47AA632149444FFB69E5F49C8A7DEE52": 74,
+								"2D9993794C584E0C369E378D56FDDB63": 106.5,
+								"F37F74C349BC5C72720B86903F12CC30": 141,
+								"76FB981940A38AEF302EB9B584CDE859": 175,
+								"C885726D4CF53BF8371A5DA5F74163F9": 0,
+								"5BF5990E43E144255A5FFEA258388E74": 0,
+								"ED63E37248F8BA7793AB0BB17B3632AD": 43,
+								"3FDAAC0F4E4FF1CABEC6E8B38702AF9E": 74
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"6CEF63CD49D63143118AEEB95B23CD4D":
+						{
+							"cachedNodeSize":
+							{
+								"x": 172,
+								"y": 77
+							},
+							"cachedPins":
+							{
+								"72043DE941C44D302801FEB4F86AAC6C": 19.5,
+								"F3490252466C0AAAFE6DD8B293EB7A8E": 58
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"CD50A9484FB394CE6D41E9A3F28BFD0F":
+						{
+							"cachedNodeSize":
+							{
+								"x": 143,
+								"y": 38
+							},
+							"cachedPins":
+							{
+								"FC84028847D72CB26AA4F1A31E9CDCFA": 19
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"26CCAB384BA2656160658E90E3243F1F":
+						{
+							"cachedNodeSize":
+							{
+								"x": 208,
+								"y": 77
+							},
+							"cachedPins":
+							{
+								"E3443144451B6D77F22849A07910FCC0": 27,
+								"D3CF68834F410399B99BE4B1612BF619": 58,
+								"7780D84D4D9564409E639087A1688629": 27,
+								"B9CEF3D447C422B4A556B19C9B086BF2": 58
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"B9E1F3ED4D8743F31AD5099FC96F8911":
+						{
+							"cachedNodeSize":
+							{
+								"x": 110,
+								"y": 73
+							},
+							"cachedPins":
+							{
+								"ED8E9C0D459F53AF302F02AAEBC1A45D": 27,
+								"C1B21EE545FF30A0B26EB7B482FBB130": 56.5,
+								"65667D3447C714E75ABBF7821AE0436C": 27,
+								"C2D592DD44E695AECBEACB94B2ED4E60": 56.5
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"6E4EBB7B43A8BDB5C7B4258A9B6FEF10":
+						{
+							"cachedNodeSize":
+							{
+								"x": 180,
+								"y": 94
+							},
+							"cachedPins":
+							{
+								"6FAED92847EE83F263D7928E09A21A2B": 43,
+								"53BFB40E4075A5D2F0E01AA977FA86C3": 74,
+								"235F20A54736D5FA131449860173B196": 43,
+								"D4BB99684D721870F67670A48B4DE8FD": 75
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"9A35111D40B22AC352933F9C82BBDC33":
+						{
+							"cachedNodeSize":
+							{
+								"x": 158,
+								"y": 60
+							},
+							"cachedPins":
+							{
+								"6EDC8FFC4BE749D8781BF7B5978A17B1": 42
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"532F13CA4221DCAAF37DC3893E3D9144":
+						{
+							"cachedNodeSize":
+							{
+								"x": 205,
+								"y": 97
+							},
+							"cachedPins":
+							{
+								"1F7C522744C4F1C1D1D14482C53C4D46": 43,
+								"72C199BA40AA222038E4E0BB7E6BC2C7": 76.5,
+								"B3CF8A8846078F350F3E06A1D042D2D6": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"ABBA86CF43CD88038628DF905CD654E6":
+						{
+							"cachedNodeSize":
+							{
+								"x": 243,
+								"y": 92
+							},
+							"cachedPins":
+							{
+								"C3E227BD4A9DDAABB2D1A7A655C47108": 43,
+								"543927324D4706F2756567A76025F0F3": 74,
+								"87D3FEF84CBE59D0FD4004A7EF79F5DB": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				},
+				"E184F2AE4F1ED0D7FC3BDDB192E2E0E8":
+				{
+					"nodeData":
+					{
+						"250A996A44FAAC8AE32DBBB8F7AC6391":
+						{
+							"cachedNodeSize":
+							{
+								"x": 112,
+								"y": 62
+							},
+							"cachedPins":
+							{
+								"85F7F4DE44ABF9097500BEA16DD253AF": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"9457F1FB4B12AE68AF745EA964A0C48F":
+						{
+							"cachedNodeSize":
+							{
+								"x": 137,
+								"y": 92
+							},
+							"cachedPins":
+							{
+								"C0DD523D4E3694DBC2E54C8B0AB576C2": 43,
+								"652545624379E4BCA507EA9C1E126170": 74
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"4039CEAE4DCAB2880784F7B9D8B041ED":
+						{
+							"cachedNodeSize":
+							{
+								"x": 143,
+								"y": 55
+							},
+							"cachedPins":
+							{
+								"9794AF7448610C6E554F1E8D4C12D79A": 19
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"23E90A6B481BE4BC5D684194D44F48DD":
+						{
+							"cachedNodeSize":
+							{
+								"x": 202,
+								"y": 79
+							},
+							"cachedPins":
+							{
+								"91AC60044825A4E07C19EBBE55EDCCF3": 42,
+								"B8E39BBB40DD52F94D449C9B808E0A3B": 0,
+								"A56CD3414D1E267A694C7BAAC3929173": 0,
+								"A29D8EE84B581D1EE713FDBD889A79F9": 0,
+								"1F13A9F3423E28572D902485EE3BFF5D": 0,
+								"22700B514ABC0B1C34A808939DCDDAD5": 42
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				}
+			}
+		},
+		"/Game/Blueprints/Core/BP_ClutterGameMode":
+		{
+			"graphData":
+			{
+				"9A80DDF74DA695B49E1DA68D791872A6":
+				{
+					"nodeData":
+					{
+						"F30573534C575AD2C9062A9AA6F5EEF4":
+						{
+							"cachedNodeSize":
+							{
+								"x": 158,
+								"y": 62
+							},
+							"cachedPins":
+							{
+								"B6F8361D4B58A10E23AF99B7BC22C719": 12,
+								"27D2EF704ED20C934BB1F3B1656E1B43": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"7A099A0E40B1FECA5418BD82DFEB0DEA":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"FF4C84524C87C29B9FAF4D8BDC926BB0":
+						{
+							"cachedNodeSize":
+							{
+								"x": 237,
+								"y": 112
+							},
+							"cachedPins":
+							{
+								"B68C9F184A33E97DBB6D9A967A951A75": 58,
+								"6E948B6B4B61B0EDE692ECAE7EC60EF1": 91.5,
+								"FBDC40EE420680B3E9C206B04657C665": 58
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				},
+				"9C65737848ECAC29BAD2A88F114B61A9":
+				{
+					"nodeData":
+					{
+						"982F9C654D1166664969219C40F16D0C":
+						{
+							"cachedNodeSize":
+							{
+								"x": 130,
+								"y": 62
+							},
+							"cachedPins":
+							{
+								"7768B7254EEEAEA0061AB78034270C8B": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"95C9624C4F3BC8B7B73C0B8177A3359E":
+						{
+							"cachedNodeSize":
+							{
+								"x": 0,
+								"y": 0
+							},
+							"cachedPins":
+							{
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"3E3F552C48FA976AA78FD0BF09332B89":
+						{
+							"cachedNodeSize":
+							{
+								"x": 213,
+								"y": 82
+							},
+							"cachedPins":
+							{
+								"D8C9D96642E26EDEBD4F06AB3AFD8903": 27,
+								"4F24595141E9B951D153B2B3C1045916": 60.5,
+								"4F9F0F134CE8C16807BD7C864035F7E8": 27,
+								"5087D57145E3D7717A9746AF8CB94063": 58
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"2898993F4268263E99525CA8202DB476":
+						{
+							"cachedNodeSize":
+							{
+								"x": 298,
+								"y": 127
+							},
+							"cachedPins":
+							{
+								"6700FA714121801C859968B81CC4E42E": 43,
+								"9AE21C184D19DE4E8581B1AEC35FF1EA": 76.5,
+								"6A61688F47FFFB71472FBE9DDF66E01C": 109,
+								"3B18E6774188841751178681EDFEF310": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"A65036C2444FFD7CFE49A0B8B27D1BC8":
+						{
+							"cachedNodeSize":
+							{
+								"x": 192.39999389648438,
+								"y": 65
+							},
+							"cachedPins":
+							{
+								"0D1CD18040B6540C98B5AFA07A3660B4": 44.5,
+								"8E841F0F4F7E0AD53DB433AF555D45AA": 42
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				},
+				"6D9711314008E1BC872ADE9C9DE545C6":
+				{
+					"nodeData":
+					{
+						"1CBAA79B4D2B26E03616BE9F7FA98207":
+						{
+							"cachedNodeSize":
+							{
+								"x": 146,
+								"y": 62
+							},
+							"cachedPins":
+							{
+								"CAABF0914B7698AF75C1EA9DF2F2613E": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"9CFE558D4CDDEA63792FD2B455C3EACC":
+						{
+							"cachedNodeSize":
+							{
+								"x": 334,
+								"y": 373
+							},
+							"cachedPins":
+							{
+								"C6B5DCFC493FD843B85B5E899C8C4B86": 43,
+								"D5A7AA5B432634505BE50A9FD316EAB5": 86,
+								"CF2FBBDC48B5979C4FC4B5AB71E9E6E3": 139.5,
+								"4B36DB5549D2DE022B713FB3075C7E44": 192.5,
+								"2E31FB2F4DABFF49711CD38AB58BE6D7": 243.5,
+								"0E8E1FB245DE2C62E2B754B23D785D2A": 295,
+								"DCE687F5492AFBA2B192CDA1AE2BA722": 346,
+								"4A5FFFF54C6C3C954845A499400E59B1": 43,
+								"123A3E0549A7BBF1C004F18159D12264": 74,
+								"5A5CFFF04016495C918C89A6BDA8DF32": 104
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						},
+						"E8B941134611BD80F22FB9B3EB307515":
+						{
+							"cachedNodeSize":
+							{
+								"x": 260,
+								"y": 135
+							},
+							"cachedPins":
+							{
+								"F0269D474581EB542683D3B96EB4B236": 43,
+								"A87C8347495C8E427E92E8AC1C88A539": 86,
+								"ADA7878E4A1ABF46789667B5C9025145": 0,
+								"4D0F3AE94DE40D91D2C8DDA5F1834484": 0,
+								"8751DEA4402F9F78E99282AF023036B9": 43
+							},
+							"bLocked": false,
+							"nodeGroup": "00000000000000000000000000000000",
+							"nodeGroups": []
+						}
+					}
+				}
+			}
 		}
 	},
 	"bookmarkedFolders": [],
