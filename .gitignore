@@ -106,3 +106,4 @@ crashinfo--*
 # *.target.xml
 # *.pro
 # *.csprojAssemblyReference.cache
+.DS_Store
